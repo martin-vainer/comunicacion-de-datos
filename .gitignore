@@ -1,0 +1,24 @@
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Obsidian
+.obsidian/workspace*
+.obsidian/cache
+
+# Temporales de ofimática
+~$*
+.~lock.*#
+
+# Salidas de compilación de documentos
+*.aux
+*.log
+*.out
+*.synctex.gz

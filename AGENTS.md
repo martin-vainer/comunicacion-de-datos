@@ -57,12 +57,13 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 │   │   ├── 07-medios-comunicaciones/
 │   │   └── 08-hardware-comunicaciones/
 │   ├── practica/         # TPs resueltos, guías de ejercicios, laboratorios
-│   └── _plantillas/      # Plantillas de apunte y de ejercicio
+│   └── _plantillas/      # Metodología + plantillas de apunte, ejercicio e índice
 │
 └── material/             # Fuentes de terceros — NO se edita
     ├── teoria/           # PDFs, libros, filminas de cátedra
     ├── practica/         # Guías, enunciados, datasets, código
-    └── catedra/          # Programa analítico, cronogramas, reglamento
+    ├── catedra/          # Programa analítico, cronogramas, reglamento
+    └── _cache/           # Transcripciones textuales de los PDFs (generadas)
 ```
 
 ### Reglas de ubicación
@@ -78,17 +79,54 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 
 ## 3. Formato de los apuntes
 
-Todo apunte de teoría usa la plantilla en `apuntes/_plantillas/apunte-teoria.md`. Reglas duras:
+**La metodología manda.** Antes de escribir un apunte por primera vez, leé
+`apuntes/_plantillas/metodologia.md`: define la jerarquía de fuentes, el workflow de cache de PDFs, la
+anatomía de un concepto y las reglas de redacción. Ante contradicción entre una plantilla y ese
+documento, gana el documento.
 
+Plantillas:
+
+| Archivo | Para qué |
+|---|---|
+| `apuntes/_plantillas/metodologia.md` | Criterio pedagógico — **autoridad** |
+| `apuntes/_plantillas/apunte-teoria.md` | Apunte de un tema de teoría |
+| `apuntes/_plantillas/ejercicio-practica.md` | TP, guía o laboratorio resuelto |
+| `apuntes/_plantillas/indice-unidad.md` | `INDICE.md` de cada unidad |
+
+Reglas duras:
+
+- **Regla del apunte**: `problema físico → concepto → modelo mental → formalización → ejemplo numérico
+  → caso real → errores típicos → respuesta de examen`.
 - **Front matter YAML obligatorio** (`unidad`, `tema`, `estado`, `fuentes`, `actualizado`).
 - **Matemática en LaTeX**: inline `$C = B\log_2(1+S/N)$`, en bloque `$$...$$`.
-- **Diagramas en Mermaid** cuando ayudan (tramas, capas, topologías, flujos). No metas diagramas
-  decorativos: si no aporta, no va.
-- **Toda fórmula lleva**: definición de cada símbolo con su unidad, y al menos un ejemplo numérico.
-- **Sección "Errores comunes"** en cada apunte. Es la que más rinde en el parcial.
+- **Diagramas en Mermaid** cuando ayudan (tramas, capas, topologías, cadenas de señal). No metas
+  diagramas decorativos: si no aporta, no va.
+- **Toda fórmula lleva**: tabla de símbolos con unidad, supuestos de validez y al menos un ejemplo
+  numérico con el resultado calculado.
+- **Todo apunte cierra con "Resumen mental" + checklist de examen.** No es opcional: es lo que convierte
+  el apunte en discurso de oral.
+- **Sección "Errores típicos"** en cada concepto central. Es la que más rinde en el parcial.
 - Enlaces internos con rutas relativas: `[Serie de Fourier](../02-senales-telecomunicaciones/serie-de-fourier.md)`.
-- `estado: borrador | en-progreso | completo | revisado`. No marques `completo` un apunte que no tenga
-  ejemplos ni errores comunes.
+- `estado: borrador | en-progreso | completo | revisado`. No marques `completo` un apunte sin ejemplo
+  numérico ni sección de errores típicos.
+- La plantilla es flexible: los conceptos centrales usan los ocho bloques, los secundarios se resuelven
+  con definición + ejemplo + relación con la unidad.
+
+### Antes de redactar un tema
+
+1. Ubicá el material en `material/teoria/` o `material/practica/`.
+2. Verificá que exista su cache textual en `material/_cache/`. Si no existe, generalo:
+   ```bash
+   pdftotext -layout -enc UTF-8 "material/teoria/<archivo>.pdf" "material/_cache/<nombre>.txt"
+   ```
+3. Redactá desde el cache; usá el PDF como autoridad ante dudas de diagrama o notación.
+4. Registrá el tema en el `INDICE.md` de la unidad.
+
+> No redactes el apunte final de un tema si su PDF todavía no tiene cache textual, salvo pedido
+> explícito del estudiante.
+
+**Entorno**: el lector nativo de PDF no funciona acá (falta `pdftoppm`); usá `pdftotext`, que sí está en
+`/mingw64/bin`. Tampoco hay `bat`, `fd` ni `eza`. Sí hay `rg`.
 
 ---
 

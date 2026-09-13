@@ -10,7 +10,7 @@ canónica contrastada, se enlaza la captura histórica y no se hereda su estado 
 - [Práctica 3](../../capturas/practica/clase%2003.md) — velocidades y Fourier.
 - [Práctica 4](../../capturas/practica/clase%2004.md) — velocidades, dB, balance de enlace y TP3.
 
-## Pendientes de extracción
+## Resoluciones canónicas
 
-- Ejercicio 19 de la Práctica 4: único bloque de esa captura que fue revisado; se publicará como
-  resolución canónica independiente.
+- [TP3 — ejercicio 19: cálculo de enlace con amplificador](tp-03-ejercicio-19-calculo-enlace.md) —
+  único bloque revisado y extraído de la Práctica 4. Su estado no se extiende al resto de la captura.

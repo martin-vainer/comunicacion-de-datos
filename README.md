@@ -29,10 +29,12 @@ material/         Fuentes de terceros — no se editan
 - [Unidad 2 — Características de las señales](apuntes/teoria/02-senales-telecomunicaciones/INDICE.md)
 - [Unidad 3 — Redes de telecomunicaciones](apuntes/teoria/03-redes-telecomunicaciones/INDICE.md)
 - [Unidad 4 — Modulación, digitalización y multiplexación](apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/INDICE.md)
+- [Unidad 6 — Canales de comunicaciones](apuntes/teoria/06-canales-comunicaciones/INDICE.md)
+- [Unidad 7 — Medios de comunicaciones](apuntes/teoria/07-medios-comunicaciones/INDICE.md)
 - [Práctica](apuntes/practica/INDICE.md)
 - [Repaso y cuestionarios](apuntes/repaso/INDICE.md)
 
-Las unidades 5 a 8 todavía no tienen apuntes ni capturas propios; su alcance permanece definido en el
+Las unidades 5 y 8 todavía no tienen apuntes ni capturas propios; su alcance permanece definido en el
 programa y en `AGENTS.md`. No se crean índices vacíos.
 
 ## Cómo se usa

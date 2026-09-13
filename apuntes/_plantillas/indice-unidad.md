@@ -12,15 +12,13 @@ un conjunto grande de apuntes sin leerlos todos. Se actualiza cada vez que se ag
 
 > Una oración. Qué capacidad te deja esta unidad que antes no tenías.
 
-**Logro pedagógico (según el programa analítico)**
-
-> Copiar textual del programa: `material/catedra/`.
-
 ## Temas
 
-| # | Tema | Estado | Fuente principal | Anclar en |
-|---|---|---|---|---|
-| 1 | [Tema](archivo.md) | `borrador` | `material/teoria/x.pdf` | fórmula clave, error típico |
+| # | Tema | Qué conecta |
+|---|---|---|
+| 1 | [Tema](archivo.md) | Concepto previo → capacidad que habilita |
+
+El estado y las fuentes viven en el apunte enlazado. No se copian acá porque quedarían desactualizados.
 
 ## Orden de lectura recomendado
 
@@ -37,18 +35,6 @@ Si un tema necesita otro para entenderse, va después aunque la filmina lo muest
 - **Requiere:** [Tema](../NN-unidad/archivo.md) — por qué.
 - **Habilita:** [Tema](../NN-unidad/archivo.md) — por qué.
 
-## Fórmulas de la unidad
-
-| Fórmula | Qué calcula | Supuesto |
-|---|---|---|
-| $C = 2B\log_2 n$ | Capacidad, canal sin ruido | Nyquist: sin ruido |
-
-## Estado del material
-
-- [ ] PDFs de cátedra en `material/teoria/`
-- [ ] Cache textual en `material/_cache/`
-- [ ] Enunciados de práctica en `material/practica/`
-
 ## Pendientes
 
-- ...
+- Tema o vínculo que todavía falta consolidar, sin crear archivos vacíos.

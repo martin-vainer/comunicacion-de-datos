@@ -4,7 +4,6 @@ tema: Título del tema
 estado: borrador          # borrador | en-progreso | completo | revisado
 fuentes:
   - material/teoria/<archivo>.pdf, pp. X-Y
-  - material/_cache/<archivo>.txt
   - Forouzan (2021), cap. N
 actualizado: AAAA-MM-DD
 ---
@@ -27,9 +26,10 @@ Forzar los ocho bloques en todo genera relleno, y el relleno no se estudia.
 **Fuentes**
 
 - Material de cátedra: `material/teoria/<archivo>.pdf`
-- Cache textual: `material/_cache/<archivo>.txt`
 - Bibliografía: ...
 - Normas / recomendaciones: UIT-T X.NN, IEEE 802.N
+
+<!-- El cache textual es un derivado de trabajo: no se registra como fuente independiente. -->
 
 **Idea central**
 

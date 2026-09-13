@@ -6,7 +6,6 @@ tema: Título
 estado: borrador          # borrador | en-progreso | completo | revisado
 fuentes:
   - material/practica/<enunciado>.pdf
-  - material/_cache/<enunciado>.txt
 actualizado: AAAA-MM-DD
 ---
 

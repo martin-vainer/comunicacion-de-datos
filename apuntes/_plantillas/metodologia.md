@@ -137,19 +137,25 @@ no en teoría:
 
 ---
 
-## 4. Jerarquía de fuentes
+## 4. Alcance, autoridad y fuentes
 
-Al redactar o revisar, esta es la prioridad. La fuente de arriba gana ante conflicto:
+Son decisiones distintas y NO se mezclan:
 
-1. Material oficial de cátedra (filminas, apuntes, `material/teoria/`, `material/practica/`).
-2. Transcripción textual en `material/_cache/`.
-3. Programa analítico (`material/catedra/`) — define alcance y vocabulario.
-4. Bibliografía **obligatoria**: Forouzan, Castro Lechtaler & Fusario, Liberatori, Ibe, Stallings.
-5. Normas y recomendaciones citadas por la cátedra (UIT-T, IEEE, EIA/TIA).
-6. Bibliografía complementaria (Tanenbaum, Abramson, Tomasi, Couch, Stremler…).
-7. Conocimiento general del agente — **sólo como apoyo y siempre señalado como tal**.
+- El **programa analítico** (`material/catedra/`) define qué entra en la materia y su vocabulario.
+- El **documento original** es la autoridad para lo que afirma: PDF, filmina, guía o enunciado dentro
+  de `material/`.
+- `material/_cache/` es una transcripción derivada para buscar y redactar. Facilita el acceso, pero no
+  es una fuente independiente ni reemplaza el original ante dudas de fórmulas, figuras o notación.
 
-Regla dura: **el nivel 7 nunca contradice al 1 en silencio.** Si el conocimiento general del agente
+Dentro del alcance del programa, se priorizan las fuentes así:
+
+1. Material oficial de cátedra (`material/teoria/`, `material/practica/`).
+2. Bibliografía **obligatoria**: Forouzan, Castro Lechtaler & Fusario, Liberatori, Ibe, Stallings.
+3. Normas y recomendaciones citadas por la cátedra (UIT-T, IEEE, EIA/TIA).
+4. Bibliografía complementaria (Tanenbaum, Abramson, Tomasi, Couch, Stremler…).
+5. Conocimiento general del agente — **sólo como apoyo y siempre señalado como tal**.
+
+Regla dura: **el nivel 5 nunca contradice al 1 en silencio.** Si el conocimiento general del agente
 difiere del material de cátedra, se escribe lo de cátedra y se registra la diferencia como gotcha.
 
 ---
@@ -160,7 +166,8 @@ difiere del material de cátedra, se escribe lo de cátedra y se registra la dif
 1. Identificar el material del tema en material/teoria/ o material/practica/
 2. Buscar su transcripción en material/_cache/
 3. Si no existe, generarla (ver abajo)
-4. Redactar desde la transcripción; usar el PDF como autoridad ante dudas de diagrama o notación
+4. Usar la transcripción para buscar y redactar; contrastar el resultado con el PDF, que es la
+   autoridad para texto, diagramas y notación
 5. Ubicar el archivo en la unidad correcta según el programa analítico
 6. Registrar el tema en el índice de la unidad (INDICE.md)
 ```
@@ -196,6 +203,9 @@ El front matter lleva `estado`. Significan cosas concretas:
 
 No marcar `completo` un apunte sin ejemplo numérico ni sección de errores comunes. Es la regla que
 evita que el repo se llene de esqueletos que parecen apuntes.
+
+Las capturas rápidas no llevan este estado ni front matter obligatorio: son registro de clase, no
+material consolidado. Su trazabilidad vive en la bitácora hasta que se integran en apuntes por tema.
 
 ---
 

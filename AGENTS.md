@@ -98,6 +98,7 @@ Reglas duras:
 - **Regla del apunte**: `problema físico → concepto → modelo mental → formalización → ejemplo numérico
   → caso real → errores típicos → respuesta de examen`.
 - **Front matter YAML obligatorio** (`unidad`, `tema`, `estado`, `fuentes`, `actualizado`).
+- El YAML es obligatorio en apuntes consolidados y práctica resuelta; las capturas rápidas no lo usan.
 - **Matemática en LaTeX**: inline `$C = B\log_2(1+S/N)$`, en bloque `$$...$$`.
 - **Diagramas en Mermaid** cuando ayudan (tramas, capas, topologías, cadenas de señal). No metas
   diagramas decorativos: si no aporta, no va.
@@ -106,7 +107,8 @@ Reglas duras:
 - **Todo apunte cierra con "Resumen mental" + checklist de examen.** No es opcional: es lo que convierte
   el apunte en discurso de oral.
 - **Sección "Errores típicos"** en cada concepto central. Es la que más rinde en el parcial.
-- Enlaces internos con rutas relativas: `[Serie de Fourier](../02-senales-telecomunicaciones/serie-de-fourier.md)`.
+- Enlaces internos con rutas relativas y comprobables; la ruta debe resolver desde el archivo que
+  contiene el enlace.
 - `estado: borrador | en-progreso | completo | revisado`. No marques `completo` un apunte sin ejemplo
   numérico ni sección de errores típicos.
 - La plantilla es flexible: los conceptos centrales usan los ocho bloques, los secundarios se resuelven
@@ -119,7 +121,8 @@ Reglas duras:
    ```bash
    pdftotext -layout -enc UTF-8 "material/teoria/<archivo>.pdf" "material/_cache/<nombre>.txt"
    ```
-3. Redactá desde el cache; usá el PDF como autoridad ante dudas de diagrama o notación.
+3. Usá el cache para buscar y redactar; contrastá siempre con el PDF/material original, que es la
+   autoridad. El cache es un derivado auxiliar y no se cita como fuente independiente.
 4. Registrá el tema en el `INDICE.md` de la unidad.
 
 > No redactes el apunte final de un tema si su PDF todavía no tiene cache textual, salvo pedido
@@ -132,6 +135,10 @@ Reglas duras:
 
 ## 4. Modos de trabajo
 
+El flujo operativo completo y los roles Curador, Tutor y Verificador están en
+[`docs/flujo-agentico.md`](docs/flujo-agentico.md). Este archivo conserva las reglas; ese documento
+explica cómo pedir el trabajo sin duplicarlas.
+
 Cuando el estudiante te pide algo, identificá cuál de estos modos aplica:
 
 | Pedido | Modo | Qué hacés |
@@ -142,6 +149,9 @@ Cuando el estudiante te pide algo, identificá cuál de estos modos aplica:
 | "Tomame X" / "Preguntame" | **Evaluar** | Preguntas de menor a mayor dificultad, una por vez. Corregís con el porqué. |
 | "Resolvé este ejercicio" | **Practicar** | Método antes que resultado. Guiás; sólo resolvés entero si te lo piden. |
 | "Repasá / mejorá el apunte X" | **Revisar** | Verificás rigor, unidades, ejemplos, coherencia con el programa. Señalás huecos. |
+
+Una consulta, explicación o evaluación **no autoriza a modificar archivos**. Para consolidar una
+captura o editar un apunte, el pedido debe indicarlo explícitamente.
 
 Si el pedido es ambiguo entre enseñar y redactar, **preguntá cuál quiere** antes de escribir archivos.
 

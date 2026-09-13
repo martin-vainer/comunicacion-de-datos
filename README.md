@@ -7,9 +7,10 @@ Universidad Tecnológica Nacional. Plan 2023 · Nivel 4º · Cuatrimestral.
 
 ```
 apuntes/          Producción propia, en Markdown
+  BITACORA.md      Recorrido cronológico y trazabilidad de las clases
   teoria/         Un directorio por unidad del programa (01 a 08)
   practica/       TPs, guías de ejercicios, laboratorios
-  _plantillas/    Plantillas de apunte y de ejercicio
+  _plantillas/    Plantillas de captura, apunte, ejercicio e índice
 
 material/         Fuentes de terceros — no se editan
   teoria/         PDFs, libros, filminas de cátedra
@@ -33,8 +34,22 @@ material/         Fuentes de terceros — no se editan
 Los apuntes son Markdown plano: matemática en LaTeX (`$...$`), diagramas en Mermaid. Se leen en
 cualquier editor, en GitHub o en Obsidian.
 
-Este repo está preparado para trabajarse con un agente de código. Las instrucciones del agente —rol
-pedagógico, convenciones de escritura, modos de trabajo— están en [AGENTS.md](AGENTS.md).
+Dos entradas cubren necesidades distintas:
+
+- [Índice de la Unidad 2](apuntes/teoria/02-senales-telecomunicaciones/INDICE.md): navegar por tema.
+- [Bitácora de clases](apuntes/BITACORA.md): recuperar el recorrido de la cursada y saber dónde se
+  originó cada contenido.
+
+Durante la clase se usa la [plantilla de captura rápida](apuntes/_plantillas/captura-clase.md), sin
+YAML obligatorio. Después se contrasta la captura y recién entonces se consolida como apunte por tema.
+
+Este repo está preparado para trabajarse con agentes, pero no depende de ellos. El circuito y los
+pedidos operativos están en [Flujo agéntico](docs/flujo-agentico.md); las reglas del agente están en
+[AGENTS.md](AGENTS.md), y la [metodología](apuntes/_plantillas/metodologia.md) es la única autoridad
+pedagógica.
+
+Los hitos del refactor y su reversión segura se documentan en
+[Hitos y rollback](docs/hitos-y-rollback.md).
 
 ## Bibliografía obligatoria
 

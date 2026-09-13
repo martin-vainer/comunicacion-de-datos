@@ -10,6 +10,7 @@ apuntes/          Producción propia, en Markdown
   BITACORA.md      Recorrido cronológico y trazabilidad de las clases
   teoria/         Un directorio por unidad del programa (01 a 08)
   practica/       TPs, guías de ejercicios, laboratorios
+  repaso/         Preguntas y actividades derivadas de apuntes consolidados
   _plantillas/    Plantillas de captura, apunte, ejercicio e índice
 
 material/         Fuentes de terceros — no se editan

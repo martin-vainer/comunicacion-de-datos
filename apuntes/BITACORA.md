@@ -11,8 +11,8 @@ consolide por tema, se agrega su destino sin borrar el origen.
 | Clase | Fecha | Unidad/es | Estado | Destino consolidado |
 |---|---|---|---|---|
 | [Teoría 1](teoria/01-introduccion-comunicaciones/Apuntes-clase%201.md) | no registrada | U1 | captura histórica | pendiente |
-| [Teoría 2](teoria/02-senales-telecomunicaciones/apuntes-clase%202.md) | no registrada | U2 | captura histórica | pendiente |
-| [Teoría 3](teoria/02-senales-telecomunicaciones/apuntes-clase3.md) | no registrada | U2 | captura histórica | pendiente |
+| [Teoría 2](teoria/02-senales-telecomunicaciones/apuntes-clase%202.md) | 2026-08-20 | U2 | captura histórica | [Ancho de banda](teoria/02-senales-telecomunicaciones/ancho-de-banda.md) y [Serie de Fourier](teoria/02-senales-telecomunicaciones/serie-de-fourier.md), sólo secciones homónimas |
+| [Teoría 3](teoria/02-senales-telecomunicaciones/apuntes-clase3.md) | no registrada | U2 | captura histórica | [Ancho de banda](teoria/02-senales-telecomunicaciones/ancho-de-banda.md) y [Serie de Fourier](teoria/02-senales-telecomunicaciones/serie-de-fourier.md), tren rectangular |
 | [Teoría 4 — señales](teoria/02-senales-telecomunicaciones/apuntes-clase%204.md) | no registrada | U2 | captura histórica | pendiente |
 | [Teoría 4 — redes](teoria/03-redes-telecomunicaciones/apuntes-clase%204.md) | no registrada | U3 | captura histórica | pendiente |
 | [Teoría 5 — redes](teoria/03-redes-telecomunicaciones/apuntes-clase%205.md) | no registrada | U3 | captura histórica | pendiente |
@@ -23,8 +23,8 @@ consolide por tema, se agrega su destino sin borrar el origen.
 | Clase | Fecha | Unidad/es | Estado | Destino consolidado |
 |---|---|---|---|---|
 | [Práctica 1](practica/clase%2001.md) | no registrada | U1 | captura histórica | pendiente |
-| [Práctica 2](practica/clase%2002.md) | no registrada | U2 | captura histórica | pendiente |
-| [Práctica 3](practica/clase%2003.md) | no registrada | U2 y U3 | captura histórica | pendiente |
+| [Práctica 2](practica/clase%2002.md) | 2026-08-18 | U2 | captura histórica | [Ancho de banda](teoria/02-senales-telecomunicaciones/ancho-de-banda.md), sólo definición y relación con ancho de pulso |
+| [Práctica 3](practica/clase%2003.md) | 2026-08-25 | U2 y U3 | captura histórica | [Serie de Fourier](teoria/02-senales-telecomunicaciones/serie-de-fourier.md), sólo señales periódicas, paridad y coeficientes; velocidades siguen pendientes |
 | [Práctica 4](practica/clase%2004.md) | no registrada | U3 | `en-progreso` en origen | pendiente |
 
 ## Repaso y cuestionarios
@@ -33,7 +33,7 @@ consolide por tema, se agrega su destino sin borrar el origen.
 |---|---|---|---|---|
 | [Clase 5 — cuestionario](practica/Clase%2005.md) | no registrada | U3 | captura histórica | pendiente |
 | [Cuestionario U1 y U2](teoria/Cuestionarios/cuestionario%20U1%20y%20U2.md) | no registrada | U1 y U2 | captura histórica | pendiente |
-| [Cuestionario U3](teoria/03-redes-telecomunicaciones/cuestionario_U3.md) | no registrada | U2 y U3 | captura histórica | pendiente |
+| [Cuestionario U3](teoria/03-redes-telecomunicaciones/cuestionario_U3.md) | no registrada | U2 y U3 | captura histórica | [Serie de Fourier](teoria/02-senales-telecomunicaciones/serie-de-fourier.md) y [Ancho de banda](teoria/02-senales-telecomunicaciones/ancho-de-banda.md), sólo pregunta 2; resto pendiente |
 
 ## Regla de actualización
 

@@ -1,0 +1,468 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/U2/U 2 Características de las señales de telecom.pdf
+# sha256-original: 2df3d853f92b76da06a4a3e01bf3d701ad5e7ed2a4537d56d64c9ae5554037f2
+# paginas-pdf: 48
+# extractor: pypdf 6.14.2
+# generado: 2026-09-13
+# Ante dudas de fórmulas, figuras o notación, consultar el PDF original.
+
+===== PÁGINA PDF 1 =====
+COMUNICACIÓN DE DATOS
+U 2
+CARACTERÍSTICAS DE LAS SEÑALES DE
+TELECOM
+Ingeniero ALEJANDRO LUIS ECHAZÚ
+alejandroechazu@frba.utn.edu.ar
+
+===== PÁGINA PDF 2 =====
+CARACTERÍSTICAS DE LAS SEÑALES
+Analógicas Digitales
+Valores que adopta Infinitos Finitos / discretos
+Transporte de la info En la forma En la codificación
+Inmunidad al ruido Menos Más
+Error Decisión infinitos
+estados
+Decisión finitos
+estados
+Costos Más Menos
+Medición calidad de
+canal
+Relación S/N BER
+===== PÁGINA PDF 3 =====
+CARACTERÍSTICAS DE LAS SEÑALES
+Analógicas Digitales
+Conversión
+A/D o D/A
+Módem CODEC, digitalizador
+Alcance de la
+transmisión
+Finito
+Uso de amplificador
+Ganancia (G)
+Infinito
+Uso de rep regenerativo
+Umbral detección
+
+===== PÁGINA PDF 4 =====
+UNIDADES DE TRANSMISIÓN
+Se basan en la función matemática logaritmo.
+Y = log10 X
+Recordemos: 10y = X,   ejemplo
+2 = log 10 100
+•Relaciona dos magnitudes mediante un cociente (X) obteniendo
+un resultado (Y) adimensional.
+•Se aprovechan las propiedades matemáticas de los logaritmos.
+===== PÁGINA PDF 5 =====
+UNIDADES DE TRANSMISIÓN
+TIPOS
+RELATIVAS
+ABSOLUTAS
+Decibel (dB)
+Decibel miliwatt (dBm)
+Decibel milivoltio (dBmV)
+INDICA LA RELACIÓN ENTRE POTENCIAS, TENSIONES O
+CORRIENTES
+dB             veces
+dBm           mW
+dBmV          mV
+===== PÁGINA PDF 6 =====
+Amplificación y Atenuación
+Descripción usando las unidades de transmisión relativas
+
+===== PÁGINA PDF 7 =====
+Definición de ancho de banda de una línea de
+transmisión usando dB
+Se define el ancho de banda como el intervalo de frecuencias
+para los cuales la atenuación en la línea de transmisión no es
+mayor a 3 dB.
+===== PÁGINA PDF 8 =====
+UNIDADES DE TRANSMISIÓN
+ALGUNOS USOS
+•MEDIR GANANCIAS, ATENUACIONES EN ELECTRÓNICA Y
+TELECOMUNICACIONES
+•DAR VALORES DE POTENCIA O TENSIONES
+•MEDIR POTENCIAS SONORAS
+https://www.youtube.com/watch?v=M-y7uGrCEBk
+VALORES
+TÍPICOS
+dB Veces
+3 Doble
+6 4
+10 10
+20 100
+30 1000
+40 10000
+-3 Mitad
+-6 1/4
+-10 1/10
+===== PÁGINA PDF 9 =====
+x veces (Psal/Pent) = 10 ^ (y dB / 10)
+y (dB) Ganancia = 10 * log x (PSal / PEnt)
+19.953 veces = 10 ^ (43 dB / 10)
+43 dB = 10 * log 19.953
+UNIDADES DE TRANSMISIÓN
+GANANCIA DE UN AMPLIFICADOR
+Forward Station Performance Units Auto/Thermal with 10.5 dB I/S
+EQ
+Operational Gain (minimum) dB 43
+Internal Tilt (± 0.5 dB) dB 15.5
+Noise Figure @ 54 MHz dB 8.5
+Noise Figure @ 1 GHz dB 8.0
+GainMaker®  High Gain Dual System Amplifier 1 GHz with 42/54 MHz Split
+19953 veces
+===== PÁGINA PDF 10 =====
+UNIDADES DE TRANSMISIÓN
+NIVEL DE TRANSMISIÓN Y RECEPCIÓN DE SEÑAL EN
+CABLE MÓDEM
+y dBmV = 20 * log (x mV / 1 mV)
+x mV = 1 mV 10 ^ (y dBmV / 20)
+139,64 mV
+1,30 mV
+===== PÁGINA PDF 11 =====
+UNIDADES DE TRANSMISIÓN
+ATENUACIONES EN MEDIOS DE COMUNICACIONES
+COAXIL@ Frequency
+MHz
+dB/100 ft.
+(MAX.)
+dB/100
+meters
+(MAX.)
+5 MHz 0.58 dB 1.90 dB
+55 MHz 1.60 dB 5.25 dB
+83 MHz 1.95 dB 6.40 dB
+187 MHz 2.85 dB 9.35 dB
+211 MHz 3.05 dB 10.00 dB
+250 MHz 3.30 dB 10.82 Db
+300 MHz 3.55 dB 11.64 dB
+350 MHz 3.85 dB 12.63 dB
+400 MHz 4.15 dB 13.61 dB
+450 MHz 4.40 dB 14.43 dB
+500 MHz 4.66 dB 15.29 dB
+550 MHz 4.90 dB 16.08 dB
+600 MHz 5.10 dB 16.73 dB
+750 MHz 5.65 dB 18.54 dB
+865 MHz 6.10 dB 20.01 dB
+1000 MHz 6.55 dB 21.49 dB
+F6TSVM
+75 Ohm Coaxial
+Cable Drop
+Cable
+_
++
+DIVISOR DE POTENCIA
+===== PÁGINA PDF 12 =====
+SEÑALES DE COMUNICACIONES
+
+ SEÑALES PERIÓDICAS O NO PERIÓDICAS
+
+ DOMINIO DEL TIEMPO Y DE LA
+FRECUENCIA
+
+ SERIE O TRANSFORMADA DE FOURIER
+
+ SEÑALES PERIÓDICAS
+
+SENOIDAL ARMÓNICA SIMPLE
+
+ONDA CUADRADA
+
+PULSO RECTANGULAR (TREN)
+===== PÁGINA PDF 13 =====
+SEÑAL ARMÓNICA SENOIDAL SIMPLE
+SEÑAL ONDA CUADRADA
+===== PÁGINA PDF 14 =====
+PARÁMETROS
+
+ AMPLITUD
+
+ PULSACIÓN O VELOCIDAD ANGULAR
+
+ FASE INICIAL
+
+ FRECUENCIA
+
+ PERÍODO
+
+ FRECUENCIA DE REPETICIÓN DE PULSO
+(FRP)
+
+ LONGITUD DE ONDA
+===== PÁGINA PDF 15 =====
+SERIE DE FOURIER - SEÑALES PERIÓDICAS
+EXPRESIÓN TRIGONOMÉTRICA
+DESARROLLO DE SEÑAL CUADRADA (a0= 0 y an= 0)
+===== PÁGINA PDF 16 =====
+EXPRESIÓN COMPLEJA
+SERIE DE FOURIER
+MÓDULO DE Cn
+ESPECTRO DE AMPLITUD
+FASE DE Cn
+ESPECTRO DE FASE
+α
+ω
+ω
+===== PÁGINA PDF 17 =====
+•ONDA CUADRADA
+APROXIMADA CON
+DOS COMPONENTES
+DE FRECUENCIA
+•PERIÓDICA
+•ESPECTRO DISCRETO
+• UN PULSO CUADRADO
+•NO PERIÓDICA
+•ESPECTRO CONTINUO
+  
+===== PÁGINA PDF 18 =====
+ONDA CUADRADA
+SUMA DE DOS
+COMPONENTES
+EN FRECUENCIA
+
+  
+
+===== PÁGINA PDF 19 =====
+
+
+ONDA CUADRADA
+===== PÁGINA PDF 20 =====
+ANALIZADOR DE ESPECTRO
+(dominio de la frecuencia)
+OSCILOSCOPIO
+(dominio del tiempo)
+
+===== PÁGINA PDF 21 =====
+ONDA
+CUADRADA
+AGREGANDO
+COMPONENTE
+CONTINUA
+  
+===== PÁGINA PDF 22 =====
+ANCHO DE BANDA
+ES LA PARTE DEL ESPECTRO (INTERV ALO DE
+FRECUENCIAS) DONDE SE CONCENTRA LA MAYOR
+CANTIDAD DE ENERGÍA DE LA SEÑAL.
+
+===== PÁGINA PDF 23 =====
+
+===== PÁGINA PDF 24 =====
+TREN DE PULSOS RECTANGULARES
+RELACIÓN ENTRE ANCHO DE PULSO
+Y ESPECTRO DE AMPLITUD
+LÍNEAS ESPECTRALES SEGÚN PERÍODO (T)
+PUNTOS DE CORTE (AMPLITUD “0”) SEGÚN ANCHO DE PULSO
+(A  / T) * (sen x / x)
+x = (n ) / 2
+ω
+ω
+===== PÁGINA PDF 25 =====
+ONDAS ELECTROMAGNÉTICAS (OEM)
+CAMPO
+ ELÉCTRICO (E) Y CAMPO MAGNÉTICO (H)
+E Y H V ARIABLES EN TIEMPO Y ESPACIO (Ecuación de onda)
+https://www.youtube.com/watch?v=Dz2Si3QvZCE (2´ 36¨)
+===== PÁGINA PDF 26 =====
+ECUACIÓN DE ONDA
+Campo Eléctrico     E
+=
+Eo
+ cos
+ω
+t
+ω
+ (pulsación angular)
+Campo
+Magnético
+ H = Ho cos
+ω
+t
+t
+ (
+instante
+)
+E (
+t;y
+) =
+Eo
+ cos (
+ω
+t
+–
+ y/v)             v (
+velocidad
+ de la luz)
+H (
+t;x
+) = Ho cos (
+ω
+t
+–
+ x/v)       y / x (
+coordenadas
+ en
+ una
+ dirección
+)
+E = f (x, y, z, t)
+H = f (x, y, z, t)
+
+===== PÁGINA PDF 27 =====
+PARÁMETROS FRECUENCIA, PERÍODO Y LONGITUD DE ONDA
+f
+c
+Tf
+
+
+
+/1
+https://www.youtube.com/watch?v=cKKM9boWqZs 12´4¨
+===== PÁGINA PDF 28 =====
+• Longitud de onda (ʎ) en metros
+• Frecuencia (Hz) en
+ciclos/segundo o Hertz
+• Período (T) en segundos
+• Velocidad de propagación de
+luz u OEM en el vacío (C) en
+metros/segundo
+• Polarización
+
+===== PÁGINA PDF 29 =====
+ESPECTRO ELECTROMAGNÉTICO
+
+===== PÁGINA PDF 30 =====
+SEÑAL DE BANDA BASE
+Son aquellas señales que, generadas por una fuente de información,
+no sufren ningún proceso de modulación o tratamiento a su salida.
+Distintos tipos de codificación.
+CÓDIGOS BANDA BASE O DE LÍNEA
+E
+T
+C
+ETC CC
+ETCD ETCD
+ETC
+CC
+LC
+CD
+ED
+===== PÁGINA PDF 31 =====
+CÓDIGOS DE LÍNEA O BANDA BASE
+ADAPTAN LA SEÑAL A LA LÍNEA DE COMUNICACIÓN
+ABs (señal)   ABl (línea)
+ABs > ABl               distorsión e ISI
+ASPECTOS A CONSIDERAR
+• Importancia de las frecuencias bajas. Problema de acoplamiento o
+transformadores.
+• Envío de señal de sincronismo.
+• Umbral de decisión. Probabilidad de error.
+• Dependencia entre símbolos.
+• Potencia transmitida.
+•Ancho de los pulsos. Ancho de banda.
+===== PÁGINA PDF 32 =====
+CÓDIGOS DE LÍNEA O BANDA BASE
+CLASIFICACIÓN DE LAS SEÑALES
+Según la polaridad
+Según el ancho del pulso
+()
+Unipolar
+Polar
+Bipolar (seudoternario)
+No Retorno a Zero (NRZ)
+Retorno a Zero (RZ)
+ = Is
+ < Is
++ 0    0 -
++  -
++ 0  -
+Unipolar
+===== PÁGINA PDF 33 =====
+Polar
+Bipolar
+CÓDIGOS DE LÍNEA O BANDA BASE
+===== PÁGINA PDF 34 =====
+RZ
+NRZ
+CÓDIGOS DE LÍNEA O BANDA BASE
+
+===== PÁGINA PDF 35 =====
+CÓDIGOS DE LÍNEA O BANDA BASE
+Representación de los
+símbolos digitales
+Señales eléctricas
+equivalentes
+La información va
+Estado
+Cambio de Estado
+(Diferencial)
+Niveles
+Fases o
+Transiciones
+===== PÁGINA PDF 36 =====
+
+===== PÁGINA PDF 37 =====
+
+===== PÁGINA PDF 38 =====
+
+===== PÁGINA PDF 39 =====
+HDB-3 (High Density Bipolar – 3)
+Cada 0000 se reemplazan por impulsos: R00V o 000V . ALEATORIZACIÓN.
+R00V cuando es par el número de impulsos entre la violación V anterior y la que se
+va a introducir.
+000V cuando es impar el número de impulsos entre la violación V anterior y la que se
+va a introducir.
+
+===== PÁGINA PDF 40 =====
+CODIFICACIÓN DIFERENCIAL
+La señal se codifica con transiciones. Si “1” hay transición. Si “0” no
+la hay. No importa la polaridad.
+Unipolar diferencial
+===== PÁGINA PDF 41 =====
+CÓDIGO MANCHESTER BIFASE
+•SIEMPRE TRANSICIÓN EN LA MITAD DEL INTERV ALO DE BIT (IB).
+•LA TRANSICIÓN TRANSMITE DA TOS Y SINCRONIZA (AUTOSINCRONIZANTE).
+•OCUPA MAYOR ANCHO DE BANDA.
+•SI “0” LA TRANSICIÓN ES DE ALTO A BAJO.
+•SI “1” LA TRANSICIÓN ES DE BAJO A ALTO.
+•ES USADO EN REDES ETHERNET (IEEE 802.3)
+
+===== PÁGINA PDF 42 =====
+CÓDIGO MANCHESTER BIFASE
+DIFERENCIAL
+•SIEMPRE TRANSICIÓN EN LA MITAD DEL INTERV ALO DE BIT (IB).
+AUTOSINCRONIZANTE. MAYOR ANCHO DE BANDA.
+•SI “0” ADEMÁS HAY TRANSICIÓN EN EL INICIO DE IB.
+•SI “1” NO TRANSICIÓN EN EL INICIO DE IB.
+•ES USADO EN REDES TOKEN RING (IEEE 802.5)
+
+===== PÁGINA PDF 43 =====
+CÓDIGO 2B 1Q / 4B 3T
+
+===== PÁGINA PDF 44 =====
+COMPARACIÓN DE CÓDIGOS AMI - 4B 3T - 2B 1Q
+
+===== PÁGINA PDF 45 =====
+ANÁLISIS ESPECTRAL DE CÓDIGOS
+
+===== PÁGINA PDF 46 =====
+CUADRO
+COMPARADO
+DE CÓDIGOS
+
+===== PÁGINA PDF 47 =====
+FILTROS
+Circuitos, sistemas o partes de redes que presentan
+características selectivas respecto de las frecuencias.
+Aplica la característica de la atenuación.
+Parámetros de un filtro:
+ Ancho de Banda
+ Frecuencias de corte
+ Selectividad
+Comportamiento Ideal o Real de un filtro.
+Diseño:
+ Circuito L C
+ Cristal
+ Activos
+
+===== PÁGINA PDF 48 =====
+TIPOS DE FILTROS Y SÍMBOLO

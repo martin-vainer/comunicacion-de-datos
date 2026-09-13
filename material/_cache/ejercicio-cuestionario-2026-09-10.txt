@@ -1,0 +1,92 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: Ejercicio cuestionario 10-09-2026.pdf
+# sha256-original: 01562d496b527ca4f91d8c64fdf835896d6f4ae340c32f0b1f9365b7c886ab53
+# paginas-pdf: 3
+# extractor: pypdf 6.14.2
+# generado: 2026-09-13
+# Ante dudas de fórmulas, figuras o notación, consultar el PDF original.
+
+===== PÁGINA PDF 1 =====
+Empezamos por:
+𝑭𝑹𝑷 = 𝟏𝟎𝟎 pps = 𝟏𝟎𝟎 𝑯𝒛
+𝑽𝒎𝒐𝒅 = 𝟐𝟎𝟎𝟎 baudios
+𝑨 = 𝟏 𝑽
+Primero obtenemos los dos tiempos importantes.
+El período de repetición de los pulsos es:
+𝑻 = 𝟏
+𝑭𝑹𝑷 = 𝟏
+𝟏𝟎𝟎 𝑯𝒛 = 𝟎. 𝟎𝟏 𝒔 = 𝟏𝟎 𝒎𝒔
+La duración de cada pulso viene dada por la velocidad de modulación:
+𝝉 = 𝟏
+𝑽𝒎𝒐𝒅
+= 𝟏
+𝟐𝟎𝟎𝟎 = 𝟎. 𝟎𝟎𝟎𝟓 𝒔 = 𝟎. 𝟓 𝒎𝒔
+Por lo tanto, el ciclo de trabajo es:
+𝝉
+𝑻 = 𝟎. 𝟓 𝒎𝒔
+𝟏𝟎 𝒎𝒔 = 𝟎. 𝟎𝟓
+
+a. Espectro de amplitud de Fourier
+Para un tren de pulsos rectangulares:
+∣ 𝑪𝒏 ∣= 𝑨 𝝉
+𝑻 ∣∣∣∣∣𝐬𝐢𝐧 (𝒏𝝅 𝝉
+𝑻)
+𝒏𝝅 𝝉
+𝑻 ∣∣∣∣∣
+
+Las componentes espectrales aparecen separadas por la FRP:
+𝒇𝒏 = 𝒏 ⋅ 𝑭𝑹𝑷
+Es decir:
+𝟎, 𝟏𝟎𝟎, 𝟐𝟎𝟎, 𝟑𝟎𝟎, …  𝑯𝒛
+y están contenidas dentro de una envolvente tipo sinc.
+El primer cero de esa envolvente aparece en:
+𝒇 = 𝟏
+𝝉
+𝒇 = 𝟏
+𝟎. 𝟎𝟎𝟎𝟓 𝒔 = 𝟐𝟎𝟎𝟎 𝑯𝒛
+===== PÁGINA PDF 2 =====
+
+
+b. Ancho de banda y cantidad de armónicas
+Tomando como ancho de banda el espectro hasta el primer cero de la envolvente:
+𝑨𝑩 = 𝟏
+𝝉
+𝑨𝑩 = 𝟐𝟎𝟎𝟎 𝑯𝒛
+Las armónicas están separadas cada:
+𝑭𝑹𝑷 = 𝟏𝟎𝟎 𝑯𝒛
+Entonces:
+𝑵 = 𝑨𝑩
+𝑭𝑹𝑷
+𝑵 = 𝟐𝟎𝟎𝟎 𝑯𝒛
+𝟏𝟎𝟎 𝑯𝒛 = 𝟐𝟎
+Por lo tanto:
+𝑵 = 𝟐𝟎 armo
+ˊ
+nicas
+Un detalle importante: la armónica 20 cae justo en el primer cero, porque:
+𝒇𝟐𝟎 = 𝟐𝟎 ⋅ 𝟏𝟎𝟎 = 𝟐𝟎𝟎𝟎 𝑯𝒛
+por lo que su amplitud es cero. Estrictamente hay 19 armónicas no nulas antes del primer
+cero, pero en este tipo de ejercicios normalmente se expresa:
+𝟐𝟎 armo
+ˊ
+nicas hasta el primer cero
+
+===== PÁGINA PDF 3 =====
+
+c. Amplitud máxima de 𝑪𝒏
+La envolvente tiene su máximo para 𝒏 = 𝟎:
+𝑪𝒏,𝐦𝐚𝐱 = 𝑨 𝝉
+𝑻
+Reemplazamos:
+𝑪𝒏,𝐦𝐚𝐱 = 𝟏 𝑽 ⋅ 𝟎. 𝟎𝟎𝟎𝟓 𝒔
+𝟎. 𝟎𝟏 𝒔
+𝑪𝒏,𝐦𝐚𝐱 = 𝟏 𝑽 ⋅ 𝟎. 𝟎𝟓
+𝑪𝒏,𝐦𝐚𝐱 = 𝟎. 𝟎𝟓 𝑽
+Resultados finales
+𝑻 = 𝟏𝟎 𝒎𝒔
+𝝉 = 𝟎. 𝟓 𝒎𝒔
+𝑨𝑩 = 𝟐𝟎𝟎𝟎 𝑯𝒛
+𝑵 = 𝟐𝟎 armo
+ˊ
+nicas
+𝑪𝒏,𝐦𝐚𝐱 = 𝟎. 𝟎𝟓 𝑽

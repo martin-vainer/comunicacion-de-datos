@@ -5,8 +5,13 @@ un medio y qué transformaciones introduce.
 
 ## Apuntes temáticos
 
-Todavía no hay apuntes consolidados por tema. No se crean archivos vacíos: cada enlace aparecerá
-cuando el contenido haya sido contrastado y redactado.
+| Tema | Para qué leerlo |
+|---|---|
+| [Serie de Fourier](serie-de-fourier.md) | Pasar de una señal periódica a sus componentes espectrales |
+| [Ancho de banda](ancho-de-banda.md) | Distinguir el intervalo de una señal, de un canal y del criterio de primer cero |
+
+El estado y las fuentes vigentes se consultan en el front matter de cada apunte; el índice no los
+duplica.
 
 ## Capturas relacionadas
 
@@ -19,6 +24,11 @@ Estas capturas preservan el orden de cursada y no constituyen material revisado:
 | [Clase 4](apuntes-clase%204.md) | Códigos de línea, análisis espectral y filtros |
 | [Práctica 2](../../practica/clase%2002.md) | Señales, espectro, banda base, códigos de línea y TP 2 |
 | [Práctica 3](../../practica/clase%2003.md) | Señales periódicas y serie de Fourier |
+
+## Repaso
+
+- [Fourier y ancho de banda](../../repaso/u02-fourier-y-ancho-de-banda.md) — preguntas conceptuales,
+  mini ejercicios y control oral del piloto.
 
 ## Orden conceptual previsto
 
@@ -35,4 +45,6 @@ El orden se confirmará al consolidar; esta línea orienta la lectura y no susti
 
 ## Pendientes
 
-- Consolidar el piloto de serie de Fourier y ancho de banda después de contrastar material y figuras.
+- Contrastar la normalización de la forma compleja de Fourier con bibliografía obligatoria o
+  aclaración docente.
+- Precisar el criterio cuantitativo detrás de “mayor cantidad de energía” para ancho de banda de señal.

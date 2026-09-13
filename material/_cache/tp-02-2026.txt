@@ -1,0 +1,140 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/TP  2  2026.pdf
+# sha256-original: 52f907d3c4881c34434be1ca8dcf18468afdae6fab86fcff26b02056a4f2e247
+# paginas-pdf: 3
+# extractor: pypdf 6.14.2
+# generado: 2026-09-13
+# Ante dudas de fórmulas, figuras o notación, consultar el PDF original.
+
+===== PÁGINA PDF 1 =====
+
+                                                                              MATERIA:
+Comunicaciones
+          UTN – FRBA
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero
+
+
+
+ 1
+
+
+
+
+
+
+
+
+
+DEPARTAMENTO INGENIERIA EN
+SISTEMAS DE INFORMACION
+
+
+
+COMUNICACIONES DE DATOS
+
+COMUNICACIONES
+
+
+
+GUIA DE TRABAJOS PRACTICOS
+
+
+
+
+
+
+
+
+
+===== PÁGINA PDF 2 =====
+
+                                                                              MATERIA:
+Comunicaciones
+          UTN – FRBA
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero
+
+
+
+ 2
+
+
+
+TRABAJO PRACTICO N° 2
+
+Caracteristicas de las señales de telecomunicaciones. Series Fourier.
+Códigos de Linea
+
+1. Graficar una señal analógica  y una señal digital , indicar sus principales características y el
+modo por el cual transportan la  información.
+
+2. Indicar las cinco ventajas más notables de la transmisión digital frente a la analógica. ¿Cuál
+es la principal desventaja de la primera respecto de la segunda?
+
+3. Que funciones cumple un repetidor regenerativo?
+
+4. Dada una función periódica definir ciclo, período, frecuencia, pulsación angular, longitud de
+onda, valor instantáneo,medio y eficaz. Considerar las función  f(t) = A sen(ω . t + φ ).Si se
+tiene la función  f(t) = V(t) = 300 sen( 100 π . t  + π / 2 ) [V]  . Hallar los valores de
+amplitud máxima, frecuencia, pulsación angular, fase inicial, valor medio y valor eficaz.
+
+5. Calcular el rango de variación de la longitud de o nda para las señales electromagnéticas
+portadoras de las emisoras de radio comerciales ubicadas en la banda de FM de 88 a 108
+Mhz.
+
+6. Graficar un tren de pulsos y definir: FRP, ancho de pulso, período y amplitud del pulso.
+
+7. Si por una línea de comunicaciones  de longitud L y resistencia total R circula una corriente
+periódica i(t), y como resultado de la misma se disipa una potencia P, hallar la expresión de
+la corriente continua equivalente que al circular por la resistencia R disipe la misma
+potencia P que la generada por la corriente i(t). .
+
+8. Dada una señal rectangular periódica, en base a la serie de Fourier , calcular los
+coeficientes si la señal rectangular tiene los siguientes valores:
+
+f(t) = 1      0 < t < T/2
+f(t) = -1    -T/2 < t < 0
+
+9. Hallar el espect ro de amplitud de la Serie Compleja de Fourier teniendo en cuenta que la
+FRP es de 4 pps (pulsos por segundo) y la velocidad de modulación es de 20 Baudios.
+Calcular el ancho de banda que deberia tener el canal de comunicaciones.
+
+10. Dado los siguientes datos , FRP = 100 pps (pulsos por segundos), velocidad de modulación
+= 2000 Baudios y la amplitud del pulso (A = 1 V). Se solicita realizar el gráfico de amplitud
+del espectro de Fourier. Calcular el ancho de banda, cantidad de armónicas y el valor
+máximo de Cn.
+
+===== PÁGINA PDF 3 =====
+
+                                                                              MATERIA:
+Comunicaciones
+          UTN – FRBA
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero
+
+
+
+ 3
+11. Dado los siguientes datos, FRP = 300 pps (pulsos por segundos), velocidad de modulación
+= 1200 baudios y la amplitud del pulso (A = 1 V). Se solicita realizar el gráfico de amplitud
+del espectro de Fourier. Calcular el ancho de banda, cantidad de armónic as y el valor
+máximo de Cn.
+
+12. Dado un tren de pulsos de FRP = 10 pps (pulsos por segundos), velocidad de modulación
+igual a 50 baudios y amplitud del pulso (A = 1 V). Se solicita realizar el gráfico de amplitud
+del espectro de Fourier. Calcular el ancho de banda necesario para transmitir dicha señal,
+cantidad de armónicas y el valor máximo de Cn.
+
+13. Indicar las principales características de la transmisión en banda base, en qué
+circunstancias se emplea una transmisión de éste tipo? ¿Que otro tipo de transmisió n
+existe, que características presenta ?
+
+
+14. Para la secuencia siguiente, graficar las señales resultantes de aplicar los códigos AMI, y
+Bipolar RZ. Indicar los requerimientos de AB en cada caso.
+
+Secuencia binaria:  1 0 0 1 0 0 0 0 0 1 1 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1
+
+15. Dada la siguiente secuencia de bits, graficar las señales resultantes utilizando los códigos
+Manchester. Indicar sus principales características.
+Secuencia binaria:  0 1 1 0 0 1 1 0 1 1 1 1 1 0 0 0 0
+
+16. Dada la secuencia anterior aplicarle una codificación autosincronizante.

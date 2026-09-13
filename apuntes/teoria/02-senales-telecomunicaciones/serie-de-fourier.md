@@ -29,7 +29,7 @@ dominio del tiempo y el [ancho de banda](ancho-de-banda.md).
 
 > **Procedencia:** la motivación, las dos representaciones y las figuras de reconstrucción provienen de
 > la presentación de U2, pp. 15-24. Los ejercicios que fijan el alcance están en el TP 2, pp. 2-3. Las
-> notas de [Práctica 3](../../practica/clase%2003.md) aportan el razonamiento de paridad, pero siguen
+> notas de [Práctica 3](../../../capturas/practica/clase%2003.md) aportan el razonamiento de paridad, pero siguen
 > siendo una captura histórica.
 
 ---

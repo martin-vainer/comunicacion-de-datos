@@ -27,8 +27,9 @@ velocidad. **Ancho de banda se mide en hertz; no en bit/s ni en baudios.**
 - [Serie de Fourier](serie-de-fourier.md) — de dónde salen las componentes del espectro.
 
 > **Procedencia:** las definiciones de señal y línea corresponden a la presentación de U2, pp. 7 y
-> 22-24. Las capturas [Teoría 2](apuntes-clase%202.md), [Teoría 3](apuntes-clase3.md) y
-> [Práctica 2](../../practica/clase%2002.md) conservan el recorrido de clase, pero no son la autoridad.
+> 22-24. Las capturas [Teoría 2](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase%202.md),
+> [Teoría 3](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase3.md) y
+> [Práctica 2](../../../capturas/practica/clase%2002.md) conservan el recorrido de clase, pero no son la autoridad.
 
 ---
 

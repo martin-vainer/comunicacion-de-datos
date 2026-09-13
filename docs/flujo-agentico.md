@@ -12,9 +12,10 @@ capturar → proponer integración → contrastar → consolidar → practicar
 ```
 
 1. **Capturar:** durante la clase, registrar rápido con la
-   [plantilla mínima](../apuntes/_plantillas/captura-clase.md). No exigir YAML ni pulir redacción.
-2. **Proponer integración:** identificar unidades y temas posibles; actualizar la bitácora. Todavía
-   no corregir ni mover el original.
+   [plantilla mínima](../apuntes/_plantillas/captura-clase.md) dentro de `capturas/`. No exigir YAML ni
+   pulir redacción; guardar las imágenes junto al Markdown para que sus enlaces relativos sobrevivan.
+2. **Proponer integración:** identificar unidades y temas posibles; actualizar la bitácora. No
+   corregir ni mover el original fuera de `capturas/`.
 3. **Contrastar:** localizar el material original y su cache; verificar conceptos, figuras, cuentas,
    unidades y supuestos contra el original.
 4. **Consolidar:** integrar por tema usando la plantilla correspondiente, conservar procedencia y

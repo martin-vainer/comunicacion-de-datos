@@ -13,33 +13,40 @@ apuntes/          Producción propia, en Markdown
   repaso/         Preguntas y actividades derivadas de apuntes consolidados
   _plantillas/    Plantillas de captura, apunte, ejercicio e índice
 
+capturas/         Registro histórico de clases y cuestionarios, con sus imágenes
+  teoria/         Capturas teóricas en el subárbol de su unidad original
+  practica/       Capturas prácticas y mixtas
+
 material/         Fuentes de terceros — no se editan
   teoria/         PDFs, libros, filminas de cátedra
   practica/       Enunciados, guías, datasets, código
   catedra/        Programa analítico, cronogramas
 ```
 
-## Unidades
+## Navegación por contenido existente
 
-1. Introducción a las comunicaciones
-2. Características de las señales de telecomunicaciones
-3. Redes de telecomunicaciones
-4. Modulación, digitalización y multiplexación de señales
-5. Teoría de la información y de la codificación
-6. Canales de comunicaciones
-7. Medios de comunicaciones
-8. Hardware de comunicaciones
+- [Unidad 1 — Introducción a las comunicaciones](apuntes/teoria/01-introduccion-comunicaciones/INDICE.md)
+- [Unidad 2 — Características de las señales](apuntes/teoria/02-senales-telecomunicaciones/INDICE.md)
+- [Unidad 3 — Redes de telecomunicaciones](apuntes/teoria/03-redes-telecomunicaciones/INDICE.md)
+- [Unidad 4 — Modulación, digitalización y multiplexación](apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/INDICE.md)
+- [Práctica](apuntes/practica/INDICE.md)
+- [Repaso y cuestionarios](apuntes/repaso/INDICE.md)
+
+Las unidades 5 a 8 todavía no tienen apuntes ni capturas propios; su alcance permanece definido en el
+programa y en `AGENTS.md`. No se crean índices vacíos.
 
 ## Cómo se usa
 
 Los apuntes son Markdown plano: matemática en LaTeX (`$...$`), diagramas en Mermaid. Se leen en
 cualquier editor, en GitHub o en Obsidian.
 
-Dos entradas cubren necesidades distintas:
+Tres entradas cubren necesidades distintas:
 
-- [Índice de la Unidad 2](apuntes/teoria/02-senales-telecomunicaciones/INDICE.md): navegar por tema.
+- Los índices anteriores: navegar por tema o tipo de actividad.
 - [Bitácora de clases](apuntes/BITACORA.md): recuperar el recorrido de la cursada y saber dónde se
   originó cada contenido.
+- [`capturas/`](capturas/): consultar el registro histórico íntegro, sin confundirlo con material
+  académicamente revisado.
 
 Durante la clase se usa la [plantilla de captura rápida](apuntes/_plantillas/captura-clase.md), sin
 YAML obligatorio. Después se contrasta la captura y recién entonces se consolida como apunte por tema.

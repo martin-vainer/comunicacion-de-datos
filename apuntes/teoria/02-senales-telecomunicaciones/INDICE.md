@@ -19,11 +19,11 @@ Estas capturas preservan el orden de cursada y no constituyen material revisado:
 
 | Captura | Contenido a integrar |
 |---|---|
-| [Clase 2](apuntes-clase%202.md) | Señales, decibeles y ancho de banda |
-| [Clase 3](apuntes-clase3.md) | Ancho de banda, tren de pulsos y ondas electromagnéticas |
-| [Clase 4](apuntes-clase%204.md) | Códigos de línea, análisis espectral y filtros |
-| [Práctica 2](../../practica/clase%2002.md) | Señales, espectro, banda base, códigos de línea y TP 2 |
-| [Práctica 3](../../practica/clase%2003.md) | Señales periódicas y serie de Fourier |
+| [Clase 2](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase%202.md) | Señales, decibeles y ancho de banda |
+| [Clase 3](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase3.md) | Ancho de banda, tren de pulsos y ondas electromagnéticas |
+| [Clase 4](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase%204.md) | Códigos de línea, análisis espectral y filtros |
+| [Práctica 2](../../../capturas/practica/clase%2002.md) | Señales, espectro, banda base, códigos de línea y TP 2 |
+| [Práctica 3](../../../capturas/practica/clase%2003.md) | Señales periódicas y serie de Fourier |
 
 ## Repaso
 

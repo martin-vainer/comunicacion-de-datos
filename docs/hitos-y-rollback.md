@@ -14,6 +14,11 @@ El punto de partida verificable está documentado en
 | 3 | `56fb1e9` | Traslado sin cambios de las 14 capturas y sus 85 PNG asociados |
 | 4 | `ee66ef7` | Bitácora completa, índices y enlaces hacia la capa histórica |
 | 5 | `f513715` | Extracción canónica del ejercicio 19 y navegación U6/U7 |
+| 6 | `ff123f1` | Registro de hitos y procedimiento de rollback seguro |
+
+La tabla congela los hitos funcionales de la implementación v1. Una corrección documental posterior
+puede no figurar en ella; antes de revertir, el comando de la sección siguiente muestra la secuencia
+real completa y debe tomarse como autoridad.
 
 Para obtener los hashes reales sin depender de este documento:
 
@@ -31,9 +36,18 @@ git diff respaldo/pre-harness-v1..HEAD
 ```
 
 Para deshacer toda la implementación y volver al checkpoint, revertir **de lo más nuevo a lo más
-antiguo**. Ejecutar un comando por vez, revisar el resultado y continuar sólo con el árbol limpio:
+antiguo**. Primero obtener la lista real; `git log` ya la muestra en el orden correcto para revertir:
 
 ```powershell
+git log --format="%h %s" respaldo/pre-harness-v1..HEAD
+```
+
+Revertir primero cualquier corrección posterior que aparezca arriba de `ff123f1`. Luego continuar con
+los hitos v1 conocidos. Ejecutar un comando por vez, revisar el resultado y continuar sólo con el
+árbol limpio:
+
+```powershell
+git revert ff123f1
 git revert f513715
 git revert ee66ef7
 git revert 56fb1e9

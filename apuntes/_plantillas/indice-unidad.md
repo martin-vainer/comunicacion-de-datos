@@ -2,8 +2,8 @@
 PLANTILLA DE ÍNDICE DE UNIDAD
 Se copia como INDICE.md dentro de cada apuntes/teoria/NN-unidad/.
 
-Portado de la "Bitácora / Índice de lectura" de los apuntes de DDS: es lo que hace navegable
-un conjunto grande de apuntes sin leerlos todos. Se actualiza cada vez que se agrega un tema.
+Portado de la "Bitácora / Índice de lectura" de los apuntes de DDS: hace navegable el apunte canónico
+sin duplicar su contenido. Para U1–U4 se actualiza cuando se agrega o reorganiza una sección.
 -->
 
 # Unidad N — Nombre de la unidad
@@ -16,25 +16,35 @@ un conjunto grande de apuntes sin leerlos todos. Se actualiza cada vez que se ag
 
 | # | Tema | Qué conecta |
 |---|---|---|
-| 1 | [Tema](archivo.md) | Concepto previo → capacidad que habilita |
+| 1 | [Tema](APUNTE.md#tema-principal) | Concepto previo → capacidad que habilita |
 
-El estado y las fuentes viven en el apunte enlazado. No se copian acá porque quedarían desactualizados.
+El estado y las fuentes generales viven en el front matter de `APUNTE.md`; cada sección identifica sus
+fuentes. No se duplican acá porque quedarían desactualizados. En U1–U4 los temas son secciones de ese
+único apunte teórico, no archivos separados.
 
 ## Orden de lectura recomendado
 
 No es el orden del programa: es el orden de **dependencia conceptual**.
 
-```txt
-tema-a  ->  tema-b  ->  tema-c
-```
+1. [Tema A](APUNTE.md#tema-principal) → [Tema B](APUNTE.md#tema-siguiente)
 
-Si un tema necesita otro para entenderse, va después aunque la filmina lo muestre antes.
+Si un tema necesita otro para entenderse, va después aunque la filmina lo muestre antes. Mantené esta
+secuencia breve; el desarrollo queda en `APUNTE.md`.
+
+## Práctica y repaso
+
+- [Práctica resuelta](../../practica/INDICE.md)
+- [Repaso y autoevaluación](../../repaso/INDICE.md)
+
+Los ejercicios y las preguntas se mantienen separados del apunte teórico.
 
 ## Dependencias con otras unidades
 
-- **Requiere:** [Tema](../NN-unidad/archivo.md) — por qué.
-- **Habilita:** [Tema](../NN-unidad/archivo.md) — por qué.
+- **Requiere:** [Tema](../NN-unidad/APUNTE.md#seccion) — por qué.
+- **Habilita:** [Tema](../NN-unidad/APUNTE.md#seccion) — por qué.
 
 ## Pendientes
 
-- Tema o vínculo que todavía falta consolidar, sin crear archivos vacíos.
+- Registrá sólo qué sección todavía no está consolidada y enlazala en `APUNTE.md`; el detalle de
+  evidencia y próximas comprobaciones se mantiene en su sección `Pendientes por sección`. No dupliques
+  acá la lista completa ni crees archivos vacíos.

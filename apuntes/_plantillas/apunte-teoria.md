@@ -1,6 +1,5 @@
 ---
-unidad: 0
-tema: Título del tema
+unidad: 1                # Reemplazar por el número de unidad (U1–U4)
 estado: borrador          # borrador | en-progreso | completo | revisado
 fuentes:
   - material/teoria/<archivo>.pdf, pp. X-Y
@@ -9,8 +8,10 @@ actualizado: AAAA-MM-DD
 ---
 
 <!--
-PLANTILLA DE APUNTE TEÓRICO
+PLANTILLA DE APUNTE TEÓRICO CANÓNICO DE UNIDAD
+Para U1–U4: un único APUNTE.md por carpeta de unidad. Los temas son secciones enlazables.
 Criterio completo en apuntes/_plantillas/metodologia.md — leerlo antes de la primera vez.
+El front matter se aplica a toda la unidad: no agregues un campo tema.
 
 Regla del apunte:
   problema físico -> concepto -> modelo mental -> formalización -> ejemplo numérico
@@ -21,9 +22,9 @@ Los conceptos SECUNDARIOS se resuelven con: definición + ejemplo + relación co
 Forzar los ocho bloques en todo genera relleno, y el relleno no se estudia.
 -->
 
-# Título del tema
+# Unidad N — Nombre de la unidad
 
-**Fuentes**
+**Fuentes generales del apunte**
 
 - Material de cátedra: `material/teoria/<archivo>.pdf`
 - Bibliografía: ...
@@ -31,9 +32,9 @@ Forzar los ocho bloques en todo genera relleno, y el relleno no se estudia.
 
 <!-- El cache textual es un derivado de trabajo: no se registra como fuente independiente. -->
 
-**Idea central**
+**Idea central de la unidad**
 
-> Una sola oración. Qué resuelve este tema y por qué existe.
+> Una sola oración. Qué capacidad conceptual reúne la unidad y por qué importa.
 
 **Por qué importa**
 
@@ -42,24 +43,29 @@ quede como un compartimento aislado.
 
 **Requisitos previos**
 
-- [Tema previo](../NN-unidad/archivo.md) — qué hay que tener claro antes de entrar acá.
+- [Tema previo](../NN-unidad/APUNTE.md#seccion) — qué hay que tener claro antes de entrar acá.
 
 ---
 
-## 1) Primer concepto (central)
+<a id="tema-principal"></a>
+## 1) Tema o sección principal
 
-### Problema
+**Fuentes de esta sección:** `material/teoria/<archivo>.pdf`, pp. X–Y; ...
+
+### Concepto central: nombre
+
+#### Problema físico
 
 Qué situación física o de ingeniería aparece ANTES del concepto. Sin esto el concepto se memoriza en
 lugar de entenderse.
 
-### Concepto
+#### Concepto
 
 Definición clara y breve. Nada colgado: si aparece una sigla o una norma, se dice qué es acá mismo.
 
-### Modelo mental
+#### Modelo mental
 
-Analogía, cadena de señal o diagrama. Una sola imagen mental que se pueda recordar.
+Analogía, cadena de señal o diagrama. Una imagen mental que se pueda recordar.
 
 ```txt
 fuente -> codificador -> modulador -> canal -> demodulador -> decodificador -> destino
@@ -74,7 +80,7 @@ graph LR
 
 <!-- Diagrama sólo si aporta. Si es decorativo, no va. -->
 
-### Formalización
+#### Formalización
 
 $$
 \text{fórmula}
@@ -90,7 +96,7 @@ $$
 Cuándo la fórmula deja de aplicar. Ej.: Nyquist supone canal SIN ruido; Shannon supone ruido blanco
 gaussiano aditivo. Aplicarlas fuera de su supuesto es error de concepto, no de cuenta.
 
-### Ejemplo numérico
+#### Ejemplo numérico
 
 Enunciado corto, desarrollo paso a paso, resultado **con unidad**.
 
@@ -105,9 +111,10 @@ Resultado: C ≈ 30,9 kbit/s
 
 **Verificación de razonabilidad:** ¿el orden de magnitud cierra? ¿la unidad cierra?
 
-### Caso real
+#### Caso real (cuando aporte)
 
-Dónde aparece esto fuera del pizarrón: una norma, una tecnología, un valor de catálogo.
+Dónde aparece esto fuera del pizarrón: una norma, una tecnología, un valor de catálogo. Si no aporta a
+la comprensión o no hay una fuente verificable, omitilo.
 
 - Norma / recomendación: ...
 - Tecnología o equipo: ...
@@ -115,24 +122,31 @@ Dónde aparece esto fuera del pizarrón: una norma, una tecnología, un valor de
 
 <!-- Este bloque es el ancla a la realidad. Un número real vale más que tres párrafos. -->
 
-### Error típico
+#### Errores típicos
 
 - **Error:** ...
   **Por qué está mal:** razonamiento técnico, no "porque sí".
   **Lo correcto:** ...
 
-### Para examen
+#### Para examen
 
 > Respuesta oral compacta, de dos o tres oraciones. Como si te lo preguntaran en el final y tuvieras
 > que contestar sin pizarrón.
 
 ---
 
-## 2) Segundo concepto (secundario)
+### Concepto secundario: nombre
 
 Definición + ejemplo + relación con la unidad. Sin los ocho bloques.
+Si aparece una fórmula, aplican igualmente la tabla de símbolos con unidades, sus supuestos y un ejemplo
+numérico calculado.
 
----
+<a id="tema-siguiente"></a>
+## 2) Siguiente tema o sección
+
+Repetí la estructura que corresponda al tema: conceptos centrales con sus bloques y secundarios con
+definición + ejemplo + relación. Usá un identificador HTML estable y breve para que `INDICE.md`
+pueda enlazar esta sección.
 
 ## N) Gotchas del material
 
@@ -146,11 +160,32 @@ Contradicciones concretas y verificables. No se promedian, se registran.
 
 ---
 
-## N+1) Resumen mental
+## N+1) Pendientes por sección
 
-Si te preguntan **"¿qué es <tema>?"**, contestá:
+Registrá cada comprobación que falte en la sección afectada. Si no hay pendientes, escribí `Ninguno`.
+Un pendiente material impide marcar la unidad como `revisado`.
 
-> Discurso oral compacto que integra todo el tema. Cuatro o cinco oraciones máximo.
+| Sección | Qué falta verificar | Fuente o próxima acción |
+|---|---|---|
+| [Tema](#tema-principal) | ... | ... |
+
+## N+2) Práctica y repaso
+
+Los ejercicios resueltos y las preguntas de autoevaluación no van dentro de este apunte. Enlazá aquí
+los recursos separados cuando existan:
+
+- [Práctica de la unidad](../../practica/INDICE.md)
+- [Repaso de la unidad](../../repaso/INDICE.md)
+
+## N+3) Relación con otras unidades
+
+- [Tema relacionado](../NN-unidad/APUNTE.md#seccion) — en qué se apoya o qué habilita.
+
+## N+4) Resumen mental
+
+Si te preguntan **"¿qué organiza esta unidad y cómo se conectan sus temas?"**, contestá:
+
+> Discurso oral compacto que integra la unidad. Cuatro o cinco oraciones máximo.
 
 **Checklist para examen**
 
@@ -158,16 +193,6 @@ Si te preguntan **"¿qué es <tema>?"**, contestá:
 - concepto clave 2;
 - fórmula y su supuesto;
 - error típico;
-- caso real / valor concreto.
+- caso real / valor concreto cuando corresponda.
 
----
-
-## Relación con otras unidades
-
-- [Tema](../NN-unidad/archivo.md) — en qué se apoya o qué habilita.
-
-## Preguntas de autoevaluación
-
-1. ...
-2. ...
-3. ...
+<!-- Las preguntas de autoevaluación y flashcards van en apuntes/repaso/, no acá. -->

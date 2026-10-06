@@ -8,7 +8,7 @@ Universidad Tecnológica Nacional. Plan 2023 · Nivel 4º · Cuatrimestral.
 ```
 apuntes/          Producción propia, en Markdown
   BITACORA.md      Recorrido cronológico y trazabilidad de las clases
-  teoria/         Un directorio por unidad del programa (01 a 08)
+  teoria/         Un directorio por unidad; U1–U4: APUNTE.md canónico + INDICE.md breve
   practica/       TPs, guías de ejercicios, laboratorios
   repaso/         Preguntas y actividades derivadas de apuntes consolidados
   _plantillas/    Plantillas de captura, apunte, ejercicio e índice
@@ -37,6 +37,10 @@ material/         Fuentes de terceros — no se editan
 Las unidades 5 y 8 todavía no tienen apuntes ni capturas propios; su alcance permanece definido en el
 programa y en `AGENTS.md`. No se crean índices vacíos.
 
+En U1–U4, cada carpeta teórica mantiene un único `APUNTE.md` con los temas organizados por secciones;
+`INDICE.md` sólo navega ese contenido. La práctica resuelta y el repaso/autoevaluación permanecen en
+`apuntes/practica/` y `apuntes/repaso/`. El estado `revisado` representa la unidad entera, no una sección.
+
 ## Cómo se usa
 
 Los apuntes son Markdown plano: matemática en LaTeX (`$...$`), diagramas en Mermaid. Se leen en
@@ -51,7 +55,9 @@ Tres entradas cubren necesidades distintas:
   académicamente revisado.
 
 Durante la clase se usa la [plantilla de captura rápida](apuntes/_plantillas/captura-clase.md), sin
-YAML obligatorio. Después se contrasta la captura y recién entonces se consolida como apunte por tema.
+YAML obligatorio. La captura histórica se conserva intacta; después se contrasta y su contenido teórico
+se integra como una sección del `APUNTE.md` canónico de la unidad. Los ejercicios y el repaso se guardan
+por separado.
 
 Este repo está preparado para trabajarse con agentes, pero no depende de ellos. El circuito y los
 pedidos operativos están en [Flujo agéntico](docs/flujo-agentico.md); las reglas del agente están en

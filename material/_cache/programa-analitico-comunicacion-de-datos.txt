@@ -1,0 +1,275 @@
+             PROGRAMA ANALÍTICO DE ASIGNATURA
+
+DEPARTAMENTO: Ingeniería en Sistemas de Información
+
+CARRERA: Ingeniería en Sistemas de Información
+
+NOMBRE DE LA ACTIVIDAD CURRICULAR: Comunicación de Datos
+
+Año Académico: Plan 2023
+Área: Computación
+Bloque: Tecnología Básica
+Nivel: 4º
+Tipo: Obligatoria
+Modalidad: Cuatrimestral
+
+Cargas horarias totales:
+
+Horas reloj                Horas cátedra             Horas cátedra semanales
+     96                          128                               8
+
+OBJETIVOS
+    ●​ Identificar los procedimientos, procesos, estándares y dispositivos involucrados en la
+         comunicación de datos.
+    ●​ Analizar los principios y procedimientos de la transmisión de datos.
+    ●​ Evaluar las topologías, protocolos y arquitecturas utilizadas en la transmisión de datos.
+    ●​ Analizar la seguridad de los sistemas de comunicación.
+    ●​ Emplear los conceptos de Teoría de la información
+    ●​ Distinguir principios básicos y procedimientos inherentes a la transmisión de datos
+         (medios físicos alámbricos e inalámbricos) para diseñar y mantener los subsistemas de
+         comunicaciones de las redes.
+    ●​ Reconocer las características tecnológicas de los medios de comunicación para decidir
+         correctamente ante una implementación de enlaces de comunicaciones.
+    ●​ Identificar los principios y procedimientos característicos de la transmisión de
+    ●​ información por medios físicos para planificar los enlaces.
+    ●​ Analizar la tasa de información de las fuentes de datos para calcular la capacidad de los
+         canales de comunicaciones.
+    ●​ Distinguir las fuentes de errores en los canales físicos de comunicaciones y los métodos
+    ●​ de detección y corrección de errores para determinar los protocolos de detección más
+    ●​ apropiados.
+    ●​ Reconocer el método de cableado estructurado con fibra óptica y cable UTP para el
+         diseño de redes LAN.
+    ●​ Reconocer la capacidad de un canal físico, mediante herramientas matemáticas como
+         la serie de Fourier, para determinar el ancho de banda que deberá tener el enlace de
+
+    ●​ comunicaciones correspondientes.
+    ●​ Analizar los diferentes métodos de modulación y codificación para minimizar errores
+
+         en los enlaces de comunicaciones.
+    ●​ Planificar y diseñar enlaces de comunicaciones en diferentes condiciones de
+
+         implementación en lo referente al medio físico, transmisores y receptores empleados,
+         para desarrollar enlaces en las redes de datos.
+
+CONTENIDOS
+
+Contenidos mínimos
+
+    ●​ Señales.
+    ●​ Características de la Transmisión Analógica y Digital.
+    ●​ Medidas en Telecomunicaciones.
+    ●​ Canales de Comunicaciones. - Perturbaciones en la transmisión.
+    ●​ Arquitecturas de Sistemas de Comunicaciones.
+    ●​ Modelos de Capas.
+    ●​ Modulación y Multiplexación.
+    ●​ Seguridad en los Sistemas de comunicación.
+    ●​ Teoría de la Información. - Medios de enlace.
+    ●​ Errores en la comunicación de datos
+
+Contenidos analíticos
+
+Unidad 1: Introducción a las comunicaciones.
+La informática y las telecomunicaciones. Breve historia de las comunicaciones. La revolución
+informática y la sociedad del conocimiento. La incorporación de las comunicaciones al
+fenómeno informático. La teleinformática y las tecnologías de la información. La globalización e
+Internet. Teleinformática y ética. Definición y concepto de transmisión de datos. Modos de
+explotación de sistemas informáticos y teleinformáticos. Aplicaciones típicas de los sistemas de
+comunicación de datos. Circuito teleinformático. Esquema básico de un circuito teleinformático
+sobre redes analógicas. Enlace y circuito de datos. Internet. Antecedentes históricos. Equipos
+que integran la red. Situación actual. Organización de Internet.
+Logros pedagógicos: lograr que se conozcan los conceptos básicos que hacen a las técnicas de
+las comunicaciones y la razón de la inserción de la asignatura en la carrera.
+
+Unidad 2: Características de las señales de telecomunicaciones.
+Señales analógicas y digitales. Definiciones. tasa de errores. Transmisión de señales.
+Características de las señales utilizadas en la transmisión de datos. Señales periódicas.
+Representación de una señal periódica mediante la serie de Fourier. Transmisión en medios
+conductores y en medios dieléctricos. Ecuación de la difusión y ecuación de onda. El espectro
+de frecuencias electromagnéticas. Unidades de medida. El ancho de banda. Definición y
+concepto de ancho de banda. Efecto del ancho de banda sobre una señal. Señales en banda
+base. Transmisión en banda base. Códigos usados para señales en banda base. Códigos
+normalizados por la UIT - T. Filtros.
+Logros pedagógicos: adquirir conocimientos sobre las herramientas matemáticas
+indispensables para entender los contenidos y su relación con los conocimientos iniciales sobre
+los aspectos que hacen a las comunicaciones.
+
+Unidad 3: Redes de Telecomunicaciones.
+Medidas de la velocidad. Relación entre ancho de banda y velocidad de modulación. Relación
+entre la tasa de errores y el ancho de banda. Transmisión multinivel. Compresión de datos.
+Modos de transmisión: serie y paralelo. Transmisión asincrónica y sincrónica. Tipos de
+transmisión. Canal de comunicaciones. Las redes de telecomunicaciones. Tipos de enlaces.
+Topología de las redes de telecomunicaciones. La red telefónica pública conmutada. Técnicas
+usadas en las redes telefónicas conmutadas y su proceso de digitalización. Funcionamiento de
+la red telefónica pública conmutada. Uso de la red telefónica para la transmisión de datos.
+Ingeniería de tráfico. Congestionamiento y grado de servicio. Centrales telefónicas privadas.
+Hiperservicios. Capacidad de tráfico. Procesos de registro y de determinación de costos.
+Gestión, Administración, Supervisión y Mantenimiento. Redes digitales privadas. Protocolos de
+comunicaciones. Arquitecturas de comunicaciones. Protocolos de enlace de comunicaciones.
+Protocolos orientados al carácter y al bit. Clasificación de los protocolos sobre la base del
+concepto de arquitecturas de comunicaciones.
+Logros pedagógicos: lograr interpretar y adquirir las habilidades necesarias para utilizar en la
+profesión las redes digitales de comunicaciones y aprender a juzgar los parámetros que hacen a
+su eficiencia.
+
+Unidad 4: Modulación, digitalización y multiplexación de señales.
+Definiciones y clasificación de las técnicas de modulación. Modulación por onda continua.
+Modulación de amplitud, frecuencia y fase. Digitalización de señales analógicas. Muestreo,
+cuantificación y codificación. Modulación por pulsos. Clasificación de la modulación por pulsos.
+Ventajas de la modulación por pulsos. Modulación de pulsos analógica. Modulación de pulsos
+digital. Modulación por pulsos codificados (PCM). Variantes de la modulación por pulsos
+codificados. Multiplexación. Utilización del ancho de banda disponible. Técnicas de
+multiplexación. Multiplexación por división de frecuencia (FDM) y por división de tiempo
+(TDM). La Jerarquía Digital Sincrónica (SDH). Esquema de funcionamiento de la jerarquía digital
+sincrónica. Transporte de señales de la Jerarquía Digital Plesiócrona (PDH). La norma americana
+Synchronous Optical Network (SONET). Multiplexación por división de tiempo estadística
+(STDM).
+Logros pedagógicos: comprender acabadamente las técnicas que permiten un uso eficiente de
+los canales de comunicaciones con el objeto que el futuro ingeniero pueda tomar decisiones
+adecuadas a la hora de tener la necesidad de contratar servicios.
+
+Unidad 5: Teoría de la información y de la codificación.
+Nociones de teoría de la información. Medida de la información. Entropía y tasa de
+información. Relación entre la capacidad de un canal y la tasa de información. Teoría de la
+codificación. Clasificación de los códigos. Parámetros considerados en la construcción de
+códigos. Código para el servicio télex: el Alfabeto Internacional Nº 2. Repertorio de caracteres
+del Alfabeto Internacional Nº 2. Códigos usados en sistemas informáticos. Código decimal
+codificado en binario (BCD). Código Fieldata. Código de intercambio de datos. Código 4 de 8.
+Código Extendido Decimal Codificado en Binario, para el intercambio de la información. Código
+PC - 8. Códigos usados en servicios teleinformáticos. Código USACII. Alfabeto Internacional Nº 5
+(AI Nº 5). Composición del repertorio de caracteres (VIR). Los caracteres de control. Juegos de
+caracteres codificados para los servicios de telemática. La Recomendación T. 51 de la UIT - T. El
+juego de caracteres primario. El juego de caracteres suplementarios. Juego de caracteres
+codificados para el servicio Teletex. Comparación y rendimiento de distintos códigos. Eficiencia,
+redundancia.
+Logros pedagógicos: lograr adquirir conocimientos básicos sobre la teoría de la información y
+su relación con los canales de comunicaciones; vinculado a estos con los códigos utilizados en
+la informática y las comunicaciones.
+
+Unidad 6: Canales de comunicaciones.
+Canales de comunicaciones. Tipos de canales. Canales ideales y canales reales. Concepto de
+capacidad de un canal. Teorema de Shannon - Harley. Señalización de los canales de
+comunicaciones. Funciones que cumple la señalización. Señalización analógica y digital.
+Descripción somera del funcionamiento de los sistemas de señalización. Distintos sistemas de
+señalización. Ruido y distorsión. Relación señal a ruido y factor de ruido. Efecto pelicular.
+Normas de calidad para canales establecidos en la red telefónica. Recomendaciones M. 1020,
+M. 1025 y M. 1040. Acondicionamiento de los canales de comunicaciones. Eco. Ecualización.
+Los errores de transmisión. Tipos de errores y su tratamiento. Tasa de errores. Detección de
+errores. Detección de errores mediante control de la paridad. Detección de errores por el
+método de control por redundancia cíclica (CRC). Corrección de errores. Técnicas de corrección
+de errores. Corrección de errores mediante el uso de técnicas especiales de transmisión.
+Corrección de errores mediante códigos auto correctores. La tasa de error en el diseño de un
+sistema de transmisión de datos.
+Logros pedagógicos: adquirir conocimientos sobre las leyes físicas que regulan el
+funcionamiento de las redes de comunicaciones y los factores que hacen a la calidad con que
+funcionan los canales en los sistemas de transmisión de datos.
+
+Unidad 7: Medios de comunicaciones.
+Los sistemas de comunicaciones. Cables de cobre: distintos tipos. Características generales.
+Detalles constructivos y operativos. Cables de par trenzados. Cables trenzados para voz y datos
+utilizados en cableados estructurados. Cables de cobre multipares. Cables multipares
+subterráneos. Cables multipares aéreos. Cables coaxiales: respuesta a la transmisión de señales
+digitales. Velocidad de propagación de las señales. Cables de cobre coaxiales submarinos.
+Fibras ópticas. Detalles constructivos de la fibra óptica. Principios de funcionamiento. Tipos de
+fibra óptica. Pérdidas en las fibras ópticas. Cables ópticos mono y multifibra. Sistemas
+optoelectrónicos. Radiocomunicaciones. Propagación de las ondas electromagnéticas. Espectro
+de radiofrecuencias. Naturaleza y propagación de las ondas de radio. Microondas. Microondas
+analógicas y digitales. Características de las antenas de microondas. Comunicaciones
+satelitales. Referencia histórica y principales operadores. Clasificación de los distintos tipos de
+satélites. Componentes de un sistema de comunicaciones por satélite. Características de los
+sistemas de comunicaciones satelitales. El consorcio INTELSAT. Los sistemas satelitales
+iberoamericanos. Guía de onda. Características generales. Láser. Características de los equipos
+láser. Principio de funcionamiento del láser. Distintos tipos de láser. Evolución futura del láser.
+Redes inalámbricas de voz y datos.
+Logros pedagógicos: conocer las características de los medios de comunicación y la tecnología
+consecuente que se utiliza para diseñar las redes de comunicaciones.
+
+Unidad 8: Hardware de comunicaciones.
+Interfases de la capa física. Interfaces series más difundidas. Empleo práctico. La norma V. 24 y
+su similar, la RS 232. Características técnicas principales y limitaciones que presenta. Niveles de
+normalización. Características funcionales. La interfase digital RS - 449. La interfase digital X.
+21. La recomendación V. 35. Módem de datos. Características y funciones. Clasificación. Los
+módems inteligentes. Las comunicaciones de datos en los computadores personales. Funciones
+que prestan los módems de datos inteligentes. Capacidad de procesamiento y almacenamiento
+de datos. Procedimientos de establecimiento de la comunicación. Modulación QAM con
+codificación entrelazada. Control de flujo de datos. Detección, corrección de errores y
+comprensión de los datos. Operación del módem como equipo facsímil. Los módems de muy
+alta velocidad. Internet y los computadores personales. Los módems de la recomendación V.
+34. Los módems 56K. Diagnóstico de los módems. Pruebas a realizar.
+Logros pedagógicos: adquirir conocimientos y habilidades que le permitan operar y seleccionar
+los equipos de comunicaciones utilizados en los servicios de transmisión de datos.
+
+BIBLIOGRAFÍA OBLIGATORIA
+    ●​ BEHROUZ A. FOROUZAN (2021). Data Communications and Networking with TCP/IP.
+         Editorial
+    ●​ McGraw Hill; EEUU.
+    ●​ CASTRO LECHTALER, A. y FUSARIO, R. (2015). Comunicaciones y redes para
+         profesionales en sistemas de información. Ed. Alfaomega, Buenos Aires.
+    ●​ LIBERATORI, M. (2018), Redes de datos y sus protocolos. Editorial Eudem..
+    ●​ OLIBER IBE (2018). Data communication networks. Editorial Wiley. EEUU.
+    ●​ STALLINGS, W. (2007). Comunicaciones y Redes de Computadoras. Ed. Pearson Prentice
+         Hall, Madrid.
+
+BIBLIOGRAFÍA COMPLEMENTARIA
+
+    ●​ ABRAMSON, N. (1981). Teoría de la Información y Codificación. Ed. Paraninfo.
+    ●​ BLACK, U. (1996). Redes de Ordenadores, Protocolos, Normas e Interface. Editorial
+         RA-MA, Madrid, 1996
+
+    ●​ COMER, D. (1996). TCP/IP. Principios Básicos, Protocolos y Arquitectura. Editorial
+         Prentice Hall Hispanoamericana, México, 1996.
+
+    ●​ COUCH II, León. (1998) Sistemas de Comunicaciones Digitales y Analógicos. Editorial
+         Prentice Hall. México.
+
+    ●​ GARCÍA TOMÁS, J; FERRANDO, S. PIATTINI, M. (1997). Redes para Proceso Distribuido.
+         Editorial RA-MA, Madrid.
+
+    ●​ GARCÍA TOMÁS, J; FERRANDO, S. PIATTINI, M. (1997). Redes de Alta Velocidad.
+         Editorial RA-MA, Madrid.
+
+    ●​ KUSTRA, Rubén; y TUJSNAIDER, Osvaldo. (1988). Principios de Comunicaciones
+         Digitales. Tomos I y II. Editorial AHCIET, Madrid.
+
+    ●​ REGGINI, Horacio Carlos. (1995). Reseña Histórica de los Cables Submarinos de
+         Comunicaciones y de las Telecomunicaciones. Editorial Galápago, Buenos Aires.
+
+    ●​ SCHWARTZ, Mischa. (1983). Transmisión, de Información, Modulación y Ruido.
+         Editorial McGraw-Hill, México.
+
+    ●​ STREMLER, F. (1993). Introducción a los Sistemas de Comunicaciones. Editorial Addison
+         Wesley Iberoamericana.
+
+    ●​ TOMASI, Wayne. (1997). Sistemas de Comunicaciones Electrónicas .Editorial Prentice
+         Hall Hispanoamericana.
+
+    ●​ FRENZEL, Louis (2003). Electrónica Aplicada a los Sistemas de Comunicaciones.
+         Editorial Alfaomega, México. Año 2003.
+
+    ●​ HALSALL, Fred. (2006). Redes de Computadores e Internet. Quinta Edición. Editorial
+         Addison Wesley..
+
+    ●​ TANENBAUM, Andrew, S. (2003). Redes de Ordenadores. Cuarta Edición. Editorial
+         Prentice Hall.
+
+En otros idiomas
+
+    ●​ ANTTALAINEN, Tarmo (2003). Introduction to Telecommunications Network
+         Engineering. Second Edition. Editorial Artech House. Boston.
+
+    ●​ GALLO, Michael and HANCOCK, William. (2002). Networking Explained. Second Edition.
+         Editorial Digital Press of Elsevier Science. Woburn.
+
+    ●​ HUURDEMAN, Anton. (1997) Guide to Telecommunications Transmission Systems.
+         Editorial Artech House, Norwood.
+
+    ●​ KENYON, Tony. (2002). Data Networks. Editorial Digital Press of Elsevier Science.
+         Woburn.
+
+CORRELATIVAS
+Para cursar y rendir
+
+    ●​ Cursadas: Ninguna
+    ●​ Aprobadas:
+○​ Física I
+○​ Arquitectura de Computadoras
+

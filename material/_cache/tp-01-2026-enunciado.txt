@@ -1,0 +1,91 @@
+Comunicaciones                   MATERIA:
+         UTN – FRBA          NIVEL: Tercero/Cuarto
+
+Departamento de Sistemas
+
+DEPARTAMENTO INGENIERIA EN
+    SISTEMAS DE INFORMACION
+
+COMUNICACIONES DE DATOS
+       COMUNICACIONES
+
+    GUIA DE TRABAJOS PRACTICOS
+
+                          1
+Comunicaciones                MATERIA:
+         UTN – FRBA       NIVEL: Tercero/Cuarto
+
+Departamento de Sistemas
+
+             TRABAJO PRACTICO N ° 1
+
+   Repaso de conceptos básicos de electricidad y circuitos. Introducción a la
+                            teleinformática y la red Internet.
+
+1. Hallar la resistencia de una estufa que consume 3 A y se alimenta con una tensión de
+     120 V.
+
+2. Determinar la resistividad de un conductor que tiene 4 Km de longitud, 16 mm2 de
+     sección y una resistencia de 20 Ω.
+
+3. Calcular la longitud de un hilo de ferro-niquel de 2.6mm de diámetro y 500Ω de
+     resistencia. (Resistividad= 0.8Ω mm2/m)
+
+4. Graficar el esquema de conexión de dos lámparas en serie incluida la protección
+     termoeléctrica correspondiente.
+
+5. Graficar el esquema de conexión de dos lámparas en paralelo incluida la protección
+     termoeléctrica correspondiente.
+
+6. Calcular la resistencia total en el circuito alimentado con 100 V y compuesto por tres
+     resistencias en serie.R1= 2 Ω, R2= 8 Ω, R3= x Ω, la corriente es de 1 A.
+
+7. Cálculo de la resistencia total de 3 resistencias en paralelo. R1= 2 Ω, R2=10 Ω, R3= 8 Ω
+
+8. Un televisor consume una potencia de 200W y permanece encendido durante 8 h y un
+     calefactor de 500W permanece encendido durante 3 h. Cual de los dos artefactos
+     consume más energía en los tiempos indicados. Si el kw h vale $ 60, calcule el gasto
+     total ocasionado por los dos artefactos
+
+9. Una lámpara de 25 W se conecta a los terminales de una batería , entonces la
+     corriente en dicha lámpara es de 2,5 A, calcule el voltaje entre los terminales de la
+     lámpara. Calcule la resistencia de la lámpara.
+
+10. Si la lámpara del problema anterior se conecta a una batería de 15 V, calcule la
+     potencia consumida
+
+                                                          2
+Comunicaciones                   MATERIA:
+         UTN – FRBA          NIVEL: Tercero/Cuarto
+
+Departamento de Sistemas
+
+11. Un calefactor de 1100 W, esta diseñado para que funcione con un voltaje de 220 V.
+     Calcule la resistencia del calefactor. Si el voltaje baja a 200 V, calcule en que
+     porcentaje baja la potencia consumida.
+
+12. Indicar que disciplinas abarca la Teleinformática.
+
+13. -- Qué es la UIT - T(anterior CCITT); qué funciones cumple y como esta constituida?.
+
+14. Indicar cuales son las redes que dieron origen a Internet.
+
+15. ¿Qué equipos principales integran la red Internet y cual es la topología de esta ultima?
+
+16. - Definir transmisión de datos e indicar que tipos de señales se utiliza para llevarla a
+     cabo.
+
+17. Graficar la topologia de una red WAN empresarial con cuatro sitios (cada uno con una
+     o mas redes LAN) interconectada a Internet en forma centralizada.
+
+18. Graficar el esquema básico de un sistema informático de procesamiento centralizado
+     con un mainframe y terminales locales y remotos.
+
+19. Definir los siguientes términos relativos a organismos de estandarización: ISO, IEEEE,
+     ANSI, EIA.
+
+20. Que funciones cumple un ISP, detallar las tecnologías que puede emplear para el
+     acceso de los usuarios residenciales a Internet.
+
+                          3
+

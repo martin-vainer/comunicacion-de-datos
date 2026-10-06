@@ -1,0 +1,260 @@
+      COMUNICACIÓN DE DATOS
+
+                             U1
+INTRODUCCIÓN A LAS COMUNICACIONES
+
+         Ingeniero ALEJANDRO LUIS ECHAZÚ
+              alejandroechazu@frba.utn.edu.ar
+      TRANSMISIÓN DE DATOS
+
+Se entiende por transmisión de datos al movimiento de
+información codificada, de un punto a uno mas puntos,
+mediante señales eléctricas, ópticas, electromagnéticas o
+electro ópticas.
+
+Algunas características:
+
+     CONFIABLE
+     SIN ERRORES
+     EN TIEMPO REAL
+     FLEXIBLE
+     SEGURA
+                  TELEINFORMÁTICA
+
+ TELECOMUNICACIONES E INFORMÁTICA
+ TÉCNICAS DE PROCESAMIENTO DISTRIBUIDO FRENTE AL
+
+   PROCESAMIENTO CENTRALIZADO
+ https://www.youtube.com/watch?v=OF7E5Vdq8YM
+
+                                                                                                             INFORMÁTICA COMUNICACIONES
+ EXPLOTACIÓN DE SISTEMAS INFORMÁTICOS Y
+                   TELEINFORMÁTICOS
+
+SIS. INFORMÁTICOS
+• Proceso por lotes
+• Proceso por lotes remotos
+• Tiempo compartido
+• Procesos interactivos en tiempo real
+• Procesos interactivos diferidos
+
+SIS. TELEINFORMÁTICOS
+• Fuera de línea
+• En línea
+• Interactivo
+• No interactivo
+CIRCUITO TELEINFORMÁTICO BÁSICO
+
+                                                        ED
+
+CD
+
+EQUIPO TERMINAL DE DATOS (ETD)   CIRCUITO DE DATOS (CD)
+                                 ENLACE DE DATOS (ED)
+EQUIPO DE COMUNICACIÓN DE DATOS
+    (ECD)
+MODELO SIMPLIFICADO DE LA
+  COMUNICACIÓN DE DATOS
+OTRAS FORMAS DE COMUNICACIÓN
+ALGUNOS ORGANISMOS NORMALIZADORES
+                                                           IETF
+
+                                     EIA  FCC
+
+http://www.enacom.gob.ar/ http://www.iram.org.ar/index.php
+
+ENACOM                                    IRAM
+
+https://www.argentina.gob.ar/jefatu
+ra/innovacion-publica/ssetic/onti
+                           MODELO OSI
+
+                          INTERCONEXIÓN DE SISTEMAS ABIERTOS
+
+        ISO
+
+     ORGANISMO DE
+   ESTANDARIZACIÓN
+
+     INTERNACIONAL
+
+•ES UNA ABSTRACCIÓN,
+NORMA DE LA ISO
+
+•MODELO DE
+REFERENCIA BASADO EN
+CAPAS
+
+•LAS CAPAS AGRUPAN
+FUNCIONES PARA
+PERMITIR LA
+COMUNICACIÓN ENTRE
+SISTEMAS ABIERTOS Y
+HETEROGÉNEOS
+MODELO DE REFERENCIA OSI
+
+Complejidad de la comunicación  Heterogéneos
+      entre sistemas abiertos
+                                Distintos proveedores
+                                y tecnologías
+
+Modelo de capas                 Modularidad
+
+Es una abstracción que constituye una NORMA de la ISO.
+
+Agrupa funciones en capas.
+
+•Dependientes de la red
+    •Orientadas a las aplicaciones
+        MODELO DE REFERENCIA OSI
+
+COMUNICACIÓN
+
+    Entre capas iguales  Protocolos
+Entre capas adyacentes   Interfases
+
+Servicios  Provisto por la capa inferior a la
+Entidades  superior
+
+           Elementos activos de una capa.
+           Provee y usa servicios
+   COMUNICACIÓN ENTRE SISTEMAS
+
+B          ABIERTOS            A
+
+7                              7
+
+6          PROTOCOLO           6
+
+INTERFASE
+
+5                              5
+
+4                              4
+
+3                              3
+
+2                              2
+
+1          Señales eléctricas  1
+
+           MEDIO FISICO
+         NIVEL 1: FISICO
+
+Servicio:
+               Conexión física al medio transmisor
+
+Funciones: Definición de las características
+               mecánicas, eléctricas, funcionales y de
+               procedimientos.
+
+Ejemplo: Interfaz RS 232
+         NIVEL 2: ENLACE
+
+Servicio: Establecer, mantener y liberar conexiones
+                del N3
+
+Funciones: Control de errores y de flujo de datos.
+              Delimitar secuencia de bits, asegurando
+              transparencia.
+              Resolver problemas de daño, pérdidas y
+              duplicidad.
+
+Ejemplo: Protocolo HDLC
+            NIVEL 3: RED
+
+Servicio: Servicio orientado a la conexión o sin
+               conexión al N4
+
+Funciones:  Encaminamiento.
+            Tratamiento de congestión y facturación.
+            Reenvío por sistemas intermedios.
+            Interconexión de redes heterogéneas.
+
+Ejemplo:    Protocolos IP, IPX
+    NIVEL 4: TRANSPORTE
+
+Servicio: Conexión extremo a extremo sin errores.
+               Calidad de funcionamiento Q o S.
+
+Funciones: Ocultar detalles de capas inferiores a las
+              superiores.
+              Multiplexión.
+              Regular flujo de datos.
+
+Ejemplo: Protocolos TCP, SPX
+         NIVEL 5: SESION
+
+Servicio: Gestionar el control del diálogo.
+               Sincronización y administración del testigo.
+
+Funciones: Establecimiento y liberación de conexión.
+               Usuarios de distintas máquinas establezcan
+               sesión.
+               Mejorar servicios.
+   NIVEL 6: PRESENTACION
+
+               Codificación de datos.
+Servicio:
+
+               Manejo de abstracciones y conversiones.
+               Compresión y criptografía.
+
+Funciones: Permite comunicación entre equipos con
+              distintas representaciones.
+              Adecua sintaxis.
+              No necesariamente entiende sobre la
+              semántica.
+     NIVEL 7: APLICACION
+
+Funciones: Definición de un terminal virtual para
+               permitir diálogo entre terminales
+               incompatibles.
+               Proporciona interfaz de usuario.
+               Establece autorizaciones.
+               Autenticidad de datos.
+               Determinación de la disponibilidad actual.
+               Correo Electrónico.
+               Transferencia de archivos.
+                  INTERNET
+
+ Una red internacional formada por un conjunto de miles de
+   redes independientes, operadas en forma autónoma, que
+       están interconectadas por medio de protocolos y
+
+ procedimientos normalizados como estándares de internet,
+ que permiten comunicaciones entre dos equipos terminales
+ host-to-host que pertenezcan a algunas de las redes que la
+
+                               integran.
+
+  LO QUE VIENE:
+“INTERNET DE LAS
+
+     COSAS” IoT
+IIoT (variante de IoT en la
+          industria)
+                        EVOLUCIÓN DE INTERNET
+1ro ARPA - Advanced Research Projects Agency (1960) asociada al
+Dpto Defensa (DoD) de EEUU (DARPA).
+2do ARPANET y su apertura a otros ámbitos de la investigación.
+
+3ro NIC – Network Information Centre.
+4to IANA - Internet Assigned Numbers Authorit.
+           IANA https://www.iana.org/
+
+RFC (Request for Comments): estándares para INTERNET que emite
+              el IETF (Internet Engineering Task Force)
+                      https://www.ietf.org/process/rfcs/
+                INTERCONEXIÓN DE REDES
+
+               PUNTO NEUTRO (IXP anterior NAP)
+
+Es una infraestructura física a través de la cual los Proveedores de
+Servicios de Internet (ISP) intercambian el tráfico de Internet
+entre sus redes. Esta instalación reduce la porción del tráfico de un
+ISP que debe ser entregado hacia su proveedor de conectividad.
+https://www.youtube.com/watch?v=YCzK3nH2wbo&t=15s
+https://www.cabase.org.ar/
+Mapa IXPs actualizado
+

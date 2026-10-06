@@ -1,0 +1,135 @@
+ANSI: Instituto Nacional Estadounidense de Estándares: Organización Privada sin fines de lucro
+fundada en 1918, la cual administra y coordina el sistema de estandarizar voluntaria del sector
+privado de los Estados Unidos .Esta organización aprueba estándares que se obtienen como
+fruto del desarrollo de tentativas de estándares por parte de otras organizaciones, agencias
+gubernamentales, compañías y otras entidades .Estos estándares aseguran que las
+características y las prestaciones de los productos son consistentes, es decir, que la gente use
+dichos productos en los mismos términos y que esta categoría de productos se vea afectada por
+las mismas pruebas de validez y calidad ANSI acredita a organizaciones que realizan
+certificaciones de productos o de personal de acuerdo con los requisitos definidos en los
+estándares internacionales. Los programas de acreditación ANSI se rigen de acuerdo a
+directrices internacionales en cuanto a la verificación gubernamental y a la revisión de las
+validaciones.
+
+EIA:(Electronics Industry Association). Alianza de Industrias Electrónicas: Es una organización
+comercial compuesta como una alianza de asociaciones de comercio para los fabricantes de
+electrónica en el de los Estados Unidos. Estas asociaciones, a su vez rigen los sectores de la
+actividad de las normas de la EIA. Desarrolla normas y publicaciones sobre las principales áreas
+técnicas: los componentes electrónicos, electrónica del consumidor, información electrónica, y
+telecomunicaciones. Historia: Asociación de industrias electrónicas. Organización de miembros
+fundada en 1924 como la Radio Manufacturing Association (Asociación de Fabricantes de
+Radio). EIA fija estándares para productos de consumo y componentes electrónicos. La EIA se
+fundó en 1924 y representa a fabricantes de componentes, artes, sistemas y equipo
+electrónicos para comunicaciones, industrias, gobierno y consumo en general. La EIA publica un
+Índice de Publicaciones de EIA se mi anual gratuito que contiene información sobre precios,
+contenido y pedidos de sus publicaciones. La EIA trabaja para desarrollar prácticas ambientales
+seguras promoviendo la investigación, los talleres y el desarrollo de herramientas a través de
+una variedad.
+
+TIA: (Telecommunications Industry Association): Asociación de la Industria de
+Telecomunicaciones. Es la principal asociación comercial que representa el mundial de la
+información y la comunicación (TIC) a través de la elaboración de normas, los asuntos de
+gobierno, oportunidades de negocios, inteligencia de mercado, la certificación y en todo el
+mundo el cumplimiento de la normativa ambiental. Con el apoyo de sus 600 miembros, la TIA
+mejora el entorno de negocios para las empresas que participan en las telecomunicaciones,
+banda ancha, móviles inalámbricas, tecnologías de la información, redes, cable, satélite,
+comunicaciones unificadas, comunicaciones de emergencia y la dimensión eco lógica de la
+tecnología. TIA es acreditado por ANSI. Desarrolla normas de cableado industrial voluntario
+para muchos productos de las telecomunicaciones y tiene más de 70 normas preestablecidas.
+Historia: En 1924, un pequeño grupo de proveedores de la industria telefónica independiente
+organizado para planificar una feria de la industria. Más tarde, ese grupo se convirtió en un
+comité de los Estados Unidos Independent Telephone Association. En 1979, el grupo se separó
+como una asociación afiliada separada, los Estados Unidos, los proveedores de
+telecomunicaciones de Asociación, y se convirtió en uno de los organizadores más importantes
+del mundo de las exposiciones de las telecomunicaciones y seminarios.
+ISO: (International Standards Organization): Organización internacional para la estandarización
+Organización no gubernamental creada en 1947 a nivel Mundial, de cuerpos de normas
+nacionales, con más de 140 países. es el organismo encargado de promover el desarrollo de
+normas internacionales de fabricación, comercio y comunicación para todas las ramas
+industriales a excepción de la eléctrica y la electrónica. Su función principal es la de buscar
+la estandariza de normas de productos y seguridad para las empresas u organizaciones a nivel
+internacional. Las normas desarrolladas por ISO son voluntarias, comprendiendo que ISO es un
+organismo no gubernamental y no depende de ningún otro organismo internacional, por lo
+tanto, no tiene autoridad para imponer sus normas a ningún país. Está compuesta por
+representantes de los organismos de normalización nacionales, que producen normas
+internacionales industriales y comerciales. Dichas normas se conocen como normas ISO y su
+finalidad es la coordinación de las normas nacionales, en consonancia con el Acta Final de la
+Organización Mundial del Comercio, con el propósito de facilitar el comercio, el intercambio de
+información y contribuir con normas comunes al desarrollo y a la transferencia de tecnologías.
+Historia: fue creada en 1906. El pionero en el trabajo en otros campos fue llevado a cabo por la
+ISA (International Federation of the National Standarizing Associations), la cual fue creada en
+1926. El énfasis del trabajo de la ISA fue la ingeniería mecánica. Las actividades de la ISA
+cesaron en 1942, debido a la Segunda Guerra Mundial.
+
+IEEE: (institute of electricaland electronics engineers): Instituto de Ingenieros Eléctricos y de
+Electrónica. Es una asociación técnico-profesional mundial dedicada a la estandarización, entre
+otras cosas. Es la mayor asociación internacional sinfines de lucro formada por profesionales de
+las nuevas tecnologías, como ingenieros electricistas, ingenieros en electrónica, científicos de la
+computación, ingenieros en informática, ingenieros en médica, ingenie rosen telecomunicación
+e Ingenieros en Mecatrónica. Principalmente responsable por las especificaciones de redes de
+área local como 802.3 Ethernet,802.5 TokenRing, ATM y las normas de Gigabit Ethernet. A
+través de sus miembros, más de 380.000 voluntarios en 175 países, el IEEE es una autoridad
+líder y de máximo prestigio en las áreas técnicas derivadas de la eléctrica original: desde
+ingeniería computacional, tecnologías bio médica y aeroespacial, hasta las áreas de energía
+eléctrica, control, telecomunicaciones y electrónica de consumo, entre otras. Según el mismo
+IEEE, su trabajo es promover la creatividad, el desarrollo y la integración, compartir y aplicar los
+avances en las tecnologías de la información, electrónica y ciencias en general para beneficio de
+la humanidad y de los mismos profesionales. Historia: IEEE La fundación de la IEEE se crea con la
+fusión de AIEE e IRA: Fundación del AIEE. En la primavera de 1884, un pequeño grupo de
+individuos relacionados con las profesiones eléctricas seres unió en Nueva York.
+
+Internet Engineering Task Force (IETF) (Grupo de Trabajo de Ingeniería de Internet1) es una
+organización internacional abierta de normalización, que tiene como objetivos el contribuir a la
+ingeniería de Internet, actuando en diversas áreas, como transporte, encaminamiento,
+seguridad. Se creó en los Estados Unidos, en 1986. Es mundialmente conocido porque se trata
+de la entidad que regula las propuestas y los estándares de Internet, conocidos como RFC.
+Es una institución sin fines de lucro y abierta a la participación de cualquier persona, cuyo
+objetivo es velar para que la arquitectura de Internet y los protocolos que la conforman
+funcionen correctamente. Se la considera como la organización con más autoridad para
+establecer modificaciones de los parámetros técnicos bajo los que funciona la red. El IETF se
+compone de técnicos y profesionales en el área de redes, tales como investigadores,
+integradores, diseñadores de red, administradores, vendedores, entre otros.
+La Comisión Federal de Comunicaciones (Federal Communications Commission, FCC) es una
+agencia estatal independiente de Estados Unidos, bajo responsabilidad directa del Congreso. La
+FCC fue creada en 1934 con la Ley de Comunicaciones y es la encargada de la regulación
+(incluyendo censura) de telecomunicaciones interestatales e internacionales por radio,
+televisión, redes inalámbricas, teléfonos, satélite y cable. La FCC otorga licencias a las
+estaciones transmisoras de radio y televisión, asigna frecuencias de radio y vela por el
+cumplimiento de las reglas creadas para garantizar que las tarifas de los servicios por cable
+sean razonables. La FCC regula los servicios de transmisión comunes, por ejemplo, las
+compañías de teléfonos y telégrafos, así como a los proveedores de servicios de
+telecomunicaciones inalámbricas. La jurisdicción de la FCC cubre los 50 estados, el distrito de
+Columbia y las posesiones de Estados Unidos.
+Desde 1977 también se encarga de la elaboración de normativas de Compatibilidad
+electromagnética, en lo que se refiere a productos electrónicos para el consumidor; es muy
+habitual ver en etiquetas, placas o manuales de muchos aparatos eléctricos de todo el mundo
+el símbolo de la FCC y la Declaración de Conformidad del fabricante hacia sus especificaciones,
+que suponen una limitación de las posibles emisiones electromagnéticas del aparato, para
+reducir en lo posible las interferencias (electromagnéticas) dañinas, en principio en sistemas de
+comunicaciones.
+
+El Ente Nacional de Comunicaciones (ENACOM) es un ente autárquico y descentralizado2 que
+funciona en el ámbito del Ministerio de Modernización3 de Argentina. Creado en 2016 por
+decreto presidencial de necesidad y urgencia, se encarga del cumplimiento de la Ley 26.522 de
+Servicios de Comunicación Audiovisual y de la Ley 27.078 Argentina Digital —conocida como Ley
+de Telecomunicaciones—, hasta ese momento responsabilidad de AFSCA y AFTIC.
+
+El Instituto Argentino de Normalización y Certificación
+(originalmente Instituto de Racionalización Argentino de Materiales: IRAM) es el instituto
+encargado de la normalización y certificación, en Argentina.
+Se trata de un organismo público cuyos orígenes se remontan al 2 de mayo de 1935. Fue el
+primer organismo de normalización en América Latina.
+Desde 1998 es miembro pleno del organismo internacional de certificación IQNet, y desde el
+año 2000 forma parte de su consejo directivo. Por otra parte, es miembro representante de
+la Organización Internacional para la Estandarización (International Organization for
+Standardization, ISO) en Argentina.
+Tiene convenios con distintos organismos internacionales, y con universidades. Entre los
+primeros, se encuentran AENOR, AFNOR y ABNT; mientras que entre las universidades se cuenta
+la UBA y la UNLP, entre otras.
+Desde el año 2003 es miembro de ITSIG (Information Technology Strategies Implementation
+Group) de la ISO.
+El IRAM cuenta con distintas filiales dentro de Argentina y filiales
+en Chile, Bolivia, Ecuador y Perú.
+IRAM es el representante argentino de la ISO,1 en la “Comisión Panamericana de Normas
+Técnicas” (COPANT)2 y en la “Asociación MERCOSUR de Normalización” (AMN).
+

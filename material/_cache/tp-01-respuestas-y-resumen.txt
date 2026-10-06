@@ -1,0 +1,62 @@
+                        UNIDAD TEMATICA NRO 1
+
+   EXPRESIONES MATEMATICAS:
+     LEY DE OHM: V= R*I (Volt= Ohm* Ampere)
+
+Resistencia de un conductor: R= * L/S (  )
+    Donde:  es resistividad del material conductor. ( *mm2/m)
+               R resistencia
+               L longitud del conductor
+               S sección del conductor
+
+  POTENCIA = V*I (Watt= Volt* Ampere)
+
+   ENERGIA CONSUMIDA = P(consumida)*tiempo (Watt* hora)
+
+   ESQUEMAS DE CONEXIONES CIRCUITALES:
+
+RT Serie = R1+R2+…Rn
+
+RT Paral =                                                       1
+
+1/ R1+1/ R2+…1/ Rn
+
+R1+R2+…Rn
+                     RESPUESTAS DEL TP NRO 1
+
+1. Rta: 40 Ohm
+
+2. Rta. 0,08 *mm2/m
+
+4. Rta: tener en cuenta que la protección termoeléctrica se instala a la entrada
+     del circuito hacerlo con el simbología correspondiente (Disyuntor).
+
+5. Rta: ídem anterior
+
+6. Rta: 100 Ohm
+
+7. Rta: Rt= 1,38 Ohm (repasar como se suman las resistencias en serie y en
+     paralelo).
+
+8. Rta: a. TV, justifique , b. $ 186,00
+
+14. Rta: Algunas DARPA, ARPANET, MILNET
+            De cada una explicar que significa el acrónimo, de que país son
+            originarias y en que año se originaron.??
+
+15. Rta. Enumerar que equipos integran la red de Internet, además explicar la
+     función de cada uno. Fundamentar las topología elegida para Internet..
+
+16 . Rta: escribir la definición.
+INTERPOLACION LINEAL
+
+                                                                             Valores de “ X”
+                                                                             Valores de “ Y”
+
+Calcular la atenuación del cable RG 213 para
+una frecuencia de 600 Mhz.
+
+Datos: x1=400Mhz; x2=1000Mhz; x=600Mhz; y1=15,5dB; y2=26dB; Calcular Y= ???
+Y= 15,5 + (26-15,5/1000-400) *(600-400)
+Y = 19 dB/100m
+

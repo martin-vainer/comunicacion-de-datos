@@ -23,15 +23,17 @@ resuelve, y nunca se cierra un tema sin decir dónde se lo confunde.
 
 **Nuestra versión** (adaptada a una materia cuantitativa y física):
 
-> `problema físico -> concepto -> modelo mental -> formalización -> ejemplo numérico -> caso real -> errores típicos -> respuesta de examen`
+> `problema físico -> concepto -> modelo mental -> formalización (fórmula, unidades y supuestos) -> ejemplo numérico -> caso real cuando aporte -> errores típicos -> respuesta de examen`
 
-### 1.2 Anatomía fija de concepto
+### 1.2 Anatomía del concepto central
 
 DDS estandarizó siete bloques por concepto: Problema, Concepto, Modelo mental, Ejemplo mínimo, Ejemplo
 real del repo, Error típico, Para examen. La consistencia es lo que hace el apunte navegable a los tres
 meses, cuando no te acordás de nada.
 
-Se adopta, con dos cambios (ver §2).
+Para los conceptos centrales se adopta esta secuencia, con los cambios de vocabulario de §2. No es una
+lista de subtítulos obligatorios para cada concepto secundario: esos se resuelven con definición, ejemplo
+y relación con la unidad (ver §1.9).
 
 ### 1.3 "Para examen" y "Resumen mental"
 
@@ -63,13 +65,14 @@ sabe de memoria y no se distingue qué entra en el parcial.
 ### 1.6 Cache textual de los PDFs
 
 DDS mantiene `_cache_pdf_text/` con la transcripción de cada PDF. Regla dura: **no se redacta el apunte
-de un tema si su PDF no tiene cache textual**. Es lo que permite buscar, citar y contrastar sin releer
+de una sección si su PDF no tiene cache textual**. Es lo que permite buscar, citar y contrastar sin releer
 binarios.
 
 ### 1.7 Índice de lectura al frente
 
 DDS abre con una tabla "Bitácora / Índice de lectura": clase, tema central, fuente, en qué anclar. Es lo
-que hace usable un documento de 9.500 líneas. Se porta como índice por unidad.
+que hace usable un documento de 9.500 líneas. En U1–U4 se porta como `INDICE.md` breve por unidad:
+enlaza secciones del `APUNTE.md` y el orden de lectura, sin repetir su desarrollo ni duplicar su estado.
 
 ### 1.8 Orden por dependencia conceptual, no por orden del PDF
 
@@ -97,7 +100,7 @@ bloques en todo genera relleno, y el relleno no se estudia.
 | `Ejemplo mínimo` de código | `Formalización` + `Ejemplo numérico` | La materia es cuantitativa. El equivalente pedagógico de "correr el código" es **hacer la cuenta y verificar la unidad**. |
 | `Gotchas reales del repo` | `Gotchas del material` | Contradicciones entre filminas, bibliografía y normas. |
 | Lectura `request -> controller -> service` | Bloque `Modelo mental` con cadena de señal o diagrama Mermaid | El flujo acá es físico: `fuente -> codificador -> modulador -> canal -> demodulador -> decodificador -> destino`. |
-| Un único archivo gigante | Un archivo por tema, dentro de la unidad | 9.500 líneas escala mal para editar. Se compensa con índice por unidad + enlaces relativos. |
+| Un único archivo gigante | Para U1–U4, un `APUNTE.md` teórico canónico por unidad, con los temas organizados en secciones; `INDICE.md` queda como navegación breve. Práctica y repaso van aparte. | Mantiene una sola fuente teórica por unidad y evita duplicar contenido o estados entre archivos temáticos. Los enlaces del índice apuntan a las secciones del apunte. |
 
 ### 2.1 Lo que se agrega, propio de esta materia
 
@@ -163,13 +166,17 @@ difiere del material de cátedra, se escribe lo de cátedra y se registra la dif
 ## 5. Workflow para un tema nuevo
 
 ```txt
-1. Identificar el material del tema en material/teoria/ o material/practica/
+1. Identificar las fuentes de cada tema en material/teoria/ o material/practica/
 2. Buscar su transcripción en material/_cache/
 3. Si no existe, generarla (ver abajo)
 4. Usar la transcripción para buscar y redactar; contrastar el resultado con el PDF, que es la
    autoridad para texto, diagramas y notación
-5. Ubicar el archivo en la unidad correcta según el programa analítico
-6. Registrar el tema en el índice de la unidad (INDICE.md)
+5. Para U1–U4, integrar la teoría en la sección correspondiente del `APUNTE.md` canónico de la unidad;
+   conservar ejercicios resueltos en `apuntes/practica/` y actividades de evaluación/repaso en
+   `apuntes/repaso/`. No modificar las capturas originales.
+6. Actualizar el `INDICE.md` breve con enlaces a las secciones del apunte y a la práctica/repaso
+   pertinentes. Registrar los pendientes de contraste junto a la sección afectada, no como estado
+   independiente de un tema.
 ```
 
 Generar cache textual (`pdftotext` está disponible en este entorno, en `/mingw64/bin`):
@@ -185,27 +192,34 @@ Notas de entorno:
   `encoding='utf-8'`. Imprimir a stdout revienta con `UnicodeEncodeError` por la consola cp1252.
 - No hay `bat`, `fd`, `eza`. Sí hay `rg`.
 
-> **No redactar el apunte final de un tema si su PDF todavía no tiene cache textual**, salvo pedido
+> **No consolidar una sección del apunte si su PDF todavía no tiene cache textual**, salvo pedido
 > explícito.
 
 ---
 
-## 6. Estado de un apunte
+## 6. Estado del apunte canónico de unidad
 
-El front matter lleva `estado`. Significan cosas concretas:
+En U1–U4 hay un solo `APUNTE.md` teórico por unidad. Su front matter lleva `unidad`, `estado`,
+`fuentes` y `actualizado`; no lleva `tema`, porque el documento reúne varios temas. Las fuentes se
+citan también en las secciones donde se usan. El `estado` se aplica a toda la unidad, no a un tema ni a
+una sección:
 
 | Estado | Significa |
 |---|---|
-| `borrador` | Existe el esqueleto o notas sueltas. No se estudia de acá. |
-| `en-progreso` | Concepto redactado, faltan ejemplos numéricos o errores comunes. |
-| `completo` | Tiene los ocho bloques del concepto central, al menos un ejemplo numérico, errores comunes y respuesta de examen. |
-| `revisado` | Contrastado contra el material de cátedra y verificado numéricamente. Es material de estudio confiable. |
+| `borrador` | Existe el esqueleto o hay notas sueltas en varias secciones. No se estudia de acá. |
+| `en-progreso` | Una o más secciones están en elaboración o tienen ejemplos, cálculos o contrastes pendientes. |
+| `completo` | El alcance declarado de la unidad está desarrollado con la metodología: conceptos centrales con su secuencia, fórmulas contextualizadas y ejemplos calculados; los secundarios conservan el tratamiento breve que les corresponde. Aún puede faltar la revisión integral de fuentes. |
+| `revisado` | **Toda la unidad** fue contrastada con el programa y las fuentes originales pertinentes; se verificaron afirmaciones, diagramas, fórmulas, unidades, supuestos y cálculos. No quedan pendientes materiales de contraste. Es material de estudio confiable. |
 
-No marcar `completo` un apunte sin ejemplo numérico ni sección de errores comunes. Es la regla que
-evita que el repo se llene de esqueletos que parecen apuntes.
+No marques `revisado` porque una sección aislada ya fue verificada. Si la revisión es parcial, registrá
+su alcance y los pendientes en una sección `Pendientes por sección` dentro de `APUNTE.md` o junto a la
+sección afectada. Cada pendiente debe nombrar la sección, qué evidencia falta y cuál es la próxima
+comprobación. Mientras quede un pendiente de contraste en cualquier sección, el estado de la unidad no
+puede ser `revisado`.
 
 Las capturas rápidas no llevan este estado ni front matter obligatorio: son registro de clase, no
-material consolidado. Su trazabilidad vive en la bitácora hasta que se integran en apuntes por tema.
+material consolidado. Su trazabilidad vive en la bitácora hasta que se integran como secciones del
+apunte canónico.
 
 ---
 
@@ -216,7 +230,7 @@ material consolidado. Su trazabilidad vive en la bitácora hasta que se integran
 - No inventar valores, normas ni números de recomendación UIT-T. Si no está en el material y no se sabe
   con certeza, se escribe `<!-- PENDIENTE: verificar en material -->` y se avisa.
 - No tapar contradicciones entre cátedra y bibliografía.
-- No mezclar unidades del programa en un mismo archivo.
+- No mezclar unidades del programa en un mismo `APUNTE.md`.
 - No editar nada dentro de `material/`.
-- No meter cuestionarios ni flashcards dentro del apunte principal. El apunte **explica**; el material
-  de repaso **entrena**, y va aparte.
+- No meter cuestionarios ni flashcards dentro del apunte principal. El apunte **explica**; los ejercicios
+  resueltos y el material de repaso **entrenan**, y van aparte, enlazados desde `INDICE.md`.

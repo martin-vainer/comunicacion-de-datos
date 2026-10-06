@@ -1,0 +1,62 @@
+       UD Nº 1
+Introducción a la
+Teleinformática
+
+        gbiau@frba.utn.edu.ar
+           TELEINFORMATICA
+
+TELECOMUNICACIONES + INFORMATICA
+TRANSMISION DE DATOS
+
+ Es la transmisión de la información, previamente codificada por los códigos de línea, de un
+ PaP o de un PaM, a través de señales ópticas, electropticas o electricas.
+
+ puede ser: En forma LOCAL
+                  En forma REMOTA
+CIRCUITO TELEINFORMÁTICO BÁSICO
+
+                                           ED
+
+                                                              CD  CIRCUITO DE DATOS (CD)
+                                                                  ENLACE DE DATOS (ED)
+EQUIPO TERMINAL DE DATOS (ETD)
+EQUIPO DE COMUNICACIÓN DE DATOS (ECD)
+MODELO SIMPLIFICADO DE LA COMUNICACIÓN
+            DE DATOS- CANAL ANALOGICO
+OTRAS FORMAS DE COMUNICACIÓN
+                CANAL DIGITAL
+OTRAS FORMAS DE COMUNICACIÓN
+                CANAL DIGITAL
+       REDES DE COMUNICACIONES
+
+       RED: ES EL CONJUNTO DE RECURSOS DE COMUNICACIONES Y DE INFORMÁTICA QUE
+
+       FORMAN    UN SISTEMA, PARA EL TRANSPORTE DE INFORMACIÓN.
+
+                  RED TELEFÓNICA      RED: conj nodos y enlaces
+                 RED DE TV POR CABLE
+       REDES DE
+
+ANTES
+
+                 RED DE DATOS
+
+AHORA            RED INTEGRADAS       -- REDES: Clasificación:
+                 REDES MULTIMEDIALES              Topología
+                 REDES CONVERGENTES               Extensión
+                   INTERNET ( Red de Redes)
+
+      Una red internacional formada por un conjunto de miles de redes independientes, operadas en forma
+      autónoma, que están interconectadas por medio de protocolos y procedimientos normalizados como
+      estándares de internet, que permiten comunicaciones entre dos equipos terminales host to host que
+      pertenezcan a algunas de las redes que la integran.
+
+         LO QUE VIENE:
+“INTERNET DE LAS COSAS”
+
+COMPOSICION INTERNET:
+       - ETD (Host)- Dir IP
+             - Routers
+              - Redes
+MODELO OSI: INTERCONEXIÓN DE SISTEMAS ABIERTOS
+

@@ -57,6 +57,7 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 │   │   ├── 07-medios-comunicaciones/
 │   │   └── 08-hardware-comunicaciones/
 │   ├── practica/         # TPs resueltos, guías de ejercicios, laboratorios
+│   ├── repaso/           # Preguntas, cuestionarios y actividades de autoevaluación
 │   └── _plantillas/      # Metodología + plantillas de apunte, ejercicio e índice
 │
 └── material/             # Fuentes de terceros — NO se edita
@@ -69,10 +70,17 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 ### Reglas de ubicación
 
 - **`apuntes/` se escribe, `material/` se lee.** Nunca edites ni reformatees un archivo de `material/`.
-- Un apunte nuevo va SIEMPRE dentro de la unidad que le corresponde según el programa analítico
-  (`material/catedra/`). Si un tema cruza dos unidades, va en la principal y se enlaza desde la otra.
-- Nombres de archivo: `kebab-case.md`, sin tildes ni espacios. Ej: `serie-de-fourier.md`,
-  `deteccion-errores-crc.md`.
+- El contenido teórico nuevo se ubica en la unidad que le corresponde según el programa analítico
+  (`material/catedra/`).
+- Para la consolidación de U1–U4, cada carpeta de unidad tiene un único `APUNTE.md` teórico canónico;
+  los temas se organizan como secciones, no como archivos teóricos independientes. `INDICE.md` es una
+  navegación breve hacia esas secciones. Si un tema cruza unidades, se desarrolla en la unidad principal
+  y se enlaza desde la otra.
+- Mantené práctica resuelta y material de repaso en `apuntes/practica/` y `apuntes/repaso/`,
+  respectivamente; no los mezcles con el apunte teórico.
+- Conservá intactas las capturas históricas: integrar su contenido no autoriza a corregirlas ni moverlas.
+- Los nombres de archivo nuevos siguen `kebab-case.md`, sin tildes ni espacios (por ejemplo,
+  `tp-01-introduccion.md`).
 - Los archivos de `apuntes/practica/` se nombran `tp-NN-tema.md` o `guia-NN-tema.md`.
 
 ---
@@ -89,28 +97,34 @@ Plantillas:
 | Archivo | Para qué |
 |---|---|
 | `apuntes/_plantillas/metodologia.md` | Criterio pedagógico — **autoridad** |
-| `apuntes/_plantillas/apunte-teoria.md` | Apunte de un tema de teoría |
+| `apuntes/_plantillas/apunte-teoria.md` | `APUNTE.md` canónico de una unidad teórica |
 | `apuntes/_plantillas/ejercicio-practica.md` | TP, guía o laboratorio resuelto |
 | `apuntes/_plantillas/indice-unidad.md` | `INDICE.md` de cada unidad |
 
 Reglas duras:
 
-- **Regla del apunte**: `problema físico → concepto → modelo mental → formalización → ejemplo numérico
-  → caso real → errores típicos → respuesta de examen`.
-- **Front matter YAML obligatorio** (`unidad`, `tema`, `estado`, `fuentes`, `actualizado`).
-- El YAML es obligatorio en apuntes consolidados y práctica resuelta; las capturas rápidas no lo usan.
+- **Regla de cada concepto central**: `problema físico → concepto → modelo mental → formalización
+  (fórmula, unidades y supuestos) → ejemplo numérico → caso real cuando aporte → errores típicos →
+  respuesta de examen`. Los conceptos secundarios se resuelven con definición, ejemplo y relación con
+  la unidad; no se les fuerzan los ocho bloques.
+- El `APUNTE.md` canónico lleva front matter YAML con `unidad`, `estado`, `fuentes` y
+  `actualizado`. No lleva `tema`: reúne varios temas de la unidad. La práctica resuelta conserva el
+  front matter de su plantilla. Las capturas rápidas no llevan YAML.
 - **Matemática en LaTeX**: inline `$C = B\log_2(1+S/N)$`, en bloque `$$...$$`.
 - **Diagramas en Mermaid** cuando ayudan (tramas, capas, topologías, cadenas de señal). No metas
   diagramas decorativos: si no aporta, no va.
 - **Toda fórmula lleva**: tabla de símbolos con unidad, supuestos de validez y al menos un ejemplo
   numérico con el resultado calculado.
-- **Todo apunte cierra con "Resumen mental" + checklist de examen.** No es opcional: es lo que convierte
-  el apunte en discurso de oral.
+- **Todo `APUNTE.md` cierra con "Resumen mental" + checklist de examen.** No es opcional: es lo que
+  convierte el apunte de la unidad en discurso de oral.
 - **Sección "Errores típicos"** en cada concepto central. Es la que más rinde en el parcial.
 - Enlaces internos con rutas relativas y comprobables; la ruta debe resolver desde el archivo que
   contiene el enlace.
-- `estado: borrador | en-progreso | completo | revisado`. No marques `completo` un apunte sin ejemplo
-  numérico ni sección de errores típicos.
+- `estado: borrador | en-progreso | completo | revisado` se informa a nivel de unidad. `completo`
+  requiere cubrir el alcance declarado y cumplir la metodología; `revisado` sólo corresponde cuando se
+  contrastó la unidad entera con las fuentes originales y se verificaron fórmulas, unidades, supuestos y
+  cálculos. Registrá dudas o comprobaciones pendientes junto a su sección en `Pendientes por sección`;
+  una revisión parcial no vuelve `revisado` el apunte.
 - La plantilla es flexible: los conceptos centrales usan los ocho bloques, los secundarios se resuelven
   con definición + ejemplo + relación con la unidad.
 
@@ -123,9 +137,11 @@ Reglas duras:
    ```
 3. Usá el cache para buscar y redactar; contrastá siempre con el PDF/material original, que es la
    autoridad. El cache es un derivado auxiliar y no se cita como fuente independiente.
-4. Registrá el tema en el `INDICE.md` de la unidad.
+4. Para U1–U4, integrá el contenido en la sección correspondiente de `APUNTE.md`; anotá allí cualquier
+   pendiente junto a su sección y actualizá `INDICE.md` con un enlace breve a ella. Conservá práctica y
+   repaso separados, y no modifiques las capturas.
 
-> No redactes el apunte final de un tema si su PDF todavía no tiene cache textual, salvo pedido
+> No consolides una sección del apunte si el PDF fuente todavía no tiene cache textual, salvo pedido
 > explícito del estudiante.
 
 **Entorno**: el lector nativo de PDF no funciona acá (falta `pdftoppm`); usá `pdftotext`, que sí está en
@@ -222,6 +238,7 @@ El listado completo está en el programa analítico: `material/catedra/`.
 - Conventional commits, en español, sin atribución a IA de ningún tipo.
 - Prefijos: `docs:` para apuntes, `chore:` para estructura/config, `feat:` para herramientas del repo.
 - Ejemplo: `docs(u06): apunte de detección de errores por CRC`.
-- Un commit por apunte o por tema. No mezcles unidades en un mismo commit.
+- Al consolidar U1–U4, un commit por unidad y su navegación/práctica/repaso asociados. No mezcles
+  unidades en un mismo commit.
 - Los binarios pesados de `material/` se versionan igual (son la fuente de estudio), salvo que superen
   un tamaño razonable.

@@ -18,8 +18,10 @@ capturar → proponer integración → contrastar → consolidar → practicar
    corregir ni mover el original fuera de `capturas/`.
 3. **Contrastar:** localizar el material original y su cache; verificar conceptos, figuras, cuentas,
    unidades y supuestos contra el original.
-4. **Consolidar:** integrar por tema usando la plantilla correspondiente, conservar procedencia y
-   enlazar desde el índice. Una duda material impide usar `revisado`.
+4. **Consolidar:** para U1–U4, integrar la teoría como secciones del único `APUNTE.md` canónico de la
+   unidad; mantener `INDICE.md` como navegación breve y conservar la procedencia por sección. Llevar
+   ejercicios resueltos y actividades de repaso por separado. Anotar cada verificación pendiente junto
+   a la sección afectada. El estado `revisado` sólo se aplica cuando se contrastó la unidad entera.
 5. **Practicar:** separar ejercicios y autoevaluación del apunte explicativo; responder de a una y
    corregir el razonamiento.
 
@@ -46,15 +48,16 @@ antes del resultado; hace una pregunta concreta y espera la respuesta.
 Contrasta afirmaciones, diagramas, notación, unidades, cálculos y supuestos con el material original.
 Registra discrepancias; no las promedia ni las corrige en silencio.
 
-> «Actuá como Verificador. Revisá este apunte contra la fuente original, listá evidencia y pendientes.
-> No cambies el estado a `revisado` si queda una discrepancia material.»
+> «Actuá como Verificador. Revisá todas las secciones del `APUNTE.md` de la unidad contra las fuentes
+> originales, listá evidencia y pendientes por sección. No cambies el estado de la unidad a `revisado`
+> si queda una discrepancia material o una sección sin contrastar.»
 
 ## Autorización para editar
 
 Consultar, explicar, evaluar o verificar **no autoriza cambios**. Para editar, el pedido debe decirlo:
 
-> «Consolidá esta captura en el apunte temático propuesto, conservá la procedencia y actualizá índice
-> y bitácora.»
+> «Consolidá esta captura como sección del `APUNTE.md` canónico de su unidad, conservá la procedencia y
+> actualizá el `INDICE.md` y la bitácora. Dejá ejercicios y repaso separados.»
 
-Antes de leer en profundidad, el agente abre la portada o la bitácora, luego el índice de la unidad y
-recién después los apuntes y fuentes estrictamente necesarios.
+Antes de leer en profundidad, el agente abre la portada o la bitácora, luego el `INDICE.md` de la unidad
+y recién después el `APUNTE.md` canónico y las fuentes estrictamente necesarias.

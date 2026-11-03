@@ -1,0 +1,160 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 5/TP  5  2026.pdf
+# titulo-identificado: TP  5  2026
+# titulo-metadatos-pdf: TEMARIO TELEINFORMATICA
+# sha256-original: 1e2986eee9b3f83ddbd00965105d881331c9d55bfeae0f922d16c56698a9df72
+# paginas-pdf-total: 3
+# paginas-pdf-extraidas: 1,2,3
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTAMENTO INGENIERIA EN 
+SISTEMAS DE INFORMACION 
+ 
+ 
+ 
+COMUNICACIONES DE DATOS 
+ 
+COMUNICACIONES 
+ 
+ 
+ 
+ 
+GUIA DE TRABAJOS PRACTICOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA PDF 2 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 2 
+ 
+ 
+ 
+ 
+ 
+TRABAJO PRÁCTICO N° 5 
+ 
+Teoría de la  información y codificación 
+ 
+ 
+ 
+1. Calcular la cantidad de informac ión asociada a una palabra de cuatro caracteres 
+proveniente de una fuente equiprobable de símbolos. Considerar un alfabeto de 32 
+símbolos. 
+ 
+2. Dado un tren de pulsos correspondientes a la siguiente secuencia: 010101000001,  
+calcular la información suministrad a con la aparición de un uno o de un cero y la 
+ENTROPÍA de la fuente. 
+ 
+3. Dados 3 mensajes con la siguiente probabilidad de ocurrencia:  
+       p1 = 20 % 
+       p2 = 50 % 
+       p3 = 30 % 
+Calcular la cantidad de información suministrada por cada uno de ellos. Calcular la 
+información promedio por mensaje de esta fuente. 
+ 
+4. Se tiene un alfabeto de 128 símbolos diferentes y equiprobables. Se desea transmitir 
+un mensaje. Calcular: 
+a. La probabilidad de ocurrencia de un símbolo  
+b. La cantidad de información obtenida c on la recepción de dicho símbolo 
+c. La cantidad de información de una palabra formada por 6 símbolos  
+d. La ENTROPÍA de la fuente. 
+ 
+5. Suponiendo una fuente con los símbolos A B C E L  donde cada uno tiene asociado la 
+siguiente probabilidad:  
+       A = 1/4       B = 1/4       C = 1/8       E = 1/4       L = 1/8 
+Calcular la información suministrada con el mensaje: CABLE 
+ 
+6. Suponiendo una imagen de 600 líneas horizontales y 300 puntos discretos por línea 
+donde cada punto tiene 8 niveles equiprobables de brillo y un  vocabulario de 100.000 
+palabras equiprobables.  Demostrar el proverbio que dice que una imagen vale más 
+que 1000 palabras. 
+ 
+
+===== PÁGINA PDF 3 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 3 
+7. Se tiene una fuente binaria con igual probabilidad de ocurrencia. Calcular la entropía H 
+y graficar la curva correspondiente que rel aciona a la misma con la probabilidad de 
+ocurrencia de cada símbolo. 
+ 
+8. Se transmite una imagen en modo gráfico de 640 x 480 pix, si cada punto tiene 256 
+niveles equiprobables de brillo. Calcular la información de la imagen y el tiempo total 
+de transmisión si se utiliza un canal que permite enviar información a razón de 33.600 
+Shannon/seg. Comparar con una transmisión en modo texto que utiliza 25 líneas x 80 
+columnas utilizando un código ASCII de 8 bits. Ambas imágenes se transmiten sin 
+comprimir. No tener en cuenta el overhead. 
+ 
+9. Calcular la tasa de información T [shannon/seg], de una fuente telegráfica, sabiendo 
+que: 
+       P punto = 2/3   P raya = 1/3 
+       T punto = 0,2 seg    T raya = 0,4 seg 
+ 
+10. Una imagen de TV tiene 625 líneas con 500 puntos por línea. Ca da punto tiene 128 
+niveles equiprobables de brillo. Si se transmiten 20 imágenes por segundo. Calcular 
+la tasa de información y la capacidad del canal.  
+ 
+11. Calcular la cantidad de palabras que son necesarias pronunciar para transmitir la 
+misma cantidad de inf ormación que contiene una imagen que posee 400 líneas 
+horizontales y 500 puntos por línea. A cada punto se le asocia 128 niveles discretos 
+equiprobables de brillo.  Para describir dicha imagen supondremos un vocabulario de 
+10.000 palabras equiprobables.  
+ 
+ 
+12. Suponer un código llamado 5 de 10 construído con el mismo criterio que el 4 de 8. 
+Cuántos sí mbolos se podrían representar con este alfabeto código? Cuál es su 
+redundancia ( R ) ? 
+ 
+ 
+13. Codificar en el código PC - 8 la siguiente información en sus formas decimal , 
+hexadecimal y binaria: 
+ 
+a.  UTN 
+b.  Red 
+ 
+ 
+14. Se tiene un alfabeto fuente de 90 símbolos. Diseñe un código que lo represente 
+determinando la cantidad de bits a emplear y la eficiencia del mismo.  
+ 
+ 

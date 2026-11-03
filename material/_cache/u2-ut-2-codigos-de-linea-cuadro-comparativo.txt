@@ -1,0 +1,257 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 2/UT 2 Códigos de línea cuadro comparativo.pdf
+# titulo-identificado: UT 2 Códigos de línea cuadro comparativo
+# titulo-metadatos-pdf: CUADRO COMPARATIVO DE CODIGOS DE LINEA
+# sha256-original: d941b9027e8c3448fa266c0bd46c964796373cab2960f9416a43d5c14391a215
+# paginas-pdf-total: 3
+# paginas-pdf-extraidas: 1,2,3
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+UTN - Sistemas - Comunicaciones 
+ 
+ 
+1 
+CUADRO COMPARATIVO DE CODIGOS DE LINEA 
+ 
+Código de línea Regla de formación Ancho de banda 
+ocupado 
+Componente 
+continua (valor 
+medio distinto de 0) 
+ 
+Probabilidad 
+de errores 
+Sincronismo Densidad 
+espectral de 
+potencia 
+Depen-
+dencia entre 
+símbolos 
+Unipolar NRZ 1      V + o - 
+0      V  0  
+ = T 
+ 
+Menor que RZ Si posee Mayor que 
+Polar 
+No transiciones 
+entre bits 
+consecutivos 
+Mayor que RZ 
+y menor que 
+Polar 
+No hay 
+Polar NRZ 1      V  + 
+0      V  - 
+ = T 
+ 
+Menor que RZ No posee Menor que 
+Unipolar 
+No transiciones 
+entre bits 
+consecutivos 
+Mayor que 
+Unipolar y que 
+RZ 
+No hay 
+Unipolar RZ 1      V + o - 
+0      V  0  
+ menor T 
+Mayor que NRZ Si posee Mayor que 
+Polar 
+Hay transiciones 
+entre 1(s) 
+consecutivos. No 
+entre 0 (s).  
+Mejor que NRZ 
+ 
+Menor que NRZ 
+y menor que 
+Polar 
+No hay 
+Polar RZ 1      V + 
+0      V  -  
+ menor T 
+Mayor que NRZ No posee Menor que 
+Unipolar 
+Hay transiciones 
+entre 1(s) y 0(s) 
+consecutivos. 
+Autosincronizante 
+ 
+Menor que NRZ 
+y mayor que 
+Unipolar 
+No hay 
+Bipolar NRZ 
+AMI (Alternative 
+Mark Inversion) 
+1     V + o - alt 
+0     V  0 
+ = T 
+Menor que RZ No posee Menor que 
+Unipolar pero 
+mayor que 
+Polar 
+Hay transiciones 
+entre 1(s). No entre 
+0(s). Mejor que 
+NRZ pero peor RZ. 
+Falta sincronismo 
+con 0(s) seguidos 
+ 
+Similar a 
+Unipolar NRZ 
+Si hay  
+Bipolar RZ 1     V + o - alt 
+0     V  0 
+Mayor que AMI No posee Igual que AMI Igual que AMI Menor que AMI Si hay 
+
+===== PÁGINA PDF 2 =====
+UTN - Sistemas - Comunicaciones 
+ 
+ 
+2 
+Código de línea Regla de formación Ancho de banda 
+ocupado 
+Componente 
+continua (valor 
+medio distinto de 0) 
+ 
+Probabilidad 
+de errores 
+Sincronismo Densidad 
+espectral de 
+potencia 
+Depen-
+dencia entre 
+símbolos 
+ menor T 
+ 
+Unipolar 
+diferencial 
+1    transición entre V 
++     o - y 0 
+0    no transición 
+ 
+Similar NRZ Si posee Mayor que 
+Polar 
+Perdida de 
+sincronismo 
+Similar 
+Unipolares 
+Si hay 
+Polar  
+diferencial 
+1    transición entre V 
++ y - 
+0    no transición 
+ 
+Similar NRZ No posee Menor que 
+Unipolar 
+Pérdida de 
+sincronismo 
+Similar Polares Si hay 
+Manchester 
+(bifase) 
+1 transición + /2 
+0 transición  - /2 
+ 
+Similar al Polar 
+RZ 
+No posee Similar al Polar 
+RZ 
+Buen sincronismo Mayor que 
+Polar RZ 
+No hay 
+Manchester 
+diferencial 
+Siempre transición en 
+/2 
+Si 0 además transición 
+en el inicio del Is 
+Si 1 no transición en 
+el inicio del Is 
+ 
+Menor que 
+Manchester 
+No posee Menor que 
+Manchester 
+Buen sincronismo Mayor que 
+Manchester 
+Si hay 
+HDB-3  
+(High Density 
+Binary) 
+ 
+Igual al AMI pero con 
+violación al 4to 0 
+Similar AMI No posee Similar AMI Soluciona 
+problema de 
+sincronismo AMI 
+Algo mayor que 
+AMI 
+Si hay 
+Miller 1 transición /2 
+0 no transición salvo 
+que siga 0 con 
+transición  
+ 
+ 
+Menor que 
+Manchester 
+No posee Similar Polar Buen sincronismo  Mayor que 
+Polar 
+diferencial 
+Si hay 
+CMI (Coded Polar NRZ Mayor que los No posee Similar Polar Mejor que Polar Menor que Si hay 
+
+===== PÁGINA PDF 3 =====
+UTN - Sistemas - Comunicaciones 
+ 
+ 
+3 
+Código de línea Regla de formación Ancho de banda 
+ocupado 
+Componente 
+continua (valor 
+medio distinto de 0) 
+ 
+Probabilidad 
+de errores 
+Sincronismo Densidad 
+espectral de 
+potencia 
+Depen-
+dencia entre 
+símbolos 
+Mark Inversion) 1 alterna V en  
+0 consecutivo V en 
+/2 
+ 
+NRZ comunes NRZ NRZ Polar NRZ 
+4B-3T Lleva 4 dígitos de 2 
+niveles a 3 dígitos de 
+3 niveles 
+ 
+Reduce 25%      
+B6ZS 
+(Sustitución 
+Binaria de 6 
+ceros) 
+AMI con sustitución 
+de 6 0(s) por 
+combinación de  
+0 + - 0 - +   
+o 
+0 - + 0 + - 
+según 1 sea + o - 
+Similar AMI   Reduce problema 
+de sincronismo del 
+AMI 
+  
+ 
+Referencias: 
+Is = Intervalo significativo 

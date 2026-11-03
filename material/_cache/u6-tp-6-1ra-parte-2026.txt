@@ -1,0 +1,101 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U6/TP  6 (1ra parte)    2026.pdf
+# titulo-identificado: TP  6 (1ra parte)    2026
+# titulo-metadatos-pdf: TEMARIO TELEINFORMATICA
+# sha256-original: 73e17af44a6f697a79a10765e4cbd16abad0d0acfb52fcbe1d4c6c272e5d2cc5
+# paginas-pdf-total: 2
+# paginas-pdf-extraidas: 1,2
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+                 
+                                                                              MATERIA: Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTAMENTO INGENIERIA EN 
+SISTEMAS DE INFORMACION 
+ 
+ 
+ 
+COMUNICACIONES DE DATOS 
+ 
+COMUNICACIONES 
+ 
+ 
+ 
+GUIA DE TRABAJOS PRACTICOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA PDF 2 =====
+                 
+                                                                              MATERIA: Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 2 
+ 
+TRABAJO PRÁCTICO N° 6 (1ra parte) 
+ 
+Capacidad de los canales. Relacion con la tasa de información. 
+ 
+1. Teniendo en cuenta que en un canal telefónico el valor de la relación S/N 
+típico es de 30 dB,  FCI=300Hz , FCS=3300 Hz. ¿Cuál es el límite superior 
+de la tasa de transmisión de datos confiable?  
+ 
+ 
+2. Calcular la relación señal a ruido (S/N)  expresada en dB para l os 
+siguientes casos: 
+ 
+a.  Δf = 3000 Hz ,   C  = 10.000 bps .  
+b.  Δf = 10 KHz ,     C  = 10.000 bps.  
+c.  Δf = 1 KHz ,                C  = 10 Kbps. 
+ 
+Graficar la variación de S/N ( expresada en dB ) en función del ancho de 
+banda Δf (expresada en Hz). Extraer conclusiones.  
+ 
+3. ¿Cuál es la capacidad máxima de un canal sin ruido?  
+ 
+ 
+4. Necesitamos duplicar la capacidad de transporte de información de un 
+canal de datos cuyo ancho de banda (AB) es de 4KHz  y su SNR=20dB. 
+Sabiendo que utilizaremos el mismo canal, necesi tamos saber cuántas 
+veces debemos aumentar la potencia de señal original para lograrlo. ¿Cuál 
+es la nueva SNR medida en dB?                   
+ 
+5. Tenemos un canal cuyo ancho de banda (AB) es de 4KHz  y su SNR=20dB. 
+Sabiendo que por desperfectos aumenta al dob le su potencia de ruido, 
+estimar en forma porcentual la caída en la capacidad de transporte. ¿Cuál 
+es la nueva SNR medida en dB? 
+ 
+6. Se mide el rendimiento de una línea telefónica (3.1KHz de ancho de banda). 
+Cuando la señal es 10 voltios, el ruido es de 5 milivoltios. ¿Cuál es la tasa de 
+datos máxima soportada por esta línea telefónica? 
+ 
+ 
+ 

@@ -1,0 +1,19 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: Martín Vainer - Comunicación de Datos.pdf
+# titulo-identificado: Martín Vainer - Comunicación de Datos
+# titulo-metadatos-pdf: Martín Vainer - Comunicación de Datos
+# sha256-original: 591ed1ed265fd929031cb02e92ac3ee99915af820ce18d5c3ffe7b58f02c00d8
+# paginas-pdf-total: 3
+# paginas-pdf-extraidas: 1,2,3
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+
+
+===== PÁGINA PDF 2 =====
+
+
+===== PÁGINA PDF 3 =====
+

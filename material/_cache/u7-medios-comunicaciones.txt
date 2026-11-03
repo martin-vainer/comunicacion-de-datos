@@ -1,0 +1,265 @@
+U 7
+MEDIOS DE COMUNICACIONES
+Ingeniero ALEJANDRO ECHAZÚ
+alejandroechazu@frba.utn.edu.ar
+Comunicación de datos
+CIRCUITO TELEINFORMÁTICO BÁSICO
+Medios de 
+comunicaciones
+E
+T
+C
+ETC CC
+ETCD ETCD
+ETC
+CC
+LC
+CD
+EDESPECTRO ELECTROMAGNÉTICO
+CARACTERÍSTICAS FUNDAMENTALES DE 
+LOS MEDIOS DE COMUNICACIONES
+•
+ANCHO DE BANDA / VELOCIDAD DE TRANSMISIÓN
+•
+COSTO
+•
+PARÁMETROS FÍSICOS (PESO, PROTECCIÓN, ETC)
+•
+ATENUACIÓN (ALCANCE) Y DISTORSIÓN
+•
+INMUNIDAD CONTRA EL RUIDO Y LA INTERFERENCIA
+•
+CONFIABILIDAD
+•
+FACILIDAD PARA LA INSTALACIÓN Y ESTÉTICA
+•
+FLEXIBILIDADTIPOS DE MEDIOS DE COMUNICACIONES
+SEGÚN LA FORMA EN QUE SE PROPAGAN LAS ONDAS 
+ELECTROMAGNÉTICAS (OEM)
+• TRANSMISIÓN POR ESPACIO LIBRE
+RADIOCOMUNICACIONES   HF VHF UHF
+MICROONDAS
+SATÉLITE
+LÁSER
+• TRANSMISIÓN GUIADA
+COAXIL
+COBRE DESNUDO
+CABLE TELEFÓNICO
+CABLE TRENZADO
+FIBRA ÓPTICA
+GUÍA DE ONDATRANSMISIÓN EN MEDIOS CONDUCTORES
+(inductancia)
+(inductancia)
+Características eléctricas
+Z = R + j (XL – XC)     ohms
+R =  l/S     XL = L     Xc = 1 / CTRANSMISIÓN EN MEDIOS CONDUCTORES
+Impedancia Característica
+Si R y G son muy pequeñas (línea de 
+bajas pérdidas) o la frecuencia de 
+operación es elevadaTRANSMISIÓN EN MEDIOS CONDUCTORES
+Efecto pelicular
+Profundidad de 
+penetración ()
+Depende de:
+Frecuencia de operación ()
+Permeabilidad magnética ()
+Conductividad eléctrica ()PARES TELEFÓNICOS
+PAR TRENZADO
+PAR TRENZADO
+Configuración UTP
+ Recto
+568 A - 568 A
+ Cruzado
+568 A - 568 B
+Entre panel-dispositivo, WS-roseta, WS-
+dispositivo, dispositivo-puerto 
+crossover.
+Entre dispositivos, entre WSs, WS-
+Servidor.CATEGORÍAS DEL UTP
+OTROS CABLEADOS ESTANDARIZADOS
+Acrónimo Impedancia Significado
+STP 150 ohms Par trenzado blindado
+FTP 120 ohms Par trenzado cubierto de pantalla de 
+aluminio
+SFTP 120 ohms FTP con una malla de cobre adicional
+SSTP 120 ohms Par trenzado con una pantalla de aluminio
+independiente y una malla exterior de 
+cobreRELACIÓN DIAFONÍA CON 
+LONGITUD DE TRENZADO O 
+DE TORSIÓN
+MENOR LONGITUD, MEJOR 
+FRENTE A LA DIAFONÍA, 
+MAYOR CALIDAD Y COSTOFOLLETO 
+TÉCNICO DE PAR 
+TRENZADO UTP
+COAXIL
+IMPEDANCIA (en ohms) USO
+75 Televisión
+Video
+50 Datos 
+Radio
+Con cinta de 
+aluminio adicional
+Autosoportado o 
+con mensajero
+FOLLETO 
+TÉCNICO DE 
+COAXIL
+50 ohms
+COAXILES 
+COMPARADOS
+CONECTORES DE COAXIL - SU IMPORTANCIA
+RG 6
+BNC
+TIPO F
+GUÍA DE ONDA
+COMUNICACIONES POR RADIO
+ALTA FRECUENCIA (HF)
+BANDAS DE 
+OPERACIÓN
+MUY ALTA FRECUENCIA (VHF)
+ULTRA ALTA FRECUENCIA (UHF)
+DISTINTAS ATENUACIONES, ANCHOS DE BANDA, CAPACIDADES
+COMPONENTES
+TRANSMISOR / RECEPTOR (TRANSCEPTOR)
+IRRADIANTE (ANTENA)
+LÍNEA DE TRANSMISIÓN
+SUPER ALTA FRECUENCIA (SHF)Antenas
+Son conductores que liberan (transmisión) o captan 
+(recepción) ondas electromagnética.
+Antenas
+Antena Cálculo de longitud (metros)
+¼ de onda 75 / f (MHz)
+½ de onda 150 / f (MHz)
+Onda completa 300 / f (MHz)
+Omnidireccionales            
+Direccionales 
+•Ganancia y Directividad
+•Polarización
+•Diagramas de irradiaciónModos de Propagación
+ONDA IONOSFÉRICA
+ONDA TERRESTRE
+Características según la Banda de Operación
+Alcance
+FrecuenciaMF       AF          MAF         UAF
+OS
+OI
+OD
+Cantidad de 
+canales
+N
+FrecuenciaMF       AF          MAF         UAF
+Ne Ni
++   Potencias    -Onda Ionosférica
+Capas de la Atmósfera
+Tropósfera
+Estratósfera
+Ionósfera (60 a 350 km)
+•D
+•E
+•F        F1     F2
+Altura respecto de 
+la corteza terrestre
+---
++++IONÓSFERA
+Capa/Región Altitud durante el día (km) Altitud durante la noche
+D 50 - 100 Desaparece
+E 100 - 140 Se mantiene
+F1 180 - 240 Desaparece
+F2 230 - 400 Se mantiene
+La densidad de ionización depende de factores como la 
+altitud, hora del día, la estación del año y la ubicación 
+geográfica.Onda Ionosférica
+Cálculo de distancia de salto
+Onda Directa
+Onda Directa
+FENÓMENO DE DIFRACCIÓN 
+POR EFECTO DE LA 
+ATMÓSFERA EN LA 
+CURV ATURA DE LA TIERRA
+D = 4,14 (H)1/2Cálculo de enlace en un sistema de 
+radio con onda directa (radioenlace)
+Ecuación de un enlace
+Srx = Ptx – Lctx + Gatx – Lenl + Garx – Lcrx – FD
+dBm  dBm   dB       dB       dB       dB      dB       dBAntenas de Radioenlaces 
+(Microondas)
+Estación terrena
+ transmisora
+Satélite
+Estación terrena
+ receptora
+Red terrestre Red Terrestre
+enlace
+ascendente
+enlacedescendente
+Multiplexor Multiplexor
+Componentes de una comunicación satelital
+Estación terrestre
+para telecomando, telemetría y
+control
+SEGMENTO 
+ESPACIAL
+SEGMENTO 
+TERRESTREANTENAS SATELITALES
+TIPOS DE SATÉLITES DE COMUNICACIONES
+ de órbita baja (LEO - Low Earth Orbit), con altura entre 
+150 y 450 km, dan la vuelta a la Tierra en aproximadamente 
+1,5 horas, permaneciendo a la vista de una estación terrena 
+durante alrededor de un cuarto de hora. (met, tef sat, obs)
+ de órbita media (MEO - Medium Earth Orbit), con altura 
+entre 9000 y 18000 km, tiene un período de rotación 
+comprendido entre 5 y 12 horas, permaneciendo a la vista de 
+una estación terrena entre 2 y 4 horas. (GPS)
+ geoestacionarios (GEO - Geosynchronous Earth Orbit), con 
+altura de 36000 km, tiene un período de rotación de 24 horas 
+por lo que se llaman geosincrónicos también. (com)TIPOS DE SATÉLITES DE COMUNICACIONES
+Constelaciones satelitalesCARACTERÍSTICAS DE INTERÉS
+CANTIDAD DE TRANSPONDERS DE UN SATÉLITE
+ANCHO DE BANDA DE CADA TRANSPONDER
+CAPACIDAD TOTAL DEL SATÉLITE
+BANDA DE OPERACIÓN (C, Ku, Ka)
+CALIDAD DE LA SEÑAL (ATENUACIONES)
+CONFIABILIDAD
+TAMAÑO DE LA ANTENA
+TIPO DE SATÉLITE
+COBERTURA
+RETARDOS, SENSIBLE A ECLIPSES Y LLUVIACARACTERÍSTICAS DE INTERÉS
+COSTOS
+DEPENDENCIA
+CONFIABILIDAD
+SERVICIOS (VSAT, SCPC, DAMA, MCPC)
+SEGÚN TIPO DE INFORMACIÓN A TRANSFERIR
+VSAT (VERY SMALL APERTURE TERMINAL)
+SCPC (SINGLE CHANNEL PER CARRIER)
+MCPC (MULTI CHANNEL PER CARRIER)
+DAMA (DEMAND ASSIGNMENT MULTIPLE ACCESS)
+TDMA (TIME DIVISION MULTIPLEX ACCESS)CARACTERÍSTICAS DE INTERÉS
+ENLACE PUNTO A PUNTO (SCPC)
+ENLACE PUNTO A MULTIPUNTO (VSAT)
+DESIGNACIÓN
+UIT
+FREC (GHz)
+BANDA
+CARACTERÍSTICAS
+C
+ 4 / 6
+ MENOR ATENUACIÓN MAYOR 
+TAMAÑO ANTENA
+Ku
+ 11 / 18
+Ka
+ 26 / 40
+ MAYOR ATENUACIÓN MENOR 
+TAMAÑO ANTENA
+VSAT
+TERMINAL VSAT
+TERMINAL VSAT
+TERMINAL VSAT
+Satellite
+Hub
+ANTENA MAESTRA
+RED PÚBLICA
+TELEPUERTO
+INROUTE
+OUTROUTE
+https://app.keeptrack.space/

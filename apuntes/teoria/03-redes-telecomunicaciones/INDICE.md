@@ -1,29 +1,21 @@
 # Unidad 3 — Redes de telecomunicaciones
 
-**Idea central:** relacionar velocidades, formas de transmisión, protocolos, enlaces y topologías sin
-confundir baudios, bit/s y transferencia útil.
+**Idea central:** señalización, datos y entrega útil son cuentas distintas; sincronismo y organización de la red determinan cómo se interpreta y conecta esa información.
 
-## Capturas relacionadas
+## Orden de lectura
 
-- [Clase teórica 4](../../../capturas/teoria/03-redes-telecomunicaciones/apuntes-clase%204.md) —
-  velocidades, transmisión multinivel, modos y sincronismo.
-- [Clase teórica 5](../../../capturas/teoria/03-redes-telecomunicaciones/apuntes-clase%205.md) —
-  protocolos serie, redes, enlaces, conmutación y topologías.
-- [Práctica 3](../../../capturas/practica/clase%2003.md) — medidas de velocidad antes de Fourier.
-- [Práctica 4](../../../capturas/practica/clase%2004.md) — velocidades y sincronismo antes del bloque de dB.
+1. [Velocidades](APUNTE.md#velocidades) → [multinivel y banda](APUNTE.md#multinivel).
+2. [Sentidos/serie/paralelo](APUNTE.md#sentidos-modos) → [sincronismo/rendimiento](APUNTE.md#sincronismo) → [protocolos](APUNTE.md#protocolos).
+3. [Redes/enlaces/costos](APUNTE.md#redes) → [conmutación](APUNTE.md#conmutacion) → [topologías](APUNTE.md#topologias).
+4. [RTPC](APUNTE.md#rtpc) → [señalización/tráfico](APUNTE.md#trafico) → [RDSI y fila pendiente](APUNTE.md#rdsi).
 
-## Repaso
+## Práctica y repaso
 
-- [Clase 5 — cuestionario](../../../capturas/practica/Clase%2005.md) — velocidades, ancho de banda,
-  dBm y relación baudios/bit/s.
-- [Cuestionario U3](../../../capturas/teoria/03-redes-telecomunicaciones/cuestionario_U3.md) —
-  transferencia, tren de pulsos y radiodifusión.
+- [TP3 E1–18 y ejemplos registrados](../../practica/tp-03-redes.md); [E19 existente](../../practica/tp-03-ejercicio-19-calculo-enlace.md), sin duplicación.
+- [Repaso U3: cinco preguntas existentes](../../repaso/u03-redes.md); Fourier Q2 va a U2, dBm práctica 5Q3 a U6.
 
-## Dependencias
+## Alcance y dependencia
 
-- **Se apoya en U2:** representación espectral y ancho de banda.
-- **Habilita U4 y U6:** modulación y límites físicos del canal.
+El [apunte canónico](APUNTE.md#alcance-y-fuentes) declara corpus, cobertura del programa y [pendientes/QA](APUNTE.md#pendientes). No cubre íntegramente todo el programa ni se anuncia revisado.
 
-## Pendientes
-
-- Todo el contenido de U3 sigue en capturas; aún no hay apuntes temáticos contrastados.
+Se apoya en [U2](../02-senales-telecomunicaciones/APUNTE.md), conecta con [U4](../04-modulacion-digitalizacion-multiplexacion/APUNTE.md) y [U6](../06-canales-comunicaciones/APUNTE.md). Capturas y PDFs permanecen inmutables; las referencias originales están en el apunte, práctica y repaso.

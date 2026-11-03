@@ -1,0 +1,153 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 2/EXPRESIONES  Y RTAS UD 2 2DA PARTE.pdf
+# titulo-identificado: EXPRESIONES  Y RTAS UD 2 2DA PARTE
+# titulo-metadatos-pdf: 
+# sha256-original: d0c9087b823548adbacfe1f764c8eeddcf8e233e6b7d652d3392ddca9b9b9599
+# paginas-pdf-total: 4
+# paginas-pdf-extraidas: 1,2,3,4
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+ 
+ UNIDAD  TEMATICA NRO 2  (2da Parte) - RESPUESTAS 
+8.  
+ 
+ 
+                                                                                                         
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+a0= 0  
+ Integral bajo la curva 
+an= 0  
+ Por producto de funciones.  f(t)*cos(nwt) 
+bn 0 
+ Por producto de funciones.  f(t)*sen(nwt 
+Paridad de Funciones: 
+P*P= P 
+I * I = P 
+I * P= I  
+(se anulan los coeficientes 
+). 
+
+===== PÁGINA PDF 2 =====
+Resolución General: 
+  
+ 
+ 
+Sync= sen X/X 
+f(t)=A 
+   Cn  = A*d/T 
+ 
+ 
+f(t)=A 
+
+===== PÁGINA PDF 3 =====
+ 
+Cálculo del número de armónicos: 
+ Cuando (n*0*d / 2)=  
+ 
+Conclusiones:   La mayor concentración de energía esta entre el 0 y , en 
+consecuencia son las armónicas más importantes para construir el pulso. 
+ 
+9.  
+T= ¼= 0,25 seg 
+ 
+d=  = 1/Vm= 0,05 seg 
+ 
+  
+Calculo del Ancho de Banda: 
+ 
+  
+ 
+Calculo del Espectro de Amplitud:  
+ 
+  
+ 
+11.    
+  T= 1/ 300 = 0,0033 seg. 
+ 
+            A= 1Volt 
+           d=  = 1/Vm= 0,000833 seg.     
+                
+n = T/d n = 0,25 / 0,05 =  5 A
+rmónicos AB = n*f0 
+   AB  = 1 /  
+ 
+    AB  = 20 Hz 
+ 
+ 
+n = T/d 
+FRP= 1 /  = 4pps 
+ 
+ 
+ 
+   Cn  = A*d/T 
+ 
+ 
+   Cn  = A*d/T 
+ 
+ Vm  =  20 baudios  = 1 /  
+ 
+ 
+   Cn  = A *0,05 / 0,25 
+ 
+ 
+   Cn  = 0,2 A  
+ 
+ 
+   AB  =  5* 4 pps 
+ 
+ 
+FRP= 1 / T =  300 pps 
+ 
+ 
+ 
+ 
+ 
+ 
+Vm  = 1200 baudios 
+ 
+ 
+n = T/d n = 0,0033 / 0,000833 =  4 Armónicos 
+ 
+ 
+   Cn  = A*d/T 
+ 
+ 
+
+===== PÁGINA PDF 4 =====
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12. Resolución alumno idem anterior. 
+ 
+ 
+ 
+ 
+0,25 V 
+4w0 -4w0 
+4w0 8w0 
+n*W0 =  n* 2    f 
+ 
+AB = n*f0 AB = 4*300 = 1200 Hz 
+   Cn  = A*d/T 
+ 
+ 
+  Cn  = 1V * 0,000833 / 0,0033 =  0,25 V 
+ 
+ 

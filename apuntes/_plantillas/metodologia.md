@@ -71,7 +71,7 @@ binarios.
 ### 1.7 Índice de lectura al frente
 
 DDS abre con una tabla "Bitácora / Índice de lectura": clase, tema central, fuente, en qué anclar. Es lo
-que hace usable un documento de 9.500 líneas. En U1–U4 se porta como `INDICE.md` breve por unidad:
+que hace usable un documento de 9.500 líneas. En U1–U8 se porta como `INDICE.md` breve por unidad:
 enlaza secciones del `APUNTE.md` y el orden de lectura, sin repetir su desarrollo ni duplicar su estado.
 
 ### 1.8 Orden por dependencia conceptual, no por orden del PDF
@@ -100,7 +100,7 @@ bloques en todo genera relleno, y el relleno no se estudia.
 | `Ejemplo mínimo` de código | `Formalización` + `Ejemplo numérico` | La materia es cuantitativa. El equivalente pedagógico de "correr el código" es **hacer la cuenta y verificar la unidad**. |
 | `Gotchas reales del repo` | `Gotchas del material` | Contradicciones entre filminas, bibliografía y normas. |
 | Lectura `request -> controller -> service` | Bloque `Modelo mental` con cadena de señal o diagrama Mermaid | El flujo acá es físico: `fuente -> codificador -> modulador -> canal -> demodulador -> decodificador -> destino`. |
-| Un único archivo gigante | Para U1–U4, un `APUNTE.md` teórico canónico por unidad, con los temas organizados en secciones; `INDICE.md` queda como navegación breve. Práctica y repaso van aparte. | Mantiene una sola fuente teórica por unidad y evita duplicar contenido o estados entre archivos temáticos. Los enlaces del índice apuntan a las secciones del apunte. |
+| Un único archivo gigante | Para U1–U8, un `APUNTE.md` teórico canónico por unidad, con los temas organizados en secciones; `INDICE.md` queda como navegación breve. Práctica y repaso van aparte. | Mantiene una sola fuente teórica por unidad y evita duplicar contenido o estados entre archivos temáticos. Los enlaces del índice apuntan a las secciones del apunte. |
 
 ### 2.1 Lo que se agrega, propio de esta materia
 
@@ -140,6 +140,22 @@ no en teoría:
 
 ---
 
+### 3.1 Fidelidad docente y apoyos mínimos
+
+Conservá los bloques conceptuales, términos, siglas y notación del profesor. El orden por dependencia de §1.8 sigue siendo válido, pero no autoriza a sustituir agrupaciones docentes por categorías editoriales propias: el estudiante debe poder relacionar apunte y clase. Por ejemplo, mantené reconocible el bloque «Características de interés» y escribí equivalencias como «uplink — enlace ascendente», no sólo su traducción.
+
+Un apoyo conceptual puede aclarar un concepto ya visto; debe identificarse como tal y resolver una dificultad concreta. No agregues temas ni fórmulas para aparentar exhaustividad. Si una fórmula adicional no es necesaria para entender lo tratado, omitila; si es necesaria, indicá su procedencia o derivación y cumplí las reglas de símbolos, unidades, supuestos y ejemplo. Los ejemplos hipotéticos se rotulan como didácticos, no como datos de la cátedra.
+
+No conviertas redondeos o diferencias de notación inocuas en erratas. Una discrepancia que afecte la definición, las unidades, el cálculo o la conclusión requiere separar: **qué afirma la cátedra → evidencia de contraste → conclusión y tratamiento en el apunte**. Si la evidencia no alcanza, registrá el pendiente sin resolverlo por intuición. Esto complementa la jerarquía de fuentes de §4; no vuelve infalible ninguna fuente.
+
+### 3.2 Párrafos sin cortes manuales y cambios sólo de formato
+
+Escribí cada párrafo y cada ítem en una línea lógica, sin insertar EOL por ancho fijo; el editor ajusta visualmente el texto. Conservá líneas en blanco entre párrafos y los saltos necesarios de encabezados, ítems separados y listas anidadas, tablas, citas con párrafos distintos, YAML, código, Mermaid y fórmulas. Un bloque estructurado no se aplana para cumplir la regla de prosa.
+
+Cuando el pedido sea sólo de formato, no reescribas, corrijas ni amplíes contenido, ni cambies la configuración del editor. Compará antes y después: palabras y orden idénticos al normalizar sólo el espacio de la prosa redispuesta; estructura de listas y citas, enlaces, tablas, YAML, código, Mermaid y fórmulas conservados. La igualdad de texto sin espacios no basta para demostrar que se preservó la estructura Markdown. Si se detecta un error de contenido, informalo aparte sin corregirlo dentro de ese pedido.
+
+---
+
 ## 4. Alcance, autoridad y fuentes
 
 Son decisiones distintas y NO se mezclan:
@@ -149,6 +165,10 @@ Son decisiones distintas y NO se mezclan:
   de `material/`.
 - `material/_cache/` es una transcripción derivada para buscar y redactar. Facilita el acceso, pero no
   es una fuente independiente ni reemplaza el original ante dudas de fórmulas, figuras o notación.
+- `capturas/` prueba qué se registró en clase, **no que todo lo registrado sea correcto**. Markdown,
+  imágenes y anexos actuales y futuros son inmutables: no corregir, reformatear, mover, renombrar ni
+  borrar. La depuración y las discrepancias se escriben únicamente en `apuntes/`, citando la captura
+  (archivo y fecha/sección) y el material que respalda la corrección.
 
 Dentro del alcance del programa, se priorizan las fuentes así:
 
@@ -159,19 +179,32 @@ Dentro del alcance del programa, se priorizan las fuentes así:
 5. Conocimiento general del agente — **sólo como apoyo y siempre señalado como tal**.
 
 Regla dura: **el nivel 5 nunca contradice al 1 en silencio.** Si el conocimiento general del agente
-difiere del material de cátedra, se escribe lo de cátedra y se registra la diferencia como gotcha.
+difiere del material de cátedra, se registra qué afirma cada fuente y qué evidencia permite resolverlo.
+La prioridad de cátedra define el enfoque de examen, no vuelve correcto un error: una discrepancia
+material sin resolver permanece visible como pendiente, no como afirmación verificada.
+
+---
+
+### 4.1 Contraste de datos críticos
+
+Son críticos los valores usados en cálculos, límites, especificaciones y comparaciones. Antes de presentarlos como contrastados, volvé al original legible, no sólo al cache ni a la redacción del apunte. Ampliá la tabla o figura cuando haga falta; no completes un dígito dudoso por contexto ni copies un valor de una columna vecina.
+
+Registrá el dato y su evidencia en el registro de revisión, sin saturar cada párrafo: archivo fuente, página o tabla/figura, fila y columna cuando correspondan, valor, unidad y condición —por ejemplo, típico/máximo, frecuencia, ventana o longitud—. Para una imagen sin paginación, identificá tabla y fila/columna. Diferenciá valores leídos de resultados calculados y supuestos didácticos; a estos últimos no les atribuyas una procedencia ficticia.
+
+Si el original indica 0,4 y el candidato dice 0,5, hay una discrepancia de transcripción aunque todas las cuentas con 0,5 sean correctas. Si el original no permite distinguirlos, el dato permanece pendiente: no puede alimentar un ejercicio o una respuesta evaluada como confirmada. El registro de §6.2 y la plantilla teórica muestran cómo dejar esa evidencia.
 
 ---
 
 ## 5. Workflow para un tema nuevo
 
 ```txt
-1. Identificar las fuentes de cada tema en material/teoria/ o material/practica/
+1. Leer el programa; mapear capturas y fuentes de material/ a los temas de cada unidad. No mover una
+   captura mixta: integrar cada tema en la unidad que corresponda y enlazar su procedencia.
 2. Buscar su transcripción en material/_cache/
 3. Si no existe, generarla (ver abajo)
 4. Usar la transcripción para buscar y redactar; contrastar el resultado con el PDF, que es la
    autoridad para texto, diagramas y notación
-5. Para U1–U4, integrar la teoría en la sección correspondiente del `APUNTE.md` canónico de la unidad;
+5. Para U1–U8, integrar la teoría en la sección correspondiente del `APUNTE.md` canónico de la unidad;
    conservar ejercicios resueltos en `apuntes/practica/` y actividades de evaluación/repaso en
    `apuntes/repaso/`. No modificar las capturas originales.
 6. Actualizar el `INDICE.md` breve con enlaces a las secciones del apunte y a la práctica/repaso
@@ -179,7 +212,7 @@ difiere del material de cátedra, se escribe lo de cátedra y se registra la dif
    independiente de un tema.
 ```
 
-Generar cache textual (`pdftotext` está disponible en este entorno, en `/mingw64/bin`):
+Generar cache textual (comprobar primero la disponibilidad y ubicación de `pdftotext`):
 
 ```bash
 pdftotext -layout -enc UTF-8 "material/teoria/<archivo>.pdf" "material/_cache/<nombre>.txt"
@@ -187,10 +220,13 @@ pdftotext -layout -enc UTF-8 "material/teoria/<archivo>.pdf" "material/_cache/<n
 
 Notas de entorno:
 
-- El lector de PDF nativo del agente **no funciona acá**: falta `pdftoppm`. Usar `pdftotext`.
-- Alternativa si `pdftotext` falla: `python -c` con `pypdf`, escribiendo a archivo con
-  `encoding='utf-8'`. Imprimir a stdout revienta con `UnicodeEncodeError` por la consola cp1252.
-- No hay `bat`, `fd`, `eza`. Sí hay `rg`.
+- Verificar herramientas por sesión. En la comprobación del 2026-10-10, PowerShell resolvió
+  `pdftoppm` del runtime Poppler y `rg`, pero no `pdftotext` en su PATH; eso no demuestra que no exista
+  en otro directorio o shell. Los diagnósticos previos sobre herramientas faltantes no son reglas.
+- Si `pdftotext` no está accesible, localizar el runtime disponible o usar `pypdf` sólo si está
+  instalado, guardando el cache en UTF-8. No instalar herramientas sin autorización.
+- La extracción textual no verifica diagramas ni notación visual. Renderizar/inspeccionar las páginas
+  originales cuando haga falta; si no se puede, registrar exactamente qué contraste falta.
 
 > **No consolidar una sección del apunte si su PDF todavía no tiene cache textual**, salvo pedido
 > explícito.
@@ -199,7 +235,7 @@ Notas de entorno:
 
 ## 6. Estado del apunte canónico de unidad
 
-En U1–U4 hay un solo `APUNTE.md` teórico por unidad. Su front matter lleva `unidad`, `estado`,
+En U1–U8 el destino es un solo `APUNTE.md` teórico por unidad. Su front matter lleva `unidad`, `estado`,
 `fuentes` y `actualizado`; no lleva `tema`, porque el documento reúne varios temas. Las fuentes se
 citan también en las secciones donde se usan. El `estado` se aplica a toda la unidad, no a un tema ni a
 una sección:
@@ -221,6 +257,48 @@ Las capturas rápidas no llevan este estado ni front matter obligatorio: son reg
 material consolidado. Su trazabilidad vive en la bitácora hasta que se integran como secciones del
 apunte canónico.
 
+<a id="puerta-de-calidad"></a>
+### 6.1 Puerta de calidad: cuándo es un apunte final
+
+**Final no es otro estado:** se reserva para una unidad `revisado` con todo el alcance del programa
+cubierto. Un apunte completo de un subconjunto declara sus exclusiones y no es la unidad final.
+Antes de promover el estado, dejar en `APUNTE.md` evidencia de estos controles:
+
+1. **Cobertura:** tabla breve `tema del programa + términos/siglas docentes → sección → captura/material (página o sección) → cubierto/pendiente`. Incluir conceptos y figuras relevantes, no sólo contar páginas. Un tema sin captura puede desarrollarse desde material; sin evidencia suficiente queda pendiente. Distinguir lo visto en clase de lo exigido por el programa.
+2. **Rigor y enfoque:** contrastar cada sección con originales; verificar fórmulas, símbolos, unidades,
+   supuestos, cálculos, resultados y diagramas. Explicar conceptos centrales con la secuencia de §1.1;
+   comprobar errores típicos, respuesta de examen, resumen mental y checklist. No agregar relleno ni
+   confundir limpieza de redacción con verificación.
+3. **Trazabilidad:** cada sección identifica su captura de origen, cuando exista, y el material que
+   sostiene sus afirmaciones, con páginas o secciones. Las discrepancias se registran explícitamente;
+   no ocultarlas ni resolverlas sin evidencia.
+4. **Integridad y navegación:** comprobar enlaces y anclas, unidad de destino y separación teoría /
+   práctica / repaso. Verificar que no se modificaron originales; no restaurar ni borrar cambios previos
+   del estudiante para que el control parezca pasar.
+5. **Registro de revisión:** fecha, alcance, fuentes, controles ejecutados y resultados, limitaciones y pendientes, separados por tipo según §6.2. No dar por ejecutado un control sólo porque figura en un checklist.
+
+Una sección sin contrastar, un cálculo dudoso o una figura inaccesible impide `revisado`. Si la cobertura
+es parcial, nombrar el alcance real; nunca anunciar «unidad final» o «simulacro integral» por omisión.
+
+---
+
+<a id="revision-diferenciada"></a>
+### 6.2 Revisión diferenciada y evidencia
+
+Informá tres tipos de comprobación por separado. Ninguno sustituye a los demás ni habilita por sí solo el estado `revisado`:
+
+| Tipo de control | Evidencia que debe registrarse | Qué no demuestra por sí solo |
+|---|---|---|
+| Estructural | Archivos y secciones examinados; resultado de enlaces, anclas, formato e integridad de originales | Corrección de datos, fórmulas o explicaciones |
+| Recálculo | Entradas utilizadas, operación o procedimiento, unidades y resultado obtenido | Que las entradas coincidan con la fuente ni que el modelo sea aplicable |
+| Contraste técnico | Original y localizador legible; comparación de conceptos, datos críticos, fórmulas, condiciones, figuras y vocabulario docente | Cobertura integral de secciones que no se contrastaron |
+
+En cada tipo indicá **alcance → método realmente usado → resultado → limitaciones y pendientes**. Si una comprobación no se ejecutó, escribí «no realizado»; si no corresponde, explicá por qué. Una discrepancia no se transforma en «comprobado» porque otro tipo de control haya pasado. El revisor debe volver a la fuente original, no limitarse a aceptar las cuentas o la afirmación de verificación del redactor.
+
+Usá el registro y la tabla compacta de evidencia de la [plantilla teórica](apunte-teoria.md#registro-revision). No exijas una fila por cada número de un ejemplo hipotético: concentrá el contraste de fuente en los datos críticos tomados de material real. En práctica y repaso, mantené además la literalidad y la evidencia por pregunta de §8.
+
+La revisión es un conjunto de comprobaciones con alcance explícito, no una garantía de ausencia total de errores. Sólo la puerta de calidad completa de §6.1 permite promover el estado de la unidad.
+
 ---
 
 ## 7. Lo que NO se hace
@@ -231,6 +309,65 @@ apunte canónico.
   con certeza, se escribe `<!-- PENDIENTE: verificar en material -->` y se avisa.
 - No tapar contradicciones entre cátedra y bibliografía.
 - No mezclar unidades del programa en un mismo `APUNTE.md`.
-- No editar nada dentro de `material/`.
+- No editar originales dentro de `material/`; sólo generar derivados en `material/_cache/`.
+- No modificar ningún original de `capturas/`, aunque tenga errores.
 - No meter cuestionarios ni flashcards dentro del apunte principal. El apunte **explica**; los ejercicios
   resueltos y el material de repaso **entrenan**, y van aparte, enlazados desde `INDICE.md`.
+
+---
+
+<a id="cuestionarios-simulacros"></a>
+## 8. Práctica, cuestionarios y simulacros confiables
+
+Se guardan en `apuntes/practica/` los TPs, guías y ejercicios resueltos; los cuestionarios/simulacros
+van en `apuntes/repaso/`. Una evaluación conversacional no modifica archivos. Usá fuentes contrastadas,
+indicá su localizador preciso y declará el alcance/pendientes; una sección verificada de una unidad en
+progreso puede alimentar práctica o repaso **parcial**, pero no certificar toda la unidad.
+
+### 8.1 TPs, guías y ejercicios resueltos
+
+- **Enunciado literal primero:** transcribí completo el texto de la fuente que se está resolviendo,
+  incluyendo subítems, datos, unidades, tablas y opciones, sin paráfrasis ni correcciones silenciosas.
+  Sólo se normalizan saltos de línea. Referenciá archivo y página/sección del PDF o archivo/línea de la
+  captura; las capturas y los PDFs originales son inmutables.
+- Si una errata, ambigüedad o discrepancia necesita aclaración, mantené intacta la transcripción y
+  agregá la nota por separado, con procedencia/evidencia. No presentes una lectura probable como si
+  fuera la consigna original.
+- **Datos después del enunciado:** resumí los valores, símbolos y unidades que efectivamente brinda la
+  consigna, más sus condiciones. No reemplaza el enunciado ni agrega parámetros inferidos. En preguntas
+  conceptuales o sin números, escribí que no hay datos numéricos y enumerá las premisas pertinentes;
+  nunca inventes datos para llenar la tabla.
+- Después de `Datos`, explicá qué se pide y desarrollá la **resolución paso a paso**, justificando por
+  qué corresponde cada método, conversión, fórmula, sustitución y conclusión. Mostrá unidades y
+  supuestos. Una comprobación o enseñanza adicional va identificada como nota pedagógica, no mezclada
+  con lo que afirma la fuente.
+- **Preservación conservadora:** si el desarrollo ya registrado en una captura es correcto y claro,
+  conservá su orden, método, cuentas, resultados y formato sustantivo. No lo reescribas entero ni
+  reemplaces la voz del docente por otra solución; agregá únicamente las explicaciones que hagan falta
+  para aprender el porqué de cada paso. Si corregís un error, explicá el motivo y citá la evidencia,
+  manteniendo tanto el original como la corrección claramente distinguibles.
+- En cuestionarios de opción múltiple, conservá literal la pregunta, el orden de opciones y la notación;
+  presentá después las condiciones/datos extraídos y una resolución razonada. Si se usa para
+  autoevaluación, separá la respuesta de la consigna y explicá también por qué las opciones incorrectas
+  no aplican. No transformes distractores para hacerlos más sencillos.
+
+### 8.2 Cuestionarios y simulacros confiables
+
+Sólo se escriben cuando el estudiante autoriza; usar secciones contrastadas y registrar el alcance:
+unidad/es, temas, dificultad, modalidad y, para un simulacro, tiempo/puntaje. Si hay temas excluidos o
+pendientes, declararlos; no evaluar una afirmación no verificada como cierta.
+
+- Cada pregunta tiene un identificador y vincula su sección de `APUNTE.md` y la evidencia original
+  (archivo y página/sección). Una tabla común evita repetir referencias extensas.
+- Transcribir fielmente preguntas/opciones del origen cuando se practique sobre una evaluación
+  registrada; ver el formato de `Datos`/condiciones en §8.1. Para preguntas nuevas, los datos
+  hipotéticos se identifican como tales y la evidencia no se atribuye a la fuente original.
+- Mezclar comprensión, distinciones, aplicación y cálculos cuando correspondan; no limitarse a
+  memorizar definiciones.
+- Separar enunciados de respuestas/rúbrica cuando permita autoevaluación sin anticipar la solución.
+  Cada respuesta explica el porqué; los cálculos muestran unidades y supuestos. La rúbrica aclara qué
+  razonamiento da puntaje y qué errores lo invalidan. Las opciones incorrectas tienen explicación.
+- Antes de publicar, verificar claridad y resolubilidad del enunciado, respuesta/rúbrica, cálculos,
+  evidencia, enlaces y cobertura declarada. Registrar fecha y pendientes; si falta una comprobación,
+  marcar borrador y excluir ese ítem de la evaluación hasta resolverla.
+- En modo Tutor, preguntar de a una, esperar el intento y corregir el razonamiento con evidencia.

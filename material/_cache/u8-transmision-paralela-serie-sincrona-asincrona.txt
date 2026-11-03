@@ -1,0 +1,104 @@
+CACHE DERIVADO — Fuente: material/teoria/U8/Z-Transmisión-de-datos-paralela-serie-síncrona-y-asíncrona.pdf
+Método: pypdf (texto automático limitado a títulos) y notas de lectura visual manual, 2026-10-29. Las notas siguientes son transcripción/descripción de figuras, no texto extraído automáticamente ni autoridad independiente. Página = página del archivo PDF, 1-based.
+
+TEXTO EXTRAÍDO AUTOMÁTICAMENTE
+
+=== Página 1 ===
+Modos de transmisión
+ 
+
+=== Página 2 ===
+Transmisión paralelo
+ 
+
+=== Página 3 ===
+Transmisión serie
+ 
+
+=== Página 4 ===
+Trasmisión Asíncrona
+ 
+
+=== Página 5 ===
+Transmisión Síncrona
+ 
+
+=== Página 6 ===
+Diferencia DTE-DCE 
+ 
+
+=== Página 7 ===
+Interfaz DTE-DCE
+ 
+
+=== Página 8 ===
+Especificaciones EIA-232
+ 
+
+=== Página 9 ===
+Especificaciones/2 EIA-232
+ 
+
+=== Página 10 ===
+Patillas DB-25 EIA-232
+ 
+
+=== Página 11 ===
+Patillas DB-9 EIA-232
+ 
+
+=== Página 12 ===
+Transmisión síncrona full-dúplex
+ 
+
+=== Página 13 ===
+Conexiones con/sin DCE
+ 
+
+=== Página 14 ===
+Cable Null-modem
+ 
+
+LECTURA VISUAL MANUAL POR PÁGINA
+
+=== Página 1: nota visual ===
+Figura 6.1: transmisión de datos → paralela / serie; serie → síncrona / asíncrona.
+
+=== Página 2: nota visual ===
+Figura 6.2: emisor→receptor por ocho líneas. Los ocho bits se entregan juntos. Se necesitan ocho líneas.
+
+=== Página 3: nota visual ===
+Figura 6.3: conversor paralelo/serie en emisor; conversor serie/paralelo en receptor. Los ocho bits se envían uno detrás de otro. La figura dice «Sólo se necesita una línea (hilo)», simplificación del camino de datos, no del circuito eléctrico completo.
+
+=== Página 4: nota visual ===
+Figura 6.4: transmisión asíncrona. Dirección de flujo emisor→receptor. Bit de inicio 0, datos (ocho bits dibujados), bit de parada 1. Intervalos entre unidades de datos. El inicio está a la derecha de cada bloque dibujado porque es el primero que llegará al receptor.
+
+=== Página 5: nota visual ===
+Figura 6.5: transmisión síncrona; secuencia continua de grupos de bits, sin intervalo de inicio/parada por carácter en el dibujo.
+
+=== Página 6: nota visual ===
+Figura 6.6: DTE→DCE→Red→DCE→DTE.
+
+=== Página 7: nota visual ===
+Figura 6.7: los estándares DTE-DCE intentan definir las características mecánicas, eléctricas y funcionales de la conexión entre DTE y DCE.
+
+=== Página 8: nota visual ===
+Figura 6.8: eje Voltio con +15,+3,0,-3,-15. Áreas permitidas fuera de ±3V e indefinidas entre -3V y +3V. Dice codificación NRZ-L. Los rótulos de datos muestran 1 en tensión positiva y 0 negativa: contradicción con U8 principal p9; NO tratar esos rótulos como confirmados.
+
+=== Página 9: nota visual ===
+Figura 6.9: control EIA-232; On en zona positiva >+3V, Off negativa <-3V; zona entre -3V y +3V indefinida.
+
+=== Página 10: nota visual ===
+Figura 6.10 DB25: blindaje1, TD2, RD3, RTS4, CTS5, DCE listo6, tierra7, detector señal recibida8, reservados prueba9/10, sin asignar11, detector señal secundaria12, CTS secundario13, TD secundario14, reloj tx desde DCE15, RD secundario16, reloj rx17, bucle local18, RTS secundario19, DTE listo20, bucle local y detector calidad21, indicador anillo22, selector velocidad23, reloj tx desde DTE24, modo pruebas25. No se usa este inventario para unificar diferencias de circuitos secundarios sin consultar norma.
+
+=== Página 11: nota visual ===
+Figura 6.11 DB9: DCD1, RD2, TD3, DTR4, tierra5, DSR6, RTS7, CTS8, RI9.
+
+=== Página 12: nota visual ===
+Figura 6.12 transmisión síncrona full dúplex. Paso1 preparación (blindaje1 y tierra7); paso2 listo (DTR20→DCE y DSR6→DTE); paso3 establecimiento (RTS4→DCE, CTS5→DTE y portadora entre DCE; detección en8); paso4 transferencia (TD2, RD3, relojes24/17); paso5 desconexión (se desactivan4/5 y portadora8). Es un procedimiento funcional del ejemplo, no secuencia universal de todas las aplicaciones.
+
+=== Página 13: nota visual ===
+Figura 6.13: DTE conectados por DCE con cableado recto de datos2→2 y3→3; DTE conectados directamente: si se mantienen2→2 y3→3 quedan salidas enfrentadas y no se cumple salida→entrada.
+
+=== Página 14: nota visual ===
+Figura 6.14 cable null-modem DB25: tierra7↔7;20 puente local con6; activación4/5/8 con cruces según dibujo; datos2↔3; reloj24↔17. Los cruces y puentes son una variante concreta, no pinout universal de null-modem.

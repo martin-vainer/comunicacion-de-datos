@@ -1,0 +1,474 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/U4/U4 MULTIPLEXACION.pdf
+# titulo-identificado: U4 MULTIPLEXACION
+# titulo-metadatos-pdf: 
+# sha256-original: 6479f94d0a15b1e8a62366fa62c5e59b293d4c271c2db1a2f9b823222cd098f0
+# paginas-pdf-total: 36
+# paginas-pdf-extraidas: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+COMUNICACIÓN DE DATOS
+U 4
+MULTIPLEXACIÓN
+Ingeniero ALEJANDRO ECHAZÚ
+alejandroechazu@frba.utn.edu.ar
+
+
+===== PÁGINA PDF 2 =====
+MULTIPLEXIÓN
+ES UNA TÉCNICA PARA TRANSMITIR SIMULTÁ
+-
+NEAMENTE V ARIAS COMUNICACIONES, SIN QUE 
+SE INTERFIERAN, POR UN ÚNICO VÍNCULO DE 
+COMUNICACIONES (fibra óptica, coaxil, radio, par de 
+cobre, etc).
+•
+APROVECHAR MEJOR EL ANCHO DE BANDA (EN 
+FORMA FIJA O POR DEMANDA).
+•
+USO EN SISTEMAS DE BANDA ANGOSTA Y 
+ANCHA. 
+•
+REDUCIR COSTOS.
+MULTIPLICACIÓN
+
+===== PÁGINA PDF 3 =====
+MULTIPLEXIÓN
+•
+TRANSPARENCIA EN EL USO. NO AFECTAR LA 
+QOS. 
+•
+CAPACIDAD (C) = AB, Vtx, long onda
+•
+EQUIPAMIENTO = MUX / DEMUX
+•
+SON ETCD. TRABAJAN DE A PARES DE EQUIPOS.
+•
+DISTINTOS TIPOS DE INFORMACIÓN.
+•
+OPERAN EN EL NIVEL DE ENLACE DEL MODELO 
+OSI
+C sal mux > = SUMA DE LAS C ent mux (subcanales)
+
+===== PÁGINA PDF 4 =====
+Multiplexación: Voz / Datos
+
+
+===== PÁGINA PDF 5 =====
+MULTIPLEXIÓN
+POR DIVISIÓN DE FRECUENCIA (FDM)
+POR DIVISIÓN DE TIEMPO (TDM)
+POR DIVISIÓN DE TIEMPO ESTADÍSTICA (STDM)
+POR DIVISIÓN DE LONGITUD DE ONDA (WDM)
+POR DIVISIÓN DE CÓDIGO (CDM)
+SEGÚN EL RECURSO DEL VÍNCULO 
+QUE ES  COMPARTIDO POR LOS 
+CANALES USUARIOS.
+TÉCNICAS
+
+
+===== PÁGINA PDF 6 =====
+FDM
+•
+DIVIDIR EL AB DISPONIBLE DE UN CANAL EN 
+AB PARA SUBCANALES INDEPENDIENTES.
+•
+BANDA DE SEGURIDAD ENTRE AB DE 
+SUBCANALES
+•
+CARACTERÍSTICAS ANALÓGICAS
+•
+MPX INCLUYEN LOS  MÓDEM Y SON MÁS 
+SIMPLES
+•
+ORDENES BÁSICOS Y SUPERIORES DE MPX EN 
+JERARQUÍAS ANALÓGICAS. PREGPO, GPO 
+PRIMARIO, SECUNDARIO, …, QUINARIO. 
+RECOMENDADO POR LA UIT
+-
+T.
+
+===== PÁGINA PDF 7 =====
+FDM
+
+
+===== PÁGINA PDF 8 =====
+
+
+===== PÁGINA PDF 9 =====
+
+
+===== PÁGINA PDF 10 =====
+ORDENES BÁSICOS Y SUPERIORES FDM – UIT-T
+
+===== PÁGINA PDF 11 =====
+OFDM
+Multiplexación por división de frecuencia ortogonal
+Basada en usar varias subportadoras aplicando la ortogonalidad entre 
+ellas. Divide un flujo de datos de alta velocidad en varios flujos de 
+menor velocidad.
+Mayor eficiencia espectral. Reduce la interferencia causada por 
+multitrayectos. Importancia de la sintonía de frecuencias.
+
+===== PÁGINA PDF 12 =====
+
+
+===== PÁGINA PDF 13 =====
+Los flujos de datos se 
+modulan antes de la suma 
+en M-PSK y M-QAM.
+Uso en los sistemas de banda 
+ancha como telefonía celular 
+(LTE 4G 5G), televisión digital 
+terrestre, Wi Fi IEEE 802.ax, 
+etc.
+
+===== PÁGINA PDF 14 =====
+•
+ Características digitales.
+•
+ Divide el tiempo de tx en espacios fijos 
+(time slots)
+•
+ Respeta siempre un orden.
+•
+ Si medio analógico, se debe usar módem
+•
+ Si información analógica, se debe 
+digitalizar.
+•
+ Importancia del sincronismo.
+TRAMA TDM
+A
+4B
+C
+D
+TDM
+
+
+===== PÁGINA PDF 15 =====
+•
+ Armado de tramas
+–
+ Entramado de bits
+–
+ Entramado de caracteres
+•
+ Muestreo a vel de 8000 muest/seg
+•
+ Armado de Gpo Básico según:
+TDM
+G.732 UIT 
+–
+ Norma europea
+G.733 UIT 
+–
+ Norma americana
+
+===== PÁGINA PDF 16 =====
+TDM 
+-
+ PCM
+PCM 
+-
+Esquemas 
+básicos de 
+MPX 
+digital
+30 (Europa y América del Sur) 
+E1
+1c sinc 1c se
+ñaliz  30 c info
+8 bits por canal                          
+256 bits por trama 
+(125 
+
+seg)
+Vtx (trama)
+ = 2,048 Mbps
+24 (EEUU y Japón) 
+T1  
+24 c info                                           
+8 bits por canal (7 info + 1 se
+ñaliz
+) 
++ 1 bit cód de trama                                     
+193 bits por trama (125 
+
+seg)   
+Vtx (trama) = 1,544 Mbps
+G.732 UIT
+G.733 UITLey 
+
+Ley A
+
+===== PÁGINA PDF 17 =====
+
+
+===== PÁGINA PDF 18 =====
+PCM 
+-
+ 24
+
+
+===== PÁGINA PDF 19 =====
+ÓRDENES SUPERIORES DE MPX TDM
+JERARQUÍA DIGITAL PLESIÓCRONA (PDH)
+•
+NORMA UIT G.701
+•
+PLESIO (casi igual)
+•
+EL PRIMER NIVEL ES EL GPO BÁSICO.
+•
+AGREGADO DE INFO DEL NIVEL SIGUIENTE (SINCRONISMO)
+•
+RELOJES DE UN NIVEL SON INDEPENDIENTES DE LOS DEL OTRO 
+NIVEL
+•
+POCO FLEXIBLE (NECESIDAD DE DMPX TODA LA SEÑAL PARA 
+ACCEDER A UNA SEÑAL TRIBUTARIA)
+•
+BAJA CAPACIDAD DE CONTROL Y MANTENIMIENTO
+•
+DURACIÓN DE LA TRAMA V ARÍA SEGÚN EL NIVEL
+•
+TRES TIPOS DE JERARQUÍAS (NORMA): EUROPEA, AMERICANA Y 
+JAPONESA. ESTAS DOS ÚLTIMAS DIFIEREN EN LOS DOS ÚLTIMOS 
+ÓRDENES.
+
+===== PÁGINA PDF 20 =====
+
+
+===== PÁGINA PDF 21 =====
+PDH – NORMA EUROPEA
+
+===== PÁGINA PDF 22 =====
+PDH
+ITU
+-
+T
+(EUROPA)
+USA
+ VEL BIN
+Mbps
+T1 (DS1)
+ 1,5 
+E1
+ 2
+T2 (DS2)
+ 6
+E2
+ 8
+E3
+ 34
+T3 (DS3)
+ 44
+E4
+ T4 (DS4E)
+ 140
+(DS4)
+ 274
+E5
+ T5 (DS5)
+ 565
+
+===== PÁGINA PDF 23 =====
+ÓRDENES SUPERIORES DE MPX TDM
+JERARQUÍA DIGITAL SINCRÓNICA (SDH)
+•
+NORMA UIT G.707 Y OTRAS
+•
+FLEXIBILIDAD, SENCILLEZ
+•
+MISMO RELOJ EN TODOS LOS NIVELES (SINCRONIZACIÓN ÚNICA)
+•
+TRANSPORTA SEÑALES SDH Y TAMBIÉN PDH
+•
+CAPACIDAD DE CONTROL, GESTIÓN, MANTENIMIENTO, ETC.
+•
+EQUIPOS ADD DROP Y CROSS CONNECT
+•
+DURACIÓN ÚNICA DE LAS TRAMAS EN TODOS LOS NIVELES (125 
+
+S)
+•
+PERMITE INCORPORAR PDH MEDIANTE CONTENEDOR VIRTUAL 
+(VC)
+•
+GRAN CAPACIDAD DE TRANSMISIÓN
+•
+TRANSPORTA SEÑALES DE BANDA ANCHA COMO ATM, FDDI, ETC.
+•
+SONET (SYNCHRONOUS OPTICAL NETWORK), NORMA AMERICANA
+
+===== PÁGINA PDF 24 =====
+SDH / SONET
+SDH
+(EUROPA)
+SONET
+(USA)
+VEL BIN
+Mbps
+OC
+-
+1
+ 51
+STM
+-
+1
+ OC
+-
+3
+ 155
+OC
+-
+9
+ 466
+STM
+-
+4
+ OC
+-
+12
+ 622
+OC
+-
+24
+ 1200
+STM
+-
+16
+ OC
+-
+48
+ 2400
+STM
+-
+64
+ 10000
+STM
+-
+256
+ 40000
+
+===== PÁGINA PDF 25 =====
+SDH
+
+
+===== PÁGINA PDF 26 =====
+SDH
+CONTENEDOR VIRTUAL (VC) PERMITE 
+TRANSPORTAR SEÑALES PDH EN CARGA 
+SDH. DISTINTAS COMBINACIONES.
+
+===== PÁGINA PDF 27 =====
+PDH
+
+===== PÁGINA PDF 28 =====
+STDM
+•
+ASIGNACIÓN ESTADÍSTICA
+•
+APROVECHA TODOS LOS TIEMPOS. 
+•
+ASIGNACIÓN POR DEMANDA DE RANURAS.
+•
+TAMBIÉN SE DENOMINA MUX ASINCRÓNICA (ATDM).
+COMPARACIÓN TDM STDM
+
+===== PÁGINA PDF 29 =====
+WDM
+•
+TRANSMITIR V ARIAS LONGITUDES DE ONDA (COLORES DE LUZ) 
+SIMULTÁNEAMENTE
+•
+Vtx DESDE 2,5 A 40 Gbps
+•
+SIN AGREGAR MÁS FIBRAS, INCREMENTAR LA CAPACIDAD DE 16 A 
+32 VECES.
+•
+HASTA 160 LONGITUDES DE ONDA 
+DE
+ 10 Gbps c/u
+•
+LAS SE
+ÑALES LLEGAN AL MISMO TIEMPO.
+
+
+===== PÁGINA PDF 30 =====
+WDM
+•
+LA DIFERENCIA CON SONET ES 
+QUE ESTÁ ÚLTIMA MPX TDM Y 
+LUEGO CONVIERTE A LUZ EN 
+UNA LONG ONDA.
+•
+ACEPTACIÓN DE 
+MULTIPROTOCOLOS.
+•
+DWDM PERMITE USAR MENOS 
+EQUIPAMIENTO 
+(AMPLIFICADORES) QUE EN 
+SONET.
+•
+USO DE MPX ÓPTICOS ADD 
+–
+DROP Y CROSS CONNECT 
+ÓPTICOS. FUNCIONAN SIN 
+ALIMENTACIÓN.
+•
+TRABAJA SOBRE FO 
+MONOMODO.
+
+
+===== PÁGINA PDF 31 =====
+CWDM y DWDM
+•
+DWDM (Densa) PERMITE AMPLIFICAR LAS LONG ONDA 
+SIMULTANEAMENTE SIN CONVERTIRLAS EN SEÑALES 
+ELÉCTRICAS Y TRANSMITIR SEÑALES DE DISTINTAS 
+VELOCIDADES Y TIPOS. UNI Y BIDIRECCIONAL
+•
+CWDM (Gruesa) MENOR COSTO. ÁREAS 
+METROPOLITANAS. LIMITACIÓN EN CAPACIDAD Y 
+ALCANCE. NO BIDIRECIONAL
+
+
+===== PÁGINA PDF 32 =====
+
+
+===== PÁGINA PDF 33 =====
+CWDM
+
+
+===== PÁGINA PDF 34 =====
+Técnica de 
+espectro 
+ensanchado
+CDM
+
+===== PÁGINA PDF 35 =====
+MULTIPLEXIÓN COMO MÉTODOS DE ACCESOS 
+(MA 
+–
+ ACCESO MÚLTIPLE)
+FDMA
+Por división de 
+frecuencia
+TDMA
+Por división de 
+tiempo
+CDMA
+Por división de 
+código
+Otros métodos: 
+DAMA (por asignación a demanda)
+SDMA (por división de espacio) 
+OFDMA (por división de frecuencia ortogonal)
+
+===== PÁGINA PDF 36 =====
+

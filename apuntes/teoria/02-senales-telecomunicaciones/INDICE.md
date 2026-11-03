@@ -1,50 +1,35 @@
-# Unidad 2 — Características de las señales de telecomunicaciones
+# Unidad 2 — Señales de telecomunicaciones
 
-**Idea central:** describir una señal en el tiempo y en frecuencia para entender qué puede transportar
-un medio y qué transformaciones introduce.
+Estado y alcance únicamente en [APUNTE.md](APUNTE.md#pendientes).
 
-## Apuntes temáticos
+1. [Señales/regeneración](APUNTE.md#senales).
+2. [Parámetros/media/eficaz](APUNTE.md#parametros).
+3. [Fourier](APUNTE.md#fourier) y [tren](APUNTE.md#tren).
+4. [AB](APUNTE.md#ancho-banda) y [primer cero](APUNTE.md#primer-cero).
+5. [OEM y espectro EM](APUNTE.md#oem).
+6. [Códigos](APUNTE.md#codigos), [HDB3](APUNTE.md#hdb3).
+7. [Filtros](APUNTE.md#filtros).
+8. [Resumen mental](APUNTE.md#resumen-mental).
 
-| Tema | Para qué leerlo |
-|---|---|
-| [Serie de Fourier](serie-de-fourier.md) | Pasar de una señal periódica a sus componentes espectrales |
-| [Ancho de banda](ancho-de-banda.md) | Distinguir el intervalo de una señal, de un canal y del criterio de primer cero |
+## Práctica y repaso
 
-El estado y las fuentes vigentes se consultan en el front matter de cada apunte; el índice no los
-duplica.
+- [TP2: 16 ejercicios](../../practica/tp-02-senales.md).
+- [Preguntas registradas de señales](../../repaso/u02-senales.md).
+- [Ficha Fourier/AB preservada](../../repaso/u02-fourier-y-ancho-de-banda.md).
+- [Compatibilidad de anclas](compatibilidad.md).
 
-## Capturas relacionadas
+## Conexiones
 
-Estas capturas preservan el orden de cursada y no constituyen material revisado:
+- [U3: velocidades](../03-redes-telecomunicaciones/APUNTE.md).
+- [U4: modulación](../04-modulacion-digitalizacion-multiplexacion/APUNTE.md).
+- [U6: dB/canal/errores](../06-canales-comunicaciones/APUNTE.md).
 
-| Captura | Contenido a integrar |
-|---|---|
-| [Clase 2](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase%202.md) | Señales, decibeles y ancho de banda |
-| [Clase 3](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase3.md) | Ancho de banda, tren de pulsos y ondas electromagnéticas |
-| [Clase 4](../../../capturas/teoria/02-senales-telecomunicaciones/apuntes-clase%204.md) | Códigos de línea, análisis espectral y filtros |
-| [Práctica 2](../../../capturas/practica/clase%2002.md) | Señales, espectro, banda base, códigos de línea y TP 2 |
-| [Práctica 3](../../../capturas/practica/clase%2003.md) | Señales periódicas y serie de Fourier |
-
-## Repaso
-
-- [Fourier y ancho de banda](../../repaso/u02-fourier-y-ancho-de-banda.md) — preguntas conceptuales,
-  mini ejercicios y control oral del piloto.
-
-## Orden conceptual previsto
-
-```text
-descripción de señales → señales periódicas y Fourier → espectro y ancho de banda → códigos de línea
-```
-
-El orden se confirmará al consolidar; esta línea orienta la lectura y no sustituye los apuntes.
-
-## Dependencias
-
-- **Se apoya en U1:** esquema de comunicación y canal.
-- **Habilita U3, U4 y U6:** velocidades, modulación y límites del canal.
-
-## Pendientes
-
-- Contrastar la normalización de la forma compleja de Fourier con bibliografía obligatoria o
-  aclaración docente.
-- Precisar el criterio cuantitativo detrás de “mayor cantidad de energía” para ancho de banda de señal.
+<!-- Anclas del índice anterior: conservar enlaces entrantes sin duplicar contenido. -->
+<a id="unidad-2--características-de-las-señales-de-telecomunicaciones"></a>
+<a id="apuntes-temáticos"></a>
+<a id="capturas-relacionadas"></a>
+<a id="repaso"></a>
+<a id="orden-conceptual-previsto"></a>
+<a id="dependencias"></a>
+<a id="pendientes"></a>
+[Continuar en el APUNTE canónico y su mapa de fuentes](APUNTE.md).

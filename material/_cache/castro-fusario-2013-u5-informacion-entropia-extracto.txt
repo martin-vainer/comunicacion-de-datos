@@ -1,0 +1,973 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/DOC-20230425-WA0040.pdf
+# titulo-identificado: Castro Lechtaler y Fusario 2013, §§3.6.1–3.6.4; medida de información, entropía y tasa; sólo contraste U5 registrado
+# titulo-metadatos-pdf: 
+# sha256-original: 56f7b6926abb5bea6e15e3c926d2344ad49004e4fbad6ad2e10e4060182e90ae
+# paginas-pdf-total: 726
+# paginas-pdf-extraidas: 202,203,204,205,206,207,208,209,210,211,212
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 202 =====
+3 - Técnicas de la transmisión de la información176
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Fue precisamente la denominada teoría de la información una ciencia desarrollada por 
+en sus trabajos sobre la teoría matemática de la comunicación. En ellos se 
+xx, y dieron origen a la teoría de la información. 
+La teoría de la información estudia cuatro aspectos: 
+ • Cómo se mide la información.
+ • Cuál es la capacidad de un canal de comunicaciones para transferir información.
+ • Otros aspectos relacionados con la codificación de la información.
+ • La manera de utilizar los canales a plena capacidad con una tasa de error mínima.
+Un hecho que se sabe con seguridad que va a ocurrir no contiene información alguna. Por 
+La recepción de mensajes distintos, cada uno de ellos con un grado de incertidumbre dife-
+S que se pueda pre-
+P(S), indicaremos que la cantidad de información 
+ 
+ [Shannon] (3-43)
+La elección de la base del logaritmo que interviene en la definición de la cantidad de infor-
+Por ejemplo, si tomamos logaritmo en base 2 , la unidad correspondiente, como hemos 
+Shannon. Si se tomara el logaritmo decimal, la unidad se llamará Hartley, y si 
+logaritmo natural –base e–, su nombre sería Nat. En efecto,
+ 
+ [Hartley] (3-44)
+ 
+ [Nat] (3-45)
+La relación entre las distintas unidades es la que se muestra en la Tabla 3-2.
+Los equipos módem de datos utilizan supresores de ecos que buscan minimizar estos 
+efectos. En ese sentido, para lograr la cancelación del eco, los equipos verifican su presencia 
+(retrasado respecto de la señal original), y producen una señal igual, pero de sentido inverso, 
+sobre el canal que recibe la información. 
+A partir de la Recomendación V.32 de la UIT-T, todos los módems deben tener el hard-
+ware necesario como para producir la cancelación del eco. También los satélites de comunica-
+ciones tienen incorporados estos equipos.
+Los sistemas de señalización y los nodos de conmutación deben tener en cuenta el funcio-
+namiento de los supresores de eco, y coordinar su funcionamiento con estos equipos.
+3.5.7.3 Ecualización
+Se denomina ecualización al proceso que consiste en compensar en un canal de comu-
+nicaciones los efectos que produce la distorsión (ver apartado 3.7 de este capítulo), tanto sea 
+de atenuación o de retardo de grupo, a los efectos de acondicionarlo para optimizar su rendi-
+miento.
+Los equipos que realizan estas funciones se denominan ecualizadores. Estos pueden 
+formar parte de otros equipos, como los módem de datos, o ser equipos independientes, que 
+se colocan en forma expresa sobre un canal para mejorarlo.
+En particular los ecualizadores pueden ser de dos tipos: de atenuación y de fase; aunque a 
+menudo, un mismo equipo realiza las dos funciones.
+La tarea de estos es básicamente compensar la relación entre la atenuación y la dis-
+torsión, en función de la frecuencia, buscando que las primeras se mantengan todo lo 
+constante que sea posible para todo el intervalo de frecuencias usadas por el canal de co-
+municaciones. En particular, los efectos causados por la falta de linealidad de la curva de 
+respuesta en frecuencia provocan que el comportamiento del canal sea diferente a distintas 
+frecuencias. Los ecualizadores tienden a corregir estos problemas.
+Los equipos módem de datos poseen ecualizadores denominados adaptativos, que se 
+ubican en la sección de recepción de estos y proporcionan la ecualización de la señal analógi-
+ca recibida. Para ello ajustan en forma automática sus características de ganancia y retardo, 
+mejorando con ello el comportamiento de las líneas telefónicas. 
+De esta manera estos equipos logran mejorar la tasa de errores-bER, y tienen la capaci-
+dad para ir ajustando en cada instante las características del canal de comunicaciones, a los 
+efectos de lograr su mejor rendimiento. 
+La mejora constante de su rendimiento, que se ha ido operando en sus nuevos diseños por 
+el uso de técnicas electrónicas modernas, permitió que en las nuevas recomendaciones de los 
+módems de datos se logren velocidades de transmisión cada vez más altas. 
+3.6 Capacidad de un canal
+3.6.1 Elementos de teoría de la información. Medida de la información
+Las redes de comunicaciones tienen por objeto intercambiar información. Por lo tanto, es 
+importante dar un concepto previo de qué se puede entender por información. Al respecto hay 
+muchas formas de dar una idea sobre este concepto.
+La más simple es pensar que información es aportar datos sobre algo que es desconocido 
+para el receptor. Ella puede transmitirse mediante una conversación, una transferencia de 
+archivos de texto, o por medio de un clip de video. Por ejemplo, llamo por teléfono y aviso 
+Se	denomina	ecualización	al	pro-
+ceso	que	consiste	en	compensar	
+en	 un	 canal	 de	 comunicaciones	
+los	 efectos	 que	 produce	 la	 dis-
+torsión,	tanto	sea	de	atenuación	
+o	 de	 retardo	 de	 grupo,	 a	 los	
+efectos	 de	 acondicionarlo	 para	
+optimizar	su	rendimiento.
+Capacidad	de	un	canal
+
+===== PÁGINA PDF 203 =====
+3.6 Capacidad de un canal
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+177
+que mi tren está llegando mañana a medio día, o esa misma información la envío por correo 
+electrónico. La llegada de una información también se puede producir como consecuencia de 
+la recepción de un mensaje. 
+Entenderemos por mensaje un conjunto de datos que proviene de una fuente de información.
+Fue precisamente la denominada teoría de la información una ciencia desarrollada por 
+Claude Shannon en sus trabajos sobre la teoría matemática de la comunicación. En ellos se 
+planteaba, entre otros objetivos, cómo hacer lo más eficiente posible la transmisión de infor-
+mación de dos puntos de una red de comunicaciones. Estos trabajos fueron desarrollados en 
+el siglo 
+xx, y dieron origen a la teoría de la información. 
+La teoría de la información estudia cuatro aspectos: 
+ • Cómo se mide la información.
+ • Cuál es la capacidad de un canal de comunicaciones para transferir información.
+ • Otros aspectos relacionados con la codificación de la información.
+ • La manera de utilizar los canales a plena capacidad con una tasa de error mínima.
+Un hecho que se sabe con seguridad que va a ocurrir no contiene información alguna. Por 
+lo tanto, un suceso contendrá mayor cantidad de información cuanto menor sea la probabili-
+dad de que se produzca. Sin embargo, hay otra forma mucho más precisa para conceptualizar 
+la información. 
+Definiremos como información a un conjunto de datos que permiten aclarar algo sobre aquello 
+que se desconoce. 
+La recepción de mensajes distintos, cada uno de ellos con un grado de incertidumbre dife-
+rente sobre los acontecimientos descriptos, nos conduce a la conclusión de que cada uno de 
+ellos lleva valores de cantidad de información diferentes. Sobre la base de las consideraciones 
+efectuadas, podemos dar una definición de medida de la cantidad de información que contiene 
+el suceso descripto en un mensaje, de la siguiente manera: sea un suceso 
+S que se pueda pre-
+sentar con una probabilidad de ocurrencia P(S), indicaremos que la cantidad de información 
+de que contiene ese suceso será igual a la inversa del logaritmo de la probabilidad de que ese 
+suceso se produzca.
+ 
+I S P S( ) ( )= log2
+1  [Shannon] (3-43)
+La elección de la base del logaritmo que interviene en la definición de la cantidad de infor-
+mación, implica determinar la unidad con la que se medirá ese parámetro.
+Por ejemplo, si tomamos logaritmo en base 2 , la unidad correspondiente, como hemos 
+definido, es el Shannon. Si se tomara el logaritmo decimal, la unidad se llamará Hartley, y si 
+fuese el logaritmo natural –base e–, su nombre sería Nat. En efecto,
+ 
+I S P S( ) ( )= log10
+1  [Hartley] (3-44)
+ 
+I S P S( ) ( )= loge
+1  [Nat] (3-45)
+La relación entre las distintas unidades es la que se muestra en la Tabla 3-2.
+sobre el canal que recibe la información. 
+A partir de la Recomendación V.32 de la UIT-T
+ciones tienen incorporados estos equipos.
+namiento de los supresores de eco, y coordinar su funcionamiento con estos equipos.
+3.5.7.3 Ecualización
+miento.
+Los equipos que realizan estas funciones se denominan ecualizadores
+se colocan en forma expresa sobre un canal para mejorarlo.
+menudo, un mismo equipo realiza las dos funciones.
+La tarea de estos es básicamente compensar la relación entre la 
+torsión, en función de la frecuencia
+municaciones. En particular, los efectos causados por la falta de linealidad de la 
+respuesta en frecuencia
+frecuencias. Los ecualizadores tienden a corregir estos problemas.
+Los equipos módem de datos poseen ecualizadores denominados adaptativos
+ca recibida. Para ello ajustan en forma automática sus características de ganancia y 
+mejorando con ello el comportamiento de las líneas telefónicas. 
+De esta manera estos equipos logran mejorar la tasa de errores-bER
+efectos de lograr su mejor rendimiento. 
+módems de datos se logren velocidades de transmisión cada vez más altas. 
+3.6 Capacidad de un canal
+3.6.1 Elementos de teoría de la información. Medida de la información
+muchas formas de dar una idea sobre este concepto.
+Tabla 3-2 Relación entre las 
+distintas unidades de medida de 
+la información
+1 Hartley = 3,32 Shannon
+      1 Nat = 1,44 Shannon
+           1 Hartley = 2,30 Nat
+Claude	 Elwood	 Shannon	 (1916-
+2001).	 Estudió	 Ingeniería	 Eléc -
+trica	 y	 Matemática	 Aplicada	 en	
+la	 Universidad	 de	 Michigan	 y	 en	
+1940	 se	 doctoró	 en	 el	 MIT .	 En	 el	
+período	1941-1957,	trabajó	como	
+investigador	 de	 los	 Laboratorios	
+Bell	 y	 luego,	 como	 profesor	 del	
+MIT ,	 entre	 1958	 y	 1980.	 Escribió	
+un	famoso	artículo	en	el	 Bell	Sys-
+tem	T echnical	Journal	de	octubre	
+de	 1948,	 que	 denominó	 “A	 Ma-
+thematical	 Theory	 of	 Communi -
+cation”	(T eoría	Matemática	de	la	
+Comunicación),	 que	 dio	 origen	
+a	 la	 teoría	 de	 la	 información.	 En	
+1949	 publicó	 una	 de	 las	 mayores	
+contribuciones	 al	 desarrollo	 de	
+la	 teoría	 matemática	 aplicada	
+a	 la	 criptografía,	 que	 se	 deno -
+minó	 “Communications	 Theory	
+of	 Secrecy	 Systems”	 (T eoría	
+del	 Secreto	 en	 los	 Sistemas	 de	
+Comunicaciones).
+
+
+===== PÁGINA PDF 204 =====
+3 - Técnicas de la transmisión de la información178
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Podemos suponer razonablemente que cada mensaje podrá tener asociada una probabili-
+Cuando se usa la lógica binaria, que es el caso de los equipos informáticos, ambos sucesos 
+bit. El nombre de bit como contracción de las palabras binary 
+ fue sugerido por J. W. Tukey.
+Ejemplo 3-9
+Calcular la cantidad de información que contiene una señal binaria que puede ex-
+presarse solo por dos valores, como corriente y no corriente.
+La cantidad de información resultará de 
+ 
+Donde , luego tendremos,
+ 
+Operando de manera conveniente resultará, 
+ I(S) = 1 Shannon
+Luego, podremos dar otra definición de Shannon, que indica que el Shannon es la cantidad 
+Obsérvese que la expresión dígito binario, que se puede abreviar por la de bit, indica los 
+1 y 0, símbolos que se usan en la matemática cuando el sistema de 
+En todo el razonamiento efectuado hemos supuesto que los estados uno y cero eran equi-
+Shannon. Luego, no siempre la transmisión de un cero o un uno es igual a un 
+Sin embargo, durante mucho tiempo el término bit significó tanto la unidad de informa-
+bit a los dígitos binarios que son 
+Es por ello que en teoría de la información a estos elementos de un mensaje –ceros y unos–, 
+binits para diferenciarlos 
+Por último, estas confusiones se resolvieron mediante la adopción de la norma confeccio-
+ISO-2382/XVI, que establece el 
+Esta norma define al Shannon como unidad de medida de la información para cuando 
+bit para identificar el dígito binario, también 
+binit.
+La unidad más habitual para medir la cantidad de información es el Shannon. Partiendo 
+de estas definiciones, y de los trabajos de Shannon, se puede considerar que un hecho que se 
+sabe con seguridad que va a ocurrir no contiene información alguna, por cuanto P(S) es 
+igual a uno, y el logaritmo de uno es cero, cualquiera sea la base elegida. 
+En la teoría de la probabilidad, esta situación se conoce con el nombre de certeza, esto es, 
+probabilidad igual a uno. Por lo tanto, en esa línea podríamos afirmar que un suceso contendrá 
+mayor cantidad de información cuanto menor sea la probabilidad de que se produzca. 
+Un ejemplo clásico de estos conceptos serían dos informaciones parecidas pero con con-
+tenidos de información diferentes, por ejemplo, los mensajes “llovió en el desierto de Sahara” y 
+“llovió en la selva del Amazonas”. Es evidente que la probabilidad de ambos sucesos es muy 
+diferente. La primera, por su baja probabilidad de que se produzca, contiene mucha más in-
+formación que la segunda, pues se sabe que en la selva del Amazonas llueve casi a diario. De 
+allí surge el concepto de cantidad de información de un mensaje que será motivo de un 
+tratamiento posterior en esta obra.
+Ejemplo 3-8
+Analizar la cantidad de información que tienen los mensajes siguientes para un 
+investigador que está trabajando en una base en la Antártida, y que pregunta por el 
+pronóstico del tiempo en su zona para las próximas veinticuatro horas. Supóngase 
+que puede recibir cuatro mensajes diferentes de una fuente de información origina-
+da de su servicio meteorológico. ¿Cuáles tendrán más información?
+Mensaje Nº 1: Muy frío y nublado.
+Mensaje Nº 2: Muy frío y soleado.
+Mensaje Nº 3: Frío y nublado.
+Mensaje Nº 4: Templado y soleado.
+NOTA: Es evidente que el primer mensaje contiene mucha menor información que 
+el segundo y así siguiendo hasta el cuarto, que como se observa para el caso del 
+ejemplo, es muy improbable. 
+Si se sabe por estadísticas meteorológicas que en la Antártida el 92% de los días del 
+año presenta las características del caso 1, el 7% de los días es frío y soleado, el 0,9% 
+de los días es frío y nublado, y solo el 0,1% de los días del año es templado y soleado, 
+¿cuál es la cantidad de información que contiene cada uno de los cuatro mensajes?
+ 
+I( ) , ,1 1
+0 92 0 12= log =2   Shannon
+ 
+I( ) , ,2 1
+0 07 3 84= log =2   Shannon
+ 
+I( ) , ,3 1
+0 009 6 79= log =2
+ 
+Shannon
+ 
+I( ) , ,4 1
+0 001 9 96= log =2   Shannon
+El ejemplo anterior muestra que la medida de la información se relaciona con la posibilidad 
+de que la fuente pueda elegir entre varios mensajes el más probable. Luego, como la fuente 
+puede seleccionar entre varios mensajes el que será transmitido, es evidente que el usuario 
+receptor tendrá incertidumbre respecto del mensaje que podrá recibir. 
+Ralph	 Vinton	 Lyon	 Hartley	 (1888-
+1970).	 Fue	 un	 investigador	 desta-
+cado	 en	 el	 área	 de	 la	 Electrónica	
+y	 uno	 de	 los	 fundadores	 de	 los	
+principios	de	la	T eoría	de	la	Infor-
+mación.	Estudió	en	la	Universidad	
+de	Utah	y	en	la	de	Oxford.	Se	des-
+empeñó	 en	 el	 Laboratorio	 de	 In-
+vestigación	de	la	Western	Electric	
+Company	 y	 con	 ulterioridad	 en	
+los	laboratorios	Bell.	
+
+
+===== PÁGINA PDF 205 =====
+3.6 Capacidad de un canal
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+179
+Podemos suponer razonablemente que cada mensaje podrá tener asociada una probabili-
+dad de que se produzca, de forma que cuanto mayor sea esa probabilidad de que ese mensaje 
+sea cierto, menor será la información que contenga para el usuario.
+Cuando se usa la lógica binaria, que es el caso de los equipos informáticos, ambos sucesos 
+son equiprobables. En ese caso, la unidad de medida de la información que resulta de estas 
+operaciones es igual a 1 Shannon. Ella suele confundirse con el pulso digital que se recibe. 
+Es lo que suele denominarse bit. El nombre de bit como contracción de las palabras binary 
+digit fue sugerido por J. W. Tukey.
+Ejemplo 3-9
+Calcular la cantidad de información que contiene una señal binaria que puede ex-
+presarse solo por dos valores, como corriente y no corriente.
+La cantidad de información resultará de 
+ 
+I S P S( ) ( )= log 1
+Donde P S ( )= 1
+2
+, luego tendremos,
+ 
+I S ( ) = log2
+1
+2
+Operando de manera conveniente resultará, 
+ I(S) = 1 Shannon
+Luego, podremos dar otra definición de Shannon, que indica que el Shannon es la cantidad 
+de información contenida en un suceso equiprobable.
+Obsérvese que la expresión dígito binario, que se puede abreviar por la de bit, indica los 
+dos casos en que pueden representarse los estados de corriente y no corriente, luz y oscuridad, 
+o finalmente los números 1 y 0, símbolos que se usan en la matemática cuando el sistema de 
+numeración es de base dos.
+En todo el razonamiento efectuado hemos supuesto que los estados uno y cero eran equi-
+probables, esto es, que cada uno tiene un 50% de probabilidad de producirse. Esta probabi-
+lidad puede y suele ser distinta. Por lo tanto, la cantidad de información puede ser mayor o 
+menor que un Shannon. Luego, no siempre la transmisión de un cero o un uno es igual a un 
+Shannon. Solo es así cuando la transmisión de ambos dígitos es equiprobable.
+Sin embargo, durante mucho tiempo el término bit significó tanto la unidad de informa-
+ción, en el presente denominada Shannon, como los dígitos binarios que constituyen un men-
+saje. Por lo tanto, fue frecuente, y aún lo es, denominar bit a los dígitos binarios que son 
+elementos de un mensaje y de la información asociada con ellos. 
+Es por ello que en teoría de la información a estos elementos de un mensaje –ceros y unos–, 
+que son independientes de la información asociada, se los llamaba binits para diferenciarlos 
+precisamente de la unidad de información que era el bit.
+Por último, estas confusiones se resolvieron mediante la adopción de la norma confeccio-
+nada por la Organización Internacional de Normalización ISO-2382/XVI, que establece el 
+vocabulario a utilizar en la teoría de la información. 
+Esta norma define al Shannon como unidad de medida de la información para cuando 
+el logaritmo es de base 2, y reserva el término bit para identificar el dígito binario, también 
+llamado binit.
+sabe con seguridad que va a ocurrir no contiene información alguna, por cuanto P(S)
+igual a uno, y el logaritmo de uno es cero, cualquiera sea la base elegida. 
+En la teoría de la probabilidad, esta situación se conoce con el nombre de certeza
+mayor cantidad de información cuanto menor sea la probabilidad de que se produzca. 
+allí surge el concepto de cantidad de información de un mensaje
+tratamiento posterior en esta obra.
+Ejemplo 3-8
+da de su servicio meteorológico. ¿Cuáles tendrán más información?
+Mensaje Nº 1: Muy frío y nublado.
+Mensaje Nº 2: Muy frío y soleado.
+Mensaje Nº 3: Frío y nublado.
+Mensaje Nº 4: Templado y soleado.
+ejemplo, es muy improbable. 
+ 
+  Shannon
+ 
+  Shannon
+  
+Shannon
+ 
+  Shannon
+receptor tendrá incertidumbre respecto del mensaje que podrá recibir. 
+John	 Wilder	 Tukey	 (1915,	 2000).	
+Este	 investigador	 se	 formó	 en	
+ciencias	 químicas,	 y	 luego	 se	
+doctoró	 en	 Matemática	 en	 la	
+Universidad	 de	 Princeton	 en	
+1939.	 Sus	 trabajos	 se	 orientaron	
+a	 la	 estadística.	 Alternó	 sus	 acti-
+vidades	 entre	 la	 Universidad	 de	
+Princeton	y	los	Laboratorios	Bell,	
+donde	trabajó	junto	a	Hamming	
+y	 Shannon.	 La	 introducción	 de	
+la	 palabra	 bit	 fue	 acuñada	 du-
+rante	 sus	 trabajos	 junto	 a	 John	
+von	 Neumann	 en	 el	 diseño	 de	
+computadoras.	Sin	embargo,	en	
+el	campo	de	Matemática	es	más	
+conocido	por	su	trabajo	junto	a	J.	
+W.	Cooley	publicado	en	1965	en	
+el	 Mathematics	 of	 Computation,	
+en	el	que	introdujeron	el	algorit-
+mo	de	la	transformada	rápida	de	
+Fourier.
+El	Shannon	es	la	cantidad	de	in-
+formación	contenida	en	un	suce-
+so	equiprobable.
+
+
+===== PÁGINA PDF 206 =====
+3 - Técnicas de la transmisión de la información180
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Sea una variable aleatoria definida como se muestra en la Tabla 3-3. 
+La esperanza matemática de la variable aleatoria será
+  
+(3-46)
+La cantidad de información en Shannon de la variable aleatoria será la de la expresión (3-43) 
+ 
+ 
+(3-43)
+Operando,
+ I(xk) = –log2 P(xk) (3-47)
+Reemplazando en (3-46) con el valor obtenido en (3-47), tendremos,
+  
+(3-48)
+Luego, definiremos como entropía de una fuente de memoria nula H al valor que 
+  
+(3-49)
+La entropía de una fuente de memoria nula se mide en H = Shannon/símbolo, y repre-
+incertidumbre media en la posibilidad de que se produzca cada símbolo.
+Ejemplo 3-11
+Sea una fuente de memoria nula que emite cuatro símbolos x1, x2, x3 y x4. Cada uno 
+de ellos tiene las siguientes probabilidades asociadas: p(x1) = 0,2; p(x2) = 0,3; p(x3) 
+= 0,4 y p(x4) = 0,1. Averiguar la entropía de la fuente.
+La entropía de la expresión (3-49), resultará igual a
+ 
+Reemplazando por sus valores tendremos
+H = –[p(x1) log2 p(x1) + p(x2) log2 p(x2) + p(x3) log2 p(x3) + p(x4) log2 p(x4)]
+Reemplazando por sus valores tendremos
+H = –[0,2 log2 0,2 + 0,3 log2 0,3 + 0,4 log2 0,4 + 0,1 log2 0,1]
+Operando, por último tendremos que la entropía de la fuente señalada será igual a
+ H = 1,84 Shannon/símbolo
+La entropía como función matemática satisface las siguientes propiedades:
+Continuidad.
+Ejemplo 3-10
+Calcular la cantidad de información que contiene un tren de pulsos como el que se 
+indica en la Fig. 3.23.
+En este ejemplo se puede apreciar que los bits transmitidos en el tren de pulsos 
+de la figura no son equiprobables. La probabilidad de aparición de un bit 1, es de 
+0,80, y de un bit 0, es de 0,20.
+Luego, la cantidad de información de cada bit, cero o uno, será
+ 
+I( ) 1 1
+8
+10
+= log2
+( )
+  y  I( ) 0 1
+2
+10
+= log2
+( )
+Reemplazando y operando, tendremos      I(1) = log2 1,25   e   I(0) = log2 5,00
+Luego, la información transmitida será      I(1) = 0,32 Shannon  e  I(0) = 2,32 Shannon
+Los resultados obtenidos muestran que la información con menor probabilidad de apa-
+rición posee mayor cantidad de información. Para saber si un dígito binario contiene infor-
+mación o no, se puede aplicar una regla empírica, que consiste en verificar si la información 
+transmitida se altera en caso de suprimir el bit en cuestión. Los bits que contienen información 
+son aquellos que combinados forman códigos que representan letras, números y símbolos 
+especiales. Por el contrario, no lo serán, entre otros, los que indiquen la paridad con el fin de de-
+tectar errores, los empleados para mantener el sincronismo o los que se usan para discriminar 
+dónde empiezan y terminan los caracteres en las transmisiones denominadas asincrónicas, 
+etc. En el primer caso es evidente que los bits llevan información, mientras que, por ejemplo, 
+en el caso del bit de sincronismo este solo es un elemento auxiliar, que facilita la transmisión.
+3.6.2 Entropía
+3.6.2.1 Fuente de memoria nula
+Se definirá como fuente de memoria nula la que emite símbolos que son estadísticamente 
+independientes uno de otro.
+Supongamos que una fuente de memoria nula puede emitir distintos símbolos, cada uno 
+de ellos con cierta probabilidad asociada. 
+La descripción de este fenómeno conduce al concepto matemático de variable aleatoria:  
+una función I(xk) en la cual para cada valor de la variable x tendremos asociado un valor de pro-
+babilidades pk. Esto significa que podemos establecer las relaciones que muestra la Tabla 3-3.
+I W
+WWLHPSR        
+Fig. 3.23.	Tren	de	pulsos	compuesto	de	bits	no	equiprobables.
+Se	 definirá	 como	 fuente	 de	 me-
+moria	 nula	 la	 que	 emite	 símbo-
+los	 que	 son	 estadísticamente	
+independientes	uno	de	otro.
+
+
+===== PÁGINA PDF 207 =====
+3.6 Capacidad de un canal
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+181
+3.6.2.2 Definición de entropía
+Sea una variable aleatoria definida como se muestra en la Tabla 3-3. 
+Tabla 3-3 Variables aleatorias y su probabilidad
+Variable aleatoria I (x) X1 X2 Xk Xk+1
+Probabilidad P (k) P(X1) P(X2) P(Xk) P(Xk + 1)
+La esperanza matemática de la variable aleatoria será
+ 
+E x I x p x
+k
+n
+k( ) ( ) ( )=
+=
+∑
+1
+]kk
+ 
+(3-46)
+La cantidad de información en Shannon de la variable aleatoria será la de la expresión (3-43) 
+ I x p xk
+k
+( ) log ( ) 2
+1
+ 
+(3-43)
+Operando,
+ I(xk) = –log2 P(xk) (3-47)
+Reemplazando en (3-46) con el valor obtenido en (3-47), tendremos,
+ 
+E x P x p xk                                      k k
+k
+n
+( ) ( ) ( )= – log 2
+=
+∑
+1
+]
+ 
+(3-48)
+Luego, definiremos como entropía de una fuente de memoria nula H al valor que 
+resulta de la expresión
+ 
+H P x p x k
+k
+n
+k= – log 2 ( ) ( )
+=
+∑
+1
+]
+ 
+(3-49)
+La entropía de una fuente de memoria nula se mide en H = Shannon/símbolo, y repre-
+senta la incertidumbre media en la posibilidad de que se produzca cada símbolo.
+Ejemplo 3-11
+Sea una fuente de memoria nula que emite cuatro símbolos x1, x2, x3 y x4. Cada uno 
+de ellos tiene las siguientes probabilidades asociadas: p(x1) = 0,2; p(x2) = 0,3; p(x3) 
+= 0,4 y p(x4) = 0,1. Averiguar la entropía de la fuente.
+La entropía de la expresión (3-49), resultará igual a
+ 
+H P x p xk
+k
+n
+k( ) ( )= – log 2
+=
+∑
+1
+Reemplazando por sus valores tendremos
+H = –[p(x1) log2 p(x1) + p(x2) log2 p(x2) + p(x3) log2 p(x3) + p(x4) log2 p(x4)]
+Reemplazando por sus valores tendremos
+H = –[0,2 log2 0,2 + 0,3 log2 0,3 + 0,4 log2 0,4 + 0,1 log2 0,1]
+Operando, por último tendremos que la entropía de la fuente señalada será igual a
+ H = 1,84 Shannon/símbolo
+3.6.2.3 Propiedades de la entropía
+La entropía como función matemática satisface las siguientes propiedades:
+Continuidad.
+Ejemplo 3-10
+indica en la Fig. 3.23.
+de la figura no son equiprobables. La probabilidad de aparición de un bit 1
+0,80, y de un bit 0, es de 0,20.
+Luego, la cantidad de información de cada bit, cero o uno, será
+ 
+  y  
+Reemplazando y operando, tendremos      I(1) = log2 1,25   e   I(0) = log2 5,00
+Luego, la información transmitida será      I(1) = 0,32 Shannon  e  
+3.6.2 Entropía
+3.6.2.1 Fuente de memoria nula
+independientes uno de otro.
+de ellos con cierta probabilidad asociada. 
+una función 
+I(xk) en la cual para cada valor de la variable x
+babilidades pk
+I W
+WWLHPSR        
+
+===== PÁGINA PDF 208 =====
+3 - Técnicas de la transmisión de la información182
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ 
+ 
+Operando en forma conveniente obtendremos los siguientes valores:
+ 
+ 
+ 
+ 
+Los valores obtenidos permiten observar que,
+ 
+Es decir que la entropía se maximiza a medida que los valores de la probabilidad de 
+que se produzca cada símbolo está más próxima.
+Ejemplo 3-13
+Calcular la entropía de una fuente binaria de memoria nula con probabilidad 
+p(x) 
+para el símbolo 1, y probabilidad p(1 – x) para el símbolo 0. Representar gráfi-
+camente los resultados.
+En (3-49) se define la expresión de la entropía de una fuente de memoria nula; luego, 
+para este caso en particular tendremos que para los valores cero y uno
+ 
+Reemplacemos, p(0) = (1 – x); y p(1) = x, en la expresión anterior, tendremos,
+  
+No obstante, además, en los valores límites resultarán
+H(x) = 0 para x = 0, y H = 0 cuando x = 1
+Por cuanto
+; cuando 
+Además, para x = 0,5 la función entropía se maximiza, y resulta el valor máximo, 
+esto es, H(x) = 1.
+En consecuencia, podemos afirmar que para una fuente discreta, cuyos símbolos son esta-
+entropía de la fuente.
+Este es un concepto muy útil, dado que los sistemas de comunicaciones no se diseñan 
+Es por ello que el simple conocimiento de la cantidad de información de un mensaje (I) 
+En el ejemplo de la Fig. 3.24. se puede observar que el límite inferior, para H = 0, indica que 
+Tiene el significado de que pequeños cambios en la probabilidad de un suceso, implican 
+pequeñas alteraciones en la cantidad de información. 
+ • Simetría.
+El orden en que se presentan los distintos sucesos no altera la entropía del sistema.
+ • Aditividad.
+Las entropías de distintas partes de un mismo sistema se pueden sumar.
+ • Maximilidad.
+Se puede demostrar que la entropía es una función maximizable.
+Como corolario de esta propiedad se puede demostrar que si los símbolos que ge-
+nera una fuente de memoria nula son equiprobables, entonces la entropía es máxima.
+En efecto, sea 
+                               
+p x p x p x p x p x n( ) ( ) ( ) ( ) ( )1 2 3 4 = = ,,, = = 1
+N  
+(3-50)
+Entonces, la fuente de memoria nula que puede emitir N símbolos con igual probabilidad 
+tendrá una entropía de valor máximo cuya expresión será
+                                               
+H N Shannon símbol o= log2 /
+ (3-51)
+La Fig. 3.24. permite observar la función entropía de una fuente binaria [1 o 0] de memoria nula 
+para el caso de que el símbolo 1 se presente con probabilidad igual a p(x) y el símbolo 0, con p(1 – x).
+Ejemplo 3-12
+Sean cuatro fuentes binarias de memoria nula. Verificar que la entropía se va maxi-
+mizando a medida que la probabilidad de que se produzcan ambos símbolos toma 
+valores más similares.
+Fuente A:  
+p(x1) = 0,10 p(x 2) = 0,90
+Fuente B:  p(x1) = 0,25 p(x 2) = 0,75
+Fuente C:  p(x1) = 0,50 p(x 2) = 0,50
+Fuente D:  p(x1) = 0,01 p(x 2) = 0,99
+ 0 0 , , 0 1 HA = – [ log + log ] =2 210 0 90 0 90 0 47, , ) ,
+ 
+H B = – [ log + log ] =2 20 25 0 25 0 75 0 75 0 89, , , , ) ,
++[
+S[ 
+
+
+
+
+
+   
+Fig. 3.24.	Función	entropía	de	una	fuente	binaria	de	memoria	nula.
+
+===== PÁGINA PDF 209 =====
+3.6 Capacidad de un canal
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+183
+ 
+ 
+Operando en forma conveniente obtendremos los siguientes valores:
+ H Shannon símboloA , /= 0 00
+ H Shannon símboloB , /= 0 00
+ 
+H Shannon símboloC , /= 1 00
+ H Shannon símboloD , /= 0 00
+Los valores obtenidos permiten observar que,
+ 
+H H H HC B A D> > >
+Es decir que la entropía se maximiza a medida que los valores de la probabilidad de 
+que se produzca cada símbolo está más próxima.
+Ejemplo 3-13
+Calcular la entropía de una fuente binaria de memoria nula con probabilidad p(x) 
+para el símbolo 1, y probabilidad p(1 – x) para el símbolo 0. Representar gráfi-
+camente los resultados.
+En (3-49) se define la expresión de la entropía de una fuente de memoria nula; luego, 
+para este caso en particular tendremos que para los valores cero y uno
+ 
+Reemplacemos, p(0) = (1 – x); y p(1) = x, en la expresión anterior, tendremos,
+  
+No obstante, además, en los valores límites resultarán
+H(x) = 0 para x = 0, y H = 0 cuando x = 1
+Por cuanto
+x x log2 0→ ; cuando x → 0
+Además, para x = 0,5 la función entropía se maximiza, y resulta el valor máximo, 
+esto es, H(x) = 1.
+En consecuencia, podemos afirmar que para una fuente discreta, cuyos símbolos son esta-
+dísticamente independientes, la expresión de la entropía permite describir la fuente desde el 
+punto de vista de la cantidad media de información que produce. Es por ello que esta cantidad 
+media de información se denomina entropía de la fuente.
+Este es un concepto muy útil, dado que los sistemas de comunicaciones no se diseñan 
+para transmitir un mensaje en particular, sino que deben posibilitar la transmisión de todos 
+los mensajes. 
+Es por ello que el simple conocimiento de la cantidad de información de un mensaje (I) 
+resulta insuficiente cuando se trata de analizar un sistema de comunicaciones. 
+En el ejemplo de la Fig. 3.24. se puede observar que el límite inferior, para 
+H = 0, indica que 
+la fuente no entrega información (en promedio). 
+pequeñas alteraciones en la cantidad de información. 
+ • Simetría.
+El orden en que se presentan los distintos sucesos no altera la entropía del sistema.
+ • Aditividad.
+Las entropías de distintas partes de un mismo sistema se pueden sumar.
+ • Maximilidad.
+Se puede demostrar que la entropía es una función maximizable.
+En efecto, sea 
+                                
+Entonces, la fuente de memoria nula que puede emitir N
+tendrá una entropía de valor máximo cuya expresión será
+                                                
+La Fig. 3.24. permite observar la función entropía de una fuente binaria [1 o 0]
+para el caso de que el símbolo 1 se presente con probabilidad igual a p(x) y el símbolo 0, con 
+Ejemplo 3-12
+valores más similares.
+Fuente A:  p(x1) = 0,10 p(x 2) = 0,90
+Fuente B:  p(x1) = 0,25 p(x 2) = 0,75
+Fuente C:  p(x1) = 0,50 p(x 2) = 0,50
+Fuente D:  p(x1) = 0,01 p(x 2) = 0,99
+ 
+ 
++[
+S[ 
+
+
+
+
+
+   
+
+===== PÁGINA PDF 210 =====
+3 - Técnicas de la transmisión de la información184
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+De la expresión (3-55) se deduce que la tasa de información se mide en Shannon 
+. Luego, si la fuente fuera digital de elementos binarios equiprobables, 
+ 
+. La tasa de información no es más que lo que se definió como velocidad de transmisión 
+A su vez, la inversa de , es decir, de la duración media de los símbolos, es lo que hemos 
+velocidad de modulación.
+Ejemplo 3-14
+Calcular la velocidad de transmisión de un sistema telegráfico sabiendo que un 
+punto tiene una duración media de 0,1 seg y una raya 0,3. A su vez, la posibilidad de 
+que se produzca un punto es 0,4 y la de que se produzca una raya es 0,6.
+Calculemos la duración media de los símbolos utilizados, en función de la probabi-
+lidad de que se produzcan y de su duración,
+ 
+A su vez, la entropía será igual a,
+ H = –[0,4 log 2 0,4 + 0,6 log2 0,6 = 0,4 · 0,91 + 0,6 · 0,51] = 
+ H = 0,67 Shannon/símbolo
+Luego, la velocidad de transmisión será igual a,
+ V t = 3,04 bps
+Ejemplo 3-15
+Una fuente utiliza un código de 128 símbolos equiprobables, cada uno compuesto 
+de 7 bit, como sería el denominado código USASCCI (United States of America 
+Standard Code for Information Interchange, Código Estándar de los Estados Unidos 
+para el Intercambio de Información).
+La duración de cada símbolo es de 
+0,1 mseg. La información se transmite en tramas 
+en bloques de 32 símbolos. Calcular la velocidad de transmisión.
+ H = 7 bit · 128 símbolos = 896 bit · bloque
+ 
+ Vt = 70.000 bps
+Como vimos, la tasa de información representa la cantidad de información producida por 
+Por otro lado, como se demostrará en el teorema de Shannon-Hartley, la capacidad de un 
+C medida en bps nos indica la cantidad de información que el canal puede transportar 
+Ese valor dependerá de las características propias del canal, en particular de la relación señal 
+y del ancho de banda, y resultará independiente de la tasa de información de la fuente.
+Esto corresponde a una fuente que tiene un solo símbolo con P = 1 (probabilidad igual a 
+uno) y todos los demás símbolos con probabilidad cero. 
+Por otro lado, la entropía máxima tiene lugar cuando H = log x, donde x es el número de 
+símbolos de la fuente, en particular todos los símbolos equiprobables. 
+Por lo tanto, al no existir un símbolo preferencial, corresponde el máximo de incertidumbre 
+o de libertad de elección. Cabe señalar que la probabilidad de cada símbolo es 1/x cuando la 
+entropía es máxima.
+3.6.3 Capacidad de un canal
+La capacidad de un canal se relaciona con la velocidad de transmisión máxima en bps que 
+puede admitir un canal, por lo tanto, la definiremos como la máxima velocidad de transmisión 
+de datos que se pueden cursar por él casi libres de errores.
+ C V tm áx= [bps]  (3-52)
+C = capacidad de un canal.
+Vtmáx = velocidad de transmisión de datos máxima.
+Para considerar un canal libre de errores por completo deberíamos regresar al concepto 
+de canal ideal. Los canales reales siempre tendrán errores. Ellos podrán ser de distinto valor, 
+mayores o menores, según las condiciones en que esté acondicionado cada uno y en función 
+del medio de comunicaciones utilizado. 
+Sin embargo, para esta definición tomaremos los canales conocidos por sus siglas en 
+inglés, como AWGN (Additive White Gaussian Noise). Esto es, canales con ruido blanco 
+gaussiano aditivo (ver apartado 3.7, de este capítulo).
+3.6.4 Tasa de información o velocidad de información
+3.6.4.1 Definición y conceptos básicos
+El concepto de entropía por sí solo no basta para relacionarlo directamente con la capaci-
+dad de un canal de comunicaciones, dado que varias fuentes pueden tener la misma entropía 
+pero una de ellas ser más rápida que las demás y que, al entregar más símbolos por unidad de 
+tiempo, introduzca en el canal de comunicaciones mayor cantidad de información.
+Por lo tanto, desde el punto de vista del canal de comunicaciones, la descripción de la fuente 
+dependerá no solo de la entropía, sino más bien de la denominada tasa de información.
+Entonces, definiremos como tasa de información y la indicaremos con 
+Γ, al cociente 
+entre la entropía de la fuente y la duración media de los símbolos que esta envía, esto es,
+ 
+Γ ( )= H x
+τ  
+(3-53)
+Donde:
+τ = duración media de los símbolos.
+En unidades, resultará, 
+ 
+[ ] = [ ]
+[ ]Γ Shannon símbolo
+segundo
+símbolo
+⋅
+ 
+(3-54)
+Simplificando,
+ 
+[ ] = [ ]
+[ ]Γ Shannon
+segundo
+ 
+(3-55)
+
+===== PÁGINA PDF 211 =====
+3.6 Capacidad de un canal
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+185
+De la expresión (3-55) se deduce que la tasa de información se mide en Shannon 
+por segundo. Luego, si la fuente fuera digital de elementos binarios equiprobables, 
+la cantidad de información en Shannon coincidiría con lo que sea ha definido como bit, por lo 
+que resulta que la tasa de información se podrá expresar en bit/segundo, que abreviaremos 
+bps. La tasa de información no es más que lo que se definió como velocidad de transmisión 
+o de información. La expresión tasa viene del inglés rate, por lo que en adelante preferiremos 
+denominarla velocidad de información, que es un sinónimo. 
+A su vez, la inversa de 
+τ , es decir, de la duración media de los símbolos, es lo que hemos 
+definido en 3.2.1.1. como velocidad de modulación.
+Ejemplo 3-14
+Calcular la velocidad de transmisión de un sistema telegráfico sabiendo que un 
+punto tiene una duración media de 
+0,1 seg y una raya 0,3. A su vez, la posibilidad de 
+que se produzca un punto es 0,4 y la de que se produzca una raya es 0,6.
+Calculemos la duración media de los símbolos utilizados, en función de la probabi-
+lidad de que se produzcan y de su duración,
+ 
+τ , , , , ,= + =0 1 0 4 0 3 0 6 0 22⋅ ⋅ [ ]
+seg
+símbolo
+A su vez, la entropía será igual a,
+ H = –[0,4 log 2 0,4 + 0,6 log2 0,6 = 0,4 · 0,91 + 0,6 · 0,51] = 
+ H = 0,67 Shannon/símbolo
+Luego, la velocidad de transmisión será igual a,
+ V t = 3,04 bps
+Ejemplo 3-15
+Una fuente utiliza un código de 128 símbolos equiprobables, cada uno compuesto 
+de 7 bit, como sería el denominado código USASCCI (United States of America 
+Standard Code for Information Interchange, Código Estándar de los Estados Unidos 
+para el Intercambio de Información).
+La duración de cada símbolo es de 
+0,1 mseg. La información se transmite en tramas 
+en bloques de 32 símbolos. Calcular la velocidad de transmisión.
+ H = 7 bit · 128 símbolos = 896 bit · bloque
+ τ ( ) ,de cada bloque símbolos mseg= 128 0 1 ⋅ = =12 8 , mseg bloque
+ Vt = 70.000 bps
+3.6.4.2 Relación entre la capacidad de un canal y la velocidad de transmisión
+Como vimos, la tasa de información representa la cantidad de información producida por 
+una fuente en un tiempo determinado.
+Por otro lado, como se demostrará en el teorema de Shannon-Hartley, la capacidad de un 
+canal C medida en bps nos indica la cantidad de información que el canal puede transportar 
+por unidad de tiempo en un canal real.
+Ese valor dependerá de las características propias del canal, en particular de la relación señal 
+a ruido y del ancho de banda, y resultará independiente de la tasa de información de la fuente.
+Esto corresponde a una fuente que tiene un solo símbolo con P = 1
+uno) y todos los demás símbolos con probabilidad cero. 
+Por otro lado, la entropía máxima tiene lugar cuando H = log x, donde x
+símbolos de la fuente, en particular todos los símbolos equiprobables. 
+o de libertad de elección. Cabe señalar que la probabilidad de cada símbolo es 1/x
+entropía es máxima.
+3.6.3 Capacidad de un canal
+de datos que se pueden cursar por él casi libres de errores.
+  
+C = capacidad de un canal.
+Vtmáx = velocidad de transmisión de datos máxima.
+de canal ideal
+del medio de comunicaciones utilizado. 
+inglés, como AWGN (Additive White Gaussian Noise). Esto es, 
+gaussiano aditivo (ver apartado 3.7, de este capítulo).
+3.6.4 Tasa de información o velocidad de información
+3.6.4.1 Definición y conceptos básicos
+tiempo, introduzca en el canal de comunicaciones mayor cantidad de información.
+dependerá no solo de la entropía, sino más bien de la denominada tasa de información.
+Entonces, definiremos como tasa de información y la indicaremos con Γ
+entre la entropía de la fuente y la duración media de los símbolos que esta envía, esto es,
+  
+Donde:
+ = duración media de los símbolos.
+En unidades, resultará, 
+  
+Simplificando,
+  
+
+===== PÁGINA PDF 212 =====
+3 - Técnicas de la transmisión de la información186
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Este ejemplo permite concluir que para elegir una opción de entre ocho igualmente proba-
+La expresión (3-56) es similar a la anterior (3-5). Ellas fueron de gran utilidad cuando se 
+También ella es de suma utilidad para determinar el número de bits necesarios para definir 
+8 bits por byte es posible codificar 256 caracteres o posibilidades distintas para su 
+Ejemplo 3-17
+Sea el caso de la transmisión de un símbolo perteneciente a un alfabeto que tiene 32 
+símbolos diferentes e igualmente probables (equiprobables). Determinar cuál será 
+la cantidad de información obtenida con la recepción de uno de ellos.
+De acuerdo con la expresión (3-56), cada símbolo se compone de cinco bits. Luego, 
+la posibilidad de que se produzca cada símbolo será
+ 
+Si todos los símbolos tienen igual probabilidad de producirse, es decir que son equi-
+probables, entonces la cantidad de información por cada símbolo recibido será:
+ 
+La información por cada bit que compone cada símbolo valdrá,
+ 1 bit = 1 Shannon
+Para el caso de un canal ideal (sin ruido), el Teorema de Nyquist expresa y permite demos-
+En la década de 1920, mientras estudiaba líneas telegráficas, Harry Nyquist determinó que 
+A partir de estos estudios se demostró el que se conoce como teorema de Nyquist o del 
+Sea una señal limitada en su ancho de banda y con una frecuencia máxima fmáx, entonces,
+              (3-57)
+Donde:
+fN = frecuencia de Nyquist o de muestreo.
+Si la señal a participar del muestreo está definida en un ancho de banda Δf, entonces la 
+La relación entre la tasa de información y la capacidad del canal quedará establecida sobre la 
+base de la tasa de errores (BER) del sistema, de forma que se puede concluir que si la tasa de informa-
+ción es mayor que la capacidad del canal no es posible transmitir sin errores.
+De todo lo anterior se deduce que, en el diseño de cualquier sistema de comunicaciones, en 
+primer lugar es necesario calcular la velocidad de transmisión o de información máxima y, en 
+segundo lugar, proceder a determinar la capacidad del canal de comunicaciones.
+3.6.5 Uso de la medida de la información
+Se sabe que con 1 bit es posible identificar en forma unívoca dos situaciones posibles. Para 
+ello se le podrá asignar a la primera un 1, y a la otra un 0, o al revés. Luego es importante deter-
+minar cuántos bits se necesitan para efectuar una elección entre todas las que sean posibles. 
+En la Tabla 3-4 se muestran los casos posibles utilizando 1, 2, 3, ... bits, y así.
+En general, se puede deducir con facilidad que el número de elecciones n posibles será
+ n = 2M (3-56)
+donde:
+n = número de posibilidades a elegir.
+M = número de bits necesarios para discriminar entre n posibilidades.
+Ejemplo 3-16
+En un torneo deportivo octogonal, un mensaje con una cantidad mínima de bits debe 
+indicar el ganador. Veremos que se requerirán dos bits, como lo muestra la Tabla 3-4. 
+En la Fig. 3.25. se representan los ocho equipos con letras de la A a la H. Los resul-
+tados de la primera ronda generarán un bit para saber quién ganó cada uno de los 
+cuatro partidos. Los de la semifinal generarán un segundo bit. 
+Si el equipo A termina ganando el campeonato se deberá transmitir un bit más, 
+luego, para identificar de los ocho equipos al ganador se deberán enviar tres bits.(48,32* 
+(48,32+ 
+(48,32$ 
+(48,32% 
+(48,32& 
+(48,32' 
+(48,32( 
+(48,32) 
+(48,32* 
+(48,32$ 
+UD521'$ 6(0,),1$/ ),1$/
+(48,32$ 
+(48,32´$µ
+(48,32) 2
+(48,32' 
+(48,32) 2
+Fig. 3.25.	Información	por	transmitir	en	función	del	número	de	posibilidades.
+Tabla 3-4 Elecciones posibles 
+en función del número de bits 
+utilizados
+Distancia de 
+Hamming
+Distancia de 
+Hamming
+1 2
+2 4
+3 8
+4 16
+5 32
+6 64
+7 128
+8 256

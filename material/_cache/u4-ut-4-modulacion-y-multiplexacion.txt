@@ -1,0 +1,204 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 4/UT 4 MODULACION Y MULTIPLEXACION.pdf
+# titulo-identificado: UT 4 MODULACION Y MULTIPLEXACION
+# titulo-metadatos-pdf: Presentación de PowerPoint
+# sha256-original: 33454b939331cfb8733e09df834d86640595308b8806b59eb3696b4ff51573c6
+# paginas-pdf-total: 20
+# paginas-pdf-extraidas: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+UD Nº 4
+Modulación y 
+Multiplexación
+
+===== PÁGINA PDF 2 =====
+La mo d u la c ió nes un p ro ce so que consiste en trans for mar una
+señal ( qu e representa in f or mac ión ) en otro tipo de señal
+a d e c u a d apa ra su tr ans mis ión po r un m e d i o de co mu n ic ac ió n ,
+sin mod if ica r sustan c ia lmente la in f o r ma c ió n q u e ella
+representaba .
+MODULACION
+Mediante un modulador, una señal llamada portadora p(t) (oficia de
+transporte) es transformada por una señal llamada moduladora m(t)
+(la que contiene la información ), obteniéndose como producto una señal que
+se conoce como modulada M(t).
+La operación de recuperación de la señal original es llevada a cabo por un
+demodulador.
+SEÑALES INTERVINIENTES
+
+===== PÁGINA PDF 3 =====
+Señal moduladora m(t) Señal modulada M(t)
+Portadora p(t)
+Analógica o digital Analógica o digital
+Analógica o digital
+ESQUEMA BÁSICO DE MODULACIÓN
+
+===== PÁGINA PDF 4 =====
+METODOS
+DE
+MODULACION
+
+===== PÁGINA PDF 5 =====
+MODULACION POR ONDA CONTINUA
+Es aquel proceso por el cual la señal portadora (se caracteriza por
+ser una señal sinusoidal), va a ser modificado alguno de sus
+parámetros característicos (A, fr, fase), por medio de la señal
+moduladora, siendo esta A o D. Según el parámetro a modificar,
+será el tipo de modulación.
+MODULACION POR PULSOS
+Es aquel proceso por el cual la señal portadora (se caracteriza por
+ser un tren de pulsos), va a ser modificado alguno de sus
+parámetros característicos (A, Duración o Posición), por medio de
+la señal moduladora, siendo esta A o D. Según el parámetro a
+modificar, será el tipo de modulación.
+
+===== PÁGINA PDF 6 =====
+Clasificación de las Técnicas de Modulación
+
+===== PÁGINA PDF 7 =====
+TIPOS DE MODULACION
+Tipo de
+modulación
+Moduladora Portadora Modulada Nombre de la
+modulación
+Continua  
+analógica
+Analógica Analógica Analógica AM
+FM
+PM
+Continua  
+digital
+Digital Analógica Analógica ASK  
+FSK
+PSK DPSK  M-
+PSK M-QAM
+Por pulsos
+analógica
+Analógica Digital Analógica PAM
+PDM  
+PPM
+Por pulsos  
+digital
+Digital Digital Digital PCM (MIC)  
+DPCM  DELTA
+DELTAADAPTIVA
+
+===== PÁGINA PDF 8 =====
+MODULACIÓN POR ONDA CONTINUA
+PORTADORA p (t) = Ap sen (p t + p)
+CON LA MODULACIÓN SE MODIFICAN ALGUNO DE LOS SIGUIENTES  
+PARÁMETROS DE LA MODULADORA:
+•AMPLITUD
+•FRECUENCIA
+•FASE
+
+===== PÁGINA PDF 9 =====
+MODULACION  - AM
+MODULADORA: a (t) = A sen (a t + a)
+PORTADORA:     p (t) = P sen ( p  t +  p)
+ a <<  p
+Envolvente de modulación
+
+
+===== PÁGINA PDF 10 =====
+MODULACION  - AM- FM
+SEÑAL MODULADA
+M(t) = Ap sen ( p  t + sen  a  t +  p)
+ =  /a  (índice de modulación)
+ = k A a (desviación de frec)
+ = k A (circuito y amplitud
+de moduladora)
+ASK
+FM
+
+===== PÁGINA PDF 11 =====
+MODULACION DE FASE - SEÑAL 2-PSK / B-PSK
+DOS SALTOS DE FASE
+EN ESTE CASO (0º-180º)
+
+===== PÁGINA PDF 12 =====
+ASIGNACION DE SECUENCIA DE BITS Y DE ESTADOS
+DIAGRAMA DE FASES  MODULACION 4-PSK / Q-PSK
+Se aplica Código
+Reflejo o de Gray
+Nro
+Secuencia
+Secuencia
+de Bits
+Fase
+Asignada
+1 00 0°
+2 01 90°
+3 11 180°
+4 10 270°
+Cuadro de asignación
+Diagrama de Estados,
+De Fases o Vectorial.
+Secuencia
+de Bits
+0 00
+0 01
+1er espejo
+0 11
+0 10
+2do espejo
+1 10
+1 11
+1 01
+1 00
+M-PSK
+
+===== PÁGINA PDF 13 =====
+CONSTRUCCIÓN DEL CÓDIGO DE GRAY  
+EJEMPLO CON 3 BITS
+
+===== PÁGINA PDF 14 =====
+MODULACION M-PSK8-PSK
+M saltos de fase, con un ángulo  entre fase y fase
+Cada salto lleva “n” bits
+Relación entre ambas velocidades a través de“n”
+n = log2 M
+Vtx = Vmod x n
+
+
+===== PÁGINA PDF 15 =====
+MULTIPLEXACION
+Es una técnica que permite agrupar en un mismo medio de com (s)
+distintos canales de distintos servicios , a fin de aprovechar la
+totalidad del AB disponible y hacer más eficiente el uso del canal de
+comunicaciones.
+MULTIPLEXACION: VOZ / DATOS
+MULTIPLEXOR  Selector Rotativo Electrónico.
+
+===== PÁGINA PDF 16 =====
+MULTIPLEXACION - Distintas TÉCNICAS:
+POR DIVISIÓN DE FRECUENCIA (FDM)  
+POR DIVISIÓN DE TIEMPO (TDM)
+POR DIVISIÓN DE TIEMPO ESTADÍSTICA(STDM)  
+POR DIVISIÓN DE LONGITUD DE ONDA (WDM)  
+POR DIVISIÓN DE CÓDIGO (CDM)
+
+
+===== PÁGINA PDF 17 =====
+MULTIPLEXACION: FDM
+Consiste en dividir el AB del canal disponible 
+en varios subcanales independientes
+
+===== PÁGINA PDF 18 =====
+MULTIPLEXACION: TDM
+
+
+===== PÁGINA PDF 19 =====
+MULTIPLEXACION: STDM
+• ASIGNACIÓN ESTADÍSTICA
+• APROVECHA TODOS LOS TIEMPOS.
+• ASIGNACIÓN POR DEMANDA DE RANURAS.
+• TAMBIÉN SE DENOMINA MUX ASINCRÓNICA(ATDM).
+
+
+===== PÁGINA PDF 20 =====
+MULTIPLEXACION: FDM-WDM-TDM
+

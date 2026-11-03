@@ -11,19 +11,27 @@ Engram.
 capturar → proponer integración → contrastar → consolidar → practicar
 ```
 
-1. **Capturar:** durante la clase, registrar rápido con la
+1. **Capturar:** el estudiante registra originales nuevos durante la clase con la
    [plantilla mínima](../apuntes/_plantillas/captura-clase.md) dentro de `capturas/`. No exigir YAML ni
    pulir redacción; guardar las imágenes junto al Markdown para que sus enlaces relativos sobrevivan.
+   Los agentes consultan esas capturas, no las modifican: Markdown, imágenes y anexos actuales o futuros
+   permanecen como evidencia original, aun después de consolidar su contenido.
 2. **Proponer integración:** identificar unidades y temas posibles; actualizar la bitácora. No
-   corregir ni mover el original fuera de `capturas/`.
+   corregir, mover, renombrar ni borrar ningún original dentro o fuera de `capturas/`.
 3. **Contrastar:** localizar el material original y su cache; verificar conceptos, figuras, cuentas,
    unidades y supuestos contra el original.
-4. **Consolidar:** para U1–U4, integrar la teoría como secciones del único `APUNTE.md` canónico de la
+4. **Consolidar:** para U1–U8, integrar `capturas/` + `material/` como secciones del único `APUNTE.md` de la
    unidad; mantener `INDICE.md` como navegación breve y conservar la procedencia por sección. Llevar
    ejercicios resueltos y actividades de repaso por separado. Anotar cada verificación pendiente junto
-   a la sección afectada. El estado `revisado` sólo se aplica cuando se contrastó la unidad entera.
-5. **Practicar:** separar ejercicios y autoevaluación del apunte explicativo; responder de a una y
-   corregir el razonamiento.
+   a la sección afectada. Antes de declararlo final, aplicar la
+   [puerta de calidad](../apuntes/_plantillas/metodologia.md#puerta-de-calidad) a la unidad entera.
+5. **Practicar:** mantener el enunciado de fuente literal, después los datos/condiciones extraídos y
+   luego la resolución paso a paso; conservar desarrollos correctos y ampliarlos pedagógicamente sin
+   reescribirlos de más. Ejercicios y autoevaluación van separados del apunte teórico; responder de a
+   una y corregir el razonamiento. Para generar cuestionarios o simulacros, seguir el
+   [protocolo de repaso](../apuntes/_plantillas/metodologia.md#cuestionarios-simulacros): cobertura y
+   evidencia por pregunta, respuestas separadas cuando permitan autoevaluación y corrección razonada.
+   Para nuevos archivos de repaso, usar la [plantilla de cuestionario](../apuntes/_plantillas/cuestionario-repaso.md).
 
 ## Roles
 
@@ -61,3 +69,14 @@ Consultar, explicar, evaluar o verificar **no autoriza cambios**. Para editar, e
 
 Antes de leer en profundidad, el agente abre la portada o la bitácora, luego el `INDICE.md` de la unidad
 y recién después el `APUNTE.md` canónico y las fuentes estrictamente necesarias.
+
+## Pedido para trabajar una unidad
+
+> «Consolidá la unidad N desde sus capturas y material, sin tocar los originales. Declará cobertura,
+> depurá el APUNTE.md y verificá todas sus secciones. Informá los controles ejecutados, evidencia y
+> pendientes; sólo marcá revisado si pasa la puerta de calidad. Actualizá su índice y dejá el repaso aparte.»
+
+Para entrenar sin modificar archivos:
+
+> «Tomame un simulacro de la unidad N con contenido verificado: una pregunta por vez, sin mostrar la
+> respuesta antes de mi intento. Corregí con razones y referencia a la sección y fuente.»

@@ -1,0 +1,290 @@
+# CACHE TEXTUAL DERIVADO DE APOYO EXTERNO — NO ES MATERIAL DE CLASE
+# Uso: contrastar únicamente temas U5 ya registrados; no ampliar corpus ni programa.
+# titulo: UIT-T S.1 (03/1993), Alfabeto Telegráfico Internacional N.º 2, versión española
+# url-origen-pdf: https://www.itu.int/rec/dologin_pub.asp?id=T-REC-S.1-199303-I!!PDF-S&lang=e&type=items
+# url-ficha-o-identificador: https://www.itu.int/rec/T-REC-S.1-199303-I/en
+# original-temporal: tmp/curador-ejecucion/externos/itu-t-s1-1993-es-ita2.pdf
+# descargado-y-extraido: 2026-10-11
+# sha256-original-pdf: 7518b9135178efdff8fc05dce8f987bb0e3c768c12f1ebaf149574384c9bbac9
+# paginas-pdf-total: 8
+# extractor: pypdf 6.14.2
+# caracteres-extraidos-por-pagina: 299,2045,1140,0,2431,4157,1264,2204
+# muestras-visuales-inspeccionadas: PDF1 portada; PDF6/impresa2 §§3.1–3.2 y4.4; PDF7/impresa3 Cuadro1/S.1. No revisión integral.
+# Sin OCR. Texto extraído no certifica tablas, fórmulas ni figuras. El original temporal es auxiliar descargado, no fuente de clase original.
+
+===== PÁGINA PDF 1 =====
+UNIÓN  INTERNACIONAL  DE  TELECOMUNICACIONES
+UIT-T S.1
+SECTOR  DE  NORMALIZACIÓN (03/93)
+DE  LAS  TELECOMUNICACIONES
+DE  LA  UIT
+TELEGRAFÍA
+EQUIPOS  TERMINALES  DE  TELEGRAFÍA
+ALFABÉTICA
+ALFABETO  TELEGRÁFICO
+INTERNACIONAL  N.°  2
+Recomendación  UIT-T   S.1
+(Anteriormente «Recomendación del CCITT»)
+
+===== PÁGINA PDF 2 =====
+PREFACIO
+El Sector de Normalización de las Telecomunicaciones de la UIT (UIT-T) es un órgano permanente de la Unión
+Internacional de Telecomunicaciones. El UIT-T tiene a su cargo el estudio de las cuestiones técnicas, de explotación y
+de tarificación y la formulación de Recomendaciones al respecto con objeto de normalizar las telecomunicaciones sobre
+una base mundial.
+La Conferencia Mundial de Normalización de las Telecomunicaciones (CMNT), que se reúne cada cuatro años,
+establece los temas que habrán de abordar las Comisiones de Estudio del UIT-T, que preparan luego Recomendaciones
+sobre esos temas.
+La Recomendación UIT-T S.1, revisada por la Comisión de Estudio IX (1988-1993) del UIT-T, fue aprobada por la
+CMNT (Helsinki, 1-12 de marzo de 1993).
+___________________
+NOTAS
+1 Como consecuencia del proceso de reforma de la Unión Internacional de Telecomunicaciones (UIT), el CCITT
+dejó de existir el 28 de febrero de 1993. En su lugar se creó el 1 de marzo de 1993 el Sector de Normalización de las
+Telecomunicaciones de la UIT (UIT-T). Igualmente en este proceso de reforma, la IFRB y el CCIR han sido sustituidos
+por el Sector de Radiocomunicaciones.
+Para no retrasar la publicación de la presente Recomendación, no se han modificado en el texto las referencias que
+contienen los acrónimos «CCITT», «CCIR» o «IFRB» o el nombre de sus órganos correspondientes, como la Asamblea
+Plenaria, la Secretaría, etc. Las ediciones futuras en la presente Recomendación contendrán la terminología adecuada en
+relación con la nueva estructura de la UIT.
+2 Por razones de concisión, el término «Administración» se utiliza en la presente Recomendación para designar
+a una administración de telecomunicaciones y a una empresa de explotación reconocida.
+ª   UIT  1994
+Reservados todos los derechos. No podrá reproducirse o utilizarse la presente Recomendación ni parte de la misma de
+cualquier forma ni por cualquier procedimiento, electrónico o mecánico, comprendidas la fotocopia y la grabación en
+micropelícula, sin autorización escrita de la UIT.
+
+===== PÁGINA PDF 3 =====
+ÍNDICE
+Recomendación S.1     (03/93)
+Página
+1 Introducción ................................................................................................................... ................................ 1
+2 Repertorio de caracteres ...................................................................................................... ........................... 1
+3 Codificación .................................................................................................................. ................................. 2
+4 Combinaciones particulares .................................................................................................... ....................... 2
+4.6 Utilización de letras mayúsculas y minúsculas............................................................................... .. 3
+4.7 Utilización de la combinación N.° 32........................................................................................ ....... 4
+5 Representación gráfica de los caracteres de control........................................................................... ............ 4
+Recomendación S.1     (03/93) i
+
+===== PÁGINA PDF 4 =====
+[Sin texto extraíble; consultar PDF/render original.]
+
+===== PÁGINA PDF 5 =====
+Recomendación S.1
+Recomendación S.1     (03/93)
+ALFABETO  TELEGRÁFICO  INTERNACIONAL  N.°  2
+(Málaga-Torremolinos, 1984; modificada en Melbourne, 1988 y en Helsinki, 1993)
+1 Introducción
+1.1 Esta Recomendación define el repertorio de los caracteres gráficos y de control utilizados en el Alfabeto
+Telegráfico Internacional N.° 2 (ITA N.° 2, International Telegraph Alphabet N. ° 2) y la representación codificada de
+estos caracteres para fines de comunicación. Contiene también disposiciones relativas a la utilización de ciertas
+combinaciones.
+1.2 El juego de caracteres codificados del ITA N.° 2 se basa en una estructura de cinco unidades.
+1.3 El ITA N.° 2 se define también en la Recomendación F.1 para el servicio público internacional de telegramas,
+y en la Recomendación F.60 se especifica que debe utilizarse también para el servicio télex. Puede asimismo utilizarse
+para otras aplicaciones, tales como circuitos especializados o arrendados.
+1.4 Para las definiciones relativas a la telegrafía alfabética, véanse las definiciones contenidas en la
+Recomendación R.140 y en el Capítulo 721 del Vocabulario Electrotécnico Internacional (VEI,  International
+Electrotechnical Vocabulary).
+2 Repertorio de caracteres
+2.1 Los caracteres gráficos a los que corresponde una señal en el ITA N.° 2 son:
+– Los 26 caracteres alfabéticos latinos: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z;
+– Las cifras enteras: 0 1 2 3 4 5 6 7 8 9;
+– Signos de puntuación y signos varios:
+Punto .
+Coma ,
+Dos puntos o signo de división :
+Signo de interrogación (final) ?
+Apóstrofo ’
+Cruz o signo más +
+Guión o signo menos –
+Barra de fracción o signo de división /
+Signo igual o doble guión =
+Paréntesis izquierdo (
+Paréntesis derecho )
+2.2 Tres caracteres gráficos (por ejemplo, letras acentuadas y signos de moneda) pueden utilizarse para uso
+nacional o privado (véase 4.2).
+2.3 Esta Recomendación no define un estilo, tipo de letra de imprenta, o clase de letra (mayúsculas o minúsculas)
+particular, ni tampoco la disposición de los teclados en teleimpresores o dispositivos terminales similares.
+2.4 El ITA N.° 2 proporciona los siguientes caracteres de control:
+– ¿con quién comunico? (parte de la señal para accionamiento del dispositivo de transmisión de distintivo
+del aparato correspondiente);
+– accionamiento de una señal acústica del aparato correspondiente;
+– retroceso del carro;
+– cambio de renglón;
+Recomendación S.1     (03/93) 1
+
+===== PÁGINA PDF 6 =====
+– cambio a letras (inversión letras);
+– cambio a cifras (inversión cifras);
+– espacio o blanco;
+– todos espacios o nulo (no hay perforación de la cinta).
+3 Codificación
+3.1 Las 32 combinaciones del ITA N.° 2 consisten en secuencias de cinco unidades cada una de las cuales puede
+adoptar dos estados significativos (A o Z); estas combinaciones se indican en el Cuadro 1.
+3.2 El estado A corresponde a la polaridad de arranque, no perforación de la cinta de papel y símbolo 0 en la
+notación binaria. El estado Z corresponde a la polaridad de parada, perforación de la cinta de papel y símbolo 1 en la
+notación binaria.
+Para las modulaciones de frecuencia y de amplitud equivalentes que corresponden a los estados A y Z en el equipo de
+telegrafía armónica, véase la Recomendación V.1 y las Recomendaciones pertinentes de la serie R.
+NOTAS
+1 El nivel y la polaridad de la tensión y de la corriente que corresponden a los estados A y Z (por ejemplo, en el
+extremo local con su terminación), son de incumbencia nacional y, por tanto, no se definen en el plano internacional.
+2 Los términos «arranque» y «parada», y «reposo» y «trabajo», se han utilizado asimismo para describir los estados A y
+Z respectivamente (véase la definición 31.37/R.140).
+4 Combinaciones particulares
+4.1 De conformidad con la Recomendaciones S.6 y S.8 y las Recomendaciones pertinentes de la serie U, la señal
+WRU (¿con quién comunico?, combinaciones N.°  30 y N.° 4 en la posición cifras) se utiliza para accionar la unidad de
+transmisión de distintivo del aparato correspondiente en los servicios internacionales télex y géntex y puede también
+proporcionar un símbolo impreso (véase el Cuadro 2).
+4.2 Puesto que algunas Administraciones asignan las combinaciones N.
+os 6, 7 y 8 en la posición cifras para usos
+internos mientras que otras no lo hacen, es deseable evitar las interpretaciones distintas que podrían aparecer en estas
+circunstancias si estas combinaciones se utilizaran libremente en los servicios internacionales. En consecuencia, el
+empleo de las combinaciones N.
+os 6, 7 y 8 en posición cifras no está definido y por tanto no debe utilizarse en los
+servicios internacionales excepto en los casos de acuerdo expreso entre Administraciones; por lo tanto se recomienda:
+– que, en todos los servicios, estas combinaciones se señalen de una manera especial en el teclado, y
+– que los servicios en los que no se utilizan estas combinaciones coloquen en la posición secundaria de los
+bloques de impresión (o del mecanismo equivalente) de las letras F, G y H un símbolo arbitrario, un
+cuadrado por ejemplo; la aparición de este símbolo en el papel significará una impresión anormal.
+4.3 La combinación N.° 10 «señal acústica» podrá también proporcionar un símbolo impreso (véase el Cuadro 2).
+4.4 Las combinaciones N.
+os 29 y 30, «cambio a letras» y «cambio a cifras», respectivamente, se utilizan para
+poner el aparato terminal en la posición «letras» o «cifras», de modo que:
+– toda combinación N.° 1 a 26 recibida engendra una señal impresa en la posición «letras» (segunda
+columna del Cuadro 1) si la última señal de cambio recibida es una señal de «cambio a letras»;
+– toda combinación N.° 1 a 26 recibida engendra una señal impresa en la posición «cifras» (tercera columna
+del Cuadro 1) si la última señal de cambio recibida es una señal de «cambio a cifras», salvo lo indicado en
+cuanto a las combinaciones N.
+os 4 y 10 en 4.1 y 4.3.
+Para asegurar que los equipos terminales ubicados en ambos extremos de una llamada télex estén en la posición de
+cambio apropiada, en los nuevos terminales, y en lo posible en los terminales existentes, la primera combinación que se
+ha de transmitir después de la recepción de los caracteres o bien al comenzar la transmisión, será «cambio a letras» o
+«cambio a cifras» (es decir, las combinaciones N.° 29 o N.° 30.
+4.5 Las combinaciones N.
+os 29 (cambio a letras), 30 (cambio a cifras) y 32 (todos espacios, nulo o no perforación
+de cinta) no deberán afectar el avance de espacio de las máquinas terminales, excepto cuando su recepción se indica
+imprimiendo un símbolo, como se expresa en la cláusula 5.
+2 Recomendación S.1     (03/93)
+
+===== PÁGINA PDF 7 =====
+CUADRO  1/S.1
+Alfabeto Telegráfico Internacional N.o 2 (ITA N.o 2)
+Número de la Posición Posición Codificación
+combinación letras cifras 12345
+1A – Z Z A A A
+2B ? Z A A Z Z
+3C : A Z Z Z A
+4 D (subcláusula 4.1) Z A A Z A
+5 E 3 ZAAAA
+6________________
+7_________________
+8
+F________________
+G_________________
+H þï
+ýïü  
+ (subcláusula 4.2)
+ 
+Z_______
+A______
+A
+A_______
+Z______
+A
+Z_______
+A______
+Z
+Z_______
+Z______
+A
+A_______
+Z______
+Z
+9I 8 A Z Z A A
+10 J Señal acústica Z Z A Z A
+1 1 K ( ZZZZA
+12 L ) A Z A A Z
+13 M . A A Z Z Z
+14 N , A A Z Z A
+1 5 O 9 AAAZZ
+16 P 0 A Z Z A Z
+1 7 Q 1 ZZZAZ
+18 R 4 A Z A Z A
+19 S ’ ZAZAA
+2 0 T 5 AAAAZ
+2 1 U 7 ZZZAA
+22 V = A Z Z Z Z
+23 W 2 Z Z A A Z
+24 X / Z A Z Z Z
+25 Y 6 Z A Z A Z
+26 Z + Z A A A Z
+27 Retroceso del carro A A A Z A
+28 Cambio de renglón A Z A A A
+29_________________
+30
+Inversión letras
+Inversión cifras þýü 
+ (subcláusula 4.5)
+Z______
+Z
+Z______
+Z
+Z______
+A
+Z______
+Z
+Z______
+Z
+31 Espacio A A Z A A
+32 (Subcláusula 4.7) A A A A A
+NOTA – En la transmisión en serie, el elemento de código 1 se transmite primero.
+4.6 Utilización de letras mayúsculas y minúsculas
+4.6.1 En el ITA N.° 2 es posible utilizar teleimpresores con dos series de caracteres de letras, mayúsculas y
+minúsculas.
+Recomendación S.1     (03/93) 3
+
+===== PÁGINA PDF 8 =====
+4.6.2 Es posible utilizar secuencias de las combinaciones de cambio del ITA N.° 2 para el paso de una serie a la otra.
+4.6.3 Si se ofrece esta posibilidad, es esencial asegurar la compatibilidad con los teleimpresores que tienen una sola
+serie de caracteres de letras.
+4.7 Utilización de la combinación N.° 32
+4.7.1 La combinación N.° 32 puede utilizarse en ciertas secuencias de señales de conmutación; esas utilizaciones se
+precisan en las Recomendaciones U.11, U.20, U.22 y S.4.
+4.7.2 La combinación N.o 32 no debe utilizarse en la fase de comunicación (después de establecida la comunicación)
+en el servicio télex internacional.
+4.7.3 La combinación N.° 32 puede utilizarse en la fase de comunicación (después de establecida la comunicación)
+en un servicio nacional, o por acuerdo bilateral entre dos Administraciones, como carácter de control para ciertas
+funciones, por ejemplo, el paso a un alfabeto nacional diferente del ITA N.° 2.
+4.7.4 La combinación N.° 32 no debe emplearse para el paso de una forma de caracteres a otra dentro del ITA N.° 2,
+ni para el paso de un alfabeto telegráfico internacional a otro.
+5 Representación gráfica de los caracteres de control
+Cuando se requiera una indicación gráfica de la recepción o la transmisión de ciertos caracteres de control, dicha
+indicación debe efectuarse imprimiendo los símbolos indicados en el Cuadro 2.
+CUADRO  2/S.1
+Símbolos de impresión para representar los caracteres de control
+Función N.o de la
+combinación Posición Símbolo Representación
+alfabética
+¿Con quién comunico? (WRU) 4 cifras
+  (Nota 1)
+EQ
+Señal acústica (timbre) 10 cifras BL
+Retroceso del carro 27 letras o cifras ‹ CR
+Cambio de renglón 28 letras o cifras ” LF
+Cambio a letras
+(inversión letras)
+29 letras o cifras ﬂ SL o LS
+Cambio a cifras
+(inversión cifras)
+30 letras o cifras › SF o FS
+Espacio 31 letras o cifras D SP
+Todos espacios: Nulo 32 letras o cifras ! NU
+NOTAS
+1 La representación pictográfica indicada es una forma esquemática de ( ), que puede utilizarse también cuando el equipo
+lo permita.
+2 Cada re presentación alfabética debe considerarse como un solo símbolo. Puede ocupar una posición en una línea impresa
+o visualizada.
+4 Recomendación S.1     (03/93)

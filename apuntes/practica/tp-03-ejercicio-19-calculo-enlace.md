@@ -5,25 +5,47 @@ numero: 3
 tema: Ejercicio 19 — cálculo de enlace con amplificador
 estado: revisado
 fuentes:
+  - "material/practica/U 3/TP   3   2026.pdf, p. 4"
   - "material/practica/TRABAJO PRACTICO  EJ 19 CALCULO ENLACE.pdf, secciones 7 a 10, pp. 2-3"
 procedencia:
   - "capturas/practica/clase 04.md, sección Ejercicio 19"
-actualizado: 2026-09-13
+actualizado: 2026-10-13
 ---
 
 ## Ejercicio 19 — TP: cálculo de enlace con amplificador
 
 **Estado de este ejercicio:** revisado contra el enunciado y verificado numéricamente.
 
-**Fuente:** [Cálculo de Enlace — Año 2026, secciones 7 a 10, páginas 2 y 3](../../material/practica/TRABAJO%20PRACTICO%20%20EJ%2019%20CALCULO%20ENLACE.pdf). [Transcripción textual](../../material/_cache/trabajo-practico-ej-19-calculo-enlace.txt). Los cuatro conectores se identifican en el dibujo de la página 3, no en la extracción de texto.
+**Fuentes de la consigna y los datos:** [TP3 oficial, p. 4](../../material/practica/U%203/TP%20%20%203%20%20%202026.pdf) contiene el ejercicio y el esquema de enlace. La guía ampliada [Cálculo de Enlace — Año 2026, secciones 7 a 10, pp. 2–3](../../material/practica/TRABAJO%20PRACTICO%20%20EJ%2019%20CALCULO%20ENLACE.pdf) aporta objetivos, parámetros y condiciones de entrega; su [cache textual](../../material/_cache/trabajo-practico-ej-19-calculo-enlace.txt) se usa sólo para búsqueda. Los cuatro conectores se identifican en el dibujo de la guía ampliada, p. 3, no en su extracción de texto.
 
-### Enunciado y conceptos que se aplican
+### Enunciado oficial — transcripción literal (TP3, p. 4)
 
-Se debe establecer un enlace de fibra óptica entre la casa matriz de una empresa en Mataderos y su depósito en Villa Devoto, con un amplificador intermedio.
+> 19. Para el siguiente enlace de comunicaciones en forma alámbrica (a través de una fibra óptica) entre dos puntos distantes dentro de la Ciudad Autónoma de Buenos Aires, uno es una Empresa cuya casa Matriz se encuentra en el límite con la Av Grl Paz a la altura de la localidad de Mataderos y el otro el Depósito de mercaderías de la citada empresa con ubicación en la Av Beiró a la altura de la localidad de Villa Devoto, Calcular los siguientes parámetros para que el enlace funcione correctamente:
+>
+> a) Calcular la ganancia y la sensibilidad del amplificador necesario para que el enlace funcione correctamente.
+>
+> Obtener : GA(Ganancia del Amp) y SA(Sensibilidad del Amp)
+>
+> b) Recalcular para L1 = 100m y L2 = 2000m. Analizar los resultados.
+>
+> c) Si se consiguen amplificadores de 3dB, 6dB y 9dB, ¿Cuál elegiría?, ¿Qué consecuencias trae para el circuito la elección que acaba de realizar ?
 
-- **a)** Calcular la ganancia y la sensibilidad requerida del amplificador para $L_1=500\ \mathrm{m}$ y $L_2=1000\ \mathrm{m}$.
-- **b)** Recalcular para $L_1=100\ \mathrm{m}$ y $L_2=2000\ \mathrm{m}$ y analizar los cambios.
-- **c)** Elegir entre amplificadores de 3, 6 y 9 dB y explicar las consecuencias.
+**Datos del enunciado y fuentes por dato:**
+
+| Magnitud | Valor del enunciado | Fuente |
+|---|---|---|
+| Potencia de transmisión | $PTx=-3\ \mathrm{dBm}$ | TP3 p. 4; guía ampliada §8, p. 3 |
+| Sensibilidad del receptor | $SRx=1\ \mathrm{mW}$ | TP3 p. 4; guía ampliada §8, p. 3 |
+| Distancias iniciales | $L_1=500\ \mathrm{m}$; $L_2=1000\ \mathrm{m}$ | TP3 p. 4; guía ampliada §8, p. 3 |
+| Atenuación por conector | $At=0.25\ \mathrm{dB}$ cada uno | TP3 p. 4; guía ampliada §8, p. 3 |
+| Atenuación de fibra óptica | $1.0\ \mathrm{dB}/1000\ \mathrm{m}$ | TP3 p. 4; guía ampliada §8, p. 3 |
+| Amplificadores disponibles para el inciso c | 3 dB, 6 dB y 9 dB | TP3 p. 4; guía ampliada §7, p. 3 |
+
+El diagrama de la guía ampliada p. 3 muestra dos conectores por tramo, cuatro en total; ese detalle visual se usa para el cálculo y se atribuye a esa figura. El esquema del TP3 p. 4 muestra Tx–Amp–Rx y las longitudes $L_1$, $L_2$.
+
+El inciso b sustituye las distancias por $L_1=100\ \mathrm{m}$ y $L_2=2000\ \mathrm{m}$. La guía ampliada especifica «La Ganancia (Ganancia del Amplificador) y SA (Sensibilidad del Amplificador)» para el inciso a; se conserva esa aclaración como texto de la guía, no se inserta en la transcripción del enunciado TP3. Las secciones 9–10 de esa guía piden resolución manuscrita, prolija, en orden a), b), c), y entrega escaneada en un solo PDF; son instrucciones de entrega, no condiciones físicas del cálculo.
+
+### Conceptos que se aplican
 
 **Idea física:** la fibra y los conectores atenúan la señal. El amplificador debe recibir una señal suficiente para funcionar y elevar su potencia para compensar las pérdidas restantes hasta el receptor. Son dos requisitos diferentes: **sensibilidad de entrada** y **ganancia**.
 
@@ -41,9 +63,9 @@ flowchart LR
     C4 --> RX[Receptor]
 ```
 
-### Resolución para transcribir
+### Resolución paso a paso
 
-#### Datos y planteo general
+#### Planteo general (notación y conversiones)
 
 | Magnitud | Símbolo | Valor |
 |---|---|---|
@@ -53,7 +75,7 @@ flowchart LR
 | Pérdida por conector | $A_c$ | $0{,}25\ \mathrm{dB}$ |
 | Cantidad de conectores | — | 4 en total; 2 por tramo |
 
-Para trabajar con el balance convierto la sensibilidad del receptor a dBm:
+**Paso 1 — normalizar unidades:** para trabajar con el balance convierto la sensibilidad del receptor a dBm:
 
 $$
 S_{Rx}=10\log_{10}\left(\frac{1\ \mathrm{mW}}{1\ \mathrm{mW}}\right)
@@ -67,7 +89,7 @@ $$
 
 Uso $10\log_{10}$ porque convierto **potencia**, no tensión. El argumento del logaritmo es adimensional.
 
-Llamo $A_1$ y $A_2$ a las pérdidas de cada tramo, incluyendo sus dos conectores:
+**Paso 2 — modelar pérdidas:** llamo $A_1$ y $A_2$ a las pérdidas de cada tramo, incluyendo sus dos conectores:
 
 $$
 A_i=\alpha_{FO}L_i+2A_c\qquad(i=1,2)
@@ -82,7 +104,7 @@ $$
 
 Se utiliza la atenuación constante indicada en el enunciado. No se agregan empalmes ni otras pérdidas no especificadas.
 
-El balance del enlace y la condición de funcionamiento son:
+**Paso 3 — plantear el balance:** la condición de funcionamiento del enlace es:
 
 $$
 P_{Rx}=P_{Tx}-A_1+G-A_2\geq S_{Rx}

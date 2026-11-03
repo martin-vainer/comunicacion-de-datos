@@ -1,0 +1,151 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 3/UT 3 MEDIDA VELOCIDAD.pdf
+# titulo-identificado: UT 3 MEDIDA VELOCIDAD
+# titulo-metadatos-pdf: Presentación de PowerPoint
+# sha256-original: c9b47fa30b169d907190159e54ea1203e72fedbf58e0dba3757eeb979b00974d
+# paginas-pdf-total: 17
+# paginas-pdf-extraidas: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+UD Nº 3
+Medida de la Velocidad
+Calculo de Enlace y 
+Unidades de 
+Transmisión
+
+===== PÁGINA PDF 2 =====
+MEDIDAS DE LA VELOCIDAD
+VELOCIDAD DE MODULACIÓN O SEÑALIZACION             Línea de Tx
+Vm = 1 /   (menor duración del pulso)
+Se mide en BAUDIO (1/seg)  
+AB = 1 / 
+VELOCIDAD DE TRANSMISIÓN Circuito de datos CD (desde la Fte hasta Des)
+Vtx = cantidad bits / unidad de tiempo
+Se mide en bps (bits/seg)
+CD
+ED
+m
+Vtx =  1/ *log 2 n
+i=1
+
+===== PÁGINA PDF 3 =====
+MEDIDAS DE LA VELOCIDAD
+VELOCIDAD DE MODULACIÓN O SEÑALIZACION             BAUDIO (1/seg)
+VELOCIDAD DE TRANSMISION                    BPS (bits por segundo)
+CD
+El término Baudio (o baud rate) es una unidad de medida en telecomunicaciones que define 
+el número de símbolos o cambios de estado de señal por segundoen un medio de 
+transmisión. Indica la velocidad de modulación; a mayor cantidad de baudios, más rápido 
+cambia la señal.
+Baudios vs. bps: No deben confundirse. Los baudios son símbolos por segundo, mientras 
+que los bits por segundo (bps o bit rate) miden la cantidad de información. Un símbolo puede 
+contener múltiples bits en sistemas complejos..
+La transmisión multinivel en teleinformática es una técnica de señalización digital que 
+utiliza más de dos niveles de voltaje (o estados de señal) para representar datos. Agrupa 
+varios bits en símbolos, permitiendo enviar más información por baudio (mayor velocidad de 
+datos) sin aumentar el ancho de banda necesario, logrando una mayor eficiencia en medios 
+físicos como el cobre
+
+===== PÁGINA PDF 4 =====
+TRAMSMISION MULTINIVEL
+CD
+
+
+===== PÁGINA PDF 5 =====
+MEDIDAS DE LA VELOCIDAD
+RELACIÓN ENTRE VELOCIDADES   
+Vtx = Vm*log 2 n n: es el número de estados n= 2 N 
+N= Cantidad de bits a Tx , Ej: TransmisiónMultinivel
+VELOCIDAD DE TRANSFERENCIA DE DATOS  
+Vtd = cant bits con info c/s E / tiempo empleado  
+Se mide en bps (bits/seg o byte/seg)
+VELOCIDAD REAL DE TRANSFERENCIA DE DATOS
+Vrtd= cant bits con info sin Errores / tiempo empleado
+Se mide en bps (bits/seg o Byte/seg)
+Vtx> Vtd > Vrtd
+AB => Vm ; Vtx = Vm log2 n
+
+===== PÁGINA PDF 6 =====
+SINCRONISMO
+SINCRÓNICA
+ASINCRÓNICA
+Definición : Procedimiento donde tanto la fuente como el colector,
+adoptan una base de tiempo común, de forma tal de no
+equivocarse en la Tx de un 1 o 0.
+LA TRANSMISION ENTONCES PUEDE SER: 
+
+===== PÁGINA PDF 7 =====
+PROTOCOLO ASINCRÓNICO
+Puede llevar un bit
+•Vel bin bajas
+•Bajo rendimiento de transmisión
+•Menor complejidad de equipos, relojes menos precisos
+•Transmisión carácter por carácter, en forma irregular
+t
+Nivel
+Arranque
+1 t de bit
+Parada
+1; 1,5 o 2 t de bit
+5, 7 u 8 bits de  
+datos (carácter)
+de paridad adicional
+
+===== PÁGINA PDF 8 =====
+PROTOCOLO SINCRÓNICO
+•Vel bin alta
+•Alto rendimiento de transmisión
+•Mayor complejidad de equipos, relojes más precisos
+•Transmisión de conjunto de caracteres (bloques), en forma regular
+•Tamañode bloque es un compromiso de diseño
+•Orientado al carácter o al bit
+Encabezamiento  
+o Header
+Final o EndDatos de  
+Usuario
+
+===== PÁGINA PDF 9 =====
+Unidades de Transmisión (el decibel - dB)
+
+
+===== PÁGINA PDF 10 =====
+Unidades de Transmisión
+
+
+===== PÁGINA PDF 11 =====
+Amplificación y Atenuación
+
+
+===== PÁGINA PDF 12 =====
+Unidades de Transmisión
+
+
+===== PÁGINA PDF 13 =====
+Amplificación
+10 W 20 W
+G  =  ??
+G amp= 10*log  20w / 10w =       Gampl=  3dB
+G amp= 10*log  80w / 40w =       Gampl=  3dB
+40 W 80 W
+G amp= 10*log  40w / 10w =       Gampl=  6dB
+10 W 40 W
+
+===== PÁGINA PDF 14 =====
+Definición de ancho de banda de una línea 
+de transmisión usando dB
+
+
+===== PÁGINA PDF 15 =====
+Unidades de Transmisión
+
+
+===== PÁGINA PDF 16 =====
+Unidades de Transmisión
+
+
+===== PÁGINA PDF 17 =====
+Unidades de Transmisión
+

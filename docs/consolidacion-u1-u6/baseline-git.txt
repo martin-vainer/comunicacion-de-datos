@@ -1,0 +1,16 @@
+ M AGENTS.md
+ M README.md
+ M apuntes/_plantillas/apunte-teoria.md
+ M apuntes/_plantillas/indice-unidad.md
+ M apuntes/_plantillas/metodologia.md
+ D capturas/teoria/01_10_26_U5.md
+ M docs/flujo-agentico.md
+?? capturas/practica/practica_un5.md
+?? "capturas/teoria/05-Teor\303\255a de la informaci\303\263n y de la codificaci\303\263n/"
+?? "capturas/teoria/06-Canales de comunicaciones/"
+?? docs/consolidacion-u1-u6/
+?? docs/estado-apuntes-2026-10-10.md
+?? material/_cache/u6-canales-comunicaciones-control-errores.txt
+?? "material/practica/U 5/"
+?? material/practica/U6/
+?? material/teoria/U6/

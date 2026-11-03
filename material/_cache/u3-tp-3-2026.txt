@@ -1,0 +1,206 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 3/TP   3   2026.pdf
+# titulo-identificado: TP   3   2026
+# titulo-metadatos-pdf: TEMARIO TELEINFORMATICA
+# sha256-original: 459deb47cea813eca82c2e3ff8735378354baabdca5187e736b8fba888f07d32
+# paginas-pdf-total: 4
+# paginas-pdf-extraidas: 1,2,3,4
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTAMENTO INGENIERIA EN 
+SISTEMAS DE INFORMACION 
+ 
+ 
+ 
+COMUNICACIONES DE DATOS 
+ 
+COMUNICACIONES 
+ 
+GUIA DE TRABAJOS PRACTICOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA PDF 2 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 2 
+ 
+                                 TRABAJO PRÁCTICO N°3 
+ 
+Medidas de Velocidad. Calculo de enlaces, unidades de medida. 
+ 
+1. Si se utiliza un MODEM que transmite a 1200 baudios cuanto tardaría en transmitir los 
+1000 caracteres.  
+ 
+2. Indicar bajo que condiciones la velocidad de modulación es igual a la velocidad de 
+transmisión. 
+ 
+3. Calcular el tiempo total de transmisión de 1500 c aracteres enviados uno a continuación de 
+otro en un sistema de transmisión asincrónica de 75 Baudios. El código utilizado es el 
+Seudo Baudot, los caracteres son ASCII de 8 bits con un bit de paridad.  
+ 
+4. Para un sistema que transmite a 1200 Baudios se  quier e aumentar la velocidad a 4800 
+bps. Indicar cómo se logra y cuál es el ancho de pulso resultante.  
+ 
+5. Calcular el rendimiento de una transmisión sincrónica cuando se envían bloques de datos 
+de 1500 bytes y se utilizan 14 bytes de cabecera y 4 bytes de termina ción. 
+ 
+6. Calcular el rendimiento de transmisión asincrónica que utiliza un código que tiene 1 bit de 
+arranque, 1 de parada y 7 de datos. Efectuar el calculo con y sin bit de paridad.  
+ 
+7. Dada una transmisión sincrónica de 1024 bytes , y si no consideramos la ca beza y la cola 
+de dicha transmisión, determinar la disminución del rendimiento si se utiliza una transmisión 
+asincrónica mediante un código que emplea 8 bits de datos, 1 de paridad, 2 de parada y 1 
+de arranque. Para ambos casos se emplea una velocidad de m odulación de 2400 Baudios. 
+Indicar también el tiempo total de transmisión en ambos casos.  
+ 
+8. Indicar las causas por las cuales no se puede aumentar, en determinados canales de 
+comunicación, la velocidad de modulación.  
+ 
+9. Definir la velocidad “ACCESS RATE” en un canal de comunicaciones. 
+ 
+10.  Indicar los factores que condicionan o limitan la velocidad efectiva de transmisión de datos 
+en una línea digital de comunicaciones.  
+ 
+ 
+11. Calcular el tiempo total de transmisión de 1800 caracteres de datos enviados en un sistema 
+de transmisión sincrónico de 3600 Baudios. El rendimiento de la transmisión es del 90%.  
+ 
+12. Dado un canal de transmisión de datos coaxil con una atenuación a la frecuencia 
+de operación de 0,9 dB/100 metros y donde la sensibilidad del receptor es  -15 dBm 
+. Calcular la potencia mínima que deberá tener el transmisor si la longitud del coaxil 
+es de 1200 metros.  
+ 
+ 
+
+===== PÁGINA PDF 3 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 3 
+13.Calcular la potencia de salida de una línea de transmisión de 100 metros donde la 
+atenuación del cable coaxil es de 5 dB/100m y la potencia del transmi sor que excita 
+a la línea es de 0 dBm, se pierde en conectores y empalmes 2dB.  
+ 
+14.Que sensibilidad mínima (expresada en mW) deberá tener un receptor para un 
+enlace a través de una línea de transmisión de 1800 metros, donde la atenuación 
+del cable coaxil empleado es de 0,5 db/100m. La potencia del transmisor que excita 
+la línea es de 2 watts. 
+ 
+ 
+15.Dado un enlace de fibra óptica entre un emisor y un receptor con los siguientes 
+parámetros: 
+       Atenuación de la FO = 3 dB/km 
+       Atenuación del conector = 0,6 dB 
+       Potencia de transmisión = 3 dBm 
+       Sensibilidad del receptor = - 10 dBm 
+ 
+Calcular la distancia máxima entre receptor y transmisor suponiendo un factor 
+de diseño FD = 10 dB (margen de diseño), empleándose un conector en el 
+transmisor y otro en el receptor. Repetir  el cálculo para una FO cuya 
+atenuación es de 0,2 dB/km. 
+ 
+16.Dos dispositivos de transmisión de datos se encuentran vinculados por un enlace 
+de comunicaciones construido por cable coaxil de atenuación igual a 0,8 dB/100 m. 
+La distancia qu e separa a estos equipos es de 5000 metros. Calcular la potencia 
+mínima que debe aplicarse en el extremo transmisor, si la sensibilidad del 
+dispositivo receptor es de –10 dbm, considerando un FD de 3 dB. 
+ 
+17.Se requiere montar un enlace de fibra óptica uniend o dos equipos separados 
+30000 metros uno de otro. La potencia del transmisor es de 2 mW y la sensibilidad 
+del receptor es de – 60 dBm. Cual será la especificación de atenuación máxima a 
+requerir de la fibra que se debe emplear, expresada en dB/Km. 
+ 
+18.Si se tiene un enlace de 1000 m entre un transmisor que entrega una potencia de 
+100w y un receptor con una sensibilidad de 1w y se pretende utilizar las siguientes 
+líneas de transmisión, indicar cuándo se deberá utilizar amplificadores. Considerar 
+en ambos casos dos conectores de 0,5 dB c/u.   
+a. Usando coaxil fino RG 58 con At = 5 dB/100 m    
+b. Usando coaxil grueso RG 218 con At = 0,8 dB/100 m.  
+En caso necesario calcular la ganancia del amplificador correspondiente.  
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA PDF 4 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 4 
+19. Para el siguiente enlace de comunicac iones en forma alámbrica (a través de una 
+fibra óptica) entre dos puntos distantes dentro de la Ciudad Autónoma de Buenos 
+Aires, uno es una Empresa cuya casa Matriz se encuentra  en el límite con la Av Grl 
+Paz a la altura de la localidad de Mataderos y el otro el Depósito de mercaderías de 
+la citada empresa con ubicación en la Av Beiró a la altura de la localidad de Villa 
+Devoto, Calcular los siguientes parámetros para que el enlace funcione 
+correctamente: 
+ 
+ a) Calcular la ganancia y la sensibilidad del amp lificador necesario para que el 
+enlace funcione correctamente. 
+ 
+ PTx = - 3 dBm , SRx = 1 mW 
+  
+ L1=500m,   L2=1000m                  L1                   L2 
+ 
+Conector At=0.25 dB c/u 
+ 
+At F.O.  = 1.0 dB/1000m         Tx                      Amp                          Rx 
+ 
+         Obtener : GA(Ganancia del Amp)  y  SA(Sensibilidad del Amp)  
+   
+ 
+b) Recalcular para L1 = 100m y L2 = 2000m. Analizar los resultados. 
+ 
+c) Si se consiguen amplificadores de 3dB, 6dB y 9dB, ¿Cuál elegiría?, ¿Qué 
+consecuencias trae para el circuito la elección que acaba de realizar ? 
+ 
+ 

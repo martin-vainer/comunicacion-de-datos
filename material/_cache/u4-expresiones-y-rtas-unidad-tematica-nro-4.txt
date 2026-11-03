@@ -1,0 +1,159 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 4/EXPRESIONES  Y RTAS UNIDAD  TEMATICA NRO 4.pdf
+# titulo-identificado: EXPRESIONES  Y RTAS UNIDAD  TEMATICA NRO 4
+# titulo-metadatos-pdf: 
+# sha256-original: e696d6590be1570748ecf81b7f7d701d394e1ce1f6335757acb518bfa54f1ed7
+# paginas-pdf-total: 4
+# paginas-pdf-extraidas: 1,2,3,4
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+ 
+ UNIDAD  TEMATICA NRO 4 - RESPUESTAS 
+1.  
+ 
+AB señal analogica: 4000 Hz. 
+Modulador tipo PCM: -  toman muestras cada 125 seg. 
+- cuantificación  128 niveles. 
+Hallar la capacidad del vínculo a la salida del modulador = Capacidad del canal. 
+1) Cantidad de muestras (fmuestro=>2fmax)  = 2*4000= 8000Hz o 8000muestras/seg. 
+2) Tambien puedo calcular: f= 1/T  ;    8000Hz = 1/0,000125seg 
+3) Cuantificación 128 niveles cuanticos  27  7 bits por muestra 
+4) C=8000muestras/seg* 7 bits/muestra  ;   C= 56Kbps 
+ 
+5) Ahora con 256 niveles cuanticos  28  8 bits por muestra 
+6) C=8000muestras/seg* 8 bits/muestra  ;   C= 64Kbps 
+ 
+ 
+      RTA: C= 56Kbps  y  C= 64Kbps 
+ 
+2.   Modem de 16 – PSK 
+       
+       16 = 24    transmisión de tipo multinivel cuatribits. 
+       = 22,5°   
+      RTA: cada 22,5°  va variando la portadora. 
+ 
+3.    
+       Aplicar Tx multinivel        n=2N (dibit, tribit,cuatribit) ; se transmite CUATRIBITS 
+            Vtx=  4 |Vm|  
+Vtx  = Vm*log 2 n 
+
+===== PÁGINA PDF 2 =====
+        RTA: Vtx=  4 |Vm|  
+ 
+4.    Modem de  8 – PSK 
+          
+ 
+a) Moduladora:  Digital 
+Portadora:      Analógica 
+Modulada:      Analógica 
+ 
+b) Asignación de fases a secuencias de bits y diagrama de fases: 
+              = 45°   
+             Asignación de fases de acuerdo al Codigo Gray:  
+ 
+      
+ 
+ 
+ 
+c)  Aplicar  Tx multinivel    n=2N (dibit, tribit,cuatribit)   ; se transmite TRIBITS 
+ Vtx=  3 |Vm| 
+ 
+ 
+ 
+ 
+5.   Vtx= 9600 bps     ,  Vm= 2400 baudios   ; modulación PSK ;  
+ 
+a) Calcular tipo modulador PSK: 
+   
+ 
+          
+  Secuencia de Bits 
+0 00 
+0 01 
+  1er espejo 
+0 11 
+0 10 
+  2do espejo 
+1 10 
+1 11 
+1 01 
+1 00 
+Vtx  = Vm*log 2 n 
+
+===== PÁGINA PDF 3 =====
+           9600bps= 2400* log 2 n  ;  n= 2
+9600
+2400  = 16  
+           n= 16(estados significativos) 
+           Tipo de modulador PSK = 16-PSK 
+ 
+b)  
+ 
+ 
+                 = 22,5°  
+-  Confeccionar la tabla de asignación de fases aplicando el código Gray, 
+quedando  entonces las secuencias de bits de: 0000  ……..1111,  variando 
+cada fase de la portadora cada  22,5°.    
+- Confeccionar el digrama de fases asignando cada grupo de bits, teniendo en 
+cuenta si lo que realizamos esta bien, cada fase con la adyacente debe diferir 
+solo en UNO BIT, mientras que en las opuestas la diferencia es de DOS BITS. 
+6.   p(t)= 100Mhz 
+        Señal sinusoidal= 10 Khz 
+        f (desviación máxima de f)= 1 Mhz 
+        Calcular el AB de la señal de FM 
+        AB (en FM) = 2x [ f + frecuencia moduladora ] 
+        AB = 2 x [1000Khz + 10 Khz ] 
+        AB= 2020 Khz 
+ 
+        RTA: 2020 Khz 
+ 
+7.   Rta: Esta en la presentación ( Cuadro con los tipos de modulación y tipo de 
+cada señal. 
+ 
+8.    La modulación que se ve menos afectada por el ruido es la FM ya que ésta al enviar 
+información a través de variaciones en la  frecuencia y no en amplitud, la cambios 
+repentinos en la misma introducidos por el ruido son de baja o nula relevancia. 
+ 
+9.    FDM : señales resultante ANALOGICA. 
+      TDM : señales resultante DIGITAL. 
+ 
+10.  Cuadro comparativo de FDM, TDM y STDM   
+
+
+===== PÁGINA PDF 4 =====
+ 
+ 
+ 
+PARAMETROS A TENER EN CUENTA: 
+PARAMETRO FDM TDM STDM 
+Modo de 
+Transmisión de la Info S ------- ------ 
+Envio de señales  Analogicas- Digitales Digitales Digitales 
+Señal resultante del 
+proceso 
+Analogicas Digitales Digitales 
+Relación S/N Se deteriora No se deteriora No se deteriora 
+Tecnología analogica digital digital 
+Costos de 
+Implementación 
+Mas bajo Mas elevados Mas elevados 
+Eficiencia del uso del 
+Ancho de Banda 
+Menos eficiente- asigna 
+bandas de guarda para 
+separar cada subcanal 
+Mas eficiente -asigna 
+el AB en intervalos de 
+tiempo fijo a cada 
+subcanal 
+Mas eficiente -asigna el 
+AB en intervalos de 
+tiempo variables a 
+cada subcanal 
+ 
+ 
+ 
+ 

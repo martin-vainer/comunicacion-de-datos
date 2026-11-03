@@ -1,0 +1,139 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 2/UT 2 SEÑALES TELCOM-CODIGOS DE LINEA.pdf
+# titulo-identificado: UT 2 SEÑALES TELCOM-CODIGOS DE LINEA
+# titulo-metadatos-pdf: UD Nº 1 Introducción a la Teleinformática
+# sha256-original: d9702377d69c2cfe2a24eb1b5d8935dfd0ea032c5f7da6bb624d4b5cf6ecd671
+# paginas-pdf-total: 17
+# paginas-pdf-extraidas: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+UD Nº 2  (1ra parte)
+Señales empleadas en 
+Telecomunicaciones.
+Códigos de Linea
+
+===== PÁGINA PDF 2 =====
+Analógicas : Son aquellas señales representadas por funciones que
+partiendo de un intervalo de tiempo determinado,
+adoptan infinitos valores de continuo.
+Señales analógicas y digitales 
+
+
+===== PÁGINA PDF 3 =====
+Digitales : Son aquellas señales representadas por funciones que
+partiendo de un intervalo de tiempo determinado,
+adoptan finitos valores de continuo. (concretamente dos).
+Señales analógicas y digitales 
+
+
+===== PÁGINA PDF 4 =====
+Parametros deSeñales analógicas y digitales 
+
+
+===== PÁGINA PDF 5 =====
+CLASIFICACION DE SEÑALES DIGITALES
+Según la polaridad:   Unipolar                                 + 1  1 -
+Polar                                      + 1  - 0       
+Bipolar (seudoternario)       +1    -1
+
+===== PÁGINA PDF 6 =====
+CLASIFICACION DE SEÑALES DIGITALES
+Unipolar
+ Polar
+Bipolar
+
+===== PÁGINA PDF 7 =====
+CLASIFICACION DE SEÑALES DIGITALES
+Según ancho del pulso:  No Retorno a Zero (NRZ)  t = Is
+Retorno a Zero (RZ)           t < Is
+
+===== PÁGINA PDF 8 =====
+CLASIFICACION DE SEÑALES DIGITALES
+Según ancho del pulso:  No Retorno a Zero (NRZ)  
+Retorno a Zero (RZ)           
+
+
+===== PÁGINA PDF 9 =====
+Repetidor Regenerativo
+
+
+===== PÁGINA PDF 10 =====
+Espectro Electromagnetico
+Hertz = c/seg
+Khz= 10 3 hz
+Mhz=  10 6 hz
+Ghz = 10 9 hz
+Thz= 10 12 hz
+= c/f
+= Long onda (m)
+C= 3*108 m/seg
+f =  frecuencia (Hz)
+la longitud de onda te da 
+la referencia física del 
+tamaño mínimo eficaz que 
+debería tener el elemento 
+irradiante para que 
+resuene y radie bien en esa 
+frecuencia.
+
+===== PÁGINA PDF 11 =====
+= c/f
+= Long onda (m)
+C= 3*108 m/seg
+f =  frecuencia (Hz)
+
+===== PÁGINA PDF 12 =====
+Banda / Servicio Frecuencia
+(f) Longitud de onda (λ) Dipolo ½ onda Monopolo ¼ onda
+AM (radio) 1 MHz 300 m 150 m 75 m
+FM (radio) 100 MHz 3 m 1.5 m 0.75 m
+TV UHF 600 MHz 0.5 m (50 cm) 0.25 m (25 cm) 0.125 m (12.5 cm)
+WiFi (2.4 GHz) 2.4 GHz 0.125 m (12.5 cm) 6.25 cm 3.1 cm
+WiFi / 5G (5 GHz) 5 GHz 0.06 m (6 cm) 3 cm 1.5 cm
+5G mmWave (28 GHz) 28 GHz 1.07 cm 5.3 mm 2.7 mm
+la longitud de onda te da la referencia física del tamaño 
+mínimo eficaz que debería tener el elemento irradiante para 
+que resuene y radie bien en esa frecuencia.
+
+===== PÁGINA PDF 13 =====
+CLASIFICACION DE LOS CODIGOS DE LINEA
+RZ
+NRZ
+AMI
+HDB-3
+MANCHESTER
+POLAR RZ
+
+===== PÁGINA PDF 14 =====
+SEÑALES DE BANDA BASE
+Son aquellas señales que, generadas por una fuente de 
+información,  no sufren ningún proceso de modulación 
+o tratamiento a su salida.
+SEÑALES MODULADAS
+Son aquellas señales que, generadas por una fuente de 
+información,  pasan por un proceso de modulación o 
+tratamiento a su salida.
+
+===== PÁGINA PDF 15 =====
+CODIGOS DE LINEA O BANDA BASE
+MISION: - Eliminar o Disminuir el componente de CC 
+de una señal. 
+- Garantizar el sincronismo.
+- Detectar la presencia de  señal en la línea.
+
+===== PÁGINA PDF 16 =====
+CLASIFICACION DE LOS CODIGOS DE LINEA
+RZ
+NRZ
+
+===== PÁGINA PDF 17 =====
+CLASIFICACION DE LOS CODIGOS DE LINEA
+RZ
+NRZ
+AMI
+HDB-3
+MANCHESTER
+POLAR RZ

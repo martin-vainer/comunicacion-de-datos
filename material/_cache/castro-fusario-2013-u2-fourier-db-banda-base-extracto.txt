@@ -1,0 +1,4165 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/DOC-20230425-WA0040.pdf
+# titulo-identificado: Castro Lechtaler y Fusario 2013; extractos señal/Fourier, unidades, espectro, ancho de banda, códigos y filtros; no habilita temas nuevos
+# titulo-metadatos-pdf: 
+# sha256-original: 56f7b6926abb5bea6e15e3c926d2344ad49004e4fbad6ad2e10e4060182e90ae
+# paginas-pdf-total: 726
+# paginas-pdf-extraidas: 98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,124,125,126,127,128,129,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 98 =====
+2 - Transmisión de señales72
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Para que las señales digitales se puedan regenerar deben llegar al repetidor con un mínimo 
+de energía a fin de que sean reconocidas. Así, se puede hablar de un umbral de detección tal, 
+que por debajo de él la acción del repetidor no es efectiva. Por lo tanto, la distancia entre repe-
+tidores debe ser tal que la señal no se encuentre nunca por debajo de ese umbral.
+Repetidor 
+regenerativo
+Señal de
+entrada E(t)
+Señal de
+salida S(t)
+00 11 00 00 11 00 11 t t
+Umbral de detección
+Fig. 2.7.	Forma	en	que	opera	un	equipo	repetidor	regenerativo.
+Si se consideran las funciones que desempeñan los amplificadores en las redes analógicas 
+y los repetidores regenerativos en las redes digitales, se puede deducir que existen incompa-
+tibilidades entre ambos tipos de canales. Así, si una señal digital previamente distorsionada 
+entra a un amplificador, este amplificará la distorsión de la señal, y, análogamente, si una señal 
+analógica entra a un repetidor regenerativo, este no produciría efecto útil alguno.
+2.4 Características de las señales utilizadas para la transmisión de señales
+2.4.1 Aspectos generales
+Si bien la transmisión de señales inteligentes, tanto analógicas como digitales, se carac-
+terizan por ser de forma variable, dado que las señales toman una determinada forma según 
+la información a transmitir, sus características pueden estudiarse tomando como referencia 
+la función senoidal armónica simple como ejemplo de una señal típica analógica, y a la señal 
+conocida como onda cuadrada como ejemplo de una señal digital.
+En ambos casos estos dos tipos de funciones tienen la característica de ser funciones 
+periódicas.
+Se dice que una función 
+f(t) es periódica cuando se verifica que,
+                                                               f t t T( ) = ( + )  (2 - 1)
+y
+           
+′∂
+∂ ′
+′∂
+∂ ′
+f t
+t
+f t T
+t
+( ) = ( + )
+ (2 - 2)
+Donde:
+T = período de la función.
+La Fig. 2.8. muestra una función analógica periódica de período T.
+Obsérvese que la función f(t) toma los mismos valores cada intervalo T, denominado pe-
+ríodo de dicha función. 
+f(t)
+f(t  )
+(t  )
+f(t  +T)
+t  +T
+T
+T
+T T
+t
+O
+O
+O
+O
+Fig. 2.8.	Función	analógica	periódica.
+La función senoidal armónica es una función periódica que nos permitirá conocer a través 
+La función senoidal, en su expresión más general, tiene la siguiente forma:
+         f(t)= A sen (ωt + Φ) (2 - 3)
+Donde:
+A = amplitud.
+ω = pulsación angular.
+Φ = fase inicial.
+T = período.
+La Fig. 2.9. nos muestra tres ciclos de una función senoidal con ángulo de fase inicial igual 
+220 Volt - 50 Hertz, o en otros países de 110 Volt - 60 Hertz es una típica 
+f(t)
+270º T T
+Ángulo de
+rotación
+360º270º180º90º 0ºA
+Vm
+90º
+180º
+Fig. 2.9.	Función	senoidal	armónica	simple.
+
+===== PÁGINA PDF 99 =====
+2.4 Características de las señales utilizadas para la transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+73
+tidores debe ser tal que la señal no se encuentre nunca por debajo de ese umbral.
+Repetidor 
+regenerativo
+Señal de
+entrada E(t)
+Señal de
+salida S(t)
+00 11 00 00 11 00 11 t t
+Umbral de detección
+Fig. 2.7.	Forma	en	que	opera	un	equipo	repetidor	regenerativo.
+analógica entra a un repetidor regenerativo, este no produciría efecto útil alguno.
+2.4 Características de las señales utilizadas para la transmisión de señales
+2.4.1 Aspectos generales
+conocida como onda cuadrada como ejemplo de una señal digital.
+periódicas.
+Se dice que una función f(t) es periódica cuando se verifica que,
+                                                                
+y
+            
+Donde:
+T = período de la función.
+La Fig. 2.8. muestra una función analógica periódica de período T.
+Obsérvese que la función f(t) toma los mismos valores cada intervalo T
+ríodo de dicha función. 
+f(t)
+f(t  )
+(t  )
+f(t  +T)
+t  +T
+T
+T
+T T
+t
+O
+O
+O
+O
+Fig. 2.8.	Función	analógica	periódica.
+2.4.2 Función senoidal armónica simple
+La función senoidal armónica es una función periódica que nos permitirá conocer a través 
+de su estudio las características que tienen las señales electromagnéticas, de importancia vital 
+en las telecomunicaciones.
+La función senoidal, en su expresión más general, tiene la siguiente forma:
+         f(t)= A sen (ωt + Φ) (2 - 3)
+Donde:
+A = amplitud.
+ω = pulsación angular.
+Φ = fase inicial.
+T = período.
+La Fig. 2.9. nos muestra tres ciclos de una función senoidal con ángulo de fase inicial igual 
+a cero. La corriente eléctrica que alimenta los distintos equipos informáticos o los existentes 
+en el hogar de tensión 220 Volt - 50 Hertz, o en otros países de 110 Volt - 60 Hertz es una típica 
+señal senoidal armónica simple. Para entender adecuadamente el sentido de las constantes 
+contenidas en ella, veamos cómo se genera.
+f(t)
+270º T T
+Ángulo de
+rotación
+360º270º180º90º 0ºA
+Vm
+90º
+180º
+Fig. 2.9.	Función	senoidal	armónica	simple.
+
+===== PÁGINA PDF 100 =====
+2 - Transmisión de señales74
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Supongamos un vector de longitud A (amplitud) que gira a velocidad angular constante ω, 
+alrededor de un punto de aplicación 0. 
+Se denomina período a la demora de la señal en completar un ciclo completo. En otras pa-
+labras, el tiempo que el vector A, tarda en dar una vuelta completa hasta llegar al mismo punto 
+de partida. Por otro lado entendemos por ciclo a la parte de la señal comprendida en un período.
+La velocidad angular del vector ω, se puede definir como:
+ω = ángulo recorrido
+tiempo  (2 - 4)
+Para un ángulo recorrido de 2π radianes, se habrá tardado en recorrerlo un tiempo igual al 
+período T. Es decir que tendremos entonces
+ ω π= 2
+T    (2 - 5)
+Luego, operando convenientemente, tendremos que 
+T = 2 π
+ω   (2 - 6)
+A su vez, la frecuencia es el número de ciclos completos por segundo. Por lo tanto, la fre-
+cuencia resultará la inversa del período T.
+T f seg ( )= 1
+  (2 - 7)
+Resultará, operando convenientemente;
+ω = 2πf  (2 - 8)
+El tiempo T se mide en segundos y la frecuencia en Hertz. Es decir, dimensionalmente 
+hablando, el Hertz resulta:
+[ ] =Hertz
+seg
+1
+  (2 - 9)
+Analicemos cada una de las constantes de estas funciones.
+Para ello observemos la Fig. 2.10.; en ella están representadas dos funciones de igual fre-
+cuencia y fase, pero distintos valores de amplitud, A1 y A2; 
+f1(t)
+f2(t)
+T
+t
+Fig. 2.10.	Funciones	senoidales	de	distinta	amplitud	con	ángulo	de	fase	igual	a	cero	 	 	 	 	 	
+y	la	misma	frecuencia.
+Se observa que el período es el mismo, dado que la frecuencia o, lo que es lo mismo, la 
+f1(t)
+f2(t)
+q = +180º
+q = +90º
+π 3π2π t
+Fig. 2.11.	Funciones	senoidales	de	distinta	amplitud	con	ángulo	de	fase	distinto	de	cero	
+y	la	misma	frecuencia.
+Veamos ahora dos señales sinusoidales de distintas frecuencias pero de igual amplitud y 
+ f1 = 4 Hz y una segunda 
+= 8 Hz. 
+Calculemos primero el período de ambas funciones T1 y T2.
+ 
+Observemos en la Fig. 2.12. la forma de ambas señales para el caso planteado, en particular 
+Analicemos ahora el papel que desempeña el ángulo de la fase inicial en una función se-
+Para ello representaremos la función armónica en su caso más general; es decir,
+ f(t) = A sen (ω t + Φ) (2 - 10)
+Dicha función para el instante t = 0, resultará ωt = 0, luego la expresión quedará de la si-
+f(0)= A sen φ (2 - 11)
+Luego el valor de la función en el instante t = 0 dependerá del valor del seno del ángulo φ. 
+Es evidente que si φ = 0 resultará sen φ = 0, y por lo tanto f(0) = 0; y
+Si  resultará , y por lo tanto .
+En la Fig. 2.13., se representan dos funciones de igual amplitud y frecuencia, pero una con 
+, y otra con
+
+===== PÁGINA PDF 101 =====
+2.4 Características de las señales utilizadas para la transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+75
+Supongamos un vector de longitud A (amplitud) que gira a velocidad angular constante 
+alrededor de un punto de aplicación 0. 
+Se denomina período
+labras, el tiempo que el vector A
+La velocidad angular del vector ω, se puede definir como:
+ 
+Para un ángulo recorrido de 2π 
+período T. Es decir que tendremos entonces
+   
+Luego, operando convenientemente, tendremos que 
+ 
+cuencia resultará la inversa del período T.
+ 
+Resultará, operando convenientemente;
+ω = 2πf 
+El tiempo T
+hablando, el Hertz resulta:
+ 
+Analicemos cada una de las constantes de estas funciones.
+cuencia y fase, pero distintos valores de amplitud, A1 y A2; 
+f1(t)
+f2(t)
+T
+t
+Fig. 2.10.	Funciones	senoidales	de	distinta	amplitud	con	ángulo	de	fase	igual	a	cero
+y	la	misma	frecuencia.
+Se observa que el período es el mismo, dado que la frecuencia o, lo que es lo mismo, la 
+pulsación es igual en ambas y se ha considerado un valor de ángulo de fase igual a cero. En la 
+Fig. 2.11. se puede observar el mismo caso, pero con ángulos de fase distintos de cero aunque 
+del mismo valor en ambas funciones.
+f1(t)
+f2(t)
+q = +180º
+q = +90º
+π 3π2π t
+Fig. 2.11.	Funciones	senoidales	de	distinta	amplitud	con	ángulo	de	fase	distinto	de	cero	
+y	la	misma	frecuencia.
+Veamos ahora dos señales sinusoidales de distintas frecuencias pero de igual amplitud y 
+ángulo de fase inicial. Para ello consideremos una señal de frecuencia f1 = 4 Hz y una segunda 
+f2 = 8 Hz. 
+Calculemos primero el período de ambas funciones T1 y T2.
+T seg Hz seg ,[ ] = = 1
+4 0 25  T seg Hz seg ,[ ] = = 1
+8 0 125
+Observemos en la Fig. 2.12. la forma de ambas señales para el caso planteado, en particular 
+con ángulo de fase inicial igual a cero.
+Analicemos ahora el papel que desempeña el ángulo de la fase inicial en una función se-
+noidal.
+Para ello representaremos la función armónica en su caso más general; es decir,
+ f(t) = A sen (ω t + Φ) (2 - 10)
+Dicha función para el instante t = 0, resultará ωt = 0, luego la expresión quedará de la si-
+guiente forma;
+f(0)= A sen φ (2 - 11)
+Luego el valor de la función en el instante t = 0 dependerá del valor del seno del ángulo φ. 
+Es evidente que si φ = 0 resultará sen φ = 0, y por lo tanto f(0) = 0; y
+Si φ π= 2
+ resultará sen π
+2 1= , y por lo tanto f A sen Aπ π
+2 2= = .
+En la Fig. 2.13., se representan dos funciones de igual amplitud y frecuencia, pero una con 
+φ= 0, y otra con
+
+===== PÁGINA PDF 102 =====
+2 - Transmisión de señales76
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+(t)f1
+f (t)2
+T =  0,125 seg2
+T =  0,25 seg1
+t
+Fig. 2.12. Funciones	senoidales	de	distinta	frecuencia	con	ángulo	de	fase	igual	a	cero	y	
+la	misma	amplitud.
+φ π= 2
+Las expresiones de una y otra serán por lo tanto;
+f(t) = A sen (ω t)  (2 - 12)
+f(t) = 1          para 0 < t < T /2
+f t A sen t( ) = + ω 2
+  (2 - 13)
+La expresión [2-11] podría también expresarse de la siguiente manera;
+f(t) = A cos (ω t)  (2 - 14)
+F2(t) = A sen (ωt + π/2)
+        = cos (ωt)
+.
+t
++ A
+- A
+F1(t) = A sen (ωt)
+Fig. 2.13.	Funciones	senoidales	de	ángulos	de	fase	igual	a	cero	e	igual	a	π_
+2	
+.
+Una de las formas más comunes de las señales digitales es la función onda cuadrada. Esta 
+La función onda cuadrada se define matemáticamente a través de las siguientes expre-
+f(t) = A               para  (2 - 15)
+y, 
+f(t)= –A              para   (2 - 16)
+y, 
+f(t)= 0                 para ; donde n = 1, 2,..., n  (2 - 17)
+En esta función digital, los conceptos de amplitud, frecuencia y período tienen el mismo 
+ (2 - 18)
+Donde: PPS es pulsos por segundo.
+En el estudio de las señales digitales aparece un parámetro, muy importante, denominado 
+(ζ). Más adelante veremos que el ancho del pulso está relacionado con el ancho 
+Además, a través del estudio y análisis de la onda cuadrada, utilizando como herramienta 
+O T/2 T
+T
+3/2T 2T 5/2T 3T
+t
++ 1
+- 1
+Fig. 2.14. Función	onda	cuadrada	de	amplitud	A	y	período	T .
+Analizaremos a continuación otras características de las señales senoidales empleadas muy 
+
+===== PÁGINA PDF 103 =====
+2.4 Características de las señales utilizadas para la transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+77
+(t)f1
+f (t)2
+T =  0,125 seg2
+T =  0,25 seg1
+t
+Fig. 2.12. Funciones	senoidales	de	distinta	frecuencia	con	ángulo	de	fase	igual	a	cero	
+la	misma	amplitud.
+Las expresiones de una y otra serán por lo tanto;
+f(t) = A sen (ω t) 
+f(t) = 1          para 0 < t < T /2
+ 
+La expresión [2-11] podría también expresarse de la siguiente manera;
+f(t) = A cos (ω t) 
+F2(t) = A sen (ωt + π/2)
+        = cos (ωt)
+.
+t
++ A
+- A
+F1(t) = A sen (ωt)
+Fig. 2.13.	Funciones	senoidales	de	ángulos	de	fase	igual	a	cero	e	igual	a	π_
+2	
+.
+2.4.3 Función onda cuadrada
+Una de las formas más comunes de las señales digitales es la función onda cuadrada. Esta 
+señal es generada, normalmente, por equipos denominados generadores de pulsos, que se 
+basan en las técnicas de la electrónica digital. En la Fig. 2.14., se representa gráficamente una 
+señal periódica onda cuadrada o rectangular.
+La función onda cuadrada se define matemáticamente a través de las siguientes expre-
+siones
+f(t) = A               para 0 2< <t T
+ (2 - 15)
+y, 
+f(t)= –A              para 
+T t T2 < <   (2 - 16)
+y, 
+f(t)= 0                 para t n T= 2 ; donde n = 1, 2,..., n  (2 - 17)
+En esta función digital, los conceptos de amplitud, frecuencia y período tienen el mismo 
+significado que en la función senoidal armónica simple. Sin embargo, en este caso la frecuencia 
+también se denomina frecuencia de repetición de pulsos (FRP), y es igual, como se ha visto, a:
+FRP T PPS ( )= 1
+ (2 - 18)
+Donde: PPS es pulsos por segundo.
+En el estudio de las señales digitales aparece un parámetro, muy importante, denominado 
+ancho de pulso (ζ). Más adelante veremos que el ancho del pulso está relacionado con el ancho 
+de banda necesario del canal de comunicaciones para transmitir la señal digital. 
+Además, a través del estudio y análisis de la onda cuadrada, utilizando como herramienta 
+la serie de Fourier, demostraremos que este tipo de funciones se puede representar por una 
+suma infinita de señales armónicas, tales que cada una es múltiplo entero de una primera 
+función senoidal cuya frecuencia se denomina fundamental.
+O T/2 T
+T
+3/2T 2T 5/2T 3T
+t
++ 1
+- 1
+Fig. 2.14. Función	onda	cuadrada	de	amplitud	A	y	período	T .
+2.4.4 Valor eficaz y valor medio de una señal senoidal: factor de forma
+Analizaremos a continuación otras características de las señales senoidales empleadas muy 
+frecuentemente en la electrónica y las comunicaciones, como el valor medio y el valor eficaz. 
+
+===== PÁGINA PDF 104 =====
+2 - Transmisión de señales78
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Para analizar la tensión o corriente en un circuito eléctrico es importante conocer el valor 
+eficaz de las mismas, a efectos de poder calcular, por ejemplo, la potencia eléctrica y otros 
+parámetros del circuito.
+Se define como valor eficaz de la función f(t):
+Y T f t dte
+T
+( )= 1 2
+0
+∫   (2-19)
+Donde:
+T: es el período de la señal.
+f(t): la función periódica.
+Desde el punto de vista de la física, el valor eficaz de una señal senoidal armónica simple, 
+como podría ser el que representa a la tensión variable que se aplica a nuestros equipos infor-
+máticos, puede interpretarse como el valor que debería tener una señal continua que ocasio-
+nase el mismo efecto sobre la carga que la señal alterna.
+A su vez, se define como valor medio de la función f(t) el que resulta de la siguiente expresión:
+Y T f t dtm
+T
+= ∫
+1
+0
+( )   (2-20)
+Conocidas las expresiones [2-19] y [2-20] es posible definir el concepto de factor de forma.
+Dada una función f(t) se denomina factor de forma FF a la relación entre el valor eficaz y 
+medio de dicha función.
+ FF y
+y
+e
+m
+=   (2-21)
+Dado que el factor de forma de la onda cuadrada es igual a 1, el factor de forma de una se-
+ñal f(t) da una idea de la deformación que esa función presenta respecto de una función onda 
+cuadrada de igual período. Cuanto mayor sea este factor para una función dada, más de-
+formada será esta respecto de la función onda cuadrada. La función onda cuadrada se toma 
+como una referencia a partir de la cual se puede medir la deformación de cualquier otra señal.
+Ejemplo 2-1
+Calcular el factor de forma de una onda cuadrada.
+Para ello calcularemos el valor del factor de forma a partir de la definición de 
+onda cuadrada de las expresiones [2-15], [2-16] y [2-17], para el caso particular de 
+A = 1, y –A = –1.
+f(t)= 1, para 0 2< <t T  (2-22)
+y, 
+f(t)= –1, para T t T2 < <  (2-23)
+Calculemos ye, teniendo en cuenta la simetría particular de la función sobre un pe-
+ríodo, ye, se calculará entonces para un semiperíodo, es decir:
+ Y T f t dte
+T
+( )
+/
+= =2 12
+0
+2
+∫  (2-24)
+Para calcular ym debemos considerar obligatoriamente el semiperíodo, de lo contra-
+rio su valor sería cero.
+  (2-25)
+Luego, FF resultará
+ (2-26)
+Ejemplo 2-2
+Calcular el factor de forma de una onda sinusoidal armónica simple.
+Dado que la función seno tiene igual simetría que la función onda cuadrada, valen 
+las mismas consideraciones que en el caso anterior.
+  (2-27)
+Sacando A fuera de la integral y completando el diferencial, tendremos
+ (2-28)
+Operando convenientemente resulta
+  (2-29)
+Para A = 1, resulta entonces
+  (2-30)
+Calculemos de la misma manera en valor medio ym,
+ (2-31)
+Análogamente, si completamos el diferencial, tomamos A = 1 y procedemos a inte-
+grar tendremos,
+ Ym = 0,637 (2-32)
+Luego el factor de forma de la función seno será,
+  (2-33)
+Como se observa, el valor obtenido es mayor que uno (el de la onda cuadrada), porque la 
+En otras palabras, el factor de forma nos indica el grado de alejamiento de la forma de onda 
+FF mayor es su 
+
+===== PÁGINA PDF 105 =====
+2.4 Características de las señales utilizadas para la transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+79
+parámetros del circuito.
+Se define como valor eficaz de la función f(t):
+ 
+Donde:
+T: es el período de la señal.
+f(t): la función periódica.
+nase el mismo efecto sobre la carga que la señal alterna.
+A su vez, se define como valor medio de la función f(t)
+ 
+Dada una función f(t) se denomina factor de forma FF
+medio de dicha función.
+  
+Dado que el factor de forma de la onda cuadrada es igual a 1
+ñal f(t)
+Ejemplo 2-1
+Calcular el factor de forma de una onda cuadrada.
+A = 1, y –A = –1.
+f(t)= 1, para  
+y, 
+f(t)= –1, para  
+Calculemos ye
+ríodo, ye, se calculará entonces para un semiperíodo, es decir:
+  
+Para calcular ym debemos considerar obligatoriamente el semiperíodo, de lo contra-
+rio su valor sería cero.
+ Y T f t dtm
+T
+= =∫
+2 1
+0
+2
+( )
+/
+ (2-25)
+Luego, FF resultará
+FF y
+y
+e
+m
+= = = 1
+1 1  (2-26)
+Ejemplo 2-2
+Calcular el factor de forma de una onda sinusoidal armónica simple.
+Dado que la función seno tiene igual simetría que la función onda cuadrada, valen 
+las mismas consideraciones que en el caso anterior.
+ Y T Asen t dte
+T /
+= 2 2
+0
+2
+ω( )∫  (2-27)
+Sacando A fuera de la integral y completando el diferencial, tendremos
+Y A sen t d te =
+2 2
+0
+π ω ω
+π
+( )∫  (2-28)
+Operando convenientemente resulta
+ Y A
+e =
+2
+ (2-29)
+Para A = 1, resulta entonces
+ Ye ,= 1
+2
+0 707=  (2-30)
+Calculemos de la misma manera en valor medio ym,
+Y T A sen t dtm
+T /
+= 2
+0
+2
+ω( )∫  (2-31)
+Análogamente, si completamos el diferencial, tomamos A = 1 y procedemos a inte-
+grar tendremos,
+ Ym = 0,637 (2-32)
+Luego el factor de forma de la función seno será,
+ FF ,
+, ,= 0 707
+0 637 1 1109=  (2-33)
+Como se observa, el valor obtenido es mayor que uno (el de la onda cuadrada), porque la 
+señal sinusoidal está deformada respecto a aquélla.
+En otras palabras, el factor de forma nos indica el grado de alejamiento de la forma de onda 
+considerada respecto de la onda cuadrada, es por ello que cuanto mayor es el FF mayor es su 
+apartamiento respecto de la onda cuadrada.
+
+===== PÁGINA PDF 106 =====
+2 - Transmisión de señales80
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.4.5 Representación de señales armónicas mediante la serie de Fourier
+2.4.5.1 Conceptos generales
+La relación entre las distintas funciones periódicas es mucho más amplia que la que existe 
+con el factor de forma de la función onda cuadrada. Por otra parte, cuando se trabaja con fun-
+ciones digitales periódicas también es interesante analizarlas no como funciones del tiempo, 
+tal como se las definió hasta ahora, sino estudiar su comportamiento en función de su frecuen-
+cia. Precisamente la denominada serie de Fourier permite llevar a cabo este análisis.
+En efecto, toda función periódica que cumpla con las denominadas condiciones de Diri-
+chlet admite su desarrollo en serie de Fourier.
+Esto significa que funciones tales como la onda cuadrada, o la llamada diente de sierra, u otras 
+de similares características, como cumplen las citadas condiciones admiten no solo una definición 
+por medio de proposiciones, sino también una representación en serie de senos o de cosenos. 
+Las series de Fourier resultan uniformemente convergentes y, por lo tanto, tienen un 
+conjunto de propiedades muy importantes como, por ejemplo, que pueden ser derivadas o 
+integradas término a término, etc., operaciones que las funciones definidas a través de propo-
+siciones no permiten realizar.
+2.4.5.2 Condiciones de Dirichlet
+Las condiciones de Dirichlet son necesarias y suficientes para que una función f(t) pueda 
+ser desarrollada en serie de Fourier. Ellas son:
+ • La función f(t) debe ser periódica, de período T.
+ • La función f(t) debe ser definida y univalente, salvo un número finito de puntos, en el 
+intervalo de integración.
+ • La función f(t) y su derivada f’(t) deben ser seccionalmente continuas en el intervalo 
+de integración (o continuas por secciones).
+2.4.5.3 Desarrollo de la serie y cálculo de los coeficientes.
+Toda función que cumpla con las condiciones de Dirichlet admite ser re presentada por 
+una serie de la forma:
+ f t a a n t b sen n tn n
+n
+n
+( ) cos= + ( ) + ( )
+=
+=∞
+∑
+0
+12 ω ω  (2-34)
+Donde:
+ω π= 2
+T , siendo T el período de la función f(t).
+Los coeficientes de la serie se calculan mediante las siguientes expresiones:
+a T f t dt
+T
+T
+0
+2
+2
+2 ( )=
+−
++
+∫  (2-35)
+a T f t n t dtn
+T
+T
+( ) cos( )= 2
+2
+2
+ω
+−
++
+∫ ; para n = 1, 2, 3, …, n, … (2-36)
+b T f t sen n t dtn
+T
+T
+( ) ( )= 2
+2
+2
+ω
+−
++
+∫ ; para n = 1, 2, 3, …, n, … (2-37)
+Ejemplo 2-3
+Representar la serie de Fourier de la señal onda cuadrada indicada en la Fig. 2.15.
+Para resolver este ejercicio habrá que calcular los coeficientes ao, an y bn.
+Cálculo de ao.
+  (2-38)
+Como f(t) es una función impar, simétrica respecto del origen, la integral en un pe-
+ríodo resultará nula; luego tendremos que ao = 0
+Cálculo de los an.
+; para n = 1, 2, 3, …, n, … (2-39)
+Cálculo de los bn.
+; para n = 1, 2, 3, …, n, … (2-40)
+Completemos el diferencial y tendremos,
+; para n = 1, 2, 3, …, n, … (2-41)
+Integrando tendremos,
+ (2-42)
+Luego el valor dependerá de que n sea par o impar; en efecto, si n es par, bn = 0; si 
+n es impar, resultará
+, en consecuencia los coeficientes distintos de cero serán:
+Jean	 Baptiste	 Joseph	 Fourier  
+(Auxerre,	1768	-	París,	1830).	Fue	
+un	 célebre	 físico-matemático.
+En	1816	fue	designado	miembro	
+de	la	Academia	de	Ciencias	y	en	
+1827,	 de	 la	 Academia	 Francesa.	
+Fue	 un	 importante	 investigador	
+sobre	 la	 teoría	 de	 la	 transmisión	
+del	 calor,	 que	 se	 reflejó	 en	 su	 li-
+bro	 La	 teoría	 analítica	 del	 calor.	
+Para	 el	 desarrollo	 de	 esta	 teoría,	
+representó	las	funciones	disconti-
+nuas	como	una	suma	de	infinitos	
+términos	 de	 senos	 y	 cosenos,	 la	
+cual	pasaría	a	denominarse	serie	
+de	Fourier.
+Peter	 Gustav	 Dirichlet	 (1805-1859).	
+Fue	un	matemático	y	trabajó	en	la	
+teoría	 de	 los	 números.	 Junto	 con	
+Lobachevsky ,	 fueron	 los	 primeros	
+en	 dar	 el	 concepto	 de	 función	
+como	 correspondencia	 entre	 dos	
+conjuntos	de	números	reales.
+
+
+===== PÁGINA PDF 107 =====
+2.4 Características de las señales utilizadas para la transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+81
+2.4.5 Representación de señales armónicas mediante la serie de Fourier
+2.4.5.1 Conceptos generales
+cia. Precisamente la denominada serie de Fourier permite llevar a cabo este análisis.
+En efecto, toda función periódica que cumpla con las denominadas condiciones de 
+chlet admite su desarrollo en serie de Fourier.
+por medio de proposiciones, sino también una representación en serie de senos o de cosenos. 
+siciones no permiten realizar.
+2.4.5.2 Condiciones de Dirichlet
+Las condiciones de Dirichlet son necesarias y suficientes para que una función f(t)
+ser desarrollada en serie de Fourier. Ellas son:
+ • La función f(t) debe ser periódica, de período T.
+ • La función f(t)
+intervalo de integración.
+ • La función f(t) y su derivada f’(t)
+de integración (o continuas por secciones).
+2.4.5.3 Desarrollo de la serie y cálculo de los coeficientes.
+una serie de la forma:
+  
+Donde:
+, siendo T el período de la función f(t).
+Los coeficientes de la serie se calculan mediante las siguientes expresiones:
+ 
+; para n = 1, 2, 3, …, n, … 
+; para n = 1, 2, 3, …, n, … 
+Ejemplo 2-3
+Representar la serie de Fourier de la señal onda cuadrada indicada en la Fig. 2.15.
+Para resolver este ejercicio habrá que calcular los coeficientes ao, an y bn.
+Cálculo de ao.
+ a T f t dt
+T
+T
+0
+2
+2
+2 ( )=
+−
++
+∫  (2-38)
+- T/2
+T
+0 T/2
+t
++ 1
+- 1
+- T
+Fig. 2.15.	Onda	cuadrada	a	ser	representada	en	serie	de	Fourier.
+Como f(t) es una función impar, simétrica respecto del origen, la integral en un pe-
+ríodo resultará nula; luego tendremos que ao = 0
+Cálculo de los an.
+a T f t n t dtn
+T
+T
+( ) cos( )= 2
+2
+2
+ω
+−
++
+∫ ; para n = 1, 2, 3, …, n, … (2-39)
+Cálculo de los bn.
+b T f t sen n t dtn
+T
+T
+( ) ( )= 2
+2
+2
+ω
+−
++
+∫ ; para n = 1, 2, 3, …, n, … (2-40)
+Completemos el diferencial y tendremos,
+b n T f t sen n t dn tn
+T
+T
+( ) ( )= 2
+2
+2
+ω ω ω
+−
++
+∫ ; para n = 1, 2, 3, …, n, … (2-41)
+Integrando tendremos,
+b n T n t n tn T
+T
+cos ( ) cos ( )= –2
+2
+0 2
+0ω ω ωn
+–
+ (2-42)
+Luego el valor dependerá de que n sea par o impar; en efecto, si n es par, bn = 0; si 
+n es impar, resultará
+b nn = 4
+π , en consecuencia los coeficientes distintos de cero serán:
+
+===== PÁGINA PDF 108 =====
+2 - Transmisión de señales82
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+b b b1 3 5
+4 4
+3
+4
+5, ,= = =π π π
+y así análogamente.
+Luego la serie de Fourier de la función pedida será:
+f t sen t sen t sen( ) ( ) ( ) (= + +4 4
+3 3 4
+5 5π ω π ω π ω ω π ωt n sen n t) ( )+ + +/midhorizellipsis/midhorizellipsis4
+(2-43)
+y sacando factor común 4
+π
+, finalmente tendremos,
+f t sen t sen t sen t( ) ( ) ( ) ( )= + +4 1
+3 3 1
+5 5π ω ω ω + + + +/midhorizellipsis/midhorizellipsis1
+n sen n t ( )ω  (2-44)
+Este resultado demuestra que la señal onda cuadrada, como cualquier función que cumpla 
+con las condiciones de Dirichlet, se puede expresar mediante la suma de infinitas funciones 
+sinusoidales, todas de diferentes frecuencias. Cada una de ellas resultará igual a la del primer 
+término multiplicada por un número entero creciente. La frecuencia f se denomina fundamen-
+tal, y el resto de las mismas nf se denominarán armónicas de aquélla.
+Si se tomaran solamente algunos términos de la serie, se tendría una aproximación a la fun-
+ción señalada, que será más precisa cuantos más términos de la serie se consideren. Como se 
+expresó anteriormente, cuando se tomen los infinitos términos la serie representará fielmente 
+a la función onda cuadrada original.
+2.4.5.4 Expresión compleja de la serie de Fourier
+Para analizar una señal en el dominio de la frecuencia es conveniente recurrir a la llamada 
+expresión compleja del desarrollo en serie de Fourier. En efecto, es posible desarrollar una 
+función que cumple las condiciones de Dirichlet mediante una expresión del siguiente tipo:
+f t T C en
+n
+n
+in t( ) =
+=−∞
+=∞
+∑
+1 ω
+ (2-45)
+Donde:
+nC = f t
+T
+T
+( )
+−
++
+∫
+2
+2
+− ∞in t
+e dt  (2-46)
+2.4.5.5 Espectro de amplitud y de fase de una función periódica
+En el uso de señales digitales en los sistemas de comunicaciones muchas veces es nece-
+sario conocer el comportamiento de las funciones periódicas, no como funciones del tiempo 
+sino de la frecuencia, o, lo que es lo mismo, de la pulsación a menos de una constante, y del 
+ángulo de fase.
+Para ello definiremos como amplitud del espectro a la expresión
+ 
+Cn  = a bn n
+2 2+  (2-47)
+Y a su vez, fase del espectro a la expresión
+ n
+n
+n
+arc tg b
+a= –  (2-48)
+De las expresiones [2-47], y [2-48] se puede observar que para cada valor discreto de n 
+|Cn| y uno de fase ϑn. A partir de estas expresiones se podrán 
+ • Amplitud del espectro en función de la pulsación nω.
+ • Fase del espectro en función de la pulsación nω.
+Ejemplo 2-4:
+Representar el tren de pulsos periódicos de la Fig. 2.16., mediante la serie de Fourier 
+compleja y representar gráficamente los espectros de amplitud y de fase en función 
+de nω.
+Fig. 2.16.	Tren	de	pulsos	periódicos.
+Desarrollemos la función en serie de Fourier compleja a partir de las expresiones 
+[2-47]. y [2-48], es decir,
+  (2-49)
+Los Cn se calcularán con la expresión  (2-50)
+Esta expresión para este caso tomará la forma siguiente 
+ (2-51)
+A partir de ella procederemos a integrar, y operando convenientemente la expresión 
+anterior resultará
+ (2-52)
+De la expresión [2-52] se puede observar que Cn es real, de donde podremos deducir 
+que el espectro de fase es cero. La simetría que posee la función que hemos desa-
+rrollado f(t) nos permitió simplificar el análisis.
+
+===== PÁGINA PDF 109 =====
+2.4 Características de las señales utilizadas para la transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+83
+y así análogamente.
+Luego la serie de Fourier de la función pedida será:
+y sacando factor común , finalmente tendremos,
+ 
+con las condiciones de D
+término multiplicada por un número entero creciente. La frecuencia f
+tal, y el resto de las mismas nf se denominarán armónicas de aquélla.
+a la función onda cuadrada original.
+2.4.5.4 Expresión compleja de la serie de Fourier
+función que cumple las condiciones de Dirichlet mediante una expresión del siguiente tipo:
+ 
+Donde:
+=  
+2.4.5.5 Espectro de amplitud y de fase de una función periódica
+ángulo de fase.
+Para ello definiremos como amplitud del espectro a la expresión
+  =  
+Y a su vez, fase del espectro a la expresión
+  
+De las expresiones [2-47], y [2-48] se puede observar que para cada valor discreto de n 
+se tendrá un valor de amplitud |Cn| y uno de fase ϑn. A partir de estas expresiones se podrán 
+construir gráficos que muestren el comportamiento en amplitud y en fase; en particular:
+ • Amplitud del espectro en función de la pulsación nω.
+ • Fase del espectro en función de la pulsación nω.
+Ejemplo 2-4:
+Representar el tren de pulsos periódicos de la Fig. 2.16., mediante la serie de Fourier 
+compleja y representar gráficamente los espectros de amplitud y de fase en función 
+de nω.
+- 2T - T
+T
+= ancho de pulsos.
+T = período de repetición de pulsos.
+T/2T
+A
+f (t)
+donde:
+- 2/2 2/2
+2
+Fig. 2.16.	Tren	de	pulsos	periódicos.
+Desarrollemos la función en serie de Fourier compleja a partir de las expresiones 
+[2-47]. y [2-48], es decir,
+ f t T C en
+n
+n
+in t( ) = 1
+=−∞
+=∞
+∑
+ω
+ (2-49)
+Los Cn se calcularán con la expresión n
+T
+T
+in t
+C f t e dt ( )=
+−
++
+− ∞
+∫
+2
+2
+ (2-50)
+Esta expresión para este caso tomará la forma siguiente 
+n
+T
+T
+in t
+C A e dt=
+−
++
+− ∞
+∫
+2
+2
+ (2-51)
+A partir de ella procederemos a integrar, y operando convenientemente la expresión 
+anterior resultará
+nC A
+T
+sen n
+n
+[( ) / ]
+( / )= τ ωτ
+ωτ
+2
+2  (2-52)
+De la expresión [2-52] se puede observar que Cn es real, de donde podremos deducir 
+que el espectro de fase es cero. La simetría que posee la función que hemos desa-
+rrollado f(t) nos permitió simplificar el análisis.
+
+===== PÁGINA PDF 110 =====
+2 - Transmisión de señales84
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Analizando el espectro de amplitud se observa que el valor de Cn se anula por pri-
+mera vez para nωτ π2 = , de donde resulta nω π
+τ= 2 , el siguiente para 4 π
+τ
+y en ge-
+neral para 2 nπ
+τ
+, para n = 1, 2, .., n
+En la Fig. 2.17., se puede observar el gráfico del espectro de amplitud del tren de pul-
+sos analizado. Las frecuencias negativas de este ejemplo constituyen un resultado 
+matemático pero no tienen sentido físico.
+0 n- T T
+Cn = A
+T.
+- 4 - 2 2 4
+Fig. 2.17.	Espectro	de	amplitud.
+2.4.5.6 Análisis del espectro de amplitud de la señal del ejemplo 2-4
+Efectuemos el análisis del espectro de amplitud de la señal del ejemplo 2-4 y a partir de 
+consideraciones matemáticas saquemos conclusiones vinculadas con las comunicaciones.
+La función de la expresión [2-52] se podría expresar como del tipo siguiente:
+f x sen x
+x( ) ( )= , donde x n= ωτ
+2
+ (2-53)
+Luego el límite de ella para x → 0, nos dará el máximo de la función, luego,
+lim
+x
+sen x
+x→0
+1=  (2-54)
+Resultado que aplicado a la expresión [2-52] nos dará un máximo para A
+T
+τ , por otra parte.
+Y el primer mínimo se tendrá cuando Cn = 0, es decir cuando nωτ π2 = , de donde obten-
+dremos que nω π= 2
+6
+.
+Luego, para hallar el valor de n se debe conocer el período T y el ancho del pulso τ. Ten-
+dremos que
+n T
+2 2π π
+τ= , luego resultará n =n T= τ
+.
+Observemos la Fig. 2.18., que muestra la relación entre el ancho del pulso del tren τ y el 
+= ancho de pulso  = período del tren de pulsosτ1 A =  amplitud del pulso1
+f1(t)
+τ1/2-τ1/2-T/2 T/2 T
+A1
+t (tiempo)-T 0
+-6π/τ1 -4 π/τ1 -2π/τ1 2π/τ1 4π/τ1 6π/τ1
+τ1A1/T
+τ1τ1τ1
+Fig. 2.18. Relación	entre	el	ancho	del	pulso	y	el	espectro	de	amplitud. 
+Y la Fig. 2.19., que muestra la relación entre el período del pulso del tren T y el espectro de 
+ • La separación entre componentes discretas del espectro es igual . 
+Luego, cuando aumenta la frecuencia del tren de pulsos las líneas del espectro se separan más 
+ en el dominio del tiempo implica tener que considerar componentes de mayor frecuencia. 
+Expresado de otra manera, si la señal del tren de pulsos a considerar es de una frecuencia alta, 
+ • Las líneas de mayor amplitud se concentran en la región de las frecuencias menores. 
+Como la energía de una señal está directamente relacionada con la amplitud de las 
+componentes del espectro, resulta comprensible que la mayor parte de la energía aso-
+ciada a la señal esté concentrada en las frecuencias más bajas.
+ • Como conclusión de lo expresado se puede decir que cuando un tren de pulsos aumenta 
+su frecuencia, también se incrementa la energía contenida en las frecuencias más altas. 
+Por lo tanto, también crece la importancia de las armónicas de las frecuencias más altas 
+del desarrollo en serie de Fourier de la señal, por cuanto estas transportarán más energía.
+
+===== PÁGINA PDF 111 =====
+2.4 Características de las señales utilizadas para la transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+85
+Analizando el espectro de amplitud se observa que el valor de Cn
+neral para , para n = 1, 2, .., n
+matemático pero no tienen sentido físico.
+0 n- T T
+Cn = A
+T.
+- 4 - 2 2 4
+Fig. 2.17.	Espectro	de	amplitud.
+2.4.5.6 Análisis del espectro de amplitud de la señal del ejemplo 2-4
+consideraciones matemáticas saquemos conclusiones vinculadas con las comunicaciones.
+La función de la expresión [2-52] se podría expresar como del tipo siguiente:
+, donde  
+Luego el límite de ella para x → 0, nos dará el máximo de la función, luego,
+ 
+Y el primer mínimo se tendrá cuando Cn = 0
+dremos que .
+Luego, para hallar el valor de n se debe conocer el período T y el ancho del pulso τ
+dremos que
+, luego resultará n = .
+Observemos la Fig. 2.18., que muestra la relación entre el ancho del pulso del tren τ y el 
+espectro de amplitud. 
+= ancho de pulso  = período del tren de pulsosτ1 A =  amplitud del pulso1
+f1(t)
+τ1/2-τ1/2-T/2 T/2 T
+A1
+t (tiempo)-T 0
+-6π/τ1 -4 π/τ1 -2π/τ1 2π/τ1 4π/τ1 6π/τ1
+τ1A1/T
+τ1τ1τ1
+Fig. 2.18. Relación	entre	el	ancho	del	pulso	y	el	espectro	de	amplitud. 
+Y la Fig. 2.19., que muestra la relación entre el período del pulso del tren T y el espectro de 
+amplitud. 
+ • La separación entre componentes discretas del espectro es igual 
+2 π
+T . 
+Luego, cuando aumenta la frecuencia del tren de pulsos las líneas del espectro se separan más 
+y se extienden hacia frecuencias mayores. Esto significa que una variación más rápida de la señal 
+f(t) en el dominio del tiempo implica tener que considerar componentes de mayor frecuencia. 
+Expresado de otra manera, si la señal del tren de pulsos a considerar es de una frecuencia alta, 
+la amplitud de las armónicas de las frecuencias altas será importante, y si no se tienen en cuenta 
+estas frecuencias se cometerá un error considerable. Por el contrario, si la señal del tren es de fre-
+cuencia baja, las armónicas de frecuencias altas podrán despreciarse sin cometer grandes errores.
+ • Las líneas de mayor amplitud se concentran en la región de las frecuencias menores. 
+Como la energía de una señal está directamente relacionada con la amplitud de las 
+componentes del espectro, resulta comprensible que la mayor parte de la energía aso-
+ciada a la señal esté concentrada en las frecuencias más bajas.
+ • Como conclusión de lo expresado se puede decir que cuando un tren de pulsos aumenta 
+su frecuencia, también se incrementa la energía contenida en las frecuencias más altas. 
+Por lo tanto, también crece la importancia de las armónicas de las frecuencias más altas 
+del desarrollo en serie de Fourier de la señal, por cuanto estas transportarán más energía.
+
+===== PÁGINA PDF 112 =====
+2 - Transmisión de señales86
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ = τ2τ1 A =  A 21
+f2(t)
+τ2/2-τ2/2-T/2 T/2 T
+A1
+t (tiempo)-T 0
+-4π/τ2 -2π/τ2 2 π/τ2 4π/τ2
+τ2A2/T
+τ2τ2τ2
+T =  T 21  = Δ fΔ f1
+0
+Fig. 2.19.	Relación	entre	el	período	de	pulso	y	el	espectro	de	amplitud.
+ • En telecomunicaciones existe un concepto que reviste gran importancia y es el que se 
+refiere al llamado ancho de banda.
+Si bien este concepto será tratado oportunamente con mayor extensión en el punto 2.7, de 
+este capítulo, podemos dar ahora una idea:
+2.4.5.7 Concepto inicial de ancho de banda
+Definiremos inicialmente como ancho de banda de una señal al intervalo de frecuencias 
+Δf = f2 – f1, en el cual se concentra la mayor parte de su energía.
+Para el caso que estamos analizando, podemos señalar que existe una relación inversa 
+entre el ancho de un pulso τ  y el ancho de banda Δf cubierto por el espectro de frecuencia. 
+La mayor parte de la energía estará concentrada entre las frecuencias tal que,
+0 1< <f τ  (2-55)
+En consecuencia, el primer valor para el cual Cn se anula puede considerarse como una 
+medida aproximada del ancho de banda, que es necesario para contener la mayor parte de la 
+energía de la señal y, por lo tanto, como veremos más adelante, servirá para diseñar el sistema 
+de comunicaciones.
+Este valor resulta igual a
+ω π
+τ= 2
+ (2-56)
+Dividiendo esta última expresión por 2π obtendremos que el ancho de banda Δf será el 
+Las figuras 2-18 y 2-19 muestran que cuando el ancho del pulso aumenta, el ancho de 
+Los canales de comunicaciones, al poseer un ancho de banda acotado o finito, no per-
+La transmisión de señales a través de medios de comunicaciones, como ya se explicó, 
+Los amplificadores se caracterizan por un valor que definiremos, denominado ganancia, y 
+dBm, dBu, dBmV, 
+neper, unidades que son muy utilizadas en la electrónica. 
+Estas se utilizan para propósitos variados, entre otros, para expresar el nivel de la voz, o 
+Indican la relación entre potencias, tensiones o corrientes. En particular, el decibel es un 
+Sea un circuito amplificador como el de la Fig. 2.20., definiremos como ganancia la relación 
+                     (2-57)
+Como las potencia se miden en Watt, sus múltiplos o sus submúltiplos, la ganancia es un 
+
+===== PÁGINA PDF 113 =====
+2.5 Unidades de medida usadas en las telecomunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+87
+ = τ2τ1 A =  A 21
+f2(t)
+τ2/2-τ2/2-T/2 T/2 T
+A1
+t (tiempo)-T 0
+-4π/τ2 -2π/τ2 2 π/τ2 4π/τ2
+τ2A2/T
+τ2τ2τ2
+T =  T 21  = Δ fΔ f1
+0
+Fig. 2.19.	Relación	entre	el	período	de	pulso	y	el	espectro	de	amplitud.
+ •
+refiere al llamado ancho de banda.
+este capítulo, podemos dar ahora una idea:
+2.4.5.7 Concepto inicial de ancho de banda
+Δf = f2 – f1, en el cual se concentra la mayor parte de su energía.
+entre el ancho de un pulso  y el ancho de banda Δf
+La mayor parte de la energía estará concentrada entre las frecuencias tal que,
+ 
+En consecuencia, el primer valor para el cual Cn
+de comunicaciones.
+Este valor resulta igual a
+ 
+Dividiendo esta última expresión por 2π obtendremos que el ancho de banda Δf será el 
+comprendido entre la frecuencia cero y la que corresponde al primer punto donde la envolven-
+te toma un valor nulo.
+Las figuras 2-18 y 2-19 muestran que cuando el ancho del pulso aumenta, el ancho de 
+banda tomado hasta el primer cero disminuye, y viceversa.
+Los canales de comunicaciones, al poseer un ancho de banda acotado o finito, no per-
+miten el pasaje de las infinitas armónicas necesarias para reconstruir la señal original, en el 
+caso del ejemplo la función onda cuadrada a la salida del canal. Este no deja pasar nada a 
+partir de cierta armónica, con lo cual la señal a la salida se encuentra distorsionada o defor-
+mada, lo que dará lugar a errores en la determinación de los unos y ceros que se han querido 
+transmitir.
+2.5 Unidades de medida usadas en las telecomunicaciones
+2.5.1 Introducción
+La transmisión de señales a través de medios de comunicaciones, como ya se explicó, 
+sufren atenuaciones o pérdidas que en muchos casos obligan a amplificarlas a través de ele-
+mentos pasivos o activos, para que lleguen a los receptores con valores que permitan su in-
+terpretación y decodificación. La potencia de la señal útil debe mantenerse en valores altos y 
+adecuados en relación con el nivel del ruido y, al mismo tiempo, lo suficientemente bajos como 
+para que la señal no sufra distorsiones que la tornen inutilizable.
+Los amplificadores se caracterizan por un valor que definiremos, denominado ganancia, y 
+las líneas de transmisión, que actúan como si fueran atenuadores, por otro valor que se deno-
+mina pérdida. Estas magnitudes están relacionadas con la potencia de la señal. Las variacio-
+nes de ella se miden utilizando unidades especificas denominadas decibel, dBm, dBu, dBmV, 
+o neper, unidades que son muy utilizadas en la electrónica. 
+Estas se utilizan para propósitos variados, entre otros, para expresar el nivel de la voz, o 
+el de la potencia de los transmisores o receptores utilizados para enviar o recibir señales de 
+radio, como las utilizadas en teléfonos celulares, sistemas de microondas o antenas satelitales 
+de comunicaciones.
+Indican la relación entre potencias, tensiones o corrientes. En particular, el decibel es un 
+submúltiplo del bel, que ha caído en desuso debido a que representa un valor muy grande. El 
+primero en utilizar estas unidades de carácter logarítmico fue Alexander Graham Bell, de allí su 
+nombre. Existen varios conceptos y formas diferentes para definir este conjunto de unidades 
+relacionadas con el bel; sin embargo, todas ellas apuntan a medir distintas relaciones entre 
+magnitudes relacionadas con la potencia.
+2.5.2 Ganancia de un amplificador
+Sea un circuito amplificador como el de la Fig. 2.20., definiremos como ganancia la relación 
+entre la potencia de salida y la potencia de entrada.
+                    G P
+P
+S
+E
+=  (2-57)
+Como las potencia se miden en Watt, sus múltiplos o sus submúltiplos, la ganancia es un 
+número que indica una relación entre la salida y la entrada de la señal.
+
+===== PÁGINA PDF 114 =====
+2 - Transmisión de señales88
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+f 1(t)
+f 1(t)
+f 2(t)
+f 1(t)
+tt
+Amplificador
+W1 W1 <   W2 W2
+Entrada Salida
+Fig. 2.20. Circuito	bloque	de	un	amplificador.
+2.5.3 Pérdida
+Cuando se diseñan líneas de transmisión o elementos de comunicaciones como podría ser 
+las antenas, no se los hace para que actúen como atenuadores, pero este comportamiento es 
+natural. A medida que la señal se va propagando, sea por un conductor o por un medio dieléc-
+trico, la señal se va atenuando y por lo tanto la señal va perdiendo potencia. Tanto un medio 
+como el otro se comportan como si fueran un atenuador.
+Sea un circuito atenuador como el de la Fig. 2.21., definiremos como pérdida la relación 
+entre la potencia de salida y la potencia de entrada. 
+P P
+Perd
+S
+E
+=  (2-58)
+Como PS < PE, resulta 
+P
+P
+S
+E
+<1
+Por lo que la expresión 2-58 se suele expresar por su valor inverso con signo negativo, es 
+decir que así obtendremos un número entero negativo
+P P
+Perd
+E
+S
+= –  (2-59)
+2.5.4 Amplificadores o atenuadores en cascada
+Sean dos amplificadores (o atenuadores) conectados en cascada, es decir uno a continua-
+ción del otro, la ganancia (o pérdida) de ambos será el producto de la ganancia de cada uno.
+Sean dos atenuadores como nos muestra la Fig. 2.22., en cascada, la potencia de entrada 
+del amplificador A2 será la potencia de salida del amplificador A1.
+La ganancia de A1, será
+G P
+PA
+S
+E
+1
+1
+1
+=  (2-60)
+Y la ganancia de A2, 
+f 1(t)
+f 1(t)
+f2(t)
+f2(t)
+tt
+AT ENUADOR
+W1 W1 >   W2 W2
+Entrada Salida
+Fig. 2.21.	Circuito	bloque	de	un	atenuador.
+ (2-61)
+Luego, la ganancia total será
+ (2-62)
+ (2-63)
+Que resulta de la definición de ganancia. Para considerar atenuadores, el razonamiento 
+f e(t)
+f s(t)
+G A1 G A1 G A2 G A4
+W 1 A 1 A 2 A 4
+Fig. 2.22.	Amplificadores	en	cascada.
+Ejemplo 2-5
+Calcular la ganancia de dos amplificadores conectados en cascada con los paráme-
+tros de diseño de la Fig. 2.23.:
+
+===== PÁGINA PDF 115 =====
+2.5 Unidades de medida usadas en las telecomunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+89
+f 1(t)
+f 1(t)
+f 2(t)
+f 1(t)
+tt
+Amplificador
+W1 W1 <   W2 W2
+Entrada Salida
+Fig. 2.20. Circuito	bloque	de	un	amplificador.
+2.5.3 Pérdida
+como el otro se comportan como si fueran un atenuador.
+entre la potencia de salida y la potencia de entrada. 
+ 
+Como PS < PE, resulta 
+Por lo que la expresión 2-58 
+decir que así obtendremos un número entero negativo
+ 
+2.5.4 Amplificadores o atenuadores en cascada
+ción del otro, la ganancia (o pérdida) de ambos será el producto de la ganancia de cada uno.
+del amplificador A2 será la potencia de salida del amplificador A1.
+La ganancia de A1, será
+ 
+Y la ganancia de A2, 
+f 1(t)
+f 1(t)
+f2(t)
+f2(t)
+tt
+AT ENUADOR
+W1 W1 >   W2 W2
+Entrada Salida
+Fig. 2.21.	Circuito	bloque	de	un	atenuador.
+G P
+PA
+S
+S
+2
+2
+1
+=  (2-61)
+Luego, la ganancia total será
+G P
+P
+P
+PTOTAL
+S
+E
+S
+S
+= 1
+1
+2
+1
+⋅  (2-62)
+G P
+PTOTAL
+S
+E
+= 2
+1
+ (2-63)
+Que resulta de la definición de ganancia. Para considerar atenuadores, el razonamiento 
+sería similar.
+f e(t)
+f s(t)
+G A1 G A1 G A2 G A4
+W 1 A 1 A 2 A 4
+Fig. 2.22.	Amplificadores	en	cascada.
+Ejemplo 2-5
+Calcular la ganancia de dos amplificadores conectados en cascada con los paráme-
+tros de diseño de la Fig. 2.23.:
+
+===== PÁGINA PDF 116 =====
+2 - Transmisión de señales90
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Amplificador1 Amplificador2
+P1S=1w
+P2S=1w P2S=100w
+Pe1=1μw
+Fig. 2.23. Ejemplo	de	dos	amplificadores	en	cascada.
+Amplificador 1  Amplificador 2 
+Potencia de entrada = 1 μW  Potencia de entrada = 1 W
+Potencia de salida = 1 W  Potencia de salida = 100 W
+La ganancia del primer amplificador será:
+G P
+P
+W
+WA
+S
+E
+1
+1
+1 6
+61
+10
+1 10 1 000 000 . .= = − = ⋅ =  (2-64) 
+La ganancia del segundo será, como PE2 = PS1,
+G P
+P
+W
+WA
+S
+S
+2
+2
+1
+100
+1 100= = =  (2-65) 
+Por lo tanto, la ganancia total será:
+GToTAL = 1.000.000 · 100 = 100.000.000 = 108 (2-66)
+2.5.5 El decibel
+Como se va visto, la ganancia expresada da valores poco prácticos, además de no tener 
+relación con el comportamiento del oído humano.
+Es por ello que siempre se prefiere usar el decibel, que se define como una unidad logarítmica.
+Luego definiremos como ganancia en decibel a la expresión:
+ G dB P
+P( ) log=10 10
+2
+1
+ (2-67)
+Y pérdida en decibel a la expresión:
+Perd dB P
+P( ) log= – 10 10
+1
+2
+ (2-68)
+Ejemplo 2-6
+Con los datos del Ejemplo 2-5, calcular la ganancia en dB.
+La ganancia del primer amplificador será:
+G dB P
+P
+W
+WA
+S
+E
+1 10
+1
+1
+10 610 10 1
+10
+( ) log log= = =− =10 10 610
+6log dB  (2-69)
+La ganancia del segundo será:
+G dB P
+P
+W
+WA
+S
+S
+2 10
+2
+1
+1010 10 100
+1( ) log log= = = =10 100 2010log dB  (2-70)
+Por lo tanto, la ganancia total será:
+GToTAL (dB) = 60 dB + 20 dB = 80 dB (2-71)
+El ejemplo nos muestra que la ganancia total en decibel es igual a la suma de las ganancias 
+Por otra parte, podríamos, a modo de conclusión, expresar:
+ • El dB es una unidad de medida relativa que indica la relación de potencias. No tiene 
+un valor patrón de comparación. 
+ • Es una unidad de características logarítmicas. Esto significa, por ejemplo, que para 
+obtener una ganancia en dB, de un valor doble al anterior, el aumento en potencia 
+deberá ser considerablemente mayor.
+ • Sus características logarítmicas la convierten en una unidad de medida apta para de-
+terminar la potencia sonora, dada la respuesta logarítmica del oído humano, estudiada 
+en la Ley de Weber-Fechner Esa ley expresa que “la sensación subjetiva (o psicológi-
+ca) es proporcional al logaritmo del estimulo físico”.
+En 1834 Weber describió un principio que establecía una relación cuantitativa entre la 
+Fechner el 1860, y es de aplicación no solo al 
+ • Cuando se habla de nivel de ruido y se da un valor en dB (que a primera vista puede 
+parecer absoluto) lo que se quiere decir, si no se indica otra cosa, es que está medido 
+en relación con el nivel de lo que se denomina umbral del oído humano normal. Es 
+decir, un valor a partir del cual una personal normal empieza a oír un sonido.
+Para tener una idea de valores analicemos la Tabla 2-1. En ella hemos tomado una relación 
+1 Watt. Allí se pueden obser-
+P salida (watt) 10 100 1.000 10.000 100.000 1.000.000 10.000.000 100.000.000
+Ganancia (dB) 10 20 30 40 50 60 70 80
+Ejemplo 2-7
+Se tiene dos enlaces de microondas, uno de acceso y otro de recepción entre dos esta-
+ciones terrestre y las antenas del satélite, como muestra la Fig. 2.24. La estación terrestre 
+transmisora emite hacia el satélite con una potencia de 1 W. Si ella tiene una ganancia de
+50 dB, y la antena de la estación receptora, una ganancia de 30 dB, ¿cuál será la 
+potencia con que se recibirá la señal sabiendo que la atenuación de ambos enlaces 
+es de 60 dB cada uno?
+Las antenas ganarán, en total, 
+G (dB) = 50 dB + 30 dB = 80 dB (2-72)
+Perd (dB) = 80 dB – 120 dB (2-73)
+
+===== PÁGINA PDF 117 =====
+2.5 Unidades de medida usadas en las telecomunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+91
+Amplificador1 Amplificador2
+P1S=1w
+P2S=1w P2S=100w
+Pe1=1μw
+Fig. 2.23. Ejemplo	de	dos	amplificadores	en	cascada.
+Amplificador 1  Amplificador 2 
+Potencia de entrada = 1 μW  Potencia de entrada = 1 W
+Potencia de salida = 1 W  Potencia de salida = 100 W
+La ganancia del primer amplificador será:
+ 
+La ganancia del segundo será, como PE2 = PS1,
+ 
+Por lo tanto, la ganancia total será:
+GToTAL = 1.000.000 · 100 = 100.000.000 = 108 
+2.5.5 El decibel
+relación con el comportamiento del oído humano.
+Luego definiremos como ganancia en decibel a la expresión:
+  
+Y pérdida en decibel a la expresión:
+ 
+Ejemplo 2-6
+Con los datos del Ejemplo 2-5, calcular la ganancia en dB.
+La ganancia del primer amplificador será:
+ 
+La ganancia del segundo será:
+ 
+Por lo tanto, la ganancia total será:
+GToTAL (dB) = 60 dB + 20 dB = 80 dB 
+El ejemplo nos muestra que la ganancia total en decibel es igual a la suma de las ganancias 
+de cada amplificador, y que los valores resultantes son mucho más manejables. Por esta razón, 
+la ganancia se expresa casi siempre en decibel.
+Por otra parte, podríamos, a modo de conclusión, expresar:
+ • El dB es una unidad de medida relativa que indica la relación de potencias. No tiene 
+un valor patrón de comparación. 
+ • Es una unidad de características logarítmicas. Esto significa, por ejemplo, que para 
+obtener una ganancia en dB, de un valor doble al anterior, el aumento en potencia 
+deberá ser considerablemente mayor.
+ • Sus características logarítmicas la convierten en una unidad de medida apta para de-
+terminar la potencia sonora, dada la respuesta logarítmica del oído humano, estudiada 
+en la Ley de Weber-Fechner Esa ley expresa que “la sensación subjetiva (o psicológi-
+ca) es proporcional al logaritmo del estimulo físico”.
+En 1834 Weber describió un principio que establecía una relación cuantitativa entre la 
+magnitud de un estimulo físico, y como este es percibido por una persona. La ley tal, como se 
+la conoce en el presente, fue perfeccionada por Fechner el 1860, y es de aplicación no solo al 
+sonido sino a otros estímulos, como podría ser la sensación de soportar un peso determinado 
+en las manos. Por esta razón, en las técnicas que se utilizan en el uso de equipamientos audio-
+frecuentes, los niveles de señal se expresan en decibeles.
+ • Cuando se habla de nivel de ruido y se da un valor en dB (que a primera vista puede 
+parecer absoluto) lo que se quiere decir, si no se indica otra cosa, es que está medido 
+en relación con el nivel de lo que se denomina umbral del oído humano normal. Es 
+decir, un valor a partir del cual una personal normal empieza a oír un sonido.
+Para tener una idea de valores analicemos la Tabla 2-1. En ella hemos tomado una relación 
+de potencias en que la señal de entrada a un amplificador sea de 1 Watt. Allí se pueden obser-
+var los valores de la ganancia en dB, conociendo la potencia de salida del amplificador.
+Tabla 2-1: Ejemplo de relación entre potencias y ganancias
+P salida (watt) 10 100 1.000 10.000 100.000 1.000.000 10.000.000 100.000.000
+Ganancia (dB) 10 20 30 40 50 60 70 80
+Ejemplo 2-7
+Se tiene dos enlaces de microondas, uno de acceso y otro de recepción entre dos esta-
+ciones terrestre y las antenas del satélite, como muestra la Fig. 2.24. La estación terrestre 
+transmisora emite hacia el satélite con una potencia de 1 W. Si ella tiene una ganancia de
+50 dB, y la antena de la estación receptora, una ganancia de 30 dB, ¿cuál será la 
+potencia con que se recibirá la señal sabiendo que la atenuación de ambos enlaces 
+es de 60 dB cada uno?
+Las antenas ganarán, en total, 
+G (dB) = 50 dB + 30 dB = 80 dB (2-72)
+Perd (dB) = 80 dB – 120 dB (2-73)
+Ernst	Heinrich	Weber	(1795-1878). 
+Fundó	 una	 nueva	 doctrina	 deno-
+minada	 psicofísica.	 Investigó	 en	
+áreas	 como	 la	 acústica,	 el	 movi-
+miento	 ondulatorio	 y	 el	 electro-
+magnetismo,	 a	 raíz	 de	 lo	 cual	 la	
+unidad	 del	 flujo	 magnético	 lleva	
+su	nombre.
+Gustav	 Theodor	 Fechner	 (1801-
+1887).	 Fue	 físico	 y	 matemático	
+alemán	 cuyas	 investigaciones	 se	
+centraron	 el	 campo	 de	 la	 psicofí-
+sica	 de	 la	 que	 se	 lo	 señala	 como	
+uno	de	sus	fundadores.	Estableció	
+la	fórmula	logarítmica	que	expresa	
+matemáticamente	la	relación	entre	
+la	intensidad	de	una	sensación	y	el	
+estimulo	que	la	genera.
+
+
+===== PÁGINA PDF 118 =====
+2 - Transmisión de señales92
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Estación
+terrestre
+transmisora
+G =  50 dB
+RT
+Ganacia
+G =  30 dB
+Estación
+AR
+terrestre
+receptor
+Enlace de
+recepción (Down - Link)
+P = - 60dB
+R
+Enlace de
+acceso (Up - Link)
+Pa = 60 dB
+Satélite
+( )( )(  )
+ ( ) ( ) (  )
+Fig. 2.24. Esquema	de	enlace.
+Perd (dB) = –40 dB (2-74)
+Luego tendremos que
+ Perd dB dB P
+P( ) log= – 40 10 10
+2
+1
+= –   (2-75)
+Como P2 es igual a 1 W, resultará,
+Perd dB dB W
+P( ) log40 10 1
+10
+1
+= – = –  (2-76)
+Luego La potencia de la señal en la tierra será igual a P1 = 0,0001 W = 0,1 mW.
+Ahora analicemos brevemente la ley de Ohm compleja, para un circuito de corriente alter-
+na. Observando la Fig. 2.25., tendremos que:
+V [Volt] = I [Ampere] · Z [ohm] (2-77)
+V [Volt] = tensión
+I [Ampere] = corriente
+Z [ohm] = impedancia
+La impedancia se puede expresar mediante un número complejo Z, tal que
+Z = R + j (XL – XC) (2-78)
+Donde:
+R = resistencia óhmica.
+j = unidad imaginaria.
+XL = reactancia inductiva.
+XC = reactancia capacitiva.
+Se puede observar que en el concepto de impedancia deben considerarse dos términos, uno 
+real que es la resistencia óhmica, que no depende de la frecuencia, y un segundo imaginario.       
+Reactancia inductiva XL = ωL (2-79)
+Reactancia capacitiva  (2-80)
+Recordando que la pulsación resulta
+ω = 2πf (2-81)
+ La reactancia puede expresarse de la siguiente manera
+XL = 2 πf (2-82)
+ (2-83)
+Donde:
+L = inductancia [Henrio].
+C = capacitancia [Faradio].
+XL = reactancia inductiva.
+XC = reactancia capacitiva.
+La potencia aplicada a la impedancia Z, resultará igual a
+P [Watt] = V [Volt] · I [Ampere] (2-84)
+Reemplazando en la [2-84], por la expresión de la [2-77], tendremos el valor de la potencia 
+ (2-85)
+o
+P = I 2Z (2-86)
+Por lo tanto, la expresión que se utiliza para definir la ganancia en decibel podría ser la 
+  (2-87) 
+ (2-88)
+i (t)
+v(t)
+Generador
+de
+tensión
+Impedancia Z
+Fig. 2.25. Esquema	de	un	circuito	simple	de	c.a.
+Georg	 Simon	 Ohm	 (1789-1854).  
+Fue	conocido	por	sus	estudios	de	
+las	 corrientes	 eléctricas.	 Estudió	
+en	 la	 Universidad	 de	 Erlangen.	
+Fue	Director	del	Instituto	Politéc-
+nico	de	Nuremberg	y	profesor	de	
+Física	 Experimental	 en	 la	 Univer-
+sidad	 de	 Munich.	 Descubrió	 la	
+ley	 que	 relaciona	 la	 fuerza	 elec-
+tromotriz,	 la	 corriente	 eléctrica	 y	
+la	resistencia.	En	1827	publicó	su	
+libro	Die	Galvanische	Kette.
+
+
+===== PÁGINA PDF 119 =====
+2.5 Unidades de medida usadas en las telecomunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+93
+Estación
+terrestre
+transmisora
+G =  50 dB
+RT
+Ganacia
+G =  30 dB
+Estación
+AR
+terrestre
+receptor
+Enlace de
+recepción (Down - Link)
+P = - 60dB
+R
+Enlace de
+acceso (Up - Link)
+Pa = 60 dB
+Satélite
+( )( )(  )
+ ( ) ( ) (  )
+Fig. 2.24. Esquema	de	enlace.
+Perd (dB) = –40 dB 
+Luego tendremos que
+   
+Como P2 es igual a 1 W, resultará,
+ 
+Luego La potencia de la señal en la tierra será igual a P1 = 0,0001 W = 0,1 mW.
+Ahora analicemos brevemente la ley de Ohm
+na. Observando la Fig. 2.25., tendremos que:
+V [Volt] = I [Ampere] · Z [ohm] 
+V [Volt] = tensión
+I [Ampere] = corriente
+Z [ohm] = impedancia
+La impedancia se puede expresar mediante un número complejo Z, tal que
+Z = R + j (XL – XC) 
+Donde:
+R = resistencia óhmica.
+j = unidad imaginaria.
+XL = reactancia inductiva.
+XC = reactancia capacitiva.
+El término imaginario está compuesto, a su vez, por las reactancias inductiva y capacitiva. Sus 
+valores son función de la frecuencia serán, 
+Reactancia inductiva XL = ωL (2-79)
+Reactancia capacitiva X Cc = 1
+ω
+ (2-80)
+Recordando que la pulsación resulta
+ω = 2πf (2-81)
+ La reactancia puede expresarse de la siguiente manera
+XL = 2 πf (2-82)
+X Cc = 1
+2 π  (2-83)
+Donde:
+L = inductancia [Henrio].
+C = capacitancia [Faradio].
+XL = reactancia inductiva.
+XC = reactancia capacitiva.
+La potencia aplicada a la impedancia Z, resultará igual a
+P [Watt] = V [Volt] · I [Ampere] (2-84)
+Reemplazando en la [2-84], por la expresión de la [2-77], tendremos el valor de la potencia 
+en función de la tensión y la impedancia:
+P V
+Z=
+2
+ (2-85)
+o
+P = I 2Z (2-86)
+Por lo tanto, la expresión que se utiliza para definir la ganancia en decibel podría ser la 
+siguiente:
+ G dB V
+V
+S
+E
+( ) log= 20  (2-87) 
+G dB I
+I
+S
+E
+( ) log= 20  (2-88)
+i (t)
+v(t)
+Generador
+de
+tensión
+Impedancia Z
+Fig. 2.25. Esquema	de	un	circuito	simple	de	c.a.
+
+===== PÁGINA PDF 120 =====
+2 - Transmisión de señales94
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Y la que se utiliza para definir la pérdida en decibel podría ser:
+Perd dB I
+I
+S
+E
+( ) log= −20  (2-89) 
+Perd dB V
+V
+S
+E
+( ) log= – 20  (2-90)
+2.5.6 El dBm
+A diferencia del dB, que es una unidad de medida relativa, el dBm es una unidad de nivel 
+absoluto, que mide la potencia (de salida o de entrada, según corresponda, para un circuito 
+amplificador o atenuador) respecto de un valor fijo de 1 mW.
+ dBm P mW
+mW
+Slog [ ]=10 1  (2-91)
+Cuando la comparación se efectúa respecto de valores de potencia por debajo de 1 mW, el 
+resultado será siempre negativo. En algunos casos, en los que se usan potencias mayores, se 
+toma como valor fijo 1 W y en ese caso la unidad se denomina dBW.
+2.5.7 El dBu
+El dBu es una unidad de nivel absoluto usada para comparar la tensión de salida respecto 
+de un valor fijo de 0,775 V.
+dBU V Volt
+Volt
+S= 20 0 775log [ ]
+,
+ (2-92) 
+Esta unidad es muy usada en telefonía. El valor de 0,775 V es un valor que resulta de aplicar 
+una señal de una potencia de 1 mW sobre una impedancia de 600 Ω [ohm].
+Relación entre el dBm y el dBu.
+Se puede establecer una relación entre el dBm y el dBu. Veamos,
+dBm P mW
+mW
+Slog [ ]=10 1
+ (2-93)
+Pero como W V
+Z=
+2
+, si a una impedancia de 600 Ω le aplicamos una potencia de 1 mW, 
+tendremos:
+ 1 0 775
+600
+2,mW V=  (2-94)
+Reemplazando 1 mW por su valor, y la PS [W] por su expresión en [2-85], tendremos
+ dBm V Z
+V
+log /
+( , ) /
+=10
+0 775 600
+2
+2  (2-95)
+Y operando convenientemente, 
+dBm V
+V Zlog
+( , )
+log= +10
+0 775
+10 6002
+2  (2-96)
+dBm V
+V Zlog , log= +20 0 775 10 600  (2-97)
+Y como dBu V
+Vlog ,= 20 0 775
+, resultará,
+ (2-98)
+dBm = dBu + Factor de Corrección (2-99)
+El factor de corrección es distinto de cero, cuando la impedancia Z es distinta del valor 
+600 Ω.
+El dBmV es una unidad de nivel absoluto que se utiliza para comparar la tensión de salida 
+1 mV.
+  (2-100)
+El neper es una unidad relativa usada como alternativa al dB. Se diferencia de esta última 
+ (2-101)
+Como el concepto es similar, se pueden establecer relaciones entre el dB y el neper:
+ 1 neper = 8,686 dB (2-102)
+ 1 dB = 0,115 neper (2-103)
+Cuando una antena de un equipo de radio transmite, lo hace en todas direcciones; aunque 
+Las antenas pueden ser direccionales o isotrópicas (igual radiación en todas las direccio-
+Un ejemplo aproximado de radiación isotrópica está dado por el Sol. Este emite en todas 
+La transmisión de señales se puede realizar tanto en medios dieléctricos como en medios 
+En ella, los campos eléctrico y magnético forman entre sí un ángulo de 90°; a su vez ambos 
+
+===== PÁGINA PDF 121 =====
+2.6 La transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+95
+Y la que se utiliza para definir la pérdida en decibel podría ser:
+ 
+ 
+2.5.6 El dBm
+A diferencia del dB, que es una unidad de medida relativa, el dBm
+amplificador o atenuador) respecto de un valor fijo de 1 mW.
+  
+Cuando la comparación se efectúa respecto de valores de potencia por debajo de 1 mW
+toma como valor fijo 1 W y en ese caso la unidad se denomina dBW.
+2.5.7 El dBu
+de un valor fijo de 0,775 V.
+ 
+Esta unidad es muy usada en telefonía. El valor de 0,775 V
+una señal de una potencia de 1 mW sobre una impedancia de 600 Ω [ohm].
+Relación entre el dBm y el dBu.
+Se puede establecer una relación entre el dBm y el dBu. Veamos,
+ 
+Pero como , si a una impedancia de 600 Ω le aplicamos una potencia de 
+tendremos:
+  
+Reemplazando 1 mW por su valor, y la PS [W] por su expresión en [2-85], tendremos
+  
+Y operando convenientemente, 
+ 
+ 
+Y como , resultará,
+dBm dBu Zlog= + 10 600
+ (2-98)
+dBm = dBu + Factor de Corrección (2-99)
+El factor de corrección es distinto de cero, cuando la impedancia Z es distinta del valor 
+patrón de 600 Ω.
+2.5.8 El dBmV
+El dBmV es una unidad de nivel absoluto que se utiliza para comparar la tensión de salida 
+respecto de un valor fijo de 1 mV.
+ dBmV V mV
+mV
+Slog { }= 20 1  (2-100)
+2.5.9 El Neper
+El neper es una unidad relativa usada como alternativa al dB. Se diferencia de esta última 
+en que la base de los logaritmos usados es el número e, en lugar de la base 10, usada por aque-
+lla otra unidad de medida.
+Neper n P
+P
+S
+E
+( ) ln= 1
+2  (2-101)
+Como el concepto es similar, se pueden establecer relaciones entre el dB y el neper:
+ 1 neper = 8,686 dB (2-102)
+ 1 dB = 0,115 neper (2-103)
+2.6 La transmisión de señales
+2.6.1 La transmisión en medios dieléctricos
+Cuando una antena de un equipo de radio transmite, lo hace en todas direcciones; aunque 
+si estudiáramos en detalle las características de cada una de ellas en particular, se observaría 
+que su geometría condiciona la forma de la onda irradiada.
+Las antenas pueden ser direccionales o isotrópicas (igual radiación en todas las direccio-
+nes). Las direccionales tienen una importancia práctica importante, pues envían la máxima 
+potencia en una o varias direcciones. En esas direcciones las estaciones receptoras tendrán 
+una señal de valor más importante y, por lo tanto, de mejor calidad. Si la antena es isotrópica la 
+potencia se irradia con iguales características en todas las direcciones.
+Un ejemplo aproximado de radiación isotrópica está dado por el Sol. Este emite en todas 
+las direcciones mediante ondas de características esféricas. Sin embargo, cuando estas ondas 
+llegan a la tierra se observan como si en los hechos fueran ondas planas. De la misma manera, 
+a corta distancia de la mayoría de las antenas y despreciando efectos secundarios que pueden 
+estar presentes, las ondas se comportan como si fueran planas, de allí la importancia de estu-
+diar la onda plana como un caso particular.
+La transmisión de señales se puede realizar tanto en medios dieléctricos como en medios 
+conductores. Analicemos la propagación de una onda plana en medios dieléctricos. Para com-
+prender este fenómeno analizaremos cómo se propaga una onda plana. 
+En ella, los campos eléctrico y magnético forman entre sí un ángulo de 
+90°; a su vez ambos 
+son normales a la dirección de propagación, en este caso la del eje y, según se puede observar 
+en la Fig. 2.26.
+
+===== PÁGINA PDF 124 =====
+2 - Transmisión de señales98
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+La onda plana que se propaga en medios dieléctricos según las expresiones [2-113], [2-114] 
+y [2-115]. Las componentes del campo eléctrico y magnético tienen igual forma, y en los dos 
+casos son perpendiculares a la dirección de propagación de la onda.
+Cuando las ondas se propagan en el vacío lo hacen a la velocidad de la luz, y en el aire, a 
+una velocidad muy próxima.
+2.6.2 El espectro de frecuencias electromagnéticas
+2.6.2.1 Longitud de onda
+Es importante considerar un parámetro que se denomina longitud de onda, y se representa 
+con la letra λ. 
+Se denomina longitud de onda a la distancia en que la onda recorre un tiempo igual a un 
+período.
+ λ = v T (2-118) 
+Donde:
+λ = longitud de onda.
+v = velocidad de propagación.
+T = período de la señal.
+Reordenando, esta expresión podrá escribirse como sigue:
+ v T= λ
+ (2-119)
+y recordando que la frecuencia es la inversa del período, también podría expresarse así,
+ v = λf (2-120)
+Si como caso particular resulta v = c  (velocidad de la luz), la ecuación toma la forma si-
+guiente:
+ c = λf (2-121)
+Donde la velocidad de la luz estará expresada en función de la longitud de onda y la fre-
+cuencia de la onda electromagnética. Obsérvese que siendo la velocidad de la luz una cons-
+tante, también lo será el segundo miembro de la expresión. Por lo que puede deducirse que la 
+frecuencia y la longitud de onda son magnitudes inversamente proporcionales. 
+A medida que aumenta la frecuencia de una señal, menor será su longitud de onda. En la 
+práctica las velocidades de propagación en el vacío y en el aire son valores muy próximos, por 
+lo que normalmente para calcular la longitud de onda de una señal se suele aproximar toman-
+do el valor aproximado de 300.000.000 m seg1. 
+La longitud de onda de una señal es un valor que tiene muchísima importancia práctica, 
+porque la dimensión de las antenas de radio, cualquiera sea su geometría, guarda relación con 
+este valor. Por otra parte, frecuencia y longitud de onda también indicarán la forma en que las 
+señales se propagan y, por lo tanto, el alcance de una emisión, conocida la potencia de ella. 
+Ejemplo 2-8
+Calcular la longitud de onda de una señal de radiodifusión que trabaja en la banda 
+conocida comúnmente como de AM –modulada en amplitud–, si sabemos que la 
+frecuencia de transmisión es de 1.110 kH. ¿Cual sería la longitud de su antena si la 
+misma se desea construir en ¼ de longitud de onda de la señal?
+En los sistemas de comunicaciones las antenas de transmisión de radio son 
+los elementos que, mediante un fenómeno de resonancia, transforman en on-
+das electromagnéticas la potencia eléctrica que reciben de los transmisores co-
+nectados a ellas. Por el contrario, las antenas receptoras transforman las ondas 
+electromagnéticas recibidas, que resuenan sobre ella, en potencia eléctrica que 
+luego es amplificada en diversas etapas para su utilización por parte de los re-
+ceptores.
+Es sabido, además, que las antenas de equipos radioeléctricos tienen una buena efi-
+ciencia cuando su longitud física es aproximadamente la mitad o una cuarta parte 
+de la longitud de onda de la señal electromagnética que se desea irradiar o recibir 
+a través de ellas.
+En este caso, la longitud de onda será igual a:
+λ = vT (2-122)
+como  (2-123)
+Resultará que 
+ (2-124)
+Reemplazando por sus valores tendremos,
+ (2-125)
+Simplificando unidades y operando, tendremos
+ λ = 270,28 m (2-126)
+Luego la señal de 1.110 kH tendrá una longitud de onda de 270,28 m (aproximada-
+mente) por lo que una antena de 67,57 m podrá irradiar con un rendimiento acepta-
+ble. Esta antena se denominará antena de cuarto de onda, pues su longitud resulta 
+un cuarto de la longitud de onda de la frecuencia de transmisión. La mayoría de las 
+radiodifusoras que trabajan en la banda de AM utilizan antenas de este tipo o de 
+media onda, construidas en forma vertical. Por lo tanto, la altura de la antena de este 
+ejemplo será de 
+67,57 m.
+Ejemplo 2-9
+Calcular la longitud de onda de una señal de radiodifusión que trabaja en la banda 
+conocida comúnmente como de FM –modulación en frecuencia–, si sabemos que la 
+frecuencia de transmisión es de 98,3 MH. ¿Cual sería la longitud de su antena si se 
+la desea construir en ½ de longitud de onda de la señal?
+ (2-127)
+Reemplazando por sus valores, tendremos
+ (2-128)
+
+===== PÁGINA PDF 125 =====
+2.6 La transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+99
+casos son perpendiculares a la dirección de propagación de la onda.
+una velocidad muy próxima.
+2.6.2 El espectro de frecuencias electromagnéticas
+2.6.2.1 Longitud de onda
+con la letra λ. 
+período.
+ λ = v T 
+Donde:
+λ = longitud de onda.
+v = velocidad de propagación.
+T = período de la señal.
+Reordenando, esta expresión podrá escribirse como sigue:
+  
+y recordando que la frecuencia es la inversa del período, también podría expresarse así,
+ v = λf 
+Si como caso particular resulta v = c
+guiente:
+ c = λf 
+frecuencia y la longitud de onda son magnitudes inversamente proporcionales. 
+do el valor aproximado de 300.000.000 m seg1. 
+señales se propagan y, por lo tanto, el alcance de una emisión, conocida la potencia de ella. 
+Ejemplo 2-8
+misma se desea construir en ¼ de longitud de onda de la señal?
+En los sistemas de comunicaciones las antenas de transmisión de radio son 
+los elementos que, mediante un fenómeno de resonancia, transforman en on-
+das electromagnéticas la potencia eléctrica que reciben de los transmisores co-
+nectados a ellas. Por el contrario, las antenas receptoras transforman las ondas 
+electromagnéticas recibidas, que resuenan sobre ella, en potencia eléctrica que 
+luego es amplificada en diversas etapas para su utilización por parte de los re-
+ceptores.
+Es sabido, además, que las antenas de equipos radioeléctricos tienen una buena efi-
+ciencia cuando su longitud física es aproximadamente la mitad o una cuarta parte 
+de la longitud de onda de la señal electromagnética que se desea irradiar o recibir 
+a través de ellas.
+En este caso, la longitud de onda será igual a:
+λ = vT (2-122)
+como T f= 1  (2-123)
+Resultará que 
+λ = v
+f  (2-124)
+Reemplazando por sus valores tendremos,
+λ . .
+. .
+= 300 000 000
+1 110 000
+1
+1
+ms
+s
+−
+−  (2-125)
+Simplificando unidades y operando, tendremos
+ λ = 270,28 m (2-126)
+Luego la señal de 1.110 kH tendrá una longitud de onda de 270,28 m (aproximada-
+mente) por lo que una antena de 67,57 m podrá irradiar con un rendimiento acepta-
+ble. Esta antena se denominará antena de cuarto de onda, pues su longitud resulta 
+un cuarto de la longitud de onda de la frecuencia de transmisión. La mayoría de las 
+radiodifusoras que trabajan en la banda de AM utilizan antenas de este tipo o de 
+media onda, construidas en forma vertical. Por lo tanto, la altura de la antena de este 
+ejemplo será de 67,57 m.
+Ejemplo 2-9
+Calcular la longitud de onda de una señal de radiodifusión que trabaja en la banda 
+conocida comúnmente como de FM –modulación en frecuencia–, si sabemos que la 
+frecuencia de transmisión es de 98,3 MH. ¿Cual sería la longitud de su antena si se 
+la desea construir en ½ de longitud de onda de la señal?
+λ = v
+f  (2-127)
+Reemplazando por sus valores, tendremos
+λ . .
+. .
+= 300 000 000
+98 300 000
+1
+1
+ms
+s
+−
+−  (2-128)
+
+===== PÁGINA PDF 126 =====
+2 - Transmisión de señales100
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Simplificando unidades y operando, tendremos
+ λ = 3,05 m (2-129)
+La longitud de una antena de media onda para esa frecuencia sería, aproximadamente, 
+1,52 m.
+Ejemplo 2-10
+Calcular la longitud de onda de una señal de telefonía celular que trabaja en la ban-
+da de 1.800 GHz.
+λ = v
+f  (2-130)
+Reemplazando por sus valores tendremos,
+λ =
+−
+−
+300 000 000
+1 800 000 000
+1
+1
+. .
+. . .
+ms
+s  (2-131)
+Simplificando unidades y operando tendremos,
+λ = 0,16 m = 16 cm (2-132)
+2.6.2.2 Espectro de frecuencia
+La finalidad de todo sistema de comunicaciones es el de transmitir información para comu-
+nicar dos o más puntos, con la menor tasa de errores posible.
+Un tipo de comunicaciones se denomina comúnmente punto a punto cuando se establece 
+un vínculo entre dos equipos geográficamente distantes; o punto a multipunto, cuando desde 
+un equipo se efectúan comunicaciones hacia varios puntos.
+También existe el concepto de difusión, que es el caso de un equipo que solo transmite y 
+muchos otros que solamente reciben. Este es el caso de las emisiones de estaciones públicas 
+o privadas de radio, que porque utilizan esta modalidad reciben el nombre de radiodifusoras.
+En muchos casos, como ya se expresó, las comunicaciones se realizan transmitiendo on-
+das electromagnéticas, ya sea a través de medios conductores (cables de cobre, coaxiales, etc.), 
+como a través del espacio libre como ondas de radio, o utilizando fibras ópticas como ondas 
+de luz.
+Un elemento determinante en la caracterización de la energía electromagnética es la fre-
+cuencia de cada onda transmitida. El rango de frecuencias que se utiliza hoy tan amplio, que 
+podría decirse que es casi infinito. 
+Nos atrevemos a expresarnos así porque se conocen y se han medido ondas de hasta 
+1022 Hertz, como es el caso de los rayos cósmicos. Recordando la expresión c = λf, es posible 
+determinar la longitud de onda de todas las frecuencias del espectro electromagnético. Sin 
+embargo, para identificar las ondas de radio se utiliza preferentemente la frecuencia. Así, es 
+frecuente oír decir que una radiodifusora se sintoniza, por ejemplo, en la frecuencia de 590 
+kHz en la banda AM; pero, cuando se habla de tecnologías asociadas a servicios de telecomu-
+nicaciones, es más común oír decir frases como esta: “Tengo un enlace de microondas para 
+transmisión de voz a 64 Kbps”. 
+Obsérvese que en ambos casos se hace referencia a la misma relación, pues c es una 
+constante. En el primer caso se hace referencia a la frecuencia de transmisión, en el segundo, 
+a su longitud de onda.
+La clasificación de las frecuencias en segmentos, según sus características, es lo que se 
+nro. 
+de 
+Intervalo 
+en Hertz o 
+múltiplos
+Longitud 
+de onda 
+hasta
+Sigla nombre de la banda Sigla
+1 0 a 30 Hz 10.000 km — Frecuencias 
+extremadamente bajas Hz = Hertz2 30 a 300 Hz 1.000 km ELF
+3 0,3 a 3 kHz 100 km VF Frecuencias de voz kH = 103 Hertz
+kh = kilohertz4 3 a 30 kHz 10 km VLF Frecuencias muy bajas
+5 30 a 300 kHz 1 km LF Frecuencias bajas
+6 0,3 a 3 MHz 100 m MF Frecuencias medias MH = 106 Hertz
+MH = megahertz7 3 a 30 MHz 10 m HF Frecuencias altas
+8 30 a 300 MHz 1 m VHF Frecuencias muy altas
+9 0,3 a 3 GHz 100 cm UHF Frecuencias ultraaltas
+GH = 109 Hertz
+GH = gigahertz
+10 3 a 30 GHz 10 cm SHF Frecuencias superaltas
+11 30 a 300 GHz 1 cm EHF Frecuencias 
+extremadamente altas
+12 0,3 a 3 THz 100 mm — Luz infrarroja TH = 1012 Hertz
+TH = terahertz13 3 a 30 THz 10 mm — Luz infrarroja
+14 30 a 300 THz 1 mm — Luz infrarroja
+15 0,3 a 3 PHz 100 μm — Luz visible
+PH = 1015 Hertz
+PH = petahertz16 3 a 30 PHz 10 μm — Luz ultravioleta
+17 30 a 300 PHz 1 μm — Rayos x
+18 0,3 a 3 EHz 100 pm — Rayos gamma
+EH = 1018 Hertz19 3 a 30 EHz 10 pm — Rayos cósmicos
+20 30 a 300 EHz 1 pm — Rayos cósmicos EH = exahertz
+El ser humano, a partir del conocimiento de la forma en que se propagan las ondas electro-
+En la Fig. 2.27. se muestra una gráfica del espectro de frecuencias electromagnéticas en la 
+Bandas según usos 
+más frecuentes Algunas aplicaciones Longitud de 
+onda (metros)
+Frecuencia 
+(Hertz)
+Comunicaciones submarinas < 10 km > 30 kHz
+< 650 m > 650 kHz
+Radio onda corta < 180 m > 1,7 MHz
+< 10 m > 30 MHz
+< 1 m > 300 MHz
+< 30 cm > 1,0 GHz
+Visores nocturnos < 2,5 μm > 120 THz
+Visión del ser humano < 780 nm > 384 THz
+Ciencias forenses, control de plagas < 200 nm > 1,5 PHz
+x Medicina < 10 nm > 30 PHZ
+< 10 pm > 30 EHz
+
+===== PÁGINA PDF 127 =====
+2.6 La transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+101
+Simplificando unidades y operando, tendremos
+ λ = 3,05 m 
+1,52 m.
+Ejemplo 2-10
+da de 1.800 GHz.
+ 
+Reemplazando por sus valores tendremos,
+ 
+Simplificando unidades y operando tendremos,
+λ = 0,16 m = 16 cm 
+2.6.2.2 Espectro de frecuencia
+nicar dos o más puntos, con la menor tasa de errores posible.
+un equipo se efectúan comunicaciones hacia varios puntos.
+de luz.
+podría decirse que es casi infinito. 
+1022 Hertz, como es el caso de los rayos cósmicos. Recordando la expresión c = λf,
+frecuente oír decir que una radiodifusora se sintoniza, por ejemplo, en la frecuencia de 
+kHz
+transmisión de voz a 64 Kbps”. 
+a su longitud de onda.
+2.6.2.3 Bandas y gráfica del espectro de frecuencia
+La clasificación de las frecuencias en segmentos, según sus características, es lo que se 
+denomina espectro de frecuencias. La UIT lo ha dividido en bandas que reciben distintas de-
+nominaciones. Estas bandas se muestran en la Tabla 2-2.
+Tabla 2-2 Bandas del espectro de frecuencias
+nro. 
+de 
+banda
+Intervalo 
+en Hertz o 
+múltiplos
+Longitud 
+de onda 
+hasta
+Sigla nombre de la banda Sigla
+1 0 a 30 Hz 10.000 km — Frecuencias 
+extremadamente bajas Hz = Hertz2 30 a 300 Hz 1.000 km ELF
+3 0,3 a 3 kHz 100 km VF Frecuencias de voz kH = 103 Hertz
+kh = kilohertz4 3 a 30 kHz 10 km VLF Frecuencias muy bajas
+5 30 a 300 kHz 1 km LF Frecuencias bajas
+6 0,3 a 3 MHz 100 m MF Frecuencias medias MH = 106 Hertz
+MH = megahertz7 3 a 30 MHz 10 m HF Frecuencias altas
+8 30 a 300 MHz 1 m VHF Frecuencias muy altas
+9 0,3 a 3 GHz 100 cm UHF Frecuencias ultraaltas
+GH = 109 Hertz
+GH = gigahertz
+10 3 a 30 GHz 10 cm SHF Frecuencias superaltas
+11 30 a 300 GHz 1 cm EHF Frecuencias 
+extremadamente altas
+12 0,3 a 3 THz 100 mm — Luz infrarroja TH = 1012 Hertz
+TH = terahertz13 3 a 30 THz 10 mm — Luz infrarroja
+14 30 a 300 THz 1 mm — Luz infrarroja
+15 0,3 a 3 PHz 100 μm — Luz visible
+PH = 1015 Hertz
+PH = petahertz16 3 a 30 PHz 10 μm — Luz ultravioleta
+17 30 a 300 PHz 1 μm — Rayos x
+18 0,3 a 3 EHz 100 pm — Rayos gamma
+EH = 1018 Hertz19 3 a 30 EHz 10 pm — Rayos cósmicos
+20 30 a 300 EHz 1 pm — Rayos cósmicos EH = exahertz
+El ser humano, a partir del conocimiento de la forma en que se propagan las ondas electro-
+magnéticas, ha ido usando cada una de las frecuencias para distintas aplicaciones. 
+En la Fig. 2.27. se muestra una gráfica del espectro de frecuencias electromagnéticas en la 
+que se indican las aplicaciones más importantes de cada uno de los intervalos de frecuencia. 
+En la Tabla 2-3 se observan algunos usos más frecuentes de cada una de las bandas.
+Tabla 2-3 Espectro electromagnético. Aplicaciones más comunes
+Bandas según usos 
+más frecuentes Algunas aplicaciones Longitud de 
+onda (metros)
+Frecuencia 
+(Hertz)
+Muy baja frecuencia Audio, medicina, ultrasonidos > 10 km < 30 kHz
+Onda larga Comunicaciones submarinas < 10 km > 30 kHz
+Onda media Radio AM < 650 m > 650 kHz
+Onda corta Radio onda corta < 180 m > 1,7 MHz
+Muy alta frecuencia Radio FM < 10 m > 30 MHz
+Ultraalta frecuencia Radar, televisión < 1 m > 300 MHz
+Microondas Radar < 30 cm > 1,0 GHz
+Infrarrojo cercano Tel. celular, microondas, satélites < 1 mm > 300 GHz
+Infrarrojo Visores nocturnos < 2,5 μm > 120 THz
+Luz visible Visión del ser humano < 780 nm > 384 THz
+Ultravioleta Ciencias forenses, control de plagas < 200 nm > 1,5 PHz
+Rayos x Medicina < 10 nm > 30 PHZ
+Rayos gamma Energía nuclear < 10 pm > 30 EHz
+
+===== PÁGINA PDF 128 =====
+2 - Transmisión de señales102
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Se puede establecer una correspondencia entre los intervalos de frecuencia y los medios 
+de comunicaciones que lo utilizan. En el capítulo 7 se estudiarán las características parti-
+culares de los medios de comunicaciones más importantes y su asociación con el espectro 
+electromagnético.
+Por otra parte, los intervalos de frecuencia se corresponden con intervalos de longitud de 
+onda, relación que viene dada a través de la expresión [2-120].
+En esta Fig. se puede apreciar qué lugar del espectro es el adecuado para el uso de las 
+comunicaciones de radiofonía, radar, telefonía celular, televisión, microondas, comunicaciones 
+satelitales y otras aplicaciones de comunicaciones.
+Obsérvese que esta distribución está directamente vinculada con las características de pro-
+pagación adecuadas a cada servicio y con la porción del espectro necesaria para su desarrollo. 
+2.6.3 La transmisión en medios conductores
+2.6.3.1 Características de la propagación en medios conductores
+Además de poder transmitirse por medio de ondas electromagnéticas, las señales se pueden 
+transmitir a través de medios conductores, utilizando cables de cobre con distintas geometrías y 
+estructuras de construcción, tales como cables de cobre trenzados, coaxiales, UTP y otros.
+Una característica fundamental de conductor es que es una magnitud relacionada con la 
+capacidad que tiene de conducir la corriente eléctrica. Esta se denomina conductancia y la re-
+presentaremos con la letra G. Cuando estamos en presencia de un medio conductor podemos 
+afirmar que esa magnitud es distinta de cero, es decir:
+G ≠ 0 (2-133)
+En casos ideales límites podríamos decir que si un material no conduce la corriente eléctri-
+G = 0, y si fuera superconductor su valor sería G → ∞.
+La conductancia es la inversa de la resistencia eléctrica y se mide en Siemens [S]. 
+  (2-134)
+Dimensionalmente será,
+ (2-135)
+La velocidad de propagación para el caso particular de la transmisión de señales mediante 
+200.000.000 m seg–1.
+De muchos medios de comunicaciones se conoce el valor de lo que se denomina coeficien-
+α y se expresa en dB/km. Este coeficiente 
+Para el caso de los cables de cobre, uno de los medios de comunicaciones aun hoy muy 
+n 2-77 de la ley de Ohm compleja.
+ V = I · Z (2-136)
+Donde
+ Z = R + j (XL – XC ) (2-137)
+La resistencia a su vez depende la geometría del conductor y del metal con el que está 
+ (2-138)
+Donde:
+R = resistencia óhmica [Ω].
+ρ = resistividad del metal [Ω m].
+l = longitud del cable entre extremos [m].
+S = sección del conductor [m2].
+Como la inversa de la resistividad es la conductividad, podemos expresar:
+ (2-139)
+Donde:
+ δ = conductividad del metal  (2-140)
+Espectro Visible
+Rayos
+Cósmicos
+Rayos
+Gamma
+Rayos X 
+UV-
+A/B/C
+Ultravioleta
+InfrarrojoRadarUHF
+VHF
+MicroondasRadio
+Onda CortaOnda Media
+Onda Larga
+Frecuencia
+extremadamente
+baja
+Longitud de
+onda (M)
+Frecuencia (Hz)
+(1Zetta Hz)(1Exa-Hz)(1Peta-Hz)(1Tera-Hz)(1Giga-Hz)(1Mega-Hz)(1Kilo-Hz)
+10-7
+750 nm 700 nm 650 nm 600 nm 550 nm 500 nm 450 nm 400 nm
+Infrarrojo Ultravioleta
+1Mn 1km 1m 1cm 1mm 1μm 1nm 1A 1pm 1fm
+10-6 10-5 10-4 10-3 10-2 10-1 100 10-1 10-2 10-3 10-4 10-5 10-6 10-7 10-8 10-9 10-10 10-11 10-12 10-13 10-14 10-15
+10-2 10-3 10-4 10-5 10-6 10-7 10-8 10-9 10-10 10-11 10-12 10-13 10-14 10-15 10-16 10-17 10-18 10-19 10-20 10-21 10-22 10-23
+Fig. 2.27. Distribución	de	bandas	del	espectro	electromagnético.
+
+===== PÁGINA PDF 129 =====
+2.6 La transmisión de señales
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+103
+electromagnético.
+onda, relación que viene dada a través de la expresión [2-120].
+satelitales y otras aplicaciones de comunicaciones.
+2.6.3 La transmisión en medios conductores
+2.6.3.1 Características de la propagación en medios conductores
+estructuras de construcción, tales como cables de cobre trenzados, coaxiales, UTP y otros.
+afirmar que esa magnitud es distinta de cero, es decir:
+G ≠ 0 (2-133)
+En casos ideales límites podríamos decir que si un material no conduce la corriente eléctri-
+ca tendrá un valor G = 0, y si fuera superconductor su valor sería G → ∞.
+La conductancia es la inversa de la resistencia eléctrica y se mide en Siemens [S]. 
+ G R= 1
+ (2-134)
+Dimensionalmente será,
+[ ]S = 1
+Ω  (2-135)
+La velocidad de propagación para el caso particular de la transmisión de señales mediante 
+cables de cobre es un orden de magnitud del correspondiente a la velocidad de la luz en el 
+vacío. En particular, entre el 60% y el 85% de su valor, es decir para tomar un valor intermedio 
+de 200.000.000 m seg–1.
+De muchos medios de comunicaciones se conoce el valor de lo que se denomina coeficien-
+te de atenuación, que se indica con la letra griega α y se expresa en dB/km. Este coeficiente 
+sirve para calcular la atenuación en un medio de comunicaciones a una distancia dada.
+Para el caso de los cables de cobre, uno de los medios de comunicaciones aun hoy muy 
+utilizado, la atenuación es función de las características de cada cable y de la frecuencia de la 
+señal transmitida. Analicemos por qué las características de cada cable inciden en la atenua-
+ción de la señal. Para ello recordaremos la expresión 2-77 de la ley de Ohm compleja.
+ V = I · Z (2-136)
+Donde
+ Z = R + j (XL – XC ) (2-137)
+La resistencia a su vez depende la geometría del conductor y del metal con el que está 
+construido. Ella es directamente proporcional a la longitud del cable entre puntos terminales 
+del circuito, y a una constante que depende del metal, denominada coeficiente de resistividad 
+del material que constituye el conductor, e inversamente proporcional a su sección.
+R l
+S= ρ  (2-138)
+Donde:
+R = resistencia óhmica [Ω].
+ρ = resistividad del metal [Ω m].
+l = longitud del cable entre extremos [m].
+S = sección del conductor [m2].
+Como la inversa de la resistividad es la conductividad, podemos expresar:
+ρ T= 1  (2-139)
+Donde:
+ δ = conductividad del metal S
+m
+ (2-140)
+Espectro Visible
+Rayos
+Cósmicos
+Rayos
+Gamma
+Rayos X 
+UV-
+A/B/C
+Ultravioleta
+InfrarrojoRadarUHF
+VHF
+MicroondasRadio
+Onda CortaOnda Media
+Onda Larga
+Frecuencia
+extremadamente
+baja
+Longitud de
+onda (M)
+Frecuencia (Hz)
+(1Zetta Hz)(1Exa-Hz)(1Peta-Hz)(1Tera-Hz)(1Giga-Hz)(1Mega-Hz)(1Kilo-Hz)
+10-7
+750 nm 700 nm 650 nm 600 nm 550 nm 500 nm 450 nm 400 nm
+Infrarrojo Ultravioleta
+1Mn 1km 1m 1cm 1mm 1μm 1nm 1A 1pm 1fm
+10-6 10-5 10-4 10-3 10-2 10-1 100 10-1 10-2 10-3 10-4 10-5 10-6 10-7 10-8 10-9 10-10 10-11 10-12 10-13 10-14 10-15
+10-2 10-3 10-4 10-5 10-6 10-7 10-8 10-9 10-10 10-11 10-12 10-13 10-14 10-15 10-16 10-17 10-18 10-19 10-20 10-21 10-22 10-23
+
+===== PÁGINA PDF 134 =====
+2 - Transmisión de señales108
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Perd Perd f
+f
+2               1 2
+1
+=  (2-157) 
+ Perd2 = 31,6 dB (2-158)
+Valor que es coherente con la teoría, es decir, a mayor frecuencia, mayores pérdidas en el 
+conductor.
+2.7 Ancho de banda
+2.7.1 Definición de ancho de banda
+El concepto de ancho de banda es uno de los más importantes en el campo de las teleco-
+municaciones. Denominaremos ancho de banda de una señal a lo siguiente:
+Intervalo de frecuencias para las cuales la distorsión lineal y la atenuación permanecen 
+bajo límites determinados y constantes. Los valores que se toman como valores de referencia 
+pueden ser arbitrarios.
+                 Δf = f2 – f1  (2-159)
+ Si bien los límites pueden ser arbitrarios, en la generalidad de los casos se definen para 
+una atenuación de 3 dB con respecto al valor que tiene la señal a la frecuencia de referencia, 
+según se observa en la Fig. 2.29.
+Atenuación (db)
+Frecuencia de
+referencia f0 
+3
+0
+f
+(Hertz)
+Ancho de banda
+Δf = f0  –  f0 
+f0f1 f2
+Fig. 2.29. Atenuación	de	una	señal	en	función	de	su	frecuencia.
+Los valores de f1 y f2 se denominan límites inferior y superior del ancho de banda de una 
+señal. Para ellos la atenuación de la señal es de –3 dB respecto al valor f0 de referencia, que se 
+encuentra a 0 dB.
+2.7.2 Concepto de ancho de banda
+La limitación más importante para el funcionamiento de un sistema de comunicaciones es 
+precisamente el ancho de banda del canal.
+El ancho de banda está directamente relacionado con la cantidad de información que pue-
+ • Conocidos cuales son los limites que este define, inferior y superior, podríamos saber 
+que armónicas están comprendidas en ese intervalo. 
+ • Esas armónicas tendrán una atenuación a lo sumo de –3 dB. Las armónicas cuyas 
+frecuencias estén por debajo o por arriba de ese valor tendrán una atenuación mayor 
+y su participación para reconstituir el pulso serán de un valor prácticamente nulo. 
+ • Si nosotros quisiéramos transmitir mayor cantidad de información por unidad de 
+tiempo, es evidente que deberemos disminuir el período por cada bit transmitido. Re-
+cordemos la expresión [2-7], 
+[seg]
+T1 representa el período del pulso a transmitir y su inversa es la frecuencia del pulso; valor 
+TI 
+f1, y, en consecuen-
+f2, f3, f4, fn. Si suponemos, como ocurre en 
+n.
+Definíamos ahora dos valores T, tal que
+  (2-160)
+Resultará,
+ (2-161)
+Representemos en un grafico las frecuencias de las armónicas de un caso y del otro. La Fig. 2.30., 
+T1
+T2
+A dB]
+-3 dB
+f Hz]
+f21 f22 f23 f24 f25 f26
+f1 f11 f12 f13 f14 f15 f16
+
+===== PÁGINA PDF 135 =====
+2.7 Ancho de banda
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+109
+ 
+ Perd2 = 31,6 dB 
+conductor.
+2.7 Ancho de banda
+2.7.1 Definición de ancho de banda
+municaciones. Denominaremos ancho de banda de una señal a lo siguiente:
+pueden ser arbitrarios.
+                 Δf = f2 – f1  
+una atenuación de 3 dB
+según se observa en la Fig. 2.29.
+Atenuación (db)
+Frecuencia de
+referencia f0 
+3
+0
+f
+(Hertz)
+Ancho de banda
+Δf = f0  –  f0 
+f0f1 f2
+Fig. 2.29. Atenuación	de	una	señal	en	función	de	su	frecuencia.
+Los valores de f1 y f2
+señal. Para ellos la atenuación de la señal es de –3 dB respecto al valor f0
+encuentra a 0 dB.
+2.7.2 Concepto de ancho de banda
+precisamente el ancho de banda del canal.
+El ancho de banda está directamente relacionado con la cantidad de información que pue-
+de pasar a través del intervalo de frecuencias que él define. En términos matemáticos, y si 
+analizáramos la definición dada con el ejemplo 2-3, que hemos desarrollado para obtener la 
+serie de Fourier de una señal onda cuadrada, podríamos señalar:
+ • Conocidos cuales son los limites que este define, inferior y superior, podríamos saber 
+que armónicas están comprendidas en ese intervalo. 
+ • Esas armónicas tendrán una atenuación a lo sumo de –3 dB. Las armónicas cuyas 
+frecuencias estén por debajo o por arriba de ese valor tendrán una atenuación mayor 
+y su participación para reconstituir el pulso serán de un valor prácticamente nulo. 
+ • Si nosotros quisiéramos transmitir mayor cantidad de información por unidad de 
+tiempo, es evidente que deberemos disminuir el período por cada bit transmitido. Re-
+cordemos la expresión [2-7], 
+T f= 1
+[seg]
+T1 representa el período del pulso a transmitir y su inversa es la frecuencia del pulso; valor 
+que será, además, el de la primera armónica del desarrollo en serie. Luego, si disminuimos TI 
+para aumentar la cantidad de información, se incrementará la frecuencia f1, y, en consecuen-
+cia, la frecuencia de todas las siguientes armónicas f2, f3, f4, fn. Si suponemos, como ocurre en 
+muchas oportunidades, que las primeras armónicas del desarrollo en serie son todas mayores 
+al límite inferior del intervalo definido por el ancho de banda, dentro de él entrarán desde la 
+fundamental o primera armónica, hasta una que llamaremos armónica de orden n.
+Definíamos ahora dos valores T, tal que
+ T T1      1
+'> >  (2-160)
+Resultará,
+f f1 1 ’> > (2-161)
+Representemos en un grafico las frecuencias de las armónicas de un caso y del otro. La Fig. 2.30., 
+nos muestra qué armónicas, que antes entraban dentro del ancho de banda, cuando se procede 
+a aumentar la cantidad de información ahora están fuera de él. Luego, ellas estarán fuertemente 
+atenuadas por el canal de comunicaciones y su aporte a reconstituir la señal será despreciable.
+T1
+T2
+A dB]
+-3 dB
+f Hz]
+f21 f22 f23 f24 f25 f26
+f1 f11 f12 f13 f14 f15 f16
+Fig. 2.30. Distribución	de	las	armónicas	de	una	señal	dentro	del	ancho	de	banda	del	canal.
+
+===== PÁGINA PDF 136 =====
+2 - Transmisión de señales110
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+1 0 0
+Señal Ddigital
+transmitida
+2000 bits/seg
+Δf = 300 Hz
+Donde Δf es el ancho de banda del canal de comunicaciones
+Δf = 900 Hz
+Δf = 4000 Hz
+Δf = infinito
+0 0 10 0
+Donde
+Fig. 2.31. Distorsión	de	una	señal	por	efecto	del	ancho	de	banda.
+ • Las componentes de la serie de Fourier, cuyas frecuencias están comprendidas dentro 
+del ancho de banda, es decir entre sus límites, sufrirán atenuaciones de hasta 3 dB.
+ • Las situadas por arriba y por debajo de ellos son atenuadas con más fuerza y el medio ac-
+túa como un filtro, que solo deja pasar, a efectos prácticos, las del ancho de banda señalado.
+ • Cuanto más atenuadas estén las distintas armónicas, la señal tendrá una mayor dis-
+torsión, es decir una mayor deformación en su forma. Desde un punto de vista prác-
+tico, esta distorsión se traducirá en una mayor cantidad de errores de transmisión lo 
+que de alguna manera degradará a esta.
+Cuando una señal cuadrada, rectangular o en general cualquier señal digital pasa a través 
+En el ejemplo de la Fig. 2.31., se puede ver cómo la señal se deforma a medida que el ancho 
+Estos filtros tienen la característica de dejar pasar las frecuencias comprendidas dentro de 
+Si el ancho de banda fuese teóricamente infinito, es decir, 
+              f1 = 0 y f2 = ∞ (2-162)
+entonces todas las armónicas de la señal pasarían sin atenuación y, por lo tanto, la señal 
+El concepto de capacidad de un canal en un sistema de telecomunicaciones está vin-
+Al ser el ancho de banda un intervalo de frecuencias, su unidad de medida será . Si 
+bps o sus múltiplos (Kbps, kilobit/seg; Mbps, Megabit/seg, etc.).
+En el caso de un canal de voz es común hablar de canales de 3,1 kHz y de 4 kHz; en el caso 
+64 Kbps y de 2,048 Mbps 
+1,544 Mbps).
+Luego, cuanto mayor es la cantidad de información que es necesario enviar, mayor deberá 
+En el caso de transmisión de imágenes, por los que manejan archivos en modo gráfico se 
+20 a 25 KB; sin embargo, si capturamos la 
+200 KB.
+En la Tabla 2-4 se indican algunos de los anchos de banda aproximados que necesitan las 
+La importancia del ancho de banda se podrá ver en los distintos capítulos de este texto, 
+
+===== PÁGINA PDF 137 =====
+2.7 Ancho de banda
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+111
+1 0 0
+Señal Ddigital
+transmitida
+2000 bits/seg
+Δf = 300 Hz
+Donde Δf es el ancho de banda del canal de comunicaciones
+Δf = 900 Hz
+Δf = 4000 Hz
+Δf = infinito
+0 0 10 0
+Donde
+ •
+del ancho de banda, es decir entre sus límites, sufrirán atenuaciones de hasta 3 dB.
+ •
+ • Cuanto más atenuadas estén las distintas armónicas, la señal tendrá una mayor dis-
+torsión, es decir una mayor deformación en su forma. Desde un punto de vista prác-
+tico, esta distorsión se traducirá en una mayor cantidad de errores de transmisión lo 
+que de alguna manera degradará a esta.
+Cuando una señal cuadrada, rectangular o en general cualquier señal digital pasa a través 
+de un soporte físico, siempre sufre una deformación producida por la limitación que origina lo 
+que se denominaremos el ancho de banda pasante del medio. 
+En el ejemplo de la Fig. 2.31., se puede ver cómo la señal se deforma a medida que el ancho 
+de banda disminuye. Podremos decir entonces que el medio de comunicaciones se comporta 
+como un filtro pasa banda.
+Estos filtros tienen la característica de dejar pasar las frecuencias comprendidas dentro de 
+una banda, cuyos límites están dados, precisamente, por los valores más alto y más bajo de los 
+indicados arriba.
+Si el ancho de banda fuese teóricamente infinito, es decir, 
+              f1 = 0 y f2 = ∞ (2-162)
+entonces todas las armónicas de la señal pasarían sin atenuación y, por lo tanto, la señal 
+no sufriría deformación alguna. Sin embargo, en la práctica esto no sucede y a medida que el 
+ancho de banda se reduce, mayor es la deformación de la señal.
+2.7.3 Capacidad de un canal de comunicaciones
+El concepto de capacidad de un canal en un sistema de telecomunicaciones está vin-
+culado con la cantidad de información generada en la fuente; el sistema puede transmitir 
+hacia el sumidero por unidad de tiempo con una tasa de errores razonable. Precisamente, 
+la capacidad de un canal de un sistema de telecomunicaciones está dada por el ancho de 
+banda disponible.
+Al ser el ancho de banda un intervalo de frecuencias, su unidad de medida será
+1
+seg . Si 
+los canales son analógicos se mide en hertz o sus múltiplos (kHz, kilohertz; MHz, Megahertz; 
+etc.), y cuando son digitales, en bps o sus múltiplos (Kbps, kilobit/seg; Mbps, Megabit/seg, etc.).
+En el caso de un canal de voz es común hablar de canales de 3,1 kHz y de 4 kHz; en el caso 
+de canales digitales de datos, son habituales los anchos de banda de 64 Kbps y de 2,048 Mbps 
+(en los Estados Unidos este valor no se usa y en su lugar es común el de 1,544 Mbps).
+Luego, cuanto mayor es la cantidad de información que es necesario enviar, mayor deberá 
+ser el ancho de banda requerido para transmitirla.
+En el caso de transmisión de imágenes, por los que manejan archivos en modo gráfico se 
+sabe que a igual contenido de información mayor es el tamaño del archivo. Por ejemplo, si to-
+mamos una página de texto y la copiamos mediante un procesador de textos común, veremos 
+que el tamaño del archivo generado no supera los 20 a 25 KB; sin embargo, si capturamos la 
+imagen de esa misma página mediante un escáner, el tamaño del archivo gráfico generado 
+será del orden de los 200 KB.
+En la Tabla 2-4 se indican algunos de los anchos de banda aproximados que necesitan las 
+aplicaciones más comunes.
+La importancia del ancho de banda se podrá ver en los distintos capítulos de este texto, 
+pero, a modo de resumen, podemos decir que las tarifas que se deben pagar para transmitir 
+señales de voz, datos, textos e imágenes por los distintos medios de comunicaciones son, en 
+
+===== PÁGINA PDF 138 =====
+2 - Transmisión de señales112
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+la mayoría de los casos, proporcionales al ancho de banda que es necesario usar para que la 
+información llegue con la fidelidad y calidad adecuadas.
+Tabla 2-4 Ancho de banda requerido por distintos servicios de comunicaciones
+nº Formas de información Ancho de banda [kHz]
+1 Canal telefónico de voz (par de abonado) 3,1
+2 Canal de voz analógico por onda portadora 4
+3 Música de alta fidelidad (HI FI) 16
+4 Disco compacto (CD) 22
+5 Canal de voz digital 64/65
+6 Canal de radio FM 200
+7 Canal de televisión (CATV) 6
+8 Teleconferencia (a través de redes digitales ISDN) 128/256
+2.7.4 Curva de ganancia de un amplificador
+Cuando se estudia el ancho de banda resulta muy conveniente relacionar siempre este 
+concepto con la curva de ganancia de un amplificador de audiofrecuencia.
+La ganancia de estos amplificadores en función de la frecuencia nunca es absolutamente 
+constante, sino que presenta diferentes valores según el intervalo que se considere. Este hecho 
+siempre se trata de corregir, pues una mayor ganancia, por ejemplo, en las frecuencias bajas, 
+restará calidad a la señal porque la forma de onda en la salida será diferente de la que tenía 
+cuando fue generada.
+Precisamente, un amplificador es de mayor calidad que otro cuando, a igual ancho de ban-
+da, la curva de respuesta en frecuencia tiene características más planas. La Fig. 2.32. muestra 
+la curva típica de ganancia de un amplificador en función de la frecuencia, que recibe el nom-
+bre particular de respuesta en frecuencia.
+3 (db)
+Puntos de Potencia
+de mitad
+G/2
+G
+0
+f
+(Hertz)
+Ancho de banda
+ 
+f1 f2Δf = f2  –  f1
+Fig. 2.32. Cueva	de	ganancia	de	un	amplificador.
+De lo expuesto se deduce que carece de sentido indicar la magnitud de la ganancia de un 
+amplificador, a menos que se señale simultáneamente la frecuencia a la que fue medida.
+Las frecuencias a las cuales la ganancia de potencia de un amplificador cae al 50% del valor 
+f0, se las conoce con el nombre de frecuencias de corte 
+F2, e inferior F1, y el intervalo ΔF = [F2 – F1] es el ancho de banda del amplificador.
+Las frecuencias F2 y F1 constituyen, precisamente, los límites superior e inferior del ancho 
+, para que sea de una calidad aceptable.
+Se denominan señales en banda base a: aquellas señales que, generadas por una fuente de 
+ 
+Estas señales se pueden codificar de distintas formas, de allí el nacimiento de los deno-
+Se dice que la señal es unipolar cuando el valor que representa a un determinado dígito binario, 
+Dependiendo de la polaridad, se tendrán señales unipolares positivas o negativas. Esta con-
+1 0
++V
+-V
+0 1 0 1 1 0 0 1 0 1 t
+1 0
+0 1 0 1 1 0 0 1 0 1 t
+SEÑAL UNIPOLAR POSITIVA
+SEÑAL UNIPOLAR NEGATIVA
+
+===== PÁGINA PDF 139 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+113
+información llegue con la fidelidad y calidad adecuadas.
+Tabla 2-4 Ancho de banda requerido por distintos servicios de comunicaciones
+nº Formas de información Ancho de banda [kHz]
+1 Canal telefónico de voz (par de abonado) 3,1
+2 Canal de voz analógico por onda portadora 4
+3 Música de alta fidelidad (HI FI) 16
+4 Disco compacto (CD) 22
+5 Canal de voz digital 64/65
+6 Canal de radio FM 200
+7 Canal de televisión (CATV) 6
+8 Teleconferencia (a través de redes digitales ISDN) 128/256
+2.7.4 Curva de ganancia de un amplificador
+concepto con la curva de ganancia de un amplificador de audiofrecuencia.
+cuando fue generada.
+bre particular de respuesta en frecuencia.
+3 (db)
+Puntos de Potencia
+de mitad
+G/2
+G
+0
+f
+(Hertz)
+Ancho de banda
+ 
+f1 f2Δf = f2  –  f1
+Fig. 2.32. Cueva	de	ganancia	de	un	amplificador.
+amplificador, a menos que se señale simultáneamente la frecuencia a la que fue medida.
+Las frecuencias a las cuales la ganancia de potencia de un amplificador cae al 50% del valor 
+correspondiente al de la frecuencia f0, se las conoce con el nombre de frecuencias de corte 
+superior F2, e inferior F1, y el intervalo ΔF = [F2 – F1] es el ancho de banda del amplificador.
+Las frecuencias F2 y F1 constituyen, precisamente, los límites superior e inferior del ancho 
+de banda definido por el hardware del equipo con que se haya efectuado la medida. En el caso 
+de un equipo de música de alta fidelidad (HI-FI) el ancho de banda debería ser del orden de los 
+16 kHz, para que sea de una calidad aceptable.
+2.8 Señales en banda base
+2.8.1 Definición
+Se denominan señales en banda base a: aquellas señales que, generadas por una fuente de 
+información, no sufren ningún proceso de modulación o tratamiento a su salida. 
+Estas señales se pueden codificar de distintas formas, de allí el nacimiento de los deno-
+minados códigos en banda base o códigos de línea. Existen diferentes tipos de códigos en 
+banda base, los que son utilizados según las características de la transmisión que se quiera 
+realizar.
+2.8.2 Señales unipolares, polares y bipolares
+2.8.2.1 Señal unipolar
+Se dice que la señal es unipolar cuando el valor que representa a un determinado dígito binario, 
+sea este un cero o un uno, toma siempre la misma polaridad, positiva o negativa, mientras que el 
+otro dígito toma el valor cero. La forma típica de esta señal se puede observar en la Fig. 2.33. 
+Dependiendo de la polaridad, se tendrán señales unipolares positivas o negativas. Esta con-
+dición de línea es equivalente a representar un 1 o un 0 por encendido o el apagado de una luz.
+1 0
++V
+-V
+0 1 0 1 1 0 0 1 0 1 t
+1 0
+0 1 0 1 1 0 0 1 0 1 t
+SEÑAL UNIPOLAR POSITIVA
+SEÑAL UNIPOLAR NEGATIVA
+Fig. 2.33. Señales	unipolares	positiva	y	negativa.
+
+===== PÁGINA PDF 140 =====
+2 - Transmisión de señales114
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.8.2.2 Señal polar
+Se dice que la señal es polar cuando los valores que representan a los dígitos binarios 1 
+y 0 se originan como consecuencia de la conmutación de la línea entre un valor positivo de 
+tensión V1 y el valor negativo de tensión –V1..
+La forma típica de esta señal se puede observar en la Fig. 2.34.
+De esta forma, un valor binario cualquiera tendrá siempre una polaridad determinada, 
+mientras que el otro binario presentará polaridad inversa. La señal en la línea nunca toma el 
+valor cero.
+0 1
++V
+-V
+0 0 0 1 1 0 1
+Fig. 2.34. Señal	polar.
+2.8.2.3 Señal bipolar
+Se dice que la señal es bipolar en los casos en que un determinado dígito (cero o uno) 
+va tomando valores alternados de polaridad, mientras que el restante dígito siempre adopta 
+el valor cero.
+En el ejemplo de la Fig. 2.35. se puede observar una señal digital, en la que los unos toman 
+en forma alternada los valores de polaridad positivos y negativos, mientras que los ceros no 
+poseen polaridad alguna.
+0 1
++V
+-V
+0 0 0 1 1 0 1
+Fig. 2.35. Señal	bipolar.
+El uso de transmisiones en banda base suele ser frecuente por el bajo costo de los equipos 
+Cuando se usa este tipo de transmisión, los equipos de terminación del circuito de datos ETCD, 
+Estos equipos, de muy sencilla construcción, como ya se expresó, y de muy bajo costo 
+La utilización de códigos de línea como los que analizaremos a continuación tienen como 
+ • Eliminar o disminuir la componente continua de la señal.
+ • Transmitir una señal de sincronismo desde el transmisor hacia el receptor.
+ • Permitir detectar la presencia de señal en la línea.
+Cuando, en particular, se desea enviar señales en la modalidad de banda base la señal es 
+Los transformadores y de amplificadores, si fuese ese el caso, no dejarían pasar esta com-
+En varios tipos de redes, como por ejemplo las denominadas redes de área local - Local 
+Por lo tanto, es necesario que la señal en banda base sea codificada para adaptarla a la 
+La señal en banda base más simple para la transmisión de la información del usuario es la 
+ (non return to zero), que reconoce la siguiente regla:
+Se dice que la señal no retorna a cero cuando durante todo el ancho de pulso la tensión 
+La transmisión de un (uno) 1 corresponde a la emisión de un pulso. La transmisión de un 
+Se dice que es unipolar, tal como se indicó en el punto 2.8.1.1, porque el 1 toma siempre 
+Una señal eléctrica ON/OFF, correspondiente a una secuencia aleatoria de bits, tiene un 
+
+===== PÁGINA PDF 141 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+115
+2.8.2.2 Señal polar
+Se dice que la señal es polar cuando los valores que representan a los dígitos binarios 
+y 0
+tensión V1 y el valor negativo de tensión –V1..
+La forma típica de esta señal se puede observar en la Fig. 2.34.
+valor cero.
+0 1
++V
+-V
+0 0 0 1 1 0 1
+Fig. 2.34. Señal	polar.
+2.8.2.3 Señal bipolar
+el valor cero.
+poseen polaridad alguna.
+0 1
++V
+-V
+0 0 0 1 1 0 1
+Fig. 2.35. Señal	bipolar.
+2.8.3 Transmisión en banda base
+2.8.3.1 Características generales de las transmisiones en banda base
+El uso de transmisiones en banda base suele ser frecuente por el bajo costo de los equipos 
+usados, además de permitir extender el alcance de las interfaces digitales.
+Cuando se usa este tipo de transmisión, los equipos de terminación del circuito de datos ETCD, 
+que por costumbre se los denomina igualmente módem, no realizan la función de modulación 
+sino la de codificación mediante los denominados códigos de línea.
+Estos equipos, de muy sencilla construcción, como ya se expresó, y de muy bajo costo 
+reciben el nombre comercial de módem banda base.
+La utilización de códigos de línea como los que analizaremos a continuación tienen como 
+misión fundamental solucionar los siguientes aspectos técnicos inherentes a las transmisio-
+nes en banda base:
+ • Eliminar o disminuir la componente continua de la señal.
+ • Transmitir una señal de sincronismo desde el transmisor hacia el receptor.
+ • Permitir detectar la presencia de señal en la línea.
+Cuando, en particular, se desea enviar señales en la modalidad de banda base la señal es 
+previamente codificada de forma de reducir a un mínimo la componente de continua, que todo 
+pulso rectangular asimétrico puede presentar.
+Los transformadores y de amplificadores, si fuese ese el caso, no dejarían pasar esta com-
+ponente, lo que provocará una fuerte deformación de la señal, hecho que originaría un aumen-
+to de la tasa de error.
+En varios tipos de redes, como por ejemplo las denominadas redes de área local - Local 
+Area Network, se transmite fundamentalmente en banda base debido a que los medios de 
+comunicación empleados no pertenecen a redes públicas, como sería el caso si se utilizase la 
+red telefónica conmutada (RTC).
+Por lo tanto, es necesario que la señal en banda base sea codificada para adaptarla a la 
+línea de transmisión y solucionar los problemas precedentemente indicados, de allí surge la 
+existencia de los diferentes códigos de línea o códigos de banda base.
+2.8.3.2 Características particulares de las transmisiones en banda base
+La señal en banda base más simple para la transmisión de la información del usuario es la 
+unipolar NRZ (non return to zero), que reconoce la siguiente regla:
+Se dice que la señal no retorna a cero cuando durante todo el ancho de pulso la tensión 
+permanece constante y no toma el valor cero. 
+La transmisión de un (uno) 1 corresponde a la emisión de un pulso. La transmisión de un 
+(cero) 0 corresponde a la no emisión de un pulso.
+Se dice que es unipolar, tal como se indicó en el punto 2.8.1.1, porque el 1 toma siempre 
+la misma polaridad (positiva o negativa), mientras que el 0 no tiene polaridad. A este tipo de 
+señal se la conoce también como señal ON/OFF.
+Una señal eléctrica ON/OFF, correspondiente a una secuencia aleatoria de bits, tiene un 
+comportamiento en el dominio de la frecuencia, que depende del formato del pulso trasmitido, 
+el ancho de pulso y la amplitud, así como de la probabilidad de ocurrencia de los unos y ceros 
+en la secuencia. Esta señal se destaca por su valor alto de componente continua.
+Cuando	 la	 señal	 se	 analiza	 me-
+diante	 la	 serie	 de	 Fourier,	 la	
+componente	de	continua	resulta	
+el	termino	a0.
+
+
+===== PÁGINA PDF 142 =====
+2 - Transmisión de señales116
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+En caso de pulsos rectangulares con amplitud normalizada y ocurrencia equiprobable de 
+unos y ceros, la distribución de potencia de la señal en el dominio de la frecuencia da lugar al 
+espectro de amplitud, que se puede observar en la Fig. 2.36.
+El espectro de potencia de la señal ON/OFF se caracteriza por una componente de fre-
+cuencia cero o corriente continua (en inglés, DC), y por la suma de los infinitos términos de la 
+serie denominados armónicas, que se extienden por todo el rango de frecuencias, tal como se 
+detalla en el punto 2.4.5.3 de este capitulo.
+Densidad
+de potencia
+CC
+ESPECTRO DE AMPLITUD DE UN TREN DE PULSOS DE ANCHO
+2π/τ 4π/τ ω
+Fig. 2.36. Espectro	de	amplitud	de	un	tren	de	pulsos.
+La mayor parte de la potencia de la señal se halla distribuida entre los valores de frecuen-
+cia cero y 2π/τ, denominada frecuencia de señalización. Es necesario señalar la importancia 
+de las frecuencias bajas, en especial las cercanas a cero, pues comprometen de una manera 
+importante la transmisión de señales digitales en banda base.
+La característica de tener un nivel de componente continua importante y componentes 
+espectrales de baja frecuencia significativas, ocasionan que sea incompatible la transmisión 
+de estas señales en líneas donde exista acoplamiento a través de transformadores, dado que 
+estos no permiten el pasaje de corriente continua.
+Tampoco se puede efectuar la telealimentación mediante corriente continua a través de 
+circuitos como interfaces, repetidores, módems, etc., a través del mismo medio que transmite 
+las señales de datos. Esto se debe a que la deformación de la señal sería muy importante.
+Por otro lado, la presencia de los transformadores es inevitable para brindar, entre otras 
+aplicaciones, las de acoplamiento, proporcionar aislación eléctrica entre transceptores y tierra, 
+o permitir la conversión de valores diferentes de tensión alterna.
+Otro inconveniente adicional relativo a las señales ON/OFF se presenta cuando se tiene 
+que enviar señal de reloj, o de sincronismo, junto con la de datos. En otras palabras, el receptor 
+se sincroniza a través de las transiciones de los pulsos recibidos. Este requerimiento es muy 
+importante para redes locales, dado que la señal ON/OFF no posee la potencia suficiente a la 
+frecuencia de señalización y en consecuencia impide recuperar la señal de reloj.
+Por otro lado, si en la transmisión se incluye una larga secuencia de ceros o de unos, la 
+señal en la línea permanece constante durante todo el tiempo que dura esa secuencia, por lo 
+Mediante los métodos existentes de codificación de señales en banda base se pueden su-
+Cuando se opta por un medio físico de comunicaciones, por ejemplo un par de cables de 
+Δf, que permite transmitir una señal dentro de los límites de atenuación ya señalados   
+–3 dB. En estos casos, cuando hay importantes componentes de frecuen-
+Cuando la señal ON/OFF se analiza en el dominio del tiempo, se observa que no tiene 
+Los métodos de codificación en banda base deben considerarse como una disposición 
+Actuando sobre la forma de la señal eléctrica que representa los bits, se consigue alterar 
+Al contrario de lo que ocurre con el proceso de modulación, en el cual se realiza un desplazamien-
+Por otra parte, aparece un fenómeno denominado interferencia intersímbolos (ISI), que consiste 
+Un medio de particular interés siempre lo constituyen los canales telefónicos. Estos tienen 
+300 a 3.400 Hz. En este tipo de canales es imposible 
+1
+= ancho de pulso Interferencia intersímbolos
+1 10 1 1
+t
+τ τ τ τ τ τ
+τ
+
+===== PÁGINA PDF 143 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+117
+espectro de amplitud, que se puede observar en la Fig. 2.36.
+detalla en el punto 2.4.5.3 de este capitulo.
+Densidad
+de potencia
+CC
+ESPECTRO DE AMPLITUD DE UN TREN DE PULSOS DE ANCHO
+2π/τ 4π/τ ω
+Fig. 2.36. Espectro	de	amplitud	de	un	tren	de	pulsos.
+cia cero y 2π/τ
+importante la transmisión de señales digitales en banda base.
+estos no permiten el pasaje de corriente continua.
+las señales de datos. Esto se debe a que la deformación de la señal sería muy importante.
+o permitir la conversión de valores diferentes de tensión alterna.
+frecuencia de señalización y en consecuencia impide recuperar la señal de reloj.
+cual las transiciones de la tensión o corriente correspondiente a cada pulso no se detectan en 
+el extremo receptor. Esto origina que en el receptor no se pueda detectar la señal de reloj, es 
+decir que se pierde el sincronismo en la transmisión.
+Mediante los métodos existentes de codificación de señales en banda base se pueden su-
+perar estos inconvenientes. Además, con ellos se logran espectros de frecuencia mejor adap-
+tados a las características de los medios de transmisión. La Fig. 2.36. describe el espectro de 
+amplitud de una señal banda base binaria sin codificar. Observando la figura, surge que el 
+espectro contiene frecuencias que se extienden desde cero hasta valores muy altos.
+Cuando se opta por un medio físico de comunicaciones, por ejemplo un par de cables de 
+cobre, cable coaxial, fibra óptica, etc., una de sus características fundamentales es el ancho de 
+banda Δf, que permite transmitir una señal dentro de los límites de atenuación ya señalados   
+(ver 2.4, Fig. 2.25.) de –3 dB. En estos casos, cuando hay importantes componentes de frecuen-
+cias altas, estas son fuertemente atenuadas y, por lo tanto, las señales quedan deformadas.
+Cuando la señal ON/OFF se analiza en el dominio del tiempo, se observa que no tiene 
+regularmente la cantidad suficiente de transiciones como para excitar un circuito recuperador 
+de la señal de reloj.
+Los métodos de codificación en banda base deben considerarse como una disposición 
+diferente de la señal ON/OFF para poder adaptarla a las condiciones de la línea de transmisión.
+Actuando sobre la forma de la señal eléctrica que representa los bits, se consigue alterar 
+convenientemente el espectro de potencia de la señal transmitida.
+Al contrario de lo que ocurre con el proceso de modulación, en el cual se realiza un desplazamien-
+to del espectro de frecuencias de la banda base hacia frecuencias superiores, como se indicará con 
+mayor detalle en el capítulo 4, en la transmisión en banda base se preserva el espectro de frecuencia 
+original y se utiliza una codificación especial para adaptar la señal a la línea de transmisión.
+Por otra parte, aparece un fenómeno denominado interferencia intersímbolos (ISI), que consiste 
+en la superposición total o parcial de un símbolo o pulso y el siguiente, lo que ocasiona errores en el 
+tratamiento de la señal. La Fig. 2.37. muestra un ejemplo de interferencia intersímbolos.
+Un medio de particular interés siempre lo constituyen los canales telefónicos. Estos tienen 
+un ancho de banda comprendido entre 300 a 3.400 Hz. En este tipo de canales es imposible 
+transmitir señales en banda base, por las razones expuestas, excepto que se trate de pares de 
+alambre sin cargar, que es un tipo especial de vínculos que suelen existir en las redes telefóni-
+cas para permitir los servicios de banda ancha sobre pares telefónicos.
+1
+= ancho de pulso Interferencia intersímbolos
+1 10 1 1
+t
+τ τ τ τ τ τ
+τ
+Fig. 2.37. Interferencia	intersímbolos.
+
+===== PÁGINA PDF 144 =====
+2 - Transmisión de señales118
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.8.4 Clasificación de las señales en banda base
+Las señales en banda base pueden clasificarse de diferentes formas:
+2.8.4.1 De acuerdo con el ancho de pulso
+ • Cuando los bits están representados por pulsos que ocupan la totalidad del intervalo 
+significativo ancho de pulso, tenemos la familia denominada NRZ (no retorno a cero). 
+ • Por otra parte, se entiende como intervalo significativo de una señal, al tiempo exis-
+tente entre dos instantes significativos de ella en la línea, tal como se puede apreciar 
+en la Fig. 2.38.
+ • Cuando los bits se representan por pulsos que ocupan una parte, en general la mitad 
+del intervalo significativo, tenemos las señales denominadas RZ (retorno a cero).
+Un ejemplo de este tipo se puede apreciar en la Fig. 2.39.
+0
+Amplitud (volts)
+1
++
+0
+0 1 0 0 1 1 0
+tiempo
+(seg)
+LA SEÑAL PERMANECE EN ESTADO ACTIVO (“+A” VOLTS) O EN ESTADO PASIVO (“0” VOLTS) 
+DURANTE TODO EL ANCHO DE PULSO τ
+τ
+Fig. 2.38. Señal	NRZ.
+2.8.4.2 Según la polaridad
+Como se explicó en el punto 2.8.1, las señales digitales pueden tomar diferentes valores de 
+polaridad, por lo que se las puede clasificar en:
+ • Unipolares
+Se denomina codificación unipolar a aquellos códigos cuyas señales tienen dos nive-
+les, uno de los cuales es cero. 
+Se pueden presentar las combinaciones que se muestran en la Tabla 2-5,:
+Tabla 2-5: Combinaciones en señales unipolares
+0 y Nivel +                     (Unipolar positiva) 
+ 0 y Nivel –                     (Unipolar negativa)
+ • Polar.
+Son códigos, cuyas señales tienen dos niveles de diferente polaridad, que son: [+] y [–].
+Se denomina codificación polar a aquella que utiliza el nivel cero para representar el 
+cero [0] lógico y polaridad alternativa [+] y [–], al uno [1] lógico.
+ • Bipolar.
+Se denomina codificación bipolar a aquellos códigos cuyas señales tienen tres niveles 
+de amplitud: [+], [0] y [–]. 
+En la Fig. 2.40. se ejemplifican los tres casos posibles, según la polaridad, y aplicados 
+a la misma secuencia binaria.
+0
+UNIPOLAR + con retorno a cero (Rz)
+Amplitud (volts)
+1 1 1 1
+A
+0
+0 0 0 0
+tiempo
+(seg)
+LA SEÑAL RETORNA A CERO ANTES QUE FINALICE  EL ANCHO DE PULSO τ
+τ
+Fig. 2.39. Señal	RZ.
+Las señales en banda base se codifican mediante la representación de los símbolos 
+Mediante el empleo de las señales estudiadas en el punto anterior se construyen los dife-
+En la Fig. 2.40., se detallan los códigos más sencillos sin retorno a cero (NRZ).
+– Códigos de banda base:
+ • Unipolar sin retorno a cero (NRZ).
+ • Unipolar con retorno a cero (RZ).
+ • Polar sin retorno a cero (NRZ).
+ • Polar con retorno a cero (RZ).
+ • Bipolar con retorno a cero (RZ).
+ • Bipolar sin retorno a cero (NRZ).
+ • Codificación diferencial.
+ • Manchester.
+ • Manchester Diferencial.
+ • MILLER.
+ • HDB - 3.
+ • Código 4B3T (4 binario - 3 ternario).
+
+===== PÁGINA PDF 145 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+119
+2.8.4 Clasificación de las señales en banda base
+Las señales en banda base pueden clasificarse de diferentes formas:
+2.8.4.1 De acuerdo con el ancho de pulso
+ •
+ •
+en la Fig. 2.38.
+ •
+del intervalo significativo, tenemos las señales denominadas RZ (retorno a cero).
+Un ejemplo de este tipo se puede apreciar en la Fig. 2.39.
+0
+Amplitud (volts)
+1
++
+0
+0 1 0 0 1 1 0
+tiempo
+(seg)
+LA SEÑAL PERMANECE EN ESTADO ACTIVO (“+A” VOLTS) O EN ESTADO PASIVO (“0” VOLTS) 
+DURANTE TODO EL ANCHO DE PULSO τ
+τ
+Fig. 2.38. Señal	NRZ.
+2.8.4.2 Según la polaridad
+polaridad, por lo que se las puede clasificar en:
+ • Unipolares
+les, uno de los cuales es cero. 
+Se pueden presentar las combinaciones que se muestran en la Tabla 2-5,:
+Tabla 2-5: Combinaciones en señales unipolares
+0 y Nivel +                     (Unipolar positiva) 
+ 0 y Nivel –                     (Unipolar negativa)
+ • Polar.
+Son códigos, cuyas señales tienen dos niveles de diferente polaridad, que son: [+] y 
+cero [0] lógico y polaridad alternativa [+] y [–], al uno [1] lógico.
+ • Bipolar.
+Se denomina codificación bipolar a aquellos códigos cuyas señales tienen tres niveles 
+de amplitud: [+], [0] y [–]. 
+En la Fig. 2.40. se ejemplifican los tres casos posibles, según la polaridad, y aplicados 
+a la misma secuencia binaria.
+0
+UNIPOLAR + con retorno a cero (Rz)
+Amplitud (volts)
+1 1 1 1
+A
+0
+0 0 0 0
+tiempo
+(seg)
+LA SEÑAL RETORNA A CERO ANTES QUE FINALICE  EL ANCHO DE PULSO τ
+τ
+Fig. 2.39. Señal	RZ.
+2.8.5 Códigos usados para señales en banda base
+2.8.5.1 Conceptos generales
+Las señales en banda base se codifican mediante la representación de los símbolos 
+digitales, ceros o unos, en señales eléctricas equivalentes que siguen reglas prácticas 
+determinadas. 
+Mediante el empleo de las señales estudiadas en el punto anterior se construyen los dife-
+rentes códigos usados para señales en banda base. 
+En la Fig. 2.40., se detallan los códigos más sencillos sin retorno a cero (NRZ).
+– Códigos de banda base:
+ • Unipolar sin retorno a cero (NRZ).
+ • Unipolar con retorno a cero (RZ).
+ • Polar sin retorno a cero (NRZ).
+ • Polar con retorno a cero (RZ).
+ • Bipolar con retorno a cero (RZ).
+ • Bipolar sin retorno a cero (NRZ).
+ • Codificación diferencial.
+ • Manchester.
+ • Manchester Diferencial.
+ • MILLER.
+ • HDB - 3.
+ • Código 4B3T (4 binario - 3 ternario).
+
+===== PÁGINA PDF 146 =====
+2 - Transmisión de señales120
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.8.5.2 Sin retorno a cero (NRZ)
+En la Fig. 2.41., se puede observar una señal unipolar en banda base del tipo más simple 
+usado en la práctica. 
+Un pulso de corriente continua y un estado de corriente nulo determinan el estado de cada 
+bit. Se debe efectuar un muestreo de la señal a efectos de determinar el valor de cada bit de in-
+formación, observando la presencia o la ausencia de corriente, dado que dos bits consecutivos 
+del mismo valor no originan transición alguna.
+f1(t)
+1
+0
+0
+1
+0
+0
+1
+1
+1
+1
+0
+0
+1
+0
+0
+A
++ A
++ A
+- A
+- A
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+1
+0
+1
+1
+t
+t
+t
+SEÑAL UNIPOLAR NRZ
+SEÑAL POLAR NRZ
+SEÑAL BIPOLAR NRZ
+Fig. 2.40. Señales	unipolares,	polares	y	bipolares.
+Para la transmisión de un 1, corresponde una condición de corriente, que se suele deno-
+minar nivel de marca, dado que este tipo de codificación tiene su origen en el equipamiento 
+telegráfico.
+Para la transmisión de un 0, corresponde una condición de no corriente, que también se 
+suele denominar nivel de espacio.
+Hay que recordar que se denomina sin retorno a cero, dado que durante todo el intervalo 
+significativo (ancho de pulso) la señal de línea permanece en un estado determinado de marca 
+o espacio.
+En la Fig. 2.42., se puede observar una señal polar sin retorno a cero. Esta señal está grafi-
+Una corriente continua positiva y otra negativa determinan el estado de cada bit, durante 
+Aquí también se debe usar un muestreo para conocer la presencia de cada bit de infor-
+El umbral de decisión es cero.
+
+===== PÁGINA PDF 147 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+121
+2.8.5.2 Sin retorno a cero (NRZ)
+usado en la práctica. 
+del mismo valor no originan transición alguna.
+f1(t)
+1
+0
+0
+1
+0
+0
+1
+1
+1
+1
+0
+0
+1
+0
+0
+A
++ A
++ A
+- A
+- A
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+1
+0
+1
+1
+t
+t
+t
+SEÑAL UNIPOLAR NRZ
+SEÑAL POLAR NRZ
+SEÑAL BIPOLAR NRZ
+Fig. 2.40. Señales	unipolares,	polares	y	bipolares.
+Para la transmisión de un 1,
+telegráfico.
+Para la transmisión de un 0
+suele denominar nivel de espacio.
+o espacio.
+2.8.5.3 Polar sin retorno a cero (NRZ)
+En la Fig. 2.42., se puede observar una señal polar sin retorno a cero. Esta señal está grafi-
+cada asignando polaridad positiva a los unos y negativa a los ceros.
+1
+0
+0 0 1 0 1 0 1 1 0
+t
+TREN DE PULSOS DE MUESTREO PARA DETERMINAR EL VALOR DE CADA BIT DE INFORMACIÓN
++A
+Fig. 2.41. Señal	unipolar	positiva	sin	retorno	a	cero	(NRZ).
+Una corriente continua positiva y otra negativa determinan el estado de cada bit, durante 
+todo el intervalo significativo. En este tipo de señales, si bien se pierde el sincronismo, se tiene 
+la ventaja de que se requiere menor ancho de banda, dado que los pulsos son más anchos que 
+los correspondientes a señales polares con retorno a cero.
+1
+0
+0 0 1 0 1 0 1 1 0
+t
+TREN DE PULSOS DE MUESTREO PARA DETERMINAR EL VALOR DE CADA BIT DE INFORMACIÓN
++A
+–A
+Fig. 2.42. Señal	polar	sin	retorno	a	cero	(NRZ).
+Aquí también se debe usar un muestreo para conocer la presencia de cada bit de infor-
+mación observando la polaridad de la corriente, dado que no hay ninguna transición entre dos 
+bits consecutivos iguales.
+El umbral de decisión es cero.
+
+===== PÁGINA PDF 148 =====
+2 - Transmisión de señales122
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.8.5.4 Polar con retorno a cero (RZ)
+Existirá una corriente positiva breve para los bits que lleven un 1 de información y poste-
+riormente la corriente retornará a cero, durante el tiempo que corresponde a ese bit.
+En forma idéntica ocurrirá cuando aparezca un bit que lleve un 0, solo que la corriente será 
+negativa, según se puede observar en la Fig. 2.43.
+Este tipo de señales se denominan autosincronizantes, debido a que en el receptor, la base 
+de tiempo, también denominada reloj de recepción, queda unívocamente sincronizada por la 
+cadencia de los pulsos, positivos y negativos, que arriban desde el transmisor.
+1
+0
+0 0 1 0 1 0 1 1 0
+t (seg)
+SEÑAL AUTOSINCRONIZANTE
+τ
+Fig. 2.43. Polar	con	retorno	a	cero	señal	autosincronizante.
+2.8.5.5 Bipolar con retorno a cero
+En este tipo de señales bipolares se utiliza la bipolaridad solamente en forma alternada 
+y para cuando se transmiten unos. Asimismo, se disminuye el ancho de los pulsos debido al 
+retorno a cero de la señal antes de finalizado el intervalo significativo.
+En una señal bipolar el retorno a cero solamente disminuye la energía transmitida, al ser los 
+pulsos más angostos, pero no aporta nada a la recuperación de la señal de reloj. La transmisión 
+de 0 corresponde a señales de no corriente, según se puede observar en la Fig. 2.44.
+1
+0
+0 0 1 0 1 0 1 1 0
+t
+SEÑAL AUTOSINCRONIZANTE
+τ
+Fig. 2.44. Bipolar	con	retorno	a	cero	(RZ).
+Este tipo de código, también denominado Código AMI (Alternative Mark Inversion, Inver-
+Por otro lado, desde el punto de vista del sincronismo tiene iguales características que los 
+1
+0
+0 0 1 0 1 0 1 1 0
+t
+Fig. 2.45. Bipolar	sin	retorno	a	cero.
+En este tipo de codificación, tienen lugar dos etapas:
+ • La primera para formar una señal diferencial a ser transmitida a través del medio físico.
+ • La segunda, posterior a la primera, ocurre en el receptor para volver a armar la señal, 
+que es recuperada de la anterior, según se puede observar en la Fig. 2.46.
+El procedimiento es el siguiente:
+ • Una señal original polar, del tipo NRZ, debe ser muestreada.
+ • En el instante del muestreo en que se detecta un 1, se produce un cambio de estado 
+o transición.
+ • Cuando lo que se detecta es un 0, significa una no transición.
+ • Para recuperar la señal original se debe efectuar un nuevo muestreo de la onda recibi-
+da, comparándose la polaridad de muestras adyacentes. 
+ • Si ha habido una transición, se está en presencia de un 1; caso contrario, correspon-
+derá a un 0.
+ • Por ejemplo, entre los estados t3 y t4, no existe transición alguna, en consecuencia, 
+corresponderá recibir un 0.
+Como se observa en la Fig. 2.47., el bit uno se representa por una transición positiva en la 
+En la Fig. 2.48., se muestra la forma que tiene este código. 
+En este tipo de codificación no se utiliza la diferencia de valor de los niveles para repre-
+
+===== PÁGINA PDF 149 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+123
+2.8.5.4 Polar con retorno a cero (RZ)
+Existirá una corriente positiva breve para los bits que lleven un 1
+riormente la corriente retornará a cero, durante el tiempo que corresponde a ese bit.
+En forma idéntica ocurrirá cuando aparezca un bit que lleve un 0
+negativa, según se puede observar en la Fig. 2.43.
+cadencia de los pulsos, positivos y negativos, que arriban desde el transmisor.
+1
+0
+0 0 1 0 1 0 1 1 0
+t (seg)
+SEÑAL AUTOSINCRONIZANTE
+τ
+Fig. 2.43. Polar	con	retorno	a	cero	señal	autosincronizante.
+2.8.5.5 Bipolar con retorno a cero
+retorno a cero de la señal antes de finalizado el intervalo significativo.
+de 0 corresponde a señales de no corriente, según se puede observar en la Fig. 2.44.
+1
+0
+0 0 1 0 1 0 1 1 0
+t
+SEÑAL AUTOSINCRONIZANTE
+τ
+Fig. 2.44. Bipolar	con	retorno	a	cero	(RZ).
+2.8.5.6 Bipolar sin retorno a cero
+Este tipo de código, también denominado Código AMI (Alternative Mark Inversion, Inver-
+sión alternativa de marcas), presenta la ventaja de utilizar pulsos de mayor duración que los 
+bipolares con retorno a cero, en consecuencia, el requerimiento de ancho de banda es menor.
+Por otro lado, desde el punto de vista del sincronismo tiene iguales características que los 
+anteriores, según se puede observar en la Fig. 2.45.
+1
+0
+0 0 1 0 1 0 1 1 0
+t
+Fig. 2.45. Bipolar	sin	retorno	a	cero.
+2.8.5.7 Codificación diferencial
+En este tipo de codificación, tienen lugar dos etapas:
+ • La primera para formar una señal diferencial a ser transmitida a través del medio físico.
+ • La segunda, posterior a la primera, ocurre en el receptor para volver a armar la señal, 
+que es recuperada de la anterior, según se puede observar en la Fig. 2.46.
+El procedimiento es el siguiente:
+ • Una señal original polar, del tipo NRZ, debe ser muestreada.
+ • En el instante del muestreo en que se detecta un 1, se produce un cambio de estado 
+o transición.
+ • Cuando lo que se detecta es un 0, significa una no transición.
+ • Para recuperar la señal original se debe efectuar un nuevo muestreo de la onda recibi-
+da, comparándose la polaridad de muestras adyacentes. 
+ • Si ha habido una transición, se está en presencia de un 1; caso contrario, correspon-
+derá a un 0.
+ • Por ejemplo, entre los estados t3 y t4, no existe transición alguna, en consecuencia, 
+corresponderá recibir un 0.
+2.8.5.8 Código Manchester
+Como se observa en la Fig. 2.47., el bit uno se representa por una transición positiva en la 
+mitad del intervalo significativo y un bit cero con una transición negativa en la misma ubicación.
+En la Fig. 2.48., se muestra la forma que tiene este código. 
+En este tipo de codificación no se utiliza la diferencia de valor de los niveles para repre-
+sentar los bits, sino que se emplean las fases positivas y negativas de los pulsos, denominadas 
+transiciones. Esta técnica posibilita una transición de por lo menos una por bit, simplifica no-
+tablemente el problema de la recuperación de la señal de reloj.
+
+===== PÁGINA PDF 150 =====
+2 - Transmisión de señales124
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+0
+0
+0
+0
+1
+1
+0
+0
+1
+1
+0
+0
+1
+1
+Señal original de información NRz
+Proceso de muestreo
+Muestreo para recuperar
+la señal original
+INTANTES DE MUESTREO
+SEÑAL DIFERENCIAL
+Señal recuperada en recepción
+τ1
+τ2
+τ2
+τ3
+τ3
+τ4
+τ4
+τ5
+τ5
+τ6
+τ6
+τ7
+τ7
+τ1
+Fig. 2.46. Método	de	codificación	de	una	señal	diferencial.
+REPRESENTA  UN “1”
+TRANSICIÓN POSITIVA
+TRANSICIÓN NEGATIVA
+REPRESENTA  UN “0”
+Fig. 2.47. Código	Manchester.	Representación	de	unos	y	ceros.
+0
++A
+- A
+- A
++A
+0 t
+t
+t
+1 0 1 1 0 1
+SEÑAL UNIPOLAR
+CÓDIGO MANMCHESTER NO DIFERENCIAL
+SEÑAL DE RELOJ
+Fig. 2.48. Código	Manchester.
+Por otro lado, tiene la ventaja de que se puede eliminar la componente continua de la 
+La implementación de este código con circuitos lógicos se muestra en la Fig. 2.49.
+Este código se caracteriza porque para la transmisión de un cero se efectúa una transición 
+En la Fig. 2.50., se detalla un ejemplo de este código. Se denomina bifase porque la señal 
+El Manchester tiene la ventaja de que no es necesario identificar la polaridad de la trans-
+Este código, cuya representación se indica en la Fig. 2.51., para la transición de un uno 
+
+===== PÁGINA PDF 151 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+125
+0
+0
+0
+0
+1
+1
+0
+0
+1
+1
+0
+0
+1
+1
+Señal original de información NRz
+Proceso de muestreo
+Muestreo para recuperar
+la señal original
+INTANTES DE MUESTREO
+SEÑAL DIFERENCIAL
+Señal recuperada en recepción
+τ1
+τ2
+τ2
+τ3
+τ3
+τ4
+τ4
+τ5
+τ5
+τ6
+τ6
+τ7
+τ7
+τ1
+Fig. 2.46. Método	de	codificación	de	una	señal	diferencial.
+REPRESENTA  UN “1”
+TRANSICIÓN POSITIVA
+TRANSICIÓN NEGATIVA
+REPRESENTA  UN “0”
+Fig. 2.47. Código	Manchester.	Representación	de	unos	y	ceros.
+0
++A
+- A
+- A
++A
+0 t
+t
+t
+1 0 1 1 0 1
+SEÑAL UNIPOLAR
+CÓDIGO MANMCHESTER NO DIFERENCIAL
+SEÑAL DE RELOJ
+Fig. 2.48. Código	Manchester.
+Por otro lado, tiene la ventaja de que se puede eliminar la componente continua de la 
+señal, si se toman valores de tensión positivo y negativo para representar los niveles de 
+la señal.
+La implementación de este código con circuitos lógicos se muestra en la Fig. 2.49.
+2.8.5.9 Código Manchester diferencial BIF ASE
+Este código se caracteriza porque para la transmisión de un cero se efectúa una transición 
+al comienzo del intervalo significativo y también en la mitad de dicho intervalo. Mientras que 
+para el envío de un uno, no se efectúa ninguna transición al comienzo del intervalo; pero si en 
+la mitad del mismo. 
+En la Fig. 2.50., se detalla un ejemplo de este código. Se denomina bifase porque la señal 
+en la línea toma valores siempre distintos de cero.
+El Manchester tiene la ventaja de que no es necesario identificar la polaridad de la trans-
+misión para cada intervalo significativo.
+2.8.5.10 Código MILLER
+Este código, cuya representación se indica en la Fig. 2.51., para la transición de un uno 
+emplea una transición en la mitad del intervalo significativo. 
+
+===== PÁGINA PDF 152 =====
+2 - Transmisión de señales126
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+CODIFICADOR  MANCHESTER
+B
+0
+0
+1
+1
+C
+0
+1
+1
+0
+A
+0
+1
+0
+1
+SEÑAL UNIPOLAR
+SEÑAL DE RELOJ B
+A
+C
+FUNCIÓN ``OR´´ EXCLUSIVA
+(XOR)
+SEÑAL ORIGINAL
+UNIPOLAR
+CODIFICADOR  MANCHESTER
+SEÑAL DE RELOJ
+SEÑAL DE RELOJ
+T = CIRCUITO DE RETARDO INTRODUCIDO DE VALOR IGUAL AL ANCHO DE PULSO
+SEÑAL ORIGINAL
+DE RELOJSEÑAL
+MANCHESTER
+T
+T
+X
+XX
+Fig. 2.49. Código	Manchester.	Implementación	con	circuitos	lógicos.
+Para el caso de un cero, existe una transición al final del intervalo si el bit siguiente es cero, 
+caso contrario no habrá transición alguna.
+El Código MILLER permite reducir considerablemente la contribución de las bajas fre-
+cuencias (y por lo tanto el problema que ello significa) y garantiza un número mínimo de tran-
+siciones de la señal en banda base como para recuperar la señal de reloj. 
+Por lo menos habrá una transición cada dos intervalos significativos.
+Respecto del Código Manchester presenta la ventaja de concentrar la potencia de la señal 
+en un ancho de banda mucho menor, con lo cual disminuye el requerimiento de ancho de 
+banda en el canal de transmisión.
+Asimismo, la implementación del codificador y decodificador de Miller, conocido también 
+como modulador por retardo de fase, resulta más sencillo que el de Manchester.
+0
++A
+- A
++A
+0 T
+t
+t
+1 0 1 1 0 1 0 1
+SEÑAL UNIPOLAR
+CÓDIGO MANCHESTER DIFERENCIAL
+SEÑAL DE RELOJ
+Fig. 2.50. Código	Manchester.	Diferencial	bifase.
+- A
++A
+1 0 1 1 0 1 0 1
+SEÑAL UNIPOLAR
+SEÑAL CÓDIGO DE MILLER
+Fig. 2.51. Código	Miller.	Diferencial	bifase.
+
+===== PÁGINA PDF 153 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+127
+CODIFICADOR  MANCHESTER
+B
+0
+0
+1
+1
+C
+0
+1
+1
+0
+A
+0
+1
+0
+1
+SEÑAL UNIPOLAR
+SEÑAL DE RELOJ B
+A
+C
+FUNCIÓN ``OR´´ EXCLUSIVA
+(XOR)
+SEÑAL ORIGINAL
+UNIPOLAR
+CODIFICADOR  MANCHESTER
+SEÑAL DE RELOJ
+SEÑAL DE RELOJ
+T = CIRCUITO DE RETARDO INTRODUCIDO DE VALOR IGUAL AL ANCHO DE PULSO
+SEÑAL ORIGINAL
+DE RELOJSEÑAL
+MANCHESTER
+T
+T
+X
+XX
+Fig. 2.49. Código	Manchester.	Implementación	con	circuitos	lógicos.
+caso contrario no habrá transición alguna.
+siciones de la señal en banda base como para recuperar la señal de reloj. 
+Por lo menos habrá una transición cada dos intervalos significativos.
+banda en el canal de transmisión.
+como modulador por retardo de fase, resulta más sencillo que el de Manchester.
+0
++A
+- A
++A
+0 T
+t
+t
+1 0 1 1 0 1 0 1
+SEÑAL UNIPOLAR
+CÓDIGO MANCHESTER DIFERENCIAL
+SEÑAL DE RELOJ
+Fig. 2.50. Código	Manchester.	Diferencial	bifase.
+- A
++A
+1 0 1 1 0 1 0 1
+SEÑAL UNIPOLAR
+SEÑAL CÓDIGO DE MILLER
+Fig. 2.51. Código	Miller.	Diferencial	bifase.
+
+===== PÁGINA PDF 154 =====
+2 - Transmisión de señales128
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.8.5.11 Código HDB-3
+El HDB-3 (High Density Binary, Binario de alta densidad) se basa en el denominado Código 
+AMI. Es un código bipolar sin retorno a cero, que, como se indicó en el punto 2.8.3.2, utiliza tres 
+niveles [+], [–] y [0] para representar la información binaria.
+El cero se representa siempre con polaridad cero, y el uno, con polaridad alternada [+] y [–]. 
+Este tipo de señal no posee componente de continua, ni bajas frecuencias, pero su in-
+conveniente es que cuando aparece una larga secuencia de ceros se pierde la posibilidad de 
+recuperar la señal de reloj.
+Es por ello que para limitar las largas secuencias de ceros se efectúan violaciones a la pola-
+ridad, tal como lo hace el Código HDB-3, que permite un máximo de 3 bits ceros consecutivos, 
+e inserta como cuarto bit un uno denominado bit de violación.
+Este código se emplea especialmente en transmisiones en las que se utiliza cable de cobre, 
+dado que permite disminuir el corrimiento de fase de la señal digital, fenómeno que se produce 
+en los procesos de regeneración que realizan los repetidores regenerativos y en la entrada a los 
+equipos de recepción, cuando existe una larga secuencia de ceros.
+La Fig. 2.52. contiene un ejemplo del Código AMI y la versión HDB-3 de la misma secuen-
+cia binaria. En esa figura se puede observar que el Código HDB-3, cuando tiene una secuencia 
+de 4 ceros seguidos, reemplaza la secuencia por una nueva que puede ser 000V o R00V.
+El pulso V = 1 se denomina violación y R, que siempre tiene igual polaridad que V, se de-
+nomina pulso de relleno.
+SEÑAL UNIPOLAR
+SEÑAL AMI
+SEÑAL HDB - 3
++ + +
+V
+VR
+1  1  1  0  0  0  0  0  0  0   0   0   1   0   0   1
+Fig. 2.52. Códigos	AMI	y	HDB-3.	Gráfico	comparativo.
+2.8.5.12 Regla de formación del código
+ • Para decidir qué secuencia emplear, [000v] o [R00v], se debe contar la cantidad de 
+unos que hay entre la última violación y la actual. Si ese número es par, la secuencia 
+de reemplazo será [R00V]; si es impar, se deberá usar [000V].
+ • El primer pulso de violación de la serie siempre lleva la misma polaridad que el último 
+bit uno transmitido. 
+ • Esto sirve para que en la recepción pueda detectarse, dado que si fuera de datos de-
+bería tener polaridad inversa.
+ • Los pulsos de violación se transmiten con polaridad alternada entre sí. 
+De existir el pulso de relleno, llevará la misma polaridad que el de violación. La Tabla 2-6 
+Tabla 2-6 Código 4B-3T (4 binario-3 ternario). Regla de formación
+Señal binaria Señal binaria
+0000 0 –1 +1
+0001 –1 +1 0
+0010 –1 0 +1
+0011 0 +1 –1
+0100 +1 –1 0
+0101 +1 0 –1
+0110 +1 –1 +1
+0111 0 +1 +1
+1000 0 +1 0
+1001 0 0 +1
+1010 –1 +1 +1
+1011 +1 0 0
+1100 +1 0 +1
+1101 +1 +1 0
+1110 +1 +1 –1
+1111 +1 +1 +1
+Como se expresó anteriormente, el código HDB-3 es el que se emplea frecuentemente 
+34 Mbps sobre cables de cobre.
+Para transmisión a mayor velocidad, por ejemplo 140 Mbps  y sobre cable coaxial, se 
+En la Fig. 2.53. se especifica la relación entre las señales ternaria y binaria en este código. 
+El UIT-T ha normalizado diferentes códigos para la transmisión digital de señales, según el 
+En consecuencia, en los sistemas multiplex digitales se usan los códigos de la Tabla 2-7.
+Tabla 2-7 Códigos usados en los sistemas múltiples digitales
+Velocidad de transmisión Código
+2 Mbps HDB-3
+8 Mbps HDB-3
+34 Mbps HDB-3 o 4 B3T
+140 Mbps 4B3T o CMI
+NOTA: estos códigos se emplean para esas velocidades y utilizando como medio de transmisión 
+el cable coaxial.
+CMI: código de inversión de marcas.
+El	 corrimiento	 de	 fase	 de	 la	 se-
+ñal	 digital	 es	 un	 fenómeno	 que	
+se	 conoce,	 normalmente,	 por	 su	
+expresión	en	inglés	jitter.
+
+
+===== PÁGINA PDF 155 =====
+2.8 Señales en banda base
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+129
+2.8.5.11 Código HDB-3
+El HDB-3 (High Density Binary, Binario de alta densidad) se basa en el denominado C
+niveles [+], [–] y [0] para representar la información binaria.
+El cero se representa siempre con polaridad cero, y el uno, con polaridad alternada [+] y 
+recuperar la señal de reloj.
+e inserta como cuarto bit un uno denominado bit de violación.
+equipos de recepción, cuando existe una larga secuencia de ceros.
+cia binaria. En esa figura se puede observar que el C
+de 4 ceros seguidos, reemplaza la secuencia por una nueva que puede ser 000V o R00V.
+El pulso V = 1 se denomina violación y R, que siempre tiene igual polaridad que V
+nomina pulso de relleno.
+SEÑAL UNIPOLAR
+SEÑAL AMI
+SEÑAL HDB - 3
++ + +
+V
+VR
+1  1  1  0  0  0  0  0  0  0   0   0   1   0   0   1
+Fig. 2.52. Códigos	AMI	y	HDB-3.	Gráfico	comparativo.
+2.8.5.12 Regla de formación del código
+ • Para decidir qué secuencia emplear, [000v] o [R00v]
+de reemplazo será [R00V]; si es impar, se deberá usar [000V].
+ •
+bit uno transmitido. 
+ • Esto sirve para que en la recepción pueda detectarse, dado que si fuera de datos de-
+bería tener polaridad inversa.
+ • Los pulsos de violación se transmiten con polaridad alternada entre sí. 
+De existir el pulso de relleno, llevará la misma polaridad que el de violación. La Tabla 2-6 
+muestra la regla de formación.
+Tabla 2-6 Código 4B-3T (4 binario-3 ternario). Regla de formación
+Señal binaria Señal binaria
+0000 0 –1 +1
+0001 –1 +1 0
+0010 –1 0 +1
+0011 0 +1 –1
+0100 +1 –1 0
+0101 +1 0 –1
+0110 +1 –1 +1
+0111 0 +1 +1
+1000 0 +1 0
+1001 0 0 +1
+1010 –1 +1 +1
+1011 +1 0 0
+1100 +1 0 +1
+1101 +1 +1 0
+1110 +1 +1 –1
+1111 +1 +1 +1
+2.8.5.13 Código 4B - 3T (4 binario - 3 ternario)
+Como se expresó anteriormente, el código HDB-3 es el que se emplea frecuentemente 
+hasta 34 Mbps sobre cables de cobre.
+Para transmisión a mayor velocidad, por ejemplo 140 Mbps  y sobre cable coaxial, se 
+emplean otros códigos como el 4B - 3T - 4 binario a 3 ternario, que reduce la transmisión de 
+4 bits a 3 niveles, lo que reduce el ancho de banda necesario en un 25%, aproximadamente.
+En la Fig. 2.53. se especifica la relación entre las señales ternaria y binaria en este código. 
+Se puede observar que este es un código ternario, dado que reduce 4 bits a 3 bits, mediante el 
+empleo de tres niveles.
+2.8.6 Códigos normalizados por el UIT-T
+El UIT-T ha normalizado diferentes códigos para la transmisión digital de señales, según el 
+medio usado, el tipo de equipo y las velocidades empleadas.
+En consecuencia, en los sistemas multiplex digitales se usan los códigos de la Tabla 2-7.
+Tabla 2-7 Códigos usados en los sistemas múltiples digitales
+Velocidad de transmisión Código
+2 Mbps HDB-3
+8 Mbps HDB-3
+34 Mbps HDB-3 o 4 B3T
+140 Mbps 4B3T o CMI
+NOTA: estos códigos se emplean para esas velocidades y utilizando como medio de transmisión 
+el cable coaxial.
+CMI: código de inversión de marcas.
+
+===== PÁGINA PDF 156 =====
+2 - Transmisión de señales130
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.9 Filtros
+2.9.1 Introducción
+Tanto en los sistemas de comunicaciones como en muchos circuitos electrónicos surge a 
+menudo la necesidad de transmitir señales que contengan un determinado intervalo de fre-
+cuencias, mientras que otras deben eliminarse. Esta función importantísima en los circuitos 
+electrónicos es ejecutada por los filtros.
+En particular, en los sistemas de comunicaciones, muchos medios de transmisión presen-
+tan para las señales que por ellos se transmiten características similares a los filtros. 
+Un estudio elemental de los filtros nos permitirá interpretar las características de determi-
+nados medios de comunicaciones, el funcionamiento de los enlaces que se establecen a través 
+de ellos y la forma en que las señales se recibirán una vez transmitidas. Precisamente hay una 
+relación directa entre los conceptos de ancho de banda y el de filtros.
+2.9.2 Definición
+Se denominan filtros: los circuitos, sistemas o parte de redes de comunicaciones que pre-
+sentan características selectivas respecto de las frecuencias.
+Básicamente significa que la atenuación en ellos es variable con la frecuencia, lo cual per-
+mite discriminar las señales que pasarán libremente a través de él y las que quedarán atenua-
+das o suprimidas.
+Si la señal que se aplica a la entrada de un filtro posee una importante riqueza en 
+contenido armónico, como podría ser el ejemplo de la onda cuadrada o rectangular, el 
+filtro actúa de manera que solamente algunas componentes de determinadas frecuencias 
+aparezcan a la salida.
+2.9.3 Clasificación de los filtros
+2.9.3.1 Generalidades
+Estos dispositivos se clasifican en: pasa bajos, pasa altos, pasa banda y suprime banda. 
+Sobre la base de la función principal de los filtros, que es permitir el paso libre de la banda 
+de frecuencias que se desea; mientras que, por el contrario, deben presentar una atenuación 
+elevada para las frecuencias indeseables.
+Estos cuatro tipos básicos de filtros de que disponen los circuitos electrónicos están repre-
+sentados con sus símbolos y características técnicas en la Fig. 2.53. 
+•	 Filtros pasa bajos
+Son aquellos que permiten el paso de señales de frecuencia cero hasta un cierto valor 
+determinado, que se denomina frecuencia de corte superior del filtro. Es aquella para 
+la cual la atenuación que produce el filtro es de 3 dB. Esto significa que en esos puntos 
+la mitad de la potencia de la señal de entrada es eliminada por el filtro. 
+•	 Filtros pasa altos
+Son aquellos que permiten el paso de señales desde una frecuencia denominada frecuencia 
+de corte inferior, hasta una superior que en un filtro ideal se extiende hasta infinito.
+•	 Filtros pasa banda
+Son aquellos que permiten el paso de señales cuyas frecuencias se encuentran 
+comprendidas entre dos, denominadas frecuencia de corte superior e inferior, res-
+pectivamente.
+Se puede construir un filtro pasa banda o también un suprime banda mediante la 
+utilización en forma combinada de filtros pasa bajos y pasa altos.
+•	 Filtros suprime banda
+Son aquellos que no permiten el paso de señales, cuyas frecuencias se encuen-
+tren comprendidas entre otras dos, denominadas “frecuencias de corte superior e 
+inferior”
+
+===== PÁGINA PDF 157 =====
+2.9 Filtros
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+131
+2.9 Filtros
+2.9.1 Introducción
+electrónicos es ejecutada por los filtros.
+tan para las señales que por ellos se transmiten características similares a los filtros. 
+relación directa entre los conceptos de ancho de banda y el de filtros.
+2.9.2 Definición
+Se denominan filtros: 
+sentan características selectivas respecto de las frecuencias.
+das o suprimidas.
+aparezcan a la salida.
+2.9.3 Clasificación de los filtros
+2.9.3.1 Generalidades
+elevada para las frecuencias indeseables.
+sentados con sus símbolos y características técnicas en la Fig. 2.53. 
+•	 Filtros pasa bajos
+la cual la atenuación que produce el filtro es de 3 dB
+la mitad de la potencia de la señal de entrada es eliminada por el filtro. 
+•	 Filtros pasa altos
+de corte inferior, hasta una superior que en un filtro ideal se extiende hasta infinito.
+•	 Filtros pasa banda
+pectivamente.
+Se puede construir un filtro pasa banda o también un suprime banda mediante la 
+utilización en forma combinada de filtros pasa bajos y pasa altos.
+•	 Filtros suprime banda
+Son aquellos que no permiten el paso de señales, cuyas frecuencias se encuen-
+tren comprendidas entre otras dos, denominadas “frecuencias de corte superior e 
+inferior”
+SÍMBOLO FILTRO
+DENOMINACIÓN
+Pasa Bajos
+Pasa Altos
+Pasa Banda
+Suprime Banda
+RESPUESTA EN FRECUENCIA
+Atenuación
+Atenuación
+Atenuación
+Atenuación
+3db
+3db
+3db
+3db
+Fcs
+Fcs
+Fcs
+Fci
+Fci
+Fci
+f
+f
+Δf
+Δf = Ancho de banda del filtro
+Fci y Fcs = Frecuencia de corte inferior y superior
+Filtro real
+Filtro ideal
+Δ
+Δ
+Fig. 2.53. Tipo	de	filtros.
+.
+
+===== PÁGINA PDF 158 =====
+2 - Transmisión de señales132
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+2.9.4 Diseño de filtros
+Los filtros pueden diseñarse usando una de las siguientes técnicas:
+2.9.4.1 Filtros de bobina y condensador
+El principio de construcción de estos filtros se basa en que la transmisión de una fre-
+cuencia no deseada a través de una red puede evitarse conectando en serie una impedancia 
+de valor alto, o también instalando en paralelo una impedancia de bajo valor que derive esa 
+frecuencia a tierra. En la Fig. 2.54. se describen las posibles estructuras de este tipo de filtros.
+La impedancia de alto valor, que se halla instalada en serie en el circuito del filtro, se 
+comporta oponiéndose al paso de la corriente correspondiente a las frecuencias no deseadas.
+Por otro lado, la impedancia de bajo valor que se halla instalada en paralelo en el circuito 
+del filtro se comporta como un camino de muy baja resistencia, por el cual las frecuencias no 
+deseadas son derivadas a tierra y en consecuencia no alcanzan la salida del filtro.
+Los valores de alta y baja impedancia se pueden obtener mediante la utilización de bobi-
+nas y capacitores de valores apropiados para la frecuencia de operación del filtro.
+Señal Pasante
+Señal Pasante
+Señal no
+deseada
+Señal de
+entrada
+Tierra
+Tierra
+Señal de
+Salida
+Filtro ``T´´
+Filtro ``T´´
+Zs
+Zs
+Zs
+Zp
+Zp Zp
+Señal de
+Salida
+Señal no
+deseada
+Señal de
+entrada
+Fig. 2.54 Estructura	de	filtros	constituidos	por	bobinas	y	condensadores.
+2.9.4.2 Filtros de cristal
+Los filtros de cristal son aquellos en los cuales las impedancias necesarias, en serie y para-
+lelo, para construir el filtro se obtienen mediante el empleo de cristales piezoeléctricos.
+Los cristales piezoeléctricos, como el cuarzo, tienen la particularidad de desarrollar una 
+diferencia de potencial cuando están sometidos a esfuerzos mecánicos.
+Si se corta una placa pequeña y delgada de un cristal piezoeléctrico, la placa obtenida ten-
+drá una frecuencia natural de resonancia propia. Si a su vez se le aplica una determinada ten-
+sión de alimentación, la placa vibrará a su frecuencia natural. En consecuencia, esa frecuencia 
+Los filtros que emplean cristales se combinan con otros elementos electrónicos (bobinas, 
+Tierra
+Tierra
+Circuito equivalente del filtro
+L
+C1
+C3
+C2
+Montaje de cristal
+de cuarzo
+Cristal
+Fig. 2.55. Estructura	de	filtros	de	cristal.
+Los filtros activos son circuitos que están construidos por amplificadores y una red de 
+Filtro activo pasabanda
+Señal de
+entrada
+de filtro
+Tierra
+Señal de
+Salida
+de filtro
+Amplificador
+operacional
+ZsZs
+Zp
+Red de
+realimentación
++-
+Fig. 2.56. Estructura	de	un	filtro	activo.
+
+===== PÁGINA PDF 159 =====
+2.9 Filtros
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+133
+2.9.4 Diseño de filtros
+Los filtros pueden diseñarse usando una de las siguientes técnicas:
+2.9.4.1 Filtros de bobina y condensador
+deseadas son derivadas a tierra y en consecuencia no alcanzan la salida del filtro.
+nas y capacitores de valores apropiados para la frecuencia de operación del filtro.
+Señal Pasante
+Señal Pasante
+Señal no
+deseada
+Señal de
+entrada
+Tierra
+Tierra
+Señal de
+Salida
+Filtro ``T´´
+Filtro ``T´´
+Zs
+Zs
+Zs
+Zp
+Zp Zp
+Señal de
+Salida
+Señal no
+deseada
+Señal de
+entrada
+Fig. 2.54 Estructura	de	filtros	constituidos	por	bobinas	y	condensadores.
+2.9.4.2 Filtros de cristal
+lelo, para construir el filtro se obtienen mediante el empleo de cristales piezoeléctricos.
+diferencia de potencial cuando están sometidos a esfuerzos mecánicos.
+natural depende fundamentalmente de las dimensiones del cristal, del tipo de corte efectuado 
+y también del modo de vibración.
+Los filtros que emplean cristales se combinan con otros elementos electrónicos (bobinas, 
+capacitores, resistencias, etc.) para obtener la respuesta en frecuencia deseada.  La Fig. 2.55. 
+muestra la estructura de un filtro de cristal.
+Tierra
+Tierra
+Circuito equivalente del filtro
+L
+C1
+C3
+C2
+Montaje de cristal
+de cuarzo
+Cristal
+Fig. 2.55. Estructura	de	filtros	de	cristal.
+2.9.4.3 Filtros activos
+Los filtros activos son circuitos que están construidos por amplificadores y una red de 
+realimentación formada por capacitores y resistencias. La denominación activos se debe a 
+que utilizan fundamentalmente amplificadores operacionales, que son dispositivos activos en 
+un circuito electrónico, a diferencia de las resistencias, bobinas y capacitores, que constituyen 
+elementos pasivos del circuito. La Fig. 2.56. muestra la estructura de un filtro activo.
+Filtro activo pasabanda
+Señal de
+entrada
+de filtro
+Tierra
+Señal de
+Salida
+de filtro
+Amplificador
+operacional
+ZsZs
+Zp
+Red de
+realimentación
++-
+Fig. 2.56. Estructura	de	un	filtro	activo.

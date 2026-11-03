@@ -1,0 +1,3287 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/DOC-20230425-WA0040.pdf
+# titulo-identificado: Castro Lechtaler y Fusario, Comunicaciones, 1a ed. 2013; extractos teleinformática, Internet/normalización, sistemas y OSI; sólo contraste del alcance registrado
+# titulo-metadatos-pdf: 
+# sha256-original: 56f7b6926abb5bea6e15e3c926d2344ad49004e4fbad6ad2e10e4060182e90ae
+# paginas-pdf-total: 726
+# paginas-pdf-extraidas: 3,4,48,49,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,167,168,169,170,171,172,173,276,277,278,279,280,281,282,283
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 3 =====
+Comunicaciones 
+Una Introducción a las Redes Digitales de Transmisión de Datos y Señales Isócronas
+Castro Lechtaler - Fusario
+Buenos Aires • Bogotá • México DF • Santiago de Chile
+
+===== PÁGINA PDF 4 =====
+Queda prohibida la reproducción total o parcial de esta obra, su tratamiento informático y/o la transmisión por cualquier otra forma o medio 
+sin autorización escrita de Alfaomega Grupo Editor Argentino S.A.
+Edición: Damián Fernández
+Corrección: Juan Sosa, Silvia Mellino y Juan Mican
+Diseño de interiores: Juan Sosa
+Diagramación de interiores: Diego Linares
+Corrección de armado: Oscar Iturralde
+Dibujos: Oscar Iturralde
+Diseño de tapa: Diego Ay
+Internet: http://www.alfaomega.com.mx
+Todos los derechos reservados © 2013, por Alfaomega Grupo Editor Argentino S.A.
+Paraguay 1307, PB, oficina 11
+Todos los derechos reservados © CASTRO LECHTALER, A. R. y FUSARIO, R. J.
+ISBN 978-987-1609-35-2 
+Queda hecho el depósito que prevé la ley 11.723
+NOTA IMPORTANTE: La información contenida en esta obra tiene un fin exclusivamente didáctico y, por lo tanto, no está previsto su aprovecha-
+miento a nivel profesional o industrial. Las indicaciones técnicas y programas incluidos han sido elaborados con gran cuidado por el autor y re-
+producidos bajo estrictas normas de control. Alfaomega Grupo Editor Argentino S.A. no será jurídicamente responsable por: errores u omisiones; 
+daños y perjuicios que se pudieran atribuir al uso de la información comprendida en este libro, ni por la utilización indebida que pudiera dársele.
+Los nombres comerciales que aparecen en este libro son marcas registradas de sus propietarios y se mencionan únicamente con fines didácticos, 
+por lo que Alfaomega Grupo Editor Argentino S.A. no asume ninguna responsabilidad por el uso que se dé a esta información, ya que no infringe 
+ningún derecho de registro de marca. Los datos de los ejemplos y pantallas son ficticios, a no ser que se especifique lo contrario.
+Los hipervínculos a los que se hace referencia no necesariamente son administrados por la editorial, por lo que no somos responsables de sus 
+contenidos o de su disponibilidad en línea.
+Empresas del grupo:
+Argentina: Alfaomega Grupo Editor Argentino, S.A.
+Paraguay 1307 P .B. “11”, Buenos Aires, Argentina, C.P . 1057
+Tel.: (54-11) 4811-7183 / 0887
+E-mail: ventas@alfaomegaeditor.com.ar
+México: Alfaomega Grupo Editor, S.A. de C.V.
+Pitágoras 1139, Col. Del Valle, México, D.F ., México, C.P . 03100
+Tel.: (52-55) 5575-5022 – Fax: (52-55) 5575-2420 / 2490. Sin costo: 01-800-020-4396
+E-mail: atencionalcliente@alfaomega.com.mx
+Colombia: Alfaomega Colombiana S.A.
+Carrera 15 No. 64 A 29, Bogotá, Colombia
+ PBX (57-1) 2100122 - Fax: (57-1) 6068648
+E-mail: cliente@alfaomega.com.co
+Chile: Alfaomega Grupo Editor, S.A.
+Castro Lechtaler, Antonio Ricardo
+    Comunicaciones : una introducción a las redes digitales de transmisión de datos y señales 
+isócronas  / Antonio Ricardo Castro Lechtaler y Rubén Jorge Fusario. - 1a ed. - Buenos Aires : 
+Alfaomega Grupo Editor Argentino, 2013
+			736	p.	;	24x21	cm.
+   ISBN 978-987-1609-35-2         
+   1. Informática. I. Fusario, Rubén Jorge  II. Título.
+   CDD 005.3
+General	del	Canto	370,	Providencia,	Santiago,	Chile
+Tel.:	(56-2)	947-9351	–	Fax:	(56-2)	235-5786
+E-mail:	agechile@alfaomega.cl
+
+===== PÁGINA PDF 48 =====
+1 - Las comunicaciones. Conceptos básicos22
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+esenciales el manejo de la informática debe ser considerado como una herramienta que debe 
+figurar en los planes políticos estratégicos de cualquier gobierno.
+No se trata solamente de un problema tecnológico de investigación fabricación o mercado; 
+se trata de un problema mucho más esencial como acaba de señalarse. Quizás sea este uno de 
+los problemas políticos más importantes de este nuevo siglo que ha comenzado.
+En realidad, el fenómeno informático es la expresión de un crecimiento acelerado de la 
+capacidad de procesar información por parte del género humano. 
+Esta capacidad de procesamiento es la que convierte a la información en conocimiento. 
+Por ello, la Revolución Informática como una parte sustancial de la Revolución de las Nuevas 
+Tecnologías es solo la cobertura tecnológica de un proceso mucho más amplio y definitorio: el 
+desplazamiento de la humanidad hacia el concepto de La Sociedad del Conocimiento.
+1.5.3 La incorporación de las comunicaciones al fenómeno informático
+En la etapa actual del desarrollo tecnológico, se puede decir que la informática y las co-
+municaciones se encuentran en un grado tan alto de integración que es muy difícil determinar 
+con exactitud cuál es la frontera entre estas disciplinas.
+Las tecnologías usadas para resolver los problemas de comunicaciones y los de informáti-
+ca son exactamente las mismas. Por otra parte, no habría necesidad de comunicaciones si no 
+hubiera información que transmitir y no habría explotación de la información para la toma de 
+decisiones sin un adecuado sistema de comunicaciones. 
+Esta interrelación que se da en la aplicación práctica de estas tecnologías también se pue-
+de apreciar en la construcción de los equipos. 
+Ya a comienzos de los años setenta, se intuía que el procesador delantero ( front-end pro-
+cessor) de los poderosos computadores diseñados para manejar cientos de terminales llevaba 
+inexorablemente a que estas dos disciplinas informática y comunicaciones se fundieran en 
+una sola en la que los problemas de ambas se resolvieran con una perspectiva única.
+Las grandes empresas productoras de hardware informático y de comunicaciones así lo han 
+entendido y hoy se puede comprar material de comunicaciones fabricado por empresas que an-
+tes solo eran proveedoras de material informático. A la inversa, una computadora es muchas ve-
+ces fabricada por empresas que eran típicamente proveedoras de material de comunicaciones. 
+Como consecuencia de lo expuesto, siempre será conveniente analizar la solución de los 
+problemas informáticos bajo la óptica de las comunicaciones; y la de los problemas de comu-
+nicaciones sin descuidar sus repercusiones informáticas.
+Koji Kobayashi miembro conspicuo de la comunidad informática y de comunicaciones y 
+CEO de una de las empresas más importantes en estas disciplinas elaboró un concepto de una 
+genialidad asombrosa. 
+Dice Kobayashi que existen tres factores clave para el progreso inmediato y futuro de la 
+humanidad y los denominó H. C. & C.; es decir: el factor humano (H) el factor computador (C) 
+y el factor comunicaciones (C).
+Sin duda, y en esto se coincidirá la gran explosión de progreso e innovación, tendrá lugar 
+cuando el ser humano eje fundamental del desarrollo se integre totalmente al complejo que 
+Kobayashi denominó H. C. & C. 
+Esta conjunción de tecnologías señaladas inicialmente por este pensador conforma hoy 
+un nuevo concepto más general y aún más amplio que los últimos autores han dado en llamar 
+Tecnologías de la Información (TI).
+Cuando el ser humano eje fundamental del desarrollo se integre en forma total y completa 
+Por otra parte, las TI se pueden definir tanto por su acepción literal física y meramente 
+Este último concepto es el que hace que las Tecnologías de la Información constituyan 
+Ellas buscan en cada organización convertir estas nuevas tecnologías derivadas de un 
+-
+ 
+La teleinformática expresión que proviene de las palabras telecomunicaciones e informáti-
+No es necesario extenderse demasiado para entender a fondo la importancia del ser hu-
+Precisamente, la necesidad de distribución es la que ha obligado a pensar en la utilización 
+Por otra parte, el hecho de que sea posible transmitir voz textos datos e imágenes de video 
+El estudio de los fenómenos eléctricos ha dado paso a la investigación y desarrollo de 
+A todo lo expuesto, debemos añadir el espectacular crecimiento de la microinformática 
+Simultáneamente, y por las mismas razones antes expuestas, se produjo el progreso en la 
+La microminiaturización del computador la disminución bien conocida de los costos de hard-
+
+===== PÁGINA PDF 49 =====
+1.5 La computación y las comunicaciones - C&C
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+23
+figurar en los planes políticos estratégicos de cualquier gobierno.
+los problemas políticos más importantes de este nuevo siglo que ha comenzado.
+capacidad de procesar información por parte del género humano. 
+desplazamiento de la humanidad hacia el concepto de La Sociedad del Conocimiento.
+1.5.3 La incorporación de las comunicaciones al fenómeno informático
+con exactitud cuál es la frontera entre estas disciplinas.
+decisiones sin un adecuado sistema de comunicaciones. 
+de apreciar en la construcción de los equipos. 
+Ya a comienzos de los años setenta, se intuía que el procesador delantero (
+cessor
+una sola en la que los problemas de ambas se resolvieran con una perspectiva única.
+nicaciones sin descuidar sus repercusiones informáticas.
+genialidad asombrosa. 
+y el factor comunicaciones (C).
+Kobayashi denominó H. C. & C. 
+Tecnologías de la Información (TI).
+Cuando el ser humano eje fundamental del desarrollo se integre en forma total y completa 
+a este complejo la Sociedad del Conocimiento dará lugar a una gran explosión de progreso 
+bienestar e innovación. Mucho de esto ya lo estamos percibiendo aunque no podamos ver aún 
+que ese progreso se derrame hacia las clases más desprotegidas de la sociedad.
+Por otra parte, las TI se pueden definir tanto por su acepción literal física y meramente 
+descriptiva. La misma hace referencia al hardware al software a los lenguajes a las redes a 
+las telecomunicaciones; como a una definición que hace más a la forma en la que se usan las 
+Tecnologías de la Información en las organizaciones. 
+Este último concepto es el que hace que las Tecnologías de la Información constituyan 
+una herramienta de alto valor agregado tanto por su excelencia como por sus resultados en las 
+organizaciones en su lucha por la competitividad. 
+Ellas buscan en cada organización convertir estas nuevas tecnologías derivadas de un 
+mejor y más intensivo uso de la información en un instrumento para generar negocios rentabi-
+lidad y capacidad de decisión estratégica en los niveles superiores de la conducción.
+1.5.4 La teleinformática y las tecnologías de la información 
+La teleinformática expresión que proviene de las palabras telecomunicaciones e informáti-
+ca es el resultado de la irrupción de las técnicas de procesamiento distribuido de datos donde 
+la importancia del puesto de trabajo individual desplazó al criterio de centro de cómputos 
+preparado para la modalidad conocida como procesamiento por lotes.
+No es necesario extenderse demasiado para entender a fondo la importancia del ser hu-
+mano en todo este proceso. Sin él no habría proceso evolutivo alguno de la humanidad y si 
+el progreso no tuviera por meta su bienestar estaríamos descuidando un aspecto ético de 
+singular importancia. 
+Precisamente, la necesidad de distribución es la que ha obligado a pensar en la utilización 
+conjunta de las técnicas informáticas y las redes de comunicaciones. Es el advenimiento de la 
+integración del complejo H C & C que ya hemos señalado.
+Por otra parte, el hecho de que sea posible transmitir voz textos datos e imágenes de video 
+a través de un único medio físico establece un escenario cuyos fundamentos tecnológicos ya 
+no se pueden ignorar. La era del cobre como único soporte físico ha muerto. 
+El estudio de los fenómenos eléctricos ha dado paso a la investigación y desarrollo de 
+la problemática optoelectrónica. El arrollador avance de la fibra óptica y otras tecnologías 
+avanzadas está permitiendo desarrollar en muy poco tiempo sistemas con un alto grado de 
+integración y capacidad.
+A todo lo expuesto, debemos añadir el espectacular crecimiento de la microinformática 
+esa nueva concepción que con gran precisión y realidad Jean-Jaçques Servan-Schreiber llama 
+la revolución dentro de la revolución que ha generado el uso de sistemas interconectados de 
+todos los tamaños y de distintos proveedores como una realidad impuesta por la necesidad.
+Simultáneamente, y por las mismas razones antes expuestas, se produjo el progreso en la 
+comunicación de datos que ha permitido a estos pequeños microordenadores conectarse a 
+las redes públicas de transmisión de datos con conmutación y a través de ellas a los grandes 
+bancos de datos. Es así que desde un equipo de costo reducido se abre una inmensa ventana 
+al mundo de la información a través de medios de comunicaciones hoy desarrollados para 
+recibir este aluvión de información.
+La microminiaturización del computador la disminución bien conocida de los costos de hard-
+ware y la proliferación de las técnicas de procesamiento de información por medios automáticos 
+
+===== PÁGINA PDF 66 =====
+1 - Las comunicaciones. Conceptos básicos40
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+La actividad política los políticos las empresas y los funcionarios de todo el mundo están 
+bajo la lupa y por tanto cualquier contravención a la ética se conoce rápidamente y el público 
+tiene derecho a demandar sanción. 
+Naisbitt ha lanzado una profecía basada en los fenómenos producidos por la propia glo-
+balización y en el poder que los medios teleinformáticos proporcionan al interactuar con los 
+medios de comunicación social y la sociedad en general y con los individuos en particular. Ella 
+podría sintetizarse en la expresión:
+Va a dejar de ser negocio no ser ético
+Naisbitt nos ha hecho ver que marchamos hacia un nuevo código de conducta ética uni-
+versal para el siglo 
+xxi. En muchos casos políticos, ejecutivos de alto nivel grandes corpora-
+ciones y todo tipo de figuras públicas no perciben este fenómeno. Sin embargo, todos los días 
+nos enteramos a través de los medios de comunicaciones de muchas cosas que los actores 
+señalados quisieron ocultar o callar. 
+En este siglo los secretos a la corta o a la larga dejen de ser tales con la misma rapidez 
+que una persona ubicada en América se puede comunicar por un teléfono celular con otra del 
+Lejano Oriente.
+1.8 La red Internet
+1.8.1 Consideraciones generales
+En la actualidad se podría afirmar sin temor a error que en todas las disciplinas que se 
+estudian en el mundo, sean las vinculadas a las llamadas ciencias duras, como la matemá-
+tica, la física, la química, la biología, las ingenierías, la medicina, la bioquímica y muchas 
+otras, así como las ciencias sociales, sean estas la economía, la política, el derecho, la 
+sociología, la psicología, y cantidad de otras de toda índole, hay un antes y un después de 
+la creación y afirmación de la red Internet, tal como se la conoce a partir de la última mitad 
+de la década del noventa.
+El proceso ha sido secuencial. Primero los cambios comenzaron con el desarrollo de la 
+computadora. Luego continuaron cuando se llegó a un punto en el que ellas podían ser opera-
+das por no especialistas de todas las edades; después aparecieron los cambios que generaron 
+mediante su uso como herramienta. Así es que facilitaron, entre otras cosas, la construcción de 
+equipos de telecomunicaciones inteligentes. Estos, a su vez, permitieron digitalizar práctica-
+mente toda la red mundial de telecomunicaciones, cambiando además la forma de planificar, 
+diseñar y operar. Por último, apareció la idea genial de la red Internet como herramienta de 
+interconexión de computadoras de consumo masivo. Todo ello revolucionó al mundo. Ya nada 
+es igual a como lo fue hace solo veinte años.
+Si bien la invención de ciertos servicios de comunicación como el telégrafo, el teléfo-
+no, la radio, la televisión provocó grandes cambios, fue el uso de la computadora el que 
+permitió modificaciones significativas en la sociedad, que permitieron su integración lenta 
+pero firme y mostraron una capacidad sin precedentes de poder cambiar la historia de la 
+humanidad.
+En la actualidad Internet es la posibilidad de interconectar a los diferentes actores de la 
+sociedad en forma inmediata, por medio de mecanismos de transmisión sencillos para los 
+usuarios, con costos razonables, la mayoría de las veces sin necesidad de concurrir a lugares 
+especiales para acceder a sus contenidos (salvo casos particulares). Este medio permite dise-
+minar información sin importar la ubicación geográfica de sus reservorios o en qué lugar del 
+planeta van a ser recuperados esos datos; involucrando tanto a personas como a instituciones, 
+La red Internet representa uno de los ejemplos más claros de lo que se puede obtener 
+-
+En el presente la red es una infraestructura para el manejo de la información extendida, 
+En 1958, como respuesta al lanzamiento en la Unión Soviética del primer satélite terres-
+Advanced Research 
+, Agencia de Proyectos Avanzados de Investigación), para encaminarse en 
+Dentro de las tareas que esa agencia realizaba se desarrollaban estudios sobre compu-
+-
+La red se creó a finales de la década del sesenta con el nombre de ARPANET. Se financió 
+Department of Defense), y la 
+En ese año se describió como una red de carácter experimental, que tenía conectados cuatro 
+University 
+, Universidad de California, Los Ángeles). En septiembre de 1969, 
+); el tercer nodo se conectó en la UCLA en la ciudad de Santa Bár-
+host a host se transmitió a 
+El proyecto ARPANET se creó sobre la base de tres trabajos de investigación indepen-
+-
+
+===== PÁGINA PDF 67 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+41
+tiene derecho a demandar sanción. 
+podría sintetizarse en la expresión:
+Va a dejar de ser negocio no ser ético
+versal para el siglo xxi
+señalados quisieron ocultar o callar. 
+Lejano Oriente.
+1.8 La red Internet
+1.8.1 Consideraciones generales
+de la década del noventa.
+es igual a como lo fue hace solo veinte años.
+humanidad.
+empresas, organizaciones, y a todo otro tipo de actores de la sociedad del conocimiento en la 
+que estamos sumergidos.
+La red Internet representa uno de los ejemplos más claros de lo que se puede obtener 
+cuando la inversión en un sector es sostenida, y la sociedad asume con seriedad el compro-
+miso para investigación y desarrollo puesto al servicio de la humanidad, y orientado a mejorar 
+la infraestructura de la información. De esta manera, los conocimientos que se generan son 
+compartidos por países, universidades, comunidades, instituciones y otros diversos actores de 
+la sociedad.
+En el presente la red es una infraestructura para el manejo de la información extendida, 
+con una historia compleja, que involucra aspectos tecnológicos, organizativos y comunitarios; 
+y estamos convenidos de que todavía no vimos lo mejor. 
+1.8.2 Antecedentes históricos
+En 1958, como respuesta al lanzamiento en la Unión Soviética del primer satélite terres-
+tre conocido como Sputnik, Estados Unidos creó de inmediato ARPA ( Advanced Research 
+Preojects Agency, Agencia de Proyectos Avanzados de Investigación), para encaminarse en 
+las investigaciones que habían llevado a ese acontecimiento, que sin duda marcó un hito 
+histórico en las exploraciones espaciales. 
+Dentro de las tareas que esa agencia realizaba se desarrollaban estudios sobre compu-
+tadoras a los efectos de dar solución al problema de interconectar las máquinas que tenían 
+instaladas en varias universidades que trabajaban para ella. Estas universidades, además, 
+desarrollaban otros muchos proyectos de investigación en variados campos y sus labora-
+torios se encontraban diseminados a lo largo y ancho del territorio de ese país. De allí la 
+necesidad de contar con una red de interconexión que cumpliera dos premisas básicas. 
+Una, que cubriera un área geográfica extensa; y otra, que fuera transparente a los tipos de 
+marcas y sistemas operativos de los distintos equipos, que cada punto de la red científica 
+tuviera instalados.
+La red se creó a finales de la década del sesenta con el nombre de ARPANET. Se financió 
+con fondos del Ministerio de Defensa de Estados Unidos (DoD, Department of Defense), y la 
+primera información pública sobre ella se dio a conocer en 1969. 
+En ese año se describió como una red de carácter experimental, que tenía conectados cuatro 
+nodos, el primero se conectó en el Centro de Mediciones de Redes de la UCLA ( University 
+of California, Los Angeles , Universidad de California, Los Ángeles). En septiembre de 1969, 
+un mes después, se conectó el segundo en el Instituto de Investigaciones de Stanford (SRI, 
+Stanford Research Institute); el tercer nodo se conectó en la UCLA en la ciudad de Santa Bár-
+bara y el cuarto en la Universidad de Utah. Durante los años siguientes, se fueron agregando 
+rápidamente más computadoras a la red. El primer mensaje de host a host se transmitió a 
+finales de 1969.
+El proyecto ARPANET se creó sobre la base de tres trabajos de investigación indepen-
+dientes. Uno de ellos era un documento de 1964 sobre redes de conmutación de paquetes 
+para transmisión segura de la voz en medios militares. Basado en este estudio, corrió el 
+falso rumor según el cual el proyecto ARPANET se relacionaba con la creación de una 
+red que pudiera resistir una guerra nuclear. Esto no fue así. Sin embargo, en los trabajos 
+posteriores realizados en el proyecto ARPANET, se buscó la interconexión de redes des-
+tacando la necesidad de que esta tuviera robustez y capacidad de supervivencia, incluida 
+la capacidad de soportar caídas de grandes porciones de cualquiera de las distintas redes 
+que la constituían.
+ARPANET	 es	 un	 acrónimo,	 to -
+mado	 del	 nombre	 original	 de	 la	
+agencia	del	gobierno	de	Estados	
+Unidos	 que	 impuso	 ARPA,	 que	
+en	 la	 actualidad	 se	 denomina	
+DARPA	 (Defense	 Advanced	 Re-
+search	Projects	Agency ,	Agencia	
+de	 Proyectos	 de	 Investigación	
+Avanzados	 de	 Defensa);	 el	 resto	
+del	 acrónimo	 (NET)	 proviene	 de	
+la	palabra	en	inglés	network	(red).
+En	 ARPANET ,	 y	 luego	 en	 Inter-
+net,	se	entiende	por	nodo	a	cada	
+equipo	terminal	de	datos	conec -
+tado	 a	 una	 red.	 En	 telecomuni -
+caciones	 se	 prefiere	 hablar	 de	
+nodos	 cuando	 se	 trata	 de	 equi-
+pos	de	conmutación.
+
+
+===== PÁGINA PDF 68 =====
+1 - Las comunicaciones. Conceptos básicos42
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+Esta red utilizó por primera vez una nueva idea en el campo de las telecomunicaciones que 
+se denominó conmutación de paquetes. Esta nació de los trabajos de Leonard Kleinrock, 
+investigador al que se podría llamar “padre” de esta tecnología.
+El 31 de mayo de 1961 Kleinrock presentó su proyecto de tesis de doctorado en el De-
+partamento de Ingeniería Eléctrica del Instituto Tecnológico de Massachussets, al que llamó 
+Information Flow In Large Communications Nets (Flujos de información en redes extensas de 
+comunicaciones). Su proyecto fue aprobado en 24 de julio de ese año y eso le permitió comple-
+tar esos estudios en 1963. En 1964 la editorial McGraw-Hill publicó un libro sobre sus trabajos, 
+que se denominó Communications Nets (Redes de comunicaciones) y en su momento fue un 
+clásico sobre redes de paquetes.
+En sus comienzos, los enlaces se efectuaban sobre líneas analógicas arrendadas tomadas 
+de la red telefónica conmutada (RTC), que comunicaban solo a unos pocos cientos de compu-
+tadoras en el territorio continental de Estados Unidos. Al principio la red experimentó muchos 
+inconvenientes de tipo técnico relacionados con el diseño de los protocolos de comunicación. 
+Estos eran lentos y muy poco eficientes. Por ello, se abordó el diseño de protocolos nuevos con 
+el objeto de agilizar las comunicaciones de la red.
+Para poner en funcionamiento la Red, se necesitaba la construcción de un conmutador de 
+paquetes que primero debía especificarse de manera correcta y luego, diseñarse. Las normas 
+estuvieron terminadas en 1968, y al año siguiente, se encargó a una empresa de la localidad 
+de Cambridge, llamada BBN (Bolt, Beranek y Newman) que diseñe, especifique, construya y 
+ponga en funcionamiento el primer conmutador de paquetes para la red ARPANET. La cons-
+trucción se efectuó utilizando una minicomputadora de la empresa Honeywell. El primer con-
+mutador de paquetes de la red se denominó IMP ( Interface Message Processor, Interfaz para 
+el Procesamiento de Mensajes).
+A los efectos de contar con el software de comunicaciones necesario que posibilitara la 
+intercomunicación de los conmutadores de paquetes IMP, desarrollados por BBN, en 1970 un 
+investigador de la Universidad de California, Steve Crocker, diseñó un protocolo que se deno-
+minó network control protocol (NCP, protocolo de control de la red). A partir de 1971, los IMP 
+se interconectaron entre sí utilizando este primer protocolo de interconexión de la red. En 
+octubre de 1972, se organizó la ICC ( International Computer Communication Conference) en 
+la que Robert Kahn hizo una demostración exitosa sobre ARPANET, que fue la primera demos-
+tración pública de la nueva red.
+El protocolo NCP diseñado por Crocker no tenía la funcionalidad que permitiera la 
+interconexión independiente de las distintas redes interconectadas en ARPANET. Ello lle-
+vó a Kahn, que trabajaba en la misma universidad, a desarrollar un protocolo nuevo que 
+pudiera solucionar los problemas que presentaba NCP. Para ello, a comienzos de 1973 
+invitó a Vinton Cerf a trabajar en conjunto con él para tratar de diseñar protocolos más 
+eficientes, aprovechando la experiencia de Cerf, que ya había trabajado en la elaboración 
+de Protocolo NCP.
+La primera versión de sus trabajos con marcado éxito se presentó en septiembre de 1973 
+en una conferencia a la que Cerf había sido invitado para presidirla. Se realizó en la Universi-
+dad de Sussex, Inglaterra, con motivo de la reunión del INWG (International Network Working 
+Group, Grupo de trabajo internacional en redes). Por último, en mayo de 1974, Vinton Cerf 
+y Robert Kahn   propusieron un nuevo núcleo para un conjunto de protocolos que luego 
+sirvieron de base al desarrollo de lo que hoy se conoce como TCP/IP ( Transmission Control 
+Protocol/Internet Protocol ). Se efectuó la publicación completa de ellos, en Transactions of 
+Communications  [CEKA74] de la IEEE de ese mes.
+En 1984 el Ministerio de Defensa de Estados Unidos dividió la red así concebida en dos 
+Una política abierta permitió que a esta red se fuesen conectando poco a poco institu-
+ o simplemente por su última palabra, Internet.
+La red Internet se podría definir como: una red internacional formada por un conjunto de 
+-
+host-to-host de cualquier par de máquinas que 
+Teniendo en cuenta los protocolos TCP/IP, Internet está básicamente compuesta por tres 
+Equipos terminales de datos (en inglés, host, con independencia del tamaño que tengan). 
+mainframes). Pueden 
+Routers o gateways, en algunos lugares se los llama por su palabra en español: enrutado-
+. En este caso, se prefiere no realizar la traducción de la palabra porque el vocablo en español 
+-
+-
+Redes. Son conjuntos de equipos terminales de datos administrados en forma unívoca, 
+Cada una de estas redes consideradas como un solo conjunto integrado conforma la red 
+-
+backbone
+En la Fig. 1.11., se observa un esquema de varias redes de distintas características que 
+backbone  nacional a los efectos de interconectarse entre sí a ese nivel. Si las 
+La	 interconexión	 entre	 redes	 se	
+conoce	por	la	palabra	internetting.
+
+
+===== PÁGINA PDF 69 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+43
+se denominó conmutación de paquetes
+investigador al que se podría llamar “padre” de esta tecnología.
+Information Flow In Large Communications Nets
+que se denominó Communications Nets
+clásico sobre redes de paquetes.
+el objeto de agilizar las comunicaciones de la red.
+mutador de paquetes de la red se denominó IMP ( Interface Message Processor
+el Procesamiento de Mensajes).
+minó network control protocol
+octubre de 1972, se organizó la ICC ( International Computer Communication Conference
+tración pública de la nueva red.
+de Protocolo NCP.
+dad de Sussex, Inglaterra, con motivo de la reunión del INWG (
+Group, Grupo de trabajo internacional en redes). Por último, en mayo de 1974, 
+y Robert Kahn  
+sirvieron de base al desarrollo de lo que hoy se conoce como TCP/IP (
+Protocol/Internet Protocol ). Se efectuó la publicación completa de ellos, en 
+Communications  [CEKA74] de la IEEE de ese mes.
+En 1984 el Ministerio de Defensa de Estados Unidos dividió la red así concebida en dos 
+diferentes: una que mantuvo el nombre de ARPANET y otra nueva, restringida, de carácter y 
+uso militares que se llamó MILNET. Ambas usaban la misma tecnología y estaban conectadas 
+entre sí, pero el tráfico entre ellas se controló de manera rigurosa. La red MILNET luego se 
+extendió a Europa con el nombre de MINET.
+Una política abierta permitió que a esta red se fuesen conectando poco a poco institu-
+ciones académicas y comerciales, que utilizaban los mismos protocolos abiertos TCP/IP. 
+ARPANET fue usada como base de una red que crecía cada día más, y que comenzó a llamarse 
+World Wide Internet o simplemente por su última palabra, Internet.
+1.8.3 Funcionamiento de la red
+1.8.3.1 Definición de la red Internet 
+La red Internet se podría definir como: una red internacional formada por un conjunto de 
+varias redes independientes, operadas en forma autónoma, que están interconectadas por me-
+dio de protocolos y procedimientos normalizados como estándares de Internet, que permiten 
+comunicaciones entre dos equipos terminales host-to-host de cualquier par de máquinas que 
+pertenezcan a algunas de las redes que la integran.
+1.8.3.2 Equipos que integran Internet y esquema de su topología
+Teniendo en cuenta los protocolos TCP/IP, Internet está básicamente compuesta por tres 
+tipos de elementos constituyentes:
+Equipos terminales de datos (en inglés, host, con independencia del tamaño que tengan). 
+Son los dispositivos que teniendo una dirección IP, permiten su direccionamiento dentro de la red. 
+Trabajan con los protocolos normalizados antes señalados. En cuanto a sus tamaños, pueden variar 
+desde una simple computadora personal portátil a un aparato de gran porte (mainframes). Pueden 
+incluir impresoras, escáners, unidades de almacenamiento masivo, etcétera.
+Routers o gateways, en algunos lugares se los llama por su palabra en español: enrutado-
+res. En este caso, se prefiere no realizar la traducción de la palabra porque el vocablo en español 
+es confuso y tiene poco uso. Sin embargo, puede denominarse como conmutadores de paquetes. 
+Los mismos son equipos que permiten conectar dos redes o más. En general, se trata de disposi-
+tivos especiales, gobernados por uno o varios procesadores, que están diseñados y programados 
+para permitir lo que en comunicaciones se denomina en términos generales conmutación. Su 
+misión es orientar y gestionar el tráfico de paquetes; así, conocida la dirección de destino, permi-
+ten que los paquetes generados en un equipo fuente lleguen al equipo colector.
+Redes. Son conjuntos de equipos terminales de datos administrados en forma unívoca, 
+que pueden conectarse a través de vínculos de comunicaciones, como cables de cobre, cables 
+coaxiales, enlaces de microondas, fibras ópticas (más modernas), a otros equipos similares 
+ubicados en otras redes diferentes de las mismas características, mediante equipos routers 
+que facilitan las tareas de conmutación indispensables para la interconexión.
+Cada una de estas redes consideradas como un solo conjunto integrado conforma la red 
+Internet. En cada una de ellas, se pueden utilizar distintos conceptos de diseño, en general 
+basados en las diferentes posibilidades tecnológicas disponibles y teniendo en cuenta las dis-
+tancias a cubrir. Los distintos vínculos de alta capacidad que unen las diferentes redes que 
+conforman en su conjunto la red Internet reciben el nombre de backbone
+En la Fig. 1.11., se observa un esquema de varias redes de distintas características que 
+se unen a un backbone  nacional a los efectos de interconectarse entre sí a ese nivel. Si las 
+comunicaciones se dirigieran hacia otros destinos fuera del país, la interconexión se haría 
+Vinton	 Cerf	 (Connecticut,	 1943).	 Se	
+graduó	como	Bachelor	en	Matemá-
+tica	en	la	Universidad	de	Stanford	en	
+1965	y	se	doctoró	en	la	Universidad	
+de	California,	Los	Ángeles,	en	1972.	
+Se	 desempeñó	 en	 esa	 universidad	
+en	 el	 primer	 nodo	 que	 integró	 la	
+red	ARP ANET .	Junto	a	Robert	Kahn	
+diseñó	la	suite	de	protocolos	TCP/IP .	
+En	1982	fue	uno	de	los	fundadores	
+de	la	ISOC.
+Robert	Kahn	(Nueva	Y ork,	1938). Se	
+doctoró	 en	 la	 Universidad	 de	 Prin-
+ceton	 en	 1964.	 T rabajó	 en	Bell	 La-
+boratories	 y	 fue	 profesor	 en	 el	 MIT .	
+En	1972	se	incorporó	en	el	Proyecto	
+DARP A.	Junto	con	Vinton	Cerf,	fue-
+ron	los	inventores	de	los	protocolos	
+TCP/IP .	Es	Miembro	de	Número	de	
+la	Academia	Nacional	de	Ingeniería	
+de	Estados	Unidos.	
+
+
+===== PÁGINA PDF 70 =====
+1 - Las comunicaciones. Conceptos básicos44
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+desde un punto de presencia nacional a otro del país destino. Si fuera necesario conocer 
+los datos sobre cómo alcanzar una ETD se podría dar el caso de que la comunicación lle-
+gara hasta una computadora denominada raíz-raíz que tiene todos los dominios de la red 
+registrados.
+1.8.3.3 Identificación de los equipos en la red
+Como toda red de comunicaciones, Internet debe identificar todos los equipos terminales 
+o host conectados a ella en forma unívoca. Esa identificación es la que luego utilizará el IP 
+(Internet Protocol) para posibilitar la función de conmutación.
+Una de las características más notables de la red es que cada host tiene asignado un nú-
+mero que lo identifica dentro de ella, que se denomina dirección IP, compuesto por 32 bits en 
+la versión que se denomina IPv4. Estos dígitos binarios, considerados como un solo conjunto 
+de ceros y unos, representan un valor numérico en la aritmética de base dos. 
+Estas direcciones, se suelen representar por motivos prácticos de identificación por medio 
+de cuatro números decimales separados por puntos, y que pueden variar entre 0 y 255. Por 
+ejemplo, podría analizarse esta dirección: 157.92.1.5. Si transformamos cada dígito decimal en 
+un número binario veríamos que 157 es igual a “0101 1101”, 92 a “0101 0110”, 1 a “00000001”, 
+y 5 a “00000101”. Por lo tanto, la dirección 157.92.1.5 en realidad para el protocolo Ip es la 
+siguiente: “01011101 01010110 00000001 00000101”.
+Se observa entonces cómo un número decimal de tres cifras comprendidas entre 0 y 255 
+permite representar todas las combinaciones posibles de 8 bits. Por lo tanto, con cuatro núme-
+ros de tres cifras cada uno se pueden representar cuatro conjuntos de ocho bits, que precisa-
+mente representan una dirección IP de 32 bits. 
+En la nueva versión denominada IPv6 se agregan doce octetos más, lo que hace que tenga 
+128 bits, lo que hará un total de 16 octetos. También en esta nueva versión se ha buscado 
+representar de una manera simple las direcciones en forma de grupos de números, separados 
+en este caso por dos puntos, de modo de hacer más sencilla la identificación de las direcciones 
+también en un lenguaje más claro.
+En este caso en lugar de números decimales se utilizan números hexadecimales. Estos por 
+lo general son representados por los comprendidos del 0 al 9, más las letras a, b, c, d, e y f para 
+los números que van del 10 al 15. Los números hexadecimales tienen la característica de que 
+cuatro de ellos permiten representar todas las combinaciones de 16 bits. Por lo tanto, con 8 
+números hexadecimales se podrán representar los 128 bits que tienen las nuevas direcciones 
+de este protocolo, dado que cada uno de los 8 números hexadecimales permite representar, 
+como se expresó, 16 bits. 
+De esta manera a medida que este protocolo se vaya generalizando se solucionará de 
+manera definitiva el problema de la cantidad de direcciones disponibles en la red, que con el 
+protocolo IPv4 estaban quedando escasas.
+Obsérvense las cantidades de direcciones que uno y otro protocolos tienen disponibles:
+Protocolo 
+IPv4 = 232 = 4.294.967.296
+Protocolo IPv6 = 2128 = 340.282.366.920.938.463.463.374.607.431.768.211.456
+Un ejemplo de una dirección IPv6, que se ofrece en el documento de Internet RFC 4291 
+es el siguiente: abad: ef01: 2345:6789:abad:ef01:2345:6789. En los problemas resueltos de este 
+capítulo, se describe la forma de transformar esta manera de identificación en los 128 bits que 
+corresponden a la dirección expuesta. 
+Se	entiende	por	equipo	terminal	de	
+datos	o	host	a	todos	aquellos	dispo-
+sitivos	que	admiten	una	dirección	IP	
+y ,	 por	 lo	 tanto,	 son	 direccionables	
+dentro	 de	 la	 red	 (excluyendo	 los	
+equipos	routers	dedicados).
+Las	 direcciones	 IP	 corresponden	
+en	realidad	a	las	interfaces	de	los	
+equipos	 con	 las	 redes;	 así,	 si	 un	
+equipo	 está	 conectado	 a	 dos	 re-
+des,	 tendrá	 dos	 interfaces	 y ,	 por	
+consiguiente,	dos	direcciones	IP .
+Para	más	información	de	IPV4	e	IPV6	
+consultar	 RFC	 791	 de	 septiembre	
+de	1981,	estandarizado	por	el	DoD	
+como	MIL-STD-1777	y	RFC	4291	de	
+febrero	de	2006.
+Fig. 1.11.		Esquema	de	la	formación	de	la	red	Internet	mediante	la	interconexión	de	subredes.
+Instituto público de Investigación
+Organismo Red LAN
+Router
+Banco / empresa
+Red LAN
+Router
+Universidad B
+Router
+Red LAN
+Universidad A
+Router
+Red LAN 1
+Puente
+Red
+LAN 2
+Conectividad 
+hacia el
+Servidor
+Red Internet
+Router
+SERVIDOR 
+RAIZ RAIZ
+Uso de Protocolos 
+Ruteables
+TCP / IP - MPLS - ATM -
+FRAME RELAY
+Red Pública de Transporte
+de una TELCO
+
+
+===== PÁGINA PDF 71 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+45
+registrados.
+1.8.3.3 Identificación de los equipos en la red
+(Internet Protocol) para posibilitar la función de conmutación.
+de ceros y unos, representan un valor numérico en la aritmética de base dos. 
+siguiente: “01011101 01010110 00000001 00000101”.
+mente representan una dirección IP de 32 bits. 
+también en un lenguaje más claro.
+como se expresó, 16 bits. 
+protocolo IPv4 estaban quedando escasas.
+Obsérvense las cantidades de direcciones que uno y otro protocolos tienen disponibles:
+Protocolo IPv4 = 232 = 4.294.967.296
+Protocolo IPv6 = 2128 = 340.282.366.920.938.463.463.374.607.431.768.211.456
+corresponden a la dirección expuesta. 
+Fig. 1.11.		Esquema	de	la	formación	de	la	red	Internet	mediante	la	interconexión	de	subredes.
+Instituto público de Investigación
+Organismo Red LAN
+Router
+Banco / empresa
+Red LAN
+Router
+Universidad B
+Router
+Red LAN
+Universidad A
+Router
+Red LAN 1
+Puente
+Red
+LAN 2
+Conectividad 
+hacia el
+Servidor
+Red Internet
+Router
+SERVIDOR 
+RAIZ RAIZ
+Uso de Protocolos 
+Ruteables
+TCP / IP - MPLS - ATM -
+FRAME RELAY
+Red Pública de Transporte
+de una TELCO
+
+
+===== PÁGINA PDF 72 =====
+1 - Las comunicaciones. Conceptos básicos46
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+Pese a estas formas para manejar las direcciones IP de manera más simple y práctica, 
+tampoco esta notación es fácil de recordar. Por este motivo se utilizan nombres para indivi-
+dualizar los host, que con ulterioridad se traducen en direcciones numéricas en el momento 
+de utilizarse en la red, mediante lo que se llama servidor de resolución de nombres de do-
+minio. 
+La tarea se realiza por un procediendo jerárquico que se denomina DNS ( Domain Name 
+System, Sistema de nombres de dominio), que utiliza nombres separados por puntos. Para 
+escribir las direcciones se comienza de derecha a izquierda escribiendo primero los denomi-
+nados dominios de alto nivel  y a su izquierda se van agregando subdominios cada vez más 
+específicos, hasta identificar en forma unívoca el nombre del host al que se quiere referenciar. 
+Los dominios de alto nivel se clasifican en dos tipos, que se observan en la Tabla 1-1.
+Tabla 1-1 Tipo de dominio de alto nivel 
+En español En inglés Abreviatura utilizada
+Dominios de alto nivel genéricos Generic Top Level Domain gTLD
+Dominios de alto nivel geográficos Country Code Top Level Domain ccTLD
+Los dominios de alto nivel genéricos a su vez se dividen en dos tipos: sin sponsors (patro-
+cinadores) y con sponsors. En la Tabla 1-2, se indican los dominios de primer nivel genéricos 
+vigentes a principios de 1997.
+Tabla 1-2 Identificación de dominios de alto nivel genéricos iniciales
+gTLD Asignado a Limitaciones Autoridad de asignación de dominios
+edu: Organizaciones educativas 
+acreditadas por EE.UU. Limitado Educause
+com: Organizaciones comerciales. Ilimitado VeriSign Global Registry Services.
+gov: Organizaciones 
+gubernamentales de EE.UU. Limitado US General Services Administration
+mil: Fuerzas Armadas de los 
+EE.UU. Limitado DoD Network Information Center.
+net: Redes de proveedores de 
+Servicios de Internet. Ilimitado VeriSign Global Registry Services.
+org: Organizaciones no 
+comerciales. Ilimitado Public Interest Registry.
+int: Organismos internacionales 
+reconocidos por tratados. Limitado Registro de Dominios de IANA
+A partir de 2001 se fueron autorizando otros dominios de este tipo, algunos con el con-
+cepto de contar con sponsors. En la Tabla 1-3, se observa cuáles fueron agregados a los 
+iniciales.
+En cuando a los ccTLD ( country code Top Level Domain, dominios de alto nivel geográ-
+fico), conocidos por su abreviatura o su expresión en inglés, están constituidos por las dos 
+letras asignadas a cada país según la norma ISO-3166. En particular, los utilizados para los 
+países de habla española, portuguesa o que están ubicados en América y las antillas son los 
+indicados en la Tabla 1-4.
+gTLD Asignado a Autoridad de asignación de dominios
+Exclusivamente a organizaciones de negocios NeuLevel Inc.
+Utilizado para servicios de información Afilias Limited.
+Reservado para nombres de personas Global Name Registry.
+Organizaciones militares de los 
+Estados Unidos DoD Network Information Center.
+Con Sponsor. Reservado a organizaciones 
+del transporte aéreo
+Société Internationale de 
+Télécommunications Aéronautiques - SITA. 
+Con Sponsor. Reservado para
+asociaciones cooperativas Dot Cooperation LLC
+Con Sponsor. Reservado para la
+comunidad lingüística catalana Fundación puntCat
+Con Sponsor. Reservado a gerentes
+de recursos humanos Employ Media LLC
+Con Sponsor. Reservado a consumidores, 
+proveedores de móviles mTLD Top Level Domain Ltd.
+Con Sponsor. Organizaciones
+gubernamentales de los Estados Unidos VeriSign Global Registry Services.
+Reservado a profesionales y entidades
+relacionadas Public Interest Registry.
+Con Sponsor. Reservado para actividades 
+con la industria del turismo Tralliance Corporation
+País Ubicación ccDLD País Ubicación
+.ca Canadá
+América 
+del norte
+.cu Cuba
+Caribe
+.us Estados Unidos .do República Dominicana
+.mx México .ht Haití
+.ar Argentina
+América 
+del sur
+.pr Puerto Rico
+.bo Bolivia .ag Antigua y Barbuda
+.br Brasil .ai Anguila
+.cl Chile .aw Aruba
+.co Colombia .bb Barbados
+.ec Ecuador .bs Bahamas
+.gy Guyana .dm Dominica
+.pe Perú .gd Grenada
+.py Paraguay .jm Jamaica
+.sr Surinam .kn Saint Kitts and Nevis
+.uy Uruguay .ky Islas Caimán
+.ve Venezuela .ic Santa Lucía
+.gf Guyana francesa .ms Monserrat
+.es España
+Europa
+.tt Trinidad y Tobago
+.pt Portugal .vc San Vicente y las Granadinas
+.bz Belice
+América 
+central
+.ni Nicaragua
+América 
+central.cr Costa Rica .pa Panamá
+.gt Guatemala .sv El Salvador
+.hn Honduras .gq Guinea Ecuatorial África
+
+===== PÁGINA PDF 73 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+47
+de utilizarse en la red, mediante lo que se llama 
+minio. 
+La tarea se realiza por un procediendo jerárquico que se denomina DNS (
+System,
+nados dominios de alto nivel
+Los dominios de alto nivel se clasifican en dos tipos, que se observan en la Tabla 1-1.
+Tabla 1-1 Tipo de dominio de alto nivel 
+En español En inglés Abreviatura utilizada
+Dominios de alto nivel genéricos Generic Top Level Domain gTLD
+Dominios de alto nivel geográficos Country Code Top Level Domain ccTLD
+cinadores) y con sponsors. En la Tabla 1-2, se indican los 
+vigentes a principios de 1997.
+Tabla 1-2 Identificación de dominios de alto nivel genéricos iniciales
+gTLD Asignado a Limitaciones Autoridad de asignación de dominios
+edu: Organizaciones educativas 
+acreditadas por EE.UU. Limitado Educause
+com: Organizaciones comerciales. Ilimitado VeriSign Global Registry Services.
+gov: Organizaciones 
+gubernamentales de EE.UU. Limitado US General Services Administration
+mil: Fuerzas Armadas de los 
+EE.UU. Limitado DoD Network Information Center.
+net: Redes de proveedores de 
+Servicios de Internet. Ilimitado VeriSign Global Registry Services.
+org: Organizaciones no 
+comerciales. Ilimitado Public Interest Registry.
+int: Organismos internacionales 
+reconocidos por tratados. Limitado Registro de Dominios de IANA
+iniciales.
+En cuando a los ccTLD (
+fico
+indicados en la Tabla 1-4.
+Tabla 1-3  Identificación de dominios de alto nivel genéricos complementarios
+gTLD Asignado a Autoridad de asignación de dominios
+• biz: Exclusivamente a organizaciones de negocios NeuLevel Inc.
+• info: Utilizado para servicios de información Afilias Limited.
+• name: Reservado para nombres de personas Global Name Registry.
+• pro: Organizaciones militares de los 
+Estados Unidos DoD Network Information Center.
+• aero: Con Sponsor. Reservado a organizaciones 
+del transporte aéreo
+Société Internationale de 
+Télécommunications Aéronautiques - SITA. 
+• coop: Con Sponsor. Reservado para
+asociaciones cooperativas Dot Cooperation LLC
+• cat: Con Sponsor. Reservado para la
+comunidad lingüística catalana Fundación puntCat
+• jobs: Con Sponsor. Reservado a gerentes
+de recursos humanos Employ Media LLC
+• mobi: Con Sponsor. Reservado a consumidores, 
+proveedores de móviles mTLD Top Level Domain Ltd.
+• travel: Con Sponsor. Organizaciones
+gubernamentales de los Estados Unidos VeriSign Global Registry Services.
+• pro: Reservado a profesionales y entidades
+relacionadas Public Interest Registry.
+• museum: Con Sponsor. Reservado para actividades 
+con la industria del turismo Tralliance Corporation
+Tabla 1-4  Identificación de dominios de alto nivel genéricos geográficos
+ccDLD País Ubicación ccDLD País Ubicación
+.ca Canadá
+América 
+del norte
+.cu Cuba
+Caribe
+.us Estados Unidos .do República Dominicana
+.mx México .ht Haití
+.ar Argentina
+América 
+del sur
+.pr Puerto Rico
+.bo Bolivia .ag Antigua y Barbuda
+.br Brasil .ai Anguila
+.cl Chile .aw Aruba
+.co Colombia .bb Barbados
+.ec Ecuador .bs Bahamas
+.gy Guyana .dm Dominica
+.pe Perú .gd Grenada
+.py Paraguay .jm Jamaica
+.sr Surinam .kn Saint Kitts and Nevis
+.uy Uruguay .ky Islas Caimán
+.ve Venezuela .ic Santa Lucía
+.gf Guyana francesa .ms Monserrat
+.es España
+Europa
+.tt Trinidad y Tobago
+.pt Portugal .vc San Vicente y las Granadinas
+.bz Belice
+América 
+central
+.ni Nicaragua
+América 
+central.cr Costa Rica .pa Panamá
+.gt Guatemala .sv El Salvador
+.hn Honduras .gq Guinea Ecuatorial África
+
+===== PÁGINA PDF 74 =====
+1 - Las comunicaciones. Conceptos básicos48
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+Por lo general, estos dominios son administrados por cada uno de los países que los de-
+tentan. En algunos casos ellos solo registran host de personas o instituciones que pertenecen 
+exclusivamente al propio país. En otros casos hay naciones que admiten pedidos de registro 
+de no residentes en ellas. En muchas circunstancias los países suelen adicionar a su dominio 
+de alto nivel geográfico un subdominio tomado de la lista de dominios de alto nivel genéricos, 
+aunque no siempre ocurre así.
+Por último se debe identificar el host en forma inequívoca a la izquierda de todas las deno-
+minaciones, según la modalidad adoptada en cada caso.
+La mayoría de los host situados en Estados Unidos utilizan solamente los dominios de pri-
+mer nivel genéricos (en muy pocos países se usa este método). Un ejemplo podría ser del tipo: 
+home.netscape.com. En este ejemplo, home es el nombre del servidor de la empresa netscape, 
+registrado en el dominio de alto nivel genérico .com. Para ello la empresa debió registrar el 
+nombre netscape en ese dominio genérico, y luego asignarle a ese servidor el nombre “home”, 
+entre las direcciones IP que tenía asignadas y disponibles.
+Sin embargo, algunos usuarios de Estados Unidos prefieren utilizar el dominio geográfico 
+.us, precedido por el código de dos letras con el nombre de la localidad o el Estado en que se 
+encuentran ubicados. Otro ejemplo de este caso podría ser el siguiente: ns.sf.ca.us. Se trata-
+ría de un host de nombre ns, que se encuentra en la ciudad de San Francisco, .sf, en el Estado 
+de California, .ca.
+En lo que respecta a distintos usos en el resto de los países, se utilizan directamente los 
+dominios geográficos, que son los casos más comunes, que usan todos los países a excepción 
+de Estados Unidos. 
+En muchos países, como Australia, el Reino Unido, México, Argentina, se anteponen 
+casi siempre los dominios de primer nivel genéricos  a los dominios geográficos . Un host 
+situado en Australia podría tener una dirección de este tipo: stella.edu.au , donde stella 
+es el nombre del servidor registrado en el subdominio de educación de Australia. Otro 
+ejemplo, podría ser el host de la editorial de esta obra, situado en México que podría tener 
+una dirección de este tipo: apolo.alfaomega.com.mx , donde apolo es el nombre del 
+servidor de la empresa Alfaomega , registrado en el subdominio .com bajo el dominio 
+geográfico .mx, de México.
+Por último, en muchos países hay una mezcla de ambos tipos de direcciones. Por ejem-
+plo, En Argentina algunas universidades, como la Universidad de Buenos Aires, ponen sus 
+dominios específicos directamente antes del dominio geográfico y no emplean un dominio de 
+primer nivel, mientras que otras, como la Universidad Nacional de La Plata, utilizan un subdo-
+minio del tipo de los dominios de primer nivel genéricos antes del dominio geográfico. Así, la 
+primera utiliza la dirección www.uba.ar y la segunda, www.fi.unlp.edu.ar.
+Por otra parte, para el funcionamiento correcto de la red es imprescindible que haya servi-
+dores que almacenen todos los registros de todas las direcciones y los dominios otorgados en 
+la red. De esta manera se puede lograr una administración correcta de la función de conmuta-
+ción, es decir que cuando un usuario de un host requiera conectarse con otro, los conmutado-
+res de paquetes o routers que tengan que encaminar el enlace conozcan de qué forma deben 
+circular para llegar a su destino final.
+Los protocolos de Internet están desarrollados para que cada equipo conectado a ella ten-
+ga una sola dirección, por lo general, denominada con el nombre del protocolo de red llamado 
+IP. Los nombres de dominio solo cumplen una función nemotécnica a los efectos de poder 
+recordarlos con más facilidad.
+No obstante, para ubicar la dirección sobre la base del dominio, Internet posee un DNS. 
+-
+-
+Para lograr este tipo de resultados, se utilizan miles de computadoras ubicadas en lugares 
+), que se denominan domain name resolvers, expresión que no con-
+-
+Pese a ello sucede que en muchos casos, para encontrar y resolver una dirección es ne-
+La responsabilidad del funcionamiento de estos equipos es de un organismo que se denomina 
+Internet Corporation for Assigned Names and Numbers) que cuenta con el asesoramiento 
+Root Server System Advisory Committee). 
+En la actualidad hay 13 servicios de raíz distribuidos en Internet, cada uno a cargo de un 
+ Organizaciones que trabajan para Internet
+ La Internet Society
+Internet no tiene una autoridad única, llámese presidente, directorio, o más concretamente 
+Una de ellas es la ISOC ( Internet Society) constituida como una organización no guber-
+Board of 
+, constituida por un presidente, un vicepresidente, un secretario, un tesorero y una 
+La Internet Society se ha fijado como misión: asegurar el desarrollo de la red; permitir que 
+
+===== PÁGINA PDF 75 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+49
+aunque no siempre ocurre así.
+minaciones, según la modalidad adoptada en cada caso.
+entre las direcciones IP que tenía asignadas y disponibles.
+encuentran ubicados. Otro ejemplo de este caso podría ser el siguiente: ns.sf.ca.us
+ría de un host de nombre ns
+de California, .ca.
+de Estados Unidos. 
+casi siempre los dominios de primer nivel genéricos  a los dominios geográficos
+situado en Australia podría tener una dirección de este tipo: stella.edu.au , donde 
+una dirección de este tipo: apolo.alfaomega.com.mx , donde apolo
+servidor de la empresa Alfaomega , registrado en el subdominio .com
+geográfico .mx, de México.
+dominios específicos directamente antes del dominio geográfico
+minio del tipo de los dominios de primer nivel genéricos
+primera utiliza la dirección www.uba.ar y la segunda, www.fi.unlp.edu.ar.
+circular para llegar a su destino final.
+recordarlos con más facilidad.
+No obstante, para ubicar la dirección sobre la base del dominio, Internet posee un DNS. 
+Este es un sistema de bases de datos, distribuidas y ordenadas en forma jerárquica, que permi-
+te, mediante un conjunto de palabras o de cadenas de letras con las que se conoce un equipo, 
+hallar su dirección IP. Así, ante una dirección del tipo www.internic.net el citado sistema per-
+mite que se pueda llegar a ella, que en este ejemplo sería 207.151.159.3. 
+Para lograr este tipo de resultados, se utilizan miles de computadoras ubicadas en lugares 
+estratégicos de la red, por lo general operadas por los proveedores de servicios de Internet 
+(Internet service providers), que se denominan domain name resolvers, expresión que no con-
+vendría traducir, pero que se puede interpretar como equipos que ayudan a analizar las direc-
+ciones de nombres, y encontrar a partir de ellas las direcciones IP. 
+Pese a ello sucede que en muchos casos, para encontrar y resolver una dirección es ne-
+cesario llegar a ciertos servidores que se denominan “raíz”. Ellos son los que contienen la 
+totalidad de las direcciones de la red. Esta información es crítica, porque es la única manera 
+de acceder siempre y en forma unívoca a la dirección de un host. Por esta causa estos equipos 
+raíz son especialmente administrados y están replicados de manera estratégica en la red de 
+forma de evitar que la caída de alguno de ellos no signifique paralizar el funcionamiento de 
+Internet. 
+La responsabilidad del funcionamiento de estos equipos es de un organismo que se denomina 
+ICANN (Internet Corporation for Assigned Names and Numbers) que cuenta con el asesoramiento 
+de un comité especial llamado DNS (Root Server System Advisory Committee). 
+En la actualidad hay 13 servicios de raíz distribuidos en Internet, cada uno a cargo de un 
+operador perfectamente identificado, y con una única dirección IP (Tabla 1-5). En algunos 
+casos, estas direcciones se comparten en varios equipos que replican el servicio para hacerlo 
+mas ágil en varias ubicaciones geográficas diferentes, pero siempre operadas por el mismo 
+grupo autorizado. Algunos trabajan solamente como servidores raíz del protocolo IPv4 y otros, 
+además, con el nuevo IPv6.
+1.8.4 Organizaciones que trabajan para Internet
+1.8.4.1 La Internet Society
+Internet no tiene una autoridad única, llámese presidente, directorio, o más concretamente 
+alguien con esa misión específica de dirigirla. Esto podría dar lugar a que en realidad pareciera 
+que la red se maneja sin conducción alguna. Sin embargo, no es tan así, y de hecho hay varias 
+organizaciones que trabajan en forma coordinada, que hacen que la red funcione de manera 
+continua, eficiente y sin mayores inconvenientes.
+Una de ellas es la ISOC ( Internet Society) constituida como una organización no guber-
+namental, sin fines de lucro. Se fundó 1991 y procedió a registrar su estatuto, que formalizó 
+su constitución, en enero de 1992 ante las autoridades judiciales del Distrito de Columbia, 
+Estados Unidos. La pertenencia a ella es voluntaria y sus miembros pueden ser individuos 
+o empresas. Su conducción está a cargo de una junta administrativa denominada Board of 
+Trustees, constituida por un presidente, un vicepresidente, un secretario, un tesorero y una 
+secretaría, y desde el punto de vista funcional depende de un director ejecutivo. También hay 
+un consejo asesor y varios comités que se dedican cada uno de ellos a actividades específicas. 
+La Internet Society se ha fijado como misión: asegurar el desarrollo de la red; permitir que 
+pueda utilizarse para beneficio de todas las personas del mundo; garantizar su existencia; ser 
+un centro de cooperación y coordinación global para el desarrollo de protocolos y estándares 
+compatibles; asegurar la evolución, y propender al uso de estándares abiertos.
+Si	 bien	 las	 redes	 que	 forman	 In-
+ternet	 pueden	 tener	 una	 auto -
+ridad	 única,	 la	 red	 de	 redes	 en	
+sí	 no	 tiene	 un	 organismo	 de	 di-
+rección	como	una	empresa	o	un	
+país.
+La	 Sociedad	 Internet	 (ISOC)tiene	
+sus	 oficinas	 en	 la	 ciudad	 de	 Res-
+ton,	 Estado	 de	 Virginia,	 Estados	
+Unidos.
+
+
+===== PÁGINA PDF 76 =====
+1 - Las comunicaciones. Conceptos básicos50
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+Tabla 1-5  Lista de servidores raíz de la red Internet
+Servidor Operado por Ubicación Direcciones IP
+A VeriSign Naming and
+Directory Services Dulles, Virginia, EE.UU. IPv4:198.41.0.4 
+B Information Sciences
+Institute Marina Del Rey, California, EE.UU. IPv4: 192.228.79.201
+IPv6: 001:478:65::53 
+C Cogent Communications Herndon, Virginia; Los Ángeles; 
+Nueva York y Chicago IPv4:192.33.4.12 
+D University of Maryland College Park, Maryland, EE.UU. IPv4:128.8.10.90 
+E NASA Ames Research
+Center Mountain View, California, EE.UU. IPv4:192.203.230.10 
+F Internet Systems
+Consortium, Inc. 
+Opera 37 sitios: Otawa; Palo Alto; 
+San José, Nueva York; San Francisco; 
+Madrid; Hong Kong; Los Ángeles; 
+Roma; Auckland; San Pablo; Beijing; 
+Seúl; Moscú; Taipei; Dubai; París; 
+Singapur; Brisbane; Toronto; 
+Monterrey; Lisboa; Johannesburgo; 
+Tel Aviv; Jakarta; Munich; Osaka; 
+Praga; Amsterdam; Barcelona; 
+Nairobi; Chennai; Londres; Santiago 
+de Chile; Dhaka; Karachi y Turín. 
+IPv4: 192.5.5.24
+IPv6: 2001:500::1035 
+G U.S. DOD Network
+Information Center Viena, Virginia, EE.UU. 192.112.36.4 
+H U.S. Army Research Lab Aberdeen, Maryland, EE.UU. IPv4: 128.63.2.53
+IPv6: 2001:500:1::803f:235 
+I Autonomica/NORDUnet 
+Opera 29 sitios: Estocolmo; 
+Helsinki; Milán; Londres; Génova; 
+Amsterdam; Oslo; Bangkok; Hong 
+Kong; Bruselas; Frankfurt; Ankara; 
+Bucarest; Chicago; Washington DC; 
+Tokio; Kuala Lumpur; Palo Alto; 
+Jakarta; Wellington; Johannesburgo; 
+Perth; San Francisco; Nueva York; 
+Singapur; Miami; Ashburn (EE.UU.); 
+Mumbai y Beijing 
+IPv4:192.36.148.17 
+J VeriSign Naming and
+Directory Services 
+Opera 21 sitios: Dulles, Virginia 
+(2 locaciones); Sterling Virginia 
+(2 locaciones); Mountain View, 
+California; Seattle, Washington; 
+Atlanta, Georgia; Los Ángeles, 
+California; Sunnyvale, California; 
+Amsterdam; Estocolmo; Londres; 
+Tokio; Seúl; Singapur; Sidney; San 
+Pablo; Brasilia; Toronto y Montreal 
+IPv4:192.58.128.30
+K
+Reseaux IP Europeens 
+-Network Coordination 
+Centre 
+Londres; Amsterdam; Frankfurt; 
+Atenas; Doha; Milán; Reykjavik; 
+Helsinki; Génova; Poznan; Budapest; 
+Abu Dhabi; Tokio; Brisbane; Miami; 
+Delhi; Novosibirsk. 
+IPv4: 193.0.14.129
+IPv6: 2001:7fd::1 
+L
+Internet Corporation for 
+Assigned Names and 
+Numbers 
+Los Ángeles, California, EE.UU. IPv4:198.32.64.12 
+M WIDE Project Tokio; Seúl; París y San Francisco. IPv4:202.12.27.33
+IPv6: 2001:dc3::35 
+ 
+Para ello prestó su apoyo jurídico y fiscal a un conjunto de organizaciones, que si bien están 
+-
+Internet Society.
+Estas organizaciones son las siguientes:
+ • Internet Engineering Task Force (IETF)
+ • Internet Architecture Board (IAB)
+ • Internet Engineering Steering Group (IESG)
+ • Internet Research Steering Group (IRSG)
+ • Internet Research Steering Group (IRTF)
+ • RFC Editor
+La Internet Society tiene una fuerte interacción con la Internet Corporation for Assigned 
+ (ICANN). Con el IANA asignan y mantienen la base de datos de direc-
+La IAB (Internet Architecture Board) fue constituida estatutariamente por la Internet Society 
+-
+Internet Configuration Control Borrad). 
+Su misión es supervisar la arquitectura de la red, incluidos sus protocolos y otros están-
+Internet Engineering Steering Group). Sus decisiones solo están sujetas a una 
+Board of Trustees de la ISOC.
+También desarrolla las siguientes actividades:
+ • Aprueba las designaciones que propone el Comité de Nominaciones, denominado Nomcom.
+ • Actúa como última instancia ante una apelación a una decisión tomada por el IESG.
+ • Nombra y supervisa al editor de los RFC (Request for Comments).
+ • Aprueba las convocatorias que efectúa el IANA.
+ • Es un cuerpo consultivo de la ISOC.
+ • Supervisa los distintos enlaces que puede efectuar el IETF con cuerpos generadores 
+de estándares.
+Está a cargo de un presidente, que recibe el nombre de Internet Architect, y está formada 
+-
+La IETF ( Internet Engineering Task Force , Equipo de trabajos técnicos de Internet) es 
+-
+-
+
+===== PÁGINA PDF 77 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+51
+Tabla 1-5  Lista de servidores raíz de la red Internet
+Servidor Operado por Ubicación Direcciones IP
+A VeriSign Naming and
+Directory Services Dulles, Virginia, EE.UU. IPv4:198.41.0.4 
+B Information Sciences
+Institute Marina Del Rey, California, EE.UU. IPv4: 192.228.79.201
+IPv6: 001:478:65::53 
+C Cogent Communications Herndon, Virginia; Los Ángeles; 
+Nueva York y Chicago IPv4:192.33.4.12 
+D University of Maryland College Park, Maryland, EE.UU. IPv4:128.8.10.90 
+E NASA Ames Research
+Center Mountain View, California, EE.UU. IPv4:192.203.230.10 
+F Internet Systems
+Consortium, Inc. 
+Opera 37 sitios: Otawa; Palo Alto; 
+San José, Nueva York; San Francisco; 
+Madrid; Hong Kong; Los Ángeles; 
+Roma; Auckland; San Pablo; Beijing; 
+Seúl; Moscú; Taipei; Dubai; París; 
+Singapur; Brisbane; Toronto; 
+Monterrey; Lisboa; Johannesburgo; 
+Tel Aviv; Jakarta; Munich; Osaka; 
+Praga; Amsterdam; Barcelona; 
+Nairobi; Chennai; Londres; Santiago 
+de Chile; Dhaka; Karachi y Turín. 
+IPv4: 192.5.5.24
+IPv6: 2001:500::1035 
+G U.S. DOD Network
+Information Center Viena, Virginia, EE.UU. 192.112.36.4 
+H U.S. Army Research Lab Aberdeen, Maryland, EE.UU. IPv4: 128.63.2.53
+IPv6: 2001:500:1::803f:235 
+I Autonomica/NORDUnet 
+Opera 29 sitios: Estocolmo; 
+Helsinki; Milán; Londres; Génova; 
+Amsterdam; Oslo; Bangkok; Hong 
+Kong; Bruselas; Frankfurt; Ankara; 
+Bucarest; Chicago; Washington DC; 
+Tokio; Kuala Lumpur; Palo Alto; 
+Jakarta; Wellington; Johannesburgo; 
+Perth; San Francisco; Nueva York; 
+Singapur; Miami; Ashburn (EE.UU.); 
+Mumbai y Beijing 
+IPv4:192.36.148.17 
+J VeriSign Naming and
+Directory Services 
+Opera 21 sitios: Dulles, Virginia 
+(2 locaciones); Sterling Virginia 
+(2 locaciones); Mountain View, 
+California; Seattle, Washington; 
+Atlanta, Georgia; Los Ángeles, 
+California; Sunnyvale, California; 
+Amsterdam; Estocolmo; Londres; 
+Tokio; Seúl; Singapur; Sidney; San 
+Pablo; Brasilia; Toronto y Montreal 
+IPv4:192.58.128.30
+K
+Reseaux IP Europeens 
+-Network Coordination 
+Centre 
+Londres; Amsterdam; Frankfurt; 
+Atenas; Doha; Milán; Reykjavik; 
+Helsinki; Génova; Poznan; Budapest; 
+Abu Dhabi; Tokio; Brisbane; Miami; 
+Delhi; Novosibirsk. 
+IPv4: 193.0.14.129
+IPv6: 2001:7fd::1 
+L
+Internet Corporation for 
+Assigned Names and 
+Numbers 
+Los Ángeles, California, EE.UU. IPv4:198.32.64.12 
+M WIDE Project Tokio; Seúl; París y San Francisco. IPv4:202.12.27.33
+IPv6: 2001:dc3::35 
+ 
+Para ello prestó su apoyo jurídico y fiscal a un conjunto de organizaciones, que si bien están 
+bajo su órbita, poseen una libertad de trabajo muy amplia y son independientes. Ellas se cons-
+tituyeron para cubrir necesidades de la red, y en el presente cumplen un papel fundamental en 
+la estructura mundial de Internet. Algunas tienen una constitución refrendada en la justicia y 
+otras funcionan de hecho y apoyadas por la Internet Society.
+Estas organizaciones son las siguientes:
+ • Internet Engineering Task Force (IETF)
+ • Internet Architecture Board (IAB)
+ • Internet Engineering Steering Group (IESG)
+ • Internet Research Steering Group (IRSG)
+ • Internet Research Steering Group (IRTF)
+ • RFC Editor
+La Internet Society tiene una fuerte interacción con la Internet Corporation for Assigned 
+Names and Numbers (ICANN). Con el IANA asignan y mantienen la base de datos de direc-
+ciones de red y nombres de dominio, que son necesarios para el funcionamiento de Internet.
+1.8.4.2 Internet Architecture Board (IAB)
+La IAB (Internet Architecture Board) fue constituida estatutariamente por la Internet Society 
+como una de sus organizaciones especiales en junio de 1992. Su origen se remonta a 1979, 
+época en que Vinton Cerf aún trabajaba en el Proyecto DARPA y había procedido a constituir 
+un comité técnico consultor con funciones bastante similares a las actuales. En esa oportuni-
+dad este se denominó ICCB (Internet Configuration Control Borrad). 
+Su misión es supervisar la arquitectura de la red, incluidos sus protocolos y otros están-
+dares. Actúa como organismo técnico de decisión final para controversias que pueda haber 
+dentro del IESG (Internet Engineering Steering Group). Sus decisiones solo están sujetas a una 
+apelación única ante el Board of Trustees de la ISOC.
+También desarrolla las siguientes actividades:
+ • Aprueba las designaciones que propone el Comité de Nominaciones, denominado Nomcom.
+ • Actúa como última instancia ante una apelación a una decisión tomada por el IESG.
+ • Nombra y supervisa al editor de los RFC (Request for Comments).
+ • Aprueba las convocatorias que efectúa el IANA.
+ • Es un cuerpo consultivo de la ISOC.
+ • Supervisa los distintos enlaces que puede efectuar el IETF con cuerpos generadores 
+de estándares.
+Está a cargo de un presidente, que recibe el nombre de Internet Architect, y está formada 
+por voluntarios de una amplia y variada gama de organizaciones gubernamentales, comercia-
+les, educativas, etc., pero que solo actúan a título personal. Esta organización es autónoma, se 
+autofinancia, aunque también recibe apoyo económico de la ISOC.
+1.8.4.3 Internet Engineering Task Force (IETF)
+La IETF ( Internet Engineering Task Force , Equipo de trabajos técnicos de Internet) es 
+un grupo conformado por técnicos, administradores de red, investigadores, usuarios y otros 
+voluntario. Estos se organizan en grupos de trabajo, que se dedican a discutir, definir e imple-
+mentar aspectos técnicos de la red, como protocolos, especificaciones y tecnologías necesa-
+rias para su funcionamiento. Estos grupos de tareas, que son de participación abierta, están 
+
+===== PÁGINA PDF 78 =====
+1 - Las comunicaciones. Conceptos básicos52
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+divididos en diversas áreas; por ejemplo, aplicaciones, Internet, encaminamiento, transporte, 
+servicios a los usuarios y otras. 
+El IETF no es una organización en sentido formal pues no tiene estatuto, personería jurí-
+dica ni directorio. Funciona como una actividad apoyada por la ISOC, que le provee muchos 
+servicios, seguros, apoyo logístico y financiero para hacer funcionar una pequeña secretaría 
+para la coordinación de sus actividades, administrada por un director ejecutivo. 
+Se organiza en unidades denominadas áreas. Cada una de ellas tiene un director (AD, Area 
+Director) que pertenece al IESG, y es nominado por un comité llamado Nomcom, para su designa-
+ción ulterior por el IAB (Internet Architecture Board). Cada área, a su vez, está formada por grupos 
+de trabajo, denominados WG (Work Group), que se ocupan de estudiar aspectos muy específicos 
+de la red. Los que desean participar de estos grupos de trabajo no necesitan una admisión formal, 
+pueden gestionar su inclusión mediante una solicitud que puede efectuarse por correo electrónico.
+La característica más relevante del IEFT es que está abocado a los problemas más inmedia-
+tos que puedan necesitar tratamiento y consideración. Sus grupos de trabajo son coordinados 
+por el denominado IESG (Internet Engineering Steering Group, Grupo de Iniciativas Técnicas de 
+Internet) al que le presentan el resultado de sus trabajos para su aprobación y revisión.
+Se podrían señalar como sus tareas específicas vinculadas con Internet las siguientes:
+ • Identificar y proponer soluciones relacionadas con problemas de índole operacional 
+y técnico.
+ • Especificar, desarrollar, señalar la forma que deben utilizarse protocolos, que deben 
+solucionar problemas de corto plazo vinculados con la arquitectura.
+ • Hacer recomendaciones al IESG respecto de la normalización y el uso de protocolos. 
+ • Facilitar la transferencia de tecnología al IRTF (Internet Research Task Force).
+ • Proveer un foro de intercambios de información dentro de la Comunidad Internet en-
+tre distribuidores de equipamiento, usuarios, investigadores, contratistas de instala-
+ciones y administradores de la red.
+1.8.4.4 Internet Engineering Steering Group (IESG)
+El IESG es la parte de la ISOC responsable de las actividades técnicas que desarrolla el 
+Grupo de Tareas de Ingeniería de Internet (IETF). Administra el proceso de definición y apro-
+bación de los estándares de la red. Para ello, se atiene a las disposiciones, las reglas y los 
+procedimientos que al efecto dispone el Board of Trustees de la ISOC. 
+Esta organización ratifica o corrige los trabajos que ejecuta y presenta el IETF por medio 
+de los distintos grupos de trabajo (WG) y se asegura que estos antes de transformarse en RFC 
+sean correctos. Este grupo se maneja por consenso y sus tareas están vinculadas a la super-
+visión y el control del trabajo de los WG, cuyos directores son miembros de esta organización. 
+En muchas oportunidades el IETF solicita a esta organización opiniones sobre el desarrollo de 
+un trabajo en marcha determinado.
+Se podría afirmar que este grupo es de gran importancia en todo lo que tiene que ver con 
+las funciones de asesoramiento técnico, que otros organismos de Internet pueden requerir o 
+necesitar, en muchas ocasiones en forma obligatoria y previa a la aprobación de cambios o 
+modificaciones que hagan al funcionamiento de ella. 
+Sus miembros son nominados por un comité dirigido por la ISOC e integrado por muchas 
+otras personas u organizaciones que se denominan Norcom, que con ulterioridad deben ser 
+aprobados por el IAB. 
+Así como el IETF se ocupa de las tareas y las necesidades de la red en el corto plazo, las acti-
+Internet 
+, Equipo de investigación de Internet). Por ese motivo, no está involucrado 
+-
+Este grupo de tareas está coordinado por el IRSG (Internet Research Steering Group), que 
+El grupo de tareas para las investigaciones de Internet es otra organización formada por 
+-
+Está dirigida por un presidente “chair” que es designado por el IAB y nominado por el Nor-
+Este grupo actúa como consultor de las tareas que desarrolla el Grupo de Tareas para las 
+-
+Todos los documentos producidos y vinculados a Internet se denominan RFC (Request For 
+), y son editados por una autoridad que se denomina RFC Editor. Ellos componen 
+-
+El editor de RFC es el responsable de la revisión editorial, la redacción final de los docu-
+Merece un párrafo aparte la tarea que desarrolló desde su inicio hasta su fallecimiento en 
+Jon Postel al que la red le honró numerosos tributos de muchas maneras por su labor 
+El proceso de generación de estándares para la normalización y el uso en Internet es una 
+-
+Internet Architecture Board), y en 
+Internet Engineering Task Group).
+
+===== PÁGINA PDF 79 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+53
+servicios a los usuarios y otras. 
+para la coordinación de sus actividades, administrada por un director ejecutivo. 
+Se organiza en unidades denominadas áreas. Cada una de ellas tiene un director (AD, 
+Director
+ción ulterior por el IAB (Internet Architecture Board
+de trabajo, denominados WG (Work Group
+por el denominado IESG (Internet Engineering Steering Group
+Internet) al que le presentan el resultado de sus trabajos para su aprobación y revisión.
+Se podrían señalar como sus tareas específicas vinculadas con Internet las siguientes:
+ •
+y técnico.
+ •
+solucionar problemas de corto plazo vinculados con la arquitectura.
+ •
+ • Facilitar la transferencia de tecnología al IRTF (Internet Research Task Force).
+ •
+ciones y administradores de la red.
+1.8.4.4 Internet Engineering Steering Group (IESG)
+procedimientos que al efecto dispone el Board of Trustees de la ISOC. 
+un trabajo en marcha determinado.
+modificaciones que hagan al funcionamiento de ella. 
+aprobados por el IAB. 
+1.8.4.5 Internet Research Task Force (IRTF)
+Así como el IETF se ocupa de las tareas y las necesidades de la red en el corto plazo, las acti-
+vidades de investigación y decisiones orientadas al largo plazo están a cargo de la IRTF (Internet 
+Research Task Force, Equipo de investigación de Internet). Por ese motivo, no está involucrado 
+en el proceso de elaboración de estándares para la red. Cuando en alguna de sus actividades 
+llega a resultados a partir de los que se puede derivar la necesidad de elaborar alguna especifica-
+ción técnica, traslada sus investigaciones al IETF para que continúe con este trabajo.
+Este grupo de tareas está coordinado por el IRSG (Internet Research Steering Group), que 
+también actúa bajo la órbita de la junta directiva de la Arquitectura de Internet. Forma grupos 
+de investigación para cada área de interés aprobada y se organiza en Grupos de Trabajo con 
+una estructura y una forma de operación similares a las del IETF. 
+El grupo de tareas para las investigaciones de Internet es otra organización formada por 
+voluntarios, que se dedica a realizar tareas de investigación a largo plazo. A diferencia del 
+IETF, en esta organización, dada la necesidad de que sus participantes tengan cierto nivel de 
+aptitudes y preparación profesional, la participación en los WG no siempre es abierta a cual-
+quier interesado. Si bien hay casos en que lo es, en otros la admisión debe ser aprobada por los 
+directores de los grupos de trabajo. 
+Está dirigida por un presidente “chair” que es designado por el IAB y nominado por el Nor-
+com, y que debe trabajar en estrecho contacto con el IRSG. Además, supervisa y coordina los 
+grupos de investigación y luego sus resultados suelen publicarse en revistas de investigación 
+y técnicas de alto nivel académico.
+1.8.4.6 Internet Research Steering Group (IRSG)
+Este grupo actúa como consultor de las tareas que desarrolla el Grupo de Tareas para las 
+Investigaciones de la Red Internet (IRTF). Sus miembros son los directores de los grupos de 
+trabajo del IRTF. Se encarga de desarrollar talleres para investigar cuáles deben ser las priori-
+dades de los temas a investigar para mejorar el funcionamiento de la red.
+1.8.4.7 RFC Editor
+Todos los documentos producidos y vinculados a Internet se denominan RFC (Request For 
+Comments), y son editados por una autoridad que se denomina RFC Editor. Ellos componen 
+un conjunto de notas técnicas y organizativas que comenzaron a editarse en 1969 cuando 
+comenzó la red ARPANET. Esta serie de documentos describe aspectos que hacen a la inter-
+conexión de las redes, los protocolos, los procedimientos, los programas, los conceptos, los 
+anales de las reuniones que se realizaron, las opiniones y hasta notas de humor.
+El editor de RFC es el responsable de la revisión editorial, la redacción final de los docu-
+mentos y su publicación en la página correspondiente de la red, http://rfc.net/, en la que se 
+encuentra la totalidad de esos documentos.
+Merece un párrafo aparte la tarea que desarrolló desde su inicio hasta su fallecimiento en 
+1998 Jon Postel al que la red le honró numerosos tributos de muchas maneras por su labor 
+esforzada y eficiente a cargo de tan importante actividad.
+1.8.4.8 Proceso utilizado en Internet para la aprobación de normas y recomendaciones
+El proceso de generación de estándares para la normalización y el uso en Internet es una 
+actividad que está bajo la responsabilidad primaria de la Internet Society, que delega la admi-
+nistración y la organización de estas actividades en el IAB (Internet Architecture Board), y en 
+el IETG (Internet Engineering Task Group).
+
+===== PÁGINA PDF 80 =====
+1 - Las comunicaciones. Conceptos básicos54
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+Los objetivos que regulan la confección de estándares de Internet son los siguientes:
+ • Excelencia técnica.
+ • Testeo e implementación previa.
+ • Confección de la documentación clara, concisa y de fácil comprensión.
+ • Transparencia e igualdad.
+ • Confección de estándares en el momento oportuno.
+Todos los estándares utilizados en la red son publicados por el editor mediante los de-
+nominados Request for Comments ya descriptos. Todos ellos están en la red, son de libre 
+disposición y pueden obtenerse mediante el acceso a la página http://www.rfc-editor.org/
+rfc.html.
+En la confección de estándares hay dos conceptos que tienen una importancia central para 
+entender su proceso de realización. Ellos son:
+ • STATE. Se refiere al nivel de avance que tiene el desarrollo de un estándar. Las especi-
+ficaciones de Internet atraviesan distintas etapas de desarrollo, prueba y aceptación. 
+Dentro del proceso de estándares de Internet, estas etapas se denominan formalmen-
+te “niveles de madurez”.
+ • STATUS. Está vinculado al nivel de aceptación que tiene para las autoridades de la red.
+Los estatus son los siguientes:
+Estándar propuesto. Es el estado inicial de un futuro estándar. Para tener este nivel 
+inicial se consideró que es una idea que ha recibido aceptación significativa en la comunidad 
+de Internet y por lo tanto hay interés suficiente para considerarla valiosa. Es necesario que el 
+IETF tome una acción especial para que una propuesta alcance este primer nivel. También el 
+IESG puede requerir la implementación o la experiencia operacional previa a otorgar el state 
+a un estándar propuesto cuando pueda afectar materialmente los protocolos centrales que 
+hacen al funcionamiento de Internet.
+Draft estándar.  Una especificación puede alcanzar el nivel Draft (provisoria) cuando 
+al menos en dos implementaciones independientes e interoperables desde bases de código 
+diferentes ha sido probada, para lo cual se ha obtenido suficiente experiencia operacional 
+exitosa.
+El director del grupo de trabajo (WG) que se ocupó de estudiar y desarrollar esta especifi-
+cación es responsable de documentar el trabajo realizado. 
+Un draft estándar debe conocerse de manera adecuada y presentar una estabilidad sufi-
+ciente, tanto en su semántica como en las bases para el desarrollo de una implementación.
+Estándar de Internet.  Una especificación será llevada a estándar de Internet cuando 
+se haya obtenido una implementación significativa y experiencia operacional exitosa. Se 
+caracteriza por poseer un alto nivel de madurez técnica y una creencia generalizada de que 
+el protocolo o el servicio especificados proveen un beneficio significativo a la comunidad de 
+Internet. Este state le asigna al estándar un número de serie STD, y este a su vez retiene su 
+número RFC.
+Hay especificaciones que no se encuentran en los distintos estados de madurez de la con-
+fección de estándares. A estos casos se los denomina off-track, fuera del proceso de estanda-
+rización, y pueden ser tres: experimentales, informativos e históricos.
+Experimentales. En los casos típicos la designación de “experimentales” se refiere a una 
+especificación que es parte de algún esfuerzo de investigación o desarrollo. Esta especificación 
+Informativos. Una especificación informativa es una publicación que tiene por objeto in-
+-
+Históricos. Son casos de especificaciones que precedieron a una especificación más re-
+Especificaciones técnicas y estados de aplicabilidad. En cuanto a las especificacio-
+es-
+ (TS, Technical Specification) y estados de aplicabilidad (AS, Applicability 
+).
+Se entiende por una especificación técnica cualquier protocolo, servicio, procedimiento, 
+Una descripción de aplicación es un documento que especifica cómo y bajo qué cir-
+-
+En cuanto a los niveles de requerimiento de una especificación técnica, vinculada con 
+ • Requerido (required). Este nivel implica que la especificación técnica logre un grado 
+de conformidad mínima. Por ejemplo, IP e ICMP pueden ser implementadas por todos 
+los sistemas de Internet utilizando la suite de protocolo TCP/IP.
+ • Recomendado (recommended). Este nivel no requiere una conformidad mínima, pero 
+la experiencia o el conocimiento técnico generalmente aceptado sugieren que es de-
+seable su aplicación. Se recomienda a los proveedores que incluyan las funciones, las 
+características y los protocolos de ellos en sus productos. Deberían omitirlas solo si se 
+justifica esta omisión por alguna circunstancia en particular. Por ejemplo, el protocolo 
+TELNET debería ser implementado por todos los sistemas que se beneficiarían con 
+un acceso remoto.
+ • Electivo (elective). Su implementación es solo opcional, por lo que no hay una necesi-
+dad explícita de aplicación de la ET. Sin embargo, un proveedor particular puede de-
+cidir implementarla, o un usuario en particular puede decidir que resulta necesaria en 
+un contexto determinado. Por ejemplo, la DECNEGT DIB puede considerarse valiosa 
+en el medio donde se utiliza el protocolo DECNET.
+ • De uso limitado (limited use).  En estos casos se considera apropiado su uso solo en 
+circunstancias limitadas o únicas. Por ejemplo, el uso de un protocolo con una desig-
+nación de “experimental” debería estar limitado solo a los que se encuentran activa-
+mente involucrados en el experimento.
+ • No recomendado su uso (not recommended).  Se aplica cuando una especificación 
+técnica no se considera apropiada para el uso general. Suele deberse a su funcionali-
+dad limitada, naturaleza particular o status histórico.
+STD	 es	 la	 abreviatura	 de	 stan -
+dard.	 Cada	 protocolo	 tiene	 un	
+número	de	STD	y	además,	al	ser	
+publicado,	 otro	 correspondiente	
+al	RFC.
+Jon	 Postel (1943-1998).	 Puede	
+definírselo	 como	 uno	 de	 los	 bo-
+hemios	 y	 más	 interesantes	 pio -
+neros	 de	 Internet.	 Trabajó	 en	 el	
+desarrollo	de	los	protocolos	TCP/
+IP	desde	su	creación.	Inauguró	la	
+serie	de	RFC	el	7	de	abril	de	1969	
+y	 desarrolló	 la	 tarea	 de	 editor	
+hasta	su	fallecimiento.	Editó	más	
+de	 2400	 documentos.	 T ambién	
+tuvo	a	su	cargo	el	IANA	( Internet	
+Assigned	Numbers	Authority),	en	
+la	 actualidad	 dependiente	 del	
+ICANN.
+
+
+===== PÁGINA PDF 81 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+55
+Los objetivos que regulan la confección de estándares de Internet son los siguientes:
+ • Excelencia técnica.
+ • Testeo e implementación previa.
+ • Confección de la documentación clara, concisa y de fácil comprensión.
+ • Transparencia e igualdad.
+ • Confección de estándares en el momento oportuno.
+rfc.html.
+entender su proceso de realización. Ellos son:
+ •
+te “niveles de madurez”.
+ •
+Los estatus son los siguientes:
+Estándar propuesto.
+hacen al funcionamiento de Internet.
+Draft estándar.
+exitosa.
+cación es responsable de documentar el trabajo realizado. 
+ciente, tanto en su semántica como en las bases para el desarrollo de una implementación.
+Estándar de Internet.
+Internet. Este state
+número RFC.
+fección de estándares. A estos casos se los denomina off-track
+rización, y pueden ser tres: experimentales, informativos e históricos.
+Experimentales.
+se publica para información general en la comunidad técnica de Internet. Una especificación 
+experimental puede ser resultado de un esfuerzo de investigación de Internet (p. ej., un grupo 
+de investigación del IRTF), un grupo de trabajo del IETF o bien puede ser una contribución 
+individual.
+Informativos. Una especificación informativa es una publicación que tiene por objeto in-
+formar a la comunidad de Internet acerca de un asunto de interés general. No representa un 
+consenso y tampoco se trata de una recomendación. Suele tener el propósito de facilitar la 
+publicación oportuna de documentos de muy amplio espectro y provenientes de gran canti-
+dad de fuentes.
+Históricos. Son casos de especificaciones que precedieron a una especificación más re-
+ciente, que suelen considerarse obsoletas por cualquier otra razón.
+Especificaciones técnicas y estados de aplicabilidad. En cuanto a las especificacio-
+nes técnicas sujetas a los procesos de estandarización, hay dos categorías denominadas es-
+pecificación técnica (TS, Technical Specification) y estados de aplicabilidad (AS, Applicability 
+Statement).
+Se entiende por una especificación técnica cualquier protocolo, servicio, procedimiento, 
+convención o formato que describe los aspectos relevantes de su objeto o puede dejar uno o 
+más parámetros u opciones sin especificar.
+Una descripción de aplicación es un documento que especifica cómo y bajo qué cir-
+cunstancias pueden aplicarse una o más especificaciones técnicas para sostener una capaci-
+dad particular de Internet. Puede contener valores particulares o los rangos de los parámetros 
+de las ET, o subfunciones de un protocolo que se deben implementar. 
+En cuanto a los niveles de requerimiento de una especificación técnica, vinculada con 
+su status, son los que se detallan a continuación y corresponden al grado de aceptabilidad o 
+necesidad de implementación en las redes de los usuarios.
+ • Requerido (required). Este nivel implica que la especificación técnica logre un grado 
+de conformidad mínima. Por ejemplo, IP e ICMP pueden ser implementadas por todos 
+los sistemas de Internet utilizando la suite de protocolo TCP/IP.
+ • Recomendado (recommended). Este nivel no requiere una conformidad mínima, pero 
+la experiencia o el conocimiento técnico generalmente aceptado sugieren que es de-
+seable su aplicación. Se recomienda a los proveedores que incluyan las funciones, las 
+características y los protocolos de ellos en sus productos. Deberían omitirlas solo si se 
+justifica esta omisión por alguna circunstancia en particular. Por ejemplo, el protocolo 
+TELNET debería ser implementado por todos los sistemas que se beneficiarían con 
+un acceso remoto.
+ • Electivo (elective). Su implementación es solo opcional, por lo que no hay una necesi-
+dad explícita de aplicación de la ET. Sin embargo, un proveedor particular puede de-
+cidir implementarla, o un usuario en particular puede decidir que resulta necesaria en 
+un contexto determinado. Por ejemplo, la DECNEGT DIB puede considerarse valiosa 
+en el medio donde se utiliza el protocolo DECNET.
+ • De uso limitado (limited use).  En estos casos se considera apropiado su uso solo en 
+circunstancias limitadas o únicas. Por ejemplo, el uso de un protocolo con una desig-
+nación de “experimental” debería estar limitado solo a los que se encuentran activa-
+mente involucrados en el experimento.
+ • No recomendado su uso (not recommended).  Se aplica cuando una especificación 
+técnica no se considera apropiada para el uso general. Suele deberse a su funcionali-
+dad limitada, naturaleza particular o status histórico.
+
+===== PÁGINA PDF 82 =====
+1 - Las comunicaciones. Conceptos básicos56
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ La red Internet
+1.8.4.9 Internet Corporation for Assigned Names and Numbers (ICANN)
+La ICANN (Corporación de la Red Internet para la Asignación de Nombres y Números) es una 
+organización civil internacional  sin fines de lucro. Es el organismo responsable de asignar direc-
+ciones numéricas para uso del protocolo de Internet (IP), además tiene la función de gestionar y 
+administrar el sistema de Nombres de Dominio de Primer Nivel Genéricos (gTLD), y de Códigos de 
+Dominios de Países de Primer Nivel (ccTLD), como también el sistema de servidores raíz. 
+Sus misión es preservar la estabilidad operacional de Internet, promover la competencia, 
+lograr una amplia representación de las comunidades mundiales de Internet, y desarrollar las 
+normativas adecuadas, para que el cumplimiento de su misión se realice mediante procesos 
+“de abajo hacia arriba” y basados en el consenso.
+Más concretamente, ICANN se debe ocupar de:
+ • Coordinar la ubicación y la asignación de los tres conjuntos de identificación únicos 
+de la red, que son:
+— Los nombres de dominios.
+— Las direcciones del protocolo Internet (IP) y el sistema autónomo de números (AS).
+— Los protocolos para los puertos y los números de parámetro.
+ • Coordinar la operación y la evolución del sistema de servidor de nombres de raíz 
+de DNS.
+ • Coordinar el desenvolvimiento de una política vinculada de manera razonable y apro-
+piada con estas funciones técnicas.
+Esta organización fue creada el 18 de septiembre de 1998. Ocupa el mismo edificio en que 
+trabajaba Jon Postel, en Marina del Rey, California, donde funciona el Instituto de Ciencias de 
+la Información de la Universidad del Sur de California (University of Southern California); Esta-
+do bajo cuyas leyes fue registrado su estatuto.
+Su constitución como organización se originó promovida por una agencia de la Secretaría 
+de Comercio de los Estados Unidos que en enero de 1998 puso a discusión de la comunidad 
+de Internet un documento que se denominó Green Paper en el que se proponía privatizar la 
+asignación de direcciones numéricas, los nombres de dominio de primer nivel, como la admi-
+nistración del sistema de servidores raíz. 
+El 6 de noviembre de 1998 se formalizó su constitución mediante la aprobación de su estatuto 
+de funcionamiento, que vincula al ICANN, por medio de contratos, con el gobierno de los Estados 
+Unidos; se ocupa fundamentalmente de realizar y establecer las políticas de estas actividades, 
+mientras que el trabajo técnico sigue a cargo del Internet Assigned Numbers Authority (IANA).
+El IANA fue originalmente la autoridad responsable de la administración y la asignación de 
+las direcciones IP así como las direcciones DNS, incluidos los dominios de alto nivel y el sistema 
+de servidor de nombres de raíz. Una vez constituido el ICANN, el IANA continuó vinculado a las 
+mismas tareas, además colabora de manera activa con el Internet Engeneering Task Force (IETF).
+1.8.4.10 Internet Assigned Numbers Authority (IANA)
+IANA como Departamento de la ICANN es la encargada de coordinar algunos de los as-
+pectos claves que permiten mantener la Red Internet funcionando sin problemas.
+Mientras que Internet tiene como característica esencial ser una red en todo el mundo libre 
+de la coordinación central, hay una necesidad técnica en algunas partes claves de ella que 
+deben ser coordinadas a nivel mundial. Esa función se lleva a cabo a través de IANA. Precisa-
+mente, esta asigna y mantiene sistemas de numeración y códigos únicos que se utilizan como 
+normas técnicas y protocolos para que la red pueda ser conducida.
+Las variadas actividades del IANA pueden ser agrupadas en tres categorías:
+ • Nombres de dominio
+En ese aspecto se ocupa entre otras actividades de:
+ – ser responsable de la operación y del mantenimiento de un conjunto de aspec-
+tos claves de los servicios de nombres de dominios - DNS, incluyendo los que 
+hacen a la zona de raíz, como a la administración de los dominios de primer nivel 
+genéricos .int y .arpa.
+ – coordinar, globalmente, la raíz de los DNS. Esta es la parte de más alto nivel de la 
+jerarquía de los DNS e implica la responsabilidad administrativa de los dominios 
+de alto nivel, los que son el último segmento de un nombre de dominio, tal como 
+pueden ser: .edu, .com, .mx, .es, .ar, etcétera.
+ – mantener un número de dominios especiales que están reservados para futuros 
+usos o administrados para propósitos de demostración.
+ • Recursos de numeración
+Es responsable primario de la coordinación global de los sistemas direcciones del 
+protocolo de Internet, como así también, de los Números de Sistemas Autónomos se 
+utilizan para enrutar el tráfico de la Red.
+Cabe aclarar que se ha producido el agotamiento del espacio de direcciones a par-
+tir de la década de los noventa. Previendo esta situación, se comenzó con el estudio 
+tendiente a cambiar las direcciones IPv4 por otro esquema que resultara más eficiente, 
+flexible y que tuviera una cantidad de direcciones disponibles muy superior a la IPv4.
+Fue entonces cuando a principios de los años noventa la Internet Engineering 
+Task Force (IETF) tomó el problema del IPv4 para construir un nuevo esquema que se 
+conoce como IPng (IP Next generation), cuyo resultado final fue la creación del están-
+dar IPv6, el cual ya funciona en numerosos países conectando universidades, centros 
+de investigación, compañías, etcétera.
+En la Fig. 1.12., podemos observar cómo se fue produciendo, a comienzos de 2011, 
+el agotamiento de las direcciones IPv4 que tenía disponibles para asignar el IANA.
+
+===== PÁGINA PDF 83 =====
+1.8 La red Internet
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+57
+1.8.4.9 Internet Corporation for Assigned Names and Numbers (ICANN)
+Dominios de Países de Primer Nivel (ccTLD), como también el sistema de servidores raíz. 
+“de abajo hacia arriba” y basados en el consenso.
+Más concretamente, ICANN se debe ocupar de:
+ •
+de la red, que son:
+— Los nombres de dominios.
+— L
+— Los protocolos para los puertos y los números de parámetro.
+ •
+de DNS.
+ •
+piada con estas funciones técnicas.
+do bajo cuyas leyes fue registrado su estatuto.
+nistración del sistema de servidores raíz. 
+1.8.4.10 Internet Assigned Numbers Authority (IANA)
+pectos claves que permiten mantener la Red Internet funcionando sin problemas.
+normas técnicas y protocolos para que la red pueda ser conducida.
+Las variadas actividades del IANA pueden ser agrupadas en tres categorías:
+ • Nombres de dominio
+En ese aspecto se ocupa entre otras actividades de:
+ – ser responsable de la operación y del mantenimiento de un conjunto de aspec-
+tos claves de los servicios de nombres de dominios - DNS, incluyendo los que 
+hacen a la zona de raíz, como a la administración de los dominios de primer nivel 
+genéricos .int y .arpa.
+ – coordinar, globalmente, la raíz de los DNS. Esta es la parte de más alto nivel de la 
+jerarquía de los DNS e implica la responsabilidad administrativa de los dominios 
+de alto nivel, los que son el último segmento de un nombre de dominio, tal como 
+pueden ser: .edu, .com, .mx, .es, .ar, etcétera.
+ – mantener un número de dominios especiales que están reservados para futuros 
+usos o administrados para propósitos de demostración.
+ • Recursos de numeración
+Es responsable primario de la coordinación global de los sistemas direcciones del 
+protocolo de Internet, como así también, de los Números de Sistemas Autónomos se 
+utilizan para enrutar el tráfico de la Red.
+Cabe aclarar que se ha producido el agotamiento del espacio de direcciones a par-
+tir de la década de los noventa. Previendo esta situación, se comenzó con el estudio 
+tendiente a cambiar las direcciones IPv4 por otro esquema que resultara más eficiente, 
+flexible y que tuviera una cantidad de direcciones disponibles muy superior a la IPv4.
+Fue entonces cuando a principios de los años noventa la Internet Engineering 
+Task Force (IETF) tomó el problema del IPv4 para construir un nuevo esquema que se 
+conoce como IPng (IP Next generation), cuyo resultado final fue la creación del están-
+dar IPv6, el cual ya funciona en numerosos países conectando universidades, centros 
+de investigación, compañías, etcétera.
+En la Fig. 1.12., podemos observar cómo se fue produciendo, a comienzos de 2011, 
+el agotamiento de las direcciones IPv4 que tenía disponibles para asignar el IANA.
+256
+192
+128
+64
+0
+1999   2000    2001   2002   2003    2004    2005    2006   2007   2008   2009    2010    2011   2012
+hoy
+Bases del IANA              Asignaciones PIR                 Publicitada               Banco del RIR
+Fig. 1.12.	Variación	de	los	bancos	de	registros	y	asignación	de	números	de	Internet.
+
+===== PÁGINA PDF 84 =====
+1 - Las comunicaciones. Conceptos básicos58
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ Los procesos de estandarización y los organismos de normalización
+Actualmente, conviven los dos tipos de protocolo de Internet (IP). La versión 4, conoci-
+da como IPv4 que se comenzó a utilizar el 1 de enero de 1983 y sigue siendo la más popu-
+lar y la versión 6, conocida como IPv6 que comenzó su distribución el 14 de julio de 1999.
+Las direcciones IPv4, como se expresó en el apartado 1.8.3.1, poseen un conjunto de 
+32 bits que normalmente se describe con 4 números decimales (no mayores a 255) sepa-
+rados por un punto, como podría ser, por ejemplo, 192.0.2.53. Cada número puede ser re-
+presentado por un conjunto de ocho bits, que suma los 32 que contiene cada dirección.
+Las direcciones IPv6, como se expresó en el apartado 1.8.3.1, que contienen un 
+conjunto de 128 bits cada una, se describen con ocho grupos de cuatro dígitos hexa-
+decimales separados por dos puntos (ver RFC 4291. Existen ciertas reglas adicionales, 
+cuando alguno de los números hexadecimales compuestos de cuatro cifras, todas 
+ellas son ceros).
+Obsérvese que un número hexadecimal cualquiera requiere para su representa-
+ción cuatro bits. Luego un grupo de cuatro requerirá 16 bits para ser representado. Fi-
+nalmente, ocho grupos de cuatro cifras permitirán representar 16 x 8 dígitos binarios. 
+Es decir que los 128 bit que contiene una dirección IPv6, por ejemplo: a85d:ec01:2d4
+5:6479:ab8d:e0c1:2d45:6b89.
+Las direcciones IPv4 e IPv6 se asignan, generalmente, de una manera jerárquica. 
+Los usuarios reciben las asignaciones de direcciones IP de los Proveedores de Servi-
+cios Internet (ISP). A su vez, los ISP obtienen los mismos de Registro Local de Internet 
+(LIR, Local Internet Registries), o de Registro Nacional de Internet (NIR, National Internet 
+Registries), o de su registro regional que dependerá de su ubicación geográfica. Estos 
+últimos son conocidos como Registros Regionales de Internet (RIR).
+Los Registros Regionales de Internet distribuyen las direcciones IP en cinco agen-
+cias según la zona geográfica que corresponda por delegación del IANA. Los mismos 
+son los que se pueden observar en la Fig. 1.13.
+IANA
+Autoridad de asignación
+de número de Internet
+Centro de Información
+de Redes de África
+AfriNIC
+Una función contratada
+al ICANN
+Centro de Información
+de Redes de Asia y el
+Pacífico
+APNIC
+Registro Norteamericano
+de números de Internet
+ARIN
+Registro de Direcciones
+de Internet p/América
+y el Caribe
+LACNIC
+Centro de Coordinación
+de Redes IP Europeas
+RIPE NCC
+Miembro Miembro Miembro MiembroMiembro NIR
+Miembro Miembro
+Fig. 1.13.		Organismos	que	administran	las	direcciones	IP .
+Para América y el Caribe, la responsabilidad es de una agencia denominada Latin 
+American and Caribbean IP Address (LACNIC) y para Europa la llamada Réseaux IP 
+Européens Network Coordination Centre (RIPE NCC).
+La Fig. 1.14. muestra, geográficamente, las zonas de responsabilidades de cada 
+una de las agencias respectivas.
+La Tabla 1-6, describe la denominación y zona de influencia de los distintos Registros 
+Regionales funcionando.
+Tabla 1-6 Registros regionales de Internet
+Denominación del registro Abreviatura Área cubierta
+African Neyork Information Centre AfriNIC África
+Asia-Pacific Network Information Centre APNIC Asia/Pacífico
+American Registre for Internet Number ARIN Norte América
+Latin American and Caribbem IP Address LACNIN América Latina y Caribe
+Reseaux IP Européens Network 
+Coordination Centre RIPE NCC Europa, Medio Oriente y Asia Central
+ • Registros de protocolos
+Tiene la responsabilidad de mantener códigos y números contenidos en una variedad 
+de protocolos de Internet.
+Este servicio lo provee en coordinación con la Internet Engineering Task Force (IETF).
+ Los procesos de estandarización y los organismos de normalización
+ Consideraciones generales
+La estandarización es un proceso de elaboración de normas sobre una actividad, un producto 
+-
+La ISO lo define de la siguiente manera:
+
+===== PÁGINA PDF 85 =====
+1.9 Los procesos de estandarización y los organismos de normalización
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+59
+ellas son ceros).
+5:6479:ab8d:e0c1:2d45:6b89.
+(LIR, Local Internet Registries), o de Registro Nacional de Internet (NIR, 
+Registries
+últimos son conocidos como Registros Regionales de Internet (RIR).
+son los que se pueden observar en la Fig. 1.13.
+IANA
+Autoridad de asignación
+de número de Internet
+Centro de Información
+de Redes de África
+AfriNIC
+Una función contratada
+al ICANN
+Centro de Información
+de Redes de Asia y el
+Pacífico
+APNIC
+Registro Norteamericano
+de números de Internet
+ARIN
+Registro de Direcciones
+de Internet p/América
+y el Caribe
+LACNIC
+Centro de Coordinación
+de Redes IP Europeas
+RIPE NCC
+Miembro Miembro Miembro MiembroMiembro NIR
+Miembro Miembro
+Fig. 1.13.		Organismos	que	administran	las	direcciones	IP .
+Para América y el Caribe, la responsabilidad es de una agencia denominada 
+American and Caribbean IP Address (LACNIC) y para Europa la llamada 
+Européens Network Coordination Centre (RIPE NCC).
+una de las agencias respectivas.
+La Tabla 1-6, describe la denominación y zona de influencia de los distintos Registros 
+Regionales funcionando.
+Tabla 1-6 Registros regionales de Internet
+Denominación del registro Abreviatura Área cubierta
+African Neyork Information Centre AfriNIC África
+Asia-Pacific Network Information Centre APNIC Asia/Pacífico
+American Registre for Internet Number ARIN Norte América
+Latin American and Caribbem IP Address LACNIN América Latina y Caribe
+Reseaux IP Européens Network 
+Coordination Centre RIPE NCC Europa, Medio Oriente y Asia Central
+ • Registros de protocolos
+Tiene la responsabilidad de mantener códigos y números contenidos en una variedad 
+de protocolos de Internet.
+Este servicio lo provee en coordinación con la Internet Engineering Task Force (IETF).
+1.9 Los procesos de estandarización y los organismos de normalización
+1.9.1 Consideraciones generales
+La estandarización es un proceso de elaboración de normas sobre una actividad, un producto 
+o un proceso específico con el objeto de ordenar su especificidad, simplificar los modelos de par-
+tes o sistemas, permitir la interoperabilidad de estos o la capacidad de intercambio de las partes, 
+con el objeto de mejorar las actividades científicas, industriales o económicas al ordenarlas y 
+potenciarlas, así como facilitar el comercio y el manejo y la transferencia de la tecnología.
+La ISO lo define de la siguiente manera:
+Fig. 1.14.		Responsabilidades	por	Zonas	Geográficas	Registros	Regionales	de	Internet.
+
+===== PÁGINA PDF 86 =====
+1 - Las comunicaciones. Conceptos básicos60
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ Los procesos de estandarización y los organismos de normalización
+Un estándar es un acuerdo documentado que contiene especificaciones técnicas u otros cri-
+terios precisos, para ser usados en forma consistente, como definiciones, reglas o guías, con el 
+objeto de asegurar que los materiales, productos, procesos y servicios cumplan con el propó-
+sito para el cual van ser utilizados.
+En el caso particular de las comunicaciones y los equipos y sistemas computacionales, se 
+vinieron desarrollando procesos diferentes, aunque en la actualidad, como ocurre con la tecno-
+logía y los servicios que se prestan a través de ella, hay criterios convergentes.
+En la industria de las comunicaciones la normalización y la estandarización fueron pre-
+ceptos seguidos con fidelidad por industriales y operadores de los servicios. Sería imposible 
+pensar, por ejemplo, en una red telecomunicaciones como la red telefónica mundial que 
+presta este servicio en el presente si no hubiera normas claras y únicas que permitieran la 
+interconexión de países y operadores diferentes. El proceso casi siempre ha sido el mismo. 
+Primero se establece la norma mediante consensos internacionales, se aprueba el estándar 
+oficialmente, y luego se procede a la fabricación, para después proceder a su implementa-
+ción por medio de los distintos equipamientos que cumplen con esta norma. En la industria 
+de la computación el proceso ha sido inverso. Cada fabricante o desarrollador trabajó y 
+promocionó sus resultados, y por lo general fue el mercado el que decidió cuál debe ser el 
+estándar adecuado.
+En un caso se habla de estándar de jure, y en el otro estándar de facto. Con las comu-
+nicaciones casi siempre se trabajó pensando en la primera opción; y en la computación, pen-
+sando en la segunda. También hay otro tipo de estándares confeccionados por determinados 
+fabricantes para su línea de equipos exclusivamente, sin entrar en competencia en el mercado 
+con terceras partes. En esos casos particulares se habla de estándares propietarios.
+Para poner un caso que facilite una explicación, en telefonía se podría señalar el uso de 
+un aparato telefónico. Si se tuviera que adquirir uno a nadie se le ocurriría pensar si una vez 
+conectado en la red, va a funcionar o no. Se da por descartado que así será. Sin embargo, no se 
+podrá instalar cualquier sistema operativo en cualquier computadora. Si el sistema operativo 
+es propietario se necesitará un hardware adecuado para su instalación.
+Cabría hacer un análisis de cuál de los dos procedimientos de trabajo es el más convenien-
+te, útil y económico. Y aquí, como ocurre en la mayoría de los criterios que se adoptan en la 
+ingeniería, caben distintas interpretaciones y variadas conclusiones. Para ello baste ver cómo 
+se fueron comportando tanto las comunicaciones como la computación.
+Cuando se adopta un estándar de jure, se logra un ahorro de esfuerzos, se amplía en un 
+primer momento el tamaño del mercado y la interoperabilidad es inmediata. Sin embargo, el 
+contrapeso es que el avance de la tecnología está en forma directa y exclusiva en manos de los 
+que elaboran las especificaciones técnicas. Esto puede provocar un avance muy lento desde el 
+punto de vista tecnológico y científico, pero resulta económico y útil para el usuario.
+Cuando cada empresa lucha en el mercado por imponer su propio estándar, se generan 
+costos duplicados, demoras iniciales en los desarrollos tecnológicos y en muchos casos com-
+pras improductivas en tecnologías que al poco tiempo de ser adquiridas desaparecen del mer-
+cado. Sin embargo es evidente que estos criterios aceleran los adelantos tecnológicos, por 
+cuanto muchos son los que luchan por mejoras de equipamientos y sistemas para imponer sus 
+propios desarrollos.
+En la actualidad se está dando un proceso de convergencia. La industria de la informática 
+tiende con mayor intensidad a la elaboración de normas y especificaciones técnicas de jure, 
+que simplifican el manejo de la tecnología. Nadie dudaría en elegir una placa de una marca, 
+-
+ Los organismos de estandarización
+Hay cuatro organismos principales de estandarización para las comunicaciones y la com-
+ Unión Internacional de Telecomunicaciones (UIT) 
+La Unión Internacional de Telecomunicaciones (International Telecommunications Union 
+-
+En la actualidad, luego de más de 135 años de vida, sus objetivos fundamentales aún son 
+Son objetivos de la Unión:
+ • Mantener y extender la cooperación internacional entre todos los Estados miembros 
+para mejorar el uso correcto de todos los servicios de telecomunicaciones. 
+ • Promover y aumentar la participación de entidades y organizaciones vinculadas con 
+las telecomunicaciones en la interacción con la sociedad, entre ellas y con los esta-
+dos miembros. 
+ • Ofrecer asistencia técnica a los países en vías de desarrollo en el campo de telecomu-
+nicaciones, y mejorar el acceso a los servicios de telecomunicaciones en esos países. 
+ • Promover el desarrollo de instalaciones técnicas y su operación más eficiente, con el 
+objeto de mejorar la eficiencia de servicios de comunicaciones electrónicas, incre-
+mentar la utilidad de estos y hacerlos más accesibles al público en general. 
+ • Promocionar los beneficios de las nuevas tecnologías de comunicaciones a todos los 
+habitantes del mundo. 
+ • Promover la aprobación de estándares en temas de telecomunicaciones de uso inter-
+nacional, orientados a mejorar la economía mundial.
+En 1989 se celebró en Niza, Francia, la Conferencia Anual de Ministros Plenipotenciarios 
+-
+ • Sector de Normalización de las Telecomunicaciones, ITU-T.
+ • Sector de Normalización de las Radiocomunicaciones, ITU-R.
+ • Sector para el Desarrollo de las Comunicaciones, ITU-D. 
+ Organización Internacional de Estándares (ISO)
+La Organización Internacional para la Estandarización ( International Organization for 
+(ISO)) es una organización vinculada a las Naciones Unidas que produce 
+
+===== PÁGINA PDF 87 =====
+1.9 Los procesos de estandarización y los organismos de normalización
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+61
+sito para el cual van ser utilizados.
+logía y los servicios que se prestan a través de ella, hay criterios convergentes.
+estándar adecuado.
+En un caso se habla de estándar de jure, y en el otro estándar de facto
+con terceras partes. En esos casos particulares se habla de estándares propietarios.
+es propietario se necesitará un hardware adecuado para su instalación.
+se fueron comportando tanto las comunicaciones como la computación.
+punto de vista tecnológico y científico, pero resulta económico y útil para el usuario.
+propios desarrollos.
+una memoria de otra y un disco rígido de una tercera. Asimismo, no dudaría que cuando se 
+proceda a armar el equipo con diversos componentes de distintos fabricantes este va a fun-
+cionar en forma correcta y sin el menor inconveniente.
+1.9.2 Los organismos de estandarización
+Hay cuatro organismos principales de estandarización para las comunicaciones y la com-
+putación que se describen a continuación.
+1.9.2.1 Unión Internacional de Telecomunicaciones (UIT) 
+La Unión Internacional de Telecomunicaciones (International Telecommunications Union 
+(ITU)) es una organización internacional del sistema de las Naciones Unidas en la que los go-
+biernos y el sector privado coordinan los servicios y las redes mundiales de telecomunicaciones. 
+Fue fundada en 1865 durante la Primera Convención Internacional Telegráfica por 20 miembros 
+iniciales.
+En la actualidad, luego de más de 135 años de vida, sus objetivos fundamentales aún son 
+los mismos y están plenamente vigentes.
+Son objetivos de la Unión:
+ • Mantener y extender la cooperación internacional entre todos los Estados miembros 
+para mejorar el uso correcto de todos los servicios de telecomunicaciones. 
+ • Promover y aumentar la participación de entidades y organizaciones vinculadas con 
+las telecomunicaciones en la interacción con la sociedad, entre ellas y con los esta-
+dos miembros. 
+ • Ofrecer asistencia técnica a los países en vías de desarrollo en el campo de telecomu-
+nicaciones, y mejorar el acceso a los servicios de telecomunicaciones en esos países. 
+ • Promover el desarrollo de instalaciones técnicas y su operación más eficiente, con el 
+objeto de mejorar la eficiencia de servicios de comunicaciones electrónicas, incre-
+mentar la utilidad de estos y hacerlos más accesibles al público en general. 
+ • Promocionar los beneficios de las nuevas tecnologías de comunicaciones a todos los 
+habitantes del mundo. 
+ • Promover la aprobación de estándares en temas de telecomunicaciones de uso inter-
+nacional, orientados a mejorar la economía mundial.
+En 1989 se celebró en Niza, Francia, la Conferencia Anual de Ministros Plenipotenciarios 
+de la Unión. Allí se reconoció la importancia de la ayuda técnica para los países en vías de 
+desarrollo, además de sus actividades tradicionales en los campos de la normalización y el ge-
+renciamiento del espectro de frecuencias a nivel internacional. Como resultado de la reunión, 
+se procedió a una reorganización en tres sectores que en la actualidad son los que se detallan 
+a continuación:
+ • Sector de Normalización de las Telecomunicaciones, ITU-T.
+ • Sector de Normalización de las Radiocomunicaciones, ITU-R.
+ • Sector para el Desarrollo de las Comunicaciones, ITU-D. 
+1.9.2.2 Organización Internacional de Estándares (ISO)
+La Organización Internacional para la Estandarización ( International Organization for 
+Standardization (ISO)) es una organización vinculada a las Naciones Unidas que produce 
+normas internacionales industriales y comerciales, que se conocen como normas ISO. Su 
+finalidad es la coordinación con las distintas normas nacionales, en consonancia con el Acta 
+International	T elecommunications	
+Union:
+http://www .itu.int/home/index.html
+
+
+===== PÁGINA PDF 88 =====
+1 - Las comunicaciones. Conceptos básicos62
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Final de la Organización Mundial del Comercio, con el propósito de facilitar el intercambio 
+de bienes y servicios, facilitar el intercambio de información y contribuir a la transferencia de 
+tecnologías.
+Sus miembros pueden ser de tres tipos diferentes:
+ • Países: representados por sus organismos nacionales de normalización a razón de 
+uno por país.
+ • Miembros correspondientes: son organizaciones de un país que no tienen una 
+actividad completa de nivel nacional, pero están interesadas en informarse sobre el 
+trabajo de la organización.
+ • Miembros abonados: es una categoría para países con economías muy pequeñas 
+que pagan cuotas reducidas, pero que les permiten tener contacto internacional con 
+estas actividades.
+1.9.2.3. Sociedad Internet (ISOC)
+Como ya se describió en 1.7.4.1., esta sociedad tiene, entre otras funciones, la respon-
+sabilidad de confeccionar las normas vinculadas con el funcionamiento de Internet. En el 
+apartado 1.7.4.8. se describe el procedimiento para su confección.
+1.9.2.4. Instituto de Ingenieros Eléctricos y Electrónicos (IEEE)
+El Instituto de Ingenieros Eléctricos y Electrónicos es una organización técnico-profesio-
+nal sin fines de lucro de alcance mundial dedicada a promover la creatividad, el desarrollo, la 
+integración, compartir y aplicar los avances en las tecnologías de la información, la electró-
+nica y las ciencias en general, para beneficio de la humanidad y de los mismos profesionales 
+de estas disciplinas. Como tal es la más grande del mundo, y sirve a los intereses de más de 
+382.000 miembros en cerca de 150 países.
+Acorde con su lema, “Vinculando al Mundo, Networking the World”, el IEEE fomenta la 
+innovación tecnológica, contribuye con el desarrollo profesional de sus miembros y promue-
+ve la comunidad profesional mundial.
+Su creación se remota a 1884 y entre sus fundadores se encontraban personalidades de 
+la talla de Thomas Alva Edison, Alexander Graham Bell y Franklin Leonard Pope. La integran 
+profesionales formados en las nuevas tecnologías, como la Ingeniería Eléctrica, la Electrónica, 
+los Sistemas de información y las Telecomunicaciones.
+Algunos de sus estándares son clásicos en las tecnologías vinculadas con la informática 
+y las comunicaciones, como el tan conocido 802.3 y siguientes, utilizados para el desarrollo 
+de redes de área local.
+1.9.3 Otros organismos vinculados a estas actividades
+Hay otros organismos o foros de trabajo para temas más específicos que también son 
+importantes por los resultados que aportan. 
+1.9.3.1 American National Standards Institute (ANSI)
+El Instituto Estadounidense de Estándares Nacionales (ANSI) fue fundado en octubre de 
+1918. Tiene por objetivo coordinar el desarrollo y el uso de patrones, así como la utilización 
+voluntaria de estos mediante acuerdos efectuados por consenso. Su misión es aumentar la 
+competitividad de las empresas de ese país a nivel internacional, mejorar la calida de vida y 
+salvaguardar la integridad de las normas y las especificaciones que se aprueben en su seno.
+La alianza de Industrias de Electrónica (EIA) es una organización de comercial nacional 
+-
+El ADSL Forum es un consorcio formado por grupos de personas y organizaciones inte-
+Durante la década de 1990 se fueron formando varios foros específicos, cada uno de ellos 
+Surgieron así el Foro ATM, el Frame Relay y otros con prácticamente el mismo objeto. En 
+-
+Multiprotocol Label Switching (MPLS), Frame Relay y Asynchronous Transference 
+ (ATM).
+El Foro MFA es una organización internacional sin fines de lucro, de carácter industrial, 
+-
+En este capítulo se presentaron los conceptos básicos de las comunicaciones encabe-
+También, se explicó cómo la inteligencia generada por el hombre se codifica en señales 
+xxi que 
+-
+Además, se trataron las consideraciones generales de la red de Internet con sus respecti-
+Para concluir, se caracterizaron los procesos de estandarización, como un proceso de 
+-
+Organización	Internacional	de	
+estándares:
+http://www.iso.org/iso/en/
+ISOOnline.frontpage
+Sociedad	Internet:
+http://www.isoc.org
+Instituto	de	Ingenieros	Eléctricos	y	
+Electrónicos:
+http://www.ieee.org/portal/site
+American	National	Standards	
+Institute:
+http://www.ansi.org/
+
+
+===== PÁGINA PDF 89 =====
+1.10 Resumen
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+63
+tecnologías.
+Sus miembros pueden ser de tres tipos diferentes:
+ • Países:
+uno por país.
+ • Miembros correspondientes:
+trabajo de la organización.
+ • Miembros abonados:
+estas actividades.
+1.9.2.3. Sociedad Internet (ISOC)
+apartado 1.7.4.8. se describe el procedimiento para su confección.
+1.9.2.4. Instituto de Ingenieros Eléctricos y Electrónicos (IEEE)
+382.000 miembros en cerca de 150 países.
+ve la comunidad profesional mundial.
+los Sistemas de información y las Telecomunicaciones.
+de redes de área local.
+1.9.3 Otros organismos vinculados a estas actividades
+importantes por los resultados que aportan. 
+1.9.3.1 American National Standards Institute (ANSI)
+1.9.3.2 Electronic Industries Alliance (EIA)
+La alianza de Industrias de Electrónica (EIA) es una organización de comercial nacional 
+que involucra todo el espectro de los fabricantes de equipamiento electrónico de los Estados 
+Unidos. Comprende más de 1.300 empresas de productoras de bienes y servicios electróni-
+cos, desde los más simples hasta los de más alta tecnología. La tan conocida norma RS – 232 
+Interfaz Serie Standard usada en todo tipo de equipos de computación está confeccionada y 
+es actualizada por esta organización.
+1.9.3.3 ADSL Forum
+El ADSL Forum es un consorcio formado por grupos de personas y organizaciones inte-
+resados en la confección y el perfeccionamiento de los estándares para los servicios ADSL.
+1.9.3.4 MF A Forum
+Durante la década de 1990 se fueron formando varios foros específicos, cada uno de ellos 
+con el objeto de generar especificaciones técnicas o mejoras tecnológicas sobre un conjunto 
+de tecnologías nuevas que se desarrollaron vinculadas con la transmisión de datos utilizando 
+la conmutación de celdas, tramas o paquetes.
+Surgieron así el Foro ATM, el Frame Relay y otros con prácticamente el mismo objeto. En 
+agosto de 2005 estos esfuerzos se unieron en una única y nueva organización que se llama 
+MFA Forum, cuyo nombre es un acrónimo de las tres tecnologías más significativas y con-
+vergentes: Multiprotocol Label Switching (MPLS), Frame Relay y Asynchronous Transference 
+Mode (ATM).
+El Foro MFA es una organización internacional sin fines de lucro, de carácter industrial, 
+orientada a las telecomunicaciones y la interconexión de redes de datos, con el objeto de 
+promover el desarrollo, las ventas y los avances técnicos de las tecnologías vinculadas con la 
+conmutación de paquetes, sus aplicaciones asociadas y las soluciones que posibiliten la in-
+terconexión entre distintas tecnologías. Su página de Internet es http://www.Mfaforum.org./.
+1.10 Resumen
+En este capítulo se presentaron los conceptos básicos de las comunicaciones encabe-
+zados con una breve reseña histórica del telégrafo y de la telefonía en general desde sus 
+comienzos hasta la actualidad.
+También, se explicó cómo la inteligencia generada por el hombre se codifica en señales 
+para que, a su vez, puedan propagarse por los medios de comunicación en forma de ondas 
+electromagnéticas. Asimismo, por un lado, se presentaron las invenciones del siglo 
+xxi que 
+revolucionaron las comunicaciones, con respecto a la transmisión de la voz, la radio y la posi-
+bilidad de la transmisión de las imágenes, como en el caso de la televisión; y por otro lado, la 
+informática, con la invención de la computadora y las tecnologías de la información.
+Además, se trataron las consideraciones generales de la red de Internet con sus respecti-
+vos antecedentes históricos y las organizaciones que trabajan para Internet.
+Para concluir, se caracterizaron los procesos de estandarización, como un proceso de 
+elaboración de normas, y los organismos de normalización para las comunicaciones y la com-
+putación.
+Electronic	Industries	Alliance:
+http://www.eia.org
+Foro	ADSL:
+http://www.adsl.com
+Foro	MFA:
+http://www.Mfaforum.org
+
+
+===== PÁGINA PDF 167 =====
+3.2. Elementos sobre la transmisión de la información
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+141
+digitalización
+Para ello se necesita su conversión mediante un proceso denominado modulación.
+3.2.2 Estructura general de una red de telecomunicaciones
+ • Zona de la red o núcleo.
+ • Zona de acceso.
+ • Zona del usuario.
+La zona de la red o núcleo
+denomina topología de la red.
+La zona de acceso
+Para ello se usan vínculos alámbricos (ópticos o de cobre) e inalámbricos. 
+bién denominan red de transporte
+troncal o core de muy alta velocidad y otra periférica, o subred de acceso.
+Por último, la zona del usuario
+nodos de conmutación propios. 
+combinados de todo tipo y sus equipos terminales asociados.
+distintas configuraciones
+que unen la zona de red con la de usuario.
+tuidas básicamente por los siguientes elementos:
+Nodos
+ • Conmutación.
+ • Concentración.
+Enlaces de comunicaciones
+ • Troncales. 
+ • De acceso.
+ • Locales.
+Equipos terminales
+ • Telefónicos. 
+ • Datos.
+ • Video.
+ • Otros.
+9tQFXORVGHXVXDULR
+(TXLSRVWHUPLQDOHV
+=RQDGHXVXDULR
+1RGRVGHOD]RQDGHUHG
+1RGRVGHOD]RQDGHXVXDULR
+9tQFXORVWURQFDOHV
+9tQFXORVGHDFFHVR
+68%5(''($&&(6268%5(''($&&(62
+5(''(75$163257(
+Fig. 3.1.	Esquema	de	la	estructura	de	red	de	telecomunicaciones.
+
+===== PÁGINA PDF 168 =====
+3 - Técnicas de la transmisión de la información142
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Definiremos como enlace de telecomunicaciones al vínculo que es necesario establecer y 
+Los enlaces pueden ser de dos tipos, según la posibilidad que se tenga, o no, de elegir el 
+Se indica que un enlace es con conmutación cuando el equipo terminal que origina la lla-
+En muchos casos se requieren enlaces permanentes entre dos puntos de la red, en cuyo 
+Llamaremos enlaces dedicados o arrendados a aquellos en que el equipo terminal que ori-
+En esos casos los nodos de la red actúan solo como concentradores de los vínculos que 
+Un ejemplo son los enlaces dedicados utilizados para intercomunicar dos equipos router 
+También lo son los que se emplean para establecer comunicaciones telefónicas entre dos 
+Este es el caso, por ejemplo, de enlaces dedicados utilizados para conectar sucursales 
+hot line.
+La palabra teleinformática es la contracción de las palabras telecomunicaciones e infor-
+Se podría definir la teleinformática como la especialidad que estudia el conjunto de técni-
+En esencia, la teleinformática trata de estudiar todos los aspectos implicados en la co-
+Por lo tanto, el problema fundamental que intenta resolver es lograr que una computadora 
+Si el nodo conmuta una llamada –sea esta de cualquier servicio que preste la red y utilizan-
+do cualquier tecnología, entre usuarios locales o remotos–, se denominará nodo de conmu-
+tación; ése es el caso de las centrales telefónicas, los routers, los switchs, etcétera. 
+Otros nodos, denominados nodos de concentración, solo sirven para interconectar vín-
+culos de comunicaciones sin funciones de conmutación.
+Para que la red funcione de manera integral, los nodos deben estar conectados unos con otros 
+a través de vínculos que pueden ser alámbricos o inalámbricos. Los primeros requieren conductos 
+o torres para su tendido e implementación; los segundos precisan antenas. De allí la necesidad de 
+los enlaces de comunicaciones. Estos pueden estar aplicados a redes pequeñas y en el ámbito 
+del usuario, como ocurre con las denominadas redes de área local LAN (Local Area Network , Red 
+de Área Local), o las llamadas WAN (Wide Area Network, Red de Área Extendida), como es el caso 
+de las subredes de acceso y la troncal. 
+3.2.3. Definiciones utilizadas en comunicaciones
+Como se indicó antes, los nodos de las redes de telecomunicaciones cumplen funciones de 
+conmutación o concentración de los vínculos de comunicaciones.
+Definiremos como vínculos de comunicaciones a los distintos medios físicos que permiten 
+unir dos nodos cualesquiera de una red. Los vínculos se pueden establecer por medios físicos, 
+como cables de cobre, coaxiles, fibras ópticas, cables submarinos, etc., o por medios inalám-
+bricos, a través de equipos que permiten esas comunicaciones, como sistemas de microondas, 
+satelitales, radioeléctricos, entre otros.
+Los enlaces de comunicaciones permiten establecer canales de comunicaciones, tam-
+bién conocidos como circuitos de comunicaciones. 
+Un canal o un circuito de comunicaciones es un camino que se establece entre dos o más 
+puntos de la red entre equipos que actúan como transmisores o receptores, o como ambos. Este 
+concepto implica no solo un enlace físico sino también una conexión lógica. Una de las funciones 
+más importantes necesaria en una red de telecomunicaciones es la función de conmutación.
+Se denomina conmutación a la función que realiza un equipo determinado denominado en 
+forma genérica conmutador, que permite elegir un camino determinado, entre varios disponi-
+bles, a los efectos de que un usuario de la red pueda comunicarse con otro que él seleccionó.
+Existen dos técnicas de conmutación denominadas conmutación de circuitos y con-
+mutación de paquetes. En la actualidad ambas están en uso en las redes digitales, aunque 
+la tendencia es que todas las redes migren hacia redes por conmutación de paquetes. 
+Ejemplos de equipos conmutadores son las centrales telefónicas o los equipos conoci-
+dos como routers o conmutadores de paquetes. En el capítulo 4 se describirán con mayor 
+detalle ambas técnicas.
+Cuando se desea comunicarse a través de la red telefónica conmutada (RTC) con un 
+número de teléfono determinado se usa la función de conmutación, que es realizada por una o 
+varias centrales telefónicas de las muchas que dispone la red. De manera análoga, cuando 
+se trabaja en Internet y se busca una página de las tantas disponibles, la función de conmu-
+tación es realizada en este caso por uno o varios routers, de los muchos existentes. Ellos nos 
+permiten alcanzar la página buscada y acceder a ella.
+Los nodos de la red tienen equipos de conmutación que permiten realizar esta función 
+importante. Sin embargo no todas las comunicaciones requieren el uso de la conmutación.
+Para efectuar una comunicación en una Red de Telecomunicaciones es necesario estable-
+cer un enlace de comunicaciones.
+
+===== PÁGINA PDF 169 =====
+3.2. Elementos sobre la transmisión de la información
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+143
+Definiremos como enlace de telecomunicaciones al vínculo que es necesario establecer y 
+mantener entre dos equipos terminales, con el objeto de intercambiar en forma remota señales 
+inteligentes que permitan utilizar uno de los tantos servicios de comunicaciones disponibles.
+Los enlaces pueden ser de dos tipos, según la posibilidad que se tenga, o no, de elegir el 
+equipo terminal con el que se desee establecer la comunicación. Así, tendremos enlaces con-
+mutados y enlaces dedicados o arrendados.
+Se indica que un enlace es con conmutación cuando el equipo terminal que origina la lla-
+mada tiene la opción de elegir, entre varios, el equipo terminal con el que se desea comunicar, 
+a través de un equipo denominado conmutador.
+En muchos casos se requieren enlaces permanentes entre dos puntos de la red, en cuyo 
+caso no es necesaria esta función. 
+Llamaremos enlaces dedicados o arrendados a aquellos en que el equipo terminal que ori-
+gina la llamada no tiene la opción de elegir el equipo terminal con el que se desea comunicar, 
+por lo que siempre se vinculará con el mismo equipo en el otro extremo de la red.
+En esos casos los nodos de la red actúan solo como concentradores de los vínculos que 
+unen los puntos a enlazar por una razón técnica vinculada con la topología de las redes. Preci-
+samente, como se verá, a ellos concurren los medios de comunicaciones usados para cumplir 
+las funciones de transporte.
+Un ejemplo son los enlaces dedicados utilizados para intercomunicar dos equipos router 
+empleados en una sección de Internet. Estos son enlaces dedicados típicos. 
+También lo son los que se emplean para establecer comunicaciones telefónicas entre dos 
+lugares fijos, en los que se obvia la necesidad de marcar un número determinado y en los que 
+por lo general se requiere exclusividad, es decir que el enlace esté siempre libre y disponible. 
+Este es el caso, por ejemplo, de enlaces dedicados utilizados para conectar sucursales 
+bancarias entre sí, que no desean correr el riesgo de encontrar las líneas telefónicas conges-
+tionadas en horas pico, e incurrir en demoras para establecer la comunicación. Este tipo de 
+enlace telefónico se suele llamar por la expresión en inglés hot line.
+3.2.4 Teleinformática
+3.2.4.1 Definición y concepto de teleinformática
+La palabra teleinformática es la contracción de las palabras telecomunicaciones e infor-
+mática. Otro tanto ocurre con la palabra telemática. Se podría afirmar que en ella se reúnen los 
+aspectos técnicos de ambas especialidades. Tradicionalmente estas técnicas se desarrollaron 
+en forma independiente, pero en la actualidad su interdependencia es cada vez mayor.
+Se podría definir la teleinformática como la especialidad que estudia el conjunto de técni-
+cas necesarias para transmitir datos dentro de un sistema informático entre puntos situados 
+en lugares remotos, a través de redes de telecomunicaciones.
+En esencia, la teleinformática trata de estudiar todos los aspectos implicados en la co-
+nexión de computadoras, equipos informáticos auxiliares y equipos terminales de datos a re-
+des de comunicaciones.
+Por lo tanto, el problema fundamental que intenta resolver es lograr que una computadora 
+pueda dialogar, a través de las redes de telecomunicaciones, con otros equipos similares situa-
+dos geográficamente en puntos distantes, pero reconociendo las características esenciales de 
+la información, como si la conexión fuera local.
+do cualquier tecnología, entre usuarios locales o remotos–, se denominará 
+tación; ése es el caso de las centrales telefónicas, los routers, los switchs, etcétera. 
+Otros nodos, denominados nodos de concentración
+culos de comunicaciones sin funciones de conmutación.
+los enlaces de comunicaciones
+del usuario, como ocurre con las denominadas redes de área local LAN (Local Area Network 
+de Área Local), o las llamadas WAN (Wide Area Network
+de las subredes de acceso y la troncal. 
+3.2.3. Definiciones utilizadas en comunicaciones
+conmutación o concentración de los vínculos de comunicaciones.
+unir dos nodos cualesquiera de una red. Los vínculos se pueden establecer por 
+como cables de cobre, coaxiles, fibras ópticas, cables submarinos, etc., o por 
+bricos
+satelitales, radioeléctricos, entre otros.
+Los enlaces de comunicaciones permiten establecer canales de comunicaciones
+bién conocidos como circuitos de comunicaciones. 
+concepto implica no solo un enlace físico sino también una conexión lógica. 
+más importantes necesaria en una red de telecomunicaciones es la función de conmutación
+Existen dos técnicas de conmutación denominadas conmutación de circuitos y
+mutación de paquetes
+la tendencia es que todas las redes migren hacia redes por conmutación de paquetes. 
+Ejemplos de equipos conmutadores son las centrales telefónicas
+dos como routers o conmutadores de paquetes
+detalle ambas técnicas.
+Cuando se desea comunicarse a través de la red telefónica conmutada 
+varias centrales telefónicas
+se trabaja en Internet
+tación es realizada en este caso por uno o varios routers
+permiten alcanzar la página buscada y acceder a ella.
+Los nodos de la red
+importante. Sin embargo no todas las comunicaciones requieren el uso de la conmutación.
+cer un enlace de comunicaciones.
+Se	llama	enlace	con	conmutación	
+cuando	 el	 equipo	 terminal	 que	
+origina	la	llamada	tiene	la	opción	
+de	 elegir ,	 entre	 varios,	 el	 equipo	
+terminal	 con	 el	 que	 desea	 comu-
+nicarse	a	través	de	un	conmutador .
+Los	 enlaces	 dedicados	 o	 amen-
+dados	 son	 en	 los	 que	 el	 que	
+origina	la	llamada	no	tiene	la	op-
+ción	de	elegir	el	equipo	terminal	
+con	 el	 que	 se	 desea	 comunicar.	
+Por	esta	razón,	siempre	se	vincu-
+lará	 con	 el	 mismo	 equipo	 en	 el	
+otro	extremo	de	la	red.
+
+
+===== PÁGINA PDF 170 =====
+3 - Técnicas de la transmisión de la información144
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ • Sistemas teleinformáticos de control de procesos
+Los denominados sistemas teleinformáticos de control de procesos son aquellos en 
+los que un servidor con la capacidad adecuada de procesamiento de información re-
+cibe datos sobre el estado de un proceso que está controlando, los procesa, obtiene 
+resultados y luego, sobre la base de ellos, toma decisiones que pueden influir en el 
+desarrollo del proceso.
+Características de estos sistemas:
+ – Son muy especializados para cada tipo de aplicación.
+ – En condiciones normales, mediante sensores ubicados en forma estratégica, 
+recogen medidas sobre el estado de un proceso y las comparan con el esta-
+do deseado. Como resultado de esa comparación realizan la acción correctora 
+apropiada para asegurar que el sistema o el proceso en cuestión alcancen el 
+nuevo estado esperado.
+ – Aunque sus formas son muy variadas, los sistemas teleinformáticos de control 
+de procesos tienen en común las propiedades siguientes:
+1. Operan en tiempo real; esto es, el tiempo de respuesta a una medición de 
+datos debe ser lo suficientemente pequeño para que la acción correctora, 
+producto del proceso en la computadora, influya en el sistema con el que 
+actúa.
+2. Los datos siempre se envían sobre un conjunto determinado de parámetros 
+preestablecidos.
+3. Para cada sistema se debe efectuar un estudio en particular y, en función de 
+él, se realiza el diseño adecuado.
+Un ejemplo clásico de sistemas teleinformáticos de proceso son los sistemas de navega-
+A diferencia de otros servicios de comunicaciones, los servicios de transmisión de datos 
+En su recomendación X.15, la UIT-T define la transmisión de datos como la acción de 
+Esta definición también vale si se la orienta a los medios que facilitan las comunicaciones. 
+Dos aspectos importantes a tener en cuenta son la distancia y la geografía del problema 
+Cuando la comunicación se produce entre puntos geográficos ubicados dentro de un mismo 
+ local o en planta. 
+La teleinformática se ocupa, por medio de los sistemas de comunicación de datos, de 
+establecer sistemas con finalidades específicas denominados sistemas teleinformáticos.
+3.2.4.2 Sistemas teleinformáticos
+Se entienden por sistemas teleinformáticos los sistemas funcionales de comunicación de 
+datos que implican formas de trabajo. En general, responden a necesidades concretas de los 
+usuarios informáticos que trabajan en la modalidad fuera de planta o remota.
+La cantidad de sistemas de este tipo es muy diversa y responde a las necesidades de cada 
+clase de usuario en particular.
+Algunos de ellos son los siguientes:
+ • Gestión remota de archivos
+Los sistemas teleinformáticos de gestión remota de archivos pueden definirse de la 
+siguiente manera: sistemas teleinformáticos que permiten el acceso desde un equipo 
+terminal de datos a la información almacenada en los archivos de un servidor.
+Este sistema tiene por finalidad la recuperación de la información contenida en los 
+archivos, su modificación, o una combinación de ambas. La expresión archivo incluye, 
+en este caso, cualquier otra forma de mantener información accesible en un servidor, 
+como las bases de datos u otra forma similar.
+Por archivo se entiende una colección organizada de registros que pueden tener 
+un objetivo y un formato comunes; asimismo, una base de datos es una colección de 
+archivos organizada para satisfacer una aplicación. 
+La estructura de un archivo refleja la necesidad de la aplicación a la que será des-
+tinado. Una base de datos, en cambio, se organiza de forma que refleje la estructura de 
+la información en sí. Ejemplos típicos de este sistema son:
+ – Sistemas de banca automática (como pueden ser la operación de cuentas corrien-
+tes o de ahorro desde terminales bancarias, el uso de cajeros automáticos, etc.).
+ – Reservas de pasajes.
+ – Sistemas de información a la dirección MIS (Management Information Systems).
+ • Sistemas teleinformáticos interactivos
+Los sistemas teleinformáticos interactivos pueden definirse como sistemas teleinfor-
+máticos que se caracterizan por un diálogo continuo entre el equipo terminal de datos 
+del usuario y un servidor donde suele encontrarse residente la información.
+Algunas de las características de estos sistemas son:
+Permiten que el usuario dialogue con la computadora y lleve a cabo una serie de 
+procesos que requieren la modalidad de consulta y respuesta.
+ – El usuario planifica sus operaciones futuras en función de los resultados de ope-
+raciones precedentes.
+ – Este sistema es muy similar, en sus formas generales, al sistema de gestión re-
+mota de archivos. 
+ – La razón de que se considere de forma particular es que en estos sistemas debe 
+existir siempre una respuesta a cada consulta efectuada, o un diálogo, entre 
+equipo terminal y el servidor u otro componente del sistema. De allí el carácter 
+interactivo del sistema.
+Los	 sistemas	 funcionales	 de	
+comunicación	 de	 datos	 que	
+implican	 formas	 de	 trabajo	 son	
+sistemas	 teleinformáticos.	 Estos	
+responden	 a	 necesidades	 con-
+cretas	 de	 los	 usuarios	 informá-
+ticos	 que	 trabajan	 en	 la	 modali-
+dad	fuera	de	planta	o	remota.
+
+
+===== PÁGINA PDF 171 =====
+3.2. Elementos sobre la transmisión de la información
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+145
+ • Sistemas teleinformáticos de control de procesos
+Los denominados sistemas teleinformáticos de control de procesos son aquellos en 
+los que un servidor con la capacidad adecuada de procesamiento de información re-
+cibe datos sobre el estado de un proceso que está controlando, los procesa, obtiene 
+resultados y luego, sobre la base de ellos, toma decisiones que pueden influir en el 
+desarrollo del proceso.
+Características de estos sistemas:
+ – Son muy especializados para cada tipo de aplicación.
+ – En condiciones normales, mediante sensores ubicados en forma estratégica, 
+recogen medidas sobre el estado de un proceso y las comparan con el esta-
+do deseado. Como resultado de esa comparación realizan la acción correctora 
+apropiada para asegurar que el sistema o el proceso en cuestión alcancen el 
+nuevo estado esperado.
+ – Aunque sus formas son muy variadas, los sistemas teleinformáticos de control 
+de procesos tienen en común las propiedades siguientes:
+1. Operan en tiempo real; esto es, el tiempo de respuesta a una medición de 
+datos debe ser lo suficientemente pequeño para que la acción correctora, 
+producto del proceso en la computadora, influya en el sistema con el que 
+actúa.
+2. Los datos siempre se envían sobre un conjunto determinado de parámetros 
+preestablecidos.
+3. Para cada sistema se debe efectuar un estudio en particular y, en función de 
+él, se realiza el diseño adecuado.
+Un ejemplo clásico de sistemas teleinformáticos de proceso son los sistemas de navega-
+ción de los cohetes portadores de vehículos espaciales. En estos casos solo la presencia de la 
+computadora permitió que en fracciones de segundo se efectúen las correcciones de trayecto-
+ria necesarias para que el vuelo llegue a destino.
+3.2.5 Conceptos utilizados en transmisión de datos
+3.2.5.1 Definición y concepto de transmisión de datos
+A diferencia de otros servicios de comunicaciones, los servicios de transmisión de datos 
+presentan características especiales.
+En su recomendación X.15, la UIT-T define la transmisión de datos como la acción de 
+enviar datos a través de un medio de telecomunicaciones, desde el lugar de origen a otro de 
+recepción.
+Esta definición también vale si se la orienta a los medios que facilitan las comunicaciones. 
+Luego, se entiende por transmisión de datos la transferencia de información codificada desde 
+un punto a otro u otros, mediante señales eléctricas, ópticas, electroópticas o electromagné-
+ticas.
+Dos aspectos importantes a tener en cuenta son la distancia y la geografía del problema 
+considerado, pues en función de estos parámetros puede ser necesario el uso de redes de 
+comunicaciones o no. 
+Cuando la comunicación se produce entre puntos geográficos ubicados dentro de un mismo 
+edificio o en una superficie reducida de terreno, se indica que la transmisión es local o en planta. 
+La teleinformática se ocupa, por medio de los sistemas de comunicación de datos
+establecer sistemas con finalidades específicas denominados sistemas teleinformáticos.
+3.2.4.2 Sistemas teleinformáticos
+usuarios informáticos que trabajan en la modalidad fuera de planta o remota.
+clase de usuario en particular.
+Algunos de ellos son los siguientes:
+ • Gestión remota de archivos
+terminal de datos a la información almacenada en los archivos de un servidor.
+como las bases de datos u otra forma similar.
+archivos organizada para satisfacer una aplicación. 
+la información en sí. Ejemplos típicos de este sistema son:
+ 
+tes o de ahorro desde terminales bancarias, el uso de cajeros automáticos, etc.).
+ – Reservas de pasajes.
+ – Sistemas de información a la dirección MIS (
+ • Sistemas teleinformáticos interactivos
+del usuario y un servidor donde suele encontrarse residente la información.
+Algunas de las características de estos sistemas son:
+procesos que requieren la modalidad de consulta y respuesta.
+ 
+raciones precedentes.
+ 
+mota de archivos. 
+ 
+interactivo del sistema.
+UIT -T	 es	 la	 denominación	 del	
+Comité	T écnico	de	la	Unión	Inter-
+nacional	 de	 T elecomunicaciones.	
+En	 la	 actualidad	 es	 responsable	
+de	la	confección	de	todas	las	re -
+comendaciones	 de	 ese	 organis-
+mo	internacional.	Anteriormente,	
+estas	tareas	las	realizaba	el	CCITT	
+(Comité	 Consultivo	 Internacional	
+T elegráfico	 y	 T elefónico)	 (fue	 di-
+suelto	después	de	la	última	reor-
+ganización	de	la	UIT).
+
+
+===== PÁGINA PDF 172 =====
+3 - Técnicas de la transmisión de la información146
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Cuando una red de telecomunicaciones debe cubrir un área geográfica importante se utilizan 
+red de área exten-
+ o WAN y son operadas por empresas de telecomunicaciones nacionales o internacionales.
+En el caso particular de empresas u organizaciones que tienen necesidad de interconectar 
+red 
+ o fuera de planta. Para organizarlas, las instituciones que deben contar con ellas 
+Las precauciones técnicas a tomar en estos casos suele brindarlas el mismo proveedor de los ser-
+3ODQWD/,0$
+3ODQWD6$17,$*2
+$GPLQLVWUDFLyQFHQWUDO
+0e;,&2')
+3ODQWD%2*27É
+3ODQWD%8(126$,5(6
+(VWDFLyQGHWUDEDMR (QODFHGHGLFDGRVLQWHUQDFLRQDOHV =RQDGHXVXDULR5RXWHU
+Fig. 3.3.	Esquema	de	una	red	de	área	extendida	para	transmisiones	remotas	o	fuera	de	planta.
+Este concepto no solo señala que por lo general se puede prescindir de utilizar para la 
+interconexión de los distintos equipos terminales una empresa de telecomunicaciones 
+(TELCO), sino que, además, la tecnología que se utiliza en estos casos tiene características es-
+peciales. Estas se denominan red local o en planta, o más precisamente red de área local 
+o Local Area Network.
+Cuando la transmisión tiene estas características, la propia organización suele construir e 
+instalar sus propios medios de comunicaciones de acuerdo con sus necesidades. Por lo tanto, 
+los problemas técnicos, cuando las distancias son cortas, resultan mínimos y no requieren 
+consideraciones especiales. 
+Este es el caso sencillo de una central telefónica con su red correspondiente, o un ser-
+vidor que a su vez tiene conectadas, dentro de un edificio o en una superficie geográfica 
+reducida, una serie de computadoras personales. En la Fig. 3.2., puede verse esta dispo-
+sición.
+ÉUHDGHDGPLQLVWUDFLyQ
+ÉUHDGHSURGXFFLyQ
+&HQWURGHSURFHVDPLHQWRGHGDWRV
+3UHGLRGHODRUJDQL]DFLyQ
+(VWDFLyQGHWUDEDMR
+5RXWHU
+(QODFHORFDO
+ÉUHDVGHWUDEDMR
+Fig. 3.2.	Esquema	de	una	red	de	área	local	para	transmisiones	locales	o	en	planta.
+
+===== PÁGINA PDF 173 =====
+3.2. Elementos sobre la transmisión de la información
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+147
+Cuando una red de telecomunicaciones debe cubrir un área geográfica importante se utilizan 
+técnicas de comunicaciones más sofisticadas. Estas redes se denominan red de área exten-
+dida o WAN y son operadas por empresas de telecomunicaciones nacionales o internacionales.
+En el caso particular de empresas u organizaciones que tienen necesidad de interconectar 
+lugares distantes, salvo casos muy especiales, no tiene sentido instalar una red de telecomu-
+nicaciones propia. Por lo general se recurre a las empresas que prestan este tipo de servicios, 
+por cuanto es muy difícil justificar inversiones tan importantes. Estas redes se denominan red 
+remota o fuera de planta. Para organizarlas, las instituciones que deben contar con ellas 
+requerirán la contratación de enlaces de comunicaciones, como muestra la Fig. 3.3. 
+Las precauciones técnicas a tomar en estos casos suele brindarlas el mismo proveedor de los ser-
+vicios de telecomunicaciones, y resultan un problema a resolver en conjunto con el de la instalación 
+de los medios informáticos. En la actualidad la amplia desregulación que existe a escala mundial en 
+el campo de las telecomunicaciones permite la posibilidad de elegir entre varios proveedores.
+3ODQWD/,0$
+3ODQWD6$17,$*2
+$GPLQLVWUDFLyQFHQWUDO
+0e;,&2')
+3ODQWD%2*27É
+3ODQWD%8(126$,5(6
+(VWDFLyQGHWUDEDMR (QODFHGHGLFDGRVLQWHUQDFLRQDOHV =RQDGHXVXDULR5RXWHU
+Fig. 3.3.	Esquema	de	una	red	de	área	extendida	para	transmisiones	remotas	o	fuera	de	planta.
+interconexión de los distintos equipos terminales una 
+peciales. Estas se denominan red local o en planta, o más precisamente 
+o Local Area Network.
+consideraciones especiales. 
+sición.
+ÉUHDGHDGPLQLVWUDFLyQ
+ÉUHDGHSURGXFFLyQ
+&HQWURGHSURFHVDPLHQWRGHGDWRV
+3UHGLRGHODRUJDQL]DFLyQ
+(VWDFLyQGHWUDEDMR
+5RXWHU
+(QODFHORFDO
+ÉUHDVGHWUDEDMR
+
+===== PÁGINA PDF 276 =====
+4.3 Arquitecturas de comunicaciones 251
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+El modelo capas representa una forma de facilitar las comunicaciones, distribuyendo la 
+totalidad de las funciones que se necesitan cumplir para lograr una comunicación segura y 
+eficiente entre las mismas. 
+Una de las características más importantes del modelo es que cada capa es totalmente 
+independiente de las otras. Este hecho permite efectuar modificaciones o cambios en cada 
+una de ellas, sin afectar el funcionamiento o diseño de las demás.
+Las siete capas del modelo están representadas en la Fig. 4.14., donde se puede apreciar el 
+orden y la denominación de cada una de ellas.
+Capa 7: Aplicación
+Capa 6: Presentación
+Capa 5: Sesión
+Capa 4: Transporte 
+Capa 3: Red
+Capa 2: Enlace
+Capa 1: Física
+Fig. 4.14. Capas	del	modelo	ISO.
+La cantidad de capas que debía tener el modelo fue motivo de una intensa discusión en el seno 
+de las comisiones que redactaron las normas. Se discutió mucho sobre si eran necesarias cinco 
+o siete capas. Finalmente, se arribo al modelo que se describe en las normas ISO de siete capas. 
+La realidad mostró que la Capa 5: Sesión y la Capa 6: Presentación, fueron usadas en muy 
+pocas aplicaciones. Por otro lado, en las primeras tres capas se observa una cantidad muy 
+grande de funciones. 
+En algunos casos prácticos las mismas se han desdoblado, como es el caso de la Capa 2: 
+Enlace, en las normas para las Redes de Área Local-LAN normalizadas por la IEEE. 
+4.3.4.2 Principios considerados para la determinación del número de capas
+Los principios en que se basó el modelo de referencia para determinar el número de capas 
+fueron los siguientes:
+ • El número de capas no debe ser tan grande, es decir, que no dificulte más de lo nece-
+sario la descripción y la integración técnica de ellas. 
+ • El número de capas debe estar relacionado con la funciones para ejecutar. Las funcio-
+nes que son muy diferentes deben estar en capas diferentes y las funciones similares 
+deben reunirse en una misma capa. 
+ • Las fronteras entre una capa y otra deben establecerse tratando de minimizar el flujo 
+de información a través de la interfaz correspondiente, y, además, en puntos tales en 
+donde la experiencia mejor indique que la misma es satisfactoria.
+ • Al crearse una capa, debe tenerse en cuenta que sus funciones sean, fácilmente locali-
+zables a fin de que, en caso de que sea necesario rediseñarla (por ejemplo por avances 
+ • Arquitectura DSE–Ambiente de Sistemas Distribuidos    
+(Distributed System Environment).
+informáticos distribuidos, que se utilizan en los equipos de dicha firma.
+que la conforman son: Enlace, Encaminamiento, Transporte, Sesión y Presentación.
+4.3.3.2 Arquitecturas abiertas
+Entre las arquitecturas más importantes podemos distinguir:
+ • Arquitectura OSI-Interconexión de Sistemas Abiertos    
+(Open Systems Interconnection).
+siguientes de la UIT–T. 
+ •
+para la Defensa (Defense Advanced Research Project Agency).
+Unidos de Norteamérica, conocido como US-Department of Defense
+equipos asociados a ellos del mundo entero, para sus necesidades específicas. 
+Unidos de Norteamérica. 
+Interconexión de Sistemas Abiertos. 
+Internet (versión 1). 
+Control de Transmisión / Protocolo de Interconexión o 
+Internet Protocol.
+y esta arquitectura.
+4.3.4 El modelo de la ISO
+4.3.4.1 Descripción del modelo
+las funciones que cada una debe cumplir.
+
+===== PÁGINA PDF 277 =====
+4 - Redes de telecomunicaciones252
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Este conjunto de datos se denomina encabezamiento de capa, y se suma uno a otro a me-
+A su vez, el conjunto de información compuesta por los correspondientes encabezamien-
+ • A nivel de la capa de transporte se denominan mensajes.
+ • A nivel de la capa de red se denominan paquetes.
+ • A nivel de la capa de enlace son tramas.
+ • A nivel de la capa física se habla simplemente de bits.
+Las capas similares en cualquier parte del esquema de transmisión se denominan capas 
+En las figuras 4.15  y 4.16, se puede también observar que existen equipos que solo traba-
+Entorno del Sistema Real
+N N
+Capas pares
+Medio físico de comunicaciónMedio físico de comunicaciónMedio físico de comunicación
+“A”
+Sistema
+abierto
+Capas pares
+N
+“B”
+Sistema
+abierto
+“C”
+Sistema
+abierto
+Fig. 4.16.	Estratificación	en	sistemas	abiertos	y	entes	pares.
+Como se describió con anterioridad, solamente a partir de la capa 4 los equipos se comu-
+Si el modelo usara las siete capas, los datos originales generados por la fuente irían 
+La Fig. 4.17. muestra la forma en que se van armando los diferentes subconjuntos en cada 
+en la tecnología, tanto sea por causa del hardware como del software), no se alteren 
+los servicios esperados u ofrecidos a las capas adyacentes.
+ • La frontera entre una capa y otra debe estar en donde resulte útil normalizar la interfaz 
+correspondiente a ambas.
+4.3.4.3 Relaciones entre las distintas capas
+Las siete capas del modelo se pueden agrupar en tres grupos bien diferenciados, según se 
+puede observar en la –Fig. 4.15.
+Medio Físico
+Paquetes
+Tramas
+Bits
+Capa de aplicación
+Capa de presentación
+Capa de sesión
+Capa de transporte
+Capa de red
+Capa de enlace
+Capa física
+Entorno del sistema real
+Computadora “A” Computadora “B”
+Paquetes
+Tramas
+Bits
+Capa de aplicación
+Capa de presentación
+Capa de sesión
+Capa de transporte
+Capa de red
+Capa de enlace
+Capa física
+Medio Físico
+Entorno de la red
+Entorno de vinculación
+Entorno de aplicación
+Entorno del sistema real
+Conmutador de la red
+Fig. 4.15.	Relación	entre	las	distintas	capas.
+El primer grupo  comprende las tres primeras capas, física, enlace y red. Ellas en conjunto 
+son denominadas entorno de la red, o subred de comunicaciones (en inglés se expresa como 
+communication’s subnetwork o, más directamente, subnet). Son las  que interactúan con las 
+redes de comunicaciones o la porción de la red que tiene la responsabilidad de transmitir la 
+información desde el equipo terminal que  transmite la información hasta el que la recibe. Las 
+tres capas superiores –sesión, presentación y aplicación–, que son procesadas en los equipos 
+terminales que intervienen en la comunicación, reciben el nombre genérico de entorno de la 
+aplicación.
+Finalmente, la capa de transporte es la primera capa que comunica los equipos termi-
+nales de extremo a extremo (la expresión es más conocida como end to end), y actúa como 
+separadora de los otros dos subconjuntos. Por tal razón se la denomina entorno de vincula-
+ción. En algunas oportunidades, por ser también procesada en los equipos terminales, se la 
+agrupa en el segundo conjunto, pero separándola de las otras tres. 
+Un observador que estuviera ubicado en el equipo terminal que actúa como fuente podría 
+observar cómo los datos que la fuente va enviando a la red son procesados por cada protocolo 
+de capa y cómo cada uno de ellos le va añadiendo la información necesaria para permitir el 
+procesamiento por los protocolos de la capa par del equipo que corresponda. Este puede ser 
+
+===== PÁGINA PDF 278 =====
+4.3 Arquitecturas de comunicaciones 253
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+un conmutador para las primeras tres capas, o el equipo terminal que actuará como colector. 
+Este conjunto de datos se denomina encabezamiento de capa, y se suma uno a otro a me-
+dida que se llega desde la capa de aplicación hasta la capa física; esta última capa finalmente 
+procederá a entregarlos al medio para su transmisión hacia el otro extremo. 
+A su vez, el conjunto de información compuesta por los correspondientes encabezamien-
+tos y por los datos reciben distintos nombres, según el nivel en que están situados.
+ • A nivel de la capa de transporte se denominan mensajes.
+ • A nivel de la capa de red se denominan paquetes.
+ • A nivel de la capa de enlace son tramas.
+ • A nivel de la capa física se habla simplemente de bits.
+Las capas similares en cualquier parte del esquema de transmisión se denominan capas 
+pares. La Fig. 4.15. permite observar la forma en que se comunican estas capas y la Fig. 4.16., 
+el concepto de capa par..
+En las figuras 4.15  y 4.16, se puede también observar que existen equipos que solo traba-
+jan en las primeras tres capas solamente. Estos son los conmutadores o router de la red. 
+Entorno del Sistema Real
+N N
+Capas pares
+Medio físico de comunicaciónMedio físico de comunicaciónMedio físico de comunicación
+“A”
+Sistema
+abierto
+Capas pares
+N
+“B”
+Sistema
+abierto
+“C”
+Sistema
+abierto
+Fig. 4.16.	Estratificación	en	sistemas	abiertos	y	entes	pares.
+Como se describió con anterioridad, solamente a partir de la capa 4 los equipos se comu-
+nican de extremo a extremo. 
+Si el modelo usara las siete capas, los datos originales generados por la fuente irían 
+acompañados por los siete encabezamientos. Cada uno de ellos es generado por los siete 
+protocolos de capa antes de ingresar al medio físico. De allí que se ha buscado simplificar 
+el modelo.
+La Fig. 4.17. muestra la forma en que se van armando los diferentes subconjuntos en cada 
+capa, hasta llegar al medio físico para su transmisión. 
+en la tecnología, tanto sea por causa del hardware como del software
+los servicios esperados u ofrecidos a las capas adyacentes.
+ •
+correspondiente a ambas.
+4.3.4.3 Relaciones entre las distintas capas
+puede observar en la –Fig. 4.15.
+Medio Físico
+Paquetes
+Tramas
+Bits
+Capa de aplicación
+Capa de presentación
+Capa de sesión
+Capa de transporte
+Capa de red
+Capa de enlace
+Capa física
+Entorno del sistema real
+Computadora “A” Computadora “B”
+Paquetes
+Tramas
+Bits
+Capa de aplicación
+Capa de presentación
+Capa de sesión
+Capa de transporte
+Capa de red
+Capa de enlace
+Capa física
+Medio Físico
+Entorno de la red
+Entorno de vinculación
+Entorno de aplicación
+Entorno del sistema real
+Conmutador de la red
+Fig. 4.15.	Relación	entre	las	distintas	capas.
+communication’s subnetwork o, más directamente, subnet
+aplicación.
+nales de extremo a extremo (la expresión es más conocida como end to end
+agrupa en el segundo conjunto, pero separándola de las otras tres. 
+Encabezamiento de capa:
+Comúnmente,	se	usa	la	expresión	
+header;	 de	 allí	 que,	 a	 las	 abrevia-
+turas	que	identifican	a	cada	enca-
+bezamiento,	 se	 las	 conozca	 con	
+una	 letra	 que	 identifica	 la	 capa	 y	
+la	letra	H	de	esta	palabra.
+
+
+===== PÁGINA PDF 279 =====
+4 - Redes de telecomunicaciones254
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Los protocolos de capa deben proporcionar servicios, denominados servicios de capa, a la 
+Es la que conecta al computador con el medio de comunicaciones, y permite que los bits 
+En particular, establece las especificaciones mecánicas, eléctricas y lógicas, que permiten eje-
+La capa física tiene por objeto:
+Proporcionar los medios mecánicos, eléctricos, funcionales y de procedimiento, necesarios 
+bits a lo largo de 
+Es la responsable de establecer, mantener y liberar el enlace entre el equipo terminal que 
+Esta capa, de manera conjunta con la capa física, normalmente son las mínimas necesarias 
+La capa de enlace tiene por objeto:
+Proporcionar los medios funcionales y de procedimiento para establecer, mantener y liberar 
+Es la que permite direccionar el tráfico de paquetes desde la fuente hasta una estación co-
+La capa de red tiene por objeto:
+Proporcionar los medios para establecer, mantener y liberar las conexiones de red; fa-
+Computador
+“A”
+FUENTE
+Datos AH PH SH TH NH DLH PH
+Medio físico de comunicación
+Capa de
+Aplicación
+Capa de
+presentación
+Capa de
+sesión
+Capa de
+transporte
+Capa de
+red
+Capa de
+enlace
+Capa
+física
+Capa de
+Aplicación
+Capa de
+presentación
+Capa de
+sesión
+Capa de
+transporte
+Capa de
+red
+Capa de
+enlace
+Capa de
+física
+Computador
+“B”
+COLECTOR
+Protocolo de aplicación
+Protocolo de representación
+Protocolo de sesión
+Protocolo de transporte
+Protocolo de red
+Protocolo de enlace
+Protocolo físico
+Datos AH PH SH TH NH DLH
+Datos AH PH SH TH NH
+Datos AH PH SH TH
+Datos AH PH SH
+AH PH
+Datos AH
+Datos
+Fig. 4.17. Modelo	de	transferencia	entre	distintos	niveles	del	modelo	OSI.
+4.3.4.4 El modelo de la ISO y la arquitectura TCP/IP
+Es interesante observar la relación que existe entre el modelo de la ISO y la arquitectura 
+DARPA, conformada básicamente por la suite de protocolos TCP/IP –tal como se describió en 
+el apartado 4.3.3.2–. 
+La observación de ambos modelos nos permite apreciar que esta arquitectura no posee los 
+niveles de sesión y de presentación.
+INTERNET
+INTERFASE
+DE RED
+TRANSPORTE
+Telnet. DNS, FTP, HTTP, SNMP, SMTP... etc...
+Protocolos de soporte: SNMP, SMTP... etc...
+Protocolos de acceso directo: PING, FTP... etc.....
+TCP UDP
+IP ARP RARP ICMP RP
+IEEE 802.3, IEEE 802.4, IEEE 802.5, FDDI, SMDS, X25, FRAME RELAY,
+PPP, ATM, ...etc...
+Modelo OSI Arquitectura TCP/IP
+APLICACIÓN
+Capa de
+Aplicación
+Capa de
+presentación
+Capa de
+sesión
+Capa de
+transporte
+Capa de
+red
+Capa de
+enlace
+Capa de
+física
+Fig. 4.18.	Comparación	entre	el	modelo	OSI	y	la	arquitectura	TCP/IP .
+A su vez, las capas físicas y de enlace poseen numerosas interfaces, que permiten adaptar-
+se a las variantes de arquitecturas de hardware que se pueden presentar.
+El	 modelo	 TCP/IP	 tiene	 4	 capas	
+mientras	que	el	modelo	OSI	siete	
+Solo	coinciden	en	las	capas	3	y	4,	
+Internet	(red)	y	transporte.
+
+
+===== PÁGINA PDF 280 =====
+4.3 Arquitecturas de comunicaciones 255
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+4.3.5 Funciones y servicios de capa
+4.3.5.1 Introducción
+Los protocolos de capa deben proporcionar servicios, denominados servicios de capa, a la 
+capa inmediata superior. Para ello deben realizar funciones que, como resultado de las mis-
+mas, se presten los mencionados servicios. Analicemos para cada capa del modelo su objeto 
+de existencia, las funciones que realiza para proporcionar los servicios de capa requeridos y, 
+finalmente, sus características.
+4.3.5.2 Capa física
+Es la que conecta al computador con el medio de comunicaciones, y permite que los bits 
+sean transferidos desde este hacia la red y viceversa (comunicación con conmutación) o hacia 
+otro computador (comunicación punto a punto, sin conmutación). 
+En particular, establece las especificaciones mecánicas, eléctricas y lógicas, que permiten eje-
+cutar los procedimientos necesarios para el ingreso de la información al medio y la recepción desde 
+el medio hacia el computador, controlando y codificando la corriente de bits hacia su destino.
+La capa física tiene por objeto:
+Proporcionar los medios mecánicos, eléctricos, funcionales y de procedimiento, necesarios 
+para comenzar, mantener y finalizar la conexión física para la transmisión de bits a lo largo de 
+un canal de comunicaciones entre entes de la capa de enlace de datos (por ejemplo, entre el 
+equipo terminal de datos-ETD y el equipo terminal del circuito de datos–ETCD), e interconec-
+tar a los entes de la capa física por un medio físico.
+4.3.5.3 Capa de enlace
+Es la responsable de establecer, mantener y liberar el enlace entre el equipo terminal que 
+actúa como fuente y el que hará de colector. Permite, de esta manera, la transferencia orde-
+nada de las tramas generadas por el primer equipo; facilita el flujo de información y detecta y 
+corrige los errores que pudieron haberse cometido, conteniendo en su interior la dirección de 
+destino (si fuera en caso de una comunicación punto, multipunto, sin conmutación). 
+Esta capa, de manera conjunta con la capa física, normalmente son las mínimas necesarias 
+para hacer posible una transferencia de datos, usando medios de telecomunicaciones. 
+La capa de enlace tiene por objeto:
+Proporcionar los medios funcionales y de procedimiento para establecer, mantener y liberar 
+conexiones de enlace entre entes de red; transferir unidades de datos del servicio de enlace; 
+detectar y, eventualmente, corregir errores de transmisión, que se producen en la capa física; 
+y permitir a la capa de red controlar la interconexión de los circuitos dentro de la capa física.
+4.3.5.4 Capa de red
+Es la que permite direccionar el tráfico de paquetes desde la fuente hasta una estación co-
+lectora remota, mediante mecanismos de conmutación. Establece el camino que estos deben 
+seguir; es decir, que usa la dirección física del equipo al cual se le va a transferir la información 
+y encamina aquellos hacia su destino de la manera más eficiente.
+La capa de red tiene por objeto:
+Proporcionar los medios para establecer, mantener y liberar las conexiones de red; fa-
+cilitar los medios funcionales y de procedimiento, para intercambiar unidades de datos del 
+servicio de red por conexiones de red (entre entes de las capas de transporte). Asegura, tam-
+bién, la independencia de las unidades de transporte, respecto de los factores de encamina-
+Computador
+“A”
+FUENTE
+Datos AH PH SH TH NH DLH PH
+Medio físico de comunicación
+Capa de
+Aplicación
+Capa de
+presentación
+Capa de
+sesión
+Capa de
+transporte
+Capa de
+red
+Capa de
+enlace
+Capa
+física
+Capa de
+Aplicación
+Capa de
+presentación
+Capa de
+sesión
+Capa de
+transporte
+Capa de
+red
+Capa de
+enlace
+Capa de
+física
+Computador
+“B”
+COLECTOR
+Protocolo de aplicación
+Protocolo de representación
+Protocolo de sesión
+Protocolo de transporte
+Protocolo de red
+Protocolo de enlace
+Protocolo físico
+Datos AH PH SH TH NH DLH
+Datos AH PH SH TH NH
+Datos AH PH SH TH
+Datos AH PH SH
+AH PH
+Datos AH
+Datos
+Fig. 4.17. Modelo	de	transferencia	entre	distintos	niveles	del	modelo	OSI.
+4.3.4.4 El modelo de la ISO y la arquitectura TCP/IP
+el apartado 4.3.3.2–. 
+niveles de sesión y de presentación.
+INTERNET
+INTERFASE
+DE RED
+TRANSPORTE
+Telnet. DNS, FTP, HTTP, SNMP, SMTP... etc...
+Protocolos de soporte: SNMP, SMTP... etc...
+Protocolos de acceso directo: PING, FTP... etc.....
+TCP UDP
+IP ARP RARP ICMP RP
+IEEE 802.3, IEEE 802.4, IEEE 802.5, FDDI, SMDS, X25, FRAME RELAY,
+PPP, ATM, ...etc...
+Modelo OSI Arquitectura TCP/IP
+APLICACIÓN
+Capa de
+Aplicación
+Capa de
+presentación
+Capa de
+sesión
+Capa de
+transporte
+Capa de
+red
+Capa de
+enlace
+Capa de
+física
+Fig. 4.18.	Comparación	entre	el	modelo	OSI	y	la	arquitectura	TCP/IP .
+se a las variantes de arquitecturas de hardware que se pueden presentar.
+
+===== PÁGINA PDF 281 =====
+4 - Redes de telecomunicaciones256
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Es la que controla y ejecuta las actividades que requiere una determinada aplicación para 
+La capa de aplicación tiene por objeto:
+Servir de ventana a los procesos de aplicación ejecutados por los computadores, su hard-
+Dentro de las características de esta capa, podemos citar:
+ • Compatibilización de las funciones en terminales diferentes.
+ • Compatibilización de las funciones de aplicación características del uso local del terminal. 
+ • Transferencia de archivos.
+ • Procedimientos remotos.
+ • Administración de archivos.
+ • Correo electrónico.
+Se trata del nivel superior del modelo ISO, en el que se llevan a cabo todas las funciones es-
+De esta manera, la comunicación entre los procesos se efectúa mediante determinado 
+Grupo 1
+Protocolos del gestión del sistema
+Orientados a la gestión del sistema de interconexión
+Grupo 2
+Protocolos del gestión del aplicación
+Efectúan el control de las funciones de gestión, de los procesos de aplicación
+Grupo 3
+Protocolos del sistema
+Para efectivizar las comunicaciones entre aplicaciones
+Grupo 4
+Protocolos específicos para aplicaciones
+Dedicados especialmente para determinadas aplicaciones
+miento y retransmisión asociados con el establecimiento y explotación de una conexión de 
+red determinada. 
+En el modelo OSI se define el concepto de subred, que es de gran importancia en la com-
+presión del mismo. 
+Se entiende por Subred:
+Al conjunto de uno o varios sistemas intermedios, que permiten la retransmisión, y a través 
+de los cuales los sistemas abiertos pueden establecer conexiones de red.
+En otras palabras, dentro del modelo OSI, el concepto de subred es la representación de 
+una red de comunicación de datos real, sea esta el Sistema Nacional de Telecomunicaciones 
+de un país determinado, una red privada, una red de área local o de área metropolitana.
+En función de este concepto, se define como conexión de subred:
+Al trayecto de comunicaciones a través de una subred, que es utilizado por entes de la 
+capa de red para suministrar una conexión de red.
+4.3.5.5 Capa de transporte
+Es la que permite mantener la integridad de los datos de extremo a extremo (fuente a co-
+lector), facilitando el enrutamiento, la segmentación y, luego, su unión en el mensaje original 
+transmitido. Si es necesario, recupera errores. Esta capa maneja mensajes.
+La capa de transporte tiene por objeto:
+Efectuar la transferencia transparente de datos entre entes de la capa de sesión; liberar a 
+dicha capa de toda preocupación, respecto de los detalles necesarios, para conseguir una trans-
+ferencia de datos segura y rentable; y optimizar el uso del servicio de red disponible, para ofrecer 
+la calidad de funcionamiento que necesita cada ente de la capa de sesión a un costo mínimo.
+4.3.5.6 Capa de sesión
+Es la que maneja las disponibilidades de la red, controlando las memorias intermedias y verifi-
+cando que la capacidad de procesamiento de esta no se vea saturada por la cantidad de datos que 
+se le transfieren; provee la sincronización entre los equipos terminales y también se ocupa de veri-
+ficar, si fuera el caso, la autenticidad del usuario y el tipo de diálogo (símplex, semidúplex o dúplex).
+La capa de sesión tiene por objeto:
+Facilitar el medio necesario para que los entes de la capa de presentación en cooperación 
+organicen y sincronicen su diálogo y procedan a su intercambio de datos. Proporciona los 
+servicios para establecer una conexión de sesión entre dos entes de la capa de presentación y 
+facilita interacciones ordenadas de intercambio de datos.
+4.3.5.7 Capa de presentación
+Se ocupa de la sintaxis de los datos, de la conversión de códigos (transcodificación), de la encrip-
+tación o desencriptación (si fuera necesario su uso), de la compresión y descompresión de la informa-
+ción, y de todo otro tipo de funciones que se refieran a la modificación de los datos que, originalmente, 
+fueron enviados por el computador, con el objeto de que se pueda realizar alguna tarea que resulte 
+conveniente y necesaria para adaptar la comunicación a determinadas particularidades.
+La capa de presentación tiene por objeto:
+Permitir la representación de los datos que han de transferirse entre entes de la capa de apli-
+cación; representar la estructura de datos a la que los entes de la capa de aplicación se refieren 
+en su comunicación; y proporcionar elementos sintácticos comunes para ser utilizados por los 
+
+===== PÁGINA PDF 282 =====
+4.3 Arquitecturas de comunicaciones 257
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+entes de la capa (con independencia de la sintaxis particular que pueda usar cada ente de la 
+misma). Además, tiene por objeto facilitar la transformación entre las sintaxis particulares y la 
+sintaxis común, para posibilitar la comunicación entre entes diferentes de la capa de aplicación.
+4.3.5.8 Capa de aplicación
+Es la que controla y ejecuta las actividades que requiere una determinada aplicación para 
+que pueda ser transmitida hacia el otro extremo, interactuando con el equipo terminal que 
+genera o recibe la información para ser procesada por los usuarios; facilita la transferencia de 
+archivos y de mensajes de correo, emula terminales virtuales y permite el acceso a bases de 
+datos remotas o tareas que hacen al gerenciamiento de la red. 
+La capa de aplicación tiene por objeto:
+Servir de ventana a los procesos de aplicación ejecutados por los computadores, su hard-
+ware y software asociados, y que usan el modelo de la ISO para su comunicación con otros 
+computadores, a los efectos de intercambiar información significativa.
+Dentro de las características de esta capa, podemos citar:
+ • Compatibilización de las funciones en terminales diferentes.
+ • Compatibilización de las funciones de aplicación características del uso local del terminal. 
+ • Transferencia de archivos.
+ • Procedimientos remotos.
+ • Administración de archivos.
+ • Correo electrónico.
+Se trata del nivel superior del modelo ISO, en el que se llevan a cabo todas las funciones es-
+pecíficas de comunicación entre los diferentes procesos de aplicación que forman el sistema. 
+Si los procesos se encuentran instalados en la misma máquina, la comunicación se realizará de 
+la manera habitual; en caso de hallarse en equipos diferentes, será necesario recurrir al sistema 
+de interconexión. 
+De esta manera, la comunicación entre los procesos se efectúa mediante determinado 
+protocolo. Estos han sido agrupados por la Organización Internacional de Normalización (ISO) 
+en los grupos indicados en la Tabla 4-3.
+Tabla 4-3 Protocolos gestionados por el nivel aplicación
+Grupo 1
+Protocolos del gestión del sistema
+Orientados a la gestión del sistema de interconexión
+Grupo 2
+Protocolos del gestión del aplicación
+Efectúan el control de las funciones de gestión, de los procesos de aplicación
+Grupo 3
+Protocolos del sistema
+Para efectivizar las comunicaciones entre aplicaciones
+Grupo 4
+Protocolos específicos para aplicaciones
+Dedicados especialmente para determinadas aplicaciones
+red determinada. 
+presión del mismo. 
+Se entiende por Subred:
+de los cuales los sistemas abiertos pueden establecer conexiones de red.
+de un país determinado, una red privada, una red de área local o de área metropolitana.
+En función de este concepto, se define como conexión de subred:
+capa de red para suministrar una conexión de red.
+4.3.5.5 Capa de transporte
+transmitido. Si es necesario, recupera errores. Esta capa maneja mensajes.
+La capa de transporte tiene por objeto:
+la calidad de funcionamiento que necesita cada ente de la capa de sesión a un costo mínimo.
+4.3.5.6 Capa de sesión
+La capa de sesión tiene por objeto:
+facilita interacciones ordenadas de intercambio de datos.
+4.3.5.7 Capa de presentación
+conveniente y necesaria para adaptar la comunicación a determinadas particularidades.
+La capa de presentación tiene por objeto:
+
+===== PÁGINA PDF 283 =====
+4 - Redes de telecomunicaciones258
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+proceder a cumplir con el servicio deseado. Sin embargo, no estaremos seguros de 
+que la carta haya o no llegado a destino.
+En los servicios orientados a la conexión, las fases necesarias para la transferencia de la 
+1. Listo para establecer una conexión.
+2. Establecimiento de la conexión.
+3. Transferencia de los datos.
+4. Liberación de la conexión.
+5. Listo para establecer una nueva conexión.
+Las características particulares de este servicio son:
+ • La información llega siempre al receptor en el mismo orden en que fue enviada por la 
+fuente. Si fuesen mensajes transmitidos, llegarían respetando la secuencia de transmisión.
+ • Se lleva un control permanente de todas las sesiones y se busca asegurar que la infor-
+mación llegue al receptor sin errores.
+ • Cuando el servicio asegura la fiabilidad de la información (en este caso, ello sucede 
+en la mayoría de las situaciones), el receptor notifica a la fuente que la información ha 
+sido recibida y, además, correctamente.
+ • Los sistemas de este tipo son más caros y tienen un trabajo de red adicional, dado la 
+gran cantidad de funciones que se deben ejecutar durante el proceso de transferencia 
+de la información.
+ • Es ideal en las redes de transmisión de datos de área extensa que usan vínculos de la 
+red telefónica (utilizada como red soporte), donde la tasa de errores puede ser mayor y 
+puede resultar conveniente garantizar la integridad de los datos. 
+ • Muchos servicios actuales no necesitan de la calidad y fiabilidad de los sistemas 
+orientados a la conexión, pues estos presentan retardos no deseables. En este caso, 
+se dice que son servicios con conexión sin fiabilidad, como es en algunos casos de 
+transmisión digital de la voz.
+ • En aquellos servicios que son dependientes del tiempo, como es la transmisión de la 
+voz y el video (las denominadas señales isócronas), requieren que no existan retardos 
+importantes ni variables (jitter).
+En los servicios no orientados a la conexión, las fases necesarias para la transferencia de 
+1. Listo para establecer una conexión.
+2. Transferencia de los datos.
+3. Listo para establecer una nueva conexión.
+Las características particulares de este servicio son:
+ • La información llega al receptor no siempre en el mismo orden en que fue enviada por 
+la fuente.
+ • Si se trata de archivos, su integridad no está asegurada en cuanto a que no llegará 
+todo en un solo mensaje;  este se puede recibir en dos o más bloques.
+ • El servicio no asegura la fiabilidad de la información, es decir, no hay control de 
+errores.
+ • Los sistemas de este tipo son más simples y baratos, pues funcionan como un buzón 
+de correo, donde se supone que, una vez transmitido el mensaje, llegará a destino.
+4.4 Funciones ejecutadas por las redes de telecomunicaciones
+4.4.1 Introducción
+Las redes de telecomunicaciones, cualquiera sea la tecnología con la que hayan sido cons-
+truidas y el uso para el hayan sido diseñadas, deben realizar ciertas funciones y, consecuente-
+mente, tener el equipamiento que pueda realizar las mismas.
+Las funciones son:
+ • Conmutación.
+ • Transmisión.
+En algunas redes, como es el caso de la red telefónica, es necesario contar con una función 
+adicional que es la señalización.
+4.4.2 Conmutación
+4.4.2.1 Conceptos generales
+Cuando se analizó el concepto de topología de una red, en la Tabla 4.1 se demostró que si 
+se quisieran conectar 1000 equipos terminales, “todos contra todos”, se hubieran requerido un 
+total de 499.500 vínculos, valor que se obtenía a partir de la expresión (4 – 2). 
+Muy al principio de su historia, la red telefónica utilizaba ese método de interconexión 
+dado que la cantidad de usuarios era mínima. Sin embargo, rápidamente se llegó a la necesi-
+dad de utilizar conmutadores, los cuales son equipos de telecomunicaciones que realizan la 
+función de conmutar las conexiones entre los usuarios. Por lo tanto: 
+Se entenderá por conmutar a la función que realiza un determinado hardware de comuni-
+caciones, que permite seleccionar un camino entre muchos posibles, entre un puerto de ingre-
+so y otro de salida, que facilite el establecimiento de un enlace entre dos equipos terminales 
+utilizando vínculos de comunicaciones.
+El equipo que realiza esta función se denomina conmutador. Ejemplos de conmutadores 
+son los distintos tipos de centrales telefónicas, los router, switch, etc.
+La totalidad de las señales para  ser conmutadas, si bien podrían ser analógicas o digitales, 
+transportan la voz; sin embargo, en la actualidad, están totalmente digitalizadas.
+Existen tres técnicas básicas de conmutación que son la conmutación de circuitos, la con-
+mutación de mensajes y la conmutación de paquetes.
+En los casos de los servicios conmutados, la transferencia de información mediante el 
+establecimiento de comunicaciones entre equipos terminales de datos –que utilizan arquitec-
+turas basadas en los modelos de capas– pueden efectuarse mediante dos tipos de servicios: 
+Servicios orientados a la conexión y servicios no orientados a la conexión. 
+Las analogías más rápidas, para entender la diferencia entre unos y otros, están en la simi-
+litud que uno puede encontrar en los siguientes ejemplos:
+ • Servicios orientados a la conexión  similitud con el servicio telefónico.
+En el servicio telefónico, al igual que en  los servicios orientados a la conexión, deben 
+efectuarse tres acciones. Primero debe establecerse la comunicación, luego hablar 
+transmitiendo la información y, finalmente, se procede a la desconexión del servicio.
+ • Servicios no orientados a la conexión  similitud con el servicio postal.
+En el servicio postal, se prepara el sobre que contendrá la información, se coloca la 
+dirección del receptor; se deposita la carta en un buzón y, a partir de allí, se deberá 
+Los	 equipos	 router	 y	 los	 denomi-
+nados	switch	son	utilizados	en	las	
+redes	 de	 datos.	 Se	 trata	 de	 con-
+mutadores	que,	a	diferencia	de	las	
+centrales	telefónicas	tradicionales,	
+utilizan	 una	 tecnología	 denomina-
+da	conmutación	de	paquetes.	Las	
+centrales	 telefónicas	 tradicionales	
+utilizan	otra	tecnología	denomina-
+da	conmutación	de	circuitos.
+

@@ -1,0 +1,44 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 2/EXPRESIONES Y RTAS  UD 2 1RA PARTE.pdf
+# titulo-identificado: EXPRESIONES Y RTAS  UD 2 1RA PARTE
+# titulo-metadatos-pdf: 
+# sha256-original: a54ae34b6efba9eaea778b998237d8e0cc645d5471f95b09c439cb53af86811a
+# paginas-pdf-total: 1
+# paginas-pdf-extraidas: 1
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+ UNIDAD  TEMATICA NRO 2 (1ra Parte)- RESPUESTAS 
+2. Ventajas : 
+    - Alcance mayor 
+    - Calidad del enlace 
+    - Integración de distintos servicios (voz, datos, video), manteniendo el 
+sincronismo. 
+    - Tecnología digital es más sencilla que la analógica. 
+    -  Mantenimiento de equipamiento menos costoso (dispositivos modulares). 
+   Desventajas: 
+- En el proceso  de convertir un canal analógico en digital, sometido a una 
+constante digitalización, lo que implica en la conversión la introducción 
+de errores. 
+   3. Regenerar una señal digital que esta llegando al dispositivo distorsionada 
+(reducción de potencia, atenuada). 
+ 
+5.    
+         FM rango de 88 a 108 Mhz. 
+            =3* 108  𝑚/𝑠𝑒𝑔/88* 106 Hz ;    = 3,4 m 
+         =3* 108  𝑚/𝑠𝑒𝑔/108* 106 Hz ;    = 2,77 m 
+6.   Ver placas de la PPT  
+ 
+13. La transmisión en banda base se emplea fundamentalmente   en las redes LAN, 
+pues los medios de comunicaciones no pertenecen a las Redes Públicas: 
+      -  Bajo costo de los equipos intervinientes. 
+      - Los ETCD (Modem), no realizan la operación de modulación, sino solamente la 
+codificación mediante los códigos de línea. 
+      - Emplean Modem Banda Base. 
+     Si no transmisiones en Banda Base, son transmisiones de señales Moduladas, 
+(aplican procedimiento de Modulación de las señales). 
+14. 15. Y 16: Ver esquemas de codificación conjunto de 
+todos los Códigos. 
+ = c/f(Hz) 

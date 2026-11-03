@@ -1,0 +1,26 @@
+[
+  {
+    "original": "capturas/practica/image-14.png",
+    "copia": "espectro-electromagnetico.png",
+    "sha256": "ef40e27982b007fd323a276c9c45ea60c654e88e9b308a083cd759737e1f515a",
+    "igual": true
+  },
+  {
+    "original": "capturas/teoria/02-senales-telecomunicaciones/image-11.png",
+    "copia": "codigos-base.png",
+    "sha256": "012a42414f524d2660b7ed10fc277a86f5d201b30953e2742b9d83b5cf0a46b6",
+    "igual": true
+  },
+  {
+    "original": "capturas/teoria/02-senales-telecomunicaciones/image-16.png",
+    "copia": "multinivel.png",
+    "sha256": "1436ae41b175ba2daefff86db446be29439c16f07a962eb89478d14f2b6cf1ba",
+    "igual": true
+  },
+  {
+    "original": "capturas/teoria/02-senales-telecomunicaciones/image-17.png",
+    "copia": "espectros-codigos.png",
+    "sha256": "fdb24ae5de5428ee85979de8c5ba914bd831bb9f80e507b6c1da4244766e6ac9",
+    "igual": true
+  }
+]

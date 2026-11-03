@@ -1,0 +1,1297 @@
+[
+  {
+    "ruta": "capturas/practica/clase 01.md",
+    "sha256": "2A58B36A6AE5075088E56309BF19F42657F5EE91C84E4F4D5606C069B7D1ADCA",
+    "bytes": 6731
+  },
+  {
+    "ruta": "capturas/practica/clase 02.md",
+    "sha256": "9149EFE0B0E7738811929757FA27B3D6FF9782BD26B92F9D3380A4277E4E1435",
+    "bytes": 7557
+  },
+  {
+    "ruta": "capturas/practica/clase 03.md",
+    "sha256": "72C5FC448C22ACB5B152AF7750908830BB7A4EC75A7BFE6E8E58D89A6DDE7F9E",
+    "bytes": 3886
+  },
+  {
+    "ruta": "capturas/practica/clase 04.md",
+    "sha256": "8DA26FE9323DBBA1FF9CF7C517A5B4FADB123ADD85CE467636B8DFBA44748F4D",
+    "bytes": 39308
+  },
+  {
+    "ruta": "capturas/practica/Clase 05.md",
+    "sha256": "0D32AD51D2F1FA735FD9B05AC9CAC63E380776A17D798E675A037449746BB964",
+    "bytes": 5445
+  },
+  {
+    "ruta": "capturas/practica/clase 06.md",
+    "sha256": "AC6C2FECBD45CFD1910C9911B05C1A108781DCABB5081896BDCE499F9375D54D",
+    "bytes": 26829
+  },
+  {
+    "ruta": "capturas/practica/clase_practica_1er_parcial.md",
+    "sha256": "F541921CF598D7B3C7274EA7D7F7021E3B0E41C54FE8C34C3F43E092D8A25ED6",
+    "bytes": 64
+  },
+  {
+    "ruta": "capturas/practica/image-1.png",
+    "sha256": "0F9D71727528FDD68C963F51458CCDE94C1D6C00FD4AF05CB7A7AECCB3FE29E6",
+    "bytes": 619243
+  },
+  {
+    "ruta": "capturas/practica/image-10.png",
+    "sha256": "3EB80109B221AC40545E89EAF41FA0E42BBD497209F770182173601BBA9765CD",
+    "bytes": 347431
+  },
+  {
+    "ruta": "capturas/practica/image-11.png",
+    "sha256": "87D220817B194AAABCE377E097DFBB26CFACDE53D19A057806E3BA4B90A02042",
+    "bytes": 95519
+  },
+  {
+    "ruta": "capturas/practica/image-12.png",
+    "sha256": "79C4FF4C32E9F896737F5861D6C50906CFF3142089AF1F29C30345EC15A39E02",
+    "bytes": 66377
+  },
+  {
+    "ruta": "capturas/practica/image-13.png",
+    "sha256": "4709CA133A51E5668119B0DEA317B6B1BB1B4E988BCC60F1BC5258492568B767",
+    "bytes": 718263
+  },
+  {
+    "ruta": "capturas/practica/image-14.png",
+    "sha256": "EF40E27982B007FD323A276C9C45EA60C654E88E9B308A083CD759737E1F515A",
+    "bytes": 943244
+  },
+  {
+    "ruta": "capturas/practica/image-15.png",
+    "sha256": "7F758747AD142E54AB6867B48A2267CA09DF6C1E6CC587B36FF71EB120FF7ED5",
+    "bytes": 693020
+  },
+  {
+    "ruta": "capturas/practica/image-16.png",
+    "sha256": "D43A18977D81FEB816A5977F0CD7AF6C36D78865303FCB700D6E17767473A17E",
+    "bytes": 59951
+  },
+  {
+    "ruta": "capturas/practica/image-17.png",
+    "sha256": "B285BA61ABE148727B6B11BB2882E895D380587A570F0391707C48163DBCE5BD",
+    "bytes": 532703
+  },
+  {
+    "ruta": "capturas/practica/image-18.png",
+    "sha256": "1280644BB4420449062E5022B0D35FD8801B8B9CC5E2E8EC12210E179BC90795",
+    "bytes": 209185
+  },
+  {
+    "ruta": "capturas/practica/image-19.png",
+    "sha256": "8B52FE8E10FB14462090BEB49590C0BA9680FE3DADF346096BE0949B7F0BE8BE",
+    "bytes": 206457
+  },
+  {
+    "ruta": "capturas/practica/image-2.png",
+    "sha256": "D5F048642083D89AF655F2A38B09768F2D6E2B86017BEF130B9C4DF17A1A135F",
+    "bytes": 15092
+  },
+  {
+    "ruta": "capturas/practica/image-20.png",
+    "sha256": "D8180652571BDCC147AF39C742B19C135DFC14A70802E699A6EAB5C25262B793",
+    "bytes": 211875
+  },
+  {
+    "ruta": "capturas/practica/image-21.png",
+    "sha256": "10F4842DC4832101BE48407CE84F2DBF7AA7EAA6EC69DF201EA7E95C68330129",
+    "bytes": 213895
+  },
+  {
+    "ruta": "capturas/practica/image-22.png",
+    "sha256": "4DAA9814179C0807DEAF88C4CF0D900CAF32D70920D479A5B912F5A9C3309BE0",
+    "bytes": 145231
+  },
+  {
+    "ruta": "capturas/practica/image-23.png",
+    "sha256": "72F0CCCA693FDE87641E42F175E1D3C3F82BC10EE3891811DDC8D29BDBECB405",
+    "bytes": 256833
+  },
+  {
+    "ruta": "capturas/practica/image-24.png",
+    "sha256": "287C92FA2CBB61A957C4C0345C16229850D44682F35A3287448B84A4F92803A3",
+    "bytes": 672623
+  },
+  {
+    "ruta": "capturas/practica/image-25.png",
+    "sha256": "E8D0C6341BEDE511301C53B95361B200FAC2D6CA0B0C8C99C118EB8BB2037F62",
+    "bytes": 74994
+  },
+  {
+    "ruta": "capturas/practica/image-26.png",
+    "sha256": "F209C9E29DEC3359929A8334DFC39585EAA407E0A6DE64063D34F8E58C0F87D8",
+    "bytes": 81850
+  },
+  {
+    "ruta": "capturas/practica/image-27.png",
+    "sha256": "9BB3B370088C61325003ED64A035E1F29FF6370DC9A8383DAA6364B9D1AE7C9A",
+    "bytes": 33389
+  },
+  {
+    "ruta": "capturas/practica/image-28.png",
+    "sha256": "44D5127AB26CB4DAEA161881CBEFBD1522F2D8D325F5092FCB78ACFC6968D6A4",
+    "bytes": 157023
+  },
+  {
+    "ruta": "capturas/practica/image-29.png",
+    "sha256": "7AF1032EA9A8DAC669E7BC6340574E21F9587CDEED9588DF473A6B9B76C74730",
+    "bytes": 117537
+  },
+  {
+    "ruta": "capturas/practica/image-3.png",
+    "sha256": "8372493AE94E78A280EFCDA760626535A7D8A568F2038DE700EC165471803F7F",
+    "bytes": 475075
+  },
+  {
+    "ruta": "capturas/practica/image-30.png",
+    "sha256": "8D3F1F88D076CF31144847B5681CBF4D44C5D20AD4351B0AE7C42407E0D20A0C",
+    "bytes": 91612
+  },
+  {
+    "ruta": "capturas/practica/image-31.png",
+    "sha256": "3B19080ECF217BEC42C2A6AC2A5F75BBEC6CD06CC5546E14B457868775915BF9",
+    "bytes": 75133
+  },
+  {
+    "ruta": "capturas/practica/image-32.png",
+    "sha256": "7FCCB3E91009629E92DDB877446581F25690E67B92EE551443CBF5B82E1E1A1D",
+    "bytes": 362914
+  },
+  {
+    "ruta": "capturas/practica/image-33.png",
+    "sha256": "299DFB2A14396D5C4FB74E967CD421208CCFDFF37CB73C0CCF8E112DBB90209C",
+    "bytes": 390594
+  },
+  {
+    "ruta": "capturas/practica/image-34.png",
+    "sha256": "FF888321B58C13F88363723F10980B9478998E6DAC0016C5C8035A3CDB1FEB38",
+    "bytes": 340127
+  },
+  {
+    "ruta": "capturas/practica/image-35.png",
+    "sha256": "3AA518C5A2F7EE9EDBBF870273E1973752A7CAA2D345D380F73B4C01D1920099",
+    "bytes": 206323
+  },
+  {
+    "ruta": "capturas/practica/image-36.png",
+    "sha256": "FADC8F148F894590D67ACC07D4186A8FD303F3E0F0CC81A11BE3EEB818AF743D",
+    "bytes": 326023
+  },
+  {
+    "ruta": "capturas/practica/image-37.png",
+    "sha256": "4DF2D54C0194DEED131FC75C5BA02BD33FB2ED36D6168F2C76B3E1132BBA3D35",
+    "bytes": 303359
+  },
+  {
+    "ruta": "capturas/practica/image-38.png",
+    "sha256": "C14A9653CF40E909623E3C173E63DA1A407E86F7AC817412281283B90489C99F",
+    "bytes": 253748
+  },
+  {
+    "ruta": "capturas/practica/image-39.png",
+    "sha256": "8E3EFE8624489A8FD6D1096A0F8185130D81F39E334D6D8FC9BD3831A9DB7360",
+    "bytes": 204849
+  },
+  {
+    "ruta": "capturas/practica/image-4.png",
+    "sha256": "5FC0A879C3FE43AE086B953524F320A96EBF4C680FDCE12909FD4AAA8A1D058D",
+    "bytes": 8406
+  },
+  {
+    "ruta": "capturas/practica/image-40.png",
+    "sha256": "D398894C38D160513FFFB9191C890B33E5363B2ABA784AC6D7CF26E9FE061626",
+    "bytes": 595036
+  },
+  {
+    "ruta": "capturas/practica/image-41.png",
+    "sha256": "2B0B9F83AD7B51F2DDCCEC2A65750403F7CED8BC32C6B44BEFBC64FCB253CEBD",
+    "bytes": 496573
+  },
+  {
+    "ruta": "capturas/practica/image-42.png",
+    "sha256": "439C21071599E9CC78518662928D5C7CAAAABA295C953D0AD013EF38395173FE",
+    "bytes": 232373
+  },
+  {
+    "ruta": "capturas/practica/image-43.png",
+    "sha256": "F03EA9CD4CFF08668B3200F96AC5AFF46BA11316B3327800FD133765A7F32E02",
+    "bytes": 725372
+  },
+  {
+    "ruta": "capturas/practica/image-44.png",
+    "sha256": "708176F29B4060D4E551F36031FC40062C5B72E1A4549A733B85DEF3D6A001CD",
+    "bytes": 114027
+  },
+  {
+    "ruta": "capturas/practica/image-5.png",
+    "sha256": "BD301ED26BA32ED1B69D7414CC0DE1B1E4FE00354817E0060378778CDF0ADBAB",
+    "bytes": 283943
+  },
+  {
+    "ruta": "capturas/practica/image-6.png",
+    "sha256": "982CD13685D936508D9A66C14D24DE6DB8A6C225C1276BED351040E9245C43E8",
+    "bytes": 424860
+  },
+  {
+    "ruta": "capturas/practica/image-7.png",
+    "sha256": "4D367825CBBE63A4C03CF1DF628F26D1ABBA724DA37BC00BBA1A6D4FC3A2ECEE",
+    "bytes": 141025
+  },
+  {
+    "ruta": "capturas/practica/image-8.png",
+    "sha256": "8F1D6D17C845AC3FC2C1DA427A067066CC9DF0B4CD71C3E7061B7419E6D2BB04",
+    "bytes": 139303
+  },
+  {
+    "ruta": "capturas/practica/image-9.png",
+    "sha256": "B7504AD362146920CA889B4FA0E0EF87A46CB57399B54A6F9092C0A477EAD312",
+    "bytes": 54705
+  },
+  {
+    "ruta": "capturas/practica/image.png",
+    "sha256": "FC7C64402BDF019DD3D97DCCA0565A1FF76C7D935ACC0405EBC09441CCF1E07D",
+    "bytes": 309730
+  },
+  {
+    "ruta": "capturas/practica/practica_un5.md",
+    "sha256": "7FC2A456A86358E044A2E0A538D27F43870A748A7740915DAA20DFB92D7225A7",
+    "bytes": 19349
+  },
+  {
+    "ruta": "capturas/teoria/01-introduccion-comunicaciones/Apuntes-clase 1.md",
+    "sha256": "B793B95B608FC63B84901296C5B924A2335C1AF84E69A343C1A12CAE74A11500",
+    "bytes": 7047
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/apuntes-clase 2.md",
+    "sha256": "B9C779FFD83A9B0D4724CEB07AAD43AB9EC9B767ACC8BC474B94C21D9283BDED",
+    "bytes": 11764
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/apuntes-clase 4.md",
+    "sha256": "99915B1A28204A93467B8F3DCCC52A0290F42C452E33EBA709BC340560D2F534",
+    "bytes": 8638
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/apuntes-clase3.md",
+    "sha256": "1C27FC66E33A5A92A5DED338CAD67A5E9202832CCB07DFF326829B79CFD22B2F",
+    "bytes": 764
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-1.png",
+    "sha256": "B5615143C284AB25D381B47BE946BFE410C25F3434744304DA6DE8D79CF80591",
+    "bytes": 40515
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-10.png",
+    "sha256": "1591DF0D6B1742537D16F71EBE258884AC13794DEB526146AD25C4C6F8FAB233",
+    "bytes": 134186
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-11.png",
+    "sha256": "012A42414F524D2660B7ED10FC277A86F5D201B30953E2742B9D83B5CF0A46B6",
+    "bytes": 46648
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-12.png",
+    "sha256": "17B83424B721CEB3E79D4E855E70B5EC299FF3DD13B44EDB02004CA7167274FE",
+    "bytes": 89217
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-13.png",
+    "sha256": "6BD47DC294B6399D117A76295732F4A34E57A8608F50EAFCFB2D1026B2951982",
+    "bytes": 93950
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-14.png",
+    "sha256": "57762AB1E9832534DB97B7C61E11619883D503EC8C94BF52A51241C8B8544A7A",
+    "bytes": 48282
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-15.png",
+    "sha256": "7401CAEA2F98C51C40A0B797744FE7B803A9FCD8DCA968CE9FD0C3916F8AE32B",
+    "bytes": 59491
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-16.png",
+    "sha256": "1436AE41B175BA2DAEFFF86DB446BE29439C16F07A962EB89478D14F2B6CF1BA",
+    "bytes": 203999
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-17.png",
+    "sha256": "FDB24AE5DE5428EE85979DE8C5BA914BD831BB9F80E507B6C1DA4244766E6AC9",
+    "bytes": 483244
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-18.png",
+    "sha256": "ACBFA1B7BE60C68F54D4FFAAD5BE468AE9E7D0A62633F7875BD3E4F5BF042CC0",
+    "bytes": 246513
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-2.png",
+    "sha256": "E77DB1785C791C71DCB11934EA68917AF0C878AEA12CD1649C490438EBB71936",
+    "bytes": 164468
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-3.png",
+    "sha256": "B2F59472982D40D50C213ABDE6F740069CEAC13A477BB9CA778D964DC4223F02",
+    "bytes": 296271
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-4.png",
+    "sha256": "BE8BA7804AA59081CDAEDEF7A1A9D89604650ADB3C812F0448E46260FCA68B21",
+    "bytes": 72125
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-5.png",
+    "sha256": "90CD42AE738F59C340F10A6579A3780B8DE5F4BEF09E77661EE7B7985B13CBCA",
+    "bytes": 66043
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-6.png",
+    "sha256": "437892E9A617854604771C2694C2B49C945ED8BDA7F5EBF4A422AA532943D65D",
+    "bytes": 65796
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-7.png",
+    "sha256": "FDEE8B4183494020A68B14F86AB7A512B9E1486432C2D95A5F03C2146ED8DE03",
+    "bytes": 29723
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-8.png",
+    "sha256": "A9BAFF61B802B49E29138ED8B095AD059D614CEE9C3E7F19046FFBA47A33E276",
+    "bytes": 192044
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image-9.png",
+    "sha256": "D0B7885D762768169D8D965AA3B02E3FAB33D4ADC0EF906D4EA7F7F310374BB3",
+    "bytes": 112578
+  },
+  {
+    "ruta": "capturas/teoria/02-senales-telecomunicaciones/image.png",
+    "sha256": "CB9B946AA499854023EE26FE3442DC5145729C896B8434758D10E6C46BE839CC",
+    "bytes": 117511
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/apuntes-clase 4.md",
+    "sha256": "6751F3B17FF36A05A08151F7168497831DFEFF2AF28CDB3B8CF57B1386C04F00",
+    "bytes": 2931
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/apuntes-clase 5.md",
+    "sha256": "327A7D43DF822C905D52E3E66325A9051DB9920BD0325C9ECB80699505B20DC0",
+    "bytes": 18481
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/cuestionario_U3.md",
+    "sha256": "9D1E245904B2A8529C022FFAB0CF902D3C85BFADDAB8B605A7A970B9A9BBA49E",
+    "bytes": 6560
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/image-1.png",
+    "sha256": "235AF8457953B5DFCFA1CEAAFCA08966B6650D45BE9D85238949B0F6A4542A18",
+    "bytes": 73653
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/image-2.png",
+    "sha256": "91AA4AA138F178A4455D92F665DAB4ACB8E06955BFC2447DA0E87C324DFB6C49",
+    "bytes": 18376
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/image-3.png",
+    "sha256": "D6A06F735EEFEA4DAAFCEC1A57B07AC28AFEA92D7DF8327CD4B1760EFC784D5B",
+    "bytes": 77815
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/image-4.png",
+    "sha256": "3FA0752133BB9608839A455108569586D6D5672D8C0EB8117C08ED319C467C23",
+    "bytes": 46471
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/image-5.png",
+    "sha256": "253365AF4BCC09FDD161109C72A0051B2B348FFDF07E0CC96EE310D8AC90A6CF",
+    "bytes": 299392
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/image-6.png",
+    "sha256": "F8920D986AC37D46C647E522DB831A1CD8B532FCFF7DCFE0BFC52885C097AA64",
+    "bytes": 54905
+  },
+  {
+    "ruta": "capturas/teoria/03-redes-telecomunicaciones/image.png",
+    "sha256": "473A09552EBEECBF20C146A1CCCB66D1B5751D3173BA24243AF75F778F1F25AE",
+    "bytes": 28463
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/clase 5.md",
+    "sha256": "F78306C245F5009A0719983792F79AB2B65149BB4762755A93ECE17927CEF5AF",
+    "bytes": 9075
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/clase 6.2.md",
+    "sha256": "E3EE14E0B105087AF4FAA8E45AB5F32A9A0620927720B519EA1861678511D323",
+    "bytes": 42108
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/Clase 6.md",
+    "sha256": "21E114AAB548E19CC82E3FB6083AD36FDB27B4646D61BD735BF95E2E49EB152B",
+    "bytes": 5078
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-1.png",
+    "sha256": "C1271022BCF1A6D6CCD255CB128E469E84173954DC6787FC6A467B422809B468",
+    "bytes": 218338
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-10.png",
+    "sha256": "0ACF1B5BAB1839E04D834AA0530527409559D11616E5203B1F63787096DF0681",
+    "bytes": 87589
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-11.png",
+    "sha256": "63D5F2E0A3F62D646CAC0F01F7C9DF35055B81484A0084804A9DE74C09BE6E34",
+    "bytes": 78456
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-12.png",
+    "sha256": "73A498CF87AFB2C04C3C6EB6BE6851C8C3E82F4F62A82C33824B695C2F07B82E",
+    "bytes": 76429
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-13.png",
+    "sha256": "B3C5458E6ADE3C8BDB036664E2DBBAEB4B0F164A8F8A495C8C6FE906695BA14C",
+    "bytes": 141209
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-14.png",
+    "sha256": "905F7AECFA19FF072B65CEF5E0D9D6BF518D5CFBA32AFACE48EBB99E249C4C1F",
+    "bytes": 75623
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-15.png",
+    "sha256": "06C62581346BF6FAB253A713AF261229609B5D1413A5A41566DEEA4754D42BC1",
+    "bytes": 245522
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-16.png",
+    "sha256": "E25304875E27E6FF15E9B93136528833CA1CB4E23CF5E0E2B9717C435E7E4C4C",
+    "bytes": 421630
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-17.png",
+    "sha256": "74F6AB061FF3EF0610F01E6B4D6545C779E7DE375133A8119814BE2DB2C27258",
+    "bytes": 277570
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-18.png",
+    "sha256": "5D4C6D0D69EF75825D4912CD637DECB1251F35FD12A1B0E9F65117B02181E219",
+    "bytes": 527605
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-19.png",
+    "sha256": "8F8DA46A9344ECF34BC515B97E11E96B7173E5170E8529595A6C8F2D27DC93AB",
+    "bytes": 130986
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-2.png",
+    "sha256": "3B08CAC3606D98DE7DEB0071C48B57AABB560B21296D6A45FED6A6DFD005EF00",
+    "bytes": 197973
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-20.png",
+    "sha256": "483493A372E40356BFAA9B345935003B6EB235B6B2E5DB90C604ED11986440EE",
+    "bytes": 174967
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-21.png",
+    "sha256": "D90762EF9BAA694E8E6349C7B6EEB0DAEBD0190BCA8DD8A9B960D25A245F817B",
+    "bytes": 116090
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-22.png",
+    "sha256": "65B04677A43E923B4E6318045405A82E9E04DA9B01E808E7A23DC977D65D018C",
+    "bytes": 402072
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-23.png",
+    "sha256": "BB36F045AAA412579355AA4D9CB1176F2603ACDF314AE25AF8C1A83642355E0C",
+    "bytes": 413682
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-24.png",
+    "sha256": "61AEE5D77DC7E699261BE67E1B06B99F24F20C584E7C1282E324691BEDA70B6D",
+    "bytes": 73030
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-25.png",
+    "sha256": "890722AB9B9198D4436B7255ECBCB6FFB4871A83CA05F321297DB4F9CAD998E0",
+    "bytes": 140911
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-26.png",
+    "sha256": "F9E41B1D9ABA304C063276E0FCABE2B0AB8DF65E083061A5609A5A192784BD27",
+    "bytes": 250642
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-27.png",
+    "sha256": "12DBC62E743D607421F0BF0F46DFA1A577DC2D46A342312703956216083CC322",
+    "bytes": 254673
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-28.png",
+    "sha256": "A9E5B4A19F3A2B169B8D0983BDD85085D806EC939EDD94F7C798491471FD0EE3",
+    "bytes": 117202
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-29.png",
+    "sha256": "65A5A9C62932B10CE39CA346C7A82310DA0536EA3883932602848D09FAD9A9BE",
+    "bytes": 54947
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-3.png",
+    "sha256": "DA884FB7262FC04A5A846A2C12995E5363903692A66C70D09D088615EC032EE4",
+    "bytes": 160277
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-30.png",
+    "sha256": "2CC1F0BF25106E4BA5C91EE95E9AECAB520127699C471B022F76B974EC7E77EE",
+    "bytes": 137474
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-31.png",
+    "sha256": "182E0CD3B2094DAF0117EF2E5A362F22AB77C4C7018D94FC30482375CFC4C2F9",
+    "bytes": 232672
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-32.png",
+    "sha256": "EAE886EC4D40C11002F4A1688976C94107350DD053929F044C522345887B86A0",
+    "bytes": 279041
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-33.png",
+    "sha256": "9A5B54652227B895A68705506ED79656BCC9135E68B0F9A2BCAD5C2CA4A277E6",
+    "bytes": 135741
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-34.png",
+    "sha256": "6F0DFCCA6EB89AA57AB68811016ADE25867671CD5469DD4A10595267A06844F6",
+    "bytes": 158323
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-35.png",
+    "sha256": "CB4027E029A8C0F5AE8F709E271F583D4BE68E1F229E54F31DD481A98C127B6B",
+    "bytes": 239648
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-36.png",
+    "sha256": "5BA614CC499EB57EEB9984CCC4DCE0F929072AAC316870E040D7E56773DD1786",
+    "bytes": 300633
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-37.png",
+    "sha256": "E522D5315C4512EB4DFB459A10ACD4757BECF7D9EBFCF4CB6AB813A9D92359BA",
+    "bytes": 266053
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-38.png",
+    "sha256": "BE0A02DE0495803F255E10F9836968A90896A802D76A3AB0658FF3A249F284B9",
+    "bytes": 465819
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-39.png",
+    "sha256": "84C25C367E50B0D4E3939DDE79691FFC09D177948310630444248C1EB899824D",
+    "bytes": 287999
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-4.png",
+    "sha256": "F082587A53C878D8246AD75CD08721006993320A5895111EC0E82FA64AB26C29",
+    "bytes": 43428
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-40.png",
+    "sha256": "92969D48C559ADD0E9EB7FAAE549A3BCCA26D956A09FE2D1637B20E9F531B2BF",
+    "bytes": 162277
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-41.png",
+    "sha256": "3CF4CF5C0F9FE96640B687CA1A1F8EC40EF418043ED9DC2F5555A893734E29DC",
+    "bytes": 309670
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-42.png",
+    "sha256": "3B492D0BB5802D2642CDEB5E01979755BCB979D39CFC4D5CDA510502817F6568",
+    "bytes": 95240
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-43.png",
+    "sha256": "BD31D834234CA4310958BD45533C35CCC31FD99C122C232620152A8A940DBFF5",
+    "bytes": 315156
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-44.png",
+    "sha256": "DB499AEBDF36B97B3493F012D58284E9C45F99C37AD55D9BD2C445EB98AD290A",
+    "bytes": 64145
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-45.png",
+    "sha256": "FAE3B67A412732808F722B758B73E9E3E8A9A0800BDB9D32CBAC80BE3BC31029",
+    "bytes": 131864
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-46.png",
+    "sha256": "30F482BEA38ED9650EABECBB572B6210AECB8E155BA629A106195B181F5FB8D6",
+    "bytes": 148659
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-47.png",
+    "sha256": "AA565D16FC57C1B438025052C1978013EB99F36A94270FFC4E894AD1B8C8032A",
+    "bytes": 79758
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-48.png",
+    "sha256": "EA2BE8BC5641AAB1FFE48E85C51334B7734256C141B681FD85E4CCF5F5F8D231",
+    "bytes": 76246
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-49.png",
+    "sha256": "4B2ED0CE252D33E3CF7A4285B963C78BC552EBB77DBC19F5E095DB5DC988986B",
+    "bytes": 690471
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-5.png",
+    "sha256": "D03D628100A51705F552B78EB8B58985A728D206BF0A43B1C97CFF4AA619F0CD",
+    "bytes": 53759
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-50.png",
+    "sha256": "85F672B5B0E1990BA580BCA94BA92119C740CBA9184E16D8588433AA59A31308",
+    "bytes": 340921
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-51.png",
+    "sha256": "306A75409BEB19EBEBB14C84752223669046A0F93FE59744191EA0E62A583E17",
+    "bytes": 295449
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-52.png",
+    "sha256": "F898EB28EAB0A7836EA26369BC3FE039701F094C9DF03A850E0F02B9D955C836",
+    "bytes": 102018
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-53.png",
+    "sha256": "C8DAAF7C526EF85FB1D66D49914B08839646635E126DCCAD4BC96DBA271BD11B",
+    "bytes": 344919
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-54.png",
+    "sha256": "32A0B44FC532C71E05887760B7E052D9A543A7F1CDAB810F5C5053EF6CB28509",
+    "bytes": 136517
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-6.png",
+    "sha256": "7337F1439284EEDD763AAA10B03F0FE738EB1C6A06AE7CD764F737DDCD24F0FB",
+    "bytes": 86473
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-7.png",
+    "sha256": "781E8FEC75F07E8A8829F2FE01AF30C0D8298A75CCF8022BEEC47DB05045D377",
+    "bytes": 260644
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-8.png",
+    "sha256": "337199AA6B121C773EA320DCE6D05A3632030911ACADA94A88A907EBE3F8CFBE",
+    "bytes": 303074
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image-9.png",
+    "sha256": "8B0BF89CA4523EFA5521A304CA231762367FB4BD2F0E45C9DA11971825B89077",
+    "bytes": 103075
+  },
+  {
+    "ruta": "capturas/teoria/04-modulacion-digitalizacion-multiplexacion/image.png",
+    "sha256": "22D6BD57649D70A261E5DF42CE21772CA48D18D3D18D4D9176550A9D4FB95A3C",
+    "bytes": 29077
+  },
+  {
+    "ruta": "capturas/teoria/05-Teoría de la información y de la codificación/01_10_26_U5.md",
+    "sha256": "14A6F0F41A05B2071A2DCFAFB4F86755F938903C594679B89E8A799F4F2C84BE",
+    "bytes": 34638
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/08_10_2026.md",
+    "sha256": "2A608B45E43F13E877330CD82A27575D3EF92DD030CE8E896340EA4CDB0800CC",
+    "bytes": 74959
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-01.png",
+    "sha256": "00E2C7BB9F1CF8DC64BF1DF4250813256EF231538675E19E249815CE6ED62011",
+    "bytes": 411288
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-02.png",
+    "sha256": "EC7EE973A711AD58FB231CD016882BE3AF1B36B9847CF40BE910F1E5F63E0311",
+    "bytes": 128269
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-03.png",
+    "sha256": "2A027BD735F2B193AE81E9594FA21310C4040D0B8DFA726DC3A341BAE12CA94E",
+    "bytes": 82594
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-04.png",
+    "sha256": "60FEB2201D161FD10BE207C78FCBBDC8D2E7CD51354F2B6C45878FFA53FD30B9",
+    "bytes": 150597
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-05.png",
+    "sha256": "D6C5085D3456F9B6FA9681B2F1446E2EA533E948ECF273E8C0C60B6113BE9D0E",
+    "bytes": 207606
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-06.png",
+    "sha256": "13690E24DDD7854C2A6C4D1EEB2787E4FD0E241D0EC22FA1F7D604D654EDEE09",
+    "bytes": 149390
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-07.png",
+    "sha256": "E0EE70FAA5793354FC7AB71D4ED2BE7493EA180365942EF35E2B232E2673483F",
+    "bytes": 385687
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-08.png",
+    "sha256": "13DB7588BAB309E80412501FC606906BA8657C37C9FD9451567D3240C51B9B70",
+    "bytes": 112379
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-09.png",
+    "sha256": "A31D00685819378D46BD6CFE68FEE16B6F39D56CDF0F3E8C9DD59B5116AF242B",
+    "bytes": 140639
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-10.png",
+    "sha256": "DAC9B93B83783E013FBCA5EF98D945B239DCEA6BC8FAE78E6DE4DA77CA08F38E",
+    "bytes": 255328
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-11.png",
+    "sha256": "17C1E88A4BE2D4BB76B6E26514C40BB2F4EED85EDC6E1355C6F3AE02989F67DB",
+    "bytes": 255056
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-12.png",
+    "sha256": "79A860FAB09F4B69FA87F4BED37E02F9FDA9185B7A9DFAF040A3A40CBF25117C",
+    "bytes": 225123
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-13.png",
+    "sha256": "49B4B4C6D477D49F8C1C9F8CACD592C785B5195B9B0BEBDF63B25BA3576A5CB4",
+    "bytes": 408092
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-14.png",
+    "sha256": "2C2199A3DACB00B19FF1AD22C7EC9F689670E3AD44369F8DF62ACB38527A57DD",
+    "bytes": 297060
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-15.png",
+    "sha256": "FB89E0E45EBA6B604B7A8B229FBCAB6801AB279A71D85D00071EF251CBB97E59",
+    "bytes": 291533
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-16.png",
+    "sha256": "50B86194135602784C6A56CDE524E3F2E4FAF5811EEEA5E3A319F0CA4ADE2506",
+    "bytes": 80291
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-17.png",
+    "sha256": "058E2E648E5A3C5B97F75B360A01C88EE45AC6B142DB0BD922F11B41A7869BEC",
+    "bytes": 171954
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-18.png",
+    "sha256": "B763D808AEAE7E7D609B8853822A90E7F329A970A2270BE4B6AF8FDDEE969185",
+    "bytes": 119820
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-19.png",
+    "sha256": "6FE366EA6740E11BC631A96A0ED3716EFC72CAAE4B9F193959170CD79D716EE7",
+    "bytes": 137567
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-20.png",
+    "sha256": "4A3A9408ABA6196B664649C39C2607FC5741AB4CEF7F7858B5688513D8B869CA",
+    "bytes": 174549
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-21.png",
+    "sha256": "986C7017C3EB7104164C52F6C5D4AA1723B3FBEA28D0EA3A4C02A75B49B1BC4E",
+    "bytes": 76981
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-22.png",
+    "sha256": "06968DB3A561AB885BAFDFD58F103E8639871FDFF4055531E4A35B22D4A89C29",
+    "bytes": 251662
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-23.png",
+    "sha256": "AD2C5BD3B546EA54D8DD81D6D2C8EE1972E29EB65A7F9DDF251DA9DB0F2129F0",
+    "bytes": 41667
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-24.png",
+    "sha256": "8DA277391D31C827772C9910632398E6C266D9CD799C644B02B216FE46A89DAD",
+    "bytes": 153029
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-25.png",
+    "sha256": "A42EAA33D32F37238F3782D2192C750750192DC03C49C25D81C369E6265B7E0E",
+    "bytes": 214275
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-26.png",
+    "sha256": "ADEC874637755C8D2C19766F50B84B1DB9EB24890EE887BD872A3CBB97070AA2",
+    "bytes": 222137
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-27.png",
+    "sha256": "B8A65717788C734655DF4583D0369C4288EB8D54106597B711CB0214A2302151",
+    "bytes": 164860
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-28.png",
+    "sha256": "17D6FAAC09CB5F04140C7702D06944BF71B0883B3A6901FBF454EFF3C5D38753",
+    "bytes": 508817
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-29.png",
+    "sha256": "9E91CDFAFDE94A02D28E790A2E5E083BB297788A12163F26F6F322BEE4304651",
+    "bytes": 103008
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-30.png",
+    "sha256": "E233497329235A04B641BDDD6488C465BB7E0A1AFC768B344C739D3724E5E0AB",
+    "bytes": 47322
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-31.png",
+    "sha256": "B3B5F7B8F9C9CE6304C9C44BEDB2C9ED217659F8F9EABBB9CE37502854C0BCBB",
+    "bytes": 143015
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-32.png",
+    "sha256": "ED46DD1320E0D71A5CC0FC692594F6AF4570993B7DB15DDD2AF397C909266148",
+    "bytes": 108955
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-33.png",
+    "sha256": "7384548F7A8377ADCA13BF1FE5AF5FF9B59662ECF5CC5DF89022A4A80D40646B",
+    "bytes": 156290
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-34.png",
+    "sha256": "6FD9C19EEB345CE045A9A37804B76852D2BFA5AC31E2B4D5D6E277CF722932A6",
+    "bytes": 319704
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-35.png",
+    "sha256": "DC82B510BE1F628B2F58BAD30EAD3C513CD952A84DCDE933873B014DAB23F70C",
+    "bytes": 204070
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-36.png",
+    "sha256": "4D62446CFB710357895DF33F1B42E59D691EF03DA8B3A11DAB51EF5ECB371894",
+    "bytes": 150997
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-37.png",
+    "sha256": "D6690340EB223EA935EC1A9F16A1F1630B1A40AB844B5BD20EB8929DD0A39B7F",
+    "bytes": 192022
+  },
+  {
+    "ruta": "capturas/teoria/06-Canales de comunicaciones/recursos-08-10-2026/pagina-38.png",
+    "sha256": "E26B19083369DA7B03F1AD5C2E14600E1079716DF196E10D72682294DB56E3F2",
+    "bytes": 247359
+  },
+  {
+    "ruta": "capturas/teoria/Cuestionarios/cuestionario - modulacion y multiplexacion.md",
+    "sha256": "B0B72C62C7FA5B1D4FE56F83B71AF2E71CC4054864C4F4FBB3A90A4FF9CCAA3A",
+    "bytes": 4127
+  },
+  {
+    "ruta": "capturas/teoria/Cuestionarios/cuestionario U1 y U2.md",
+    "sha256": "954D5A006C8CE1F3DFCF19AE8E9A9D5B9BA434E00D2F264E3FF615207C3850E0",
+    "bytes": 4708
+  },
+  {
+    "ruta": "capturas/teoria/Cuestionarios/image.png",
+    "sha256": "B73CABC2E5C01B662EC8C469E856C90265C23FA79C1943132BC81B2A86C2159C",
+    "bytes": 2136719
+  },
+  {
+    "ruta": "Ejercicio cuestionario 10-09-2026.pdf",
+    "sha256": "01562D496B527CA4F91D8C64FDF835896D6F4AE340C32F0B1F9365B7C886AB53",
+    "bytes": 173303
+  },
+  {
+    "ruta": "espectro_fourier_tren_pulsos.png",
+    "sha256": "3BF254AFD7ECFEF2F7DAA40C38DC0CD01A3DCBB3DF4FFD63FAD77A66426356A4",
+    "bytes": 113694
+  },
+  {
+    "ruta": "Martín Vainer - Comunicación de Datos.pdf",
+    "sha256": "591ED1ED265FD929031CB02E92AC3EE99915AF820CE18D5C3FFE7B58F02C00D8",
+    "bytes": 2675849
+  },
+  {
+    "ruta": "material/_cache/.gitkeep",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "bytes": 0
+  },
+  {
+    "ruta": "material/_cache/cronograma-comunicacion-de-datos-2026-k3673.txt",
+    "sha256": "6252D8F777E5759BF3E3E23B945986E64862E67426331D271801453E54A62C9B",
+    "bytes": 2931
+  },
+  {
+    "ruta": "material/_cache/ejercicio-cuestionario-2026-09-10.txt",
+    "sha256": "5AB605E385DF7153474F1D79D7910DA4097D93C169FF41C7F3B32399055DCBE7",
+    "bytes": 2801
+  },
+  {
+    "ruta": "material/_cache/programa-analitico-comunicacion-de-datos.txt",
+    "sha256": "B1EBB0A6D85B67A0EA7580E836BDF9D4E13C37D5C42509CCFEC36BDF005D09C5",
+    "bytes": 17112
+  },
+  {
+    "ruta": "material/_cache/tp-01-2026-enunciado.txt",
+    "sha256": "D00FC44A067341F7744B0A2D0D4C068F24DDE250098E9148AD57A2A0C62448F1",
+    "bytes": 3608
+  },
+  {
+    "ruta": "material/_cache/tp-01-respuestas-y-resumen.txt",
+    "sha256": "C7CFE5DCB2DB40F2B719707FD914CE9E2E65F083B5C9CEAB6DBB4B49666144EC",
+    "bytes": 1880
+  },
+  {
+    "ruta": "material/_cache/tp-02-2026.txt",
+    "sha256": "67A151757328AFC415E4B8B928DC4468265FC1A357E5DA1EF414020F6AFA37A8",
+    "bytes": 4769
+  },
+  {
+    "ruta": "material/_cache/trabajo-practico-ej-19-calculo-enlace.txt",
+    "sha256": "C0DA99209A4D2CD6E5639F691D7557E7BF5D0FA2E4CE5EF5B92CAF5CEFF3B0CE",
+    "bytes": 4695
+  },
+  {
+    "ruta": "material/_cache/u1-introduccion-a-la-teleinformatica.txt",
+    "sha256": "2D174374C739032EA1FE15C82DB12A2D0166B610B289B4CE5B4A37F1A1E2A8DC",
+    "bytes": 2132
+  },
+  {
+    "ruta": "material/_cache/u1-introduccion-a-las-comunicaciones.txt",
+    "sha256": "D569EE0F739118FDD3ABC7566550BD5B3935465A82667A8C7983099A7610F055",
+    "bytes": 7337
+  },
+  {
+    "ruta": "material/_cache/u1-organismos-de-comunicaciones.txt",
+    "sha256": "52634F1194216ACC722961BA2B1D8CA91359A73D4D47B65F665AD7B163C873F4",
+    "bytes": 11235
+  },
+  {
+    "ruta": "material/_cache/u2-caracteristicas-senales-telecom.txt",
+    "sha256": "8BFB94B15ED870F80E346A6B9C3EDC9B61DA0138584A63C2D4990C0A326DD4A2",
+    "bytes": 9861
+  },
+  {
+    "ruta": "material/_cache/u6-canales-comunicaciones-control-errores.txt",
+    "sha256": "D85B00B9A890C5B40046B207AA0BE3643930659214B4644545D45F809792E344",
+    "bytes": 10374
+  },
+  {
+    "ruta": "material/catedra/Condiciones de cursada.doc",
+    "sha256": "CE9B8F9023F4098882D971566565627D40BB99D7F0893B067BE58F07A5FC1425",
+    "bytes": 86016
+  },
+  {
+    "ruta": "material/catedra/Programa comunicacion de datos Año 2026 - martes jueves 2do cuat K3673.pdf",
+    "sha256": "EA4FB228EDC9FBDE1515A9168F296B1FB87D12ED7E23EF56D321E02B56E4F438",
+    "bytes": 35458
+  },
+  {
+    "ruta": "material/catedra/PROGRAMA de la materia.pdf",
+    "sha256": "516B95C28E17602E9C656536BD43F1E9AC27433847B5CD9EB72818387A6D986E",
+    "bytes": 156459
+  },
+  {
+    "ruta": "material/practica/.gitkeep",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "bytes": 0
+  },
+  {
+    "ruta": "material/practica/Martín Vainer - CD.pdf",
+    "sha256": "157C78F0F66368A33598399F9DA9A759603007BE80AD7937F5CB9BF806045E91",
+    "bytes": 2896929
+  },
+  {
+    "ruta": "material/practica/TRABAJO PRACTICO  EJ 19 CALCULO ENLACE.pdf",
+    "sha256": "09625607FC69503BB58CB0CF1E854ED28679F35131D8B9C91CAE5DB58415572C",
+    "bytes": 229299
+  },
+  {
+    "ruta": "material/practica/U 1/CONEXION LLAVE TERMICA.jpg",
+    "sha256": "14BCD1AFE18E09D3309557CAA447EC3E4882332D29041E58D788213B7B40BF9E",
+    "bytes": 2262495
+  },
+  {
+    "ruta": "material/practica/U 1/Organismos  UT 1.pdf",
+    "sha256": "04888473C04CA218AC1ABD8E8B543E7F54202106A09B9010A68030D518D33E37",
+    "bytes": 92059
+  },
+  {
+    "ruta": "material/practica/U 1/TP 1  2026.pdf",
+    "sha256": "4E3AE55C0190373A945E2B88E462F67E1B3A01A1F52AB7536BA0FC0AA4FB0CB7",
+    "bytes": 140766
+  },
+  {
+    "ruta": "material/practica/U 1/TP1-respuestas y resumen.pdf",
+    "sha256": "8C7ABCECDA62E03D4F77A3B562647AA7454011127B61FE070A415FC436291DC7",
+    "bytes": 307652
+  },
+  {
+    "ruta": "material/practica/U 1/UT 1 COMUNICACIONES.pdf",
+    "sha256": "144A805A73D241ECB9810163281B13B3B9DCB0A167895514A37ED195F6152969",
+    "bytes": 785918
+  },
+  {
+    "ruta": "material/practica/U 2/EXPRESIONES  Y RTAS UD 2 2DA PARTE.pdf",
+    "sha256": "D0C9087B823548ADBACFE1F764C8EEDDCF8E233E6B7D652D3392DDCA9B9B9599",
+    "bytes": 547846
+  },
+  {
+    "ruta": "material/practica/U 2/EXPRESIONES Y RTAS  UD 2 1RA PARTE.pdf",
+    "sha256": "A54AE34B6EFBA9EAEA778B998237D8E0CC645D5471F95B09C439CB53AF86811A",
+    "bytes": 105319
+  },
+  {
+    "ruta": "material/practica/U 2/TP  2  2026.pdf",
+    "sha256": "52F907D3C4881C34434BE1CA8DCF18468AFDAE6FAB86FCFF26B02056A4F2E247",
+    "bytes": 115280
+  },
+  {
+    "ruta": "material/practica/U 2/UT 2 CODIFICACION - DIST CODIGOS.pdf",
+    "sha256": "693AF0825AFD9417F6765B8D4E86E2A82E6EA86C919C843BEF98386CB75A1420",
+    "bytes": 85223
+  },
+  {
+    "ruta": "material/practica/U 2/UT 2 Códigos de línea cuadro comparativo.pdf",
+    "sha256": "D941B9027E8C3448FA266C0BD46C964796373CAB2960F9416A43D5C14391A215",
+    "bytes": 39423
+  },
+  {
+    "ruta": "material/practica/U 2/UT 2 SEÑALES TELCOM-CODIGOS DE LINEA.pdf",
+    "sha256": "D9702377D69C2CFE2A24EB1B5D8935DFD0EA032C5F7DA6BB624D4B5CF6ECD671",
+    "bytes": 836912
+  },
+  {
+    "ruta": "material/practica/U 3/EXPRESIONES  Y RTAS UD NRO 3 (1ra PARTE).pdf",
+    "sha256": "399EA8E70FD6149F0396FE84F887FE58A25CF8C45CEBE9A71CD1F3169A02E99F",
+    "bytes": 268981
+  },
+  {
+    "ruta": "material/practica/U 3/EXPRESIONES  Y RTAS UD NRO 3 (2da PARTE).pdf",
+    "sha256": "0CD98C5A235623F7C6BA9C69FFDCF94352EFB6796F9D607282A6BEDCC7EF1B07",
+    "bytes": 486083
+  },
+  {
+    "ruta": "material/practica/U 3/TP   3   2026.pdf",
+    "sha256": "459DEB47CEA813ECA82C2E3FF8735378354BAABDCA5187E736B8FBA888F07D32",
+    "bytes": 145518
+  },
+  {
+    "ruta": "material/practica/U 3/UT 3 MEDIDA VELOCIDAD.pdf",
+    "sha256": "C9B47FA30B169D907190159E54EA1203E72FEDBF58E0DBA3757EEB979B00974D",
+    "bytes": 1060226
+  },
+  {
+    "ruta": "material/practica/U 4/EXPRESIONES  Y RTAS UNIDAD  TEMATICA NRO 4.pdf",
+    "sha256": "E696D6590BE1570748ECF81B7F7D701D394E1CE1F6335757ACB518BFA54F1ED7",
+    "bytes": 190991
+  },
+  {
+    "ruta": "material/practica/U 4/TP 4  2026.pdf",
+    "sha256": "4D054A98C45160F52BD2E0F5FFCAB72128CA5B8B329B58347ABA648C1B32F57B",
+    "bytes": 87865
+  },
+  {
+    "ruta": "material/practica/U 4/U 4 - PARAMETROS PRINCIPALES DE  LOS DIFERENTES METODOS DE MODULACION.pdf",
+    "sha256": "BE38CE3E188654112E95CC2F1E82E46F5A99234ED4A3F1ABC6A83417A76F87D1",
+    "bytes": 216071
+  },
+  {
+    "ruta": "material/practica/U 4/UT 4 MODULACION Y MULTIPLEXACION.pdf",
+    "sha256": "33454B939331CFB8733E09DF834D86640595308B8806B59EB3696B4FF51573C6",
+    "bytes": 940257
+  },
+  {
+    "ruta": "material/practica/U 5/TP  5  2026.pdf",
+    "sha256": "1E2986EEE9B3F83DDBD00965105D881331C9D55BFEAE0F922D16C56698A9DF72",
+    "bytes": 83885
+  },
+  {
+    "ruta": "material/practica/U6/TP   6   (2da parte)  2026.pdf",
+    "sha256": "48F1530DF7BEB9745AD9BCE1BC36A2A7D3E80B5186FF12FC51B5E02E584B233C",
+    "bytes": 79685
+  },
+  {
+    "ruta": "material/practica/U6/TP  6 (1ra parte)    2026.pdf",
+    "sha256": "73E17AF44A6F697A79A10765E4CBD16ABAD0D0ACFB52FCBE1D4C6C272E5D2CC5",
+    "bytes": 126583
+  },
+  {
+    "ruta": "material/teoria/.gitkeep",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "bytes": 0
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813.zip",
+    "sha256": "2A87068DDF936D7A043196D4B80C2411FE4DB8C4F07948BC09AD329761759EB6",
+    "bytes": 20871185
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Capitulo_1a.pdf",
+    "sha256": "E9F8060118671D1FE78EF6A481D1B174CDB2EA4C9B7F5BB93EEA7A64F8912581",
+    "bytes": 902249
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Capitulo_2b.pdf",
+    "sha256": "97E6CB398F0EB7F1F6929E75B5F50780BC2549F28C80BF3E91B05C3AF0BAFDCB",
+    "bytes": 2426880
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Capitulo_3b.pdf",
+    "sha256": "969CB9A080D697A8C86B0A31B6E818D55FB06B5F1E1D26CCFD22F65AEC5F1811",
+    "bytes": 2791506
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Capitulo_4b.pdf",
+    "sha256": "5FD2255B6C48A727D9740E3719B1569702F8CE6176DC7108D2360827E84C39BB",
+    "bytes": 2745624
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Capitulo_5a.pdf",
+    "sha256": "F134C69C9467ACD58D94181EA67C5659CDC05E9B643FCC99D3C9D14B3DD39BC0",
+    "bytes": 3168397
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Capitulo_6a.pdf",
+    "sha256": "C1F5A2E96CDDC37EA6D55BDCE91A615407B13CE3CBCCBAFFA6743901A87F6FBE",
+    "bytes": 2221729
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Clase 10a.pdf",
+    "sha256": "0384CE53C8405E28B3781E53C7352C4E7923DBFE91979D35DEA4433F5F70A5E4",
+    "bytes": 3076186
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Clase 11a.pdf",
+    "sha256": "F5D72FAE841931746F21A9854D4D763CB0CCE5F197F41968A23B2A64822C2F94",
+    "bytes": 1472115
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Clase 7a.pdf",
+    "sha256": "EF7149E808BC7808290CD3C7A171FD31542F63EF11AF3216A7BC5DAF58D32547",
+    "bytes": 3214590
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Clase 8a.pdf",
+    "sha256": "39A55A9DE3EB43656EC394213AD094EBE869D59F8D98D06C2696764ECF8B4E6D",
+    "bytes": 1632271
+  },
+  {
+    "ruta": "material/teoria/CAPITULOS DEL LIBRO DE LA CATEDRA-20260813/Clase 9a.pdf",
+    "sha256": "C85B9332E068504FCEB876727B6FA6D64D04996F90ACFE7857B762E555A356FE",
+    "bytes": 5509861
+  },
+  {
+    "ruta": "material/teoria/Copia de redes_de_computadoras-freelibros-org.pdf",
+    "sha256": "CE74ABFD677004F5E890E32E070FBC27CA41B7FE9CA263FE04DE21934FD913D5",
+    "bytes": 22163785
+  },
+  {
+    "ruta": "material/teoria/Copia de Stallings - Comunicaciones y Redes de Computadores - 7ma edición.pdf",
+    "sha256": "5D0D176D8AF3B3B202F67FEAA6B310AC240EFC3AC06998CD410C591DE210FCC5",
+    "bytes": 31581707
+  },
+  {
+    "ruta": "material/teoria/DOC-20230425-WA0040.pdf",
+    "sha256": "56F7B6926ABB5BEA6E15E3C926D2344AD49004E4FBAD6AD2E10E4060182E90AE",
+    "bytes": 46269299
+  },
+  {
+    "ruta": "material/teoria/U1/U1 Introduccion a las comunicaciones.pdf",
+    "sha256": "E10B8175BC2A6093D62E4A7A9E1DBDC76E594D57F2ED5551BF717D01EB15B25B",
+    "bytes": 1165125
+  },
+  {
+    "ruta": "material/teoria/U2/Códigos de línea cuadro comparativo.zip",
+    "sha256": "F1493CC463F0A93F06B78C6EA289FF2691715B5667F1E58A9B286D92E8FF93BD",
+    "bytes": 176051
+  },
+  {
+    "ruta": "material/teoria/U2/Fotocopia de codigo linea.rar",
+    "sha256": "EF71020997330E0BCF01916AFFC4370AD98953D9A8A3A2BF00B8A8E846B27121",
+    "bytes": 193676
+  },
+  {
+    "ruta": "material/teoria/U2/Fourier en tiempo real v2.xlsx",
+    "sha256": "5853AB0A6CE124D50D09FB44232454A55D839E53C19CDBDDDC3F9A004C25F135",
+    "bytes": 254215
+  },
+  {
+    "ruta": "material/teoria/U2/Señales Banda Base.pdf",
+    "sha256": "8905C0067E6885185BA6EED802802D02BB8F15B987D72DBF48E1209EEC64BA20",
+    "bytes": 949139
+  },
+  {
+    "ruta": "material/teoria/U2/U 2 Características de las señales de telecom.pdf",
+    "sha256": "2DF3D853F92B76DA06A4A3E01BF3D701AD5E7ED2A4537D56D64C9AE5554037F2",
+    "bytes": 2362080
+  },
+  {
+    "ruta": "material/teoria/U2/Unidad de medida de sonoridad dB.docx",
+    "sha256": "05BBC83C9412CCAD6F60A78BF17E0036C944422EE9DAE8D23862960EE5ED50DC",
+    "bytes": 24712
+  },
+  {
+    "ruta": "material/teoria/U3/U3 Redes de Telecomunicaciones.pdf",
+    "sha256": "98D3EBBDDD419E3811F7414AD2295F44D89388F309528D970873B905F24704DB",
+    "bytes": 896226
+  },
+  {
+    "ruta": "material/teoria/U4/U4 MODULACION 1.pdf",
+    "sha256": "328229BCE1D5331FC617E255BB4ECE385E7DED254C63100A9B65FB20A59C0B5E",
+    "bytes": 908442
+  },
+  {
+    "ruta": "material/teoria/U4/U4 MODULACION 2.pdf",
+    "sha256": "9726C8EB41A262F964DC55F69947FBF0DF5F07CAB21B9E882F6A89C1D67CA33F",
+    "bytes": 698671
+  },
+  {
+    "ruta": "material/teoria/U4/U4 MULTIPLEXACION.pdf",
+    "sha256": "6479F94D0A15B1E8A62366FA62C5E59B293D4C271C2DB1A2F9B823222CD098F0",
+    "bytes": 2836195
+  },
+  {
+    "ruta": "material/teoria/U6/U 6 Canales de Comunicaciones y control de errores.pdf",
+    "sha256": "3E4DC09B027B9D9C43DF662A29CBA26E3F605133A24E1973E4FFAFFCAF30C233",
+    "bytes": 1647619
+  }
+]

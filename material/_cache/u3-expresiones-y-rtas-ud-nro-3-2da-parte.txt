@@ -1,0 +1,193 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 3/EXPRESIONES  Y RTAS UD NRO 3 (2da PARTE).pdf
+# titulo-identificado: EXPRESIONES  Y RTAS UD NRO 3 (2da PARTE)
+# titulo-metadatos-pdf: 
+# sha256-original: 0cd98c5a235623f7c6ba9c69ffdcf94352efb6796f9d607282a6bedcc7ef1b07
+# paginas-pdf-total: 5
+# paginas-pdf-extraidas: 1,2,3,4,5
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+UNIDAD  TEMATICA NRO 3 (2da PARTE) - RESPUESTAS 
+12. 
+ 
+ 
+ 
+ 
+Ptx - Ptotal en dB (vinculo ) = S Rx 
+ 
+                     
+log𝑎 𝑏 = 𝑐  ; 𝑎𝑐= b 
+                                                                                     
+Ptx - Ptotal en dB (vinculo ) = S Rx 
+ 
+ 
+vinculo= 1200 m*  0,9 dB   = 10,8 dB                     
+                                              100 m                                                                
+ Ptx = S Rx + Ptotal en dB (vinculo )  
+Ptx  = -15dBm+10,8dB = -4,2 dBm;    Ptx= -4,2 dBm 
+ ;  
+ 
+  
+                                                              Ptx=  -4,2dBm=10*Log Pi    = 10 -4,2/10  = 0,38018mW 
+ 
+                                                                                                           1mW 
+SRx= - 15dBm=10*Log   Pi    = 10−15/10  = 0,0316 mW 
+                                                   1mW 
+ 
+ 
+log𝑎 𝑏 = 𝑐  ; 𝑎𝑐= b     =  10−15/10 
+ 
+dBm+/-dB= dB 
+Ptx - Ptotal en dB (vinculo + conectores + empalmes + FD ) + Gen dB = S Rx 
+
+===== PÁGINA PDF 2 =====
+ 
+ 
+ 
+13.   
+ 
+ 
+ 
+ 
+Ptx - Ptotal en dB (vinculo + conectores y empalmes ) = S Rx 
+ 
+Ptx= 0 dBm 
+conectores y empalmes= 2 dB 
+vinculo= 5 dB 
+S Rx  =  0dBm – (5dB + 2 dB) = - 7 dBm;        log𝑎 𝑏 = 𝑐  ; 𝑎𝑐= b    
+ 
+-7dBm=  10 log10 𝑋 =  10−7/10 
+Rta:  -7dBm;  0,199 mW 
+ 
+14.   
+      
+ 
+ 
+ 
+ 
+ 
+Ptx - Ptotal en dB (vinculo) = S Rx 
+ 
+Ptx - Ptotal en dB (vinculo + conectores + empalmes + FD ) + Gen dB = S Rx 
+Línea de Transmisión de 100m 
+conectores 
+Ptx - Ptotal en dB (vinculo + conectores + empalmes + FD ) + Gen dB = S Rx 
+
+===== PÁGINA PDF 3 =====
+Ptx= 2 W=  ??  dBm 
+vinculo= 0,5dB/100m 
+D= 1800 m 
+     
+ Rta:  24 dBm;  251,18 mW 
+15.   
+ 
+ 
+ 
+Ptx - Ptotal en dB (vinculo + conectores + FD) = S Rx 
+ 
+ 
+Ptx= 3 dBm 
+conectores= 0,6dB c/u   ; FD= 10dB 
+SRx= -10 dBm 
+D=  ??? 
+vinculo= 3 dB/1000m*D 
+ 3 dBm – (3 dB/1000m*D + 1,2 dB+10dB) = -10dBm 
+ 
+Rta:  600m    y 9000m 
+16. 
+ 
+ 
+Ptx - Ptotal en dB (vinculo + conectores + empalmes + FD ) + Gen dB = S Rx 
+Ptx - Ptotal en dB (vinculo + conectores + empalmes + FD ) + Gen dB = S Rx 
+
+===== PÁGINA PDF 4 =====
+Ptx - Ptotal en dB (vinculo + FD) = S Rx 
+ 
+Ptx= ???? 
+SRx= -10 dBm 
+FD=  3 dB   ;   D= 5000 m 
+vinculo= 0,8 dB/100m 
+Rta:  33dBm  ;    1995mW 
+ 
+17.  
+ 
+ 
+ 
+   Ptx - Ptotal en dB (vinculo) = S Rx 
+ 
+   
+Ptx= 2 mW=   ??? dBm 
+SRx= -60 dBm 
+D= 30.000 m 
+vinculo=  XX dB/1000m*30.000m 
+    3,01dBm – (XX dB/1000m* 30.000m) = -60dBm 
+ 
+Rta:  2,1 dB/1000m   
+ 
+18.   
+ 
+ 
+ 
+ 
+     
+ 
+Ptx - Ptotal en dB (vinculo + conectores + empalmes + FD ) + Gen dB = S Rx 
+Ptx - Ptotal en dB (vinculo + conectores + empalmes + FD ) + Gen dB = S Rx 
+
+===== PÁGINA PDF 5 =====
+ Ptx - Ptotal en dB (vinculo + conectores) = S Rx 
+ 
+conectores= 1 dB 
+ 
+a. Relación de Pérdidas:   
+  
+P(dB)=10*log P1/P2  ;  P(dB)= 20dB ; Ptotal= 20dB (cable+conec);   
+Ptotal= 20 dB 
+ 
+O Tambien: 
+ 
+            Ptx - Ptotal en dB (vinculo + conectores) = S Rx 
+ 
+       50dBm – (cable+ 1 dB) = 30dBm 
+       Ptotal= 20 dB (19dB +1dB) 
+ 
+ 
+ 
+b. Atenuación cable coaxil fino = 5dB/100m 
+ 
+vinculo cable= 1000m*5dB/100m  ;   vinculo cable= 50dB  
+ 
+conectores= 1 dB  ,   TOTAL= 51 dB 
+ 
+Conclusión:  se deberá utilizar un amplificador que compense la pérdida total, 
+implica disponer uno de una ganancia de 31 dB. (30dB + 1 dB conectores) 
+      
+c. Atenuación cable coaxil  grueso = 0,8dB/100m 
+ 
+vinculo= 1000m*0,8dB/100m  ;   vinculo= 8dB 
+ 
+conectores= 1 dB  ,   TOTAL= 9 dB 
+ 
+Conclusión:  no es necesario utilizar un amplificador que compense la pérdida 
+total, pues se dispone de una potencia remanente  o ganancia a favor de 11dB. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

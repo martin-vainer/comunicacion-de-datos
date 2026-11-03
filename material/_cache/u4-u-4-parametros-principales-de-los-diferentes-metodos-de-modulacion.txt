@@ -1,0 +1,15 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 4/U 4 - PARAMETROS PRINCIPALES DE  LOS DIFERENTES METODOS DE MODULACION.pdf
+# titulo-identificado: U 4 - PARAMETROS PRINCIPALES DE  LOS DIFERENTES METODOS DE MODULACION
+# titulo-metadatos-pdf: 
+# sha256-original: be38ce3e188654112e95cc2f1e82e46f5a99234ed4a3f1abc6a83417a76f87d1
+# paginas-pdf-total: 1
+# paginas-pdf-extraidas: 1
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+PARAMETROS PRINCIPALES DE  LOS DIFERENTES METODOS DE MODULACION 
+ 
+

@@ -3,7 +3,7 @@ PLANTILLA DE ÍNDICE DE UNIDAD
 Se copia como INDICE.md dentro de cada apuntes/teoria/NN-unidad/.
 
 Portado de la "Bitácora / Índice de lectura" de los apuntes de DDS: hace navegable el apunte canónico
-sin duplicar su contenido. Para U1–U4 se actualiza cuando se agrega o reorganiza una sección.
+sin duplicar su contenido. Para U1–U8 se actualiza cuando se agrega o reorganiza una sección.
 -->
 
 # Unidad N — Nombre de la unidad
@@ -19,7 +19,7 @@ sin duplicar su contenido. Para U1–U4 se actualiza cuando se agrega o reorgani
 | 1 | [Tema](APUNTE.md#tema-principal) | Concepto previo → capacidad que habilita |
 
 El estado y las fuentes generales viven en el front matter de `APUNTE.md`; cada sección identifica sus
-fuentes. No se duplican acá porque quedarían desactualizados. En U1–U4 los temas son secciones de ese
+fuentes. No se duplican acá porque quedarían desactualizados. En U1–U8 los temas son secciones de ese
 único apunte teórico, no archivos separados.
 
 ## Orden de lectura recomendado

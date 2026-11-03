@@ -1,0 +1,553 @@
+CACHE DERIVADO — Fuente: material/teoria/U8/U8 Hardware de comunicaciones.pdf
+Método: pypdf. Hay texto incrustado en imágenes no capturado; consultar originales. Página = página del archivo PDF, 1-based. Las tablas/figuras se revisan visualmente y el registro está en el APUNTE U8.
+
+=== Página 1 ===
+COMUNICACIÓN DE DATOS
+U 8
+HARDWARE DE COMUNICACIONES
+Ingeniero ALEJANDRO LUIS ECHAZÚ
+alejandroechazu@frba.utn.edu.ar
+
+
+=== Página 2 ===
+INTERFASES DIGITALES (ID)
+E
+T
+C
+ETC CC
+ETCD ETCD
+ETC
+CC
+LC
+CD
+ED
+ID ID
+•SERIE
+•PARALELO
+
+=== Página 3 ===
+ALGUNAS INTERFASES DIGITALES 
+PARALELO (BUS)
+ATA
+CENTRONICS – IEEE 1284
+
+=== Página 4 ===
+ALGUNAS INTERFASES DIGITALES SERIE
+UIT-T
+(tx datos red tef)
+UIT-T 
+(red datos digital o analógica)
+EIA
+V .24 
+V .28 
+V .10 
+V .11 
+V .35 
+V .36
+X.20 
+X.20b 
+X.21 
+X.21b 
+X.26 
+X.27
+RS-232C 
+RS-449 
+RS-423A 
+RS-422A 
+RS-530
+
+=== Página 5 ===
+RESUMEN COMPARATIVO DE NORMAS
+Interfase Descripción Uso D 
+máx
+V máx Conector
+V .24 / 
+RS232C
+Digital serie 
+DTE-DCE
+Conexión 
+módem
+15 m 20 Kbps
+100 kbps
+10 Mbps
+DB-25
+DB-9
+V .36 / 
+RS449
+Digital serie 
+DTE-DCE
+Mejora V .24 60m 40 kbps 
+2 Mbps
+37 pines
+X.21 DTE-DCE
+X.25, duplex
+sincrónica 
+enlace digital
+64 kbps DB-15
+X.21b DTE-DCE
+X.25, duplex
+sincrónica 
+enlace analógico
+20 kbps DB-15
+RS530 Bal Banda ancha 25 pines
+V .35 DTE-DCE
+Bal – Desbal
+Sincrónico 
+banda ancha
+48 kbps a 
+168 kbps
+34 pines 
+Winchester
+
+=== Página 6 ===
+NORMAS CONEXAS
+Norma Función Acompaña
+V .28 Nivel eléctrico, circuito de enlace asimétrico y vel
+menores 20 kbps.
+V .24
+V .10 / 
+X.26
+Nivel eléctrico, circuito de enlace asimétrico y vel
+20/100 kbps.
+V .24
+X.21
+V .11 / 
+X.27
+Nivel eléctrico, circuito de enlace simétrico y vel
+menores 10 Mbps.
+V .24
+X.21
+RS422 Nivel eléctrico, tx simétrica y vel menores 2 Mbps. RS449
+RS423 Nivel eléctrico, tx asimétrica y vel menores 40 kbps. RS449
+
+=== Página 7 ===
+NORMALIZACIÓN DE LAS INTERFASES
+NIVELES
+•MECÁNICO
+TIPO DE CONECTOR. MACHO/HEMBRA
+•ELÉCTRICO
+TENSIONES/CORRIENTES
+TRANSMISIÓN ASIMÉTRICA/DESBALANCEADA O 
+SIMÉTRICA/BALANCEADA
+•LÓGICO
+CIRCUITOS DEFINIDOS PARA UNA FUNCIÓN. 
+SEÑALES DE:
+DATOS, SINCRONISMO, CONTROL, MANTENIMIENTO Y 
+CONEXIÓN DE TIERRA.
+
+=== Página 8 ===
+RS 232 / V .24
+GENERALIDADES
+INTERFAZ DIGITAL SERIE ENTRE DTE-DCE
+D MAX = 15 M
+V MAX = 20 KBPS
+FULL DUPLEX, CON O SIN SINCRONISMO
+N. MECÁNICO
+DB-25
+DB-9
+5         4            3            2           1
+
+=== Página 9 ===
+RS 232 / V .24
+N. ELÉCTRICO
+0 Tx > 5 v      1 Tx < -5 v
+0 Rx > 3 v      1 Rx < -3 v
+Valores máximos   + - 25 v  
+Margen      2 v
+N. LÓGICO
+
+=== Página 10 ===
+RS 232 / V .24
+SEÑALES PRINCIPALES
+Función Acrónimo ETD (macho) ECD (hembra)
+Datos transmitidos TD
+Datos recibidos RD
+Pedido de emisión RTS
+Preparado para emisión CTS
+Terminal de datos listo DTR
+Módem listo DSR
+Protección de tierra GND
+Tierra de señalización SIG
+Detección de portadora DCD
+Detección de señal llamada RI
+Sincronismo tx
+Sincronismo rx
+
+=== Página 11 ===
+
+
+=== Página 12 ===
+DTE
+SEÑALES 
+MÍNIMAS 
+CABLE 
+MÓDEM
+Cable con un 
+conector macho y 
+otro hembra
+
+=== Página 13 ===
+DTE
+SEÑALES 
+MÍNIMAS 
+CABLE 
+MÓDEM
+Cable con un 
+conector macho y 
+otro hembra
+
+=== Página 14 ===
+DTE DTE
+SEÑALES 
+MÍNIMAS 
+CABLE 
+NULL-MÓDEM
+Cable con los dos 
+conectores hembra
+
+=== Página 15 ===
+https://www.deltaww.com/en-US/products/Industrial-Ethernet-Solution/ALL/
+ETHERNET INDUSTRIAL
+
+
+=== Página 16 ===
+CABLE NULL MÓDEM DB9-DB9
+
+
+=== Página 17 ===
+PIN OUT DE 
+ALGUNAS 
+INTERFASES 
+DIGITALES
+
+
+=== Página 18 ===
+CONVERSIÓN 
+ENTRE 
+INTERFASES
+
+
+=== Página 19 ===
+•
+SON ETCD. ADAPTAN LAS SEÑALES PARA QUE PUEDAN 
+SER TRANSMITIDAS POR LOS MEDIOS DE 
+COMUNICACIONES.
+•
+USO DE A PARES. OPERAN EN EL NIVEL DE ENLACE DEL 
+MODELO OSI.
+•
+CLASIFICACIÓN:
+•
+MÓDEM DE RANGO VOCAL
+•
+MÓDEM BANDA BASE
+•
+MÓDEM X
+-
+DSL
+•
+CABLE MÓDEM
+MÓDEMS
+
+
+=== Página 20 ===
+FUNCIONES DE LOS MÓDEMS
+•
+PRINCIPALES
+•
+MODULACIÓN
+•
+CODIFICACIÓN
+•
+COMPLEMENTARIAS
+•CONTROL DE FLUJO DE DATOS
+•SEÑALIZACIÓN
+•ECUALIZACIÓN DEL CANAL
+•PROTECCIÓN CONTRA SOBRE 
+TENSIONES
+•
+ESPECIALES
+•DISCADO Y RECEPCIÓN AUTOMÁTICA DE LLAMADAS
+•ALMACENAMIENTO Y PROCESAMIENTO DE LA INFO
+•DETECCIÓN Y CORRECCIÓN DE ERRORES
+•COMPRESIÓN DE DATOS
+•AUTODIAGNÓSTICO
+•MULTIPLEXADO DE CANALES
+
+=== Página 21 ===
+MÓDEM RANGO VOCAL
+Uso de red telefónica conmutada.
+Transmite / recibe señal de datos 
+mediante canal telefónico, en el rango 
+de 300 a 3400 Hz.
+
+
+=== Página 22 ===
+SERIES  DE  RECOMENDACIONES  DEL  UIT-T
+Serie A Organización del trabajo del UIT-T
+Serie B Medios de expresión: definiciones, símbolos, clasificación
+Serie C Estadísticas generales de telecomunicaciones
+Serie D Principios generales de tarificación
+Serie E Explotación general de la red, servicio telefónico, explotación del servicio y factores humanos
+Serie F Servicios de telecomunicación no telefónicos
+Serie G Sistemas y medios de transmisión, sistemas y redes digitales
+Serie H Sistemas audiovisuales y multimedios
+Serie I Red digital de servicios integrados
+Serie J Redes de cable y transmisión de programas radiofónicos y televisivos, y de otras señales multimedios
+Serie K Protección contra las interferencias
+Serie L Construcción, instalación y protección de los cables y otros elementos de planta exterior
+Serie M RGT y mantenimiento de redes: sistemas de transmisión, circuitos telefónicos, telegrafía, facsímil y circuitos arrendados internacionales
+Serie N Mantenimiento: circuitos internacionales para transmisiones radiofónicas y de televisión
+Serie O Especificaciones de los aparatos de medida
+Serie P Calidad de transmisión telefónica, instalaciones telefónicas y redes locales
+Serie Q Conmutación y señalización
+Serie R Transmisión telegráfica
+Serie S Equipos terminales para servicios de telegrafía
+Serie T Terminales para servicios de telemática
+Serie U Conmutación telegráfica
+Serie V Comunicación de datos por la red telefónica
+Serie X Redes de datos y comunicación entre sistemas abiertos
+Serie Y Infraestructura mundial de la información y aspectos del protocolo Internet
+Serie Z Lenguajes y aspectos generales de soporte lógico para sistemas de telecomunicación
+
+=== Página 23 ===
+ALGUNAS NORMAS SOBRE COMUNICACIÓN 
+DE DATOS POR LA RED TELEFÓNICA
+http://www.itu.int/rec/T-REC-V/s
+1200 bpsMódems de 
+baja velocidad
+
+
+=== Página 24 ===
+ALGUNAS NORMAS SOBRE COMUNICACIÓN 
+DE DATOS POR LA RED TELEFÓNICA
+http://www.itu.int/rec/T-REC-V/s
+Módems de media y 
+alta velocidad
+Módems de muy alta 
+velocidad inteligentes
+Norma
+ V 
+tx
+ asc
+ V 
+tx
+ desc
+V.90
+ 33,6 kbps
+ 56 kbps
+ Par módems digital y 
+analógico
+V.92
+ 48 kbps
+ 56 kbps
+ Mejora V.90
+Módem
+digital
+Transporte
+digital
+Conmut
+digital
+Unidad
+de línea 
+con codec
+Módem
+analógico
+RDSI
+T1 / E1
+BUCLE 
+LOCAL
+Enlace descendente
+Enlace ascendente
+
+=== Página 25 ===
+CARACTERÍSTICAS TÉCNICAS Y OPERATIVAS DE 
+UN MÓDEM DE DATOS
+
+
+=== Página 26 ===
+MÓDEM BANDA BASE
+No realizan una de las funciones principales de un módem 
+(modular / demodular)
+Extiende alcance de las interfases digitales, interconecta circuitos 
+digitales.
+Líneas metálicas de 2 hilos o 4 hilos.
+Vel Tx hasta 2 Mbps.
+
+=== Página 27 ===
+MÓDEM X
+-
+DSL
+Línea de abonado digital (DSL)
+Acceso de Banda Ancha (más de 2 Mbps) mediante cable de 
+cobre.
+Aprovechar todo el potencial AB del cable.
+Algunas tecnologías DSL:
+
+
+=== Página 28 ===
+Switch
+telefónico
+Internet
+DSLAM
+(ATU-C)
+Splitter
+Teléfonos
+Modem
+ADSL
+(ATU-R)
+Bucle de
+Abonado
+(5,5 Km máx.)
+ADSL
+Central Telefónica
+urbana Abonado
+Splitter
+DSLAM: DSL Access Multiplexor
+ATU-C: ADSL Transmisión Unit - Central
+ATU-R: ADSL Transmisión Unit - Remote
+Sw. router
+Central 
+interurbana
+ISP
+
+=== Página 29 ===
+
+
+=== Página 30 ===
+ADSL
+0 4 kHz 630-1330 kHz 25 kHz 200-240 kHz
+Canal Teléfono
+Analógico
+Canal
+Ascendente
+Canal
+Descendente
+Frec
+Uso del código de línea DMT (Modulación por Multitono Discreto) 
+o OFDM (Multiplexación por División de Frecuencia Ortogonal). 
+Modula en PSK o QAM un conjunto de portadoras de distintas 
+frecuencias.
+
+=== Página 31 ===
+ADSL2 ADSL2+
+
+
+=== Página 32 ===
+
+
+=== Página 33 ===
+MÓDEM ASM 61
+Módem VDSL simétrico de dos cables
+El dispositivo ASM
+-
+61 es una solución completa
+para servicios de alta velocidad sobre líneas de
+cobre existentes que ofrece tráfico Ethernet
+simétrico en “full 
+duplex
+” a 10 Mbps sobre dos
+cables de cobre de 24 AWG (0.5 mm), para
+distancias hasta 1 km (0.6 millas).
+La unidad ASM
+-
+61 amplía el alcance de las
+redes LAN internas utilizando tecnología VDSL,
+sobre la base de los requerimientos de
+codificación de línea QAM de la ETSI para el
+medio físico.
+El módem ASM
+-
+61 compensa interferencias
+externas mediante el uso de ecualización de
+avanzada, filtros adaptables y tecnología de
+cancelación de eco.
+Dispone de un reloj interno. En este modo, el
+generador del reloj interno proporciona el reloj
+para la interfaz digital y para la línea.
+El dispositivo ASM
+-
+61 recibe alimentación AC.
+Está disponible como una unidad de escritorio
+que se puede montar en un bastidor de
+19” (48.26 cm), utilizando hardware especial.
+
+
+=== Página 34 ===
+SIGLA NOMBRE VELOCIDAD DE
+DATOS
+MODO DE
+TRANSMISIÓN
+APLICACIONES
+V.22V.32
+V.34 V.34b
+V.90
+HDSL
+SDSL Bucle de abonado
+digital simple 1.544 Mbps
+2.048 Mbps
+Duplex
+Duplex
+ADSL
+VDSL Bucle digital de
+muy alta velocidad
+13 a 52 Mbps
+1.5 a 2.3 Mbps
+Descendente
+Ascendente
+Igual que ADSL más HDTV,
+dist. de 300 m p/ veloc. de 52
+Mbps
+Módems de banda
+vocal
+1200 bps a 56 Kbps Duplex Comunicaciones de datos
+Bucle de abonado
+digital de alta
+velocidad
+1.544 Mbps(T1)
+2.048 Mbps (E1)
+Duplex
+Duplex
+Redes de datos privadas,
+interconexión de PBX,
+acceso a server, dist. hasta
+3.6 km.
+Bucle de abonado
+digital asimétrico
+1.5 a 9 Mbps
+16 a 640 Kbps
+Descendente
+Ascendente
+Acceso Internet, acceso LAN
+remoto, multimedia
+interactivo, dist. hasta 5.3
+km p/ veloc. de hasta
+8 Mbps, por ejemplo
+IDSL Opera sobre
+líneas ISDN
+128 Kbps
+128 Kbps
+Descendente
+Ascendente
+Trabaja sobre ISDN a
+distancias de 5400 m
+RESUMEN DE ESPECIFICACIONES DE MÓDEMS SOBRE COBRE
+Similar a HDSL, pero
+requiere menos plantel
+exterior, dist. hasta 3 km
+
+=== Página 35 ===
+CABLE MÓDEM
+Acceso de Banda Ancha (más de 2 Mbps) mediante coaxil.
+Aprovechar todo el potencial AB del coaxil de la CATV .
+Norma DOCSIS
+
+=== Página 36 ===
+CABLE MÓDEM
+Red HFC (coaxil fibra 
+híbrida)
+CMTS (Sistema de Terminación 
+del Cable Módem)
+
+=== Página 37 ===
+COMPARACIÓN CABLE MÓDEM Y ADSL

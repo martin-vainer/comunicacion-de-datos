@@ -1,0 +1,87 @@
+[
+  {
+    "original": "capturas/teoria/03-redes-telecomunicaciones/image.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/sentidos.png",
+    "sha256": "473a09552ebeecbf20c146a1cccb66d1b5751d3173ba24243af75f778f1f25ae"
+  },
+  {
+    "original": "capturas/teoria/03-redes-telecomunicaciones/image-1.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/serie-paralelo.png",
+    "sha256": "235af8457953b5dfcfa1ceaafca08966b6650d45be9d85238949b0f6a4542a18"
+  },
+  {
+    "original": "capturas/teoria/03-redes-telecomunicaciones/image-2.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/nube.png",
+    "sha256": "91aa4aa138f178a4455d92f665dab4acb8e06955bfc2447da0e87c324dfb6c49"
+  },
+  {
+    "original": "capturas/teoria/03-redes-telecomunicaciones/image-3.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/sincronismo-bit.png",
+    "sha256": "d6a06f735eefea4daafcec1a57b07ac28afea92d7df8327cd4b1760efc784d5b"
+  },
+  {
+    "original": "capturas/teoria/03-redes-telecomunicaciones/image-4.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/costos-volumen.png",
+    "sha256": "3fa0752133bb9608839a455108569586d6d5672d8c0eb8117c08ed319c467c23"
+  },
+  {
+    "original": "capturas/teoria/03-redes-telecomunicaciones/image-5.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/circuitos-paquetes.png",
+    "sha256": "253365af4bcc09fdd161109c72a0051b2b348ffdf07e0cc96ee310d8ac90a6cf"
+  },
+  {
+    "original": "capturas/practica/image-18.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/multinivel.png",
+    "sha256": "1280644bb4420449062e5022b0d35fd8801b8b9cc5e2e8ec12210e179bc90795"
+  },
+  {
+    "original": "capturas/practica/image-19.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/asincronico.png",
+    "sha256": "8b52fe8e10fb14462090beb49590c0ba9680fe3dadf346096be0949b7f0be8be"
+  },
+  {
+    "original": "capturas/practica/image-20.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/sincronico.png",
+    "sha256": "d8180652571bdcc147af39c742b19c135dfc14a70802e699a6eab5c25262b793"
+  },
+  {
+    "original": "capturas/practica/image-22.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/balance-ejemplo.png",
+    "sha256": "4daa9814179c0807deaf88c4cf0d900caf32d70920d479a5b912f5a9c3309be0"
+  },
+  {
+    "original": "capturas/practica/image-25.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/tp12.png",
+    "sha256": "e8d0c6341bede511301c53b95361b200fac2d6ca0b0c8c99c118eb8bb2037f62"
+  },
+  {
+    "original": "capturas/practica/image-26.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/tp13.png",
+    "sha256": "f209c9e29dec3359929a8334dfc39585eaa407e0a6de64063d34f8e58c0f87d8"
+  },
+  {
+    "original": "capturas/practica/image-27.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/tp14.png",
+    "sha256": "9bb3b370088c61325003ed64a035e1f29ff6370dc9a8383daa6364b9d1ae7c9a"
+  },
+  {
+    "original": "capturas/practica/image-28.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/tp15.png",
+    "sha256": "44d5127ab26cb4daea161881cbefbd1522f2d8d325f5092fcb78acfc6968d6a4"
+  },
+  {
+    "original": "capturas/practica/image-29.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/tp16.png",
+    "sha256": "7af1032ea9a8dac669e7bc6340574e21f9587cdeed9588df473a6b9b76c74730"
+  },
+  {
+    "original": "capturas/practica/image-30.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/tp17.png",
+    "sha256": "8d3f1f88d076cf31144847b5681cbf4d44c5d20ad4351b0ae7c42407e0d20a0c"
+  },
+  {
+    "original": "capturas/practica/image-31.png",
+    "copia": "apuntes/teoria/03-redes-telecomunicaciones/recursos/tp18.png",
+    "sha256": "3b19080ecf217bec42c2a6ac2a5f75bbec6cd06cc5546e14b457868775915bf9"
+  }
+]

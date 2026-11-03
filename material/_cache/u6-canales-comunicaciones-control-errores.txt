@@ -1,0 +1,488 @@
+
+=== PÁGINA 1 ===
+         COMUNICACIÓN DE DATOS
+
+
+
+
+
+
+
+
+                         U 6
+CANALES DE COMUNICACIONES Y CONTROL DE
+                     ERRORES
+          Ingeniero ALEJANDRO LUIS ECHAZÚ
+             alejandroechazu@frba.utn.edu.ar
+
+=== PÁGINA 2 ===
+       CANALES DE COMUNICACIONES
+Vínculo que permite efectivizar la COMUNICACIÓN entre terminales.
+Tiene por objetivo la transferencia máxima de información, libre de errores.
+Se asocia al Enlace de Datos del Circuito Teleinformático Básico.
+
+Comprende:
+
+
+
+      CANAL FÍSICO
+         Características físicas y eléctricas del medio de transmisión.
+         Resistencia, Inductancia y Capacitancia. Efectos de atenuación y
+         distorsión.
+         Ruido aditivo.
+
+
+      CANAL DE INFORMACIÓN
+         Especificación técnica y lógica en la transmisión de información.
+         Técnicas de codificación, redundancia, integridad de la información.
+
+Para el análisis pueden ser:
+
+
+
+      CANAL IDEAL (sin ruido, libre de errores)
+
+      CANAL REAL (con ruido, con errores)
+
+=== PÁGINA 3 ===
+           CAPACIDAD DE UN CANAL
+Es la máxima velocidad de transmisión que se
+puede cursar libre de errores (ideal).
+
+                  C = V tx máx  (bps)
+
+                   >  C            Errores
+
+
+CONCEPTOS RELACION ENTRE:
+• VELOCIDAD DE TRANSMISIÓN
+• ANCHO DE BANDA
+• RUIDO
+• TASA DE ERRORES
+
+=== PÁGINA 4 ===
+                TEOREMA DE NYQUIST
+
+Determina la cantidad de muestras por unidad de tiempo, o
+frecuencia de muestreo, que es necesario tomar para que una
+señal se reconstruya en forma unívoca.
+
+      f N> = 2 f máx          Señal limitada en banda con una f        máx
+
+        f N = 2 f            Señal definida en un ancho de banda          f
+
+Un canal de comunicaciones se comporta como un filtro
+pasabanda.
+                               Capacidad de un canal sin ruido de         f
+                               finito transmitiendo señales binarias.
+                               HARTLEY. Capacidad de un canal
+                               ideal con señal multinivel.
+                      Permite aumentar la velocidad
+
+=== PÁGINA 5 ===
+ USO DE LA MEDIDA DE LA INFORMACIÓN
+
+
+
+
+
+
+
+
+
+
+
+
+                  N = 2 n             n = log 2 N
+
+N son mensajes, niveles, estados, combinaciones posibles
+n son la cantidad de bits necesarios
+
+=== PÁGINA 6 ===
+      TEOREMA DE SHANNON HARTLEY
+
+Planteo ante canales reales con ruido aditivo.
+Existe límite de incremento de velocidad con los niveles, por
+la probabilidad de que se puedan distinguir los distintos
+niveles.
+
+
+
+
+                               C capacidad del canal (bps)
+                               S potencia media de señal
+                               N potencia media ruido blanco aditivo
+                               S/N (veces)
+                               F ancho de banda del canal (Hz)
+
+=== PÁGINA 7 ===
+       TEOREMA DE SHANNON -                  HARTLEY
+
+
+Importancia                               Límite
+de relacionar
+el ancho de
+banda y la
+relación S/N
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        S/N
+
+=== PÁGINA 8 ===
+     FENÓMENOS QUE AFECTAN A LOS
+      CANALES DE COMUNICACIONES
+
+ ATENUACIÓN (disminución de la intensidad
+  de la señal útil)(crece con la frecuencia)
+
+ DISTORSIÓN (deformación de la señal
+  original por los efectos reactivos de los
+  canales)
+
+ RUIDO (perturbación o interferencia no
+  deseada que se suma a la señal útil)
+
+
+                    ERRORES
+
+=== PÁGINA 9 ===
+                     ATENUACIÓN
+  “Relación entre la potencia de la señal recibida
+  en el extremo destino del cable y la potencia
+  transmitida en el extremo origen”
+  Atenuación [dB] = 10log(P2/P1)
+
+
+
+
+
+
+           Siempre negativa (con P2 < P1).
+Cuanto menor es su valor (más negativo), peor es.
+ Lo ideal es una atenuación igual a 0.
+
+=== PÁGINA 10 ===
+                                     RUIDO
+•TÉRMICO, BLANCO, GAUSSIANO O DE JOHNSON
+Agitación térmica de los electrones presente en medios de transmisión y
+dispositivos electrónicos.                N = potencia del ruido en Watt.
+
+                                          k = 1,38 · 10–23Joule/Kelvin .
+            N = k T B                     T = Kelvin.
+                                          B = ancho de banda [Hz].
+
+=== PÁGINA 11 ===
+                                RUIDO
+•DIAFONÍA (Crosstalk)
+Acoplamiento inductivo entre líneas que transportan señales.
+                        P1
+
+
+
+                      P2
+     •NEXT mide el crosstalk en el extremo donde se inyecta  la
+      señal (extremo cercano).
+     •FEXT mide el crosstalk en el extremo donde se recibe la
+      señal (extremo lejano).
+                                                      P1
+  NEXT [dB] = 10log (P2/P1)                           P2
+Lo ideal es una diafonía infinitamente negativa (P2 = 0)
+
+=== PÁGINA 12 ===
+                                 RUIDO
+•IMPULSIVO
+    Se produce a intervalos irregulares, con picos de corta
+    duración pero de gran amplitud, y que no aparece en forma
+    continua. Muchas veces es difícil localizar su origen.
+
+=== PÁGINA 13 ===
+                                            RUIDO
+•PRODUCTOS DE INTERMODULACIÓN (PIM)
+     Por comportamiento no lineal en Tx, Rx           o sistemas donde se tx      señales
+     f1 + f2        f1 –f2
+     f1 + 2f2      f1 –2f2
+     2f1 + f2      2f1 – f2 etc.
+
+=== PÁGINA 14 ===
+                              RUIDO
+
+•FACTOR DE RUIDO DE AMPLIFICADORES O CANALES
+
+           Fr >= 1     Fr = (S/N)i / (S/N)o          Fr = No/(G Ni)
+
+
+
+
+                   S1/N1            S2/N2
+
+=== PÁGINA 15 ===
+                     DISTORSIÓN
+POR ATENUACIÓN
+
+
+
+
+
+
+
+
+                                POR RETARDO DE GRUPO
+
+
+
+
+           SE RESUELVEN CON
+              TÉCNICAS
+                 DE
+            ECUALIZACIÓN
+
+
+     POR EFECTOS METEOROLÓGICOS (RADIO)
+
+=== PÁGINA 16 ===
+          TASA DE ERROR
+BER = bits erróneos / bits transmitidos
+
+
+
+
+LIMITANTES FÍSICOS DE LOS SISTEMAS DE
+           COMUNICACIONES
+
+
+
+      ANCHO DE BANDA
+              RUIDO
+
+=== PÁGINA 17 ===
+
+
+=== PÁGINA 18 ===
+
+
+=== PÁGINA 19 ===
+ DETECCIÓN Y CORRECCIÓN
+           DE ERRORES
+
+CONTROL DE                  DETECCIÓN
+ ERRORES      ACCIONES     CORRECCIÓN
+
+
+
+                       DATOS
+                    ADICIONALES
+
+
+
+
+            COMPROMISOS
+
+=== PÁGINA 20 ===
+DETECCIÓN Y CORRECCIÓN
+              DE ERRORES
+REDUNDANCIA (R)
+
+EFICIENCIA DE TRANSMISIÓN (E) = b c/info / b totales
+
+     > R            > PROTEC ERRORES          < E
+
+                 COMPROMISO
+
+   TAMAÑO DE BLOQUE (Tb) EN TRANSMISIÓN
+                   SINCRÓNICA
+
+     > Tb            > E          PERO SI ERROR  < E
+
+                 COMPROMISO
+
+=== PÁGINA 21 ===
+ DETECCIÓN Y CORRECCIÓN
+             DE ERRORES
+
+
+VELOCIDAD DE TRANSMISIÓN (Vtx)
+
+
+         > Vtx            > P error   > BER
+
+              COMPROMISO
+
+=== PÁGINA 22 ===
+DETECCIÓN Y CORRECCIÓN
+       DE ERRORES
+
+=== PÁGINA 23 ===
+DETECCIÓN
+
+=== PÁGINA 24 ===
+
+
+=== PÁGINA 25 ===
+
+
+=== PÁGINA 26 ===
+
+
+=== PÁGINA 27 ===
+     CHEQUEO DE REDUNDANCIA CÍCLICA
+
+                     RESTO RESULTANTE DEL COCIENTE
+                    ENTRE UN POLINOMIO MENSAJE Y UN
+                          POLINOMIO GENERADOR
+     M(x).Xr / G(x) = C(x)     R(x)
+
+           T(x) = M(x).Xr + R(x)
+
+
+
+
+
+
+
+ALGUNOS POLINOMIOS GENERADORES NORMALIZADOS
+                     CRC –  16, CRC – 12
+
+=== PÁGINA 28 ===
+EJERCICIO CRC
+
+
+
+
+
+       EMISOR
+
+
+
+
+
+
+
+
+
+
+
+
+     RECEPTOR
+
+=== PÁGINA 29 ===
+CHECKSUM
+
+=== PÁGINA 30 ===
+CORRECCIÓN
+
+=== PÁGINA 31 ===
+      CORRECCIÓN HACIA ATRÁS
+
+       1RO DETECCIÓN (PARIDAD, CRC U OTROS)
+       2DO CORRECCIÓN MEDIANTE REPETICIÓN DE
+       BLOQUE DE DATOS (POR EJEMPLO ARQ)
+REQUERIMIENTO AUTOMÁTICO DE REPETICIÓN
+                           ARQ
+
+            •ENTRE DOS ESTACIONES
+            •VARIANTES           STOP AND WAIT
+                               SLIDING WINDOWS
+    También se lo considera como un método de control de flujo
+
+         Confirmación +    ACK
+         Confirmación -    NAK
+
+=== PÁGINA 32 ===
+              ARQ STOP AND WAIT (parar y esperar)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Relación velocidad de transmisión y tiempo de propagación,
+          ineficiencia si vel altas y grandes distancias.
+
+=== PÁGINA 33 ===
+         ARQ SLIDING WINDOWS (ventana deslizante)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tamaño de ventana (fija o variable), eficiencia, necesidad de
+        buffer, confirmación en full duplex (piggyback).
+
+=== PÁGINA 34 ===
+CORRECCIÓN HACIA ADELANTE
+                   FEC
+•ENTRE DOS O MÁS ESTACIONES
+•DOBLE ENVÍO DE MENSAJE EN TIEMPO
+DIFERIDO
+
+=== PÁGINA 35 ===
+          CÓDIGOS AUTOCORRECTORES
+                     CÓDIGO HAMMING
+d H         Es el número de bits en los que difieren dos secuencias
+
+d H min         Es la menor distancia H en un código determinado
+
+=== PÁGINA 36 ===
+  CAPACIDAD DE DETECCIÓN O CORRECCIÓN HASTA …
+
+      E detec = (d H min  -    1)             E correc =    < (d H min  -  1)  / 2
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                  Código 3
+                                                                  000
+Código 1                        Código 2                          011         d H min          1
+                                                                  110
+000              d              000            d                  101         Ninguno
+111                H min          3011            H min         2 001
+                 D2 C1          110            D1                 010
+                                101                               100
+                                                                  111
+
+=== PÁGINA 37 ===
+
+
+=== PÁGINA 38 ===

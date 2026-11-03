@@ -1,0 +1,128 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/Martín Vainer - CD.pdf
+# titulo-identificado: Martín Vainer - CD
+# titulo-metadatos-pdf: 
+# sha256-original: 157c78f0f66368a33598399f9da9a759603007be80ad7937f5cb9bf806045e91
+# paginas-pdf-total: 6
+# paginas-pdf-extraidas: 1,2,3,4,5,6
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+  
+ [1]  
+Universidad Tecnológica Nacional  
+ 
+ 
+Cálculo de Enlace– Año 2026 
+ 
+Profesor: Ing Gustavo Luis Biau 
+ 
+Alumno :  
+ 
+ 
+1. ASIGNATURA: Comunicaciones de Datos 
+ 
+2. DEPARTAMENTO de la UTN -FRBA: Sistemas 
+ 
+3. OBJETIVOS GENERALES: 
+El alumno debe estar en capacidad  de aplicar las metodo logías empleadas, 
+conceptos y definiciones utilizados en la resolución de ejercicios de las 
+prácticas anteriores  para realizar un cálculo de enlace entre dos equipos 
+empleando como canal de comunicaciones un vínculo físico (cable de cobre, 
+coaxil, fibra óptica), en este caso particular no utilizaremos enlace de 
+microondas (o sea a través de un frente de ondas que se propaga). 
+ 
+4. CONCEPTOS ANTERIORES, UNIDADES DIDÁCTICAS: 1,2,3 
+ 
+a. Repaso de conceptos básicos de electricidad y circuitos. 
+b. Introducción a la  teleinformática y a la red Internet. 
+c. Señales analógicas y digitales. Concepto de periodo, frecuencia y longitud 
+de onda. FRP, Ancho de pulso, velocidad de modulación y de transmisión. 
+Serie de Fourier aplicada a representación de señales periódicas.  
+
+
+===== PÁGINA PDF 2 =====
+  
+ [2]  
+d. Concepto de ancho de banda. Velocidad de transmisión y su relación con el 
+ancho de banda. Transmisión multinivel.  
+e. Tipos y modos de transmisión. Transmisión serie y paralelo. Sincronismo. 
+Transmisión sincrónica y asincrónica. 
+f. Cálculo de enlaces. Unidades de medida, el dB y el dBm.Interfases digitales. 
+ 
+5. OBJETIVOS ESPECÍFICOS: 
+Aplicar los conceptos, definiciones y métodos vistos hasta ahora a un caso real 
+para establecer  la comunicación en modo de voz y datos entre dos puntos  
+utilizando un amplificador en el canal de comunicaciones. 
+Identificar aquellas variables /parámetros necesarias a tener en cuenta para el 
+cálculo de la sensibilidad del amplificador y la ganancia generada por él mismo. 
+Calcular la atenuación en los distintos trayectos. Recalcular cambiando las 
+distancias de los trayectos; analizar los resultados alcanzados. 
+Justificar la elección de compra del amplificador en función de los resultados 
+obtenidos. 
+Defender en público los resultados obtenidos. 
+6. SITUACIÓN INICIAL: 
+El alumno conoce la configuración de un sistema de comunicaciones básico  y 
+está familiarizado con los conceptos atenuación, distorsión, ruido, unidades de 
+medida (el decibel) como unidad relativa y absoluta, potencia de un transmisor 
+y sensibilidad de un receptor . Sabe definir los principales factores que 
+condicionan o limitan la velocidad de transmisión de datos en una línea digital 
+de comunicaciones . Conoce como calcular la atenuación en función de la 
+distancia y del medio a utilizar. Conoce el significado de un amplificador y de 
+un circuito atenuador. Conoce la expresión de la ecuación del cálculo de enlace. 
+ 
+7. ENUNCIADO DEL EJERCICIO PRÁCTICO 
+Para el siguiente enlace de comunicaciones en forma alámbrica (a través de una 
+fibra óptica) entre dos puntos distantes dentro de la Ciudad Autónoma de 
+Buenos Aires, uno es una Empresa cuya casa Matriz se encuentra  en el límite 
+con la Av Grl Paz a la altura de la localidad de Mataderos y el otro el Depósito 
+de mercaderías de la citada empresa con ubicación en la Av Beiró a la altura de 
+la localidad de Villa  Devoto, Calcular los siguientes parámetros  para que e l 
+enlace funcione correctamente: 
+
+===== PÁGINA PDF 3 =====
+  
+ [3]  
+ 
+       L1           L2 
+ 
+                     Tx                 Amp                  Rx 
+ 
+a) La Ganancia (Ganancia del Amplificador)  y  SA(Sensibilidad del 
+Amplificador)  
+b) Recalcular para L1 = 100 m y L2 = 2000 m. Analizar los resultados. 
+c) Si se consiguen en el mercado local amplificadores de 3dB, 6dB y 9dB, 
+¿Cuál elegiría?, ¿Qué consecuencias trae para el circuito la elección que acaba 
+de realizar ?. 
+ 
+8. DATOS: 
+Para el sistema de comunicaciones se tendrán en cuenta los siguientes 
+parámetros: 
+a. PTx = - 3 dBm 
+b. SRx = 1 mW 
+c. L1=500m,   L2=1000m  
+d. Atenuación    Conector At=0.25 dB c/u. 
+e. Atenuación F.O = 1.0 dB/1000m 
+ 
+9. RESOLUCION DEL EJERCICIO:  
+Colocar Nombre y Apellido en la parte superior y a la derecha de cada 
+hoja. En forma MANUSCRITA, PROLIJA y siguiendo el orden de lo 
+solicitado en: a), b) y c). 
+10. PRESENTACION DEL TRABAJO PRACTICO/INFORME: 
+ 
+a. En un único archivo ESCANEADO con extensión. PDF  con el 
+NOMBRE y APELLIDO  DEL ALUMNO, para ser subido a través del 
+Aula Virtual  (en el mismo sitio donde se descargó), termino de la recepción 
+de los trabajos: el  12/09 a las 2300 hs. 
+ 
+
+===== PÁGINA PDF 4 =====
+
+
+===== PÁGINA PDF 5 =====
+
+
+===== PÁGINA PDF 6 =====
+

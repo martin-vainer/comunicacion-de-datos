@@ -1,0 +1,117 @@
+=== PÁGINA 1 ===
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTAMENTO INGENIERIA EN 
+SISTEMAS DE INFORMACION 
+ 
+ 
+ 
+COMUNICACIONES DE DATOS 
+ 
+COMUNICACIONES 
+ 
+ 
+ 
+GUIA DE TRABAJOS PRACTICOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+=== PÁGINA 2 ===
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 2 
+ 
+ 
+ 
+TRABAJO PRÁCTICO N° 7 
+ 
+Medios físicos de comunicación. 
+ 
+ 
+1. Un equipo radiotransmisor se vincula a su ant ena mediante la llamada línea de 
+transmisión que se ocupa de la transferencia de energía en un sentido u otro 
+con la menor pérdida y distorsión. Estas líneas pueden ser coaxiales. Suponer 
+el empleo de coaxial RG 213/U. El transceptor (transmisor y receptor ) tiene 
+una potencia a la salida del equipo de 35 W operando a la frecuencia de 400 
+Mhz, la longitud de la línea es de 30 metros. ¿Cuál es la potencia aplicada a la 
+antena debido a la atenuación introducida por la línea? Ver tabla 7 -20 de la 
+página 446. 
+ 
+ 
+Frecuencia de operación 
+[MHz] 10 50 100 200 400 1000 
+RG 213/U     -   At [dB/100m]  - 2 4.9 7 10.5 15.5 26 
+ 
+ 
+ 
+2. Para el ejercicio anterior calcular la sensibilidad del receptor si éste último se 
+construye con el mismo tipo coaxial del transmisor y la misma  distancia entre 
+antena y receptor (30m). Ambas antenas tienen una ganancia de 30dB y se 
+encuentran separadas entre sí 1Km.  
+ 
+3. Dado un enlace radioeléctrico funcionando a la frecuencia de 300MHz, ¿Cuál 
+es la longitud necesaria de las antenas para un buen re ndimiento si las 
+mismas son de media longitud de onda? 
+ 
+ 
+4. ¿Cuál debería ser  la longitud de la antena de un teléfono celular cuya 
+portadora opera a la frecuencia de 1 GHz ? La antena es de media longitud de 
+onda. 
+ 
+ 
+5. Si un receptor de FM utiliza una antena de  75cm, ¿ De qué tipo de antena se 
+trata ?. La banda de FM corresponde a 88 - 108 MHz. 
+ 
+ 
+=== PÁGINA 3 ===
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 3 
+6. ¿Qué longitud debería tener una antena de media onda para que pueda 
+transmitir voz humana en su espectro original? Tomar como referencia el 
+ancho de banda del canal telefónico.  Extraiga conclusiones. 
+ 
+ 
+7. Calcular el retardo total que ocasiona la transmisión satelital para los   
+satélites de órbita baja, media y alta respectivamente.  
+  
+ 
+ 
+8. Dada una línea telefónica con los siguientes parámetros distribuidos :  
+L = 2 micro Hy / km;   
+C = 0,058 µF / km;  
+     ¿A qué frecuencia la impedancia es resistiva?  

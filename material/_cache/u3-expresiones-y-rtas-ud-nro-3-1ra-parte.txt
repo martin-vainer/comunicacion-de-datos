@@ -1,0 +1,158 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 3/EXPRESIONES  Y RTAS UD NRO 3 (1ra PARTE).pdf
+# titulo-identificado: EXPRESIONES  Y RTAS UD NRO 3 (1ra PARTE)
+# titulo-metadatos-pdf: 
+# sha256-original: 399ea8e70fd6149f0396fe84f887fe58a25cf8c45cebe9a71cd1f3169a02e99f
+# paginas-pdf-total: 3
+# paginas-pdf-extraidas: 1,2,3
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+UNIDAD  TEMATICA NRO 3 (1ra PARTE) - RESPUESTAS 
+ 
+ 
+1.   
+ 
+ 
+Vm= 1200 baudios 
+1 carácter= 8 bits 
+ = 8,33  10-4 seg 
+Tiempo transmisión= 8* 1000*8,33 10-4 seg = 6,66 seg 
+ 
+RTA: 6,66 Seg 
+ 
+ 
+2.    Analizar esta expresión 
+ 
+ 
+ 
+Rta: n= 2 Se transmite bit a bit (Velocidad Binaria) 
+ 
+ 
+  
+3.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 carácter Seudo Baudot  =  1bit arranque+8 bits info+1,5 bit parada+1 paridad,  
+Total= 11,5  bits 
+ 
+Vm= 75 baudios 
+1500 caracteres 
+ 
+ = 1,33  10-2 seg 
+Tiempo total = 1,33  10-2 seg*11,5 bits*1500 = 230 seg 
+ 
+RTA: 230 Seg 
+ 
+ 
+ 
+ 
+Vtx  = Vm*log 2 n 
+ 
+ t 
+Nivel 
+Arranque 
+1 t de bit 
+ Parada 1; 1,5 o 2 t de bit 
+bits de  datos 5, 7 u 8 (carácter) 
+  
+ 
+ 
+ es el número de estados n= 2 N      Ej: Transmisión Multinivel 
+Vm  = 1 /  
+ 
+ = 1 / Vm 
+ 
+ = 1 / Vm 
+ 
+
+===== PÁGINA PDF 2 =====
+ 
+4.  
+   
+𝐿𝑜𝑔 𝑎  𝐵 = 𝐶   ; 𝑎𝐶 = 𝐵 
+       
+ 
+ = 1 / 1200 baudios =      833,3 µseg. 
+Rta: 833,3 µseg. 
+ 
+5.  
+ 
+ 
+ 
+ 
+6. 
+ 
+      = (7 / 1+7+1)*100 =  = 77,7% 
+Conclusiones:  A COMPLETAR POR EL ALUMNO el rendimiento en la 
+transmisión  entre el ejercicio 5 y 6.FUNDAMENTAR 
+  
+ 
+7.      
+ 
+ 
+    sinc =  (1024 / 1024)*100 = 100% 
+Vtx  = Vm*log 2 n 
+Aplicar Tx multinivel        n=𝟐𝑵 (dibit, tribit,cuatribit) 
+Vm= 1200 baudios 
+Vt= 4800 bps  
+2 4800/1200 = n 16 son los estados signif. N=4  
+Rta: Aplicando Tx multinivel enviando de a 
+cuatribits.   
+Ancho pulso:  
+ 
+ 
+ = 1 / Vm 
+ = (Cantidad de bits de datos / Cantidad de bits totales)*100 
+ = (1500 / 14+1500+4)*100 ;   = 98,8% 
+ = (Cantidad de bits de datos / Cantidad de bits totales)*100 
+ = (Cantidad de bits de datos / Cantidad de bits totales)*100 
+
+===== PÁGINA PDF 3 =====
+      asinc =  (8 / 1+8+1+2)*100 = 66,6% 
+ 
+   
+ 
+       d=  = 1/Vm= 1/2400 = 4,16*10-4 seg 
+     T sinc = 1024*8 bits*4,16*10-4 seg = 3,41 seg. 
+       T asinc = 1024*12 bits*4,16*10-4 seg =  5,12  seg. 
+ 
+  Disminuye  un 33,33 % 
+ 
+ 
+8.  Rta:    Relacionar que pasa entre  la Vm  y el AB . Si aumento Vm implica que 
+aumento el AB. 
+ 
+9. Es la velocidad máxima que se puede transmitir datos por un canal de com(s). 
+ 
+ 
+10. Rta:  Cuales serán: AB, Vm, relación S/N, BER, la duración del pulso, la 
+modulación, etc 
+ 
+ 
+11.  Vm = 3600 Baudios 
+    C= 1800 caracteres  ( 1C= 8 bits) 
+    sinc = 90% 
+      T total de transmisión = Que consideración debo tener en  cuenta????  
+ 
+     d=  = 1/Vm= 1/3600 = 2,77*10-4 seg 
+      T total = 1800*8 bits*2,77*10-4 seg = 4 seg. ( al 100 %). 
+ 
+  Pero  el  es del 90% implica entonces un incremento de 0,4 seg 
+ 
+    T total= 4, 4 seg 
+ 
+ 
+ 
+Vm  = 1 /  
+ 
+ 

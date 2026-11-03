@@ -1,0 +1,249 @@
+# CACHE TEXTUAL DERIVADO DE APOYO EXTERNO — NO ES MATERIAL DE CLASE
+# Uso: contrastar únicamente temas U5 ya registrados; no ampliar corpus ni programa.
+# titulo: UIT-R M.1677-1 (10/2009), International Morse code, versión inglesa
+# url-origen-pdf: https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf
+# url-ficha-o-identificador: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
+# original-temporal: tmp/curador-ejecucion/externos/itu-r-m1677-1-2009-morse.pdf
+# descargado-y-extraido: 2026-10-11
+# sha256-original-pdf: a3eab8884c24200f229ef20615ee3ae14329ba0f0a29c7a85a1eaa3cac442b97
+# paginas-pdf-total: 7
+# extractor: pypdf 6.14.2
+# caracteres-extraidos-por-pagina: 186,2080,984,691,2475,2127,1807
+# muestras-visuales-inspeccionadas: PDF1 portada; PDF5/impresa3 §2.1–2.4 duración y separaciones. No revisión integral.
+# Sin OCR. Texto extraído no certifica tablas, fórmulas ni figuras. El original temporal es auxiliar descargado, no fuente de clase original.
+
+===== PÁGINA PDF 1 =====
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Recommendation  ITU-R  M.1677-1
+(10/2009)
+International Morse code
+ 
+ 
+ 
+ 
+ 
+M Series
+Mobile, radiodetermination, amateur
+and related satellite services
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA PDF 2 =====
+ii Rec.  ITU-R  M.1677-1 
+Foreword 
+The role of the Radiocommunication Sector is to ensure th e rational, equitable, efficien t and economical use of the 
+radio-frequency spectrum by all radiocommunication services, including satellite services, and carry out studies without 
+limit of frequency range on the basis of which Recommendations are adopted. 
+The regulatory and policy functions of the Radiocommunication Sector are performed by World and Regional 
+Radiocommunication Conferences and Radiocommunication Assemblies supported by Study Groups. 
+Policy on Intellectual Property Right (IPR) 
+ITU-R policy on IPR is described in the Common Patent Po licy for ITU-T/ITU-R/ISO/IEC referenced in Annex 1 of 
+Resolution ITU-R 1. Forms to be used for the submission of patent statements and licensing declarations by patent 
+holders are available from http://www.itu.int/ITU-R/go/patents/en where the Guidelines for Implementation of the 
+Common Patent Policy for ITU-T/ITU-R/ISO/IEC and the ITU-R patent information database can also be found.  
+ 
+ 
+Series of ITU-R Recommendations  
+(Also available online at http://www.itu.int/publ/R-REC/en) 
+Series Title 
+BO Satellite delivery 
+BR Recording for production, archival and play-out; film for television 
+BS Broadcasting service (sound) 
+BT Broadcasting service (television) 
+F Fixed service 
+M Mobile, radiodetermination, amateur and related satellite services 
+P Radiowave propagation 
+RA Radio astronomy 
+RS Remote sensing systems 
+S Fixed-satellite service 
+SA Space applications and meteorology 
+SF Frequency sharing and coordination between fixed-satellite and fixed service systems 
+SM Spectrum management 
+SNG Satellite news gathering 
+TF Time signals and frequency standards emissions 
+V Vocabulary and related subjects 
+ 
+ 
+Note: This ITU-R Recommendation was approved in English under the procedure detailed in Resolution ITU-R 1. 
+ 
+ 
+Electronic Publication 
+Geneva, 2009 
+ 
+© ITU 2009 
+All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without written permission of ITU. 
+ 
+
+===== PÁGINA PDF 3 =====
+ Rec.  ITU-R  M.1677-1 1 
+RECOMMENDATION  ITU-R  M.1677-1* 
+International Morse code 
+ 
+(2004-2009) 
+ 
+Scope 
+This Recommendation confirms the International Mor se code characters and the operational provisions 
+applying to their use in radiocommunication services*. 
+ 
+The ITU Radiocommunication Assembly, 
+ 
+considering 
+a) that versions of the Morse c ode have been in use since 1844; 
+b) that it continues to be used in some radi ocommunication services including the amateur and 
+amateur-satellite services, and to a diminishing extent in the mobile and fixed services; 
+c) that the code needs to be updated from  time-to-time to meet the needs of the 
+radiocommunication services,  
+ 
+recommends 
+1 that Annex 1 should be used to define the Mo rse code characters and their applications in 
+the radiocommunication services. 
+ 
+                                                 
+*  Division B of ITU-T Recommendation F.1, which al so addressed the Morse code, has been withdrawn. 
+
+===== PÁGINA PDF 4 =====
+2 Rec.  ITU-R  M.1677-1 
+Annex 1 
+ 
+Operational provisions applying to Morse working 
+Part I – Morse code 
+ 
+1 Morse code signals 
+1.1 The following are the written characters that  may be used and the corresponding Morse 
+code signals: 
+ 
+1.1.1 Letters 
+  a . −  i . .  r . − . 
+  b − . . .  j . − − −  s . . . 
+  c − . − .  k − . −  t − 
+  d − . .  l . − . .  u . . − 
+  e .   m − −  v . . . − 
+ accented  e . . − . .  n − .  w . − − 
+  f . . − .  o − − −  x − . . − 
+  g − − .  p . − − .  y − . − − 
+  h . . . .  q − − . −  z − − . . 
+ 
+1.1.2 Figures 
+  1 . − − − − 6 − . . . . 
+  2 . . − − − 7 − − . . . 
+  3 . . .  − − 8 − − −  . . 
+  4 . . . . − 9 − − − − . 
+  5 . . . . . 0 − − − − − 
+
+===== PÁGINA PDF 5 =====
+ Rec.  ITU-R  M.1677-1 3 
+1.1.3 Punctuation marks and miscellaneous signs 
+ Full stop (period) ...........................................................  [  . ] . − . − . − 
+ Comma ..........................................................................  [  , ] − − . . − − 
+ Colon or division sign....................................................  [  : ] − − − . . . 
+ Question mark (note of interrogation or request for 
+repetition of a transmission not understood) .................  [?] . . − − . . 
+ Apostrophe.....................................................................  [  ’ ] . − − − − . 
+ Hyphen or dash or subtraction sign ...............................  [  – ] − . . . . − 
+ Fraction bar or division sign ..........................................  [  / ] − . . − . 
+ Left-hand bracket (parenthesis) .....................................  [  ( ] − . − − . 
+ Right-hand bracket (parenthesis)...................................  [  ) ] − . − − . − 
+ Inverted commas (quotation marks) (before and after 
+the words) ......................................................................  [“ ”] . − . . − . 
+ Double hyphen...............................................................  [=] − . . . − 
+ Understood.....................................................................  . . . − . 
+ Error (eight dots)............................................................  . . . . . . . . 
+ Cross or addition sign ....................................................  [+] . − . − . 
+ Invitation to transmit......................................................  − . − 
+ Wait ..........................................................................  . − . . . 
+ End of work ...................................................................  . . . − . − 
+ Starting signal (to prec ede every transmission).............  − . − . − 
+ Multiplication sign.........................................................  [×] − . . − 
+ Commercial at 1 ………………………………………… [@]   .– – .– . 
+2 Spacing and length of the signals 
+2.1 A dash is equal to three dots. 
+2.2 The space between the signals forming th e same letter is equal to one dot. 
+2.3 The space between two letters is equal to three dots. 
+2.4 The space between two words is equal to seven dots. 
+                                                 
+1 Vocabulary note: In December 2002, the French Ge neral Committee on Terminology approved the term 
+“arobase” for the @ symbol used in e-mail addresses. 
+
+===== PÁGINA PDF 6 =====
+4 Rec.  ITU-R  M.1677-1 
+3 Transmission of signs for which there is no corresponding signal in the Morse code 
+3.1 Signs that have no corresponding signal in th e Morse code, but that are acceptable in the 
+writing of telegrams, shall be sent as follows: 
+3.2 Multiplication sign 
+3.2.1 For the multiplication sign, the signal corres ponding to the letter X shall be transmitted. 
+3.3 Percentage or per thousand sign 
+3.3.1 To indicate the si gnal % or ‰, the figure  0, the fraction bar and the figures  0 or 00 shall be 
+transmitted successively (i.e. 0/0, 0/00). 
+3.3.2 A whole number, a fractional number, or a fraction, followed by a % or ‰ sign, shall be 
+transmitted by joining up the whole number, the fraction number, or the fraction to the % or ‰ by a 
+single hyphen. 
+ 
+  Examples: For 2%, transmit  2-0/0, and not 20/0. 
+For 41/2‰, transmit  4-1/2-0/00, and not 41/20/00. 
+ 
+3.4 Inverted commas (quotation marks) 
+3.4.1 The special signal for inverted commas shall be transmitted before and after the word or 
+words. However, where code converters are use d, the apostrophe may be transmitted twice before 
+and twice after the word or words to signal inverted commas (quotation marks). 
+3.5 Minute and second signs 
+3.5.1 To transmit the minute (  ′ ) or second (  ″ ) signs, when such signs follow figures – for 
+example 1′15″ – the apostrophe signal ( . − − − −.) must be used once or twice as appropriate. The 
+signal (.− . . −.) reserved for inverted commas may not be used for the second sign. 
+4 Transmission of groups of figures and le tters, of ordinal numbers or of fractions 
+4.1 A group consisting of figures and letters shall be transmitt ed without spaces between 
+figures and letters. 
+4.2 Ordinal numbers composed of figures and lett ers, 30me, 25th, etc., shall be transmitted in 
+the form 30ME, 25TH, etc. 
+4.3 A number that includes a fraction shall be transmitted with the fraction linked to the whole 
+number by a single hyphen. 
+ 
+  Examples: For 1 3/4, transmit 1-3/4, and not 13/4. 
+For 3/4 8, transmit 3/4-8, and not 3/48. 
+For 3631/2 4 5642, transmit 363-1/2 4 5642, and not 3631/2 4 5642. 
+
+===== PÁGINA PDF 7 =====
+ Rec.  ITU-R  M.1677-1 5 
+Part II – General transmission rules 
+ 
+1 All correspondence between two stati ons shall begin with the call signal. 
+1.1 For calling, the calling station shall transmit the call sign (not more than twice) of the 
+station required, the word  DE followed by its own call sign and the signal  – . – unless there are 
+special rules peculiar to the type of apparatus used. The call shall always be made at hand speed. 
+2 The station called must reply immediatel y by transmitting the call sign of the calling 
+station, the word DE followed by its own call sign and the signal – . –. 
+2.1 If the station called is unable to receive, it shall give the  wait signal. If it expects the wait to 
+exceed ten minutes, the reason and probable duration shall be given. 
+2.2 When a station called does not reply, the ca ll may be repeated at suitable intervals. 
+2.3 When the station called does not reply to the re peated call, the condition of the circuit must 
+be examined. 
+3 The double hyphen ( – . . . –) shall be transmitted either to separate: 
+3.1 the preamble from the service indications; 
+3.2 the service indications from each other; 
+3.3 the service indications from the address; 
+3.4 the station of destination from the text; 
+3.5 the text from the signature. 
+4 A transmission, once begun, may not be interr upted to give place to a communication of 
+higher priority except in a case of absolute urgency. 
+5 Every telegram shall be terminated with a cross signal ( . – . – .). 
+6 The end of the transmission shall be indicated by the cross signal (. – . – .) followed by the 
+invitation to transmit signal K (– . –). 
+7 The end of work shall be indicated by the st ation that transmitted the last telegram. The 
+correct indication is the end of work signal (. . . – . –). 
+ 
+ 
+ 
+ 

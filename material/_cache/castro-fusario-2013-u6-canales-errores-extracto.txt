@@ -1,0 +1,3913 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/DOC-20230425-WA0040.pdf
+# titulo-identificado: Castro Lechtaler y Fusario 2013, §§3.5–3.11; canales/capacidad/ruido/distorsión/errores; sólo secciones registradas, excluidos temas no registrados
+# titulo-metadatos-pdf: 
+# sha256-original: 56f7b6926abb5bea6e15e3c926d2344ad49004e4fbad6ad2e10e4060182e90ae
+# paginas-pdf-total: 726
+# paginas-pdf-extraidas: 194,195,196,197,198,199,200,201,202,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 194 =====
+3 - Técnicas de la transmisión de la información168
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Una red de comunicaciones está formada por un conjunto de canales de comunicaciones 
+canal de comunicaciones. 
+Los equipos terminales que están vinculados al canal deben ser capaces de actuar como 
+fuentes, o como receptoras, que se llamarán colec-
+, o como ambas. Para su estudio, analizaremos el concepto de canal de comunicaciones 
+canal físico y el canal de informa-
+. Ambos conceptos tienen un objetivo común: transmitir la máxima can-
+Denominaremos canal físico a la parte del canal de comunicaciones que tiene que ver con las 
+ 
+Este concepto está vinculado a las características físicas del medio y las técnicas de la 
+. El canal físico se ocupa de los fenómenos relativos a la 
+Usa como criterio de eficiencia obtener una señal en el colector con calidad, integridad 
+fidelidad, esto es, sin errores, así como minimizar el efecto que producen los fenómenos 
+ruido y distorsión.
+Los canales físicos pueden estar constituidos por diferentes medios de comunicaciones, 
+Desde el punto de vista físico, puede estudiarse la parte eléctrica de un canal como si fuera 
+línea de transmisión. 
+Sus características están determinadas por sus propiedades eléctricas, que son: resis-
+, inductancia y capacitancia. Estos tres parámetros producen dos fenómenos ya 
+atenuación (producida por la resistencia eléctrica) 
+ (producida por la inductancia y la capacitancia). 
+La resistencia en una línea de transmisión produce una disminución en la amplitud de la 
+ atenuación, que se traduce en una reducción en la potencia de la señal, incluso hasta 
+Cuando en el Capítulo 4 analicemos los conceptos de conmutación de circuitos y conmu-
+tación de paquetes, se verá con mayor claridad por qué los primeros tienen menor latencia que 
+los segundos, aunque estos últimos tienen un comportamiento mucho más eficiente, y debido 
+a los avances tecnológicos se utilizan cada vez más en forma excluyente.
+De todas formas, si en un circuito de comunicaciones la latencia se mantiene para la transmi-
+sión de todas las tramas en un valor constante, la calidad del servicio no disminuye sensiblemente. 
+No obstante, en muchos casos el valor de la latencia varía de trama a trama y este fenómeno afecta 
+en gran medida la calidad en muchos servicios, en especial los que se señalaron como isócronos.
+Las variaciones en los valores de la latencia reciben el nombre de jitter. En las redes di-
+gitales que requieren una determinada QOS (Quality of Service, Calidad de Servicio) siempre 
+se especifica cuál es el valor máximo de jitter permitido. Estas variaciones no se producen por 
+el retardo de transmisión sino por los retardos adicionales que señalamos (p. ej., el caso de las 
+colas de espera en los nodos de transmisión de las redes por conmutación de paquetes).
+En esos casos y en aquellos en que los efectos del jitter esté dentro de los valores mínimos 
+posibles, se suelen utilizar memorias intermedias o buffer. De esta manera, los paquetes se 
+almacenan en estas, y luego se retransmiten a intervalos constantes.
+3.5 Canales de comunicaciones
+3.5.1 Conceptos generales
+En el apartado 3.1.3, habíamos definido el concepto de canal de comunicaciones como el 
+de un camino que se establece entre dos puntos o más de la red entre equipos que actúan 
+como transmisores o receptores, o ambos. También se había señalado que este concepto im-
+plicaba no solo lo que hace al enlace físico sino también a una conexión lógica. 
+&DQDOGHFRPXQLFDFLRQHV
+&DQDOGHFRPXQLFDFLRQHV
+(TXLSRWHUPLQDO
+GHFLUFXLWRV
+GHGDWRV
+(TXLSRWHUPLQDO
+GHFLUFXLWRVGHGDWRV
+(TXLSRWHUPLQDO
+GHFLUFXLWRVGHGDWRV
+(TXLSRWHUPLQDO
+GHFLUFXLWRV
+GHGDWRV
+WLHPSR
+WLHPSR
+
+
+W
+W
+1    
+1    
+Fig. 3.13.	Retardo	total	en	canales	digitales.
+La	 expresión	jitter	 no	 tiene	 una	
+traducción	 exacta	 al	 español,	
+pero	 podría	 interpretarse	 como	
+“variación	del	retardo”.
+)XHQWH
+(VWDFLyQ
+WHUPLQDO
+WUDQVPLVRUD
+6XPLGHUR
+(VWDFLyQ
+WHUPLQDO
+UHFHSWRUD
+&DQDOGH&RPXQLFDFLRQHV
+
+
+===== PÁGINA PDF 195 =====
+3.5 Canales de comunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+169
+Una red de comunicaciones está formada por un conjunto de canales de comunicaciones 
+que deben permitir unir e interconectarse a todos los corresponsales que forman parte de ella. 
+A tal efecto cada uno de estos debe poseer un equipo terminal que satisfaga sus necesidades 
+de comunicación y un medio físico que los una. Ese medio es precisamente el que conforma 
+el canal de comunicaciones. 
+Los equipos terminales que están vinculados al canal deben ser capaces de actuar como 
+entidades emisoras, que denominaremos fuentes, o como receptoras, que se llamarán colec-
+tores, o como ambas. Para su estudio, analizaremos el concepto de canal de comunicaciones 
+en dos aspectos que manejan conceptos diferentes: el canal físico y el canal de informa-
+ción o canal lógico. Ambos conceptos tienen un objetivo común: transmitir la máxima can-
+tidad de información con la menor tasa de errores.
+3.5.2 Canal físico
+Denominaremos canal físico a la parte del canal de comunicaciones que tiene que ver con las 
+características físicas y eléctricas del medio de transmisión (ver Fig. 3.14.). 
+Este concepto está vinculado a las características físicas del medio y las técnicas de la 
+ingeniería de comunicaciones. El canal físico se ocupa de los fenómenos relativos a la 
+transmisión de señales.
+Usa como criterio de eficiencia obtener una señal en el colector con calidad, integridad 
+y fidelidad, esto es, sin errores, así como minimizar el efecto que producen los fenómenos 
+de ruido y distorsión.
+Los canales físicos pueden estar constituidos por diferentes medios de comunicaciones, 
+cuyo estudio se detallará más adelante. 
+Desde el punto de vista físico, puede estudiarse la parte eléctrica de un canal como si fuera 
+una línea de transmisión. 
+Sus características están determinadas por sus propiedades eléctricas, que son: resis-
+tencia, inductancia y capacitancia. Estos tres parámetros producen dos fenómenos ya 
+descriptos en el Capítulo 2, denominados atenuación (producida por la resistencia eléctrica) 
+y distorsión (producida por la inductancia y la capacitancia). 
+La resistencia en una línea de transmisión produce una disminución en la amplitud de la 
+señal, atenuación, que se traduce en una reducción en la potencia de la señal, incluso hasta 
+límites que no la hagan detectable, según se puede observar en la Fig. 3.15.
+a los avances tecnológicos se utilizan cada vez más en forma excluyente.
+Las variaciones en los valores de la latencia reciben el nombre de jitter
+gitales que requieren una determinada QOS (Quality of Service
+colas de espera en los nodos de transmisión de las redes por conmutación de paquetes).
+almacenan en estas, y luego se retransmiten a intervalos constantes.
+3.5 Canales de comunicaciones
+3.5.1 Conceptos generales
+plicaba no solo lo que hace al enlace físico sino también a una conexión lógica. 
+)XHQWH
+(VWDFLyQ
+WHUPLQDO
+WUDQVPLVRUD
+6XPLGHUR
+(VWDFLyQ
+WHUPLQDO
+UHFHSWRUD
+&DQDOGH&RPXQLFDFLRQHV
+Fig. 3.14.	Canal	de	comunicaciones.
+El	canal	físico	es	la	parte	del	ca-
+nal	 de	 comunicaciones	 que	 tie-
+ne	que	ver	con	las	características	
+físicas	y	eléctricas	del	medio	de	
+transmisión	
+
+
+===== PÁGINA PDF 196 =====
+3 - Técnicas de la transmisión de la información170
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+En ambos casos la deformación de las señales podrá llevar a incrementar la tasa de errores 
+ 
+Denominaremos canal de información a la parte del canal de comunicaciones que tiene 
+Está vinculado a las técnicas relacionadas con la teoría de la información y la codificación. 
+velocidad de transmisión de la información 
+calidad con que esta se transporta. 
+Su objetivo fundamental es preservar la integridad de la información mediante el uso 
+re-
+, necesaria para la detección y la corrección de errores. 
+Se entenderá como información redundante la que es necesario adicionar a la trans-
+Un canal ideal, como su nombre lo expresa, es un concepto teórico que se utiliza como 
+canal real 
+Entenderemos por canal ideal o continuo a aquel canal de comunicaciones que al 
+Los canales reales logran ese objetivo solo de manera aproximada, pues el ruido (que tiene 
+Para estudiar un canal real es posible imaginarlo como un canal ideal al que se le agregó 
+Para el estudio de una canal real recurriremos a la Fig. 3.19. En ella se puede observar el 
+La inductancia y la capacitancia tienen un efecto aun más perjudicial, pues deforman la 
+señal, distorsión, lo que torna muy difícil su detección sin errores, en especial cuando se trata 
+de señales digitales. En la Fig. 3.16. se muestra cómo se distorsiona una señal por efecto de un 
+canal con inductancia.
+Otro factor que disminuye la calidad de un canal es la incorporación de adquisición de 
+ruido durante el recorrido de la señal por el medio físico.
+En todos los casos el ruido presenta características de aditividad. Esto significa que en la 
+señal a transmitir, sea analógica o digital, el ruido se sumará produciendo una deformación. En 
+la Fig. 3.17., se muestra cómo se suma el ruido a la señal útil en un ejemplo sobre una transmi-
+sión analógica y, en la Fig. 3.18., se observa el mismo efecto sobre una señal digital.
+'LVWDQFLDHQNLOyPHWURV
+3RWHQFLD
+GHODVHxDO
+)XHQWH
+Fig. 3.15.	Pérdida	de	potencia	de	una	señal	por	atenuación.
+9ROWDMHHQHO 
+H[WUHPRGH
+WUDQVPLVLyQ
+&RUULHQWHHQHO
+H[WUHPRGHOD
+UHFHSFLyQ
+Fig. 3.16.	Distorsión	de	la	señal	por	efecto	inductivo.
+Señal con ruido
+t
+RUIDO ADITIVO
+t
+Señal sin ruido
+t Canal de comunicaciones
+Fig. 3.17.	Efecto	aditivo	del	ruido	sobre	una	señal	analógica.
+W
+58,'2$',7,92
+WW &DQDOGHFRPXQLFDFLRQHV
+6HxD O FRQUXLGR6HxD O VLQ UXLGR
+
+===== PÁGINA PDF 197 =====
+3.5 Canales de comunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+171
+En ambos casos la deformación de las señales podrá llevar a incrementar la tasa de errores 
+del canal.
+ 
+3.5.3 Canal de información
+Denominaremos canal de información a la parte del canal de comunicaciones que tiene 
+que ver con las especificaciones técnicas y lógicas que hacen a la transmisión de la inteli-
+gencia.
+Está vinculado a las técnicas relacionadas con la teoría de la información y la codificación. 
+Se ocupa básicamente de evaluar y permitir administrar los recursos del canal físico de manera 
+adecuada. Usa como criterio de eficiencia la velocidad de transmisión de la información 
+y la calidad con que esta se transporta. 
+Su objetivo fundamental es preservar la integridad de la información mediante el uso 
+de medios de codificación apropiados, y la introducción del concepto de transmisión con re-
+dundancia, necesaria para la detección y la corrección de errores. 
+Se entenderá como información redundante la que es necesario adicionar a la trans-
+misión inteligente para que pueda llegar al colector en forma correcta y sin errores de trans-
+misión.
+3.5.4 Canal ideal y canal real
+Un canal ideal, como su nombre lo expresa, es un concepto teórico que se utiliza como 
+una abstracción para luego introducirse en la forma en que realmente trabaja un canal real 
+de comunicaciones.
+Entenderemos por canal ideal o continuo a aquel canal de comunicaciones que al 
+aplicársele en la entrada una señal continua, reproduce en su salida exactamente la misma 
+señal.
+Los canales reales logran ese objetivo solo de manera aproximada, pues el ruido (que tiene 
+características aditivas, respecto de la señal útil) modifica la forma de la onda de entrada en 
+el canal.
+Para estudiar un canal real es posible imaginarlo como un canal ideal al que se le agregó 
+una señal producida por un generador de ruido. 
+Para el estudio de una canal real recurriremos a la Fig. 3.19. En ella se puede observar el 
+esquema de formación de este. Consideraremos entonces canal ideal, y a este le agregaremos 
+una señal proveniente de un supuesto generador de ruido.
+señal, distorsión
+canal con inductancia.
+ruido durante el recorrido de la señal por el medio físico.
+En todos los casos el ruido presenta características de aditividad
+sión analógica y, en la Fig. 3.18., se observa el mismo efecto sobre una señal digital.
+'LVWDQFLDHQNLOyPHWURV
+3RWHQFLD
+GHODVHxDO
+)XHQWH
+9ROWDMHHQHO 
+H[WUHPRGH
+WUDQVPLVLyQ
+&RUULHQWHHQHO
+H[WUHPRGHOD
+UHFHSFLyQ
+Señal con ruido
+t
+RUIDO ADITIVO
+t
+Señal sin ruido
+t Canal de comunicaciones
+Fig. 3.18.	Efecto	aditivo	del	ruido	sobre	una	señal	digital.
+W
+58,'2$',7,92
+WW &DQDOGHFRPXQLFDFLRQHV
+6HxD O FRQUXLGR6HxD O VLQ UXLGR
+El	 canal	 ideal	 o	 continuo	 es	
+aquel	 canal	 de	 comunicaciones	
+que	 al	 aplicársele	 en	 la	 entrada	
+una	 señal	 continua,	 reproduce	
+en	su	salida	exactamente	la	mis-
+ma	señal.
+
+
+===== PÁGINA PDF 198 =====
+3 - Técnicas de la transmisión de la información172
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Esta curva permite comprobar que no se necesitan canales con anchos de banda mayores 
+3000 Hz para entender lo que se habla y además reconocer a la persona que lo hace. Es por 
+Cuando se transmiten datos por líneas analógicas que tienen un ancho de banda como el 
+módem dial-up, solo se pueden alcanzar velocidades 
+En el caso de los canales analógicos, el problema más importante a resolver es el del ruido. 
+En el presente los canales digitales se usan en la totalidad de la red de transporte, 
+red soporte, para cualquier tipo de servicio. En ellos el mayor problema que 
+velocidades de 64 000 bps –ca-
+b– o 56 000 bps, más usados en los Estados Unidos y Japón.
+  (3-37)
+donde: 
+S = potencia media de la señal (signal) útil.
+N = potencia media de ruido (noise).
+Los canales de comunicaciones y los dispositivos electrónicos conocidos, como los ampli-
+factor de ruido. Este se define por 
+  (3-38)
+De acuerdo con la expresión (3-38) el factor de ruido, resultará:
+  (3-39)
+No obstante, como la potencia de la señal a la salida será igual a su potencia a la entrada 
+  (3-40)
+Reemplazando en (3-39), tendremos, 
+  (3-41)
+Asimismo, si se simplifica el factor de ruido resultará:
+  (3-42)
+Obsérvese que hemos tomado en cuenta estas consideraciones solo para determinar el 
+efecto que produce el ruido sobre la forma de la señal.
+3.5.5 Canales analógicos y canales digitales
+Según el tipo de señales que transporten, los canales se pueden clasificar en analógicos 
+o digitales.
+En el presente los canales analógicos solo existen como tales en la red telefónica con-
+mutada para transportar las señales de voz en el tramo que une las centrales de conmutación, 
+o nodos de esa red, con los teléfonos ubicados en los domicilios de los usuarios individuales de 
+ella. También se utiliza este tipo de canales en las redes de distribución de señales de televi-
+sión denominadas CATV (cable antenna television), y cuando se utilizan pares telefónicos 
+para la provisión del servicio de banda ancha.
+En el caso de la red telefónica, si bien el espectro de la voz abarca aproximadamente 
+desde un valor mínimo de 
+30 Hz hasta valores de 12 000 Hz, los circuitos telefónicos no están 
+preparados para transmitir en forma continua toda esa gama de frecuencias. La razón práctica 
+es que la mayor potencia de la voz está comprendida entre 
+300 y 3300 Hz. Por lo tanto, carecería 
+de sentido utilizar mayor ancho de banda para un servicio que no lo necesita. En la Fig. 3.20., 
+se observa la distribución espectral (en frecuencia) de la voz en función de la potencia emitida.
+)UHFXHQFLDHQFLFORVSRUVHJXQGR+HUW]
+3RWHQFLD
+
+
+
+
+
+     
+$QFKRGHEDQGDGHORV
+FDQDOHVWHOHIyQLFRVWtSLFRV
+Fig. 3.20.	Potencia	de	una	señal	de	frecuencia	vocal	en	función	de	la	frecuencia.
+UW
+*HQHUDGRU
+GHUXLGR
+HW VW
+VW HWUW
+&DQDOLGHDO &DQDOUHDO
+Fig. 3.19.	Estructura	de	un	canal	real.
+
+===== PÁGINA PDF 199 =====
+3.5 Canales de comunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+173
+Esta curva permite comprobar que no se necesitan canales con anchos de banda mayores 
+que 3000 Hz para entender lo que se habla y además reconocer a la persona que lo hace. Es por 
+ello que las empresas telefónicas que entregan al usuario final una señal analógica solo ofrecen 
+el ancho de banda antes mencionado.
+Cuando se transmiten datos por líneas analógicas que tienen un ancho de banda como el 
+señalado, como es el caso del uso de módem dial-up, solo se pueden alcanzar velocidades 
+de modulación del orden de alrededor de 3000 a 3300 baudios, en líneas de muy buena calidad.
+En el caso de los canales analógicos, el problema más importante a resolver es el del ruido. 
+Si bien también puede sufrir distorsión, esta influye en una medida mucho menor.
+En el presente los canales digitales se usan en la totalidad de la red de transporte, 
+también llamada red soporte, para cualquier tipo de servicio. En ellos el mayor problema que 
+se puede encontrar está en los fenómenos de distorsión. De hecho, cuando los canales de voz 
+ingresan en la zona de la red son inmediatamente digitalizados por los equipos códec. Estos 
+canales se digitalizarán según las normas más comunes en velocidades de 
+64 000 bps –ca-
+nales b– o 56 000 bps, más usados en los Estados Unidos y Japón.
+3.5.6 Concepto de relación señal a ruido. Factor de ruido
+Se denomina relación señal a ruido y se expresa en decibeles la relación entre la potencia de 
+la señal y la potencia de ruido.
+ 
+Re /lación señal ruido S
+N log210  (3-37)
+donde: 
+S = potencia media de la señal (signal) útil.
+N = potencia media de ruido (noise).
+Los canales de comunicaciones y los dispositivos electrónicos conocidos, como los ampli-
+ficadores, se caracterizan por un parámetro denominado factor de ruido. Este se define por 
+la siguiente expresión:
+ F =  (3-38)
+De acuerdo con la expresión (3-38) el factor de ruido, resultará:
+ F S N
+S N
+/
+/= 1 1
+1 2
+ (3-39)
+No obstante, como la potencia de la señal a la salida será igual a su potencia a la entrada 
+por la ganancia del amplificador,
+ S S G2 1= ⋅  (3-40)
+Reemplazando en (3-39), tendremos, 
+ F S N
+S G N
+/
+/= 1 1
+1 2
+ (3-41)
+Asimismo, si se simplifica el factor de ruido resultará:
+ F N
+G N/= 2
+1
+ (3-42)
+efecto que produce el ruido sobre la forma de la señal.
+3.5.5 Canales analógicos y canales digitales
+Según el tipo de señales que transporten, los canales se pueden clasificar en 
+o digitales.
+En el presente los canales analógicos
+sión denominadas CATV (cable antenna television
+para la provisión del servicio de banda ancha.
+En el caso de la red telefónica
+desde un valor mínimo de 30 Hz hasta valores de 12 000 Hz
+es que la mayor potencia de la voz está comprendida entre 300 y 3300 Hz
+)UHFXHQFLDHQFLFORVSRUVHJXQGR+HUW]
+3RWHQFLD
+
+
+
+
+
+     
+$QFKRGHEDQGDGHORV
+FDQDOHVWHOHIyQLFRVWtSLFRV
+Fig. 3.20.	Potencia	de	una	señal	de	frecuencia	vocal	en	función	de	la	frecuencia.
+UW
+*HQHUDGRU
+GHUXLGR
+HW VW
+VW HWUW
+&DQDOLGHDO &DQDOUHDO
+Se	denomina	relación	señal	a	rui-
+do	 y	 se	 expresa	 en	 decibeles	 la	
+relación	 entre	 la	 potencia	 de	 la	
+señal	y	la	potencia	de	ruido.
+
+
+===== PÁGINA PDF 200 =====
+3 - Técnicas de la transmisión de la información174
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Como su nombre lo indica, el eco es el reflejo de la energía de las propias señales genera-
+Tiene el mismo sentido que vulgarmente se usa para el caso de las señales acústicas, que 
+En particular, este es de mayor significación en los circuitos que tienen una trayectoria 
+supresores de eco. 
+En los canales destinados al servicio telefónico representa una seria incomodidad para los 
+intensidad y su retardo.
+Cuanto mayor es el retardo de la señal producida por el eco, mayor es su capacidad para pro-
+20 mseg debe producir una atenuación de este de 11 dB; en cam-
+50 mseg, la atenuación mínima que debería producir el supresor no debe-
+20 dB para producir el mismo efecto en el usuario del canal de comunicaciones. 
+Estos equipos bloquean las señales de eco, pero también provocan una pérdida en la cali-
+eco tienen consecuencias mucho mayores que las que se producen en los circuitos de voz. 
+El retorno de las señales enviadas hacia el receptor en los circuitos de datos provoca fenó-
+interferencias intersímbolos. Estas consisten en la superposición 
+En la Fig. 3.21., se puede observar que la ventaja de definir el factor de ruido está en la 
+manera en que la potencia de la señal se simplifica en la expresión (3-41). Por lo tanto, queda 
+una relación que depende exclusivamente de la ganancia y del ruido propio del canal, y, como 
+en el caso señalado, del ruido que pueda adicionar el amplificador. 
+Cuando se supone un circuito ideal, este no introducirá ruido alguno y, en consecuencia, 
+N2 será igual a G N1 siendo el factor de ruido igual a uno (F = 1). A medida que aumenta el rui-
+do en el canal, su factor será mayor que la unidad y en consecuencia constituirá un parámetro 
+importante para comparar canales de comunicación.
+En la transmisión de señales digitales no se emplea como parámetro de medición la rela-
+ción señal/ruido sino que se utiliza en su lugar el BER (Bit Error Rate, Tasa de errores), que ya 
+se definió en el punto 3.2.1.5. de este capítulo.
+3.5.7 Acondicionamiento de los canales de comunicaciones
+3.5.7.1 Aspectos generales
+Los canales de comunicaciones presentan fenómenos físicos que alteran sus característi-
+cas y requieren que se los corrija a los efectos de lograr colocarlos en las mejores condiciones 
+para el servicio que deben prestar.
+En particular, la generación de señales de retorno denominadas eco y otros fenómenos, como 
+la atenuación y la distorsión, que producen un comportamiento no lineal de la curva de respuesta 
+en frecuencia, obligan a introducir equipos especiales en el canal de comunicaciones. Estos tienen 
+por finalidad acondicionarlo para que quede en las mejores condiciones para su funcionamiento.
+Los canales de comunicaciones acondicionados presentan una mayor inteligibilidad para 
+las comunicaciones telefónicas y una menor tasa de errores en las comunicaciones de datos.
+3.5.7.2 Eco
+Se denomina eco a una señal no deseada que se origina por medio de una onda reflejada 
+en el colector, producida por la propia señal generada en el equipo terminal, que funciona 
+como fuente de la información, o bien, ciertos obstáculos que encuentra la señal útil, como 
+consecuencia de desacoplamientos en las impedancias del circuito establecido.
+
+
+
+'RQGH
+5HODFLyQ65 6Q5Q * *DQDQFLDGHODPSOLILFDGRU
+6 6HxDOGHHQWUDGD
+1 5XLGRGHHQWUDGD
+6 6HxDOGHHQWUDGD
+1 5XLGRGHHQWUDGD
+1 5XLGRGHHQWUDGD 1 5XLGRGHVDOLGD
+6 6HxDOGHVDOLGD
+61 61 6 6*
+
+ 
+
+
+ 
+
+6 6HxDOGHHQWUDGD
+$PS
+Fig. 3.21.	Factor	de	ruido.
+$QWHQDV
+VDWHOLWDOHV
+(TXLSR
+WUDQVPLVRU
+UHFHSWRU
+&DQFHODGRU
+GHHFR
+5[
+7[
+(TXLSR
+WUDQVPLVRU
+UHFHSWRU
+&DQFHODGRU
+GHHFR
+5[
+7[
+6DWpOLWHGH
+FRPXQLFDFLRQHV
+Se	denomina	eco	a	una	señal	no	
+deseada	que	se	origina	por	me-
+dio	 de	 una	 onda	 reflejada	 en	 el	
+colector,	producida	por	la	propia	
+señal	generada	en	el	equipo	ter -
+minal,	que	funciona	como	fuente	
+de	la	información,	o	bien,	ciertos	
+obstáculos	 que	 encuentra	 la	 se-
+ñal	 útil,	 como	 consecuencia	 de	
+desacoplamientos	 en	 las	 impe-
+dancias	del	circuito	establecido.
+
+
+===== PÁGINA PDF 201 =====
+3.5 Canales de comunicaciones
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+175
+Como su nombre lo indica, el eco es el reflejo de la energía de las propias señales genera-
+das en la fuente; para el caso de una conversación telefónica, se trata de la voz del usuario que 
+usa el canal en ese momento. 
+Tiene el mismo sentido que vulgarmente se usa para el caso de las señales acústicas, que 
+reverberan en lugares cerrados. En la Fig. 3.22., se muestra el esquema de este fenómeno.
+En particular, este es de mayor significación en los circuitos que tienen una trayectoria 
+muy extensa en los enlaces terrestres, y en especial en los que utilizan vínculos satelitales. 
+Esta reflexión que se produce sobre el canal de comunicaciones, debe eliminarse mediante la 
+inserción en el canal de equipos denominados supresores de eco. 
+En los canales destinados al servicio telefónico representa una seria incomodidad para los 
+usuarios, y en los canales de datos genera innumerables errores. Ese fenómeno se caracteriza 
+por dos parámetros: su intensidad y su retardo.
+Cuanto mayor es el retardo de la señal producida por el eco, mayor es su capacidad para pro-
+ducir una sensación de incomodidad en el usuario que utiliza el canal, por lo tanto, la atenuación 
+a que debe someterse la señal del eco debe ser mayor. Por ejemplo, un supresor para una señal de 
+eco que llegue con un retardo de 
+20 mseg debe producir una atenuación de este de 11 dB; en cam-
+bio, si el retardo fuese de 50 mseg, la atenuación mínima que debería producir el supresor no debe-
+ría ser menor que 20 dB para producir el mismo efecto en el usuario del canal de comunicaciones. 
+Estos equipos bloquean las señales de eco, pero también provocan una pérdida en la cali-
+dad de los circuitos. En los sistemas de transmisión de datos los fenómenos relacionados con 
+el eco tienen consecuencias mucho mayores que las que se producen en los circuitos de voz. 
+El retorno de las señales enviadas hacia el receptor en los circuitos de datos provoca fenó-
+menos conocidos como interferencias intersímbolos. Estas consisten en la superposición 
+de los dígitos enviados y los que se reflejan por la línea, impidiendo la detección de las señales 
+digitales transmitidas.
+En la Fig. 3.21., se puede observar que la ventaja de definir el factor de ruido
+en el caso señalado, del ruido que pueda adicionar el amplificador. 
+N2 será igual a G N1 siendo el factor de ruido igual a uno (F = 1)
+importante para comparar canales de comunicación.
+ción señal/ruido sino que se utiliza en su lugar el BER (Bit Error Rate
+se definió en el punto 3.2.1.5. de este capítulo.
+3.5.7 Acondicionamiento de los canales de comunicaciones
+3.5.7.1 Aspectos generales
+para el servicio que deben prestar.
+En particular, la generación de señales de retorno denominadas eco
+la atenuación y la distorsión, que producen un comportamiento no lineal
+3.5.7.2 Eco
+consecuencia de desacoplamientos en las impedancias del circuito establecido.
+
+
+
+'RQGH
+5HODFLyQ65 6Q5Q * *DQDQFLDGHODPSOLILFDGRU
+6 6HxDOGHHQWUDGD
+1 5XLGRGHHQWUDGD
+6 6HxDOGHHQWUDGD
+1 5XLGRGHHQWUDGD
+1 5XLGRGHHQWUDGD 1 5XLGRGHVDOLGD
+6 6HxDOGHVDOLGD
+61 61 6 6*
+
+ 
+
+
+ 
+
+6 6HxDOGHHQWUDGD
+$PS
+$QWHQDV
+VDWHOLWDOHV
+(TXLSR
+WUDQVPLVRU
+UHFHSWRU
+&DQFHODGRU
+GHHFR
+5[
+7[
+(TXLSR
+WUDQVPLVRU
+UHFHSWRU
+&DQFHODGRU
+GHHFR
+5[
+7[
+6DWpOLWHGH
+FRPXQLFDFLRQHV
+Fig. 3.22.	Ejemplo	de	enlaces	con	posibilidades	de	eco.
+Nótese	que	en	un	solo	salto,	para	
+el	 caso	 de	 satélites	 ubicados	 en	
+órbitas	 geosincrónicas,	 la	 distan-
+cia	es	del	orden	de	72	 000	km.
+
+
+===== PÁGINA PDF 202 =====
+3 - Técnicas de la transmisión de la información176
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Fue precisamente la denominada teoría de la información una ciencia desarrollada por 
+en sus trabajos sobre la teoría matemática de la comunicación. En ellos se 
+xx, y dieron origen a la teoría de la información. 
+La teoría de la información estudia cuatro aspectos: 
+ • Cómo se mide la información.
+ • Cuál es la capacidad de un canal de comunicaciones para transferir información.
+ • Otros aspectos relacionados con la codificación de la información.
+ • La manera de utilizar los canales a plena capacidad con una tasa de error mínima.
+Un hecho que se sabe con seguridad que va a ocurrir no contiene información alguna. Por 
+La recepción de mensajes distintos, cada uno de ellos con un grado de incertidumbre dife-
+S que se pueda pre-
+P(S), indicaremos que la cantidad de información 
+ 
+ [Shannon] (3-43)
+La elección de la base del logaritmo que interviene en la definición de la cantidad de infor-
+Por ejemplo, si tomamos logaritmo en base 2 , la unidad correspondiente, como hemos 
+Shannon. Si se tomara el logaritmo decimal, la unidad se llamará Hartley, y si 
+logaritmo natural –base e–, su nombre sería Nat. En efecto,
+ 
+ [Hartley] (3-44)
+ 
+ [Nat] (3-45)
+La relación entre las distintas unidades es la que se muestra en la Tabla 3-2.
+Los equipos módem de datos utilizan supresores de ecos que buscan minimizar estos 
+efectos. En ese sentido, para lograr la cancelación del eco, los equipos verifican su presencia 
+(retrasado respecto de la señal original), y producen una señal igual, pero de sentido inverso, 
+sobre el canal que recibe la información. 
+A partir de la Recomendación V.32 de la UIT-T, todos los módems deben tener el hard-
+ware necesario como para producir la cancelación del eco. También los satélites de comunica-
+ciones tienen incorporados estos equipos.
+Los sistemas de señalización y los nodos de conmutación deben tener en cuenta el funcio-
+namiento de los supresores de eco, y coordinar su funcionamiento con estos equipos.
+3.5.7.3 Ecualización
+Se denomina ecualización al proceso que consiste en compensar en un canal de comu-
+nicaciones los efectos que produce la distorsión (ver apartado 3.7 de este capítulo), tanto sea 
+de atenuación o de retardo de grupo, a los efectos de acondicionarlo para optimizar su rendi-
+miento.
+Los equipos que realizan estas funciones se denominan ecualizadores. Estos pueden 
+formar parte de otros equipos, como los módem de datos, o ser equipos independientes, que 
+se colocan en forma expresa sobre un canal para mejorarlo.
+En particular los ecualizadores pueden ser de dos tipos: de atenuación y de fase; aunque a 
+menudo, un mismo equipo realiza las dos funciones.
+La tarea de estos es básicamente compensar la relación entre la atenuación y la dis-
+torsión, en función de la frecuencia, buscando que las primeras se mantengan todo lo 
+constante que sea posible para todo el intervalo de frecuencias usadas por el canal de co-
+municaciones. En particular, los efectos causados por la falta de linealidad de la curva de 
+respuesta en frecuencia provocan que el comportamiento del canal sea diferente a distintas 
+frecuencias. Los ecualizadores tienden a corregir estos problemas.
+Los equipos módem de datos poseen ecualizadores denominados adaptativos, que se 
+ubican en la sección de recepción de estos y proporcionan la ecualización de la señal analógi-
+ca recibida. Para ello ajustan en forma automática sus características de ganancia y retardo, 
+mejorando con ello el comportamiento de las líneas telefónicas. 
+De esta manera estos equipos logran mejorar la tasa de errores-bER, y tienen la capaci-
+dad para ir ajustando en cada instante las características del canal de comunicaciones, a los 
+efectos de lograr su mejor rendimiento. 
+La mejora constante de su rendimiento, que se ha ido operando en sus nuevos diseños por 
+el uso de técnicas electrónicas modernas, permitió que en las nuevas recomendaciones de los 
+módems de datos se logren velocidades de transmisión cada vez más altas. 
+3.6 Capacidad de un canal
+3.6.1 Elementos de teoría de la información. Medida de la información
+Las redes de comunicaciones tienen por objeto intercambiar información. Por lo tanto, es 
+importante dar un concepto previo de qué se puede entender por información. Al respecto hay 
+muchas formas de dar una idea sobre este concepto.
+La más simple es pensar que información es aportar datos sobre algo que es desconocido 
+para el receptor. Ella puede transmitirse mediante una conversación, una transferencia de 
+archivos de texto, o por medio de un clip de video. Por ejemplo, llamo por teléfono y aviso 
+Se	denomina	ecualización	al	pro-
+ceso	que	consiste	en	compensar	
+en	 un	 canal	 de	 comunicaciones	
+los	 efectos	 que	 produce	 la	 dis-
+torsión,	tanto	sea	de	atenuación	
+o	 de	 retardo	 de	 grupo,	 a	 los	
+efectos	 de	 acondicionarlo	 para	
+optimizar	su	rendimiento.
+Capacidad	de	un	canal
+
+===== PÁGINA PDF 212 =====
+3 - Técnicas de la transmisión de la información186
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Este ejemplo permite concluir que para elegir una opción de entre ocho igualmente proba-
+La expresión (3-56) es similar a la anterior (3-5). Ellas fueron de gran utilidad cuando se 
+También ella es de suma utilidad para determinar el número de bits necesarios para definir 
+8 bits por byte es posible codificar 256 caracteres o posibilidades distintas para su 
+Ejemplo 3-17
+Sea el caso de la transmisión de un símbolo perteneciente a un alfabeto que tiene 32 
+símbolos diferentes e igualmente probables (equiprobables). Determinar cuál será 
+la cantidad de información obtenida con la recepción de uno de ellos.
+De acuerdo con la expresión (3-56), cada símbolo se compone de cinco bits. Luego, 
+la posibilidad de que se produzca cada símbolo será
+ 
+Si todos los símbolos tienen igual probabilidad de producirse, es decir que son equi-
+probables, entonces la cantidad de información por cada símbolo recibido será:
+ 
+La información por cada bit que compone cada símbolo valdrá,
+ 1 bit = 1 Shannon
+Para el caso de un canal ideal (sin ruido), el Teorema de Nyquist expresa y permite demos-
+En la década de 1920, mientras estudiaba líneas telegráficas, Harry Nyquist determinó que 
+A partir de estos estudios se demostró el que se conoce como teorema de Nyquist o del 
+Sea una señal limitada en su ancho de banda y con una frecuencia máxima fmáx, entonces,
+              (3-57)
+Donde:
+fN = frecuencia de Nyquist o de muestreo.
+Si la señal a participar del muestreo está definida en un ancho de banda Δf, entonces la 
+La relación entre la tasa de información y la capacidad del canal quedará establecida sobre la 
+base de la tasa de errores (BER) del sistema, de forma que se puede concluir que si la tasa de informa-
+ción es mayor que la capacidad del canal no es posible transmitir sin errores.
+De todo lo anterior se deduce que, en el diseño de cualquier sistema de comunicaciones, en 
+primer lugar es necesario calcular la velocidad de transmisión o de información máxima y, en 
+segundo lugar, proceder a determinar la capacidad del canal de comunicaciones.
+3.6.5 Uso de la medida de la información
+Se sabe que con 1 bit es posible identificar en forma unívoca dos situaciones posibles. Para 
+ello se le podrá asignar a la primera un 1, y a la otra un 0, o al revés. Luego es importante deter-
+minar cuántos bits se necesitan para efectuar una elección entre todas las que sean posibles. 
+En la Tabla 3-4 se muestran los casos posibles utilizando 1, 2, 3, ... bits, y así.
+En general, se puede deducir con facilidad que el número de elecciones n posibles será
+ n = 2M (3-56)
+donde:
+n = número de posibilidades a elegir.
+M = número de bits necesarios para discriminar entre n posibilidades.
+Ejemplo 3-16
+En un torneo deportivo octogonal, un mensaje con una cantidad mínima de bits debe 
+indicar el ganador. Veremos que se requerirán dos bits, como lo muestra la Tabla 3-4. 
+En la Fig. 3.25. se representan los ocho equipos con letras de la A a la H. Los resul-
+tados de la primera ronda generarán un bit para saber quién ganó cada uno de los 
+cuatro partidos. Los de la semifinal generarán un segundo bit. 
+Si el equipo A termina ganando el campeonato se deberá transmitir un bit más, 
+luego, para identificar de los ocho equipos al ganador se deberán enviar tres bits.(48,32* 
+(48,32+ 
+(48,32$ 
+(48,32% 
+(48,32& 
+(48,32' 
+(48,32( 
+(48,32) 
+(48,32* 
+(48,32$ 
+UD521'$ 6(0,),1$/ ),1$/
+(48,32$ 
+(48,32´$µ
+(48,32) 2
+(48,32' 
+(48,32) 2
+Fig. 3.25.	Información	por	transmitir	en	función	del	número	de	posibilidades.
+Tabla 3-4 Elecciones posibles 
+en función del número de bits 
+utilizados
+Distancia de 
+Hamming
+Distancia de 
+Hamming
+1 2
+2 4
+3 8
+4 16
+5 32
+6 64
+7 128
+8 256
+
+===== PÁGINA PDF 213 =====
+3.7 Concepto de velocidad máxima de transmisión
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+187
+Este ejemplo permite concluir que para elegir una opción de entre ocho igualmente proba-
+bles, es necesario utilizar tres bits. 
+La expresión (3-56) es similar a la anterior (3-5). Ellas fueron de gran utilidad cuando se 
+estudió la manera de mejorar la llamada velocidad binaria o velocidad de transmisión en un 
+circuito de transmisión de datos, sin alterar la velocidad de modulación o de señalización (ver 
+apartado 3.2.1.3 de este capítulo).
+También ella es de suma utilidad para determinar el número de bits necesarios para definir 
+determinados códigos de transmisión o de uso en computadoras; por ejemplo, si se utilizan 
+códigos de 
+8 bits por byte es posible codificar 256 caracteres o posibilidades distintas para su 
+utilización.
+Ejemplo 3-17
+Sea el caso de la transmisión de un símbolo perteneciente a un alfabeto que tiene 32 
+símbolos diferentes e igualmente probables (equiprobables). Determinar cuál será 
+la cantidad de información obtenida con la recepción de uno de ellos.
+De acuerdo con la expresión (3-56), cada símbolo se compone de cinco bits. Luego, 
+la posibilidad de que se produzca cada símbolo será
+ 
+P s número de veces que se produce( ) = =1
+32
+el símbolo
+número total de símbolos difere n ntes
+Si todos los símbolos tienen igual probabilidad de producirse, es decir que son equi-
+probables, entonces la cantidad de información por cada símbolo recibido será:
+ 
+La información por cada bit que compone cada símbolo valdrá,
+ 1 bit = 1 Shannon
+3.7 Concepto de velocidad máxima de transmisión
+3.7.1 Teorema de Nyquist
+Para el caso de un canal ideal (sin ruido), el Teorema de Nyquist expresa y permite demos-
+trar que no se puede sobrepasar una velocidad de pulsos máxima (velocidad de modulación), 
+y que esta resultará función de la frecuencia máxima de transmisión.
+En la década de 1920, mientras estudiaba líneas telegráficas, Harry Nyquist determinó que 
+la cantidad de pulsos por unidad de tiempo que podían pasar a través de un canal de ese tipo 
+era función de la frecuencia máxima utilizada.
+A partir de estos estudios se demostró el que se conoce como teorema de Nyquist o del 
+muestreo. En él se analiza la cantidad de muestras por unidad de tiempo, o frecuencia de 
+muestreo que es necesario tomar para que una señal pueda reconstruirse en forma unívoca.
+Sea una señal limitada en su ancho de banda y con una frecuencia máxima fmáx, entonces,
+             
+f fN máx> 2  (3-57)
+Donde:
+fN = frecuencia de Nyquist o de muestreo.
+Si la señal a participar del muestreo está definida en un ancho de banda Δf, entonces la 
+frecuencia de muestreo será igual a 
+ción es mayor que la capacidad del canal no es posible transmitir sin errores.
+segundo lugar, proceder a determinar la capacidad del canal de comunicaciones.
+3.6.5 Uso de la medida de la información
+Se sabe que con 1 bit
+ello se le podrá asignar a la primera un 1, y a la otra un 0
+En la Tabla 3-4 se muestran los casos posibles utilizando 1, 2, 3, ... bits, y así.
+En general, se puede deducir con facilidad que el número de elecciones n posibles será
+ n = 2M 
+donde:
+n = número de posibilidades a elegir.
+M = número de bits necesarios para discriminar entre n posibilidades.
+Ejemplo 3-16
+cuatro partidos. Los de la semifinal generarán un segundo bit. 
+luego, para identificar de los ocho equipos al ganador se deberán enviar tres bits.
+(48,32* 
+(48,32+ 
+(48,32$ 
+(48,32% 
+(48,32& 
+(48,32' 
+(48,32( 
+(48,32) 
+(48,32* 
+(48,32$ 
+UD521'$ 6(0,),1$/ ),1$/
+(48,32$ 
+(48,32´$µ
+(48,32) 2
+(48,32' 
+(48,32) 2
+Fig. 3.25.	Información	por	transmitir	en	función	del	número	de	
+
+===== PÁGINA PDF 214 =====
+3 - Técnicas de la transmisión de la información188
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Precisamente, el número de niveles que es posible implementar estará limitado por el valor 
+señal/ruido.
+En efecto:
+  (3-61)
+                fN f 2 '  (3-58)
+El efecto de filtro pasa bajo que produce un canal de comunicaciones, nos permite afirmar 
+que si se quisieran transmitir señales con frecuencias superiores a la de Nyquist fN = 2 Δf, el 
+resultado sería exactamente el mismo, por cuanto las componentes de las frecuencias más 
+altas serían filtradas y por lo tanto no podrían recuperarse. Por lo tanto, la capacidad del canal 
+que maneje señales binarias queda determinada con exclusividad por el ancho de banda (ver 
+Fig. 3-58).
+A partir de este teorema se determina que la capacidad de un canal sin ruido de ancho de 
+banda finito 
+Δf resulta cuando se envían señales binarias igual a
+    C V tmáx f  [bps]2 '  (3-59)
+Donde:
+C = capacidad del canal.
+Vtmáx = velocidad máxima de transmisión de datos con señales binarias.
+Δf = ancho de banda de la señal.
+Para señales multinivel, la situación es distinta. Precisamente en la misma época que 
+Nyquist, Hartley estudió esa situación y llegó a determinar en esos casos que el canal de co-
+municaciones también está limitado por el rango de las amplitudes que puede tomar la señal 
+y la precisión con que el receptor puede distinguir esos niveles de amplitud.
+Luego, para señales multinivel, la capacidad de un canal ideal será igual a
+                                               
+C V tmáx
+M f n  [ ]log bps22 '  (3-60)
+Donde:
+Vtmáx
+M
+ = capacidad de un canal con señales multinivel.
+Hartley no logró determinar el valor de n, pues este tomará valores que deben analizarse 
+para un canal real. Precisamente los trabajos de Shannon fueron el sentido de obtener una ley 
+para canales del tipo AWGN (Ruido blanco gausseano limitado en banda) ya señalado.
+3.7.2 Teorema de Shannon-Hartley
+La expresión (3-60) nos muestra que si un canal fuese ideal, se podría aumentar de manera 
+indefinida la capacidad con solo incrementar el número de niveles de la señal.
+Analicemos ahora el caso de canales continuos con ruido, y supongamos la presencia de 
+ruido para el caso de un canal con ruido blanco gaussiano aditivo. La presencia de este, 
+precisamente, es característico de un canal real de transmisión. 
+En todos los casos el ruido presenta características de aditividad. Esto significa que sea 
+la señal a transmitir analógica o digital, el ruido se sumará a ella. En la Fig. 3.26. se observa 
+cómo se suma el ruido a la señal útil en un ejemplo sobre una transmisión analógica.
+Como se expresó, en el caso del canal ideal se podría aumentar el número de niveles 
+tanto como se quisiera, ya que siempre sería posible distinguir un nivel del siguiente.
+Para el caso de un canal real el aumento indefinido del número de niveles es imposible, 
+pues este queda limitado a la probabilidad de que se pueda distinguir el nivel 
+[n] del siguiente 
+[n + 1] sin que el receptor que detecta las señales recibidas cometa un error al decidirse por 
+un nivel u otro (Fig. 3.27.). 
+&DQDOFRQUXLGR
+UXLGRDGLWLYR
+6DOLGDGHOFDQDO
+VHxDOFRQUXLGR
+W
+6HxDO~WLO
+W
+W
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+9ROWV
+FRQUXLGR
+(UUSUHV
+I
+6HxDOUHFLELGD
+6HxDOLGHDO
+VLQUXLGR
+
+
+
+
+
+
+ 
+6HxDOWU DQVPLWLGD
+   
+1LYHOGH
+VHxDO
+YROWV
+YROW
+YROWV
+YROWV
+YROWV
+YROWV
+YROWV
+YROWV
+75,%,76
+'tJLWRV
+ELQDULRV
+
+
+
+
+
+
+
+
+6HxDOUHDO
+
+===== PÁGINA PDF 215 =====
+3.7 Concepto de velocidad máxima de transmisión
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+189
+Precisamente, el número de niveles que es posible implementar estará limitado por el valor 
+de una relación de importancia fundamental en el estudio de los canales de comunicación: la 
+denominada relación señal/ruido.
+En efecto:
+ 
+S
+N
+Potencia de la señal
+Potencia del ruido=  (3-61)
+                 
+que si se quisieran transmitir señales con frecuencias superiores a la de Nyquist fN = 2 Δf
+Fig. 3-58).
+banda finito Δf resulta cuando se envían señales binarias igual a
+     
+Donde:
+C = capacidad del canal.
+Vtmáx = velocidad máxima de transmisión de datos con señales binarias.
+Δf = ancho de banda de la señal.
+y la precisión con que el receptor puede distinguir esos niveles de amplitud.
+Luego, para señales multinivel, la capacidad de un canal ideal será igual a
+                                                
+Donde:
+ = capacidad de un canal con señales multinivel.
+para canales del tipo AWGN (Ruido blanco gausseano limitado en banda) ya señalado.
+3.7.2 Teorema de Shannon-Hartley
+indefinida la capacidad con solo incrementar el número de niveles de la señal.
+ruido para el caso de un canal con ruido blanco gaussiano aditivo
+precisamente, es característico de un canal real de transmisión. 
+En todos los casos el ruido presenta características de aditividad
+cómo se suma el ruido a la señal útil en un ejemplo sobre una transmisión analógica.
+Como se expresó, en el caso del canal ideal
+tanto como se quisiera, ya que siempre sería posible distinguir un nivel del siguiente.
+Para el caso de un canal real
+pues este queda limitado a la probabilidad de que se pueda distinguir el nivel [n]
+[n + 1]
+un nivel u otro (Fig. 3.27.). 
+Fig. 3.26.	Características	de	aditividad	del	ruido.
+&DQDOFRQUXLGR
+UXLGRDGLWLYR
+6DOLGDGHOFDQDO
+VHxDOFRQUXLGR
+W
+6HxDO~WLO
+W
+W
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+9ROWV
+FRQUXLGR
+(UUSUHV
+I
+6HxDOUHFLELGD
+6HxDOLGHDO
+VLQUXLGR
+
+
+
+
+
+
+ 
+6HxDOWU DQVPLWLGD
+   
+1LYHOGH
+VHxDO
+YROWV
+YROW
+YROWV
+YROWV
+YROWV
+YROWV
+YROWV
+YROWV
+75,%,76
+'tJLWRV
+ELQDULRV
+
+
+
+
+
+
+
+
+6HxDOUHDO
+Fig. 3.27.	Limitación	del	número	de	niveles	de	una	señal	en	función	del	ruido.
+
+===== PÁGINA PDF 216 =====
+3 - Técnicas de la transmisión de la información190
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Se puede observar que la capacidad de un canal continuo depende del ancho de banda 
+Ejemplo 3-18
+Se desea transmitir datos en un canal de comunicaciones con una relación señal a 
+ruido igual a 100. Calcular la capacidad de ese canal a partir del teorema de Shan-
+non-Hartley. Para ello se tomará el ancho de banda de un canal telefónico de 
+3.400 
+Hz.
+Si Δf = 3.400 Hz, la capacidad del canal será 
+ 
+ 
+ 
+En la práctica, tener una relación de señal a ruido igual a cien, significa que la señal 
+útil debe superar cien veces a la potencia media de ruido.
+Ejemplo 3-19
+Calcular ahora suponiendo que se mejoró la relación señal ruido al valor de 1:1.000.
+En ese caso, aplicando idéntica fórmula, el valor obtenido sería de:
+ 
+El teorema de Shannon permite calcular la velocidad máxima teórica de transmisión. En el 
+límite de ese teorema. 
+Las posibilidades de obtener velocidades aun mayores en la capacidad de los cana-
+Sin embargo, la aparición de otros servicios, con el uso de banda ancha por esos medios 
+El teorema de Shannon-Hartley involucra los canales ideales como un caso particular. En 
+De él también se puede deducir que si se incrementara el ancho de banda de un canal, en 
+Sin embargo, en los canales reales, es decir, con ruido, existe un límite para incrementar esa 
+El cociente S/N es un factor importante en todo sistema de comunicaciones, dado que 
+cuantifica la medida en que la señal útil supera al ruido. El teorema de Shannon-Hartley 
+se refiere a la capacidad de un canal real de comunicaciones continuo. Hartley contribuyó al 
+desarrollo de la teoría de la información. Los trabajos de Shannon se basaron en parte en un 
+trabajo que este investigador publicó en el Bell System Technical Journal de julio de 1928.
+En 1948 Claude Shannon completó los estudios de Nyquist y Hartley, y los amplió a un 
+canal sujeto a ruido blanco gaussiano aditivo para determinar el máximo número de estados 
+significativos de la señal.
+Para establecer la capacidad de un canal con ruido, el problema consistirá en determinar 
+cuál es el valor máximo que podrá tomar n, esto es, el número de estados de la señal.
+En efecto,
+ 
+C V n tm áx
+M
+máx= log [bps]2  (3-62)
+Donde se puede observar que para este caso el valor de n deberá ser el máximo que po-
+sibilite la relación señal/ruido. A este lo denominamos nmáx.
+Shannon demostró que el número máximo de niveles tiene que ver con la relación señal/
+ruido. Si aceptamos sin demostración que esa relación está dada por la expresión (3-63) obte-
+nida por este investigador, entonces:
+ ( )n S
+Nmáx
+/
+= +1
+1 2
+ (3-63)
+Entonces, si reemplazamos en la expresión (3-62) nmáx por su valor en (3-63), tendremos:
+ ( )C f S
+Nlog
+/
+  [bps]2 12
+1 2
+'  (3-64)
+y simplificando en la expresión (3-64), tendremos:
+ ( )C f S
+Nlog  [bps]2 1'  (3-65)
+donde:
+S = potencia media de la señal continua transmitida por el canal. 
+N = potencia media ruido blanco gaussiano aditivo. 
+Δf = ancho de banda del canal de comunicaciones.
+Esta es la expresión de la ley de Shannon-Hartley, que determina la capacidad de un canal 
+continuo que tiene un ancho de banda Δf y ruido blanco gaussiano aditivo limitado en banda.
+3.7.3 Consideraciones particulares sobre el teorema de Shannon-Hartley
+El teorema de Shannon-Hartley es de importancia fundamental para el análisis de los sis-
+temas de comunicaciones. 
+Tiene dos aspectos relevantes:
+ • Permite calcular la velocidad máxima de transmisión de datos en un canal con ruido 
+(con distribución estadística de tipo gaussiano).
+ • Relaciona dos parámetros fundamentales en todo canal de comunicaciones, que son 
+el ancho de banda 
+Δf y la relación señal/ruido S/N.
+La	 capacidad	 máxima	 de	 un	 ca-
+nal	 real	 depende	 del	 ancho	 de	
+banda	del	mismo	y	de	la	relación	
+señal	a	ruido	que	posee.
+
+
+===== PÁGINA PDF 217 =====
+3.7 Concepto de velocidad máxima de transmisión
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+191
+Se puede observar que la capacidad de un canal continuo depende del ancho de banda 
+del medio físico empleado para establecer el canal y de la relación señal/ruido a través de su 
+logaritmo de base dos. También es factible determinar que la influencia de la variación de la 
+relación señal/ruido tiene un efecto menor que el ancho de banda (en la determinación de la 
+capacidad del canal), pues se relaciona por medio de su logaritmo.
+Ejemplo 3-18
+Se desea transmitir datos en un canal de comunicaciones con una relación señal a 
+ruido igual a 100. Calcular la capacidad de ese canal a partir del teorema de Shan-
+non-Hartley. Para ello se tomará el ancho de banda de un canal telefónico de 
+3.400 
+Hz.
+Si Δf = 3.400 Hz, la capacidad del canal será 
+ C   'f  log2  (1  S / N)
+ C   3.400  log2 (1  100)   3.400 · 6,65
+ C bp s.= 22 637
+En la práctica, tener una relación de señal a ruido igual a cien, significa que la señal 
+útil debe superar cien veces a la potencia media de ruido.
+Ejemplo 3-19
+Calcular ahora suponiendo que se mejoró la relación señal ruido al valor de 1:1.000.
+En ese caso, aplicando idéntica fórmula, el valor obtenido sería de:
+ 
+C bps .= 33 888
+El teorema de Shannon permite calcular la velocidad máxima teórica de transmisión. En el 
+caso de la utilización de equipos módem de datos para conexiones dial up, de la Recomenda-
+ción V.90/V.92 de la UIT-T, en la práctica se llega a los valores límite de ese teorema. 
+Las posibilidades de obtener velocidades aun mayores en la capacidad de los cana-
+les telefónicos están dadas por el tipo de medios de comunicaciones empleados en la 
+construcción de las actuales redes de telecomunicaciones que pueden mejorar la relación 
+señal/ruido. 
+Sin embargo, la aparición de otros servicios, con el uso de banda ancha por esos medios 
+paralizó el desarrollo de nuevas mejoras en este tipo de equipos por ser ya innecesarias en la 
+práctica. En la Fig. 3.28. se muestra un ábaco que permite calcular la capacidad de un canal 
+usando el teorema de Shannon-Hartley.
+El teorema de Shannon-Hartley involucra los canales ideales como un caso particular. En 
+efecto, si aplicáramos la expresión a un canal con potencia de ruido cero, este tendría una 
+capacidad infinita. 
+De él también se puede deducir que si se incrementara el ancho de banda de un canal, en 
+principio la capacidad del canal aumentaría en la misma proporción. 
+Sin embargo, en los canales reales, es decir, con ruido, existe un límite para incrementar esa 
+capacidad utilizando como variable de ajuste el aumento del ancho de banda. Ese límite se debe 
+a que cuando se incrementa el ancho de banda también aumenta la potencia de ruido, dado 
+que este es función del ancho de banda, con lo que volvería a disminuir la capacidad del canal.
+El cociente S/N
+cuantifica la medida en que la señal útil supera al ruido. El 
+trabajo que este investigador publicó en el Bell System Technical Journal de julio de 1928.
+significativos de la señal.
+cuál es el valor máximo que podrá tomar n, esto es, el número de estados de la señal.
+En efecto,
+  
+Donde se puede observar que para este caso el valor de n deberá ser el máximo
+sibilite la relación señal/ruido. A este lo denominamos nmáx.
+nida por este investigador, entonces:
+  
+Entonces, si reemplazamos en la expresión (3-62) nmáx
+  
+y simplificando en la expresión (3-64), tendremos:
+  
+donde:
+S = potencia media de la señal continua transmitida por el canal. 
+N = potencia media ruido blanco gaussiano aditivo. 
+Δf = ancho de banda del canal de comunicaciones.
+Esta es la expresión de la ley de Shannon-Hartley
+continuo que tiene un ancho de banda Δf y 
+3.7.3 Consideraciones particulares sobre el teorema de Shannon-Hartley
+temas de comunicaciones. 
+Tiene dos aspectos relevantes:
+ •
+(con distribución estadística de tipo gaussiano).
+ •
+el ancho de banda Δf y la relación señal/ruido S/N.
+El	canal	ideal	no	tiene	ruido	y,	en	
+consecuencia,	 su	 ancho	 de	 ban-
+da	tiende	a	infinito.
+
+
+===== PÁGINA PDF 218 =====
+3 - Técnicas de la transmisión de la información192
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Aun suponiendo que un canal se puede blindar o proteger de alguna forma contra toda 
+ruido térmico 
+En realidad es imposible efectuar predicciones exactas de la magnitud de este efecto en 
+El ruido se puede clasificar en endógeno –si proviene de elementos propios del sistema 
+exógeno –si es ajeno al sistema.
+Se denomina ruido endógeno al producido por variables propias del sistema de comunica-
+Se llama ruido exógeno al producido por elementos externos al sistema de comunicaciones, 
+El ruido se puede estudiar y clasificar en función de los agentes que lo producen y los 
+En la Fig. 3.30. se observa una clasificación de distintos tipos de ruidos.
+3.8 Ruido
+3.8.1 Aspectos generales
+El ruido y la distorsión son fenómenos adversos para la propagación de señales en los 
+sistemas de comunicaciones, cuyo rendimiento reducen. Son dos los parámetros básicos 
+que miden el comportamiento de los sistemas de comunicaciones frente al ruido y la dis-
+torsión:
+ • La relación señal a ruido en los sistemas analógicos.
+ • La tasa de error en los sistemas digitales.
+Definiremos ruido como todo fenómeno que, adicionado a la señal que se transporta desde 
+la fuente, afecta la calidad de la información recibida en el colector.
+El ruido tiene como características principales que varía en forma aleatoria con el tiempo, 
+y está originado por la superposición de eventos externos e internos al sistema de comunica-
+ciones.
+Fig. 3.28.	T eorema	de	Shannon-Hartley.	Ábaco	para	el	cálculo.
+1RWDV
+&'I 1~PHURGHESVWUDQVPLWLGRVSRUXQLGDGGHDQFKRGHEDQGDXVDGD
+615HODFLyQVHxDOUXLGRH[LVWHQWHHQHOFDQDOGHFRPXQLFDFLRQHV
+
+&'I 9HORFLGDGGHWUDQVPLVLyQPi[LPD
+WHyULFD/H\GH6KDQQRQ
+9HORFLGDGGHWUDQVPLVLyQ
+Pi[LPDWHyULFD
+&21EHU 
+
+
+
+
+
+
+
+
+
+0RGXODFLyQGHIDVHGHWHFFLyQFRKHUHQWH
+0RGXODFLyQGHDPSOLWXGSRUWDGRUDVXSULPLGD
+
+
+
+
+ 
+ 
+
+
+       
+W
+9DORUPHGLRGHOD
+WHQVLyQGHUXLGR
+;
+7HQVLyQGHUXLGR
+
+===== PÁGINA PDF 219 =====
+3.8 Ruido
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+193
+Aun suponiendo que un canal se puede blindar o proteger de alguna forma contra toda 
+interferencia exterior, se mantendrá un ruido conocido como fluctuación o ruido térmico 
+propio del sistema de comunicaciones. En la Fig. 3.29. se puede observar una forma de onda 
+de ruido típica.
+En realidad es imposible efectuar predicciones exactas de la magnitud de este efecto en 
+cualquier instante en particular, debido fundamentalmente a la gran cantidad de eventos que 
+deben considerarse en forma simultánea. No obstante, se puede hacer una descripción satis-
+factoria de la forma de onda del ruido en términos estadísticos.
+3.8.2 Clasificación del ruido con respecto al sistema de comunicaciones
+El ruido se puede clasificar en endógeno –si proviene de elementos propios del sistema 
+de comunicaciones– o exógeno –si es ajeno al sistema.
+Se denomina ruido endógeno al producido por variables propias del sistema de comunica-
+ciones, que no pueden ser controladas por este.
+Se llama ruido exógeno al producido por elementos externos al sistema de comunicaciones, 
+pero que se produce por acoplamientos a él. En algunas situaciones este tipo de ruido puede 
+atenuarse e incluso evitarse por completo.
+3.8.3 Distintos tipos de ruido
+3.8.3.1 Introducción
+El ruido se puede estudiar y clasificar en función de los agentes que lo producen y los 
+efectos nocivos que causa en el sistema de comunicaciones; incluso dentro de este con-
+cepto se pueden incluir efectos no deseados de otros procesos, como es el caso del error de 
+cuantificación.
+En la Fig. 3.30. se observa una clasificación de distintos tipos de ruidos.
+3.8 Ruido
+3.8.1 Aspectos generales
+torsión:
+ • La relación señal a ruido en los sistemas analógicos.
+ • La tasa de error en los sistemas digitales.
+la fuente, afecta la calidad de la información recibida en el colector.
+ciones.
+1RWDV
+&'I 1~PHURGHESVWUDQVPLWLGRVSRUXQLGDGGHDQFKRGHEDQGDXVDGD
+615HODFLyQVHxDOUXLGRH[LVWHQWHHQHOFDQDOGHFRPXQLFDFLRQHV
+
+&'I 9HORFLGDGGHWUDQVPLVLyQPi[LPD
+WHyULFD/H\GH6KDQQRQ
+9HORFLGDGGHWUDQVPLVLyQ
+Pi[LPDWHyULFD
+&21EHU 
+
+
+
+
+
+
+
+
+
+0RGXODFLyQGHIDVHGHWHFFLyQFRKHUHQWH
+0RGXODFLyQGHDPSOLWXGSRUWDGRUDVXSULPLGD
+
+
+
+
+ 
+ 
+
+
+       
+W
+9DORUPHGLRGHOD
+WHQVLyQGHUXLGR
+;
+7HQVLyQGHUXLGR
+Fig. 3.29.	Forma	de	onda	de	ruido	típica.
+5XLGREODQFRRJDXVVLDQR
+5XLGRLPSXOVLYR
+5XLGRGHLQWHUPRGXODFLyQ
+'LDIRQtD
+5XLGRHQOtQHD
+Fig. 3.30.	Distintas	clases	de	ruido.
+
+===== PÁGINA PDF 220 =====
+3 - Técnicas de la transmisión de la información194
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+En comunicaciones se acostumbra a expresar la potencia en dBm, para ello, recordando la 
+ 
+ 
+(2-93)
+  (3-73)
+Calculemos ahora la potencia de ruido en dBm por Hz de ancho de banda para una tempe-
+20° C, para lo cual reemplazaremos en (3-68) por sus valores
+  (3-74)
+  (3-75)
+Si consideramos la temperatura de 20° C como un valor ambiente normal, luego, para valo-
+1 Hz, tendremos la expresión final de cálculo,
+  (3-76)
+Y para otras temperaturas diferentes, (3-72) resultará la expresión más general,
+  (3-77)
+Ejemplo 3-20
+Se desea conocer la potencia de ruido térmico en dBm de un canal de voz de 4.000 Hz 
+y de un canal de video de 6 MHz de ancho de banda a temperatura ambiente de 20° C. 
+Calcular el mismo valor pero suponiendo que la temperatura aumentó a un valor de 35° C.
+A 20° C la potencia de ruido para un canal telefónico será igual a
+ 
+ 
+ 
+A 20° C, la potencia de ruido para un canal de video será igual a
+ 
+ 
+ 
+Calculemos ahora los mismos valores a la temperatura de 35° C. A ella, expresión de 
+la potencia de ruido en dBm tomada de la ecuación (3-36), resultará
+ 
+ 
+ 
+A 35° C, la potencia de ruido para un canal telefónico será igual a
+ 
+ 
+A 35° C, la potencia de ruido para un canal de video será igual a
+ 
+ 
+3.8.3.2 Ruido blanco, gaussiano o de Johnson
+El movimiento de las partículas cargadas en los conductores hacen que estos cuerpos 
+irradien energía en forma de ondas electromagnéticas. Se verificó que la potencia radiada es 
+proporcional a la temperatura absoluta a la que se encuentran las partículas.
+En los canales constituidos por medios de comunicaciones formados por cables metálicos 
+este fenómeno reviste importancia particular. Los movimientos aleatorios de los átomos y los 
+electrones radian energía electromagnética, parte de la cual se canaliza por los conductores 
+hasta llegar al receptor. Allí aparecerá como una tensión de ruido superpuesta a la señal útil. 
+La tensión de ruido tiene un valor cuadrático medio que es proporcional al ancho 
+de banda empleado; es por ello que este debe ser el menor posible a efectos de disminuir 
+este fenómeno.
+A estas tensiones indeseables se las conoce como ruido blanco, pues la densidad del rui-
+do es constante sobre todas las frecuencias de interés en las redes eléctricas convencionales. 
+Este hecho tiene analogía con el espectro de la luz blanca, de donde toma su nombre. También 
+se lo conoce como ruido gaussiano o ruido de Johnson.
+Luego, definiremos como ruido blanco al producido por el movimiento aleatorio de las partícu-
+las con carga eléctrica, en particular los electrones, en los medios conductores. 
+Cada partícula en movimiento tendrá una energía cinética que será proporcional a la tem-
+peratura absoluta, y a una constante denominada constante de Boltzmann. En el caso particu-
+lar del ruido generado por la resistencia de un conductor la potencia de ruido térmico además 
+será proporcional al ancho de banda del canal; luego, energía de ruido térmico resultará,
+ 
+E f k TR '  (3-67)
+Donde:
+ER = potencia del ruido en Watt.
+ k = 1,38 · 10 –23 Joule/Kelvin (constante de Baltzmann).
+T = grados Kelvin.
+Δf = ancho de banda [Hz].
+Obsérvese que el valor de la resistencia del circuito no desempeña papel alguno en la ge-
+neración de la potencia de ruido. La energía del ruido térmico en función del ancho de banda 
+de la ecuación (3-67) resultará igual a
+ 
+E
+f kTR  '  
+(3-68)
+En términos dimensionales resultará,
+ 
+[ ]
+[ ] = [ ][ ] = [ ]E
+Hz Joule seg WattR
+ 
+(3-69)
+Luego, en la ecuación (3-68), reemplazando según la (3-69), tendremos,
+ 
+P E
+HR
+R
+Z
+=
+ 
+(3-70)
+Definiremos como potencia del ruido térmico al valor,
+ 
+P E
+segR
+R=
+ 
+(3-71)
+Y recordando la (3-68), resultará,
+ P kTR =  (3-72)
+John	 Bertrand	 Johnson	 (1887-
+1970).	 Se	 desempeñó	 como	 in-
+vestigador	 e	 ingeniero	 en	 los	
+Laboratorios	Bell,	en	los	campos	
+de	 Física	 e	 Ingeniería	 en	 teleco-
+municaciones.	 Estudió	 el	 ruido	
+producido	en	los	conductores	de	
+metálicos	 por	 efecto	 de	 la	 tem-
+peratura	 y	 compiló	 sus	 investi-
+gaciones	en	su	trabajo	“Thermal	
+Agitation	of	Electricity	in	Conduc-
+tors”.	Además,	fue	un	pionero	en	
+los	trabajos	sobre	los	transistores	
+por	 efecto	 de	 campo.	 En	 la	 ac-
+tualidad,	 por	 sus	 estudios	 sobre	
+ruido	 térmico,	 a	 este	 fenómeno	
+también	se	lo	conoce	como	ruido	
+de	Johnson.	
+
+===== PÁGINA PDF 221 =====
+3.8 Ruido
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+195
+En comunicaciones se acostumbra a expresar la potencia en dBm, para ello, recordando la 
+expresión que define el dBm de la ecuación (2-93), tendremos,
+ dBm P mW
+mW
+S= log [ ]10 1  
+(2-93)
+  (3-73)
+Calculemos ahora la potencia de ruido en dBm por Hz de ancho de banda para una tempe-
+ratura de 20° C, para lo cual reemplazaremos en (3-68) por sus valores
+  (3-74)
+ , , 6 2P dBmR [ ] = –228 4 66 ≅  (3-75)
+Si consideramos la temperatura de 20° C como un valor ambiente normal, luego, para valo-
+res de anchos de banda diferentes a 1 Hz, tendremos la expresión final de cálculo,
+ P dBm dBm fR [ ]  –  log204 10 '  (3-76)
+Y para otras temperaturas diferentes, (3-72) resultará la expresión más general,
+ PR [dBm]   –228,6  10 logT  10 log 'f  (3-77)
+Ejemplo 3-20
+Se desea conocer la potencia de ruido térmico en dBm de un canal de voz de 4.000 Hz 
+y de un canal de video de 6 MHz de ancho de banda a temperatura ambiente de 20° C. 
+Calcular el mismo valor pero suponiendo que la temperatura aumentó a un valor de 35° C.
+A 20° C la potencia de ruido para un canal telefónico será igual a
+ 
+ P dBm dBmR [dBm] = – +204 36
+ P dBm dBmR [ ] = –168
+A 20° C, la potencia de ruido para un canal de video será igual a
+ 
+P dBm dBmR [ ] = – + log204 10 6 000 00 0. .
+ 
+P dBm dBm dBmR [ ] = – + ,204 67 8
+ 
+P dBm dBmR [ ] = – , 136 2
+Calculemos ahora los mismos valores a la temperatura de 35° C. A ella, expresión de 
+la potencia de ruido en dBm tomada de la ecuación (3-36), resultará
+ 6 1 , (P dBm fR [ ]  –  log   log228 0 273 35 10 ) '
+ , , 6 2P dBm fR [ ]  –   log228 4 9 10 '
+ PR [dBm]   –203,7  10 log 'f
+A 35° C, la potencia de ruido para un canal telefónico será igual a
+ 
+7 3P dBmR [ ] = – +, 203 6
+ P dBm dBmR [ ] = – , 167 7
+A 35° C, la potencia de ruido para un canal de video será igual a
+ 
+, , 7 6P dBmR [ ] = – +203 7 8
+ 
+P dBm dBmR [ ] = – , 135 9
+3.8.3.2 Ruido blanco, gaussiano o de Johnson
+proporcional a la temperatura absoluta a la que se encuentran las partículas.
+La tensión de ruido tiene un 
+de banda empleado
+este fenómeno.
+A estas tensiones indeseables se las conoce como ruido blanco
+se lo conoce como ruido gaussiano o ruido de Johnson.
+las con carga eléctrica, en particular los electrones, en los medios conductores. 
+será proporcional al ancho de banda del canal; luego, energía de ruido térmico resultará,
+  
+Donde:
+ER = potencia del ruido en Watt.
+ k = 1,38 · 10 –23 Joule/Kelvin (constante de Baltzmann).
+T = grados Kelvin.
+Δf = ancho de banda [Hz].
+de la ecuación (3-67) resultará igual a
+  
+En términos dimensionales resultará,
+  
+Luego, en la ecuación (3-68), reemplazando según la (3-69), tendremos,
+  
+Definiremos como potencia del ruido térmico al valor,
+  
+Y recordando la (3-68), resultará,
+  
+
+===== PÁGINA PDF 222 =====
+3 - Técnicas de la transmisión de la información196
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+El ruido blanco se extiende a todo el espectro de frecuencias, al menos hasta las frecuencias 
+Sin embargo, en los sistemas de comunicaciones reales, tanto las señales útiles como el 
+Por lo tanto, se indica que el ruido está limitado en banda, y corresponde al ancho de 
+Se denomina ruido impulsivo al que se produce a intervalos irregulares, con picos de corta 
+ Muchas veces es difícil 
+Su presencia provoca numerosos problemas en las redes digitales. En muchos casos pro-
+En particular este ruido no produce efectos significativos importantes en los canales 
+centrales de conmutación 
+. En ellas es introducido por los selectores elec-
+En la Fig. 3.33., se puede observar el efecto del ruido impulsivo en un canal digital.
+Los equipos módems pueden tener ciertas facilidades para eliminar o discriminar el ruido 
+Si este tipo de ruido se torna muy perjudicial al sistema, en los canales deberán colocarse 
+De los resultados obtenidos se puede apreciar que los cambios de temperatura tienen poca 
+influencia en los valores finales; no así los anchos de banda considerados.
+La consideración de la independencia del ruido con la frecuencia solo es válida cuando, por 
+ejemplo, como en el ruido de granalla, el tiempo de tránsito del electrón se supone despreciable.
+Si se tienen señales analógicas o digitales como las graficadas en la Fig. 3.31., se puede 
+observar que el ruido blanco se suma a la señal a transmitir formando un ruido de fondo de 
+bajo nivel, que puede llegar a producir errores si los niveles de la señal útil son bajos. 
+En las transmisiones a través de enlaces, en que se utiliza como uno de los medios de 
+comunicaciones un satélite, suelen manejarse niveles bajos de recepción en las señales útiles. 
+En estos casos este ruido produce efectos mayores.
+El estudio de los efectos de este ruido se basa en la distribución normal de Gauss. Ello se 
+debe a que es imposible hacer predicciones exactas acerca de la magnitud de este efecto en cual-
+quier instante en razón de que su comportamiento no es del tipo determinativo, sino estadístico.
+Sin embargo, dado que el número de eventos considerados es muy alto, el comportamien-
+to medio se define de manera acertada en términos estadísticos usando la distribución de 
+Gauss, cuya gráfica se indica en la Fig. 3.32.; la frecuencia de emisión está representada por 
+el eje de abscisas.
+Mediante la distribución normal podemos hallar la probabilidad de que la onda de ruido 
+alcance un valor particular en un instante determinado. Una propiedad de la distribución de 
+Gauss es que siempre habrá una probabilidad finita, aunque pequeña, de que se pueda exce-
+der cualquier nivel. 
+6HxDODQDOyJLFD
+5XLGR
+6HxDOUHVXOWDQWH
+6HxDOGLJLWDO
+5XLGR
+6HxDOUHVXOWDQWH
+6HxDOHVVLQUXLGR
+5XLGR
+6HxDO5XLGR
+Fig. 3.31.	Efectos	del	ruido	blanco	sobre	las	señales.
+        
+;
+S
+)[
+S S Dentro	 del	 ruido	 blanco,	 gaus -
+siano	 o	 de	 Johnson,	 se	 conoce	
+como	 ruido	 de	 granalla	 al	 pro -
+ducido	 por	 los	 elementos	 acti -
+vos	 exclusivamente,	 como	 en	
+el	 caso	 de	 válvulas	 electrónicas,	
+transistores,	 circuitos	 integrados,	
+etcétera.
+
+
+===== PÁGINA PDF 223 =====
+3.8 Ruido
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+197
+El ruido blanco se extiende a todo el espectro de frecuencias, al menos hasta las frecuencias 
+límite, que por lo general están fuera de las bandas utilizadas en las radiocomunicaciones. 
+Sin embargo, en los sistemas de comunicaciones reales, tanto las señales útiles como el 
+ruido se transmiten a través de circuitos selectivos (filtros) que solo permitirán que aparezcan 
+a la salida del sistema las frecuencias de paso de esos filtros.
+Por lo tanto, se indica que el ruido está limitado en banda, y corresponde al ancho de 
+banda que el canal de comunicaciones deja pasar. Las frecuencias por encima y por debajo de 
+ese ancho de banda son atenuadas por el canal. 
+3.8.3.3 Ruido impulsivo
+Se denomina ruido impulsivo al que se produce a intervalos irregulares, con picos de corta 
+duración pero de gran amplitud, y que no aparece en forma continua. Muchas veces es difícil 
+localizar su origen.
+Su presencia provoca numerosos problemas en las redes digitales. En muchos casos pro-
+duce la invalidación de los datos transmitidos. En algunas circunstancias son provocados por 
+la propia señalización de los canales telefónicos. 
+En particular este ruido no produce efectos significativos importantes en los canales 
+analógicos. Sin embargo, puede ser de muy alto nivel en las centrales de conmutación 
+telefónica de tecnología electromecánica. En ellas es introducido por los selectores elec-
+tromecánicos que forman parte de estas, y por el acoplamiento de impedancias que se produ-
+ce a través de las baterías que usa la propia central.
+En la Fig. 3.33., se puede observar el efecto del ruido impulsivo en un canal digital.
+Los equipos módems pueden tener ciertas facilidades para eliminar o discriminar el ruido 
+impulsivo hasta un cierto valor.
+Si este tipo de ruido se torna muy perjudicial al sistema, en los canales deberán colocarse 
+contadores de ruido impulsivo para observar estadísticamente las horas del día en que este 
+afecta la transmisión en mayor medida.
+influencia en los valores finales; no así los anchos de banda considerados.
+ejemplo, como en el ruido de granalla, el tiempo de tránsito del electrón se supone despreciable.
+observar que el ruido blanco se suma a la señal a transmitir formando un ruido de fondo
+bajo nivel, que puede llegar a producir errores si los niveles de la señal útil son bajos. 
+En estos casos este ruido produce efectos mayores.
+El estudio de los efectos de este ruido se basa en la distribución normal de Gauss
+quier instante en razón de que su comportamiento no es del tipo determinativo, sino 
+to medio se define de manera acertada en términos estadísticos usando la 
+Gauss
+el eje de abscisas.
+der cualquier nivel. 
+6HxDODQDOyJLFD
+5XLGR
+6HxDOUHVXOWDQWH
+6HxDOGLJLWDO
+5XLGR
+6HxDOUHVXOWDQWH
+6HxDOHVVLQUXLGR
+5XLGR
+6HxDO5XLGR
+Fig. 3.32.	Distribución	de	Gauss.
+        
+;
+S
+)[
+S S 
+Las	 centrales	 de	 conmutación	
+telefónica	 de	 tecnología	 electro-
+mecánica,	 ya	 casi	 no	 existen	 en	
+las	 redes	 públicas.	 Solo	 quedan	
+casos	 aislados	 en	 las	 centrales	
+privadas	 de	 usuarios	 que	 aún	
+no	 renovaron	 su	 equipamiento.	
+Esta	 situación	 permitió	 el	 mejo-
+ramiento	sustancial	de	la	relación	
+señal/ruido	en	los	canales	telefó-
+nicos	 y ,	 por	 lo	 tanto,	 la	 posibili-
+dad	de	alcanzar	velocidades	más	
+altas	 en	 conexiones	 dial-up	 con	
+respecto	 a	 las	 que	 se	 obtenían	
+hace	unos	pocos	años.
+Se	 denomina	 ruido	 impulsivo	
+al	 que	 se	 produce	 a	 intervalos	
+irregulares,	 con	 picos	 de	 corta	
+duración	 pero	 de	 gran	 ampli-
+tud,	y	que	no	aparece	en	forma	
+continua.
+
+
+===== PÁGINA PDF 224 =====
+3 - Técnicas de la transmisión de la información198
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Para eliminar el efecto de la diafonía al que están expuestos los canales telefónicos cons-
+En la Fig. 3.34. se muestra una forma práctica de realizar una transposición. Para evitar el 
+La diafonía también se presenta cuando los filtros que forman parte de un canal de comu-
+3.8.3.6. Ruido de línea o simple
+Se denomina ruido simple o de línea, al 
+que se produce por la presencia de líneas 
+eléctricas de energía que se utilizan en las 
+instalaciones eléctricas, para iluminación y 
+alimentación de equipos y/o sistemas eléc-
+tricos y electrónicos.
+Cuando estas líneas están cerca de 
+canales de comunicación, por efecto de 
+la inducción electromagnética afectan las 
+transmisiones de señales que circulan por 
+ellas.
+Las líneas de alta tensión y los transfor-
+madores de potencia son las fuentes princi-
+pales de este tipo de ruido. Se puede reducir 
+y en ciertos casos hasta eliminar el ruido de 
+filtros de línea, que eliminan 
+Definiremos como distorsión la deformación que sufre una señal eléctrica a causa de 
+La distorsión puede producirse por varias causas:
+ • Por atenuación
+ • Por retardo de grupo
+ • Por efectos meteorológicos
+Llamaremos distorsión por atenuación a la que se produce a causa de las características 
+Si recordamos la expresión (2-137), podemos observar que la impedancia de un canal de 
+ 
+Z, tal que
+Los pulsos de ruido al presentarse, en general en ráfagas, también son conocidos por la 
+expresión en inglés burst. Se suelen presentar como su expresión en inglés, en ráfagas o en 
+forma dispersa en el tiempo, con duraciones variables. Cuando se presentan en los canales 
+digitales normalmente afectan a varios bits seguidos.
+3.8.3.4 Ruido de intermodulación
+Se denomina ruido de intermodulación al que se produce cuando se aplican varias señales 
+senoidales a un dispositivo no lineal; o cuando varias señales multiplexadas en frecuencia por 
+el mismo canal sufren desplazamientos de sus portadoras, ocupando las bandas de protección 
+y encimándose a las señales contiguas.
+En el caso señalado aparecen frecuencias adicionales que no están relacionadas de mane-
+ra armónica con las frecuencias de la señal. Los productos de la intermodulación afectan en 
+forma especial los sistemas multiplexados en frecuencia. 
+En general, la alta temperatura puede ser uno de los factores que más afecta la estabilidad 
+de los circuitos. Cuando es de un valor importante, las señales no se mantienen dentro de ban-
+da, y producen desplazamientos de las frecuencias de las portadoras, que resultan indeseables 
+cuando generan este tipo de ruido.
+3.8.3.5 Diafonía
+Se denomina diafonía al ruido que se produce por el acoplamiento indeseado entre dos 
+señales a causa de la inducción electromagnética mutua, por lo general producida entre con-
+ductores. Esta se conoce vulgarmente como crosstalk.
+Un ejemplo de ello son los pares telefónicos que corren paralelos muchos kilómetros o los 
+circuitos eléctricos de alta tensión, instalados próximos a la ruta telefónica.
+6HxDOGLJLWDOWUDQVPLWLGD
+5XLGRLPSXOVLYR
+6HxDOUHFLELGDFRQUXLGRLPSXOVLYR
+8PEUDOGH
+GHWHFFLyQ
+(UURUHV\ELW
+
+
+;
+
+
+
+
+
+
+
+
+;
+
+
+W
+W
+W
+Fig. 3.33.	Efecto	del	ruido	impulsivo	en	transmisiones	digitales.
+	Esquema	de	una	trasposición	en	
+	tendido	aéreo	de	cables	de	cobre.
+Se	 denomina	 ruido	 de	 inter -
+modulación	 al	 que	 se	 produce	
+cuando	se	aplican	varias	señales	
+senoidales	 a	 un	 dispositivo	 no	
+lineal;	 o	 cuando	 varias	 señales	
+multiplexadas	 en	 frecuencia	 por	
+el	 mismo	 canal	 sufren	 despla-
+zamientos	 de	 sus	 portadoras,	
+ocupando	las	bandas	de	protec-
+ción	y	encimándose	a	las	señales	
+contiguas.
+Se	 denomina	 diafonía	 al	 ruido	
+que	 se	 produce	 por	 el	 acopla-
+miento	 indeseado	 entre	 dos	
+señales	 a	 causa	 de	 la	 inducción	
+electromagnética	 mutua,	 por	 lo	
+general	 producida	 entre	 con-
+ductores.	Esta	se	conoce	vulgar -
+mente	como	crosstalk.
+
+
+===== PÁGINA PDF 225 =====
+3.9 Distorsión
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+199
+Para eliminar el efecto de la diafonía al que están expuestos los canales telefónicos cons-
+tituidos por cables de cobre, se suelen realizar transposiciones. Estas consisten en cambiar la 
+posición de los conductores de una ruta telefónica para compensar las inducciones electro-
+magnéticas mutuas que se producen entre esos conductores.
+En la Fig. 3.34. se muestra una forma práctica de realizar una transposición. Para evitar el 
+corte de los alambres, se levanta uno de ellos alrededor de dos centímetros, mientras que el 
+otro se baja otro tanto, en el punto de transposición.
+La diafonía también se presenta cuando los filtros que forman parte de un canal de comu-
+nicaciones son de poca calidad o se encuentran mal diseñados. 
+3.8.3.6. Ruido de línea o simple
+Se denomina ruido simple o de línea, al 
+que se produce por la presencia de líneas 
+eléctricas de energía que se utilizan en las 
+instalaciones eléctricas, para iluminación y 
+alimentación de equipos y/o sistemas eléc-
+tricos y electrónicos.
+Cuando estas líneas están cerca de 
+canales de comunicación, por efecto de 
+la inducción electromagnética afectan las 
+transmisiones de señales que circulan por 
+ellas.
+Las líneas de alta tensión y los transfor-
+madores de potencia son las fuentes princi-
+pales de este tipo de ruido. Se puede reducir 
+y en ciertos casos hasta eliminar el ruido de 
+línea mediante la utilización de filtros especiales denominados filtros de línea, que eliminan 
+las frecuencias de 50 Hz o 60 Hz correspondientes a las tensiones de alimentación.
+3.9 Distorsión
+3.9.1 Definición y conceptos generales
+Definiremos como distorsión la deformación que sufre una señal eléctrica a causa de 
+elementos del propio circuito, como resistencias, condensadores o bobinas, o de otros ex-
+ternos a él.
+La distorsión puede producirse por varias causas:
+ • Por atenuación
+ • Por retardo de grupo
+ • Por efectos meteorológicos
+3.9.2 Distorsión por atenuación
+Llamaremos distorsión por atenuación a la que se produce a causa de las características 
+resistivas y reactivas del canal físico de comunicaciones.
+Si recordamos la expresión (2-137), podemos observar que la impedancia de un canal de 
+comunicaciones se puede expresar mediante un número complejo Z, tal que
+expresión en inglés burst
+digitales normalmente afectan a varios bits seguidos.
+3.8.3.4 Ruido de intermodulación
+y encimándose a las señales contiguas.
+forma especial los sistemas multiplexados en frecuencia. 
+cuando generan este tipo de ruido.
+3.8.3.5 Diafonía
+ductores. Esta se conoce vulgarmente como crosstalk.
+circuitos eléctricos de alta tensión, instalados próximos a la ruta telefónica.
+6HxDOGLJLWDOWUDQVPLWLGD
+5XLGRLPSXOVLYR
+6HxDOUHFLELGDFRQUXLGRLPSXOVLYR
+8PEUDOGH
+GHWHFFLyQ
+(UURUHV\ELW
+
+
+;
+
+
+
+
+
+
+
+
+;
+
+
+W
+W
+W
+Fig. 3.33.	Efecto	del	ruido	impulsivo	en	transmisiones	digitales.
+Fig. 3.34.	Esquema	de	una	trasposición	en	
+un	tendido	aéreo	de	cables	de	cobre.
+Normalmente,	 al	 nivel	 del	 usua-
+rio	 final	 trabaja	 las	 líneas	 eléc-
+tricas	 de	 energía	 con	 tensiones	
+y	 frecuencias	 típicas	 de	 220	
+Volt/50	Hertz	o	110	Volt/60	Hertz.	
+Sin	 embargo,	 si	 se	 estuviera	 cer-
+ca	 de	 una	 línea	 de	 alta	 tensión,	
+usada	 para	 transportar	 energía	
+eléctrica	a	gran	número	de	usua-
+rios,	 los	 problemas	 podrían	 ser	
+mucho	mayores.
+Se	 denomina	 ruido	 simple	 o	 de	
+línea,	 al	 que	 se	 produce	 por	 la	
+presencia	 de	 líneas	 eléctricas	
+de	 energía	 que	 se	 utilizan	 en	
+las	 instalaciones	 eléctricas,	 para	
+iluminación	 y	 alimentación	 de	
+equipos	 y/o	 sistemas	 eléctricos	
+y	electrónicos.
+La	 distorsión	 es	 la	 deformación	
+que	 sufre	 una	 señal	 eléctrica	 a	
+causa	 de	 elementos	 del	 pro-
+pio	 circuito,	 como	 resistencias,	
+condensadores	o	bobinas,	o	de	
+otros	externos	a	él.
+
+
+===== PÁGINA PDF 226 =====
+3 - Técnicas de la transmisión de la información200
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+  (2-82)/(3-79)
+  
+(2-83)/(3-80)
+Reemplazando, en la (2-137/3-78), la impedancia quedará igual a
+ 
+ (3-81)
+Como se puede apreciar de la expresión (3-81), la parte compleja de la impedancia va-
+En los canales de comunicaciones las señales están definidas en un intervalo de frecuen-
+En general los módems están preparados para corregir este fenómeno dentro de ciertos 
+1 kHz con una atenuación de –4 dB y después otra de 2,8 kHz con 
+ de atenuación.
+En la Fig. 3.36. se pueden observar las características de la atenuación en función de la 
+ y por arriba de 3400 Hz no son necesarias para la recepción inteligible de la voz, por lo 
+300 a 3400 Hz. 
+ Z = R + j (XL – XC ) (2-137)/(3-78)
+donde:
+R = resistencia óhmica.
+j = unidad imaginaria.
+XL = reactancia inductiva.
+XC = reactancia capacitiva.
+A su vez, de la (2-138) sabemos que la resistencia óhmica R es directamente proporcional a 
+un coeficiente, que depende del material que constituye el conductor denominado resistividad 
+y de la longitud de este. A su vez, su valor es inversamente proporcional a su sección.
+Luego, se puede deducir que la atenuación de un canal físico formado por un conductor 
+metálico se incrementa cuando aumenta su longitud, y disminuye cuando se usan conducto-
+res de mayor sección. 
+En este último caso, a mayor sección mayor peso del conductor, por lo tanto, se eleva el 
+costo por kilómetro. Otra manera de expresar el mismo fenómeno físico es indicar que a medi-
+da que nos alejamos de la fuente que origina la señal la intensidad de ella es menor. 
+Luego, para contrarrestar la atenuación producida por la resistencia en canales analógicos, 
+se utilizan circuitos amplificadores, como se puede observar en la Fig. 3.35.
+La resistencia 
+R óhmica en sí es un parámetro independiente de la frecuencia. Cuando en 
+un medio conductor la resistividad tiende a cero, se indica que estamos en presencia de un 
+superconductor. Sin embargo, en los casos que hemos descripto, la presencia de la resisten-
+cia se debe a que la falta de perfección los conductores hace que cuando circula una corriente 
+eléctrica por ellos disipen energía en forma de calor.
+En cuanto a las reactancias inductiva y capacitiva, su valor sí es función de la frecuencia. 
+En efecto, recordando las expresiones (2-82) y (2-83), podemos observar que
+Fig. 3.35.	Efectos	de	la	resistencia	eléctrica	en	una	línea	de	transmisión.
+6HxDOGHHQWUDGD
+HQODOtQHD
+*HQHUDGRU
+6HxDOGHVDOLGDGH
+ODOtQHDDWHQXDGRUD
+/tQHDGH
+WUDQVPLVLyQ
+6HxDOGHVDOLGD
+GHODPSOLILFDGRU
+$PS
+5HFHSWRU
+&DQDOLGHDO
+&DQDOUHDOGHEDMDFDOLGDG
+$WHQXDFLyQ
+$WHQXDFLyQ G%
+G%
+
+   
+$Z
+I+]
+I+]
+Fig. 3.36.	Características	de	la	atenuación/frecuencia	en	canales	vocales	y	reales.
+
+===== PÁGINA PDF 227 =====
+3.9 Distorsión
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+201
+ 
+X fLL = 2π
+ (2-82)/(3-79)
+ 
+X CC = 1
+2 π  
+(2-83)/(3-80)
+Reemplazando, en la (2-137/3-78), la impedancia quedará igual a
+ 
+( )Z R j fC= + 2 fL – 1
+2 π  (3-81)
+Como se puede apreciar de la expresión (3-81), la parte compleja de la impedancia va-
+ría según la frecuencia. Luego, para cada frecuencia corresponderá una impedancia distinta. 
+Además, si la corriente fuera continua, esto es, de frecuencia nula, la parte imaginaria de esa 
+expresión se anularía. En ese caso particular, la impedancia y la resistencia óhmica resultarían 
+iguales.
+En los canales de comunicaciones las señales están definidas en un intervalo de frecuen-
+cias, y para el caso particular tendremos valores diferentes de impedancia; en consecuencia, la 
+señal transmitida tendrá también diversos niveles de atenuación, según su valor.
+En general los módems están preparados para corregir este fenómeno dentro de ciertos 
+límites. Como se comprenderá con facilidad, es ilógico pensar que los módems puedan recibir 
+sin problemas señales de 
+1 kHz con una atenuación de –4 dB y después otra de 2,8 kHz con 
+–20 dB de atenuación.
+En la Fig. 3.36. se pueden observar las características de la atenuación en función de la 
+frecuencia para un canal telefónico ideal de frecuencia vocal. Las frecuencias por debajo de 
+300 Hz y por arriba de 3400 Hz no son necesarias para la recepción inteligible de la voz, por lo 
+que la atenuación aumenta fuera de la banda de 300 a 3400 Hz. 
+ Z = R + j (XL – XC ) 
+donde:
+R = resistencia óhmica.
+j = unidad imaginaria.
+XL = reactancia inductiva.
+XC = reactancia capacitiva.
+A su vez, de la (2-138) sabemos que la resistencia óhmica R
+y de la longitud de este. A su vez, su valor es inversamente proporcional a su sección.
+res de mayor sección. 
+da que nos alejamos de la fuente que origina la señal la intensidad de ella es menor. 
+se utilizan circuitos amplificadores, como se puede observar en la Fig. 3.35.
+La resistencia R
+superconductor
+eléctrica por ellos disipen energía en forma de calor.
+En efecto, recordando las expresiones (2-82) y (2-83), podemos observar que
+6HxDOGHHQWUDGD
+HQODOtQHD
+*HQHUDGRU
+6HxDOGHVDOLGDGH
+ODOtQHDDWHQXDGRUD
+/tQHDGH
+WUDQVPLVLyQ
+6HxDOGHVDOLGD
+GHODPSOLILFDGRU
+$PS
+5HFHSWRU
+&DQDOLGHDO
+&DQDOUHDOGHEDMDFDOLGDG
+$WHQXDFLyQ
+$WHQXDFLyQ G%
+G%
+
+   
+$Z
+I+]
+I+]
+Fig. 3.36.	Características	de	la	atenuación/frecuencia	en	canales	vocales	y	reales.
+Se	 denomina	 superconductividad	
+al	 fenómeno	 que	 presentan	 cier-
+tos	 conductores	 que	 no	 muestran	
+resistencia	al	flujo	de	una	corriente	
+eléctrica.	 Fue	 descubierto	 en	 1911	
+por	 el	 físico	 holandés	 Heike	 Ka-
+merlingh	Onnes	mientras	trabajaba	
+con	una	muestra	de	mercurio	que	
+se	 encontraba	 a	 una	 temperatura	
+de	4,2°	Kelvin	(-268,8	°C),	 observó	
+que	la	resistencia	desaparecía	en	
+forma	 abrupta.	 Después	 fue	 de-
+sarrollado	 por	 Karl	 W.	 Meissner	
+y	 R.	 Ochsenfeld	 en	 1933	 sus	 tra-
+bajos	 dieron	 lugar	 al	 estudio	 de	
+“física	 a	 bajas	 temperaturas”,	
+aunque	 también	 se	 verifica	 a	
+temperaturas	más	altas.	En	1987,	
+Georg	Bednorz	y	Alex	Mueller	re-
+cibieron	el	premio	Nobel	en	Físi-
+ca	por	el	descubrimiento	de	ma-
+teriales	que	se	comportan	como	
+superconductores	 a	 temperatu-
+ras	mayores	que	las	pensadas	en	
+un	principio.
+
+
+===== PÁGINA PDF 228 =====
+3 - Técnicas de la transmisión de la información202
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Como caso particular puede ocurrir que a una frecuencia denominada frecuencia de re-
+ la reactancia inductiva sea igual a la reactancia capacitiva.
+En ese caso resultará:
+  (3-82)
+Luego, la impedancia y la resistencia óhmica resultarán iguales, Z = R. La frecuencia a la 
+  (3-83)
+A esa frecuencia el canal no tendrá efecto reactivo alguno.
+Llamaremos distorsión por retardo de grupo, o de fase, a la que se produce como con-
+.
+La velocidad de propagación de las señales es función de la frecuencia. Al estar definidas 
+En las líneas que poseen características inductivas, las frecuencias más bajas viajan más 
+Recordando la expresión de la reactancia inductiva:
+  (3-84)
+Se puede observar que esta es directamente proporcional a la frecuencia. Luego, resulta 
+XL, con lo que se 
+Por otro lado, en las líneas que poseen características capacitivas la situación es inversa. 
+Recordando la expresión de la reactancia capacitiva:
+  (3-85)
+Se puede observar que esta es inversamente proporcional a la frecuencia. Luego, resulta 
+XC, con lo que se 
+Los circuitos compensadores o ecualizadores tienen capacidad para corregir este efec-
+Las normas internacionales de la UIT-T especifican los límites permitidos de este tipo de 
+milisegundos (Fig. 3.40.). 
+Los canales de frecuencia de voz en realidad son canales pasabanda que tienen un ancho 
+3.100 Hz. Si se aplica en ellos un impulso, a su salida se obtendrá una 
+Asimismo, se grafican las características típicas de la atenuación en función de la fre-
+cuencia para un canal telefónico real. Es por ello que existen circuitos especiales llamados 
+compensadores o ecualizadores (ver apartado 3.4.7.3 de este capítulo), que en la mayoría 
+de los casos están incluidos en los circuitos de los módems para corregir esta irregularidad.
+Las Normas Internacionales de la UIT-T fijan límites a los que se deben ajustar las carac-
+terísticas de las líneas. Por ejemplo, los circuitos de calidad normal deben cumplir con la 
+Recomendación m. 1040 de la UIT-T, y los circuitos denominados de calidad especial, con 
+la Recomendación m. 1020 de la UIT-T. 
+Analicemos el ejemplo de la norma M. 1020 de calidad especial y los valores máximos 
+permitidos. En la Fig. 3.37. se muestran los valores aceptados de distorsión por atenuación, 
+expresados en 
+dB para este tipo de canales. Esta figura se complementa con dos más, la Fig. 
+3.38., en la que se expresan los máximos en milisegundos para retardos de grupo, y la 3-39. 
+En esta última se graficó el ruido aleatorio permitido expresado en dBm, para que un canal de 
+comunicaciones sea de la calidad señalada. 
+Fig. 3.37.	Recomendación	M.1020.	Distorsión	por	atenuación.
+3DUDODVIUHFXHQFLDVLQIHULRUHVD+]\VXSHULRUHVD+]HOHTXLYDOHQWH
+SXHGHWHQHUXQYDORUFXDOTXLHUDVLHPSUHTXHQRVHDQHJDWLYR
+
+
+
+
+G%
+
+
+
+
+ I+]
+/tPLWHVGHOUHWDUGRGHJUXSRGHEHQPHGLUVHHQUHODFLyQFRQHOUHWDUGR
+PtQLPRPHGLGRHQODEDQGDGHD+]
+5HWDUGHGHJUXSR
+
+
+
+
+
+
+
+PV
+   I+]
+Fig. 3.38.	Recomendación	M.1020.	Distorsión	por	retardo	de	grupo.
+/RQJLWXGGHOFLUFXLWR
+5HWDUGRDOHDWRULR
+
+
+
+
+
+G%P2S
+      HQNP
+Fig. 3.39.	Recomendación	M.1020.	Ruido	aleatorio.
+
+===== PÁGINA PDF 229 =====
+3.9 Distorsión
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+203
+Como caso particular puede ocurrir que a una frecuencia denominada frecuencia de re-
+sonancia la reactancia inductiva sea igual a la reactancia capacitiva.
+En ese caso resultará:
+ X XL C=  (3-82)
+Luego, la impedancia y la resistencia óhmica resultarán iguales, Z = R. La frecuencia a la 
+que se produce el efecto de resonancia resultará de reemplazar en la expresión (3-82) por los 
+valores de las reactancias inductiva y capacitiva, por lo que si se opera en forma conveniente 
+tendremos
+ 
+fr
+LC
+= 1
+2 π  (3-83)
+A esa frecuencia el canal no tendrá efecto reactivo alguno.
+3.9.3 Distorsión por retardo de grupo
+Llamaremos distorsión por retardo de grupo, o de fase, a la que se produce como con-
+secuencia de que las distintas partes componentes de una señal se propagan en 
+el canal a velocidades diferentes, y arriban al colector en un intervalo de tiempo 
+distinto de cero.
+La velocidad de propagación de las señales es función de la frecuencia. Al estar definidas 
+las señales por un intervalo de frecuencias, para cada frecuencia del intervalo habrá una velo-
+cidad diferente.
+En las líneas que poseen características inductivas, las frecuencias más bajas viajan más 
+rápido que las frecuencias más altas.
+Recordando la expresión de la reactancia inductiva:
+ 
+X . LL = 2 π f  (3-84)
+Se puede observar que esta es directamente proporcional a la frecuencia. Luego, resulta 
+que para las señales que tienen frecuencias más altas mayor será el valor de XL, con lo que se 
+incrementa el valor de la impedancia de la línea a esa frecuencia, frente a otras de menor valor.
+Por otro lado, en las líneas que poseen características capacitivas la situación es inversa. 
+Las frecuencias más altas viajan a velocidades mayores que las más bajas. 
+Recordando la expresión de la reactancia capacitiva:
+ Xc = 1
+2 π .Cf  (3-85)
+Se puede observar que esta es inversamente proporcional a la frecuencia. Luego, resulta 
+que para las señales que tienen frecuencias más bajas, mayor será el valor XC, con lo que se 
+incrementa el valor de la impedancia de la línea a esa frecuencia, frente a otras de mayor valor.
+Los circuitos compensadores o ecualizadores tienen capacidad para corregir este efec-
+to nocivo dentro de ciertos límites. 
+Las normas internacionales de la UIT-T especifican los límites permitidos de este tipo de 
+distorsión. Los valores de retardo de grupo permitidos según la calidad de cada canal se ex-
+presan en milisegundos (Fig. 3.40.). 
+Los canales de frecuencia de voz en realidad son canales pasabanda que tienen un ancho 
+de banda aproximado de 3.100 Hz. Si se aplica en ellos un impulso, a su salida se obtendrá una 
+señal, compuesta por un conjunto de ecos adyacentes al impulso de entrada. 
+compensadores o ecualizadores 
+de los casos están incluidos en los circuitos de los módems para corregir esta irregularidad.
+terísticas de las líneas. Por ejemplo, los circuitos de calidad normal
+Recomendación m. 1040 de la UIT-T, y los circuitos denominados de calidad especial
+la Recomendación m. 1020 de la UIT-T. 
+expresados en dB
+comunicaciones sea de la calidad señalada. 
+/tPLWHVGHOUHWDUGRGHJUXSRGHEHQPHGLUVHHQUHODFLyQFRQHOUHWDUGR
+PtQLPRPHGLGRHQODEDQGDGHD+]
+5HWDUGHGHJUXSR
+
+
+
+
+
+
+
+PV
+  
+Fig. 3.38.	Recomendación	M.1020.	Distorsión	por	retardo	de	
+/RQJLWXGGHOFLUFXLWR
+5HWDUGRDOHDWRULR
+
+
+
+
+
+G%P2S
+      HQNP
+
+===== PÁGINA PDF 230 =====
+3 - Técnicas de la transmisión de la información204
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+En particular en los de alta frecuencia (HF) o en los enlaces de microondas, esas 
+En estos últimos tipos de enlaces descriptos, cuando el medio dieléctrico que separa las 
+Se denomina error de transmisión toda alteración o mutilación en un mensaje recibido, que 
+Los errores pueden alterar el contenido del mensaje de tal forma que este se vuelva in-
+, o bien, que sea útil a pesar de todo, por cuanto se puede interpretar el contenido, y 
+En la Fig. 3.41., se pueden observar dos mensajes transmitidos con errores. El primero de 
+En el otro mensaje, a pesar de que solo se invirtió un bit, se cambió en grado sustancial el 
+Todo sistema de transmisión de datos debe proveer los medios necesarios para detectar 
+Es así como se presenta un efecto no deseado denominado dispersión en el tiempo 
+de la señal . Esta dispersión aumenta en grado significativo la atenuación y la distorsión 
+por retardo de grupo de la señal. 
+En consecuencia, cada elemento de señal recibido está constituido por un componente 
+principal transmitido en forma directa, seguido de varios ecos, producidos por diferentes de-
+sadaptaciones en la línea.
+El efecto inmediato del retardo de grupo es la interferencia intersímbolos, que se produce 
+entre dos elementos (bits) de señales contiguas. Es por ello que existe un límite para la tasa a 
+la que puede transmitirse la señal, para un nivel de interferencia intersímbolos dado. 
+La interferencia intersímbolos originará que un elemento individual de la señal se alargue 
+hasta causar solapamiento e interferencia con el símbolo vecino. 
+Por lo general la porción dispersa de un elemento de la señal que causa interferencia con-
+tiene solo una fracción de la energía total, pues la mayor parte de ella se encuentra ubicada en 
+el intervalo de tiempo correcto.
+3.9.4 Distorsión por efectos meteorológicos (enlaces inalámbricos)
+Se denomina distorsión por efectos meteorológicos la que se produce a causa de lluvias, 
+nieve, tormentas de polvo u otras condiciones similares que afectan el medio de propagación 
+y producen cambios bruscos en la señal.
+Este tipo de distorsión afecta en particular la transmisión por medios radioeléctricos de 
+alta frecuencia –HF– y sobre todo los circuitos que utilizan microondas de muy alta y ultra-
+alta frecuencia –VHF y UHF.
+Estos efectos en general se producen en períodos cortos. En algunos casos es posible co-
+rregirlos en forma automática, o bien manual, cuando los operadores están atentos.
+Por ello, para minimizar sus efectos, es importante conocer con anticipación cuál es la 
+posibilidad de que se puedan presentar condiciones meteorológicas límite que afecten las 
+comunicaciones para cada situación geográfica; en caso de que existan, saber cuáles son las 
+épocas más probables de que estos fenómenos se produzcan. Si el defecto no se corrige, la tasa 
+de error puede crecer a límites no tolerables para un sistema de transmisión de datos.
+A diferencia de los circuitos telefónicos alámbricos, que no varían en grado apreciable en el tiem-
+po en cuanto a sus características de atenuación y retardo, los enlaces inalámbricos sí lo hacen. 
+5HWDUGR
+PV
+
+
+   I+]
+Fig. 3.40.	Distorsión	de	retardo	de	grupo	en	circuitos	telefónicos.
+(UURUHV
+  
+%\WH 11 1
+  
+%\WH 11 1
+U HFLELUi
+HOIRUPXODULR
+FRQOD
+PHUFDGHUtD
+U HFLELUi
+HOISUPXODULR
+FRQOD
+PHUFGHUt D
+Se	 denomina	 distorsión	 por	
+efectos	 meteorológicos	 la	 que	
+se	 produce	 a	 causa	 de	 lluvias,	
+nieve,	 tormentas	 de	 polvo	 u	
+otras	 condiciones	 similares	 que	
+afectan	 el	 medio	 de	 propaga-
+ción	 y	 producen	 cambios	 brus-
+cos	en	la	señal.
+
+
+===== PÁGINA PDF 231 =====
+3.10 Errores en el proceso de transmisión de datos
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+205
+En particular en los de alta frecuencia (HF) o en los enlaces de microondas, esas 
+características pueden cambiar de manera notoria con la situación meteorológica, durante un 
+lapso de tiempo variable, y afectar la confiabilidad del enlace.
+En estos últimos tipos de enlaces descriptos, cuando el medio dieléctrico que separa las 
+antenas (alineadas desde el punto de vista óptico) está afectado por una variación, la amplitud 
+de la señal puede tener variaciones importantes. Estas variaciones del dieléctrico son produ-
+cidas, entre otros casos, por el polvo en suspensión (tormenta de polvo), la nieve, el granizo o 
+fuertes tormentas de agua.
+3.10 Errores en el proceso de transmisión de datos 
+3.10.1 Conceptos generales
+3.10.1.1 Definición
+Se denomina error de transmisión toda alteración o mutilación en un mensaje recibido, que 
+hace que no sea una réplica fiel del mensaje tal como fue transmitido.
+Los errores pueden alterar el contenido del mensaje de tal forma que este se vuelva in-
+válido, o bien, que sea útil a pesar de todo, por cuanto se puede interpretar el contenido, y 
+aquellos no invalidan el sentido de lo que se quiso transmitir.
+En la Fig. 3.41., se pueden observar dos mensajes transmitidos con errores. El primero de 
+ellos contiene dos letras erróneas, sin embargo, es inteligible para el usuario receptor, que lo 
+puede interpretar de manera correcta. 
+En el otro mensaje, a pesar de que solo se invirtió un bit, se cambió en grado sustancial el 
+significado de la información transmitida.
+Todo sistema de transmisión de datos debe proveer los medios necesarios para detectar 
+los errores y recuperar los datos que se perdieron a causa de ellos. 
+Es así como se presenta un efecto no deseado denominado 
+de la señal
+por retardo de grupo de la señal. 
+principal transmitido en forma directa, seguido de varios ecos
+sadaptaciones en la línea.
+la que puede transmitirse la señal, para un nivel de interferencia intersímbolos dado. 
+hasta causar solapamiento e interferencia con el símbolo vecino. 
+el intervalo de tiempo correcto.
+3.9.4 Distorsión por efectos meteorológicos (enlaces inalámbricos)
+y producen cambios bruscos en la señal.
+alta frecuencia –HF– y sobre todo los circuitos que utilizan microondas de 
+alta frecuencia –VHF y UHF.
+rregirlos en forma automática, o bien manual, cuando los operadores están atentos.
+de error puede crecer a límites no tolerables para un sistema de transmisión de datos.
+po en cuanto a sus características de atenuación y retardo, los enlaces inalámbricos sí lo hacen. 
+5HWDUGR
+PV
+
+
+   I+]
+Fig. 3.40.	Distorsión	de	retardo	de	grupo	en	circuitos	telefónicos.
+Fig. 3.41.	Transmisión	de	mensajes	con	errores.
+(UURUHV
+  
+%\WH 11 1
+  
+%\WH 11 1
+U HFLELUi
+HOIRUPXODULR
+FRQOD
+PHUFDGHUtD
+U HFLELUi
+HOISUPXODULR
+FRQOD
+PHUFGHUt D
+Se	 denomina	 error	 de	 transmi-
+sión	toda	alteración	o	mutilación	
+en	 un	 mensaje	 recibido,	 que	
+hace	 que	 no	 sea	 una	 réplica	
+fiel	 del	 mensaje	 tal	 como	 fue	
+transmitido.
+
+
+===== PÁGINA PDF 232 =====
+3 - Técnicas de la transmisión de la información206
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+ • Errores en ráfagas.
+Son los que afectan a varios bits consecutivos, y se presentan en períodos de tiempo 
+indeterminados.
+ • Errores agrupados.
+Son aquellos que se producen en tandas sucesivas de cierta duración, y que no afec-
+tan necesariamente a varios bits seguidos.
+Tratamiento de los errores
+Una forma de disminuir, detectar y corregir errores de transmisión, es enviar datos adi-
+ en el contenido del mensaje. El contenido superabundante de información a los efec-
+Es así como en la transmisión sincrónica existe el compromiso entre el tamaño de los 
+Asimismo, cuando los bloques de mensajes son largos, con el objeto de aumentar la efi-
+En las transmisiones por la red telefónica conmutada, la tasa de error varía según la hora 
+El control de errores implica técnicas de diseño, fabricación de equipos y enlaces de trans-
+Una metodología posible es no tomarlos en cuenta, que parece algo trivial, pero no lo 
+Otra metodología empleada es la prueba de eco, que consiste en que cada vez que se 
+Este método desperdicia capacidad de transmisión pues, como mínimo, un mensaje se 
+Muchas veces, si el error se produce en el viaje de retorno, es una pérdida de tiempo inne-
+La detección de errores mediante el método de control de paridad se basa agregar otros 
+ adicionales en la secuencia de bits de información transmitidos. Estos bits 
+Existen dos tipos de transmisiones a considerar, según los receptores tengan raciocinio o 
+no. De operador a operador, y de máquina a máquina.
+3.10.1.2 De operador a operador 
+Cuando la comunicación se efectúa de operador a operador en forma directa, operando 
+las máquinas correspondientes, la intervención de estos permite la detección y la corrección 
+directa de los errores; asimismo, son ellos los que regulan los procedimientos de corrección y 
+retransmisión.
+3.10.1.3 De máquina a máquina
+Cuando no intervienen los operadores, solo se usa la inteligencia presente en el siste-
+ma para detectar los errores en forma automática, analizarlos, aceptarlos o rechazarlos de 
+manera parcial o total. En la Fig. 3.42. se detallan los métodos más importantes empleados 
+para la detección y la corrección de los errores que se utilizan en los sistemas de transmi-
+sión de datos.
+3.10.2 Tipos de errores
+Los errores se pueden clasificar, según su distribución en el tiempo, en los siguientes tipos:
+ • Errores aislados o simples.
+Son aquellos que afectan a un solo bit por vez; asimismo, son independientes entre sí, 
+en cuanto al momento en que se producen.
+9HUWLFDO9&5
+/RQJLWXGLQDO/5&
+%LGLPHQVLRQDORGH
+GREOHSDULGDG
+&tFOLFDR
+HQWUHOD]DGD
++DPPLQJ
++DJHOEDUJHU
+%RVH&KDXGXUt
+&RUUHFFLyQGHHUURUHV
+KDFLDDGHODQWH)(&
+5HTXHULPLHQWR
+DXWRPiWLFRGH
+UHSHWLFLyQ$54
+&RQWUROGH
+SDULGDG
+&yGLJR
+SROLQRPLQDO
+&yGLJRV
+DXWRFRUUHFWLYRV
+WpFQLFDV
+HVSHFLDOHVGH
+WUDQVPLVLyQ
+'HWHFFLyQ
+'HWHFFLyQ\
+FRUUHFFLyQ
+GHHUURUHV
+&RUUHFFLyQFig. 3.42.	Métodos	de	detección	y	corrección	de	errores.
+
+===== PÁGINA PDF 233 =====
+3.10 Errores en el proceso de transmisión de datos
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+207
+ • Errores en ráfagas.
+Son los que afectan a varios bits consecutivos, y se presentan en períodos de tiempo 
+indeterminados.
+ • Errores agrupados.
+Son aquellos que se producen en tandas sucesivas de cierta duración, y que no afec-
+tan necesariamente a varios bits seguidos.
+3.10.3 Tratamiento de los errores
+Una forma de disminuir, detectar y corregir errores de transmisión, es enviar datos adi-
+cionales en el contenido del mensaje. El contenido superabundante de información a los efec-
+tos de la detección y la corrección de errores se denomina redundancia. Cuanto mayor es la 
+cantidad de bits adicionales que no llevan información, si bien se logra una mayor protección 
+contra errores, disminuye la eficiencia del proceso de transmisión.
+Es así como en la transmisión sincrónica existe el compromiso entre el tamaño de los 
+bloques de cada mensaje y la eficiencia de la transmisión. Cuanto más pequeños sean los 
+bloques, se hace menos probable la necesidad de retransmitirlos, pero disminuye en grado 
+apreciable la eficiencia de la transmisión.
+Asimismo, cuando los bloques de mensajes son largos, con el objeto de aumentar la efi-
+ciencia, una mayor proporción de estos bloques tendrá errores y será necesario su retransmi-
+sión, lo que a la larga puede disminuir aún más su eficiencia.
+En las transmisiones por la red telefónica conmutada, la tasa de error varía según la hora 
+del día. Es por esto que cuando la tasa de error se torna muy elevada, lo más razonable es 
+disminuir la velocidad de modulación. 
+3.10.4 Detección de errores por métodos de control de paridad
+3.10.4.1 Consideraciones generales
+El control de errores implica técnicas de diseño, fabricación de equipos y enlaces de trans-
+misión de datos que reduzcan el porcentaje de errores. Además, incluye metodologías para 
+detectarlos y corregirlos.
+Una metodología posible es no tomarlos en cuenta, que parece algo trivial, pero no lo 
+es tanto en cuanto que en muchos casos, por el tipo de información a trasmitir y el uso que 
+esta recibirá, no es necesario que los errores se tomen en cuenta. Esta metodología reduce los 
+costos y aumenta el procesamiento total.
+Otra metodología empleada es la prueba de eco, que consiste en que cada vez que se 
+recibe un carácter o una unidad menor de información, se retransmite de vuelta al transmisor 
+de donde provino. En esta última estación se compara la información enviada con la transmi-
+tida desde el receptor. 
+Este método desperdicia capacidad de transmisión pues, como mínimo, un mensaje se 
+transmite dos veces, y en alguna oportunidad muchas más. 
+Muchas veces, si el error se produce en el viaje de retorno, es una pérdida de tiempo inne-
+cesaria. Se usa en líneas de baja velocidad, y si bien da cierto grado de protección, no tiene la 
+eficiencia de otros métodos más refinados.
+La detección de errores mediante el método de control de paridad se basa agregar otros 
+bits de control adicionales en la secuencia de bits de información transmitidos. Estos bits 
+no. De operador a operador, y de máquina a máquina.
+3.10.1.2 De operador a operador 
+retransmisión.
+3.10.1.3 De máquina a máquina
+sión de datos.
+3.10.2 Tipos de errores
+ • Errores aislados o simples.
+en cuanto al momento en que se producen.
+9HUWLFDO9&5
+/RQJLWXGLQDO/5&
+%LGLPHQVLRQDORGH
+GREOHSDULGDG
+&tFOLFDR
+HQWUHOD]DGD
++DPPLQJ
++DJHOEDUJHU
+%RVH&KDXGXUt
+&RUUHFFLyQGHHUURUHV
+KDFLDDGHODQWH)(&
+5HTXHULPLHQWR
+DXWRPiWLFRGH
+UHSHWLFLyQ$54
+&RQWUROGH
+SDULGDG
+&yGLJR
+SROLQRPLQDO
+&yGLJRV
+DXWRFRUUHFWLYRV
+WpFQLFDV
+HVSHFLDOHVGH
+WUDQVPLVLyQ
+'HWHFFLyQ
+'HWHFFLyQ\
+FRUUHFFLyQ
+GHHUURUHV
+&RUUHFFLyQ
+
+===== PÁGINA PDF 234 =====
+3 - Técnicas de la transmisión de la información208
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+El método conocido como LRC ( Longitudinal Redundancy Check,  Control de la paridad 
+N caracteres de 7 bits 
+En la Fig. 3.46., se muestra un ejemplo donde N = 5. Obsérvese que por cada carácter de 7 
+bit de paridad vertical, que en este caso es par, con lo que 
+Al finalizar el bloque de N caracteres, se transmitirá un carácter completo denomi-
+carácter de control del bloque , más conocido por su expresión block check 
+ (BCC).
+ • El carácter de control del bloque está calculado de la siguiente manera:
+Se toman los bits ubicados en la posición número uno, y se calcula el bit de paridad 
+para todo el bloque correspondiente a esa posición. Ése será el bit número uno del 
+carácter que hemos denominado bCC. 
+ • Luego se toman los bits ubicados en la posición dos, y se realiza la misma tarea, y así 
+se continúa.
+ • Hasta que por último se obtiene el bit de paridad longitudinal de todos los bits de 
+paridad vertical, completándose el carácter bCC mencionado antes.
+Este procedimiento, usado básicamente en las transmisiones asincrónicas, también se cono-
+control de suma de bloque o por su expresión block sum check (BSC). 
+de control no transportan información alguna, sino que solo se utilizan para la verificación de 
+la paridad de la secuencia de bits de datos.
+Para la verificación de la paridad existen tres métodos posibles:
+ • Control de paridad vertical (VCR).
+ • Control de la paridad longitudinal, o bidimensional (LCR).
+ • Control de la paridad entrelazada o cíclica.
+La paridad en cualquiera de los métodos que usan este sistema, puede ser par o impar. 
+En la Fig. 3.43. se indican ejemplos de ambos casos, para una longitud arbitraria de bits a 
+considerar. 
+En la paridad par, si el número de unos de la palabra de información a transmitir es im-
+par, el bit de control que se debe agregar será un uno, para que la suma total de ellos resulte 
+un número par.
+Por otro lado, si la paridad adoptada fuera impar, el bit de control que se debería agregar 
+sería un cero, para que la suma total de ellos resulte un número impar. 
+3DULGDGSDUVHUi´µFDUiFWHUUHVXOWDQWH
+3DULGDGLPSDUVHUi´µFDUiFWHUUHVXOWDQWH
+Fig. 3.43.	Ejemplos	de	paridad	par	e	impar.
+3.10.4.2 Control de la paridad vertical
+El método conocido como VRC (Vertical Redundancy Check, Control de la paridad verti-
+cal), se aplica a cada carácter o byte, y su uso se relaciona fundamentalmente con el código 
+ASCII.
+Consiste, básicamente, en el agregado de un bit adicional al conjunto de 7 bits que consti-
+tuyen un carácter en el código mencionado.
+De acuerdo con lo explicado antes, existen dos formas de definir la paridad de un carácter; 
+mediante la paridad par o impar. 
+En el código ASCII, se agrega un bit adicional, denominando expresamente bit de pari-
+dad, a los 7 bits que conforman la información a transmitir. En estos casos el carácter final con 
+el bit de paridad incluido quedará conformado por 8 bits. En la Fig. 3.44., se puede observar 
+un ejemplo de este código, con bit de paridad. En el transmisor se efectúa el cálculo del bit de 
+paridad correspondiente a cada carácter, y se agregan a los 7 bits de información.
+Este nuevo carácter de 8 bits de información se transmite, y al recibirse en el receptor, se 
+calcula otra vez la paridad comparándola con el criterio utilizado en el transmisor.
+El inconveniente grave de este método es que no permite detectar la doble inversión 
+de bits, que consiste en que se produzca un doble error en un byte, que afecte de manera 
+simultánea a un uno y lo transforme en cero, y al revés. 
+Si esto último ocurriese, la paridad resultante del carácter sería correcta, pero, como es 
+evidente, el dato transmitido resultaría erróneo. En la Fig. 3.45. se muestra este caso.
+%LWGHSDULGDG 
+ )
+0i[LPRYDORUELQDULRUHSUHVHQWDGR
+)KH[DGHFLPDO
+ELWVGHGDWRV
+
+'DWRWUDQVPLWLGR
+(MHPSOR
+3DUDSDULGDG´SDUµ
+VHDJUHJDUtDXQELW´µ
+3DUDSDULGDG´LPSDUµ
+VHDJUHJDUtDXQELW´µ
+
+===== PÁGINA PDF 235 =====
+3.10 Errores en el proceso de transmisión de datos
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+209
+3.10.4.3 Control de paridad longitudinal o bidimensional
+El método conocido como LRC ( Longitudinal Redundancy Check,  Control de la paridad 
+longitudinal), se aplica a un conjunto compuesto por bloques de N caracteres de 7 bits 
+cada uno.
+En la Fig. 3.46., se muestra un ejemplo donde N = 5. Obsérvese que por cada carácter de 7 
+bits transmitidos, se agregó un bit de paridad vertical, que en este caso es par, con lo que 
+el carácter transmitido tendrá finalmente un total de 8 bits.
+Al finalizar el bloque de N caracteres, se transmitirá un carácter completo denomi-
+nado carácter de control del bloque , más conocido por su expresión block check 
+character  (BCC).
+ • El carácter de control del bloque está calculado de la siguiente manera:
+Se toman los bits ubicados en la posición número uno, y se calcula el bit de paridad 
+para todo el bloque correspondiente a esa posición. Ése será el bit número uno del 
+carácter que hemos denominado bCC. 
+ • Luego se toman los bits ubicados en la posición dos, y se realiza la misma tarea, y así 
+se continúa.
+ • Hasta que por último se obtiene el bit de paridad longitudinal de todos los bits de 
+paridad vertical, completándose el carácter bCC mencionado antes.
+Este procedimiento, usado básicamente en las transmisiones asincrónicas, también se cono-
+ce por el nombre de control de suma de bloque o por su expresión block sum check (BSC). 
+la paridad de la secuencia de bits de datos.
+Para la verificación de la paridad existen tres métodos posibles:
+ • Control de paridad vertical (VCR).
+ • Control de la paridad longitudinal, o bidimensional (LCR).
+ • Control de la paridad entrelazada o cíclica.
+La paridad en cualquiera de los métodos que usan este sistema, puede ser 
+considerar. 
+En la paridad par, si el número de unos de la palabra de información a transmitir es 
+par, el bit de control que se debe agregar será un uno
+un número par.
+Por otro lado, si la paridad adoptada fuera impar
+sería un cero, para que la suma total de ellos resulte un número impar. 
+3DULGDGSDUVHUi´µFDUiFWHUUHVXOWDQWH
+3DULGDGLPSDUVHUi´µFDUiFWHUUHVXOWDQWH
+3.10.4.2 Control de la paridad vertical
+El método conocido como VRC (Vertical Redundancy Check,
+ASCII.
+tuyen un carácter en el código mencionado.
+mediante la paridad par o impar. 
+En el código ASCII, se agrega un bit adicional, denominando expresamente 
+dad
+paridad correspondiente a cada carácter, y se agregan a los 7 bits de información.
+calcula otra vez la paridad comparándola con el criterio utilizado en el transmisor.
+El inconveniente grave de este método es que no permite detectar la 
+de bits, que consiste en que se produzca un doble error en un byte
+simultánea a un uno y lo transforme en cero, y al revés. 
+evidente, el dato transmitido resultaría erróneo. En la Fig. 3.45. se muestra este caso.
+Fig. 3.44. Código	ASCII	con	bit	de	paridad.
+%LWGHSDULGDG 
+ )
+0i[LPRYDORUELQDULRUHSUHVHQWDGR
+)KH[DGHFLPDO
+ELWVGHGDWRV
+
+'DWRWUDQVPLWLGR
+(MHPSOR
+3DUDSDULGDG´SDUµ
+VHDJUHJDUtDXQELW´µ
+3DUDSDULGDG´LPSDUµ
+VHDJUHJDUtDXQELW´µ
+
+===== PÁGINA PDF 236 =====
+3 - Técnicas de la transmisión de la información210
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Cuando se deben transmitir datos en las redes de área extensa (WAN) o en las de área local 
+Los bits que se adicionan al mensaje se denominan redundantes, pues no le agregan in-
+En la Fig. 3.47., se describe cómo este método permite encontrar un error en el tercer bit 
+del cuarto byte transmitido. 
+En esa figura cada byte está representado por una fila, y los bits de datos están ubicados 
+de izquierda a derecha. 
+El bit de la izquierda de cada fila es el bit de paridad vertical, y la última fila es el byte de 
+paridad longitudinal, que hemos denominado carácter BCC o block sum check (BSC).
+3.10.4.4 Control de paridad entrelazada o cíclica
+El método conocido como de paridad entrelazada o cíclica es un procedimiento que 
+proporciona un nivel de detección de los errores de calidad superior que la del método co-
+nocido como control de la paridad vertical, y menor que la del método de control de la 
+paridad longitudinal.
+Este método requiere dos bits adicionales para el control de la paridad. En la Fig. 3.48. 
+se puede observar una palabra de seis bits de información, y un esquema en el que se indica 
+gráficamente la forma en que trabaja este procedimiento.
+El primer bit de paridad proporciona la paridad de los bits primero, tercero y quinto, 
+mientras que el segundo proporciona la paridad de los bits segundo, cuarto y sexto. 
+&DUiFWHUWUDQVPLWLGRFRQELWGH
+SDULGDGSDU
+&DUiFWHUUHFLELGRFRQGREOH
+LQYHUVLyQELW\ELWGREOHHUURU
+$PERVFDUDFWHUHVVRQUHFLELGRVFRQELWGHSDULGDGFRUUHFWR
+
+3DULGDG
+
+'DWR
+
+3DULGDG
+
+'DWR
+Fig. 3.45.	Carácter	con	doble	inversión	de	bits.
+'DWR
+
+'DWR
+
+'DWR
+
+'DWR
+
+'DWR
+
+'DWR
+
+
+
+
+
+
+
+
+
+%LW1
+%LW1
+%LW1
+%LW1
+%LW1
+%LW1
+%LW1
+%LWGHSDULGDGYHUWLFDO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ %&&
+
+
+
+
+Fig. 3.46.	Ejemplo	de	control	de	paridad	longitudinal.
+&DUiFWHUWUDQVPLWLGR
+*HQHUDFLyQGHODSDULGDGFtFOLFD
+%LWGH
+LQIRUPDFLyQ
+%LWGH 
+SDULGDG3$5
+
+
+
+
+
+
+
+
+%\WHGH
+SDULGDG
+ORQJLWXGLQDO
+(UURU ,QGLFDHUURUGH
+SDULGDGYHUWLFDO
+%LWGHSDULGDG
+YHUWLFDO3$5
+,QGLFDHUURU
+GHSDULGDG
+ORQJLWXGLQDO
+%<7(675$160,7,'26
+%LWVGHWUDQVPLVLyQ
+%<7(65(&,%,'26
+HOFXDUWRFRQXQHUURU
+
+
+
+  
+
+
+
+
+
+22
+
+
+
+
+
+
+
+
+Fig. 3.47.	Método	de	paridad	bidimensional.
+
+===== PÁGINA PDF 237 =====
+3.10 Errores en el proceso de transmisión de datos
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+211
+3.10.5 Detección de errores por adición de información redundante
+3.10.5.1 Conceptos generales
+Cuando se deben transmitir datos en las redes de área extensa (WAN) o en las de área local 
+(LAN), para la detección de errores de transmisión, se utilizan esquemas que consisten en adi-
+cionar al mensaje o el paquete información redundante que permita determinar si se produjo 
+un error en ese proceso o no.
+Los bits que se adicionan al mensaje se denominan redundantes, pues no le agregan in-
+formación nueva. La determinación de ellos surge de alguna operación que se realiza en el 
+equipo transmisor, según la técnica que se desee utilizar y el grado de certeza que se quiera 
+obtener de la operación de detección. 
+del cuarto byte transmitido. 
+de izquierda a derecha. 
+paridad longitudinal, que hemos denominado carácter BCC o block sum check (BSC).
+3.10.4.4 Control de paridad entrelazada o cíclica
+El método conocido como de paridad entrelazada o cíclica
+nocido como control de la paridad vertical, y menor que la del método de 
+paridad longitudinal.
+gráficamente la forma en que trabaja este procedimiento.
+El primer bit de paridad proporciona la paridad de los bits primero, tercero y
+mientras que el segundo proporciona la paridad de los bits segundo, cuarto y sexto. 
+&DUiFWHUWUDQVPLWLGRFRQELWGH
+SDULGDGSDU
+&DUiFWHUUHFLELGRFRQGREOH
+LQYHUVLyQELW\ELWGREOHHUURU
+$PERVFDUDFWHUHVVRQUHFLELGRVFRQELWGHSDULGDGFRUUHFWR
+
+3DULGDG
+
+'DWR
+
+3DULGDG
+
+'DWR
+'DWR
+
+'DWR
+
+'DWR
+
+'DWR
+
+'DWR
+
+'DWR
+
+
+
+
+
+
+
+
+
+%LW1
+%LW1
+%LW1
+%LW1
+%LW1
+%LW1
+%LW1
+%LWGHSDULGDGYHUWLFDO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ %&&
+
+
+
+
+&DUiFWHUWUDQVPLWLGR
+*HQHUDFLyQGHODSDULGDGFtFOLFD
+%LWGH
+LQIRUPDFLyQ
+%LWGH 
+SDULGDG3$5
+
+
+
+
+
+
+
+
+Fig. 3.48.	Prueba	de	paridad	cíclica.
+%\WHGH
+SDULGDG
+ORQJLWXGLQDO
+(UURU ,QGLFDHUURUGH
+SDULGDGYHUWLFDO
+%LWGHSDULGDG
+YHUWLFDO3$5
+,QGLFDHUURU
+GHSDULGDG
+ORQJLWXGLQDO
+%<7(675$160,7,'26
+%LWVGHWUDQVPLVLyQ
+%<7(65(&,%,'26
+HOFXDUWRFRQXQHUURU
+
+
+
+  
+
+
+
+
+
+22
+
+
+
+
+
+
+
+
+Fig. 3.47.	Método	de	paridad	bidimensional.
+
+===== PÁGINA PDF 238 =====
+3 - Técnicas de la transmisión de la información212
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+El proceso de complemento a 1 consistirá en convertir todos los unos a ceros; y todos los 
+Ejemplo 3-21
+Se desea mandar un mensaje compuesto por cinco bytes de 8 bits cada uno. Estos 
+serán los siguientes:
+S1 = 00100110 S 2 = 01100100 S 3 = 00100101 S 4 = 01000100 S 5 = 00100100
+Calcular el campo checksum que contendrá los bits de verificación.
+S1 + S2 + S3 + S4 + S5 = Complemento a 1 de [Sum TOTAL] = checksum
+00100110 S1
+01100100 S2
+10001010 S 1 + S2
+00100101 S3
+10101111 S 1 + S2 + S3
+01000100 S4
+11110011 S 1 + S2 + S3 + S4
+00100100 S5
+10010111 S 1 + S2 + S3 + S4 + S5
+01101000 Complemento a 1
+ 
+Luego, el campo de checksum será 01101000.
+Concepto general del procedimiento. Este método, también conocido como polino-
+, permite la verificación de todos los bits del mensaje mediante la utilización de un algo-
+ determinado. Básicamente, consiste en dividir, en el equipo transmisor, el 
+generador. 
+Como resultado de esta división en el equipo transmisor se obtendrán dos polinomios de-
+cociente y resto. Este último se transmite con la secuencia de bits sobre la que 
+resto de la división.
+En el receptor se procede en idéntica forma que en el transmisor. El mensaje a controlar se 
+generador, y se obtiene un nuevo resto. Por último, se comparan los 
+ambos restos deben ser iguales.
+Este método se basa en la detección de errores por medio de operaciones aritméticas con 
+módulo 2. 
+En ella no hay términos de acarreo para la suma, ni de préstamo para la resta; estas opera-
+or exclusivo.
+Veamos un ejemplo de suma y uno de resta según este método:
+Para ello, los nodos que transmiten y reciben la información utilizan un determinado algo-
+ritmo de cálculo, que deben conocer perfectamente ambos. Este se utilizará para comparar la 
+información que llega al receptor con la que salió de la fuente.
+El procedimiento general suele ser el siguiente:
+ • Conocido el mensaje o paquete a transmitir, el nodo transmisor le aplica el algoritmo 
+definido.
+ • Como consecuencia de esa operación se genera la información redundante que va a 
+estar compuesta por 
+k bits.
+ • El transmisor envía la información más los k bits redundantes hacia el receptor.
+ • El receptor separa la información de los k bits redundantes.
+ • Aplica el algoritmo al contenido de la información.
+ • Si los bits redundantes recibidos coinciden con los calculados en el receptor se acepta 
+la información como válida. 
+ • Si no hay coincidencia, esta se rechaza.
+Los procedimientos de detección de errores están especificados en los denominados pro-
+tocolos de funcionamiento de la red. En ellos se describen con precisión la forma en que se 
+tratarán los datos a los efectos de la detección y la corrección de errores.
+Los dos procedimientos más utilizados son el denominado algoritmo de suma o check-
+sum, y el de control de redundancia cíclica o método polinomial.
+3.10.5.2 Detección de errores por el método de suma de verificación (checksum)
+Concepto general del procedimiento. La suma de verificación o checksum es una 
+forma de control por redundancia medida muy simple que permite proteger la integridad de 
+datos, verificando que no se hayan corrompido. 
+Este método se emplea en numerosos protocolos utilizados en redes de área extensa, en 
+especial en los usados en Internet, en particular en la suite conocida como TCP/IP (Transfer 
+Control Protocol/Internet Protocol). Además, también se emplea para verificar errores en las 
+comunicaciones entre dispositivos, manejar archivos comprimidos y datos almacenados, usar 
+en discos portátiles, etcétera.
+Como su nombre lo indica, el procedimiento para generar los bits redundantes se sustenta 
+en algoritmos basados en la utilización de operaciones de adición binaria.
+Forma de ejecutar el procedimiento. Hay distintas variantes para el cálculo de los bits 
+que se adicionarán al mensaje o paquete. Una forma general que describe el procedimiento 
+sería la siguiente:
+ • Se procede en el equipo fuente a sumar los bytes adyacentes, o bien se ordenan estos 
+de dos en dos formando palabras de 16 bits.
+ • Con el resultado obtenido, que serán 8 o 16 bits, se calcula el complemento a 1.
+ • El valor obtenido se coloca en el campo que el protocolo correspondiente tiene asig-
+nado para los bits de verificación.
+ • Al llegar al equipo colector, se procede de la misma manera y se obtiene de nuevo un 
+conjunto de bits de verificación.
+ • Si estos coinciden con los recibidos, se considerará que la transmisión se efectuó 
+sin errores y, por lo tanto, se aceptará el paquete o mensaje; caso contrario, se re-
+chazará.
+
+===== PÁGINA PDF 239 =====
+3.10 Errores en el proceso de transmisión de datos
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+213
+El proceso de complemento a 1 consistirá en convertir todos los unos a ceros; y todos los 
+ceros a unos.
+Ejemplo 3-21
+Se desea mandar un mensaje compuesto por cinco bytes de 8 bits cada uno. Estos 
+serán los siguientes:
+S1 = 00100110 S 2 = 01100100 S 3 = 00100101 S 4 = 01000100 S 5 = 00100100
+Calcular el campo checksum que contendrá los bits de verificación.
+S1 + S2 + S3 + S4 + S5 = Complemento a 1 de [Sum TOTAL] = checksum
+00100110 S1
+01100100 S2
+10001010 S 1 + S2
+00100101 S3
+10101111 S 1 + S2 + S3
+01000100 S4
+11110011 S 1 + S2 + S3 + S4
+00100100 S5
+10010111 S 1 + S2 + S3 + S4 + S5
+01101000 Complemento a 1
+ 
+Luego, el campo de checksum será 01101000.
+3.10.5.3 Detección de errores por el método de control por redundancia cíclica (CRC)
+Concepto general del procedimiento. Este método, también conocido como polino-
+mial, permite la verificación de todos los bits del mensaje mediante la utilización de un algo-
+ritmo matemático determinado. Básicamente, consiste en dividir, en el equipo transmisor, el 
+mensaje de información que se quiere enviar por un polinomio conocido en ambos extremos 
+del canal de comunicaciones, denominado generador. 
+Como resultado de esta división en el equipo transmisor se obtendrán dos polinomios de-
+nominados cociente y resto. Este último se transmite con la secuencia de bits sobre la que 
+se quiere efectuar el control de errores. En el receptor se reciben el mensaje a controlar y el 
+polinomio que resultó del resto de la división.
+En el receptor se procede en idéntica forma que en el transmisor. El mensaje a controlar se 
+divide por el polinomio generador, y se obtiene un nuevo resto. Por último, se comparan los 
+restos obtenidos en el receptor, con el resto obtenido en el transmisor, que es transmitido junto 
+con el mensaje. Si no hubo errores, ambos restos deben ser iguales.
+Este método se basa en la detección de errores por medio de operaciones aritméticas con 
+polinomios, mediante la técnica conocida como módulo 2. 
+En ella no hay términos de acarreo para la suma, ni de préstamo para la resta; estas opera-
+ciones se conocen como de or exclusivo.
+Veamos un ejemplo de suma y uno de resta según este método:
+información que llega al receptor con la que salió de la fuente.
+El procedimiento general suele ser el siguiente:
+ •
+definido.
+ •
+estar compuesta por k bits.
+ • El transmisor envía la información más los k bits redundantes hacia el receptor.
+ • El receptor separa la información de los k bits redundantes.
+ • Aplica el algoritmo al contenido de la información.
+ •
+la información como válida. 
+ • Si no hay coincidencia, esta se rechaza.
+tratarán los datos a los efectos de la detección y la corrección de errores.
+Los dos procedimientos más utilizados son el denominado algoritmo de suma o 
+sum, y el de control de redundancia cíclica o método polinomial.
+3.10.5.2 Detección de errores por el método de suma de verificación (checksum)
+Concepto general del procedimiento. 
+datos, verificando que no se hayan corrompido. 
+especial en los usados en Internet, en particular en la suite conocida como TCP/IP (
+Control Protocol/Internet Protocol
+en discos portátiles, etcétera.
+en algoritmos basados en la utilización de operaciones de adición binaria.
+Forma de ejecutar el procedimiento.
+sería la siguiente:
+ •
+de dos en dos formando palabras de 16 bits.
+ • Con el resultado obtenido, que serán 8 o 16 bits, se calcula el complemento a 1.
+ •
+nado para los bits de verificación.
+ •
+conjunto de bits de verificación.
+ •
+chazará.
+Campo que se envía conjuntamente con los S1, S2, S3, S4 y S5
+
+===== PÁGINA PDF 240 =====
+3 - Técnicas de la transmisión de la información214
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Donde E(x) será la componente de error, y entonces el polinomio recibido deja de ser di-
+E(x) no sea 
+Ejemplo 3-22 
+Se desea mandar un mensaje compuesto por la siguiente secuencia de bits, 
+1100000111. Este se controlará por medio del siguiente polinomio generador: 
+ 
+Calcular el resto y la secuencia completa que se debería transmitir, para luego po-
+der controlar la presencia de errores en el receptor.
+a) Definimos el polinomio M(x) de grado n, a transmitir.
+ 
+b) Definimos un polinomio 
+G(x) de grado r (generador).
+ 
+Para 
+r = 5.
+c) Definimos un polinomio auxiliar del mismo grado que el generador de la forma xr.
+ 
+d) Formemos un polinomio de la forma: 
+M(x) X r.
+ 
+e) Efectuemos la división del nuevo polinomio generado de la forma 
+M(x) X r, por el 
+polinomio generador G(x), empleando el álgebra de módulo 2.
+Por lo tanto, el resto resultará:1 1 0 1 0
+La secuencia a transmitir sería la siguiente:1100000111-11010
+Polinomios generadores. En particular, tres polinomios se convirtieron en normas de 
+(x + 1) está contenido como factor primo.
+ Polinomio CRC-16
+Un ejemplo de ellos es la norma denominada CRC-16, que se usa para caracteres codifica-
+  (3-90)
+Ejemplo de suma:
+ 
+11101001+10011100
+01110101
+Ejemplo de resta:
+ 
+11010001–10010110
+01000111
+Por otra parte, un mensaje de tipo 11011011 sería asimilable a un polinomio del tipo:
+ 1 1 0 1 1 0 1 17 6 5 4 3 2 1. . . . . . .X X X X X X X+ + + + + + +  (3-86)
+Obsérvese que los términos correspondientes a los bits de valor cero se anulan, y que los 
+que corresponden a los bits de valor uno toman la forma de X elevada a una potencia, que 
+corresponde a la ubicación del bit dentro de la secuencia a transmitir.
+Forma de ejecutar el procedimiento
+ • Definimos un polinomio M(x) de grado n, a transmitir.
+ • Definimos un polinomio G(x) de grado r (generador).
+ • Definimos un polinomio auxiliar del mismo grado que el generador de la forma Xr.
+ • Debe ser n >> r.
+ • Se genera un polinomio que contenga (r + n) bits, de la forma: M(x) Xr (recuérdese que 
+M(x) es de grado n).
+ • Se divide el nuevo polinomio generado de la forma: M(x) Xr por el polinomio generador 
+G(x) (empleando el álgebra de módulo 2).
+ • De esa división se obtendrá un polinomio resto R(x) (que siempre deberá tener un 
+número de bits igual o menor que r, grado del polinomio resto).
+ • Por último, se procede a obtener un polinomio que denominaremos T(x), que es el 
+polinomio a transmitir compuesto por: M(x) + R(x).
+Este resulta de restar, por el método antes señalado de módulo 2 los bits correspondientes 
+al polinomio M(x) Xr, los correspondientes al polinomio resto R(x) (ver ejemplo 3-22, apartado e). 
+Por lo tanto, los pasos serán:
+1º   X M x
+G x C x R x
+r ( )
+( ) ( ) ( )= +   (3-87)
+ Donde:
+  C(x)  es el cociente de la división que no tiene utilidad alguna.
+2º  T x X M x R xr( ) ( ) ( )= +   (3-88)
+3º Como se puede observar, el polinomio T(x) será siempre divisible por el polinomio 
+    generador G(x).
+4º Si se introducen errores en la transmisión se recibirá:
+ T x T x E x( ) ( ) ( )= +  (3-89)
+
+===== PÁGINA PDF 241 =====
+3.10 Errores en el proceso de transmisión de datos
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+215
+Donde E(x) será la componente de error, y entonces el polinomio recibido deja de ser di-
+visible por el polinomio generador, siempre que este último sea bien escogido (por ello, el uso 
+de estos polinomios normalizados). En general resultará muy poco probable que E(x) no sea 
+detectable, como se verá a continuación.
+Ejemplo 3-22 
+Se desea mandar un mensaje compuesto por la siguiente secuencia de bits, 
+1100000111. Este se controlará por medio del siguiente polinomio generador: 
+ 
+. ( ) .G x X X= + +5 4 1
+Calcular el resto y la secuencia completa que se debería transmitir, para luego po-
+der controlar la presencia de errores en el receptor.
+a) Definimos el polinomio M(x) de grado n, a transmitir.
+ . . X X 1 1 0 0 0 0 0 1 19 8 7 6 5 4 3 2 . . . . . . .X X X X X X X+ + + + + + + + 1 1+
+b) Definimos un polinomio G(x) de grado r (generador).
+ . ( ) .G x X X= + +5 4 1
+Para r = 5.
+c) Definimos un polinomio auxiliar del mismo grado que el generador de la forma xr.
+ .X Xr = 5
+d) Formemos un polinomio de la forma: M(x) X r.
+ . . X X 0 0+ + ++ +1 1 0 0 0 114 13 12 11 1 0 9 8. . . . . .X X X X X X+ + 7 6 51 1+ +.X X
+e) Efectuemos la división del nuevo polinomio generado de la forma M(x) X r, por el 
+polinomio generador G(x), empleando el álgebra de módulo 2.
+110000011100000 11001
+110001
+00000101110
+110001
+0111110
+1100010
+00111100
+110001
+001 11 10 01 10 0
+Por lo tanto, el resto resultará:1 1 0 1 0
+La secuencia a transmitir sería la siguiente:1100000111-11010
+Polinomios generadores. En particular, tres polinomios se convirtieron en normas de 
+uso internacional. En los tres, el término (x + 1) está contenido como factor primo.
+ Polinomio CRC-16
+Un ejemplo de ellos es la norma denominada CRC-16, que se usa para caracteres codifica-
+dos con 8 bits y cuyo polinomio generador es el siguiente:
+ 
+P x X X X( ) = + + +16 15 2 1  (3-90)
+Ejemplo de suma:
+ 
+Ejemplo de resta:
+ 
+Por otra parte, un mensaje de tipo 11011011 sería asimilable a un polinomio del tipo:
+  
+Obsérvese que los términos correspondientes a los bits de valor cero
+que corresponden a los bits de valor uno toman la forma de X
+corresponde a la ubicación del bit dentro de la secuencia a transmitir.
+Forma de ejecutar el procedimiento
+ • Definimos un polinomio M(x) de grado n, a transmitir.
+ • Definimos un polinomio G(x) de grado r (generador).
+ • Definimos un polinomio auxiliar del mismo grado que el generador de la forma Xr.
+ • Debe ser n >> r.
+ • Se genera un polinomio que contenga (r + n) bits, de la forma: M(x) Xr
+M(x) es de grado n).
+ • Se divide el nuevo polinomio generado de la forma: M(x) Xr
+G(x) (empleando el álgebra de módulo 2).
+ • De esa división se obtendrá un polinomio resto R(x)
+número de bits igual o menor que r, grado del polinomio resto).
+ • Por último, se procede a obtener un polinomio que denominaremos T(x)
+polinomio a transmitir compuesto por: M(x) + R(x).
+al polinomio M(x) Xr, los correspondientes al polinomio resto R(x)
+Por lo tanto, los pasos serán:
+1º     
+ Donde:
+  C(x)  es el cociente de la división que no tiene utilidad alguna.
+2º    
+3º Como se puede observar, el polinomio T(x) será siempre divisible por el polinomio 
+    generador G(x).
+4º Si se introducen errores en la transmisión se recibirá:
+  
+Por	 razones	 didácticas,	 el	 resto	
+ha	 sido	 separado	 por	 un	 guión	
+de	la	secuencia	original.
+
+
+===== PÁGINA PDF 242 =====
+3 - Técnicas de la transmisión de la información216
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Este método consiste en el uso de sistemas detectores de errores, como los vistos en aparta-
+hacia atrás.
+Este sistema implica la retransmisión de los datos tantas veces como sea necesario, hasta 
+Se puede apreciar con claridad que cuando se eligen velocidades muy altas respecto de las 
+En otras palabras, se produce la paradoja de que al aumentar la velocidad de modulación, 
+Esta técnica, denominada Forward Error Control (FEC), se basa en el uso de códigos 
+ diseñados sobre la base de sistemas de codificación redundante, que corri-
+Desde ya, estos métodos que hacen innecesaria la retransmisión no son neutros al usuario, 
+Sin embargo, en muchas aplicaciones es preciso usar este tipo de códigos, porque no re-
+Diversos dispositivos de las redes de transmisión de datos poseen capacidad para detectar erro-
+La corrección por retransmisión requiere una tecnología sencilla y poca capacidad de me-
+El sistema automático de retransmisión , también conocido como Automatic 
+ (ARQ), solo se utiliza entre dos estaciones. Este sistema se suele 
+control por medio del eco o echo checking.
+Consiste en la transmisión de pequeños bloques de datos, luego de lo cual el sistema 
+Este polinomio generador es capaz de detectar entre otros:
+ • Errores simples: 100%
+ • Errores dobles: 100%
+ • Errores impares (con número impar de bits): 100% 
+ • Errores en ráfagas: 
+ – 100% (ráfagas menores que 17 bits).
+ – 99,997%  (ráfagas de hasta 17 bits).
+ – 99, 998%  (ráfagas mayores que 17 bits).
+ Polinomio normalizado por la UIT-T
+Sobre la base de pruebas prácticas con diversas opciones, el CCITT normalizó el siguiente 
+polinomio generador.
+ 
+P x X X X( ) = + + +16 12 5 1  (3-91)
+Su rendimiento es igual al anterior.
+ Polinomio CRC-12
+El tercer polinomio es el denominado CRC-12 y está indicado para caracteres codificados 
+con 6 bits. Su forma es la siguiente:
+ 
+P x X X X X X( ) = + + + + +12 11 3 2 1 1  (3-92)
+3.11 Corrección de errores
+3.11.1 Consideraciones generales
+Hasta aquí solo consideramos la detección de los errores; sin embargo, a partir de que 
+se verifica su presencia, se puede optar entre corregirlos o no.
+Otra vez podemos expresar que no tomarlos en cuenta es un enfoque trivial, pero que en 
+muchas oportunidades, por el tipo de información a transmitir y el uso que esta recibirá, no es 
+imprescindible atender a los errores en esa etapa a nivel de la comunicación dado que puede 
+existir otro protocolo de nivel superior que si corrija errores.
+3.11.2 Técnicas de corrección de errores
+3.11.2.1 Consideraciones generales
+En la mayoría de los sistemas teleinformáticos, la corrección de los errores es un hecho casi 
+imprescindible. Hay dos estrategias fundamentales para la corrección de errores:
+ • Corrección hacia atrás.
+ • Corrección hacia adelante.
+Si bien es casi imposible corregir todos los errores, la mayoría de las técnicas en uso, como 
+se vio en el apartado 3.9.3.3. de este capítulo, llega a valores de corrección del 99,99%.
+En las aplicaciones que aceptan que no se corrijan los errores se pueden producir proble-
+mas graves en el funcionamiento. Imaginémonos por un momento una aplicación bancaria, y 
+nos daremos cuenta del daño que se podría producir si este tema no se resolviera de manera 
+adecuada. De allí la importancia que reviste este tema en el diseño de cualquier sistema.
+
+===== PÁGINA PDF 243 =====
+3.11 Corrección de errores
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+217
+3.11.2.2 Corrección hacia atrás
+Este método consiste en el uso de sistemas detectores de errores, como los vistos en aparta-
+do anterior. En esos casos una vez que el equipo receptor detecta el error, solicita al equipo trans-
+misor la repetición del bloque de datos transmitido, de allí la llamada corrección hacia atrás.
+Este sistema implica la retransmisión de los datos tantas veces como sea necesario, hasta 
+que se reciban libres de errores. De allí la importancia ya señalada en capítulos anteriores de 
+una buena selección de la velocidad de modulación para el caso de las transmisiones por ca-
+nales analógicos, usando módems de datos.
+Se puede apreciar con claridad que cuando se eligen velocidades muy altas respecto de las 
+que el canal de comunicaciones realmente puede soportar, los errores provocan una pérdida 
+de tiempo mayor que la ganancia que se presumía se iba a obtener.
+En otras palabras, se produce la paradoja de que al aumentar la velocidad de modulación, 
+disminuye la velocidad real de transferencia de datos (que es en última instancia la que inte-
+resa al administrador del sistema informático).
+3.11.2.3 Corrección hacia adelante
+Esta técnica, denominada Forward Error Control (FEC), se basa en el uso de códigos 
+autocorrectores diseñados sobre la base de sistemas de codificación redundante, que corri-
+gen los errores detectados en la misma estación que recibió el bloque de datos.
+Desde ya, estos métodos que hacen innecesaria la retransmisión no son neutros al usuario, 
+pues para posibilitar la corrección en destino, deben enviar un número de bits varias veces 
+superior a los necesarios usando códigos convencionales.
+Sin embargo, en muchas aplicaciones es preciso usar este tipo de códigos, porque no re-
+sulta posible o conveniente pedir la retransmisión de los datos enviados al equipo terminal de 
+datos receptor, ya sea por razones de seguridad o por necesidades de la misma operación del 
+sistema informático asociado. Como podría ser el caso de un submarino en operaciones, que 
+debería transmitir en una sola oportunidad, con el objeto de evitar que se detecte su posición 
+con equipos radiogoniómetros. En el apartado siguiente, se verán precisamente las caracterís-
+ticas de este tipo de códigos autocorrectores.
+3.11.3 Corrección de errores mediante el uso de técnicas especiales de transmisión
+3.11.3.1 Retransmisión de los datos erróneos
+Diversos dispositivos de las redes de transmisión de datos poseen capacidad para detectar erro-
+res, y cuando los detectan, piden su retransmisión inmediata. Este método de detección del error y su 
+retransmisión es la manera menos costosa y más sencilla de reducir errores en la transmisión.
+La corrección por retransmisión requiere una tecnología sencilla y poca capacidad de me-
+moria. Una vez detectada la existencia de un error (por intermedio del bit o los bits de paridad, 
+o por el uso de códigos de redundancia cíclica), el método consiste simplemente en pedir la 
+retransmisión del carácter o los grupos de caracteres hacia el receptor.
+3.11.3.2 Requerimiento automático de repetición
+El sistema automático de retransmisión , también conocido como Automatic 
+Retransmission Request  (ARQ), solo se utiliza entre dos estaciones. Este sistema se suele 
+denominar control por medio del eco o echo checking.
+Consiste en la transmisión de pequeños bloques de datos, luego de lo cual el sistema 
+espera que la estación receptora le envíe un nuevo requerimiento para la transmisión de un 
+Este polinomio generador es capaz de detectar entre otros:
+ • Errores simples: 100%
+ • Errores dobles: 100%
+ • Errores impares (con número impar de bits): 100% 
+ • Errores en ráfagas: 
+ – 100% (ráfagas menores que 17 bits).
+ – 99,997%  (ráfagas de hasta 17 bits).
+ – 99, 998%  (ráfagas mayores que 17 bits).
+ Polinomio normalizado por la UIT-T
+polinomio generador.
+  
+Su rendimiento es igual al anterior.
+ Polinomio CRC-12
+con 6 bits. Su forma es la siguiente:
+  
+3.11 Corrección de errores
+3.11.1 Consideraciones generales
+Hasta aquí solo consideramos la detección de los errores
+se verifica su presencia, se puede optar entre corregirlos o no.
+existir otro protocolo de nivel superior que si corrija errores.
+3.11.2 Técnicas de corrección de errores
+3.11.2.1 Consideraciones generales
+imprescindible. Hay dos estrategias fundamentales para la corrección de errores:
+ • Corrección hacia atrás.
+ • Corrección hacia adelante.
+se vio en el apartado 3.9.3.3. de este capítulo, llega a valores de corrección del 99,99%.
+adecuada. De allí la importancia que reviste este tema en el diseño de cualquier sistema.
+
+===== PÁGINA PDF 244 =====
+3 - Técnicas de la transmisión de la información218
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Las ventajas del sistema FEC con respecto al ARQ son las siguientes:
+ • Se pueden transmitir mensajes a varias estaciones receptoras.
+Este método se conoce en telecomunicaciones como transmisión por difusión (transmission 
+broadcasting). Es muy similar al que se emplea en las redes de área local que trabajan 
+con la norma 802.3 de la IEEE, más conocida como Ethernet. 
+No obstante, existe una variedad del sistema de corrección de errores hacia ade-
+lante denominada SEL/FEC, por medio de la cual la estación transmisora emite el 
+código correspondiente solo a determinadas estaciones receptoras. Estas en conse-
+cuencia serán las únicas habilitadas para recibir el mensaje.
+ • No requiere el empleo de transmisores en las estaciones receptoras.
+ • Menor tiempo de transmisión.
+Este método se usa en ciertas aplicaciones especiales, como en el caso de canales 
+En este último caso también se usa un método combinado ARQ/FEC, de manera de 
+Los métodos de corrección de errores mediante el empleo de autocorrección se basan en 
+La redundancia se extiende desde unos pocos bits hasta llegar en algunos casos al doble o 
+Estos métodos no son sencillos y los hay de distintos tipos; los más conocidos son los có-
+Hamming, Hagelbarger y bose-Chaudhuri, entre los más conocidos.
+Para interpretar el funcionamiento de estos códigos, también llamados códigos de acción 
+, primero debemos analizar el concepto denominado distancia de Hamming.
+nuevo bloque de datos. Si el receptor hubiera detectado un error, le solicitará la retransmisión 
+del bloque anterior. Cada bloque tiene 8 caracteres de 7 bits cada uno.
+En el caso de detectarse un error, el proceso puede llegar a repetirse hasta un determinado 
+número de veces, en general 32, pasando luego el equipo a la posición reencendido (restart).
+La mayor ventaja de este método es que prácticamente garantiza una transmisión de 
+datos libre de errores, asumiendo que el enlace es posible. 
+Las desventajas son: 
+ • El enlace es posible solo entre dos estaciones al mismo tiempo.
+ • El sistema ARQ es más lento que el denominado corrección de errores hacia ade-
+lante (FEC), sobre todo cuando existan errores que corregir, y será mucho más lento 
+a medida que se incremente el número de errores.
+ • La estación receptora debe tener en operación un equipo transmisor, para acusar re-
+cibo y solicitar la retransmisión.
+Sin embargo, siempre que pueda usarse este método resulta el más efectivo, y, por lo tanto, 
+el de uso más frecuente. En particular, resulta efectivo para la transmisión de bloques de hasta 
+512 bytes. 
+3.11.3.3 Corrección de errores hacia adelante
+El sistema de corrección de errores hacia adelante, también conocido como forward 
+error correction (FEC), se emplea en los casos en que hay más de una estación receptora y 
+no se necesitan réplicas por parte de estas últimas. 
+Funciona en el modo denominado división de tiempo (time diversity) y permite que 
+cada mensaje se envíe dos veces, intercalando los caracteres en diferentes instantes. En con-
+secuencia, la estación receptora tiene dos oportunidades de recibir cada carácter en forma 
+correcta. 
+Este procedimiento agrega la redundancia suficiente, tal que pueda permitir que el re-
+ceptor detecte la presencia de un error, además de ubicar la posición del bit donde este se ha 
+cometido. Para realizar esta última operación, la cantidad de bits que es necesario adicionar es 
+mucho mayor que la que se necesitaría para detectar solo la presencia de errores.
+Por ejemplo, si se desean enviar los caracteres indicados en la Fig. 3.49., del 1 al 9, el 
+transmisor enviará el mensaje tal como se indica en la figura. La estación receptora examinará 
+primero la serie D
+x y luego la serie Rx. 
+Para un mismo carácter pueden suceder los casos indicados en la Fig. 3.50.
+5HSUHVHQWDORVFDUDFWHUHVDQWHULRUHVDODVHULHWUDQVPLWLGDHQHOHMHPSOR
+0HQVDMH'[
+0HQVDMH5[
+   HWF
+Fig. 3.49.	Transmisión	FEC.
+6HRUGHQDLPSULPLUHOFDUiFWHU
+6HRUGHQDLPSULPLUHOFDUiFWHU
+GHODVHULH5[
+6HRUGHQDLPSULPLUHOFDUiFWHU
+GHODVHULH'[
+6HRUGHQDLPSULPLUHOFDUiFWHU
+HVSHFLDOTXHLQGLFDHUURUHQOD
+UHFHSFLyQ
+23(5$&,Ð1'(/)(&6HULH'[ 6HULH5[
+23(5$&,Ð1'(/)(&
+6LQHUURU
+&RQHUURU
+6LQHUURU
+&RQHUURU
+6LQHUURU
+6LQHUURU
+&RQHUURU
+&RQHUURU
+
+===== PÁGINA PDF 245 =====
+3.11 Corrección de errores
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+219
+Las ventajas del sistema FEC con respecto al ARQ son las siguientes:
+ • Se pueden transmitir mensajes a varias estaciones receptoras.
+Este método se conoce en telecomunicaciones como transmisión por difusión (transmission 
+broadcasting). Es muy similar al que se emplea en las redes de área local que trabajan 
+con la norma 802.3 de la IEEE, más conocida como Ethernet. 
+No obstante, existe una variedad del sistema de corrección de errores hacia ade-
+lante denominada SEL/FEC, por medio de la cual la estación transmisora emite el 
+código correspondiente solo a determinadas estaciones receptoras. Estas en conse-
+cuencia serán las únicas habilitadas para recibir el mensaje.
+ • No requiere el empleo de transmisores en las estaciones receptoras.
+ • Menor tiempo de transmisión.
+Este método se usa en ciertas aplicaciones especiales, como en el caso de canales 
+unidireccionales sin retorno, o en enlaces satelitales, que como presentan un tiempo de 
+retardo de las señales muy prolongado, se procede a transmitir muchos mensajes en una 
+sola dirección. 
+En este último caso también se usa un método combinado ARQ/FEC, de manera de 
+recibir una confirmación de lo transmitido en sentido inverso al cabo de cierto número de 
+mensajes. 
+3.11.4 Corrección de errores mediante el empleo de códigos autocorrectores
+3.11.4.1 Introducción
+Los métodos de corrección de errores mediante el empleo de autocorrección se basan en 
+códigos con suficiente redundancia, de forma que una vez que se detecta el error, se lo puede 
+corregir sin necesidad de proceder a la retransmisión correspondiente.
+La redundancia se extiende desde unos pocos bits hasta llegar en algunos casos al doble o 
+aun a una cantidad mucho mayor de los necesarios para transmitir un carácter. 
+Estos métodos no son sencillos y los hay de distintos tipos; los más conocidos son los có-
+digos de Hamming, Hagelbarger y bose-Chaudhuri, entre los más conocidos.
+Para interpretar el funcionamiento de estos códigos, también llamados códigos de acción 
+progresiva, primero debemos analizar el concepto denominado distancia de Hamming.
+del bloque anterior. Cada bloque tiene 8 caracteres de 7 bits cada uno.
+número de veces, en general 32, pasando luego el equipo a la posición reencendido (restart).
+La mayor ventaja de este método es que prácticamente 
+datos libre de errores, asumiendo que el enlace es posible. 
+Las desventajas son: 
+ • El enlace es posible solo entre dos estaciones al mismo tiempo.
+ • El sistema ARQ es más lento que el denominado 
+lante (FEC
+a medida que se incremente el número de errores.
+ •
+cibo y solicitar la retransmisión.
+512 bytes. 
+3.11.3.3 Corrección de errores hacia adelante
+El sistema de corrección de errores hacia adelante, también conocido como 
+error correction (FEC
+no se necesitan réplicas por parte de estas últimas. 
+Funciona en el modo denominado división de tiempo (time diversity
+correcta. 
+mucho mayor que la que se necesitaría para detectar solo la presencia de errores.
+primero la serie Dx y luego la serie Rx. 
+Para un mismo carácter pueden suceder los casos indicados en la Fig. 3.50.
+5HSUHVHQWDORVFDUDFWHUHVDQWHULRUHVDODVHULHWUDQVPLWLGDHQHOHMHPSOR
+0HQVDMH'[
+0HQVDMH5[
+   HWF
+6HRUGHQDLPSULPLUHOFDUiFWHU
+6HRUGHQDLPSULPLUHOFDUiFWHU
+GHODVHULH5[
+6HRUGHQDLPSULPLUHOFDUiFWHU
+GHODVHULH'[
+6HRUGHQDLPSULPLUHOFDUiFWHU
+HVSHFLDOTXHLQGLFDHUURUHQOD
+UHFHSFLyQ
+23(5$&,Ð1'(/)(&6HULH'[ 6HULH5[
+23(5$&,Ð1'(/)(&
+6LQHUURU
+&RQHUURU
+6LQHUURU
+&RQHUURU
+6LQHUURU
+6LQHUURU
+&RQHUURU
+&RQHUURU
+Fig. 3.50.	Posibles	operaciones	del	FEC.
+La	 corrección	 de	 errores	 en	 los	
+protocolos	 y	 redes	 comerciales	
+actuales	 se	 efectúa	 por	 retrans-
+misión	 del	 “paquete”	 dañado	
+por	un	error.
+
+
+===== PÁGINA PDF 246 =====
+3 - Técnicas de la transmisión de la información220
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+En el cubo de la izquierda a cada vértice le corresponde un byte distinto, que se diferencia 
+distancia de Ham-
+ en este caso es igual a uno, H = 1.
+Para este valor de Distancia de Hamming no es posible detectar ni corregir error alguno, 
+Si ahora consideramos el cubo central, con solo 4 bytes que representan a otros tantos 
+H = 2, este permitirá 
+En efecto, al alterarse un solo bit, la combinación alterada no corresponde a símbolo algu-
+Obsérvese que para que esto sea posible, los vértices adyacentes a las representaciones 
+Si finalmente consideramos el cubo situado más a la derecha, con solo 2 Bytes que repre-
+H = 3, este permitirá detectar la presencia de hasta dos bits erróneos, y corregir hasta un 
+En este caso no solo pudimos detectar el o los dos errores, sino, además, hasta corregir uno 
+Este ejemplo simple nos permite inferir que la capacidad de detección y corrección de 
+H”; valor este que hemos denominado distancia de Hamming.
+En la Fig. 3.53. se indica la relación entre el valor de H y la capacidad de detección y co-
+Este código autocorrector permite detectar y corregir errores mediante el empleo de bits 
+Para demostrar la formación de una estructura que utiliza este código, emplearemos un 
+I3, I5, I6 e I7 de información, e intercalaremos 3 bits de verificación de paridad 
+, P2 y P4.
+3.11.4.2 Distancia de Hamming
+Se define como distancia de Hamming al número de bits en que difieren dos secuen-
+cias binarias S1 y S2 de la misma longitud.
+Sea por ejemplo la secuencia S1, que corresponde a la letra b en el alfabeto internacional N º5 
+de la UIT-T, y otras secuencias S2, S3, S4 y S5, correspondientes a otras letras del mismo alfabeto. Si 
+comparamos bit a bit de igual peso, la primera de las secuencias con las restantes, la distancia de 
+Hamming estará dada por la cantidad de bits en que difieren uno a uno, los respectivos conjuntos.
+En la Fig. 3.51. se muestra el ejemplo antes descripto. Se ha tomado a los efectos de la com-
+paración y el cálculo de la distancia de Hamming al conjunto S1, y esta se ha determinado 
+respecto de los otros conjuntos allí explicitados. Se puede observar que en estos ejemplos la 
+distancia de Hamming varía de 1 a 4.
+Esta se relaciona con la probabilidad de error. En efecto, cuanto mayor sea la distancia mínima 
+entre los símbolos de un código dado, menor será la probabilidad de cometer errores. Sin embargo, 
+aumentar la distancia de Hamming significa codificar menos símbolos con igual número de bits.
+En otras palabras, al aumentar la redundancia se logra disminuir la probabilidad de cometer errores. 
+Para demostrar este concepto, usaremos el denominado ejemplo del cubo. Si considera-
+mos los ocho vértices de un cubo, se podría asignar a cada uno de ellos un conjunto de tres bits 
+diferentes entre sí, que estarán en correspondencia con los nuevos decimales 0, 1, 2, .., 6 y 7. 
+Supongamos que ese código es del tipo numérico, y al efecto de representar los símbolos 
+que corresponden al alfabeto fuente usamos un sistema numérico de base octal, como se 
+puede observar en la Fig. 3.52.
+Fig. 3.51.	Distancias	de	Hamming	tomadas	para	la	secuencia	
+correspondiente	al	símbolo	“B”.
+&RQMXQWR
+6
+6
+6
+6
+6
+5HSUHVHQWD
+%
+&
+'
+(
+8
+6HFXHQFLD
+ELQDULD
+'LVWDQFLDGH
++DPPLQJ
+
+
+
+
+
+
+
+
+
+
+ 
+  
+ 
+ 
+
+
+
+
+
+
+
+
+E\WHVE\WHVE\WHV
+Fig. 3.52.	Modelo	geométrico	del	cubo.
+
+
+
+
+(UURUHV'LVWDQFLDGH
++DPPLQJ
+QR
+QR
+XQR
+XQR
+QR
+XQR
+GRV
+WUHV
+&RUUHFFLyQ &RUUHFFLyQ
+Fig. 3.53.	Detección	y	corrección	de	errores	en	función	del	valor	de	H.
+Tabla 3.5 Representación en 
+bits de la numeración octal
+Decimal 3 bits
+0 000
+1 001
+2 010
+3 011
+4 100
+5 101
+6 110
+7 111
+
+===== PÁGINA PDF 247 =====
+3.11 Corrección de errores
+AlfaomegaComunicaciones - Castro Lechtaler - Fusario
+221
+En el cubo de la izquierda a cada vértice le corresponde un byte distinto, que se diferencia 
+de los adyacentes en un solo dígito. Por esa razón indicaremos que la distancia de Ham-
+ming en este caso es igual a uno, H = 1.
+Para este valor de Distancia de Hamming no es posible detectar ni corregir error alguno, 
+pues al verificarse la alteración de un bit, el nuevo conjunto así obtenido corresponde a otro 
+símbolo del alfabeto código que hemos establecido.
+Si ahora consideramos el cubo central, con solo 4 bytes que representan a otros tantos 
+elementos de un alfabeto fuente, y una distancia de Hamming igual a dos, H = 2, este permitirá 
+detectar la presencia de un bit erróneo, pero no corregirlo. 
+En efecto, al alterarse un solo bit, la combinación alterada no corresponde a símbolo algu-
+no. Luego, permite deducir que se cometió un error.
+Obsérvese que para que esto sea posible, los vértices adyacentes a las representaciones 
+válidas están libres de símbolos. Esta situación es la que se produce cuando se usa un bit de 
+paridad, que permite detectar un error pero no corregirlo.
+Si finalmente consideramos el cubo situado más a la derecha, con solo 2 Bytes que repre-
+sentan a otros tantos elementos de un alfabeto fuente, y una distancia de Hamming igual a 
+tres, 
+H = 3, este permitirá detectar la presencia de hasta dos bits erróneos, y corregir hasta un 
+bit con error.
+En este caso no solo pudimos detectar el o los dos errores, sino, además, hasta corregir uno 
+de ellos; pues si se supiera que hay un solo bit equivocado, podremos determinar el byte con 
+error, y luego efectuar la corrección correspondiente. 
+Este ejemplo simple nos permite inferir que la capacidad de detección y corrección de 
+errores es función al valor de H”; valor este que hemos denominado distancia de Hamming.
+En la Fig. 3.53. se indica la relación entre el valor de H y la capacidad de detección y co-
+rrección de errores.
+3.11.4.3 Código de Hamming
+Este código autocorrector permite detectar y corregir errores mediante el empleo de bits 
+de paridad con determinadas combinaciones únicas de bits de información.
+Para demostrar la formación de una estructura que utiliza este código, emplearemos un 
+carácter de 4 bits I3, I5, I6 e I7 de información, e intercalaremos 3 bits de verificación de paridad 
+P1, P2 y P4.
+3.11.4.2 Distancia de Hamming
+Se define como distancia de Hamming 
+cias binarias S1 y S2 de la misma longitud.
+Sea por ejemplo la secuencia S1, que corresponde a la letra b
+de la UIT-T, y otras secuencias S2, S3, S4 y S5
+comparamos bit a bit
+paración y el cálculo de la distancia de Hamming al conjunto S1
+distancia de Hamming varía de 1 a 4.
+Para demostrar este concepto, usaremos el denominado ejemplo del cubo
+puede observar en la Fig. 3.52.
+&RQMXQWR
+6
+6
+6
+6
+6
+5HSUHVHQWD
+%
+&
+'
+(
+8
+6HFXHQFLD
+ELQDULD
+'LVWDQFLDGH
++DPPLQJ
+
+
+
+
+
+
+
+
+
+
+ 
+  
+ 
+ 
+
+
+
+
+
+
+
+
+E\WHVE\WHVE\WHV
+
+
+
+
+(UURUHV'LVWDQFLDGH
++DPPLQJ
+QR
+QR
+XQR
+XQR
+QR
+XQR
+GRV
+WUHV
+&RUUHFFLyQ &RUUHFFLyQ
+Fig. 3.53.	Detección	y	corrección	de	errores	en	función	del	valor	de	H.
+
+===== PÁGINA PDF 248 =====
+3 - Técnicas de la transmisión de la información222
+Alfaomega Comunicaciones - Castro Lechtaler - Fusario
+Dado que este bit es verificado por los bits P 2 y P 4, ambos tendrán paridad impar en 
+I6. 
+En la Fig. 3.57. se puede observar una tabla en la que se dispusieron los bits de paridad 
+1 1 0, y 
+I6.
+Este código tiene una distancia de Hamming de H = 3, lo que le permite detectar y co-
+Este código permite corregir hasta 6 bits consecutivos, mientras que el código de Ham-
+código Hagelbarger 
+por lo menos 19 bits válidos antes de comenzar 
+En la Fig. 3.58., se describe un codificador Hagelbarger. Se puede observar que los bits 
+Por otro lado, el bit I1 y el bit I4 de ese registro son examinados por un generador de bits de 
+El reloj efectúa las tareas de sincronismo necesarias para el funcionamiento del codifica-
+El carácter resultante de siete bits será el indicado en la Fig. 3.54. La relación entre los 
+bits de información y los de paridad están señalados en la Fig. 3.55.
+Si el carácter de 4 bits de información a transmitir es, por ejemplo, 0 0 1 1 , en la Fig. 
+3.56. se calcula el código de Hamming equivalente al carácter original. Supongamos que 
+se produce durante la transmisión un error en el bit I6, que en lugar de ser 1 se recibe un 0. 
+%LWVGHLQIRUPDFLyQ
+%LWVGHSDULGDG
+&DUDFWHUUHVXOWDQWH
+3
+
+3
+3
+3
+,
+,
+3
+3
+,
+,
+,
+,
+,
+,
+Fig. 3.54.	Formación	del	Código	Hamming	para	un	carácter	de	4	bit.
+%LWVGHSDULGDG %LWVGHLQIRUPDFLyQ
+,
+,
+,3
+3
+3
+,
+,
+,
+,
+,
+,
+Fig. 3.55.	Bits	de	información	y	paridad.	Relación	entre	ambos.
+&iOFXORGHELWVGH
+SDULGDG3$5
+%LWVGHSDULGDG
+3$5
+%LWVGHLQIRUPDFLyQ
+DVRFLDGRV
+
+
+
+
+
+
+3
+3
+3
+&DUiFWHURULJLQDO , , , ,   
+
+&yGLJRGH+DPPLQJ
+IRUPDGR
+3 3 , , , , ,      
+
+Fig. 3.56. Ejemplo	de	aplicaciones	del	Código	Hamming.
+1RWDFDGD´µGHODWDEODVLJQLILFDTXHHOELWGH
+SDULGDG RYHULILFDFLyQLQGLFDXQHUURUGHSDULGDG
+1RHVHOYDORUUHDOGHOELWGHYHULILFDFLyQ
+%LWVGHYHULILFDFLyQ
+LQGLFDGRUHVGHXQR
+GHSDULGDG
+,QGLFDHUURUGHSDULGDGHQ3\3GHELGRDTXH
+HOELWGHLQIRUPDFLyQUHFLELGRHVLQFRUUHFWR
+3RVLFLyQQXPpULFD
+GHOELWHUUyQH R
+1LQJXQR
+3 3 3  
+3
+3
+3
+3
+3
+3
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

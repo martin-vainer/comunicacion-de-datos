@@ -1,0 +1,344 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/U2/Señales Banda Base.pdf
+# titulo-identificado: Señales Banda Base
+# titulo-metadatos-pdf: Transmisión Banda Base
+# sha256-original: 8905c0067e6885185ba6eed802802d02bb8f15b987d72dbf48e1209eec64ba20
+# paginas-pdf-total: 33
+# paginas-pdf-extraidas: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+Transmisión Banda Base 
+1 Ing Ruben Fusario 
+
+===== PÁGINA PDF 2 =====
+Diferentes tipos de transmisión 
+TRANSMISION BANDA BASE 
+Constituida por señales que no sufren un 
+proceso de modulación de amplitud, 
+frecuencia o fase a la salida de la fuente que la 
+origina 
+TRANSMISION MODULADA 
+Constituida por señales provenientes de un 
+MoDem (equipo Modulador / Demodulador) 
+2 Ing Ruben Fusario 
+
+===== PÁGINA PDF 3 =====
+Proceso de modulación 
+Ing Ruben Fusario 3 
+
+===== PÁGINA PDF 4 =====
+Proceso de modulación 
+Ing Ruben Fusario 4 
+La señal banda base 
+es la inteligencia a 
+transmitir 
+Salida del 
+modulador de 
+amplitud 
+Salida del 
+modulador de 
+frecuencia 
+
+===== PÁGINA PDF 5 =====
+Proceso de modulación  
+Ing Ruben Fusario 5 
+Modem 
+
+===== PÁGINA PDF 6 =====
+Transmisión banda base 
+ 
+Ing Ruben Fusario 6 
+La transmisión banda base consiste en enviar datos digitales por el canal sin 
+transformarlos en señales analógicas, a lo sumo se los codifican en forma diferente a 
+la original. La codificación se realiza con códigos de línea o también conocidos como 
+códigos banda base para solucionar problemas tecnicos. 
+
+===== PÁGINA PDF 7 =====
+Objetivos de los códigos banda base 
+o códigos de línea 
+7 Ing Ruben Fusario 
+
+===== PÁGINA PDF 8 =====
+Que es la componente continua? 
+• Es la componente de frecuencia igual a cero en el 
+espectro de frecuencias del análisis de Fourier. 
+• Solo existe cuando el valor medio de energía de la 
+señal es diferente de cero. 
+8 Ing Ruben Fusario 
+
+===== PÁGINA PDF 9 =====
+Que es la componente continua? 
+• La señal superior denominada “unipolar” tiene 
+componente continua, la segunda “polar” no tiene. 
+9 Ing Ruben Fusario 
+
+===== PÁGINA PDF 10 =====
+Que problema puede originar la 
+existencia de la componente continua? 
+• En los circuitos que emplean pares balanceados (ejemplo cable 
+UTP) se utilizan acoplamiento inductivos que bloquean dicha 
+componente distorsionando el tren de pulsos. La componente 
+de frecuencia cero NO PASA al secundario, como se muestra en 
+el esquema del transformador siguiente. 
+10 Ing Ruben Fusario 
+
+===== PÁGINA PDF 11 =====
+Que problema puede originar la 
+existencia de la componente continua? 
+• Por ejemplo una línea telefónica analógica no 
+permite pasar frecuencias por debajo de 300 
+hz. 
+• Un enlace de larga distancia puede utilizar uno 
+o mas transformadores para aislar 
+eléctricamente diferentes partes de la línea. 
+• Para estos ejemplos se necesita una 
+codificación que anule la componente 
+continua. 
+Ing Ruben Fusario 11 
+
+===== PÁGINA PDF 12 =====
+Como se transmite una señal de sincronismo desde la placa 
+transmisora hacia la receptora? 
+          Que entendemos por sincronismo? 
+ 
+   El reloj de la placa emisora debe estar 
+sincronizado (debe operar siguiendo el “ritmo” 
+del reloj de la placa transmisora) para interpretar 
+correctamente los bits transmitidos.  
+Se denomina “Slips” a la inexactitud del reloj 
+receptor respecto del reloj del transmisor. 
+ 
+ 12 Ing Ruben Fusario 
+
+===== PÁGINA PDF 13 =====
+Errores de sincronismo 
+ERROR ERROR 
+DATA ORIGINAL 
+LECTURA 
+1 0 1 0 1 0 1 0 1 
+1 0 0 1 0 0 1 
+• SE “PERDIERON” DOS BITS 
+DATA ORIGINAL 1 0 1 0 1 0 1 0 1 
+1 0 1 0 1 0 1 0 1 
+LECTURA 
+0 1 0 1 0 1 0 1 
+LECTURA 
+CORRIDA 
+0 0 0 0 1 1 1 1 
+• SE “GANARON” OCHO BITS 
+S 
+L 
+I 
+P 
+S 
+PERDIDA DE ESTABILIDAD 
+INEXACTITUD DE 
+LOS RELOJES 
+INEXACTITUD DE 
+LOS RELOJES 
+13 Ing Ruben Fusario 
+
+===== PÁGINA PDF 14 =====
+Solución para mantener el sincronismo 
+entre placas Tx y Rx? 
+1. Instalar una línea adicional a la de datos para 
+conectar ambos relojes. Significa duplicar enlaces y 
+generar una red dedicada a transmitir el sincronismo. 
+Solución ineficiente y poco practica, no se emplea. 
+2. Introducir bits adicionales a los de datos para 
+mantener el sincronismo. Ineficiente, baja el throughput 
+de transmisión de datos. 
+3. Utilizar códigos especiales denominados banda 
+base que mantengan el sincronismo durante 
+toda la transmisión de la trama o paquete sin 
+incorporar bits especiales . Solución que se emplea 
+en la mayoría de las transmisiones banda base. 
+14 Ing Ruben Fusario 
+
+===== PÁGINA PDF 15 =====
+Ejemplo de código autosincronizante 
+Las transiciones de las señal en cada pulso sincronizan el reloj del receptor   
+15 Ing Ruben Fusario 
+
+===== PÁGINA PDF 16 =====
+Que significa detectar la señal en la 
+línea? 
+Ing Ruben Fusario 16 
+El protocolo LAN de la PC que quiere transmitir debe detectar si alguna otra estación esta emitiendo, 
+si ninguna lo hace, comienza a transmitir su trama.  
+Para determinar si alguna estación esta transmitiendo mide la tensión en la línea.  
+En consecuencia, no se pueden emplear códigos donde se utilice el nivel de cero volts para 
+representar un bit. 
+Al medir la tensión en la línea, en los instantes que se transmiten los ceros, se 
+interpretará que no hay ninguna estación transmitiendo. ERROR. 
+Codificación 
+Unipolar NRZ + 
+
+===== PÁGINA PDF 17 =====
+Clasificación de los códigos 
+según su polaridad 
+17 Ing Ruben Fusario 
+Señales unipolares NRZ: Tienen componente DC y no se emplean en Tx de datos. 
+
+===== PÁGINA PDF 18 =====
+Clasificación de los códigos 
+según su polaridad 
+18 Ing Ruben Fusario 
+Señal Polar NRZ: No tiene componente DC pero el problema es la perdida de sincronismo ante la 
+presencia de una secuencia larga de 1 o 0. Se emplea en RS 232. 
+
+===== PÁGINA PDF 19 =====
+Clasificación de los códigos 
+según su polaridad 
+19 Ing Ruben Fusario 
+Señal bipolar NRZ: No tiene componente DC, pero persiste el problema de 
+sincronismo ante serie larga de ceros.   
+
+===== PÁGINA PDF 20 =====
+Clasificación de los códigos 
+según el ancho de pulso 
+• Cuando los bits están representados por 
+pulsos que ocupan la totalidad del intervalo 
+significativo (ancho de pulso), tenemos la 
+familia denominada NRZ no retorno a cero. 
+• Cuando los bits se representan por pulsos que 
+ocupan una parte (en general la mitad) del 
+intervalo significativo, tenemos las señales 
+denominadas RZ retorno a cero. 
+20 Ing Ruben Fusario 
+
+===== PÁGINA PDF 21 =====
+Clasificación de los códigos 
+según el ancho de pulso 
+Bipolar NRZ 
+Bipolar RZ 
+Retorna a cero en la mitad del 
+intervalo 
+21 Ing Ruben Fusario 
+
+===== PÁGINA PDF 22 =====
+Clasificación de los códigos 
+según el ancho de pulso 
+ 
+Ing Ruben Fusario 22 
+Señal Polar RZ: No tiene DC y mantiene el sincronismo. Requiere mayor ancho de 
+banda dado que los pulsos son mas angostos y además emplea 3 niveles de señal. 
+
+===== PÁGINA PDF 23 =====
+Códigos Banda base especiales 
+Código AMI (Alternate Mark Inversion) 
+Ing Ruben Fusario 23 
+La componente continua es cero, además  las componentes del espectro mas importantes están 
+en la zona en la que la atenuación del cable es más reducida y la atenuación de la diafonía es 
+mayor, así se consigue una mejor relación señal ruido. 
+ 
+Si la señal tiene largas secuencias de ceros se utiliza un aleatorizador que limite estadísticamente 
+el número de ceros consecutivos, de otra manera se perdería el sincronismo con el reloj.  
+ 
+Si se encuentran dos unos seguidos con la misma polaridad  indica que se ha producido un error. 
+ 
+Se emplea en Multiplexores, sistemas T1 y canal B de las redes RDSI. 
+ 
+ 
+
+===== PÁGINA PDF 24 =====
+AMI 
+Ing Ruben Fusario 24 
+
+===== PÁGINA PDF 25 =====
+Aleatorización 
+• Se puede emplear el AMI si se utiliza la técnica 
+de aleatorización que consiste en sustituir una 
+larga secuencia de ceros por una combinación 
+de otros niveles. 
+• Las técnicas empleadas son : B8ZS y HDB3. 
+Ing Ruben Fusario 25 
+AMI - B8ZS (AMI con sustitución de 8 ceros). Introduce cambios artificiales 
+denominados violaciones. Si vienen ocho 0 seguidos, cambia el patrón en base a la 
+polaridad del 1 anterior. Se usa en EE.UU y Japón. 
+ 
+No obstante, en el resto del mundo se emplea HDB3. 
+
+===== PÁGINA PDF 26 =====
+Códigos Banda base especiales 
+Código HDB3("High Density Bipolar-3 Zeros“)  
+Ing Ruben Fusario 26 
+Regla de formación del código 
+• Se basa en el AMI. 
+• Cuando se tiene una secuencia de 4 ceros seguidos se reemplaza  por 000V o R00V, para saber cual usar se 
+debe contar la cantidad de unos (1) existentes entre la última violación y la actual. Si ese número es par, la 
+secuencia de reemplazo será R00V; si es impar se deberá usar 000V. 
+• El primer pulso de violación de la serie siempre lleva la misma polaridad que el último bit uno (1)  transmitido. 
+• Esto sirve para ser detectado en la recepción, dado que si fuera de datos debería tener polaridad inversa. 
+• Los pulsos de violación se transmiten con polaridad alternada entre sí. 
+• De existir, el pulso de relleno llevará la misma polaridad que el de violación 
+ 
+Se emplea especialmente en transmisiones sobre cables de cobre, hasta 34 Mbps, dado que permite disminuir el 
+“Jitter”. 
+ 
+
+===== PÁGINA PDF 27 =====
+Códigos Banda base especiales 
+Código Miller  
+27 Ing Ruben Fusario 
+
+===== PÁGINA PDF 28 =====
+Códigos Banda base especiales 
+Código Manchester  
+28 Ing Ruben Fusario 
+
+===== PÁGINA PDF 29 =====
+Códigos Banda base especiales 
+Código Manchester  
+29 Ing Ruben Fusario 
+
+===== PÁGINA PDF 30 =====
+Códigos Banda base especiales 
+Código Manchester Bifase Diferencial 
+1. Siempre hay una transición en la mitad del intervalo. 
+2. Si el bit siguiente es un cero también hay una transición al final del intervalo. 
+3. Si el bit siguiente es un uno no hay transición al final del intervalo. 
+ 
+VENTAJAS técnicas de implementación respecto al Manchester  
+Detectar transiciones  genera menos errores que comparar con tierra. 
+La presencia de la transición es lo importante pero no la polaridad.  
+ 
+ 
+ 
+30 Ing Ruben Fusario 
+
+===== PÁGINA PDF 31 =====
+Donde se emplea el código 
+Manchester 
+• En las placas Ethernet, tiene las siguientes 
+ventajas: 
+ 
+– Es autosincronizante. 
+– Tiene valor medio de energía cero. 
+– Posibilita detectar la señal en la línea cualquiera 
+sea el valor binario. 
+31 Ing Ruben Fusario 
+
+===== PÁGINA PDF 32 =====
+Código 4B3T, para reducir el ancho de 
+banda 
+ 
+Ing Ruben Fusario 32 
+                                 Se emplea en transmisiones mayores a 34 Mbps. 
+Porque reduce el requerimiento de ancho de banda del medio de transmisión? 
+
+===== PÁGINA PDF 33 =====
+Código CMI (Code Mark Inversion) 
+Ing Ruben Fusario 33 
+El bit 1 se codifica con polaridad positiva y negativa en forma alternada. 
+ 
+El bit 0 se codifica con un cambio de polaridad en la mitad del pulso o 
+intervalo. 
+Se lo emplea para altas velocidades y se caracteriza porque recupera 
+rápidamente el reloj. Su operación y generación es mas simples que 
+otros códigos como por ejemplo el MILLER. 
+NRZ: nivel alto es “1”, nivel bajo es  
+“0” 

@@ -1,0 +1,172 @@
+U7
+COMUNICACIONES ÓPTICAS
+Ingeniero ALEJANDRO LUIS ECHAZÚ
+alejandroechazu@frba.utn.edu.ar
+COMUNICACIÓN DE DATOS
+ESPECTRO ELECTROMAGNÉTICO
+FIBRA ÓPTICA
+Detalles constructivos
+R EC U B R IM IEN T O
+N U C LEO
+PR O T EC C IÓ N  D E
+PO LIET ILEN O
+n1
+n2
+n1 > n2
+n = C/Vp
+•n (índice de 
+refracción en un 
+medio - densidad)
+•C (velocidad de 
+propagación en el 
+vacío)
+•Vp (velocidad de 
+propagación en un 
+medio)Funcionamiento
+LEY DE SNELL
+n1 sen ø1 = n2 sen ø2
+Principio de Reflexión 
+Total Interna (RTI)
+ø1 tal que ø2=90º
+AB
+50 MHz . km
+100/1000 MHz . km
+10 GHz . km
+TIPOS DE FO
+MULTIMODO INDICE 
+ESCALÓN
+MULTIMODO INDICE GRADUAL
+MONOMODOANCHO DE BANDA DE UNA FO
+Disminuye a medida que nos alejamos de la 
+fuente.
+Limitado por la dispersión de la luz (modal y 
+cromática).
+Ensanchamiento del pulso transmitido.
+Se expresa en GHz.kmVENTANAS DE OPERACIÓN DE LA FO EN EL 
+ESPECTRO
+VENTANAS DE OPERACIÓNTIPOS DE FIBRA ÓPTICA SEGÚN VENTANA
+OM1: Es la fibra óptica multimodo más antigua. Tiene un núcleo de 
+62.5/125 µm y es adecuada para aplicaciones a corta distancia (hasta 2 
+km) con velocidades de transmisión de hasta 1 Gbps.
+OM2: Tiene un núcleo de 50/125 µm, ofrece un mayor ancho de banda 
+y alcance que OM1, especialmente para aplicaciones Gigabit Ethernet.
+OM3: Tiene un núcleo de 50/125 µm. Ofrece un mayor ancho de banda 
+y puede soportar velocidades de hasta 10 Gbps a distancias de hasta 300 
+metros.
+OM4: Similar a OM3, pero con mejoras en términos de ancho de banda 
+y alcance. Puede soportar velocidades de hasta 10 Gbps a distancias más 
+largas, alcanzando los 400 metros.
+OM5: versión más moderna. Ancho de banda mayor. Apta para Data 
+Center. Transmisión a corta y media distancia.
+CATEGORÍAS DE MULTIMODOPÉRDIDAS EN FO
+Disminución de potencia de luz y reducción
+del ancho de banda
+•Dispersión modal (+ importante. En FO 
+multimodo. Distintos tiempos de propagación. 
+Ensanchamiento de pulso)
+•Dispersión cromática (caso de LED. Velocidades 
+diferentes según )
+•Absorción y radiación (por impurezas que se 
+incorporan al silicio para obtener distintos n)
+•Acoplamiento (conectorizado y empalmes)
+•Dispersión de Rayleigh (por irregularidades al 
+solidificarse el estado plástico)
+Tipos de 
+pérdidasSISTEMA OPTOELECTRÓNICO
+EMISORES DE LUZ COMPARADOS
+CABLES ÓPTICOS
+MONOFIBRA           MULTIFIBRA
+CONECTORES CAJA DE EMPALME
+ EMPALMADORAFIBRA ÓPTICA PLÁSTICA (POF)
+Consideration
+ Plastic
+Fibers
+Glass 
+Fibers
+Cost
+ ⬛
+Signal
+ Strength
+ ⬛
+Flexibility
+ ⬛
+Extreme 
+Temperatures
+⬛
+Corrosive
+ or
+ Wet
+Environments
+⬛
+Vacuum
+Environments
+⬛
+Infrared
+ Light
+ ⬛
+Visible Light
+ ⬛
+ ⬛
+Special
+ Assemblies
+ ⬛
+ ⬛
+https://www.bannerengineering.com/us/en/company/expert-
+insights/plastic-glass-fiber-optics-how-to-choose.htmlRESUMEN DE PROPIEDADES
+GRAN ANCHO DE BANDA
+INMUNIDAD AL RUIDO 
+Y A LAS INTERFERENCIAS ELECTROMAGNÉTICAS
+TAMAÑO Y PESO ADECUADOS
+USA BAJAS POTENCIAS
+BAJA ATENUACIÓN
+MULTIPLEXIÓN 
+POR DIVISIÓN DE LONGITUD DE ONDA (WDM)EMPLEO DE FO
+BACKBONE DE REDES
+CABLES SUBMARINOS 
+https://www.submarinecablemap.com/
+ANILLOS SDH / SONET
+RED FDDI (FIBER DISTRIBUTION DATA INTERFACE)
+HFC (HYBRID FIBER COAX)
+FTTH (FIBER TO THE HOME)
+FTTC (FIBER TO THE CURB)
+FTTB (FIBER TO THE BUILDING)
+FTTO (FIBER TO THE OFFICE)FOLLETO 
+TÉCNICO DE FO
+DATOS PARA DECISIONES
+FO
+ COAXIL
+ PAR 
+METÁLICO
+ATENUACIÓN 
+TÍPICA
+---
+0.3 a 3.5 
+dB/km (según 
+ventana)
+--
+7dB/100m 
+(100 MHz)
+-
+20 dB/100m 
+(100 MHz 
+UTP)
+ANCHO DE 
+BANDA
+(ORDEN)
++++ 
+GHz
+++ 
+MHz
++ 
+MHz / KHz
+COSTOS
+ +
+ +++
+ ++
+COSTOS DE 
+DISPOSITIVOS
++++
+ ++
+ +LÁSER
+Transmisión de información mediante un haz 
+de luz coherente, convenientemente modulado.

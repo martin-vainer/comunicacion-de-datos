@@ -19,21 +19,29 @@ Por eso "Qué conceptos entran" va ANTES del desarrollo, y "Trampas" va después
 
 # TP NN — Título
 
-**Fuente del enunciado:** `material/practica/<archivo>.pdf`
+**Fuente del enunciado:** `material/practica/<archivo>.pdf`, pp. X–Y; si proviene de una captura, indicá archivo y línea/sección.
+**Fuente del desarrollo preexistente (si aplica):** `capturas/practica/<archivo>.md`, líneas/sección …
 **Teoría que lo respalda:** [Tema](../teoria/NN-unidad/archivo.md)
 
-## Enunciado
+## Enunciado (transcripción literal)
 
-Transcripción o resumen fiel. No reformular de manera que cambie lo pedido.
+Transcribí el enunciado completo y tal cual aparece en la fuente: consigna, subítems, tablas, opciones,
+variables, cifras, signos y unidades. Se pueden normalizar los saltos de línea para que se lea; no se
+parafrasea ni se corrigen en silencio errores del original. Si hay una errata o discrepancia, conservá
+el texto fuente y agregá una nota pedagógica separada, con la evidencia de la aclaración.
 
 ## Datos
 
 | Dato | Símbolo | Valor | Unidad |
 |---|---|---|---|
-| Ancho de banda | $B$ | | Hz |
+| ... | ... | ... | ... |
+
+Listá sólo los valores y condiciones que se extraen del enunciado; no inventes datos ni sustituyas la
+consigna. Para una pregunta conceptual, indicá «No hay datos numéricos» y enumerá las premisas o
+condiciones que sí da. Si no hay dato pertinente, decilo. Separá explícitamente:
 
 **Qué se pide:** ...
-**Qué NO se pide:** ...   <!-- delimitar evita resolver de más -->
+**Qué NO se pide:** ... <!-- delimitar evita resolver de más -->
 
 ## Qué conceptos entran
 
@@ -54,7 +62,13 @@ Antes de tocar la calculadora: qué tema se está evaluando y por qué se eligi�
 
 Primero el camino, después la cuenta. Si el camino no está claro, la cuenta no sirve.
 
-## Desarrollo
+<a id="desarrollo"></a>
+## Resolución paso a paso
+
+Si la captura ya contiene un desarrollo correcto y claro, conservá su orden, método, cuentas y
+resultados: no lo reescribas desde cero. Añadí sólo las explicaciones pedagógicas necesarias para
+que se entienda por qué se da cada paso. Si encontrás un error en el desarrollo original, separá y
+documentá la transcripción original de la corrección; nunca cambies la fuente ni corrijas sin evidencia.
 
 ### Paso 1 — Título del paso
 
@@ -95,8 +109,8 @@ $$
 
 ## Variantes probables en parcial
 
-- Si en vez de pedir $C$ piden $B$, se despeja: ...
-- Si agregan ruido impulsivo, cambia porque: ...
+- Sólo incluir variantes justificadas por el programa/material registrado. Las hipotéticas se rotulan
+  como tales, se mantienen en alcance y se resuelven con datos/supuestos explícitos: ...
 
 ## Para examen
 

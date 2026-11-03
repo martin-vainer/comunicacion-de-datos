@@ -8,12 +8,12 @@ Universidad Tecnológica Nacional. Plan 2023 · Nivel 4º · Cuatrimestral.
 ```
 apuntes/          Producción propia, en Markdown
   BITACORA.md      Recorrido cronológico y trazabilidad de las clases
-  teoria/         Un directorio por unidad; U1–U4: APUNTE.md canónico + INDICE.md breve
+  teoria/         Un directorio por unidad; destino U1–U8: APUNTE.md canónico + INDICE.md breve
   practica/       TPs, guías de ejercicios, laboratorios
   repaso/         Preguntas y actividades derivadas de apuntes consolidados
   _plantillas/    Plantillas de captura, apunte, ejercicio e índice
 
-capturas/         Registro histórico de clases y cuestionarios, con sus imágenes
+capturas/         Originales de clases y cuestionarios, con imágenes/anexos; siempre inmutables
   teoria/         Capturas teóricas en el subárbol de su unidad original
   practica/       Capturas prácticas y mixtas
 
@@ -23,21 +23,33 @@ material/         Fuentes de terceros — no se editan
   catedra/        Programa analítico, cronogramas
 ```
 
-## Navegación por contenido existente
+## Navegación
+
+- [TODOs — Lista canónica de pendientes](todos.md)
 
 - [Unidad 1 — Introducción a las comunicaciones](apuntes/teoria/01-introduccion-comunicaciones/INDICE.md)
 - [Unidad 2 — Características de las señales](apuntes/teoria/02-senales-telecomunicaciones/INDICE.md)
 - [Unidad 3 — Redes de telecomunicaciones](apuntes/teoria/03-redes-telecomunicaciones/INDICE.md)
 - [Unidad 4 — Modulación, digitalización y multiplexación](apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/INDICE.md)
+- [Unidad 5 — Teoría de la información y codificación](apuntes/teoria/05-teoria-informacion-codificacion/INDICE.md)
 - [Unidad 6 — Canales de comunicaciones](apuntes/teoria/06-canales-comunicaciones/INDICE.md)
 - [Unidad 7 — Medios de comunicaciones](apuntes/teoria/07-medios-comunicaciones/INDICE.md)
+- [Unidad 8 — Hardware de comunicaciones](apuntes/teoria/08-hardware-comunicaciones/INDICE.md)
 - [Práctica](apuntes/practica/INDICE.md)
 - [Repaso y cuestionarios](apuntes/repaso/INDICE.md)
 
-Las unidades 5 y 8 todavía no tienen apuntes ni capturas propios; su alcance permanece definido en el
-programa y en `AGENTS.md`. No se crean índices vacíos.
+La campaña de [consolidación U1–U6](docs/consolidacion-u1-u6/estado.md) integra sólo lo registrado en
+capturas y material específico; la bibliografía sirve para contrastarlo, no para ampliar el temario.
+Los seis paquetes U1–U6 están entregados como **candidatos**, pendientes de revisión independiente.
+La [bitácora](apuntes/BITACORA.md) enlaza las 22 capturas Markdown y separa evidencia original de destino.
+El seguimiento operativo está en el documento de campaña; el **estado académico de cada unidad está
+únicamente en su `APUNTE.md`**. Ni un índice ni la existencia de un archivo certifican revisión.
 
-En U1–U4, cada carpeta teórica mantiene un único `APUNTE.md` con los temas organizados por secciones;
+U7/U8 quedan fuera de esta campaña. Se conserva la navegación histórica U7 y el ejercicio transversal
+E19 sin ampliar su revisión a U7. U8 tiene su propio apunte desde las presentaciones de `material/teoria/U8/`;
+su cobertura y sus pendientes se declaran en el documento, sin heredar el estado de otras unidades.
+
+El criterio de consolidación para U1–U8 es un único `APUNTE.md` por unidad, con temas por secciones;
 `INDICE.md` sólo navega ese contenido. La práctica resuelta y el repaso/autoevaluación permanecen en
 `apuntes/practica/` y `apuntes/repaso/`. El estado `revisado` representa la unidad entera, no una sección.
 
@@ -55,9 +67,16 @@ Tres entradas cubren necesidades distintas:
   académicamente revisado.
 
 Durante la clase se usa la [plantilla de captura rápida](apuntes/_plantillas/captura-clase.md), sin
-YAML obligatorio. La captura histórica se conserva intacta; después se contrasta y su contenido teórico
-se integra como una sección del `APUNTE.md` canónico de la unidad. Los ejercicios y el repaso se guardan
-por separado.
+YAML obligatorio. `capturas/` conserva evidencia original actual y futura: no se modifica, mueve,
+renombra ni borra ningún archivo, imagen o anexo. El trabajo de depuración se hace en `apuntes/`,
+integrando capturas y material por unidad. Las correcciones se explican allí, con procedencia; los
+ejercicios y el repaso se guardan por separado.
+
+Un apunte **final** debe pasar la [puerta de calidad](apuntes/_plantillas/metodologia.md#puerta-de-calidad):
+cobertura del programa, evidencia por sección, contraste integral y controles documentados. Los
+[cuestionarios/simulacros](apuntes/_plantillas/metodologia.md#cuestionarios-simulacros) usan contenido
+verificado, con trazabilidad y corrección razonada; una unidad parcial nunca se presenta como examen
+completo. Estas reglas describen el objetivo, no certifican el estado actual de los apuntes.
 
 Este repo está preparado para trabajarse con agentes, pero no depende de ellos. El circuito y los
 pedidos operativos están en [Flujo agéntico](docs/flujo-agentico.md); las reglas del agente están en

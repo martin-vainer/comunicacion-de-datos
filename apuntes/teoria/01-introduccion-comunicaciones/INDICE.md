@@ -14,11 +14,17 @@
 | [6](APUNTE.md#modelo-osi) | Modelo OSI, servicios, interfaces, protocolos y PDU |
 | [Gotchas](APUNTE.md#7-gotchas-del-material) | Contradicciones y confusiones frecuentes |
 | [Pendientes](APUNTE.md#8-pendientes-por-seccion) | Qué falta contrastar antes de marcar la unidad revisada |
+| [Contrastes](APUNTE.md#registro-de-revision) | Registro real de inspección visual, fuentes y controles |
+
+## Orden recomendado
+
+Teleinformática → transmisión y señal → ETD/ECD y límites CD/ED → redes e Internet → normalización → OSI. La tabla de cobertura y el mapa de integración al frente de [APUNTE.md](APUNTE.md) distinguen lo registrado del programa completo; no presentar este alcance parcial como U1 final.
 
 ## Recursos
 
 - [TP1 resuelto](../../practica/tp-01-comunicaciones.md) — ejercicios de práctica, separados de la teoría.
-- [Índice de repaso](../../repaso/INDICE.md) — cuestionarios históricos.
+- [Repaso U1](../../repaso/u01-introduccion-comunicaciones.md) — preguntas 1–3 históricas; enunciados y soluciones razonadas separados.
+- [Registro de imágenes](imagenes/registro-imagenes.md) — procedencia y SHA-256 de las siete copias preservadas.
 
 ## Capturas históricas relacionadas
 

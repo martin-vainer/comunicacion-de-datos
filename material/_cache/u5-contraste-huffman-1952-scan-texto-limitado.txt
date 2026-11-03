@@ -1,0 +1,29 @@
+# CACHE TEXTUAL DERIVADO DE APOYO EXTERNO — NO ES MATERIAL DE CLASE
+# Uso: contrastar únicamente temas U5 ya registrados; no ampliar corpus ni programa.
+# titulo: David A. Huffman (1952), A Method for the Construction of Minimum-Redundancy Codes, Proceedings of the I.R.E., pp.1098–1101; reproducción escaneada hospedada en compression.ru
+# url-origen-pdf: https://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf
+# url-ficha-o-identificador: https://doi.org/10.1109/JRPROC.1952.273898
+# original-temporal: tmp/curador-ejecucion/externos/huffman-1952-minimum-redundancy-codes.pdf
+# descargado-y-extraido: 2026-10-11
+# sha256-original-pdf: e15818feb9ce9874dbe44073edd85da29fee08a96bc576fe4572211784d8842e
+# paginas-pdf-total: 4
+# extractor: pypdf 6.14.2
+# caracteres-extraidos-por-pagina: 136,77,0,0
+# muestras-visuales-inspeccionadas: PDF1/impresa1098 título/autor/September y condición prefijo; PDF2/impresa1099 cabecera1952 y Optimum Binary Code. No revisión integral de4p.
+# Sin OCR. Texto extraído no certifica tablas, fórmulas ni figuras. El original temporal es auxiliar descargado, no fuente de clase original.
+
+===== PÁGINA PDF 1 =====
+1098 PROCEEDINGS OF THE I.R.E.
+A Method for the Construction of
+Minimum-Redundancy Codes*
+DAVID A.  HUFFMAN +, ASSOCIATE,  IRE
+September
+
+===== PÁGINA PDF 2 =====
+1952 Huffman: A Method for the Construction of Minimum-Redundancy Codes  1099
+
+===== PÁGINA PDF 3 =====
+[Sin texto extraíble; consultar PDF/render original.]
+
+===== PÁGINA PDF 4 =====
+[Sin texto extraíble; consultar PDF/render original.]

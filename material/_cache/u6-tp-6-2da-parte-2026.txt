@@ -1,0 +1,129 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U6/TP   6   (2da parte)  2026.pdf
+# titulo-identificado: TP   6   (2da parte)  2026
+# titulo-metadatos-pdf: TEMARIO TELEINFORMATICA
+# sha256-original: 48f1530df7beb9745ad9bce1bc36a2a7d3e80b5186ff12fc51b5e02e584b233c
+# paginas-pdf-total: 3
+# paginas-pdf-extraidas: 1,2,3
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTAMENTO INGENIERIA EN 
+SISTEMAS DE INFORMACION 
+ 
+ 
+ 
+COMUNICACIONES DE DATOS 
+ 
+COMUNICACIONES 
+ 
+ 
+ 
+GUIA DE TRABAJOS PRACTICOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA PDF 2 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 2 
+ 
+ 
+TRABAJO PRÁCTICO N° 6 (2da parte) 
+ 
+Tratamiento de los errores en las redes de datos. 
+ 
+ 
+ 
+ 
+1. Indicar las principales causas de errores en las redes de datos.  
+ 
+2. Que políticas se emplean para el tratamiento de los errores en las redes de datos.  
+ 
+3. Como incide la corrección de errores en la calidad de servicios de las redes.  
+ 
+4. En una red de transmisión de datos se rec iben 20 bits erróneos en 200.000 bits totales. 
+Cuál es el BER? 
+ 
+ 
+5. La medición anterior se ha realizado sobre una LAN -ETHERNET.  ¿Qué comportamiento 
+puede esperarse de dicha red ? 
+ 
+ 
+6. Dado el siguiente mensaje a transmitir [ M(x) ] y teniendo como polinomio ge nerador G(x) 
+= x 4 + x + 1 . Aplicar el método para detección de errores CRC determinando la 
+información a transmitir.  
+ 
+M(x)=  1 0 1 1 0 1 0 1 1 0 1 
+ 
+Repetir el procedimiento del lado del receptor. Extraer conclusiones.  
+ 
+ 
+7. Cite por lo menos cuatro  protocolos que emplean para la detección de errores el CRC. 
+ 
+ 
+8. Cite por lo menos cuatro  protocolos que emplean para la detección de errores el método 
+de suma de verificación. 
+ 
+9. Cuando se emplean códigos correctores de errores, cite ejemplos.  
+ 
+ 
+10. Como se manifiesta el error en la redes de datos y como se mide?  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+USO DE CODIGO HAMMING:  
+ 
+
+===== PÁGINA PDF 3 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 3 
+https://jarroba.com/codigo-de-hamming-deteccion-y-correccion-de-errores/ 
+ 

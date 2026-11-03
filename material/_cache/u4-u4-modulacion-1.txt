@@ -1,0 +1,265 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/U4/U4 MODULACION 1.pdf
+# titulo-identificado: U4 MODULACION 1
+# titulo-metadatos-pdf: 
+# sha256-original: 328229bce1d5331fc617e255bb4ece385e7ded254c63100a9b65fb20a59c0b5e
+# paginas-pdf-total: 27
+# paginas-pdf-extraidas: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+U 4
+MODULACIÓN
+Ingeniero ALEJANDRO LUIS ECHAZÚ
+alejandroechazu@frba.utn.edu.ar
+COMUNICACIÓN DE DATOS
+
+
+===== PÁGINA PDF 2 =====
+ La modulación es un proceso que consiste en tran sformar una 
+señal (que representa información) en otro tipo de señal  
+adecuada para  su transmisi ón por un medio de comunicaci ón, 
+sin modificar sustancialmente la inform ación que ella 
+represent aba. 
+ 
+M ediante un m odulador, una señal llam ada portadora p(t) es
+trasform ada por una señal llam ada m oduladora m (t), obteniéndose
+com o producto una señal que se conoce com o m odulada M (t).
+La operación de recuperación de la señal original es llevada a cabo
+por un demodulador.
+MODULACION
+
+===== PÁGINA PDF 3 =====
+Señal m oduladora m (t) Señal m odulada M (t)
+Portadora p(t)
+A nalógica o digital A nalógica o digital
+A nalógica o digital
+ESQUEMA BÁSICO DE MODULACIÓN
+
+===== PÁGINA PDF 4 =====
+                  Modulador                      CANAL                                 Demodulador  
+          m  (t)                  M(t)                                                   M'  (t)                   m'(t)  
+ 
+ 
+      Emisión                                                Ruido                                            Recepción  
+ 
+                                          Portadora                                                      Portadora  
+ 
+ 
+Señal moduladora                                 Se ñal modulada                                  Señal original  
+     
+      (original)                                                                                                    (reconstruida)  
+ 
+ESQUEMA DE UNA TRANSMISIÓN MODULADA
+
+===== PÁGINA PDF 5 =====
+TIPOS DE MODULACION
+Tipo de 
+modulación
+Moduladora Portadora Modulada Nombre de la 
+modulación
+Continua 
+analógica
+Analógica Analógica Analógica AM
+FM
+PM
+Continua 
+digital
+Digital Analógica Analógica ASK
+FSK
+PSK        DPSK
+M-PSK   M-QAM
+Por pulsos
+analógica
+Analógica Digital Analógica PAM
+PDM
+PPM
+Por pulsos
+digital
+Digital Digital Digital PCM (MIC)
+DPCM
+DELTA
+DELTA ADAPTIV A
+
+===== PÁGINA PDF 6 =====
+MODULACIÓN POR ONDA CONTINUA
+PORTADORA     p (t) = Ap sen (p t + p)
+CON LA MODULACIÓN SE MODIFICAN ALGUNO DE LOS SIGUIENTES 
+PARÁMETROS: 
+•AMPLITUD
+•FRECUENCIA
+•FASE
+Amplitud instantánea de la portadora
+
+===== PÁGINA PDF 7 =====
+AM
+MODULADORA     a (t) = A sen (a t + a)
+p (t) = Ap sen (p t + p)
+a << p 
+Envolvente de modulación
+
+===== PÁGINA PDF 8 =====
+AM
+•DBL C/PORTADORA
+•BLU C/ PORTADORA
+•DBL INDEPENDIENTE
+•BLU C/ PORT REDUCIDA
+•BLU C/PORT SUPRIMIDA
+Aplicando los Teoremas de 
+traslación de frecuencia y de la 
+modulación
+ANCHO DE BANDA 
+(AB)
+AB DBL = 2B
+AB BLU =  B
+
+===== PÁGINA PDF 9 =====
+ASK
+V ARIACION DE NIVEL DE PORTADORA
+
+===== PÁGINA PDF 10 =====
+ASK
+POR SUPRESION DE PORTADORA
+
+===== PÁGINA PDF 11 =====
+ASK
+ANCHO DE BANDA
+
+
+===== PÁGINA PDF 12 =====
+FM
+SEÑAL MODULADA
+M(t) = Ap sen (p t +  sen a t + p)
+ =  / a (índice de modulación)
+ = k A a (desviación de frec)
+ = k A  (circuito y amplitud 
+de moduladora)
+Banda Angosta
+f<<fa
+AB aprox= 2 fa
+Banda Ancha
+f>>fa
+AB aprox= 2 (f +fa)
+
+===== PÁGINA PDF 13 =====
+FSK
+
+
+===== PÁGINA PDF 14 =====
+FSK    ANCHO DE BANDA
+BANDA ANGOSTA
+ < /2
+BANDA ANCHA
+ > /2
+M(t) = Ap sen (p t +  sen a t + p)
+ = k A
+
+===== PÁGINA PDF 15 =====
+PSK
+SALTOS DE FASE
+
+===== PÁGINA PDF 16 =====
+SEÑAL 2-PSK / B-PSK
+DOS SALTOS DE FASE 
+EN ESTE CASO (0º-180º)
+
+===== PÁGINA PDF 17 =====
+N ro
+de
+secu en cia
+Secu en cia
+de
+B its
+F ase
+asign ada
+1 00 0º
+2 01 90º
+3
+4
+11
+10
+180º
+270º
+ASIGNACION DE SECUENCIA DE BITS Y DE ESTADOS
+DIAGRAMA DE FASES
+MODULACION 4-PSK / Q-PSK
+Cuadro de asignación
+Se aplica Código 
+Reflejo o de Gray
+Diagrama de Estados, de Fases 
+o Vectorial
+
+===== PÁGINA PDF 18 =====
+CONSTRUCCIÓN DEL CÓDIGO DE GRAY
+EJEMPLO CON 3 BITS
+
+===== PÁGINA PDF 19 =====
+MODULACION M-PSK
+8-PSK
+M saltos de fase, con un ángulo  entre fase y fase
+Cada salto lleva “n” bits
+Relación entre ambas velocidades a través de “n”
+n = log2 M
+Vtx = Vmod x n
+
+
+===== PÁGINA PDF 20 =====
+MODULACION 16-QAM (ejemplos)
+MODULACION M-QAM
+Usa dos portadoras independientes en cuadratura (desfasadas 90º entre sí)
+Combina saltos de amplitud y de fase
+4 saltos de amplitud y 8 saltos de fase        3 saltos de amplitud y 12 saltos de fase
+Variante Circular                                        Variante Rectangular
+
+
+===== PÁGINA PDF 21 =====
+Diagrama de estados o 
+costelación
+Señal en el dominio del tiempo
+
+===== PÁGINA PDF 22 =====
+https://www.youtube.com/watch?v=ZUN5rVH1Zpc
+
+
+===== PÁGINA PDF 23 =====
+
+
+===== PÁGINA PDF 24 =====
+COMPARACIÓN DE MODULACIÓN   M-PSK / M-QAM
+V tx (bps) / AB (Hz)      Sensibilidad al ruido (Pe)     S/N (Eb/No)
+
+
+===== PÁGINA PDF 25 =====
+V ARIANTES M-PSK
+OQPSK (offset - compensada)
+Evita fluctuaciones de gran amplitud en los saltos de 180º
+
+
+===== PÁGINA PDF 26 =====
+V ARIANTES M-PSK
+DPSK (diferencial)
+Sin referencia de fase 
+absoluta. 
+La referencia que se 
+toma es la del último bit 
+recibido.
+DBPSK
+
+===== PÁGINA PDF 27 =====
+V ARIANTES M-PSK o M-QAM
+TCM (Trellis Codes 
+Modulation)
+También Modulación por 
+Codificación Entrelazada.
+Proporciona una mayor 
+inmunidad al ruido ante la 
+complejidad de las 
+constelaciones generadas por 
+ambas técnicas de 
+modulación.
+Agregado de bits 
+redundantes.
+Constelación de estados con codificación entrelazada
+

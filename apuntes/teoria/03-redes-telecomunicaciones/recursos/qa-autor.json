@@ -1,0 +1,491 @@
+{
+  "fecha": "2026-10-11",
+  "recalculos": {
+    "E1": 6.666666666666667,
+    "E3": 230.0,
+    "E4_n": 16.0,
+    "E4_us": 833.3333333333334,
+    "E5_percent": 98.81422924901186,
+    "E6_sin_percent": 77.77777777777779,
+    "E6_con_percent": 70.0,
+    "E7_sinc": 3.4133333333333336,
+    "E7_asinc": 5.12,
+    "E11": 4.444444444444445,
+    "E12_dBm": -4.199999999999999,
+    "E12_mW": 0.38018939632056115,
+    "E13_mW": 0.19952623149688797,
+    "E14_dBm": 24.010299956639813,
+    "E14_mW": 251.78508235883342,
+    "E15_m3": 600.0,
+    "E15_m02": 9000.0,
+    "E16_mW": 1995.2623149688789,
+    "E17_dBkm": 2.1003433318879936,
+    "E18_GdB": 31,
+    "E18_b_mW": 12589.254117941662,
+    "P4_A_recibido": 13.6,
+    "P4_A_sensibilidad": 10.6,
+    "P4_B_doble": 3.010299956639812,
+    "P4_B_cuadruple": 6.020599913279624,
+    "P4_B_43": 19952.62314968879,
+    "P4_C_42_9": 139.63683610559377,
+    "P4_C_2_3": 1.3031667784522993,
+    "P4_D_divisor": -3.010299956639812,
+    "perro_distancia_m": 133333.33333333334,
+    "PQ4_bit_s": 2000.0
+  },
+  "aserciones_numericas": 31,
+  "recursos_hash_iguales": 17,
+  "enlaces": [
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../material/teoria/U3/U3%20Redes%20de%20Telecomunicaciones.pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../material/practica/U%203/UT%203%20MEDIDA%20VELOCIDAD.pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../material/practica/U%203/TP%20%20%203%20%20%202026.pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../material/practica/U%203/EXPRESIONES%20%20Y%20RTAS%20UD%20NRO%203%20(1ra%20PARTE).pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../capturas/teoria/03-redes-telecomunicaciones/apuntes-clase%204.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../capturas/teoria/03-redes-telecomunicaciones/apuntes-clase%205.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../capturas/practica/clase%2003.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../capturas/practica/clase%2004.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../../capturas/practica/Clase%2005.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#velocidades",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#multinivel",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#sentidos-modos",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#sincronismo",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#protocolos",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#redes",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#conmutacion",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#topologias",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#rtpc",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#trafico",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#rdsi",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../practica/tp-03-redes.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../repaso/u03-redes.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../01-introduccion-comunicaciones/APUNTE.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/multinivel.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../02-senales-telecomunicaciones/APUNTE.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../06-canales-comunicaciones/APUNTE.md",
+      "status": "missing-target"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/sentidos.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/serie-paralelo.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/sincronismo-bit.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/asincronico.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/sincronico.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../../practica/tp-03-redes.md#e11",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/nube.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "#topologias",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/costos-volumen.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/circuitos-paquetes.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../04-modulacion-digitalizacion-multiplexacion/APUNTE.md",
+      "status": "missing-target"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "../06-canales-comunicaciones/APUNTE.md",
+      "status": "missing-target"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/manifiesto.json",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "target": "recursos/qa-autor.json",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#velocidades",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#multinivel",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#sentidos-modos",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#sincronismo",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#protocolos",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#redes",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#conmutacion",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#topologias",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#rtpc",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#trafico",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#rdsi",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "../../practica/tp-03-redes.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "../../practica/tp-03-ejercicio-19-calculo-enlace.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "../../repaso/u03-redes.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#alcance-y-fuentes",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "APUNTE.md#pendientes",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "../02-senales-telecomunicaciones/APUNTE.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "../04-modulacion-digitalizacion-multiplexacion/APUNTE.md",
+      "status": "missing-target"
+    },
+    {
+      "from": "apuntes/teoria/03-redes-telecomunicaciones/INDICE.md",
+      "target": "../06-canales-comunicaciones/APUNTE.md",
+      "status": "missing-target"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "tp-03-ejercicio-19-calculo-enlace.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../../material/practica/U%203/TP%20%20%203%20%20%202026.pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../../material/practica/U%203/EXPRESIONES%20%20Y%20RTAS%20UD%20NRO%203%20(1ra%20PARTE).pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../../material/practica/U%203/EXPRESIONES%20%20Y%20RTAS%20UD%20NRO%203%20(2da%20PARTE).pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../../material/practica/U%203/UT%203%20MEDIDA%20VELOCIDAD.pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../../capturas/practica/clase%2004.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/APUNTE.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/06-canales-comunicaciones/APUNTE.md",
+      "status": "missing-target"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/APUNTE.md#multinivel",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/tp12.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/tp13.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/tp14.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/tp15.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/tp16.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/tp17.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/tp18.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "tp-03-ejercicio-19-calculo-enlace.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/balance-ejemplo.png",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/manifiesto.json",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/practica/tp-03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/recursos/qa-autor.json",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../../capturas/teoria/03-redes-telecomunicaciones/cuestionario_U3.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/APUNTE.md#velocidades",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/APUNTE.md#sentidos-modos",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../../material/teoria/U3/U3%20Redes%20de%20Telecomunicaciones.pdf",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../../capturas/practica/Clase%2005.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/APUNTE.md#multinivel",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../teoria/06-canales-comunicaciones/APUNTE.md",
+      "status": "missing-target"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/APUNTE.md#velocidades",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "../teoria/03-redes-telecomunicaciones/APUNTE.md#multinivel",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "u02-fourier-y-ancho-de-banda.md",
+      "status": "ok"
+    },
+    {
+      "from": "apuntes/repaso/u03-redes.md",
+      "target": "u06-canales.md",
+      "status": "missing-target"
+    }
+  ],
+  "limites": "Anclas/archivos en unidades aún en autoría no se certifican. No build ni commit."
+}

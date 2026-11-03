@@ -1,0 +1,108 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/teoria/U4/U4 MODULACION 2.pdf
+# titulo-identificado: U4 MODULACION 2
+# titulo-metadatos-pdf: 
+# sha256-original: 9726c8eb41a262f964dc55f69947fbf0df5f07cab21b9e882f6a89c1d67ca33f
+# paginas-pdf-total: 13
+# paginas-pdf-extraidas: 1,2,3,4,5,6,7,8,9,10,11,12,13
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+U 4
+MODULACIÓN
+Ingeniero ALEJANDRO LUIS ECHAZÚ
+alejandroechazu@frba.utn.edu.ar
+COMUNICACIÓN DE DATOS
+
+
+===== PÁGINA PDF 2 =====
+MODULACION POR PULSOS ANALOGICA
+
+===== PÁGINA PDF 3 =====
+DIGITALIZACION DE UNA SEÑAL ANALOGICA
+•MUESTREO
+f muestreo = > 2 x f máxima (T. Nyquist)
+•CUANTIFICACION
+Aproximar valores de las muestras a niveles cuánticos.
+•CODIFICACION
+Codificación de los niveles cuánticos
+PAM
+PAM
+
+===== PÁGINA PDF 4 =====
+ERROR O RUIDO 
+GRANULAR O DE 
+CUANTIFICACIÓN
+E(t)=S(t)-C(t)
+S(t) es PAM
+C(t) es digital
+
+===== PÁGINA PDF 5 =====
+TIPOS DE CUANTIFICACIÓN
+•Uniforme o lineal
+Niveles cuánticos con la misma medida.
+Uso de un elevado número de niveles.
+•No uniforme
+Niveles cuánticos variables (comprimen próximos a nivel 0 y se expanden 
+hacia los extremos).
+Aplicación de COMPANSIÓN (comprimir y expandir).
+
+
+===== PÁGINA PDF 6 =====
+Leyes de cuantificación UIT G.711
+Ley 
+15 segmentos
+Americana
+Ley A
+13 segmentos
+Europea
+Expansión y compresión logarítmica
+
+===== PÁGINA PDF 7 =====
+Ley A – 13 segmentos - Europea
+
+
+===== PÁGINA PDF 8 =====
+
+
+===== PÁGINA PDF 9 =====
+MODULACIÓN POR PULSOS DIGITAL
+INFORMACIÓN EN LA CODIFICACIÓN
+MODULACIÓN POR PULSOS CODIFICADOS (PCM)
+Dos Normas: 
+Europea y Norteamericana
+
+===== PÁGINA PDF 10 =====
+Digitalización para PCM
+Leyes de 
+cuantificación
+A (Europa y América del Sur) 
+256 niveles por muestra
+
+ (EEUU y Japón)    
+128 niveles por muestra
+Codificación
+A (Europa y América del Sur) 
+8 bits por muestra
+
+ (EEUU y Japón)        
+7 bits por muestra
+
+===== PÁGINA PDF 11 =====
+MODULACIÓN DELTA
+
+===== PÁGINA PDF 12 =====
+MODULACIÓN DELTA ADAPTIV A
+
+
+===== PÁGINA PDF 13 =====
+MODULACIÓN PCM DIFERENCIAL (DPCM)
+Combina Modulación Delta con la codificación de sistemas PCM.
+Reemplaza el modulador de pulsos por un dispositivo muestreador-cuantificador.
+P(t) con amplitud proporcional a la diferencia entre e(t) y s(t), que se transmite 
+codificada.
+Muestreador
+Cuantificador
+Codificador

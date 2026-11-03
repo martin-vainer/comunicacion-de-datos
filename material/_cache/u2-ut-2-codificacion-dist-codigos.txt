@@ -1,0 +1,46 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 2/UT 2 CODIFICACION - DIST CODIGOS.pdf
+# titulo-identificado: UT 2 CODIFICACION - DIST CODIGOS
+# titulo-metadatos-pdf: 
+# sha256-original: 693af0825afd9417f6765b8d4e86e2a82e6ea86c919c843bef98386cb75a1420
+# paginas-pdf-total: 3
+# paginas-pdf-extraidas: 1,2,3
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+1 1 1 0 0 0 0 1 1
+Unipolar
+0
+AMI
+0
+1 1 1 0 0 0 0 1 1
+Bipolar
+0 RZ
+Polar
+RZ
+1 1 1 0 0 0 0 1 1 0 0 0 0
+0 0 0 HDB-3
+1 1 1 0 0 0 0 1 1 0 0 0 0
+Manchester
+1 1 1 0 0 0 0 1 1 0 0 0 0
+Manchester
+Diferencial
+CODIFICACIONES : CODIGO DE LINEA
+0
+0
+v
+R 0 0 v
+0
+0
+0
+0 0
+R 0
+
+===== PÁGINA PDF 2 =====
+
+
+===== PÁGINA PDF 3 =====
+0 0 V
+0 0 V

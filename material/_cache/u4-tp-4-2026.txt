@@ -1,0 +1,127 @@
+# CACHE TEXTUAL DERIVADO — NO ES FUENTE INDEPENDIENTE
+# original: material/practica/U 4/TP 4  2026.pdf
+# titulo-identificado: TP 4  2026
+# titulo-metadatos-pdf: TEMARIO TELEINFORMATICA
+# sha256-original: 4d054a98c45160f52bd2e0f5ffcab72128ca5b8b329b58347aba648c1b32f57b
+# paginas-pdf-total: 3
+# paginas-pdf-extraidas: 1,2,3
+# extractor: pypdf 6.14.2
+# generado: 2026-10-11
+# Solo texto para búsqueda: las figuras, tablas y fórmulas requieren contraste con el original. No se aplicó OCR.
+
+===== PÁGINA PDF 1 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DEPARTAMENTO INGENIERIA EN 
+SISTEMAS DE INFORMACION 
+ 
+ 
+ 
+COMUNICACIONES DE DATOS 
+ 
+COMUNICACIONES 
+ 
+ 
+ 
+GUIA DE TRABAJOS PRACTICOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PÁGINA PDF 2 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 2 
+ 
+ 
+TRABAJO PRÁCTICO N° 4 
+ 
+Modulacion, multiplexacion digital: PDH,SDH y SONET.. 
+ 
+ 
+ 
+1. Se tiene que transmitir una señal analógica que pasa a través de un filtro de 4000 Hz de 
+ancho de banda. Dicha señal entra a un modulador PCM donde se toman muestras cada 
+125 microsegundos, codificándose cada muestra según un proceso de cuantificación de 
+128 niveles. Hallar la c apacidad que debe tener el vínculo de salida del modulador.  
+      Cuál sería dicha capacidad si fueran 256 niveles cuánticos?  
+ 
+2. Se dispone de un modem que trabaja con el tipo de modulación 16 -PSK 
+ 
+      Calcule el desfasaje entre estados que adopta la señal  modulada.  
+ 
+3. Qué relación hay entre la velocidad de transmisión Vt y la velocidad de modulación Vm  , 
+con respecto al ejercicio anterior ? 
+ 
+4. Se tiene un modem cuyo tipo de modulación es 8-PSK. Indicar: 
+ 
+• De la señal moduladora, portadora y modulada, cuáles son  analógicas y cuáles 
+digitales? 
+ 
+• Proponer una asignación de fases a secuencias de bits y realizar el diagrama de 
+fases. 
+ 
+• Qué relación existe entre la velocidad de modulación y la velocidad de transmisión?  
+ 
+5. Se quiere transmitir por un canal telefónico a 960 0 bps y se cuenta con un modem de 2400 
+baudios que opera con transmisión multinivel y modulación PSK. Hallar:  
+ 
+• Qué tipo de modulación PSK debe emplearse para transmitir a la velocidad de 
+transmisión requerida. 
+ 
+• El diagrama vectorial y la asignación de fase s correspondiente. 
+ 
+6. Una portadora de 100 Mhz se modula en frecuencia con una señal sinusoidal de 10 Khz 
+(fm) de manera tal que la desviación máxima de frecuencia ( f) es de 1 Mhz. Determinar el 
+ancho de banda aproximado de la señal de FM en este caso. 
+ 
+7. Confeccione un cuadro resumen de los tipos de modulación especificando para cada uno 
+si la señal moduladora, portadora y modulada son analógicas o digitales.  
+ 
+8. Qué tipos de modulación se ven menos afectados por el ruido y por qué?  
+
+===== PÁGINA PDF 3 =====
+                 
+                                                                              MATERIA: 
+Comunicaciones 
+          UTN – FRBA  
+Departamento de Sistemas                      NIVEL: Cuarto/Tercero 
+   
+ 
+ 
+ 3 
+ 
+9. Qué tipo de señales (analógi cas o digitales) se obtienen después de un proceso de 
+multiplexión FDM y TDM? 
+ 
+10. Confeccione un cuadro comparativo entre el multiplexor con sus variantes FDM , TDM y 
+STDM. 
+ 

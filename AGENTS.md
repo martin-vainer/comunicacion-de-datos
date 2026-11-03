@@ -60,6 +60,7 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 │   ├── repaso/           # Preguntas, cuestionarios y actividades de autoevaluación
 │   └── _plantillas/      # Metodología + plantillas de apunte, ejercicio e índice
 │
+├── capturas/             # Originales de clase, imágenes y anexos — evidencia inmutable
 └── material/             # Fuentes de terceros — NO se edita
     ├── teoria/           # PDFs, libros, filminas de cátedra
     ├── practica/         # Guías, enunciados, datasets, código
@@ -69,16 +70,26 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 
 ### Reglas de ubicación
 
-- **`apuntes/` se escribe, `material/` se lee.** Nunca edites ni reformatees un archivo de `material/`.
+- **`capturas/` y los originales de `material/` se leen; `apuntes/` se escribe.** No edites ni
+  reformatees originales. Sólo se permite generar derivados en `material/_cache/` según la metodología.
 - El contenido teórico nuevo se ubica en la unidad que le corresponde según el programa analítico
   (`material/catedra/`).
-- Para la consolidación de U1–U4, cada carpeta de unidad tiene un único `APUNTE.md` teórico canónico;
+- Para la consolidación de U1–U8, cada carpeta de unidad tiene un único `APUNTE.md` teórico canónico;
   los temas se organizan como secciones, no como archivos teóricos independientes. `INDICE.md` es una
   navegación breve hacia esas secciones. Si un tema cruza unidades, se desarrolla en la unidad principal
   y se enlaza desde la otra.
 - Mantené práctica resuelta y material de repaso en `apuntes/practica/` y `apuntes/repaso/`,
   respectivamente; no los mezcles con el apunte teórico.
-- Conservá intactas las capturas históricas: integrar su contenido no autoriza a corregirlas ni moverlas.
+- En cada TP y cuestionario de `apuntes/`, transcribí el enunciado y las opciones completas tal cual su
+  fuente (sólo normalizá saltos de línea), después separá los **Datos/condiciones** extraídos y luego
+  desarrollá la resolución paso a paso. No inventes datos. Si un desarrollo original ya está bien
+  explicado, preservá su secuencia, cuentas y resultados; agregá sólo la pedagogía necesaria. Erratas o
+  aclaraciones van aparte, con evidencia. Aplica la metodología §8 y sus
+  [plantillas de práctica](apuntes/_plantillas/ejercicio-practica.md) y
+  [cuestionario](apuntes/_plantillas/cuestionario-repaso.md).
+- **`capturas/` es evidencia original permanente**, tanto actual como futura: no editar, corregir,
+  reformatear, mover, renombrar ni borrar Markdown, imágenes o anexos. Integrar una clase nunca autoriza
+  a modificarla. Las correcciones se documentan en `apuntes/` con referencia al original.
 - Los nombres de archivo nuevos siguen `kebab-case.md`, sin tildes ni espacios (por ejemplo,
   `tp-01-introduccion.md`).
 - Los archivos de `apuntes/practica/` se nombran `tp-NN-tema.md` o `guia-NN-tema.md`.
@@ -99,6 +110,7 @@ Plantillas:
 | `apuntes/_plantillas/metodologia.md` | Criterio pedagógico — **autoridad** |
 | `apuntes/_plantillas/apunte-teoria.md` | `APUNTE.md` canónico de una unidad teórica |
 | `apuntes/_plantillas/ejercicio-practica.md` | TP, guía o laboratorio resuelto |
+| `apuntes/_plantillas/cuestionario-repaso.md` | Cuestionario con enunciados originales y respuestas separadas |
 | `apuntes/_plantillas/indice-unidad.md` | `INDICE.md` de cada unidad |
 
 Reglas duras:
@@ -127,25 +139,41 @@ Reglas duras:
   una revisión parcial no vuelve `revisado` el apunte.
 - La plantilla es flexible: los conceptos centrales usan los ocho bloques, los secundarios se resuelven
   con definición + ejemplo + relación con la unidad.
+- Antes de llamar una unidad **final/revisada**, aplicá la puerta de calidad de la metodología (§6.1):
+  cobertura del programa, trazabilidad por sección, contraste integral, cálculos y enlaces comprobados.
+  La generación de cuestionarios/simulacros sigue §8: evidencia por pregunta y corrección razonada;
+  ningún pendiente se evalúa como conocimiento confirmado.
+
+### Obligaciones de fidelidad y revisión
+
+- **Formato:** un párrafo o ítem por línea lógica, sin cortes por ancho fijo; conservar los saltos estructurales de Markdown, código, Mermaid y fórmulas.
+- **Fidelidad docente:** preservar agrupaciones, términos, siglas y notación del profesor; las equivalencias deben seguir siendo reconocibles.
+- **Alcance:** explicar mejor no autoriza a ampliar el temario. Los apoyos mínimos deben tener una necesidad pedagógica concreta y estar identificados.
+- **Verificación:** comprobar enlaces o recalcular no demuestra que un dato coincida con la fuente. Informar por separado estructura, recálculos y contraste técnico.
+- **Incertidumbre:** un dato ilegible o una discrepancia sin evidencia suficiente queda pendiente; no corregir en silencio ni declarar contrastado lo que no se comprobó.
+
+Procedimientos y evidencia: [metodología, §§3–4 y revisión diferenciada](apuntes/_plantillas/metodologia.md#revision-diferenciada).
 
 ### Antes de redactar un tema
 
-1. Ubicá el material en `material/teoria/` o `material/practica/`.
+1. Ubicá las capturas originales y el material en `material/teoria/` o `material/practica/`; asigná
+   cada tema a su unidad según el programa. Una captura mixta puede alimentar varias unidades sin moverse.
 2. Verificá que exista su cache textual en `material/_cache/`. Si no existe, generalo:
    ```bash
    pdftotext -layout -enc UTF-8 "material/teoria/<archivo>.pdf" "material/_cache/<nombre>.txt"
    ```
 3. Usá el cache para buscar y redactar; contrastá siempre con el PDF/material original, que es la
    autoridad. El cache es un derivado auxiliar y no se cita como fuente independiente.
-4. Para U1–U4, integrá el contenido en la sección correspondiente de `APUNTE.md`; anotá allí cualquier
+4. Para U1–U8, integrá el contenido en la sección correspondiente de `APUNTE.md`; anotá allí cualquier
    pendiente junto a su sección y actualizá `INDICE.md` con un enlace breve a ella. Conservá práctica y
    repaso separados, y no modifiques las capturas.
 
 > No consolides una sección del apunte si el PDF fuente todavía no tiene cache textual, salvo pedido
 > explícito del estudiante.
 
-**Entorno**: el lector nativo de PDF no funciona acá (falta `pdftoppm`); usá `pdftotext`, que sí está en
-`/mingw64/bin`. Tampoco hay `bat`, `fd` ni `eza`. Sí hay `rg`.
+**Entorno**: comprobá las herramientas disponibles al empezar la sesión; no asumas que un diagnóstico
+histórico sigue vigente. Consultá las notas de entorno de la metodología. Si sólo accedés al texto
+extraído, registrá las figuras y fórmulas pendientes de contraste visual; no declares revisión integral.
 
 ---
 
@@ -238,7 +266,7 @@ El listado completo está en el programa analítico: `material/catedra/`.
 - Conventional commits, en español, sin atribución a IA de ningún tipo.
 - Prefijos: `docs:` para apuntes, `chore:` para estructura/config, `feat:` para herramientas del repo.
 - Ejemplo: `docs(u06): apunte de detección de errores por CRC`.
-- Al consolidar U1–U4, un commit por unidad y su navegación/práctica/repaso asociados. No mezcles
+- Al consolidar U1–U8, un commit por unidad y su navegación/práctica/repaso asociados. No mezcles
   unidades en un mismo commit.
 - Los binarios pesados de `material/` se versionan igual (son la fuente de estudio), salvo que superen
   un tamaño razonable.

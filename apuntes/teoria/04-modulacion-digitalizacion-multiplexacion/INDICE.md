@@ -1,19 +1,12 @@
 # Unidad 4 — Modulación, digitalización y multiplexación
 
-**Idea central:** adaptar la información al medio mediante portadoras o pulsos y comprender el paso de
-una señal analógica a una representación digital.
+**Estado:** en-progreso; candidato para revisión independiente. [Apunte canónico](APUNTE.md).
 
-## Capturas relacionadas
+| Recorrido | Sección |
+|---|---|
+| Representar información | [Modulación](APUNTE.md#modulacion), [AM](APUNTE.md#am), [FM/PM](APUNTE.md#fm-pm), [ASK/FSK](APUNTE.md#ask-fsk), [PSK/QAM y Gray](APUNTE.md#psk-qam) |
+| Digitalizar | [Pulsos](APUNTE.md#pulsos), [PCM y leyes A/μ](APUNTE.md#pcm), [Delta/ADM/DPCM](APUNTE.md#delta-dpcm) |
+| Compartir vínculo | [Presupuesto](APUNTE.md#multiplexacion), [FDM/OFDM](APUNTE.md#fdm-ofdm), [TDM/E1/T1](APUNTE.md#tdm), [PDH/SDH/SONET](APUNTE.md#pdh-sdh), [STDM](APUNTE.md#stdm), [WDM/CDM](APUNTE.md#wdm-cdm) |
+| Estudiar | [Pendientes](APUNTE.md#pendientes), [figuras](registro-imagenes.md), [TP4 E1–10](../../practica/tp-04-modulacion-multiplexacion.md), [repaso Q1–4](../../repaso/u04-modulacion-multiplexacion.md) |
 
-- [Clase teórica 5](../../../capturas/teoria/04-modulacion-digitalizacion-multiplexacion/clase%205.md) —
-  AM/ASK, FM/FSK, PSK, QAM, modulación por pulsos y comienzo de digitalización.
-
-## Dependencias
-
-- **Se apoya en U2:** espectro y ancho de banda.
-- **Se conecta con U3:** velocidad y transmisión multinivel.
-
-## Pendientes
-
-- La captura todavía no fue reconstruida ni contrastada como apuntes temáticos.
-- Multiplexación aún no aparece desarrollada en el contenido registrado.
+Alcance: clases 5,6,6.2, práctica 6 y cuestionario registrado. U7/U8 excluidas. Los pendientes no se evalúan como conocimiento confirmado.

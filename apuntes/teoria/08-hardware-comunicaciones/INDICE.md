@@ -34,4 +34,5 @@ El estado y las fuentes se mantienen únicamente en `APUNTE.md`. Antes de estudi
 - [U6](../06-canales-comunicaciones/APUNTE.md): canal, ruido y errores.
 - [U7](../07-medios-comunicaciones/INDICE.md): medios físicos.
 - [Registro de imágenes fuente](recursos/registro-imagenes.md).
-- [Índice de práctica](../../practica/INDICE.md) e [índice de repaso](../../repaso/INDICE.md): no se generaron actividades U8 en este pedido.
+- [Cuestionario de teoría: interfaces digitales](../../repaso/u08-interfaces-digitales.md): cuatro preguntas sobre RS-232, null-módem y V.24.
+- [Índice de práctica](../../practica/INDICE.md) e [índice de repaso](../../repaso/INDICE.md).

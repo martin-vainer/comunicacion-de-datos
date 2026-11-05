@@ -35,6 +35,10 @@ académico de cada unidad se consulta únicamente en su `APUNTE.md`. Esta tabla 
 | [Teoría U6](../capturas/teoria/06-Canales%20de%20comunicaciones/08_10_2026.md) | teoría | 2026-10-08 | U6 | Canal/capacidad, Nyquist/Shannon, atenuación, ruido, distorsión, BER/ISI, paridad, CRC, checksum, ARQ/FEC y Hamming | [APUNTE U6](teoria/06-canales-comunicaciones/APUNTE.md): secciones registradas de canal y errores; fuentes/figuras originales no certificadas por esta tabla |
 | [Práctica preparcial](../capturas/practica/clase_practica_1er_parcial.md) | registro sin desarrollo | 2026-09-22 (única línea) | No asignada | Anuncio de clase preparatoria; sin contenido académico | Sin destino de consolidación: se conserva el placeholder original, sin inventar ejercicios ni preguntas |
 
+## Evidencia adicional de cuestionarios
+
+- **U8 — Interfaces digitales:** cuatro capturas del aula aportadas el 05/11/2026, sin fecha de clase visible. Se conservan como evidencia por pregunta en el [cuestionario de repaso](repaso/u08-interfaces-digitales.md).
+
 ## Regla de actualización
 
 Al actualizar un destino, comprobar su existencia y el enlace desde este archivo. No cambiar fecha,

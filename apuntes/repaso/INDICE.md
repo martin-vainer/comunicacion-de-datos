@@ -18,6 +18,8 @@ ni evalúa pendientes como conocimiento confirmado. Estado académico unitario s
 - [U6 — cuestionario práctico del 27/10/2026](u06-cuestionario-practica-2026-10-27.md): Q01–Q03 sobre FEC, clasificación de detección y BER; Q03 mantiene pendiente la confirmación de la respuesta docente.
 - [U6 — canales](u06-canales.md#q-p5-3): Q3 (dBm) de la clase práctica 5.
 - [U7 — medios de comunicaciones](u07-medios-comunicaciones.md): seis preguntas sobre antenas, coaxil, satélites, UTP y fibra, con ilustraciones y salvedad de alcance en Q03.
+- [U8 — interfaces digitales](u08-interfaces-digitales.md): cuatro preguntas de teoría sobre RS-232, null-módem y V.24, con capturas y salvedades técnicas.
+- [U5–U8 — repaso del segundo parcial](segundo-parcial-u05-u08.md): cuestionario en desarrollo, incorporado de a una pregunta.
 
 El seguimiento operativo está en [estado de campaña](../../docs/consolidacion-u1-u6/estado.md).
 

@@ -2,6 +2,8 @@
 
 Estado y alcance únicamente en [APUNTE.md](APUNTE.md#pendientes).
 
+[Unidades de transmisión: cuadro de referencia](APUNTE.md#unidades-transmision).
+
 1. [Señales/regeneración](APUNTE.md#senales).
 2. [Parámetros/media/eficaz](APUNTE.md#parametros).
 3. [Fourier](APUNTE.md#fourier) y [tren](APUNTE.md#tren).

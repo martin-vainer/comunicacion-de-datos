@@ -20,6 +20,19 @@ actualizado: 2026-10-13
 
 **Ruta:** señal → parámetros → Fourier → ancho de banda → OEM → códigos → filtros. La práctica está en [TP2](../../practica/tp-02-senales.md); los cuestionarios, en [señales](../../repaso/u02-senales.md) y [Fourier/AB](../../repaso/u02-fourier-y-ancho-de-banda.md).
 
+<a id="unidades-transmision"></a>
+## Unidades de transmisión — cuadro de referencia
+
+| Tipo según cátedra | Unidad | Qué expresa |
+|---|---|---|
+| Relativa | **dB** (decibel) | Compara dos potencias, dos tensiones o dos corrientes. Sirve para expresar ganancia o atenuación. |
+| Absoluta | **dBm** (decibel miliwatt) | Nivel de potencia referido a **1 mW**. |
+| Absoluta | **dBmV** (decibel milivoltio) | Nivel de tensión referido a **1 mV**. |
+
+**Clave:** «absoluta» significa que la referencia es fija, no que no haya comparación. Por eso **0 dB** indica una relación de 1 a 1, mientras que **0 dBm** indica 1 mW y **0 dBmV**, 1 mV.
+
+**Fuente:** [diapositiva teórica de U2, p. 5](../../../material/teoria/U2/U%202%20Características%20de%20las%20señales%20de%20telecom.pdf#page=5). Las fórmulas y sus supuestos están en [U6 §7.1: Decibeles](../06-canales-comunicaciones/APUNTE.md#decibeles).
+
 ## Alcance registrado y mapa de integración
 
 Se consolida lo registrado, NO todo el programa ni todos los capítulos del libro. Las páginas citadas son páginas **PDF**, salvo indicación de impresa. `en-progreso` refleja los pendientes explícitos, no una promoción de revisión parcial a revisión integral.

@@ -61,6 +61,8 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 │   └── _plantillas/      # Metodología + plantillas de apunte, ejercicio e índice
 │
 ├── capturas/             # Originales de clase, imágenes y anexos — evidencia inmutable
+├── primer_parcial/       # Fotos originales de examen — U1–U4
+├── segundo_parcial/      # Fotos originales de examen — U5–U8
 └── material/             # Fuentes de terceros — NO se edita
     ├── teoria/           # PDFs, libros, filminas de cátedra
     ├── practica/         # Guías, enunciados, datasets, código
@@ -90,6 +92,7 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 - **`capturas/` es evidencia original permanente**, tanto actual como futura: no editar, corregir,
   reformatear, mover, renombrar ni borrar Markdown, imágenes o anexos. Integrar una clase nunca autoriza
   a modificarla. Las correcciones se documentan en `apuntes/` con referencia al original.
+- **Las fotos de `primer_parcial/` (U1–U4) y `segundo_parcial/` (U5–U8) también son originales inmutables.** Registrá cada examen por instancia/tema en el [flujo de estudio](docs/flujo-agentico.md#parciales), guardá su resolución en `apuntes/repaso/` y enlazá cada pregunta con la foto y su evidencia técnica. Las opciones marcadas a mano no son una clave: resolvé de forma independiente y justificá la opción elegida.
 - Los nombres de archivo nuevos siguen `kebab-case.md`, sin tildes ni espacios (por ejemplo,
   `tp-01-introduccion.md`).
 - Los archivos de `apuntes/practica/` se nombran `tp-NN-tema.md` o `guia-NN-tema.md`.

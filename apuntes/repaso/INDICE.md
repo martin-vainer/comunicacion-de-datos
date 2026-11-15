@@ -4,6 +4,11 @@ El repaso practica comprensión, no reemplaza teoría ni confirma por sí solo r
 Cada recurso declara preguntas de origen, corrección y alcance; no se presenta como simulacro completo
 ni evalúa pendientes como conocimiento confirmado. Estado académico unitario sólo en su `APUNTE.md`.
 
+## Exámenes fotografiados
+
+- [Primer parcial, primera instancia, Tema J (U1–U4)](primer-parcial-u01-u04-tema-j.md): 10 preguntas con opciones originales, resolución razonada y referencias.
+- [Segundo parcial, Tema G (U5–U8)](../../docs/flujo-agentico.md#parciales): fotos registradas; no confundir con el cuestionario de repaso U5–U8.
+
 ## Recursos existentes
 
 - [U1 — introducción a las comunicaciones](u01-introduccion-comunicaciones.md): Q1–3 del cuestionario

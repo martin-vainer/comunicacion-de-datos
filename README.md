@@ -17,6 +17,9 @@ capturas/         Originales de clases y cuestionarios, con imágenes/anexos; si
   teoria/         Capturas teóricas en el subárbol de su unidad original
   practica/       Capturas prácticas y mixtas
 
+primer_parcial/   Fotos originales de examen — U1–U4
+segundo_parcial/  Fotos originales de examen — U5–U8
+
 material/         Fuentes de terceros — no se editan
   teoria/         PDFs, libros, filminas de cátedra
   practica/       Enunciados, guías, datasets, código
@@ -37,6 +40,7 @@ material/         Fuentes de terceros — no se editan
 - [Unidad 8 — Hardware de comunicaciones](apuntes/teoria/08-hardware-comunicaciones/INDICE.md)
 - [Práctica](apuntes/practica/INDICE.md)
 - [Repaso y cuestionarios](apuntes/repaso/INDICE.md)
+- [Parciales: fotos originales y resoluciones](docs/flujo-agentico.md#parciales)
 
 La campaña de [consolidación U1–U6](docs/consolidacion-u1-u6/estado.md) integra sólo lo registrado en
 capturas y material específico; la bibliografía sirve para contrastarlo, no para ampliar el temario.

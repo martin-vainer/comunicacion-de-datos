@@ -33,6 +33,16 @@ capturar → proponer integración → contrastar → consolidar → practicar
    evidencia por pregunta, respuestas separadas cuando permitan autoevaluación y corrección razonada.
    Para nuevos archivos de repaso, usar la [plantilla de cuestionario](../apuntes/_plantillas/cuestionario-repaso.md).
 
+<a id="parciales"></a>
+## Parciales: fotos originales y resoluciones
+
+| Instancia | Unidades | Fotos originales | Resolución |
+|---|---|---|---|
+| Primer parcial, primera instancia, Tema J | U1–U4 | [`primer_parcial/`](../primer_parcial/) · [hoja 1](../primer_parcial/1.jpeg) · [hoja 2](../primer_parcial/2.jpeg) | [10 preguntas resueltas](../apuntes/repaso/primer-parcial-u01-u04-tema-j.md) |
+| Segundo parcial, Tema G | U5–U8 | [`segundo_parcial/`](../segundo_parcial/) · [hoja 1](../segundo_parcial/1.jpeg) · [hoja 2](../segundo_parcial/2.jpeg) | Fotos registradas; sin resolución del Tema G. El [cuestionario de repaso U5–U8](../apuntes/repaso/segundo-parcial-u05-u08.md) es otro recurso. |
+
+Las carpetas guardan evidencia original, no soluciones. No editar, mover ni renombrar las fotos. Cuando se pida resolver un examen, transcribir las preguntas y opciones impresas, separar los datos y justificar cada respuesta en `apuntes/repaso/` con referencias al apunte, a los TPs pertinentes y al material de cátedra. Las marcas de estudiantes no se usan como clave. Si la opción correcta no figura o la consigna depende de una convención, explicitarlo con evidencia, sin corregir silenciosamente el enunciado.
+
 ## Roles
 
 ### Curador

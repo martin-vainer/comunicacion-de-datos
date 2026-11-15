@@ -80,6 +80,12 @@ Consultar, explicar, evaluar o verificar **no autoriza cambios**. Para editar, e
 Antes de leer en profundidad, el agente abre la portada o la bitácora, luego el `INDICE.md` de la unidad
 y recién después el `APUNTE.md` canónico y las fuentes estrictamente necesarias.
 
+## Cierre de cambios con Git
+
+1. Antes de editar, revisá `git status --short` para distinguir los cambios que ya existían de los tuyos.
+2. Al terminar cada cambio lógico, verificá su contenido y revisá el diff. Prepará sólo los archivos o bloques propios; comprobá el alcance con `git diff --cached` antes de commitear.
+3. Cerrá el cambio con un commit según [las reglas de Git](../AGENTS.md#8-git) e informá su hash. Una consulta sin cambios no requiere commit.
+
 ## Pedido para trabajar una unidad
 
 > «Consolidá la unidad N desde sus capturas y material, sin tocar los originales. Declará cobertura,

@@ -266,6 +266,7 @@ El listado completo está en el programa analítico: `material/catedra/`.
 
 ## 8. Git
 
+- Cada cambio lógico que haga un agente se cierra con un commit propio una vez terminado y verificado, salvo que el estudiante pida no commitear. Un commit reúne los archivos necesarios para ese cambio; no mezcles cambios independientes, preexistentes ni ajenos. Si no podés aislar el cambio o no pasa la verificación, informalo sin commitearlo.
 - Conventional commits, en español, sin atribución a IA de ningún tipo.
 - Prefijos: `docs:` para apuntes, `chore:` para estructura/config, `feat:` para herramientas del repo.
 - Ejemplo: `docs(u06): apunte de detección de errores por CRC`.
@@ -273,3 +274,4 @@ El listado completo está en el programa analítico: `material/catedra/`.
   unidades en un mismo commit.
 - Los binarios pesados de `material/` se versionan igual (son la fuente de estudio), salvo que superen
   un tamaño razonable.
+- Un commit es local. No hagas push sin pedido explícito.

@@ -440,9 +440,9 @@ La **RTPC/PSTN**, red telefónica pública conmutada, resuelve conectar abonados
 | Conmutador | Establece conexión entre accesos/rutas | Central que selecciona salida |
 | Troncal | Enlace entre centrales | Ruta entre zonas |
 
-**Conmutación espacial (p. 20–21):** rutas físicamente independientes dentro del conmutador. La figura de tres etapas muestra entrada→matrices intermedias→salida; no necesita una única matriz gigantesca. No se agrega dimensionamiento ausente.
+- **Conmutación espacial (p. 20–21):** rutas físicamente independientes dentro del conmutador. La figura de tres etapas muestra entrada→matrices intermedias→salida; no necesita una única matriz gigantesca. No se agrega dimensionamiento ausente.
 
-**Conmutación temporal (p. 20,22):** interfaces conectan líneas full duplex a un bus digital con intervalos asignados; la unidad de control organiza el acceso. Separación por tiempo, no mezcla indistinta de muestras. PCM y [TDM/jerarquías](../04-modulacion-digitalizacion-multiplexacion/APUNTE.md) pertenecen a U4.
+- **Conmutación temporal (p. 20,22):** interfaces conectan líneas full duplex a un bus digital con intervalos asignados; la unidad de control organiza el acceso. Separación por tiempo, no mezcla indistinta de muestras. PCM y [TDM/jerarquías](../04-modulacion-digitalizacion-multiplexacion/APUNTE.md) pertenecen a U4.
 
 **Ejemplo hipotético:** dos comunicaciones espaciales usan rutas internas distintas; en el bus temporal sus muestras ocupan dos intervalos distintos de cada ciclo. Compartir bus no significa superponer ambas muestras.
 

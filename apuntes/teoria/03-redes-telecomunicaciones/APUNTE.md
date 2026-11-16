@@ -11,7 +11,7 @@ fuentes:
   - capturas/practica/clase 03.md
   - capturas/practica/clase 04.md
   - https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=es&rec=3248
-actualizado: 2026-10-13
+actualizado: 2026-11-15
 ---
 
 # Unidad 3 — Redes de telecomunicaciones
@@ -125,7 +125,7 @@ La desigualdad estricta de F3 p. 3 es el caso con control y errores, no una ley 
 
 Acortar indefinidamente los pulsos exige componentes espectrales que el canal no puede reproducir: se deforman y dificultan la decisión. Otra posibilidad es mantener su duración y **aumentar los estados distinguibles**. Agrupás bits: dos estados representan 0/1; cuatro pueden representar 00/01/10/11.
 
-La secuencia registrada `101101001001` se agrupa `10 11 01 00 10 01`: seis símbolos de cuatro estados representan doce bits. Los escalones conservan el ancho.
+La [filmina teórica de U3, p. 5](../../../material/teoria/U3/U3%20Redes%20de%20Telecomunicaciones.pdf#page=5) muestra cuatro niveles distinguibles, rotulados `00`, `01`, `10` y `11`: **$n=4$ niveles**, que permiten representar **$N=2$ bits por símbolo**. La secuencia registrada `101101001001` se agrupa `10 11 01 00 10 01`: son seis símbolos que representan doce bits. Los escalones conservan el ancho.
 
 ![Dibits de P4; copia exacta](recursos/multinivel.png)
 
@@ -135,8 +135,8 @@ $$
 
 | Símbolo | Significado | Unidad |
 |---|---|---|
-| $n $ | Estados disponibles | conteo |
-| $N$ | Bits representados por símbolo | bit/símbolo |
+| $n$ | Cantidad de niveles distinguibles del pulso (estados posibles por símbolo) | conteo de niveles |
+| $N$ | Cantidad de bits que representa un símbolo; no es la cantidad de niveles | bit/símbolo |
 | $V_m $ | Tasa de símbolos | baudios |
 | $V_t $ | Tasa binaria bruta | bit/s |
 

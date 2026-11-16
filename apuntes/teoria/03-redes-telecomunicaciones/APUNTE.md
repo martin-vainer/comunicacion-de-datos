@@ -281,6 +281,10 @@ Bloques largos reparten overhead entre más datos; si una falla obliga a repetir
 
 **Para examen:** «Asincrónica delimita cada carácter; sincrónica delimita bloques y mantiene base temporal. Rendimiento es datos útiles sobre total; un bloque mayor reduce overhead relativo, pero encarece la repetición por errores».
 
+**Puente hacia protocolos.** La [diapositiva 9 de U3](../../../material/teoria/U3/U3%20Redes%20de%20Telecomunicaciones.pdf#page=9) separa la transmisión serie en asincrónica y sincrónica. Dentro de la rama sincrónica, la lámina distingue protocolos orientados al carácter y al bit; esa orientación no es lo mismo que el sincronismo de carácter o de bit. Los ejemplos y el alcance de esa clasificación se explican en el [punto 5](#protocolos).
+
+![Diapositiva 9: transmisión serie con ramas asincrónica y sincrónica; la rama sincrónica se subdivide en protocolos orientados al carácter y al bit.](recursos/diapositiva-09-transmision-protocolos.png)
+
 <a id="protocolos"></a>
 ## 5. Protocolos orientados al carácter y al bit
 

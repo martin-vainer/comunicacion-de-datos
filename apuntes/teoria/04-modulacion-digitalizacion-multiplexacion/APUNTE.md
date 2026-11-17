@@ -79,6 +79,12 @@ flowchart LR
 
 ### Formalización y ejemplo
 
+CON LA MODULACIÓN SE MODIFICAN ALGUNO DE LOS SIGUIENTES PARÁMETROS:
+- AMPLITUD
+- FRECUENCIA
+- FASE
+
+
 $$p(t)=A_p\sin(2\pi f_p t+\theta_p),\qquad T_p=1/f_p,\qquad \omega_p=2\pi f_p.$$
 
 | Símbolo | Significado | Unidad |

@@ -41,7 +41,8 @@ material/         Fuentes de terceros — no se editan
 - [Unidad 8 — Hardware de comunicaciones](apuntes/teoria/08-hardware-comunicaciones/INDICE.md)
 - [Práctica](apuntes/practica/INDICE.md)
 - [Repaso y cuestionarios](apuntes/repaso/INDICE.md)
-- [Resumen imprimible de U1–U8](apuntes/resumenes/resumen-u01-u08.md)
+- [Resumen del primer parcial (U1–U4)](apuntes/resumenes/primer-parcial-u01-u04.md)
+- [Resumen del segundo parcial (U5–U8)](apuntes/resumenes/segundo-parcial-u05-u08.md)
 - [Parciales: fotos originales y resoluciones](docs/flujo-agentico.md#parciales)
 
 La campaña de [consolidación U1–U6](docs/consolidacion-u1-u6/estado.md) integra sólo lo registrado en

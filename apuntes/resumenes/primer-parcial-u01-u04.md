@@ -65,7 +65,7 @@ Cuadros y fórmulas para repasar antes de rendir. No reemplaza los apuntes ni lo
 | **Eficaz:** $V_{\mathrm{rms}}=A/\sqrt 2$ | $V_{\mathrm{rms}}$ valor eficaz y $A$ pico [V], sinusoide sin continua. | 300 V de pico → 212,1 V eficaces. |
 | **Banda:** $B=f_{\mathrm{sup}}-f_{\mathrm{inf}}$ | $B$ ancho; $f_{\mathrm{sup}},f_{\mathrm{inf}}$ límites [Hz], mismo criterio. | 300–3400 Hz → 3100 Hz. |
 | **Tren rectangular:** $\Delta f=1/T$, $B_0=1/\tau$, $C_0=A\tau/T$ | $T$ período y $\tau$ ancho de pulso [s]; $\Delta f$ separación y $B_0$ primer cero [Hz]; $A$ amplitud y $C_0$ continua [V], tren rectangular unipolar. | $T=10$ ms, $\tau=0,5$ ms, $A=1$ V → 100 Hz, 2 kHz y 0,05 V. |
-| **Longitud de onda:** $\lambda=v/f$ | $\lambda$ [m]; $v$ propagación [m/s]; $f$ frecuencia [Hz] en ese medio. | En aire, $v\approx 3\cdot10^8$ m/s; 100 MHz → 3 m. |
+| **Longitud de onda:** $\lambda=v/f$ | $\lambda$ longitud [m]; $v$ velocidad de propagación [m/s], aproximadamente $3\cdot10^8$ m/s en aire; $f$ frecuencia [Hz]. | 4 m en aire → 75 MHz → VHF (30–300 MHz). |
 | **Ganancia relativa:** $G=10\log_{10}(P_s/P_e)$; $P_s=P_e10^{G/10}$ | $G$ ganancia con signo [dB]; $P_s,P_e$ potencias positivas de salida/entrada en la misma unidad. | 1 W → 0,5 W: −3,01 dB. |
 | **Nivel de potencia:** $L=10\log_{10}(P/1\,\mathrm{mW})$; $P=1\,\mathrm{mW}\,10^{L/10}$ | $L$ nivel [dBm]; $P$ potencia positiva [mW]; referencia fija de 1 mW. | 100 mW → 20 dBm; 0 dBm → 1 mW. |
 
@@ -92,30 +92,38 @@ Cuadros y fórmulas para repasar antes de rendir. No reemplaza los apuntes ni lo
 | **Modulación:** $V_m=1/\tau$ | $V_m$ [baudios]; $\tau$ intervalo constante [s/símbolo]. | 1 ms/símbolo → 1000 baudios. |
 | **Multinivel:** $V_t=V_m\log_2 n$ | $V_t$ transmisión [bit/s], $V_m$ modulación [baudios], $n$ niveles (potencia de 2); mapeo fijo sin redundancia. | 1200 baudios, 4 niveles → 2400 bit/s. |
 | **Rendimiento:** $\eta=b_u/b_t$ | $\eta$ fracción útil; $b_u,b_t$ bits útiles y tiempos totales de bit por carácter; sin pausas. Contá paridad si existe. | 1 arranque + 7 datos + 2 de parada, sin paridad → 7/10 = 70 %. |
-| **Tiempo de transmisión:** $t=N_{\rm tot}/V_t$ | $t$ [s], $N_{\rm tot}$ bits enviados incluidos los de control, $V_t$ tasa bruta [bit/s]. | 100 caracteres de 10 tiempos de bit a 1000 bit/s → 1 s. |
+| **Tiempo de transmisión:** $t=N_{\rm tot}/V_t=N_{\rm datos}/(\eta V_t)$ | $t$ [s]; $N_{\rm tot}$ bits enviados, $N_{\rm datos}$ bits útiles; $V_t$ tasa bruta [bit/s]; $\eta$ rendimiento como fracción. Sin pausas. | 14 400 bits útiles a 3600 bit/s y 90 % → 4,44 s. Dividí por 0,90; no sumes 10 % al tiempo ideal. |
 | **Malla completa:** $N_e=n(n-1)/2$ | $N_e$ enlaces; $n$ nodos; un enlace por par. | 4 nodos → 6 enlaces. |
 | **Tráfico:** $A=\lambda T_R$ | $A$ [Erlang], ocupación media; $\lambda$ [llamadas/h], $T_R$ retención media [h/llamada]. | 60 llamadas/h, 3 min/llamada → 3 Erlangs. |
 
 | Balance de potencia · TP3 | Variables y condición | Ejemplo |
 |---|---|---|
 | **Pérdida de cable:** $L_c=\alpha d$ | $L_c$ [dB], $\alpha$ atenuación por distancia a la frecuencia de trabajo [dB/km], $d$ longitud [km]. | 5 dB/km × 30 km = 150 dB. |
-| **Nivel recibido:** $P_R=P_T+\sum G-\sum L$ | $P_R,P_T$ niveles [dBm]; $G$ ganancias y $L$ pérdidas de cada elemento en cascada [dB]. Compará con la sensibilidad y el margen requerido. | 2 mW → +3,01 dBm; con 150 dB de pérdida llegan −146,99 dBm. Para llegar a −60 dBm sin margen faltan 86,99 dB de ganancia. |
+| **Nivel recibido:** $P_R=P_T+\sum G-\sum L$ | $P_R$ nivel recibido y $P_T$ transmitido [dBm]; $G$ ganancias [dB]; $L$ pérdidas en cascada como magnitudes positivas [dB]. | 2 mW → +3,01 dBm; con 150 dB de pérdida llegan −146,99 dBm. Para llegar a −60 dBm sin margen faltan 86,99 dB de ganancia. |
+| **Umbral de recepción:** $P_R\geq S_R+M$ | $S_R$ sensibilidad del receptor [dBm]; $M$ margen requerido [dB], cero si no se pide margen en el ejercicio. | Sensibilidad −60 dBm y margen 3 dB → deben llegar al menos −57 dBm. |
 
-**Splitter:** calculá cada boca por separado; una boca de −3,5 dB entrega unos 0,447 W si entran 1 W. Si te piden pérdida global, sumá las **potencias** de salida antes de convertir a dB; no sumes las pérdidas de las bocas.
+**Splitter:** una boca de −3,5 dB entrega unos 0,447 W si entran 1 W. En dB, **sumá −3,5 dB** como ganancia con signo o **restá 3,5 dB** como pérdida: no ambas. Para la pérdida global, sumá las **potencias** de salida, no los dB de las bocas.
 
 [Apunte U3](../teoria/03-redes-telecomunicaciones/APUNTE.md) · [TP3: balance](../practica/tp-03-redes.md#e17)
 
 ## U4 · Modulación, digitalización y multiplexación
 
-- **Modular** adapta una señal al medio: AM/FM/PM varían amplitud/frecuencia/fase; ASK/FSK/PSK eligen estados discretos de esos parámetros; QAM combina amplitud y fase. **Moduladora** = mensaje; **portadora** = soporte; **modulada** = salida. Datos digitales no obligan a una portadora cuadrada.
-- **Constelación:** contá puntos, no anillos. PSK pura tiene un solo radio; varias amplitudes y fases son compatibles con QAM. **16-PSK y 16-QAM** tienen la misma tasa bruta a iguales baudios; la 16-QAM cuadrada del curso da menos error a igual energía por bit respecto del ruido y con canal/receptor comparables.
-- **Por pulsos:** PAM cambia altura; PWM/PDM, duración; PPM, posición. PCM/MIC: elegir instantes → redondear amplitudes → asignar bits. Delta codifica subida/bajada; ADM adapta el paso; DPCM codifica el error de predicción.
+**Modular** adapta la señal al medio. **Moduladora** = mensaje; **portadora** = soporte; **modulada** = salida.
+
+| Familia | Qué cambia o qué se codifica | Ejemplo rápido |
+|---|---|---|
+| Continua analógica | **AM:** amplitud; **FM:** frecuencia instantánea; **PM:** fase. | AM: la envolvente sigue la señal de voz. |
+| Continua digital | **ASK/FSK/PSK:** estados discretos de amplitud/frecuencia/fase; **QAM:** amplitud y fase. | PSK usa una portadora sinusoidal aun con datos digitales. |
+| Por pulsos analógica | **PAM:** altura; **PWM/PDM:** duración; **PPM:** posición. | PAM: muestra de 0,7 V → pulso de 0,7 V, sin cuantificar. |
+| Por pulsos digital | **PCM/MIC:** muestrea → cuantifica → codifica; **Delta:** indica subir/bajar la aproximación; **ADM:** adapta el paso; **DPCM:** codifica el error de predicción. | PCM: muestra de 1,3 V → nivel de 1,5 V → etiqueta binaria **01** en el ejemplo del apunte. |
+
+**Constelación:** contá puntos, no anillos. PSK pura tiene un solo radio; varias amplitudes y fases son compatibles con QAM. **16-PSK y 16-QAM** tienen la misma tasa bruta a iguales baudios; la 16-QAM cuadrada del curso da menos error a igual energía por bit respecto del ruido y con canal y receptor comparables.
 
 | Multiplexación | Cómo separa señales |
 |---|---|
-| FDM | Bandas de frecuencia distintas; guardas entre canales. |
+| FDM | Bandas de frecuencia distintas con guardas. En TP4 E9, la suma da un agregado analógico pasabanda. |
 | OFDM | Espectros superpuestos: en el modelo ideal, el pico de cada subportadora coincide con ceros de las otras. Exige sincronismo. |
-| TDM síncrono | Turnos fijos, aun con entradas inactivas. |
+| TDM síncrono | Turnos fijos, aun con entradas inactivas. En TP4 E9, TDM digital intercala datos y entrega una secuencia digital entramada. |
 | STDM | Turnos según demanda; requiere identificación y puede generar colas. |
 | WDM | Longitudes de onda distintas en una misma fibra. |
 | CDM | Códigos de correlación controlada, en el mismo tiempo y banda. |

@@ -12,21 +12,21 @@ actualizado: 2026-11-17
 **Alcance:** cinco consignas de la [hoja fotografiada](../../primer_parcial/tema-no-visible/hoja-1.png). La toma no permite identificar fecha, tema ni instancia; no se los deduce de las marcas. En el margen inferior izquierdo no se lee completa la numeración de las dos últimas consignas: Q04 y Q05 son rótulos editoriales por orden de aparición. La resolución es independiente de las anotaciones manuscritas.
 
 <a id="q01"></a>
-## Q01 — Código de línea bipolar NRZ (AMI)
+## Q01 — Identificación de un código de línea
 
 ### Enunciado original
 
-Dado el siguiente gráfico de este código de línea contestar:
-
-[Gráfico en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
-
-a. ¿Qué tipo de código se trata? (unipolar, polar, bipolar, RZ, NRZ, Manchester)
-
-b. Es autosincronizante?
-
-c. Indique dos códigos que ocupen más ancho de banda que éste.
-
-d. ¿La componente continua es nula?
+> Dado el siguiente gráfico de este código de línea contestar:
+>
+> [Gráfico en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
+>
+> a. ¿Qué tipo de código se trata? (unipolar, polar, bipolar, RZ, NRZ, Manchester)
+>
+> b. Es autosincronizante?
+>
+> c. Indique dos códigos que ocupen más ancho de banda que éste.
+>
+> d. ¿La componente continua es nula?
 
 **Datos y condiciones:** la señal tiene tres alturas relativas: positiva, cero y negativa. El gráfico no calibra tensiones ni tiempos; para promediar el tramo se toman celdas iguales y marcas simétricas $\pm A$ [V].
 
@@ -47,13 +47,13 @@ d. ¿La componente continua es nula?
 
 ### Enunciado original
 
-Se requiere montar un enlace de fibra óptica uniendo dos equipos separados 30000 metros uno de otro. La potencia del transmisor es de 2 mW y la sensibilidad del receptor es de – 60 dBm.
-
-a. Cuál será la especificación de atenuación máxima a requerir de la fibra que se debe emplear para no usar amplificador, expresada en dB/Km.
-
-b. Si se emplea una fibra óptica de 5 dB/Km, se requiere amplificador para recibir la señal? Si así fuera, ¿de qué ganancia?
-
-[Esquema Tx–Rx en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
+> Se requiere montar un enlace de fibra óptica uniendo dos equipos separados 30000 metros uno de otro. La potencia del transmisor es de 2 mW y la sensibilidad del receptor es de – 60 dBm.
+>
+> a. Cuál será la especificación de atenuación máxima a requerir de la fibra que se debe emplear para no usar amplificador, expresada en dB/Km.
+>
+> b. Si se emplea una fibra óptica de 5 dB/Km, se requiere amplificador para recibir la señal? Si así fuera, ¿de qué ganancia?
+>
+> [Esquema Tx–Rx en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
 
 **Datos y condiciones:** distancia $d=30000$ m = 30 km; potencia de emisión 2 mW; sensibilidad $S_R=-60$ dBm; en b), atenuación específica de 5 dB/km. No se informan conectores, empalmes, márgenes ni otras pérdidas. Se busca llegar al menos al umbral nominal de potencia.
 
@@ -63,26 +63,26 @@ b. Si se emplea una fibra óptica de 5 dB/Km, se requiere amplificador para reci
 1. El receptor no compara «2 mW contra −60 dBm» directamente: ambas potencias deben estar en la misma escala. El nivel de salida $P_T$ [dBm] es $10\log_{10}(2\,\mathrm{mW}/1\,\mathrm{mW})=3{,}0103\,\mathrm{dBm}$. Que la sensibilidad sea negativa no significa potencia negativa: está por debajo de la referencia de 1 mW.
 2. **a) Cuánta pérdida admite el enlace:** entre $3{,}0103$ dBm y $-60$ dBm hay **63,0103 dB** de presupuesto. Si la fibra pierde $\alpha$ [dB/km], la pérdida total en $d$ [km] es $\alpha d$ [dB]. Al repartir el presupuesto entre los 30 km, queda $63{,}0103\,\mathrm{dB}/30\,\mathrm{km}\approx\mathbf{2{,}10034\,\mathrm{dB/km}}$ como máximo. Es un caso límite, sin margen.
 3. **b) Qué llega con la otra fibra:** 5 dB/km × 30 km = **150 dB** de pérdida. Sin amplificación llegan $3{,}0103-150=-146{,}9897$ dBm, por debajo de la sensibilidad. Por lo tanto, **sí requiere ganancia** en el modelo del ejercicio.
-4. **Ganancia mínima:** no se compensan los 150 dB enteros; alcanza con cubrir la diferencia hasta el umbral: $-60-(-146{,}9897)=\mathbf{86{,}9897\,\mathrm{dB}}$, aproximadamente **87 dB**. Control: $3{,}0103+86{,}9897-150=-60$ dBm usando los valores redondeados. Es ganancia neta teórica de presupuesto, no una recomendación de usar un único amplificador real: faltan datos de ruido, potencia y margen.
+4. **Ganancia mínima:** el enlace ya tolera 63,0103 dB de los 150 dB de pérdida. La ganancia solo tiene que cubrir lo que falta para llegar al umbral: $-60-(-146{,}9897)=\mathbf{86{,}9897\,\mathrm{dB}}$, aproximadamente **87 dB**. Control: $3{,}0103+86{,}9897-150=-60$ dBm usando los valores redondeados. Es ganancia neta teórica de presupuesto, no una recomendación de usar un único amplificador real: faltan datos de ruido, potencia y margen.
 
 **Evidencia:** [TP3 E17, mismo presupuesto inicial](../practica/tp-03-redes.md#e17), [TP3 E18, cálculo del déficit](../practica/tp-03-redes.md#e18) y [U6, balance de enlace](../teoria/06-canales-comunicaciones/APUNTE.md#balance-enlace) como referencia cruzada del método.
 
 </details>
 
 <a id="q03"></a>
-## Q03 — Constelación de 32 estados sin opción correcta
+## Q03 — Lectura de una constelación
 
 ### Enunciado original
 
-El diagrama de estados representa la modulación con la relación de velocidades siguiente:
-
-[Constelación y opciones en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
-
-1. 32 PSK Vtx = 5 Vmod
-2. 128 QAM Vtx = 7 Vmod
-3. 64 QAM Vtx = 5 Vmod
-4. 128 PSK Vtx = 6 Vmod
-5. Ninguna es elegible
+> El diagrama de estados representa la modulación con la relación de velocidades siguiente:
+>
+> [Constelación y opciones en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
+>
+> 1. 32 PSK Vtx = 5 Vmod
+> 2. 128 QAM Vtx = 7 Vmod
+> 3. 64 QAM Vtx = 5 Vmod
+> 4. 128 PSK Vtx = 6 Vmod
+> 5. Ninguna es elegible
 
 **Datos y condiciones:** se cuentan los puntos dibujados, no los numeritos manuscritos. Hay 16 en el anillo exterior, 12 en el intermedio y 4 en el interior; no se da una velocidad nominal. Se usa un mapeo binario fijo sin redundancia.
 
@@ -98,23 +98,23 @@ El diagrama de estados representa la modulación con la relación de velocidades
 </details>
 
 <a id="q04"></a>
-## Q04 — Reconocer OFDM en el espectro
+## Q04 — Interpretación de un espectro
 
 ### Enunciado original
 
-Seleccione la respuesta adecuada referida a este gráfico. Corresponde a:
-
-[Espectro y opciones en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
-
-a. Una señal modulada en amplitud.
-
-b. La técnica TDM
-
-c. La metodología FDM
-
-d. La tecnología OFDM
-
-e. Ninguna de las opciones
+> Seleccione la respuesta adecuada referida a este gráfico. Corresponde a:
+>
+> [Espectro y opciones en la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
+>
+> a. Una señal modulada en amplitud.
+>
+> b. La técnica TDM
+>
+> c. La metodología FDM
+>
+> d. La tecnología OFDM
+>
+> e. Ninguna de las opciones
 
 **Datos y condiciones:** el eje horizontal indica frecuencia; se ven cinco subportadoras con centros equiespaciados y lóbulos superpuestos. No hay escala numérica de ancho de banda en Hz.
 
@@ -134,13 +134,13 @@ e. Ninguna de las opciones
 
 ### Enunciado original
 
-Para una transmisión asincrónica:
-
-a. Calcular el rendimiento en % cuando el programa de comunicaciones que se emplea esta parametrizado con 7 bits de datos y 2 bits de parada.
-
-b. Qué tipos de sincronismo hay en esta transmisión? Explicarlos brevemente.
-
-[Consigna en la parte inferior de la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
+> Para una transmisión asincrónica:
+>
+> a. Calcular el rendimiento en % cuando el programa de comunicaciones que se emplea esta parametrizado con 7 bits de datos y 2 bits de parada.
+>
+> b. Qué tipos de sincronismo hay en esta transmisión? Explicarlos brevemente.
+>
+> [Consigna en la parte inferior de la foto original](../../primer_parcial/tema-no-visible/hoja-1.png)
 
 **Datos y condiciones:** 7 bits de datos y 2 tiempos de bit de parada. El formato asincrónico del curso añade 1 bit de arranque por carácter. La consigna no dice si hay paridad ni cuánto silencio hay entre caracteres; se calcula la trama sin paridad como caso base y se explicita la variante.
 

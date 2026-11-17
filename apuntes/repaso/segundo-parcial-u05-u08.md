@@ -23,13 +23,13 @@ actualizado: 2026-11-05
 
 ### Enunciado original
 
-El **Teorema de Shannon-Hartley** es importante porque relaciona fundamentalmente:
-
-1. El ancho de banda y la relación señal/ruido (S/N)
-2. Ninguna de las opciones.
-3. La singularidad y la longitud de bloque de un código
-4. La velocidad de transmisión y el retardo de grupo
-5. La atenuación y la distancia
+> El **Teorema de Shannon-Hartley** es importante porque relaciona fundamentalmente:
+>
+> 1. El ancho de banda y la relación señal/ruido (S/N)
+> 2. Ninguna de las opciones.
+> 3. La singularidad y la longitud de bloque de un código
+> 4. La velocidad de transmisión y el retardo de grupo
+> 5. La atenuación y la distancia
 
 ### Datos y condiciones
 
@@ -39,8 +39,7 @@ El **Teorema de Shannon-Hartley** es importante porque relaciona fundamentalment
 <details>
 <summary>Mostrar resolución razonada</summary>
 
-1. **Partí del problema físico.** El canal sólo deja pasar una banda de frecuencias y el ruido dificulta que el receptor distinga las señales. La pregunta es cuánta información por segundo se puede transmitir de forma confiable con esas dos restricciones.
-2. **Identificá qué calcula el teorema.** Para el modelo de canal limitado en banda, con ruido blanco gaussiano aditivo y potencia media de señal limitada, el ancho de banda y la relación señal/ruido determinan el techo teórico de tasa confiable, no la velocidad efectiva de un equipo.
+**Partí del problema físico.** El canal sólo deja pasar una banda de frecuencias y el ruido dificulta distinguir las señales. Con ruido blanco gaussiano aditivo y potencia media de señal limitada, el ancho de banda y la relación señal/ruido fijan el techo teórico de tasa confiable, no la velocidad efectiva de un equipo.
 
 $$
 C = B \log_2\left(1+\frac{S}{N}\right)
@@ -75,16 +74,16 @@ $$
 
 ### Enunciado original
 
-El diagrama de irradiación que se observa corresponde a las antenas de este radioenlace.
-
-![Dos estaciones de un radioenlace con sus antenas enfrentadas](recursos/segundo-parcial-u05-u08/q02-radioenlace.png)
-
-![Diagrama polar de irradiación con dos lóbulos opuestos](recursos/segundo-parcial-u05-u08/q02-diagrama-irradiacion.png)
-
-Seleccione una:
-
-- Verdadero
-- Falso
+> El diagrama de irradiación que se observa corresponde a las antenas de este radioenlace.
+>
+> ![Dos estaciones de un radioenlace con sus antenas enfrentadas](recursos/segundo-parcial-u05-u08/q02-radioenlace.png)
+>
+> ![Diagrama polar de irradiación con dos lóbulos opuestos](recursos/segundo-parcial-u05-u08/q02-diagrama-irradiacion.png)
+>
+> Seleccione una:
+>
+> - Verdadero
+> - Falso
 
 ### Datos y condiciones
 
@@ -109,19 +108,19 @@ Seleccione una:
 
 ### Enunciado original
 
-Qué afirmación sobre comunicaciones satelitales es correcta?
-
-Seleccione una o más de una:
-
-a. Ninguna de las anteriores
-
-b. La frecuencia de operación del enlace descendente es igual al ascendente
-
-c. Se emplea ARQ Stop & Wait para corregir errores
-
-d. En el down link se puede mejorar la potencia tanto como se necesite con pocas limitaciones
-
-e. La frecuencia de operación del enlace descendente es mayor que la ascendente
+> Qué afirmación sobre comunicaciones satelitales es correcta?
+>
+> Seleccione una o más de una:
+>
+> a. Ninguna de las anteriores
+>
+> b. La frecuencia de operación del enlace descendente es igual al ascendente
+>
+> c. Se emplea ARQ Stop & Wait para corregir errores
+>
+> d. En el down link se puede mejorar la potencia tanto como se necesite con pocas limitaciones
+>
+> e. La frecuencia de operación del enlace descendente es mayor que la ascendente
 
 ### Datos y condiciones
 
@@ -147,14 +146,14 @@ e. La frecuencia de operación del enlace descendente es mayor que la ascendente
 
 ### Enunciado original
 
-Dado un enlace radioeléctrico a la frecuencia de 20 MHz,
-
-1. A qué banda del espectro electromagnético de la UIT corresponde?
-2. Cuál es la longitud necesaria de las antenas Tx y Rx para un buen rendimiento si las mismas son de media longitud de onda?
-3. Si la distancia entre el equipo de radio y la antena es de 25 metros, cuál se usará como línea de transmisión: el coaxil RG 223 C/U o el RG 214/U? Justifique. Usar el folleto técnico.
-4. Considerando los datos anteriores para el Tx y Rx, siendo la potencia del transmisor de 100W y la atenuación en el espacio libre con onda ionosférica de 40 dB, qué potencia en mW se recibiría en el receptor suponiendo que la ganancia de cada antena en el Tx y Rx es de 10 dB?
-
-[Folleto técnico adjunto — coaxiles, tabla 2](recursos/segundo-parcial-u05-u08/q04-folleto-coaxil.png)
+> Dado un enlace radioeléctrico a la frecuencia de 20 MHz,
+>
+> 1. A qué banda del espectro electromagnético de la UIT corresponde?
+> 2. Cuál es la longitud necesaria de las antenas Tx y Rx para un buen rendimiento si las mismas son de media longitud de onda?
+> 3. Si la distancia entre el equipo de radio y la antena es de 25 metros, cuál se usará como línea de transmisión: el coaxil RG 223 C/U o el RG 214/U? Justifique. Usar el folleto técnico.
+> 4. Considerando los datos anteriores para el Tx y Rx, siendo la potencia del transmisor de 100W y la atenuación en el espacio libre con onda ionosférica de 40 dB, qué potencia en mW se recibiría en el receptor suponiendo que la ganancia de cada antena en el Tx y Rx es de 10 dB?
+>
+> [Folleto técnico adjunto — coaxiles, tabla 2](recursos/segundo-parcial-u05-u08/q04-folleto-coaxil.png)
 
 ### Datos y condiciones
 
@@ -166,7 +165,7 @@ Dado un enlace radioeléctrico a la frecuencia de 20 MHz,
 
 1. **Banda: HF (ondas decamétricas).** 20 MHz cae en el intervalo de 3 a 30 MHz de la [UIT-R V.431, tabla 1](https://www.itu.int/rec/R-REC-V.431-9-202510-I/en).
 2. **Antenas: 7,50 m nominales cada una.** En aire, tomando $c\approx3\times10^8$ m/s como velocidad de propagación y $f=20\times10^6$ Hz como frecuencia, la longitud de onda $\lambda=c/f$ resulta 15 m; media onda son 7,50 m. Es la longitud total de cada antena, no de cada brazo de un dipolo; el ajuste real depende de su construcción y entorno. No se usa el factor de velocidad del coaxil para esta cuenta.
-3. **Coaxil: RG 214/U si el criterio es minimizar pérdidas.** Ambos figuran con 50 Ω nominales; la tabla de atenuación a 20 °C no tiene columna a 20 MHz. Como aproximación, interpolamos linealmente en frecuencia entre 10 y 50 MHz: 20 MHz está a un cuarto del intervalo. Se aplica ese cuarto al incremento de pérdida y se divide por cuatro para pasar de 100 m a 25 m. No es una medición ni una especificación de potencia admisible a 20 MHz.
+3. **Coaxil: RG 214/U si el criterio es minimizar pérdidas.** Ambos figuran con 50 Ω nominales; la tabla de atenuación a 20 °C no tiene columna a 20 MHz. Como aproximación, interpolamos linealmente en frecuencia entre 10 y 50 MHz: 20 MHz está a un cuarto del intervalo. Por ejemplo, para RG 214/U: a 20 MHz, $2{,}2+(5{,}4-2{,}2)/4=3{,}00$ dB/100 m; en 25 m, $3{,}00/4=0{,}75$ dB. El primer cuarto ubica la **frecuencia** en la tabla; el segundo escala la **longitud** del cable. Es una estimación, no una medición.
 
 | Fila de tabla 2 | 10 MHz [dB/100 m] | 50 MHz [dB/100 m] | Estimación a 20 MHz [dB/100 m] | Pérdida por 25 m [dB] |
 |---|---:|---:|---:|---:|
@@ -191,13 +190,13 @@ $P_{\mathrm{Rx}}$ es la potencia en la entrada del receptor: dBm expresa el nive
 
 ### Enunciado original
 
-¿Qué describe la Entropía de una fuente de memoria nula?
-
-1. La cantidad de bits en los que difieren dos secuencias
-2. El valor medio de información o incertidumbre de una fuente
-3. La disminución de la intensidad de la señal útil
-4. La máxima velocidad de transmisión que se puede cursar libre de errores
-5. Ninguna de las opciones.
+> ¿Qué describe la Entropía de una fuente de memoria nula?
+>
+> 1. La cantidad de bits en los que difieren dos secuencias
+> 2. El valor medio de información o incertidumbre de una fuente
+> 3. La disminución de la intensidad de la señal útil
+> 4. La máxima velocidad de transmisión que se puede cursar libre de errores
+> 5. Ninguna de las opciones.
 
 ### Datos y condiciones
 
@@ -220,19 +219,19 @@ $P_{\mathrm{Rx}}$ es la potencia en la entrada del receptor: dBm expresa el nive
 
 ### Enunciado original
 
-Qué opciones constituyen términos relacionados correctamente?
-
-Seleccione una o más de una:
-
-a. Cablemodem - GPON
-
-b. Ninguno de los anteriores
-
-c. Banda base - modulación
-
-d. E2 - PDH
-
-e. HDSL - asimétrico
+> Qué opciones constituyen términos relacionados correctamente?
+>
+> Seleccione una o más de una:
+>
+> a. Cablemodem - GPON
+>
+> b. Ninguno de los anteriores
+>
+> c. Banda base - modulación
+>
+> d. E2 - PDH
+>
+> e. HDSL - asimétrico
 
 ### Datos y condiciones
 
@@ -257,19 +256,19 @@ e. HDSL - asimétrico
 
 ### Enunciado original
 
-En la recomendación RS 232, ¿qué afirmación es correcta respecto del cable null módem?
-
-Seleccione una:
-
-a. La longitud máxima es de 30 metros.
-
-b. Deben cruzarse los conductores de GND y SIG.
-
-c. No deben cruzarse los conductores de RTS con CTS
-
-d. Ninguna de las anteriores
-
-e. Tiene el mismo tipo de conector en ambos extremos.
+> En la recomendación RS 232, ¿qué afirmación es correcta respecto del cable null módem?
+>
+> Seleccione una:
+>
+> a. La longitud máxima es de 30 metros.
+>
+> b. Deben cruzarse los conductores de GND y SIG.
+>
+> c. No deben cruzarse los conductores de RTS con CTS
+>
+> d. Ninguna de las anteriores
+>
+> e. Tiene el mismo tipo de conector en ambos extremos.
 
 ### Datos y condiciones
 
@@ -294,19 +293,19 @@ e. Tiene el mismo tipo de conector en ambos extremos.
 
 ### Enunciado original
 
-Qué afirmación sobre cableado UTP es correcta, teniendo en cuenta el folleto técnico adjunto?
-
-a. Ninguna de las anteriores
-
-b. La diafonía NEXT es de 49,25 dB a 7 MHz
-
-c. La resistencia a la corriente continua supera los 10 ohms dentro de los 100 m
-
-d. La impedancia es de 100 ohms operando a 1 GHz
-
-e. La diafonía NEXT es de 57,67 dB a 6 MHz
-
-[Folleto técnico adjunto — Berk-Tek, Performance Data](recursos/segundo-parcial-u05-u08/q08-folleto-utp.png)
+> Qué afirmación sobre cableado UTP es correcta, teniendo en cuenta el folleto técnico adjunto?
+>
+> a. Ninguna de las anteriores
+>
+> b. La diafonía NEXT es de 49,25 dB a 7 MHz
+>
+> c. La resistencia a la corriente continua supera los 10 ohms dentro de los 100 m
+>
+> d. La impedancia es de 100 ohms operando a 1 GHz
+>
+> e. La diafonía NEXT es de 57,67 dB a 6 MHz
+>
+> [Folleto técnico adjunto — Berk-Tek, Performance Data](recursos/segundo-parcial-u05-u08/q08-folleto-utp.png)
 
 ### Datos y condiciones
 
@@ -331,25 +330,25 @@ e. La diafonía NEXT es de 57,67 dB a 6 MHz
 
 ### Enunciado original
 
-Dado el siguiente código compuesto por 4 mensajes:
-
-000     110     011     101
-
-Cuántos errores detecta y cuantos corrige?
-
-Se indica número detección, número corrección. Ejemplo: 3,2
-
-Seleccione una o más de una:
-
-a. Ninguna de las anteriores
-
-b. 2,0
-
-c. 1,0
-
-d. 2,1
-
-e. 1,1
+> Dado el siguiente código compuesto por 4 mensajes:
+>
+> 000     110     011     101
+>
+> Cuántos errores detecta y cuantos corrige?
+>
+> Se indica número detección, número corrección. Ejemplo: 3,2
+>
+> Seleccione una o más de una:
+>
+> a. Ninguna de las anteriores
+>
+> b. 2,0
+>
+> c. 1,0
+>
+> d. 2,1
+>
+> e. 1,1
 
 ### Datos y condiciones
 
@@ -360,7 +359,7 @@ e. 1,1
 <summary>Mostrar resolución razonada</summary>
 
 1. **Compará palabras válidas.** Las seis parejas difieren en dos posiciones: desde 000 a cada una de las otras se encienden dos bits; entre dos palabras con dos unos, un uno cambia de posición (cambian dos bits). Por lo tanto, la distancia mínima es 2.
-2. **Detectar no es corregir.** Cambiar un bit rompe la paridad par y da una palabra inválida: el receptor detecta el error. Pero si recibe 100, pudo venir de 000, 110 o 101 con un cambio; no puede saber cuál corregir. Con dos cambios incluso se puede pasar de 000 a 110 sin que el receptor detecte nada.
+2. **Detectar no es corregir.** Cambiar un bit siempre produce una palabra inválida. Pero recibir `100` no revela cuál salió: está a un cambio de `000`, `110` y `101`. Y con dos cambios, `000` puede convertirse en `110`, que también es válida: ese error puede pasar inadvertido.
 3. **Respuesta: c. 1,0.** b y d atribuyen detección garantizada de dos cambios; d y e atribuyen corrección de uno; a no aplica porque c coincide.
 
 **Evidencia y práctica:** enunciado aportado en el chat; [U6: distancia de Hamming](../teoria/06-canales-comunicaciones/APUNTE.md#hamming) y [TP6: ejemplo de código corrector](../practica/tp-06-canales.md#hamming-guia). El [repaso U6](u06-control-errores.md) incluye estas mismas palabras con opciones reordenadas.

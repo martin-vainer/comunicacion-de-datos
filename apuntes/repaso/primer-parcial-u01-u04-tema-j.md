@@ -26,19 +26,19 @@ actualizado: 2026-11-15
 
 ### Enunciado original
 
-Qué asociación de palabras es correcta:
-
-a. FDM – digital – ancho de banda
-
-b. STDM – time slots – ineficiencia
-
-c. SDH – plesiócrono – STM
-
-d. WDM – longitud de onda – fibra óptica
-
-e. TDM – norma USA – OC
-
-f. Ninguna
+> Qué asociación de palabras es correcta:
+>
+> a. FDM – digital – ancho de banda
+>
+> b. STDM – time slots – ineficiencia
+>
+> c. SDH – plesiócrono – STM
+>
+> d. WDM – longitud de onda – fibra óptica
+>
+> e. TDM – norma USA – OC
+>
+> f. Ninguna
 
 **Datos y condiciones:** no hay datos numéricos. Se pide elegir la asociación completa correcta, no sólo identificar un término que coincida.
 
@@ -58,17 +58,17 @@ f. Ninguna
 
 ### Enunciado original
 
-Cuándo resulta igual la velocidad de modulación y la binaria?
-
-a. Cuando el número de estados es igual a dos
-
-b. Cuando la transmisión es serie
-
-c. Cuando la transmisión es simplex
-
-d. Cuando es inferior a 120 bps
-
-e. Ninguna
+> Cuándo resulta igual la velocidad de modulación y la binaria?
+>
+> a. Cuando el número de estados es igual a dos
+>
+> b. Cuando la transmisión es serie
+>
+> c. Cuando la transmisión es simplex
+>
+> d. Cuando es inferior a 120 bps
+>
+> e. Ninguna
 
 **Datos y condiciones:** no se da una velocidad concreta; «120 bps» figura sólo como opción. Se pregunta cuándo coinciden numéricamente ambas tasas.
 
@@ -96,17 +96,17 @@ e. Ninguna
 
 ### Enunciado original
 
-Cuál de los siguientes filtros es el que mejor se adapta a la respuesta en frecuencia de un canal telefónico?
-
-a. Pasa bajos
-
-b. Pasa altos
-
-c. Rechazo de banda
-
-d. Analógico
-
-e. Ninguno
+> Cuál de los siguientes filtros es el que mejor se adapta a la respuesta en frecuencia de un canal telefónico?
+>
+> a. Pasa bajos
+>
+> b. Pasa altos
+>
+> c. Rechazo de banda
+>
+> d. Analógico
+>
+> e. Ninguno
 
 **Datos y condiciones:** el enunciado dice canal telefónico, sin frecuencias de corte. Se pide clasificar su respuesta en frecuencia.
 
@@ -126,17 +126,17 @@ e. Ninguno
 
 ### Enunciado original
 
-La señal modulada es digital en el método de modulación:
-
-a. PSK
-
-b. PAM
-
-c. QAM
-
-d. FM
-
-e. Ninguno.
+> La señal modulada es digital en el método de modulación:
+>
+> a. PSK
+>
+> b. PAM
+>
+> c. QAM
+>
+> d. FM
+>
+> e. Ninguno.
 
 **Datos y condiciones:** no hay datos numéricos. La consigna pregunta por la señal **modulada** (salida), no por la **moduladora** (entrada).
 
@@ -144,7 +144,7 @@ e. Ninguno.
 <summary>Mostrar resolución razonada</summary>
 
 1. Leé la columna **«Modulada»** de la tabla de cátedra. PSK (a) y QAM (c) **sí son métodos de modulación digital** porque llevan símbolos digitales sobre una portadora sinusoidal, pero en esa tabla la señal resultante se clasifica como analógica. En FM (d), la señal resultante es también analógica.
-2. En el esquema de **PAM analógica** (b), los pulsos aparecen en instantes discretos, pero su altura sigue pudiendo tomar cualquier amplitud de la entrada muestreada. Tener pulsos no equivale a cuantificar. PCM sí produce una secuencia digital con cuantificación y codificación; no figura en las opciones.
+2. En **PAM analógica** (b), el tren de pulsos fija **cuándo** se toma cada muestra; la señal de entrada fija **cuánto** mide el pulso. Una muestra de 0,7 V puede dar un pulso de 0,7 V sin redondeo. Tener pulsos no equivale a cuantificar. PCM sí produce una secuencia digital con cuantificación y codificación; no figura en las opciones.
 3. **Respuesta según la clasificación de cátedra: e) Ninguno.** El enunciado aislado es ambiguo: PAM también nombra **M-PAM digital**, con un alfabeto finito de amplitudes. Si la opción b) dijera «M-PAM con niveles discretos», no correspondería descartarla con el argumento usado para PAM analógica.
 
 **Evidencia:** [U4, clasificación](../teoria/04-modulacion-digitalizacion-multiplexacion/APUNTE.md#modulacion), [pulsos analógicos](../teoria/04-modulacion-digitalizacion-multiplexacion/APUNTE.md#pulsos), [TP4 E4 (PSK)](../practica/tp-04-modulacion-multiplexacion.md#e4) y [TP4 E7 (clasificación)](../practica/tp-04-modulacion-multiplexacion.md#e7); [Modulación 1, tabla p. 5](../../material/teoria/U4/U4%20MODULACION%201.pdf#page=5) y [Modulación 2, pp. 3–4](../../material/teoria/U4/U4%20MODULACION%202.pdf#page=3). Para la otra acepción: [Gallager (MIT), §6.2](https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/1e8d60eb6c0a68cc48e81af039fd4af6_book_6.pdf).
@@ -156,17 +156,17 @@ e. Ninguno.
 
 ### Enunciado original
 
-En la modulación 64-PSK la velocidad de transmisión es:
-
-a. 2 veces la de modulación
-
-b. 4 veces la de modulación
-
-c. 6 veces la de modulación
-
-d. 8 veces la de modulación
-
-e. Ninguno,
+> En la modulación 64-PSK la velocidad de transmisión es:
+>
+> a. 2 veces la de modulación
+>
+> b. 4 veces la de modulación
+>
+> c. 6 veces la de modulación
+>
+> d. 8 veces la de modulación
+>
+> e. Ninguno,
 
 **Datos y condiciones:** 64-PSK, con 64 estados de fase. No se da una tasa de símbolos; sólo se pide la relación entre tasas.
 
@@ -186,17 +186,17 @@ e. Ninguno,
 
 ### Enunciado original
 
-Se dispone de un equipo radioeléctrico que opera en 4 metros de longitud de onda. A qué frecuencia y banda del espectro radioeléctrico corresponde?
-
-a. 150 MHz / UHF
-
-b. 20 MHz / VHF
-
-c. 150 MHz / VHF
-
-d. 20 MHz / HF
-
-e. Ninguno
+> Se dispone de un equipo radioeléctrico que opera en 4 metros de longitud de onda. A qué frecuencia y banda del espectro radioeléctrico corresponde?
+>
+> a. 150 MHz / UHF
+>
+> b. 20 MHz / VHF
+>
+> c. 150 MHz / VHF
+>
+> d. 20 MHz / HF
+>
+> e. Ninguno
 
 **Datos y condiciones:** longitud de onda de 4 m. Se pide el par frecuencia/banda. El medio no se indica; se adopta propagación de radio en aire.
 
@@ -223,17 +223,17 @@ e. Ninguno
 
 ### Enunciado original
 
-Si la potencia de salida de un amplificador es de 100 mW, a qué equivale?
-
-a. 1 dB
-
-b. 20 dBm
-
-c. 30 dB
-
-d. 4 dBm
-
-e. Ninguno
+> Si la potencia de salida de un amplificador es de 100 mW, a qué equivale?
+>
+> a. 1 dB
+>
+> b. 20 dBm
+>
+> c. 30 dB
+>
+> d. 4 dBm
+>
+> e. Ninguno
 
 **Datos y condiciones:** potencia de salida de 100 mW. No se da la potencia de entrada. Se pide un nivel equivalente, no la ganancia del amplificador.
 
@@ -260,17 +260,17 @@ e. Ninguno
 
 ### Enunciado original
 
-La modulación 16-QAM respecto de la 16-PSK tiene:
-
-a. Más cambios de fase
-
-b. Mayor velocidad de transmisión
-
-c. Más bits para representar los estados que adopta
-
-d. Menor probabilidad de error
-
-e. Ninguno
+> La modulación 16-QAM respecto de la 16-PSK tiene:
+>
+> a. Más cambios de fase
+>
+> b. Mayor velocidad de transmisión
+>
+> c. Más bits para representar los estados que adopta
+>
+> d. Menor probabilidad de error
+>
+> e. Ninguno
 
 **Datos y condiciones:** ambas modulaciones tienen 16 estados. No se informa el canal ni el ruido. Para comparar errores se adopta el caso usual de 16-QAM cuadrada y 16-PSK con detección coherente, ruido blanco gaussiano aditivo e igual relación de energía por bit a densidad espectral de ruido ($E_b/N_0$).
 
@@ -290,24 +290,24 @@ e. Ninguno
 
 ### Enunciado original
 
-La velocidad de transmisión de señales digitalizadas sobre un canal telefónico (4 KHz) codificando cada muestra con 7 bits es de:
-
-a. 64 Kbps
-
-b. 128 Kbps
-
-c. 56 Kbps
-
-d. 1024 bps
-
-e. Ninguno
+> La velocidad de transmisión de señales digitalizadas sobre un canal telefónico (4 KHz) codificando cada muestra con 7 bits es de:
+>
+> a. 64 Kbps
+>
+> b. 128 Kbps
+>
+> c. 56 Kbps
+>
+> d. 1024 bps
+>
+> e. Ninguno
 
 **Datos y condiciones:** 4 kHz según el enunciado, 7 bit/muestra. No se da explícitamente la frecuencia de muestreo; se interpreta como el caso del TP4: 4 kHz como tope nominal del modelo de digitalización y 8000 muestras/s. Se pide la tasa de salida PCM sin entramado ni control adicional, no la capacidad de un enlace analógico.
 
 <details>
 <summary>Mostrar resolución razonada</summary>
 
-1. Primero se cuentan **muestras por segundo**. En este ejercicio se usa la tasa nominal telefónica de 8000 muestras/s, el doble del tope idealizado de 4 kHz (una muestra cada 125 μs, como en TP4 E1). El cálculo al doble es el modelo del ejercicio, no una garantía de reconstrucción para cualquier señal con energía justo en el borde.
+1. Primero se cuentan **muestras por segundo**. En el modelo del ejercicio, el tope nominal de 4 kHz lleva a elegir 8000 muestras/s (una cada 125 μs, como en TP4 E1). Es un límite ideal: no garantiza reconstruir un tono justo en el borde para cualquier fase.
 
 | Símbolo | Significado | Unidad |
 |---|---|---|
@@ -327,17 +327,17 @@ e. Ninguno
 
 ### Enunciado original
 
-La modulación PCM 24 tiene las siguientes características:
-
-a. Norma T1, 30 canales telefónicos, velocidad 1,544 Mbps
-
-b. Norma T1, 24 canales telefónicos, velocidad 2,048 Mbps
-
-c. Norma E1, 32 canales telefónicos, velocidad 2,048 Mbps
-
-d. Norma E1, 30 canales telefónicos, velocidad 2,048 Mbps
-
-e. Ninguno de estas opciones es elegible
+> La modulación PCM 24 tiene las siguientes características:
+>
+> a. Norma T1, 30 canales telefónicos, velocidad 1,544 Mbps
+>
+> b. Norma T1, 24 canales telefónicos, velocidad 2,048 Mbps
+>
+> c. Norma E1, 32 canales telefónicos, velocidad 2,048 Mbps
+>
+> d. Norma E1, 30 canales telefónicos, velocidad 2,048 Mbps
+>
+> e. Ninguno de estas opciones es elegible
 
 **Datos y condiciones:** se pide identificar la combinación de jerarquía, cantidad de canales telefónicos y tasa de línea para PCM24. Los valores de las opciones no son premisas.
 

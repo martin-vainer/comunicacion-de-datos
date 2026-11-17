@@ -39,7 +39,8 @@ Cuadros y fórmulas para repasar antes de rendir. No reemplaza los apuntes ni lo
 
 - **Analógica/digital:** valores continuos / símbolos discretos. Amplificar aumenta también el ruido presente; regenerar decide y reconstruye el símbolo.
 - **Fourier:** una periódica se representa con continua (media firmada), fundamental y armónicos. Media cero no implica RMS cero. **Banda base:** sin trasladar a una portadora.
-- **Ancho de banda:** señal = extensión espectral según criterio; canal = intervalo que deja pasar con una tolerancia. Filtros: pasa bajos, pasa altos, pasa banda y rechazo de banda.
+- **Ancho de banda:** es un intervalo de frecuencias medido en hertz. Sus extremos dependen del criterio: para una línea pueden ser los puntos de $3\ \text{dB}$ y, para el tren rectangular del TP, se toma el primer cero de la envolvente en $1/\tau$. Por eso nunca hay que dar un ancho de banda sin decir de qué objeto se habla y cómo se delimitó.
+- **Filtros:** pasa bajos, pasa altos, pasa banda y rechazo de banda.
 
 | Código / rasgo | Qué recordar |
 |---|---|

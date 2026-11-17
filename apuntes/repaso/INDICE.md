@@ -7,6 +7,8 @@ ni evalúa pendientes como conocimiento confirmado. Estado académico unitario s
 ## Exámenes fotografiados
 
 - [Primer parcial, primera instancia, Tema J (U1–U4)](primer-parcial-u01-u04-tema-j.md): 10 preguntas con opciones originales, resolución razonada y referencias.
+- [Primer parcial, Tema F (U1–U4)](primer-parcial-u01-u04-tema-f.md): cinco consignas resueltas; tres tomas de la misma hoja.
+- [Primer parcial, tema no visible (U1–U4)](primer-parcial-u01-u04-tema-no-visible.md): cinco consignas resueltas a partir de una hoja fotografiada.
 - [Segundo parcial, Tema G (U5–U8)](../../docs/flujo-agentico.md#parciales): fotos registradas; no confundir con el cuestionario de repaso U5–U8.
 
 ## Recursos existentes

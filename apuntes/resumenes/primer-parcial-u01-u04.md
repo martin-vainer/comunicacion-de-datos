@@ -2,6 +2,20 @@
 
 Cuadros y fórmulas para repasar antes de rendir. No reemplaza los apuntes ni los ejercicios.
 
+## Conversiones rápidas
+
+| Magnitud | Equivalencia | Ejemplo de parcial |
+|---|---|---|
+| Frecuencia | 1 kHz = 1 000 Hz; 1 MHz = 1 000 kHz | 3,4 kHz = 3 400 Hz |
+| Tiempo | 1 ms = 1 000 μs = 0,001 s | 125 μs = 0,125 ms = 0,000125 s |
+| Cantidad de datos | 1 byte = 8 bits | 250 000 bytes = 2 000 000 bits |
+| Tasa binaria | 1 kbit/s = 1 000 bit/s; 1 Mbit/s = 1 000 kbit/s | 1,544 Mbit/s = 1 544 kbit/s |
+| Distancia | 1 km = 1 000 m | 30 000 m = 30 km |
+| Velocidad de desplazamiento | 1 m/s = 3,6 km/h | 18 km/h = 5 m/s |
+| Potencia | 1 W = 1 000 mW | 100 mW = 0,1 W |
+
+**No mezcles magnitudes:** Hz cuenta ciclos por segundo; baudios, símbolos por segundo; bit/s, bits por segundo. Pasar de mW a dBm tampoco es cambiar un prefijo: dBm expresa un nivel logarítmico referido a 1 mW.
+
 ## U1 · Introducción a las comunicaciones
 
 - **Teleinformática:** integra procesamiento y transmisión. Centralizado/distribuido indica **dónde** se procesa; lote/interactivo, **si hay diálogo**; en línea no significa necesariamente en tiempo real.

@@ -493,6 +493,8 @@ $$V_{salida}\ge\sum_iV_i+V_{control}.$$
 
 ### FDM: problema, concepto y modelo
 
+![FDM: tres canales parten de bandas equivalentes, se desplazan a bandas distintas y se reúnen en la señal multiplexada](recursos/fdm-desplazamiento-canales.png)
+
 **FDM (Frequency Division Multiplexing)** desplaza señales a bandas diferentes simultáneas. Filtros reales no cortan abruptamente: se dejan **guardas**. El MUX puede incluir moduladores/módems y filtros; entradas digitales pueden transportarse como subcanales pasabanda.
 
 `canal1 | guarda | canal2 | guarda | canal3`

@@ -571,4 +571,4 @@ $$R_{\rm inf}=7-\log_2 90=0,508147\ \text{bit/símbolo},\qquad R_{\rm rel}=7,259
 
 ## Para examen
 
-Antes de calcular, decí qué variable es aleatoria, qué probabilidades usás y qué hipótesis permiten sumar. Después diferenciá información, representación y tasa. En eficiencia y redundancia, una fórmula sin definición no alcanza: el porcentaje de palabras ocupadas y la información media por bit representan cosas distintas.
+> Antes de calcular, decí qué variable es aleatoria, qué probabilidades usás y qué hipótesis permiten sumar. Después diferenciá información, representación y tasa. En eficiencia y redundancia, una fórmula sin definición no alcanza: el porcentaje de palabras ocupadas y la información media por bit representan cosas distintas.

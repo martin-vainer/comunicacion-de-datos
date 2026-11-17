@@ -72,7 +72,7 @@ $$I_b(x_i)=\log_b\!\left(\frac{1}{p_i}\right)=-\log_b p_i$$
 - **Improbable = importante:** información de Shannon no mide relevancia semántica.
 - **Promediar sin probabilidades:** información puntual y promedio de la fuente son distintas magnitudes.
 
-**Para examen:** «La información de un resultado mide la incertidumbre que elimina conocerlo. Es el logaritmo del inverso de su probabilidad: un resultado seguro aporta cero y uno improbable aporta más.»
+> **Para examen:** «La información de un resultado mide la incertidumbre que elimina conocerlo. Es el logaritmo del inverso de su probabilidad: un resultado seguro aporta cero y uno improbable aporta más.»
 
 <a id="unidades"></a>
 ## 2. Unidades y dígitos binarios
@@ -170,7 +170,7 @@ Es una gráfica calculada, no una copia de la figura original; el valor exacto s
 - Información puntual = entropía: sólo coinciden para todos los símbolos de una fuente equiprobable.
 - Usar conteos de una muestra como probabilidades verdaderas exactas: son estimaciones, como en TP5 E2.
 
-**Para examen:** «La entropía es la información media por símbolo. En una fuente de memoria nula los símbolos son independientes; la entropía es máxima con equiprobabilidad y nula cuando la salida es segura.»
+> **Para examen:** «La entropía es la información media por símbolo. En una fuente de memoria nula los símbolos son independientes; la entropía es máxima con equiprobabilidad y nula cuando la salida es segura.»
 
 <a id="tasa"></a>
 ## 4. Tasa de información y relación con el canal
@@ -212,7 +212,9 @@ $$\Gamma\leq C$$
 
 **Supuesto y alcance:** condición límite necesaria en el modelo de comunicación; no garantiza que cualquier código práctico funcione con errores mínimos. Para comunicación asintóticamente fiable se diseña con tasa por debajo de la capacidad y codificación adecuada; el margen, ruido y teoremas pertenecen a [U6](../06-canales-comunicaciones/APUNTE.md). **Ejemplo:** una fuente de 1000 Shannon/s no puede transportarse fielmente a largo plazo por un canal de capacidad 800 bit/s. En TP5 E10 se obtiene 43,75 MShannon/s de demanda, pero no se deduce la capacidad real del canal sin conocerlo.
 
-**Errores típicos:** multiplicar entropía por bits/s en vez de símbolos/s; sumar duraciones sin ponderarlas; llamar $C$ a la demanda calculada. **Para examen:** «La tasa es entropía por ritmo de emisión. Se compara con la capacidad en unidades de información por segundo; baudios y bits físicos por segundo no se igualan automáticamente.»
+**Errores típicos:** multiplicar entropía por bits/s en vez de símbolos/s; sumar duraciones sin ponderarlas; llamar $C$ a la demanda calculada.
+
+> **Para examen:** «La tasa es entropía por ritmo de emisión. Se compara con la capacidad en unidades de información por segundo; baudios y bits físicos por segundo no se igualan automáticamente.»
 
 <a id="codificacion"></a>
 ## 5. Codificar: representación, fuente y canal
@@ -234,7 +236,9 @@ $$\Gamma\leq C$$
 
 **Ejemplo hipotético de funciones:** para mensajes A y B, una representación A→0, B→1 conserva la elección con 1 dígito. Transmitir A→000, B→111 usa 3 dígitos por elección para separar palabras válidas. Ahorro y protección se comparan con magnitudes diferentes, formalizadas en §6.
 
-**Errores típicos:** llamar a toda tabla de caracteres «código corrector»; confundir pérdida con error de transmisión; llamar Viterbi código. **Para examen:** «La codificación de fuente representa datos de manera compacta; la de canal agrega redundancia para control de errores. La primera puede conservar exactamente los datos o permitir pérdidas; la segunda no se reduce a elegir una tabla de caracteres.»
+**Errores típicos:** llamar a toda tabla de caracteres «código corrector»; confundir pérdida con error de transmisión; llamar Viterbi código.
+
+> **Para examen:** «La codificación de fuente representa datos de manera compacta; la de canal agrega redundancia para control de errores. La primera puede conservar exactamente los datos o permitir pérdidas; la segunda no se reduce a elegir una tabla de caracteres.»
 
 <a id="propiedades"></a>
 ## 6. Propiedades, eficiencia y redundancia
@@ -306,7 +310,9 @@ $$e_{\rm det}\leq d_{\min}-1,\qquad e_{\rm corr}\leq\left\lfloor\frac{d_{\min}-1
 
 **Ejemplos:**101101 y 100011 difieren en las posiciones 3,4,5: distancia 3. Para el código completo 000/111, distancia mínima 3; se garantizan detección de hasta 2 errores en modo detector o corrección de 1 en modo corrector. En cambio BCD8421 incluye 0000 y 0001: distancia mínima 1, aunque tenga combinaciones inválidas. No garantiza detectar toda alteración de un bit.
 
-**Errores típicos:** longitud $n$ = tamaño $M$; contar códigos inválidos como bits redundantes; tasa de código 1 = entropía máxima; no singular = prefijo; redundancia = protección garantizada. **Para examen:** «La tasa $k/n$ se aplica a bloques binarios de entrada. La eficiencia informativa usa entropía y longitud media; el aprovechamiento cuenta combinaciones. La distancia mínima, no la mera longitud, limita el control de errores.»
+**Errores típicos:** longitud $n$ = tamaño $M$; contar códigos inválidos como bits redundantes; tasa de código 1 = entropía máxima; no singular = prefijo; redundancia = protección garantizada.
+
+> **Para examen:** «La tasa $k/n$ se aplica a bloques binarios de entrada. La eficiencia informativa usa entropía y longitud media; el aprovechamiento cuenta combinaciones. La distancia mínima, no la mera longitud, limita el control de errores.»
 
 <a id="huffman"></a>
 ## 7. Huffman: gastar menos bits donde más se repite
@@ -331,7 +337,9 @@ La longitud media de §6 da 2,25 bit/símbolo y la entropía 2,25 Shannon/símbo
 
 La captura registra un ejemplo parcial n→000,o→0010,m→0011,h→0101,a→1001,e→1111,espacio→110. **No es una tabla universal de Huffman.** Falta el conjunto completo de frecuencias y árbol del ejemplo original; no se usa para calcular eficiencia ni para codificar un texto arbitrario.
 
-**Errores típicos:** «Huffman siempre ahorra en cualquier archivo»; ignorar la tabla compartida y overhead; construir por orden alfabético; confundir más frecuente con necesariamente longitud estrictamente menor en todos los empates. **Para examen:** «Huffman une los dos pesos menores para formar un árbol prefijo. Acorta los símbolos frecuentes y minimiza longitud media en su clase de códigos, manteniendo recuperación exacta.»
+**Errores típicos:** «Huffman siempre ahorra en cualquier archivo»; ignorar la tabla compartida y overhead; construir por orden alfabético; confundir más frecuente con necesariamente longitud estrictamente menor en todos los empates.
+
+> **Para examen:** «Huffman une los dos pesos menores para formar un árbol prefijo. Acorta los símbolos frecuentes y minimiza longitud media en su clase de códigos, manteniendo recuperación exacta.»
 
 <a id="morse"></a>
 ## 8. Morse: longitud variable y tiempos de separación
@@ -401,7 +409,9 @@ No hay bits de paridad inherentes en esas cinco unidades. Si se consideran las 3
 
 **Ejemplo de lectura:** para enviar E, luego 3, y volver a E, partiendo en letras: `10000 11011 10000 11111 10000`. Las combinaciones son 5, 30, 5, 29, 5; sólo se imprimen **E3E**, porque los dos cambios son controles. Se envían 5 combinaciones × 5 unidades = **25 unidades de código**, sin contar arranque/parada. Así se ve por qué los cambios no crean más palabras físicas ni son gratuitos.
 
-**Errores típicos:** confundir identificador de fila con decimal del patrón; invertir el orden de bits sin avisar; imprimir el shift como letra; importar cifras/símbolos de una variante nacional a las tres posiciones reservadas. **Para examen:** «ITA2 distingue 32 combinaciones físicas de cinco unidades y reutiliza parte de ellas con estados letras/cifras. El repertorio se debe leer con versión y orden de transmisión explícitos; controles y posiciones de uso nacional no son caracteres imprimibles universales.»
+**Errores típicos:** confundir identificador de fila con decimal del patrón; invertir el orden de bits sin avisar; imprimir el shift como letra; importar cifras/símbolos de una variante nacional a las tres posiciones reservadas.
+
+> **Para examen:** «ITA2 distingue 32 combinaciones físicas de cinco unidades y reutiliza parte de ellas con estados letras/cifras. El repertorio se debe leer con versión y orden de transmisión explícitos; controles y posiciones de uso nacional no son caracteres imprimibles universales.»
 
 <a id="bcd"></a>
 ## 10. BCD: el dígito decimal no es el número completo

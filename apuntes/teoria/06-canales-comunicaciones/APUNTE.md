@@ -84,7 +84,7 @@ El canal ideal es un **modelo de referencia**. Que no tenga ruido no significa q
 
 **Errores típicos:** confundir canal físico con protocolo; suponer que canal ideal equivale a velocidad ilimitada; interpretar el objetivo «libre de errores» como garantía automática de un cable real.
 
-**Para examen:** el canal vincula las terminales y puede analizarse desde sus propiedades físicas o desde el tratamiento lógico de la información. El modelo ideal permite estudiar límites sin ruido; el real incorpora perturbaciones y exige control de errores.
+> **Para examen:** el canal vincula las terminales y puede analizarse desde sus propiedades físicas o desde el tratamiento lógico de la información. El modelo ideal permite estudiar límites sin ruido; el real incorpora perturbaciones y exige control de errores.
 
 <a id="capacidad"></a>
 ## 2. Capacidad de un canal
@@ -123,7 +123,7 @@ El PDF relaciona **velocidad de transmisión, ancho de banda, ruido y tasa de er
 
 **Errores típicos:** identificar capacidad con velocidad contratada; expresar $C$ en baudios; creer que bajar de $C$ elimina el ruido.
 
-**Para examen:** la capacidad es el límite de tasa de información que el canal puede sostener con la fiabilidad admitida por el modelo. Depende de las restricciones físicas, especialmente ancho de banda y ruido.
+> **Para examen:** la capacidad es el límite de tasa de información que el canal puede sostener con la fiabilidad admitida por el modelo. Depende de las restricciones físicas, especialmente ancho de banda y ruido.
 
 <a id="nyquist"></a>
 ## 3. Nyquist y Hartley: canal sin ruido
@@ -190,7 +190,7 @@ $$
 
 **Errores típicos:** confundir muestras/s, baudios y bit/s; aplicar Hartley a niveles que el ruido no deja distinguir; trasladar sin condiciones el muestreo de banda base al pasabanda.
 
-**Para examen:** Nyquist fija una restricción asociada a la banda disponible. Hartley incorpora cuántos niveles distinguibles se usan: más niveles dan más bits por símbolo en el canal ideal, pero el ruido limita esa ventaja en el canal real.
+> **Para examen:** Nyquist fija una restricción asociada a la banda disponible. Hartley incorpora cuántos niveles distinguibles se usan: más niveles dan más bits por símbolo en el canal ideal, pero el ruido limita esa ventaja en el canal real.
 
 <a id="informacion"></a>
 ## 4. Uso de la medida de la información: niveles y bits
@@ -301,7 +301,7 @@ Datos: $B=3\,000$ Hz y relación señal/ruido de 30 dB.
 
 **Errores típicos:** introducir 30 directamente donde va $S/N$; afirmar que más niveles aumentan la capacidad indefinidamente; confundir la frontera de Shannon con una velocidad de operación sin errores garantizada.
 
-**Para examen:** Shannon-Hartley relaciona ancho de banda y relación señal/ruido para establecer la capacidad del canal gaussiano. El ruido limita el beneficio de aumentar los niveles, porque reduce su distinguibilidad.
+> **Para examen:** Shannon-Hartley relaciona ancho de banda y relación señal/ruido para establecer la capacidad del canal gaussiano. El ruido limita el beneficio de aumentar los niveles, porque reduce su distinguibilidad.
 
 ---
 
@@ -368,7 +368,7 @@ Para $P_2<P_1$ es negativa. Cuanto más negativa, peor; el ideal es 0 dB.
 
 **Errores típicos:** invertir el cociente sin avisar; tratar −20 dB como mejor que −10 dB; confundir dB con dBm; aplicar 20 al cociente de potencias.
 
-**Para examen:** la atenuación disminuye la potencia útil recibida. En este material se expresa con el cociente recibido/transmitido, por lo que una pérdida produce un valor negativo en dB.
+> **Para examen:** la atenuación disminuye la potencia útil recibida. En este material se expresa con el cociente recibido/transmitido, por lo que una pérdida produce un valor negativo en dB.
 
 <a id="decibeles"></a>
 <a id="db"></a>
@@ -514,7 +514,7 @@ $$
 
 **Errores típicos:** mezclar dB con dBm/dBmV; usar 20 para potencia; «0 dBm no hay señal»; sumar niveles como potencias; confundir sensibilidad con recibido; ignorar saturación de amplificadores o receptor.
 
-**Para examen:** dB expresa cocientes y permite sumar las variaciones de una cadena. dBm y dBmV son niveles con referencias fijas; el balance calcula qué llega y el margen lo compara con el mínimo que requiere el receptor.
+> **Para examen:** dB expresa cocientes y permite sumar las variaciones de una cadena. dBm y dBmV son niveles con referencias fijas; el balance calcula qué llega y el margen lo compara con el mínimo que requiere el receptor.
 
 <a id="ruido"></a>
 ## 8. Tipos de ruido
@@ -548,7 +548,7 @@ $$
 
 **Errores típicos:** decir que un cable quieto no tiene ruido; introducir Celsius; confundir «blanco» con «amplitud constante».
 
-**Para examen:** el ruido térmico tiene origen en la agitación de los portadores y su potencia disponible aumenta con temperatura y ancho de banda. En el modelo empleado se trata como ruido blanco y gaussiano.
+> **Para examen:** el ruido térmico tiene origen en la agitación de los portadores y su potencia disponible aumenta con temperatura y ancho de banda. En el modelo empleado se trata como ruido blanco y gaussiano.
 
 ### 8.2. Diafonía o crosstalk
 
@@ -658,7 +658,7 @@ $$
 
 **Errores típicos:** creer que amplificar elimina ruido; introducir ganancia en dB en una fórmula que exige veces; confundir factor y figura de ruido.
 
-**Para examen:** el factor de ruido compara la relación señal/ruido antes y después del dispositivo. Cuantifica su degradación; un dispositivo ideal no la degrada y tiene factor uno.
+> **Para examen:** el factor de ruido compara la relación señal/ruido antes y después del dispositivo. Cuantifica su degradación; un dispositivo ideal no la degrada y tiene factor uno.
 
 
 ![Lámina original U6 p.14: evidencia de la sección](../../../capturas/teoria/06-Canales%20de%20comunicaciones/recursos-08-10-2026/pagina-14.png)
@@ -713,7 +713,7 @@ $$
 
 **Errores típicos:** llamar distorsión a toda pérdida uniforme de potencia; confundir retardo común con retardo diferencial; suponer que ecualización equivale a control de errores por CRC.
 
-**Para examen:** la distorsión modifica la forma porque el canal trata de manera diferente las componentes de la señal. La ecualización busca compensar esa respuesta; actúa sobre la señal, mientras que el control de errores comprueba o recupera la información.
+> **Para examen:** la distorsión modifica la forma porque el canal trata de manera diferente las componentes de la señal. La ecualización busca compensar esa respuesta; actúa sobre la señal, mientras que el control de errores comprueba o recupera la información.
 
 <a id="ber"></a>
 ## 11. Tasa de error: BER
@@ -746,7 +746,7 @@ La lámina identifica **ancho de banda y ruido** como limitantes físicos de los
 
 **Errores típicos:** expresar BER en bit/s; confundir error de bit con error de bloque; concluir que observar cero errores en un ensayo finito demuestra una probabilidad de error exactamente nula.
 
-**Para examen:** BER expresa la proporción de bits erróneos sobre el total considerado. Permite evaluar la calidad de la transmisión y relacionarla con las restricciones de banda y ruido.
+> **Para examen:** BER expresa la proporción de bits erróneos sobre el total considerado. Permite evaluar la calidad de la transmisión y relacionarla con las restricciones de banda y ruido.
 
 <a id="banda-pulsos"></a>
 ## 12. Efecto del ancho de banda sobre una señal digital
@@ -804,7 +804,7 @@ La figura muestra pulsos que se superponen en intervalos sucesivos y señala **i
 
 **Errores típicos:** tratar ISI como sinónimo de ruido; pensar que todos los pulsos deben ser rectángulos perfectos; considerar que todo solapamiento es perjudicial sin mirar los instantes de muestreo.
 
-**Para examen:** la ISI aparece cuando símbolos vecinos contribuyen a la muestra utilizada para decidir el actual. Se relaciona con la respuesta del canal y el diseño de pulsos; puede mitigarse con ecualización y señalización adecuada.
+> **Para examen:** la ISI aparece cuando símbolos vecinos contribuyen a la muestra utilizada para decidir el actual. Se relaciona con la respuesta del canal y el diseño de pulsos; puede mitigarse con ecualización y señalización adecuada.
 
 ---
 
@@ -871,7 +871,7 @@ Aquí $R$ refiere a redundancia y $T_b$ al **tamaño** de bloque; no confundirlo
 
 **Errores típicos:** confundir detectar con corregir; tratar la eficiencia de formato como rendimiento efectivo; creer que más redundancia siempre gana sin considerar su estructura.
 
-**Para examen:** controlar errores exige información adicional y recursos. El diseño equilibra protección, eficiencia, tamaño de bloque y velocidad, distinguiendo la comprobación de errores de la recuperación de los datos.
+> **Para examen:** controlar errores exige información adicional y recursos. El diseño equilibra protección, eficiencia, tamaño de bloque y velocidad, distinguiendo la comprobación de errores de la recuperación de los datos.
 
 <a id="paridad"></a>
 ## 15. Paridad par, impar, longitudinal y bidimensional
@@ -934,7 +934,7 @@ Se reproduce la tabla de paridad par. Cada columna corresponde a un dato; la col
 
 **Errores típicos:** contar sólo los unos del dato y olvidar el bit de control; decir que paridad simple corrige; atribuir a la paridad bidimensional corrección arbitraria de múltiples errores.
 
-**Para examen:** la paridad agrega restricciones sobre la cantidad de unos. La vertical protege caracteres y la longitudinal protege posiciones a lo largo de un bloque; combinarlas mejora la detección y puede localizar un error único, pero quedan patrones no detectables.
+> **Para examen:** la paridad agrega restricciones sobre la cantidad de unos. La vertical protege caracteres y la longitudinal protege posiciones a lo largo de un bloque; combinarlas mejora la detección y puede localizar un error único, pero quedan patrones no detectables.
 
 
 ![Lámina original U6 p.25: evidencia de la sección](../../../capturas/teoria/06-Canales%20de%20comunicaciones/recursos-08-10-2026/pagina-25.png)
@@ -1067,7 +1067,7 @@ Un patrón de error cuyo polinomio sea múltiplo del generador puede conservar l
 
 **Errores típicos:** dividir como enteros decimales; usar acarreo; agregar tantos ceros como bits tiene $G$ en lugar de su grado; asumir que resto cero garantiza mensaje intacto; afirmar que CRC corrige por sí mismo.
 
-**Para examen:** CRC agrega el resto de una división polinomial módulo 2. El receptor verifica la divisibilidad de la secuencia por el mismo generador; detecta determinados errores, pero no recupera por sí solo el mensaje original.
+> **Para examen:** CRC agrega el resto de una división polinomial módulo 2. El receptor verifica la divisibilidad de la secuencia por el mismo generador; detecta determinados errores, pero no recupera por sí solo el mensaje original.
 
 
 ![Lámina original U6 p.28: evidencia de la sección](../../../capturas/teoria/06-Canales%20de%20comunicaciones/recursos-08-10-2026/pagina-28.png)
@@ -1103,7 +1103,7 @@ La lámina muestra dos bloques **diferentes** con la misma suma:
 
 **Errores típicos:** llamar CRC a cualquier checksum; suponer que suma igual prueba bloque igual; inferir el algoritmo de TCP/IP sólo de esta lámina.
 
-**Para examen:** el checksum es una comprobación calculada sobre los datos. Detecta ciertas modificaciones, pero distintos bloques pueden compartir el mismo valor, como demuestra el ejemplo de cátedra.
+> **Para examen:** el checksum es una comprobación calculada sobre los datos. Detecta ciertas modificaciones, pero distintos bloques pueden compartir el mismo valor, como demuestra el ejemplo de cátedra.
 
 ---
 
@@ -1136,7 +1136,7 @@ La lámina muestra dos bloques **diferentes** con la misma suma:
 
 **Error típico:** creer que el CRC «corrigió» el bloque. El CRC detectó; ARQ permitió recuperar mediante otra transmisión.
 
-**Para examen:** ARQ realiza recuperación hacia atrás: combina detección con realimentación y retransmisión. Mejora la fiabilidad, pero consume tiempo y recursos de comunicación y almacenamiento.
+> **Para examen:** ARQ realiza recuperación hacia atrás: combina detección con realimentación y retransmisión. Mejora la fiabilidad, pero consume tiempo y recursos de comunicación y almacenamiento.
 
 <a id="stop-wait"></a>
 ## 20. ARQ Stop and Wait: parar y esperar
@@ -1185,7 +1185,7 @@ $$
 
 **Errores típicos:** confundir transmisión con propagación; usar sólo la propagación de ida; pensar que un enlace más rápido garantiza mayor utilización en Stop and Wait.
 
-**Para examen:** Stop and Wait permite una sola trama pendiente de confirmación. Es simple, pero desperdicia capacidad cuando el tiempo de ida y vuelta es grande respecto del tiempo de transmisión.
+> **Para examen:** Stop and Wait permite una sola trama pendiente de confirmación. Es simple, pero desperdicia capacidad cuando el tiempo de ida y vuelta es grande respecto del tiempo de transmisión.
 
 <a id="ventana"></a>
 ## 21. ARQ Sliding Windows: ventana deslizante
@@ -1232,7 +1232,7 @@ $$
 
 **Errores típicos:** creer que la ventana vuelve más rápida la propagación; olvidar los buffers; suponer que todos los protocolos de ventana retransmiten exactamente de la misma forma.
 
-**Para examen:** la ventana deslizante mejora la utilización permitiendo varias tramas sin confirmar. A cambio, requiere numeración, seguimiento y almacenamiento de las tramas pendientes.
+> **Para examen:** la ventana deslizante mejora la utilización permitiendo varias tramas sin confirmar. A cambio, requiere numeración, seguimiento y almacenamiento de las tramas pendientes.
 
 <a id="fec"></a>
 ## 22. Corrección hacia adelante: FEC
@@ -1271,7 +1271,7 @@ Presenta dos series, $D_x$ y $R_x$, que contienen copias separadas en el tiempo,
 
 **Errores típicos:** definir todo FEC como «mandar dos veces»; creer que basta comparar dos copias distintas para corregir; identificar hacia adelante con mayor velocidad física.
 
-**Para examen:** FEC usa redundancia enviada de antemano para recuperar información sin solicitar su retransmisión en esa operación. La cátedra ilustra un esquema de copias diferidas; los códigos autocorrectores implementan otra forma de esa protección.
+> **Para examen:** FEC usa redundancia enviada de antemano para recuperar información sin solicitar su retransmisión en esa operación. La cátedra ilustra un esquema de copias diferidas; los códigos autocorrectores implementan otra forma de esa protección.
 
 <a id="hamming"></a>
 ## 23. Códigos autocorrectores y Hamming
@@ -1412,7 +1412,7 @@ Datos útiles:   posiciones 3, 5, 6 y 7 → 0011
 
 **Errores típicos:** ubicar los datos en posiciones 1 a 4; olvidar que las posiciones 1, 2 y 4 llevan paridad; leer el síndrome en orden inverso; afirmar corrección garantizada de dos errores; calcular la distancia mínima sólo con una pareja.
 
-**Para examen:** la distancia mínima determina cuánto puede proteger un código. Hamming (7,4) añade tres bits de paridad a cuatro de información y permite localizar y corregir un error mediante el síndrome de comprobaciones.
+> **Para examen:** la distancia mínima determina cuánto puede proteger un código. Hamming (7,4) añade tres bits de paridad a cuatro de información y permite localizar y corregir un error mediante el síndrome de comprobaciones.
 
 ---
 

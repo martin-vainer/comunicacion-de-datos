@@ -110,7 +110,7 @@ La tabla clasifica representaciones, no el origen remoto: PCM puede partir de vo
 
 **Errores típicos:** CP afirma «PSK portadora digital» y «FSK resultante digital», contradiciendo su propia tabla y M1 p.5. En ambas se modula una sinusoidal: mensaje digital, forma de onda pasabanda analógica. Modulación cambia representación; multiplexación reúne comunicaciones.
 
-**Para examen:** la moduladora contiene información y modifica una característica de la portadora. La señal modulada es lo transmitido; la demodulación recupera el mensaje con calidad limitada por el canal.
+> **Para examen:** la moduladora contiene información y modifica una característica de la portadora. La señal modulada es lo transmitido; la demodulación recupera el mensaje con calidad limitada por el canal.
 
 <a id="am"></a>
 ## 2) AM: amplitud, envolvente y bandas laterales
@@ -152,7 +152,7 @@ Figura C5 image-3 / M1 p.8. Frecuencias negativas son la representación matemá
 
 **Errores típicos:** portadora ≠ ancho de banda; BLU no transmite «media información» de un mensaje real: elimina una copia espectral redundante. Ruido de amplitud afecta el parámetro que lleva información.
 
-**Para examen:** AM lleva el mensaje en amplitud. DBL requiere dos veces la banda de base y BLU conserva una sola; la recuperación depende también de cómo se transmite la portadora.
+> **Para examen:** AM lleva el mensaje en amplitud. DBL requiere dos veces la banda de base y BLU conserva una sola; la recuperación depende también de cómo se transmite la portadora.
 
 <a id="fm-pm"></a>
 ## 3) FM y PM: frecuencia no es fase
@@ -192,7 +192,7 @@ $$s(t)=A_p\sin(2\pi f_p t+\beta\sin(2\pi f_a t)+\theta_p),\quad \beta=\frac{\Del
 
 **Errores típicos:** confundir desviación con portadora, índice FM con índice AM o FM con PM.
 
-**Para examen:** FM lleva el mensaje en frecuencia instantánea; para PM el objetivo respaldado es sólo definición/clasificación: modifica fase, no es sinónimo de FM. Amplitud ideal constante permite limitar fluctuaciones de amplitud; **en FM** hay que distinguir portadora, desviación, índice y banda. No se pide deducir ni calcular un modelo PM ausente del corpus.
+> **Para examen:** FM lleva el mensaje en frecuencia instantánea; para PM el objetivo respaldado es sólo definición/clasificación: modifica fase, no es sinónimo de FM. Amplitud ideal constante permite limitar fluctuaciones de amplitud; **en FM** hay que distinguir portadora, desviación, índice y banda. No se pide deducir ni calcular un modelo PM ausente del corpus.
 
 <a id="ask-fsk"></a>
 ## 4) ASK y FSK: estados discretos sobre portadora continua
@@ -210,7 +210,7 @@ $$s(t)=A_p\sin(2\pi f_p t+\beta\sin(2\pi f_a t)+\theta_p),\quad \beta=\frac{\Del
 
 **Errores típicos:** OOK no es otra familia distinta de ASK; «digital» en el nombre de modulación describe la información, no una portadora cuadrada obligatoria.
 
-**Para examen:** ASK asigna amplitudes y FSK frecuencias discretas a símbolos digitales; la portadora continua y la forma de onda pasabanda siguen siendo analógicas.
+> **Para examen:** ASK asigna amplitudes y FSK frecuencias discretas a símbolos digitales; la portadora continua y la forma de onda pasabanda siguen siendo analógicas.
 
 <a id="psk-qam"></a>
 ## 5) PSK, Gray y QAM: velocidad y separación ante ruido
@@ -301,7 +301,7 @@ V p.1 informa para 2/4/8/16-PSK y 16-QAM: 1/2/3/4/4 bits y 0,7/1,4/2,1/2,8/2,8 b
 
 **Errores típicos:** baudios=bit/s; Gray corrige; M-QAM tiene M amplitudes por M fases; subir M siempre mejora. Todos omiten qué se representa y a qué costo frente al ruido.
 
-**Para examen:** PSK/QAM asignan grupos de bits a estados. Más estados dan más bits por símbolo pero exigen distinguir vecinos próximos; Gray limita bits errados por confusión de vecinos y TCM añade protección codificada.
+> **Para examen:** PSK/QAM asignan grupos de bits a estados. Más estados dan más bits por símbolo pero exigen distinguir vecinos próximos; Gray limita bits errados por confusión de vecinos y TCM añade protección codificada.
 
 <a id="pulsos"></a>
 ## 6) Pulsos analógicos: muestrear no es cuantificar
@@ -328,7 +328,7 @@ En las tres, el parámetro informativo admite valores continuos. PPM requiere re
 
 **Errores típicos:**«hay pulsos, entonces es digital» y «muestrear elimina ruido» son falsos: puede haber amplitudes continuas y perturbaciones.
 
-**Para examen:** PAM cambia amplitud, PDM duración y PPM posición de pulsos. Muestrear discretiza tiempo; cuantificar amplitud y codificar son operaciones posteriores distintas.
+> **Para examen:** PAM cambia amplitud, PDM duración y PPM posición de pulsos. Muestrear discretiza tiempo; cuantificar amplitud y codificar son operaciones posteriores distintas.
 
 <a id="pcm"></a>
 ## 7) Digitalización y PCM: tiempo, niveles y bits
@@ -411,7 +411,7 @@ El eje positivo hasta 128 no determina la longitud total de la palabra con signo
 
 **Errores típicos:** cuantificar antes de muestrear en esta cadena; igualar 8 k Hz y 64 kbit/s; pensar que más muestreo elimina error de amplitud; atribuir cuantificación al MUX TDM.
 
-**Para examen:** PCM muestrea, cuantifica y codifica. Su tasa es muestras por segundo por bits por muestra; muestreo controla aliasing y cuantificación introduce error de amplitud, distribuible mediante leyes no uniformes.
+> **Para examen:** PCM muestrea, cuantifica y codifica. Su tasa es muestras por segundo por bits por muestra; muestreo controla aliasing y cuantificación introduce error de amplitud, distribuible mediante leyes no uniformes.
 
 <a id="delta-dpcm"></a>
 ## 8) Delta, ADM y DPCM: enviar diferencias
@@ -453,7 +453,7 @@ $$s_k=s_{k-1}+\Delta\operatorname{sgn}(e_k-s_{k-1}),\qquad V_{DM}=f_s\cdot1\ \te
 
 **Errores típicos:** DM transmite valor absoluto; ADM necesariamente cambia el muestreo; DPCM siempre usa un bit. Todos son falsos. Tampoco confundir error de aproximación con ruido del canal.
 
-**Para examen:** Delta manda signo y reconstruye una escalera, con compromiso entre seguimiento y granularidad. ADM adapta el paso; DPCM codifica una diferencia cuantificada con más de dos posibles valores.
+> **Para examen:** Delta manda signo y reconstruye una escalera, con compromiso entre seguimiento y granularidad. ADM adapta el paso; DPCM codifica una diferencia cuantificada con más de dos posibles valores.
 
 <a id="multiplexacion"></a>
 ## 9) Multiplexación: recurso compartido y presupuesto
@@ -484,7 +484,7 @@ $$V_{salida}\ge\sum_iV_i+V_{control}.$$
 
 **Errores típicos:** MUX crea capacidad; sumar sólo datos; multiplexación=conmutación. Compartir requiere recursos y auxiliares; conmutar elige destino/ruta.
 
-**Para examen:** multiplexar comparte un vínculo mediante un recurso distinguible; el receptor revierte la organización. La capacidad debe alcanzar para carga y control con la calidad requerida.
+> **Para examen:** multiplexar comparte un vínculo mediante un recurso distinguible; el receptor revierte la organización. La capacidad debe alcanzar para carga y control con la calidad requerida.
 
 <a id="fdm-ofdm"></a>
 ## 10) FDM y OFDM: bandas separadas o subportadoras ortogonales
@@ -531,7 +531,7 @@ X pp.11–13 cita resistencia a multitrayecto y LTE/5G, TV digital y Wi-Fi. Es u
 
 **Errores típicos:** OFDM no usa modulación (usa PSK/QAM); superposición siempre implica interferencia (no bajo ortogonalidad); FDM es simplex por definición (la división espectral no fija dirección).
 
-**Para examen:** FDM separa bandas con guardas; OFDM admite superposición espectral bajo ortogonalidad y sincronismo. IFFT/FFT implementan eficientemente composición y separación.
+> **Para examen:** FDM separa bandas con guardas; OFDM admite superposición espectral bajo ortogonalidad y sincronismo. IFFT/FFT implementan eficientemente composición y separación.
 
 <a id="tdm"></a>
 ## 11) TDM y PCM: turnos, tramas, E1 y T1
@@ -590,7 +590,7 @@ La figura simplifica «7 información+1 señalización». En CAS con señalizaci
 
 **Errores típicos:** CP «2,058» y «1,56» se corrigen a 2,048/1,544 mediante estas cuentas y X p.16. No contar 32 canales de voz ni omitir el bit de trama T1. El ruido granular se origina al cuantificar, no al alternar ranuras.
 
-**Para examen:** TDM síncrono identifica porciones por posición y sincronismo. E1 transmite 256 bits cada 125 μs, 2,048 Mbit/s; T1 reúne 24 octetos y un bit de trama, 193 bits y 1,544 Mbit/s.
+> **Para examen:** TDM síncrono identifica porciones por posición y sincronismo. E1 transmite 256 bits cada 125 μs, 2,048 Mbit/s; T1 reúne 24 octetos y un bit de trama, 193 bits y 1,544 Mbit/s.
 
 <a id="pdh-sdh"></a>
 ## 12) PDH, SDH y SONET: crecer y acceder a tributarios
@@ -686,7 +686,7 @@ C62 advierte el conflicto VC2. [UIT-T G.707 §10.1.3](https://www.itu.int/rec/do
 
 **Errores típicos:** PDH sincroniza exacto todos sus relojes; SDH no tiene overhead; 150,336 Mbit/s equivale a caudal útil contractual; SONET=WDM. Una organiza transporte temporal; otra separa canales ópticos.
 
-**Para examen:** PDH agrega tributarios casi síncronos con justificación y acceso jerárquico. SDH usa tramas periódicas, contenedores y overhead para localizar/gestionar cargas, facilitando add-drop; SONET comparte equivalencias de tasa como jerarquía norteamericana.
+> **Para examen:** PDH agrega tributarios casi síncronos con justificación y acceso jerárquico. SDH usa tramas periódicas, contenedores y overhead para localizar/gestionar cargas, facilitando add-drop; SONET comparte equivalencias de tasa como jerarquía norteamericana.
 
 <a id="stdm"></a>
 ## 13) STDM: aprovechar intermitencia no garantiza picos
@@ -705,7 +705,7 @@ TDM síncrono reserva posiciones aunque estén vacías. **STDM (Statistical TDM)
 
 **Errores típicos:** STDM siempre más rápido; slots dinámicos siempre tienen longitud física variable; no necesita reconocer fuente. Lo esencial es asignación por demanda, no un único formato; destino no queda implícito sólo por una posición fija como TDM.
 
-**Para examen:** STDM evita reservas vacías atendiendo fuentes activas. Exige identificación y puede introducir colas; no garantiza todos los picos si el agregado no alcanza.
+> **Para examen:** STDM evita reservas vacías atendiendo fuentes activas. Exige identificación y puede introducir colas; no garantiza todos los picos si el agregado no alcanza.
 
 <a id="wdm-cdm"></a>
 ## 14) WDM, CDM y acceso múltiple
@@ -739,7 +739,7 @@ $$V_{agregado}=\sum_iV_i,\qquad c=\lambda_0f.$$
 
 **Errores típicos:** cantidad de λ=bits/símbolo; WDM corrige errores; frecuencia óptica=tasa binaria; pasivo=toda la cadena sin energía.
 
-**Para examen:** WDM reúne canales ópticos de distintas longitudes en una fibra. Es compatible con SDH/SONET; CWDM/DWDM difieren en densidad/diseño, no en el principio de separación.
+> **Para examen:** WDM reúne canales ópticos de distintas longitudes en una fibra. Es compatible con SDH/SONET; CWDM/DWDM difieren en densidad/diseño, no en el principio de separación.
 
 ### CDM: definición, ejemplo y relación
 

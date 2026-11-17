@@ -114,7 +114,7 @@ La desigualdad estricta de F3 p. 3 es el caso con control y errores, no una ley 
 - El material dice «bps (bits/s o byte/s)»: la magnitud admite ambas unidades, **el valor requiere conversión por ocho**.
 - Throughput no es automáticamente tasa nominal: control, pausas y errores cuentan.
 
-**Para examen:** «Baudios cuentan símbolos, bit/s bits. Transferencia excluye control y la real excluye además información incorrecta; comparo tasas medidas sobre el mismo intervalo».
+> **Para examen:** «Baudios cuentan símbolos, bit/s bits. Transferencia excluye control y la real excluye además información incorrecta; comparo tasas medidas sobre el mismo intervalo».
 
 <a id="multinivel"></a>
 ## 2. Multinivel y ancho de banda
@@ -179,7 +179,7 @@ Acortar el pulso desplaza componentes hacia frecuencias mayores. Mantener forma/
 
 16 estados no son 16 bits por símbolo sino 4. Igualar números de Hz y baudios exige declarar el modelo. La relación de representación no es una capacidad garantizada ni Shannon.
 
-**Para examen:** «Multinivel aumenta bits por símbolo sin cambiar necesariamente los baudios. El ancho depende de forma/duración del pulso; el ruido limita cuántos estados puedo distinguir».
+> **Para examen:** «Multinivel aumenta bits por símbolo sin cambiar necesariamente los baudios. El ancho depende de forma/duración del pulso; el ruido limita cuántos estados puedo distinguir».
 
 <a id="sentidos-modos"></a>
 ## 3. Sentidos y modos de transmisión
@@ -206,7 +206,7 @@ Full duplex se dibuja con dos canales: expresa dos sentidos simultáneos, **no o
 
 **Errores típicos:** serie no implica simplex y paralelo no implica full duplex. No confundir una implementación física con la definición.
 
-**Para examen:** «Simplex/half/full duplex clasifican dirección y simultaneidad; serie/paralelo clasifican distribución de bits entre vías. Son ejes distintos».
+> **Para examen:** «Simplex/half/full duplex clasifican dirección y simultaneidad; serie/paralelo clasifican distribución de bits entre vías. Son ejes distintos».
 
 <a id="sincronismo"></a>
 ## 4. Sincronismo y rendimiento
@@ -279,7 +279,7 @@ Bloques largos reparten overhead entre más datos; si una falla obliga a repetir
 
 **Errores típicos:** contar paridad como payload; mezclar bytes y bits; omitir pausas dadas; asumir que 90% de rendimiento implica sumar 10% al tiempo. Asincronía no elimina reloj y sincronía no significa cero overhead.
 
-**Para examen:** «Asincrónica delimita cada carácter; sincrónica delimita bloques y mantiene base temporal. Rendimiento es datos útiles sobre total; un bloque mayor reduce overhead relativo, pero encarece la repetición por errores».
+> **Para examen:** «Asincrónica delimita cada carácter; sincrónica delimita bloques y mantiene base temporal. Rendimiento es datos útiles sobre total; un bloque mayor reduce overhead relativo, pero encarece la repetición por errores».
 
 **Puente hacia protocolos.** La [diapositiva 9 de U3](../../../material/teoria/U3/U3%20Redes%20de%20Telecomunicaciones.pdf#page=9) separa la transmisión serie en asincrónica y sincrónica. Dentro de la rama sincrónica, la lámina distingue protocolos orientados al carácter y al bit; esa orientación no es lo mismo que el sincronismo de carácter o de bit. Los ejemplos y el alcance de esa clasificación se explican en el [punto 5](#protocolos).
 
@@ -311,7 +311,7 @@ Un delimitador interpretado como carácter de control ejemplifica el primer enfo
 
 **Error típico:** sincronismo de carácter no es protocolo orientado al carácter: uno localiza posiciones temporalmente y el otro interpreta control. LLC/LAP tampoco son modulaciones.
 
-**Para examen:** «La orientación describe representación de control y delimitación, no dirección de transmisión ni bits por símbolo».
+> **Para examen:** «La orientación describe representación de control y delimitación, no dirección de transmisión ni bits por símbolo».
 
 <a id="redes"></a>
 ## 6. Redes y enlaces
@@ -347,7 +347,7 @@ C5 escribe bajo→dedicada y alto→paquetes: contradice F3 p. 15 y su propia im
 
 **Errores típicos:** enlace no es toda la red; nube no identifica una única tecnología; costo mayor no equivale a servicio mejor.
 
-**Para examen:** «Terminales, enlaces y nodos forman la red. Comparo alternativas a igual volumen y elijo el mínimo del gráfico, no un ranking memorizado».
+> **Para examen:** «Terminales, enlaces y nodos forman la red. Comparo alternativas a igual volumen y elijo el mínimo del gráfico, no un ranking memorizado».
 
 <a id="conmutacion"></a>
 ## 7. Circuitos y paquetes
@@ -366,7 +366,7 @@ En circuitos, la ruta habilitada se mantiene durante la sesión aunque haya sile
 
 **Errores típicos:** «paquetes=siempre sin conexión» ignora circuitos virtuales; circuito no es cable nuevo exclusivo; paquetes no garantiza menor demora bajo cualquier carga.
 
-**Para examen:** «Circuitos asigna recursos a una sesión; paquetes comparte transmisión entre unidades. Cambian establecimiento, utilización y comportamiento temporal».
+> **Para examen:** «Circuitos asigna recursos a una sesión; paquetes comparte transmisión entre unidades. Cambian establecimiento, utilización y comportamiento temporal».
 
 <a id="topologias"></a>
 ## 8. Topologías
@@ -424,7 +424,7 @@ Se preserva la tabla registrada, **no como ley cuantitativa universal**: no espe
 
 **Errores típicos:** fórmula de malla completa aplicada a parcial; contar dos extremos como dos enlaces; deducir confiabilidad sólo del nombre; confundir topología física y lógica.
 
-**Para examen:** «Topología condiciona costo y fallas. La malla completa tiene un enlace por par,$n(n-1)/2$; las otras comparaciones requieren aclarar implementación».
+> **Para examen:** «Topología condiciona costo y fallas. La malla completa tiene un enlace por par,$n(n-1)/2$; las otras comparaciones requieren aclarar implementación».
 
 <a id="rtpc"></a>
 ## 9. Red telefónica y evolución registrada
@@ -456,7 +456,7 @@ En F3 p. 25 los extremos tienen **2H** y un tramo intermedio **4H**. Dos hilos c
 
 **Errores típicos:** full duplex no exige cuatro hilos; troncal no es lazo; PBX no es toda la red pública; no convertir una arquitectura histórica en regla presente.
 
-**Para examen:** «La red telefónica articula abonados, lazos, centrales y troncales. La conmutación separa recursos en espacio o tiempo; pública/privada e integración IP son cuestiones de arquitectura».
+> **Para examen:** «La red telefónica articula abonados, lazos, centrales y troncales. La conmutación separa recursos en espacio o tiempo; pública/privada e integración IP son cuestiones de arquitectura».
 
 <a id="trafico"></a>
 ## 10. Señalización e ingeniería de tráfico
@@ -489,7 +489,7 @@ Se usa $\lambda $ para no confundir $C$ con capacidad de canal U6. **Supuestos:*
 
 **Errores típicos:** llamadas/h×min sin convertir; Erlangs como bit/s; media confundida con máximo simultáneo.
 
-**Para examen:** «El tráfico integra llegadas y retención. Un Erlang expresa ocupación media continua; por sí solo no fija bloqueo ni dimensionamiento».
+> **Para examen:** «El tráfico integra llegadas y retención. Un Erlang expresa ocupación media continua; por sí solo no fija bloqueo ni dimensionamiento».
 
 <a id="rdsi"></a>
 ## 11. RDSI: Red Digital de Servicios Integrados - integración y tasas
@@ -506,7 +506,7 @@ Las sumas usan conteos adimensionales por kbit/s de cada canal; suponen canales 
 
 **Errores típicos:** canales+control llamados exclusivamente payload; corrección silenciosa de fila conflictiva; integración confundida con capacidad ilimitada.
 
-**Para examen:** «RDSI reúne usuario B y señalización D. Distingo suma de canales, tasa de interfaz y entrega útil».
+> **Para examen:** «RDSI reúne usuario B y señalización D. Distingo suma de canales, tasa de interfaz y entrega útil».
 
 <a id="pendientes"></a>
 ## Pendientes por sección y registro QA

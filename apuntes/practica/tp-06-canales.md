@@ -492,7 +492,7 @@ La p.3 sólo enlaza un recurso externo sobre Hamming; **no contiene una palabra 
 - Enlace Hamming de p.3: sin consigna adicional, no se crea ejercicio.
 - Sin clave oficial; revisión independiente del candidato pendiente. [Evidencia QA de U6](../teoria/06-canales-comunicaciones/evidencia-qa.md) registra recálculos y cotejos ejecutados, sin build.
 
-**Para examen:** primero justifico qué límite/modelo uso y convierto unidades. Para errores, separo detección, retransmisión y corrección anticipada, y explico qué garantiza realmente el control. Un resultado sin supuestos no es una resolución completa.
+> **Para examen:** primero justifico qué límite/modelo uso y convierto unidades. Para errores, separo detección, retransmisión y corrección anticipada, y explico qué garantiza realmente el control. Un resultado sin supuestos no es una resolución completa.
 
 **Checklist:**
 

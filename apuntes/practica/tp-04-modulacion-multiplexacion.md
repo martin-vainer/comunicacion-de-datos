@@ -49,7 +49,7 @@ $$f_s=1/T_s,\quad b=\log_2L,\quad V_{PCM}=f_sb,\quad b_s=\log_2M,\quad V_t=V_mb_
 
 **Trampas:**125 μs no son 125 ms; 128 niveles no son 128 bits. Muestreo 8000 coincide con doble de 4000 Hz como límite ideal, no garantía práctica sin margen. El caso 128 niveles es el dato del ejercicio, no definición universal de ley μ G.711.
 
-**Para examen:** obtengo muestras por segundo del período y bits por muestra del repertorio; el producto da el flujo PCM requerido.
+> **Para examen:** obtengo muestras por segundo del período y bits por muestra del repertorio; el producto da el flujo PCM requerido.
 
 <a id="e2"></a>
 ## E2 — Separación de estados 16-PSK
@@ -275,7 +275,7 @@ $$f_s=1/T_s,\quad b=\log_2L,\quad V_{PCM}=f_sb,\quad b_s=\log_2M,\quad V_t=V_mb_
 - «FDM más barato, TDM/STDM más caros»: comparación histórica del material, no cotización ni ley universal.
 - «STDM siempre más eficiente»: depende de intermitencia/control; el pico de tres activas evidencia el costo.
 
-**Para examen:** FDM separa bandas; TDM reserva posiciones; STDM asigna según demanda. La elección depende de continuidad, recursos y demoras tolerables, no de una ganancia gratis.
+> **Para examen:** FDM separa bandas; TDM reserva posiciones; STDM asigna según demanda. La elección depende de continuidad, recursos y demoras tolerables, no de una ganancia gratis.
 
 ## Autocontrol y alcance
 

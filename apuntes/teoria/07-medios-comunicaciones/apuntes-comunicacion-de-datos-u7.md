@@ -127,7 +127,7 @@ $$
 
 **Errores típicos:** confundir ancho de banda con tasa; decir que guiado significa cobre; comparar sólo el precio por metro.
 
-**Para examen:** el medio permite la propagación física y condiciona pérdidas, distorsión e interferencias. Se selecciona considerando el enlace completo y sus restricciones.
+> **Para examen:** el medio permite la propagación física y condiciona pérdidas, distorsión e interferencias. Se selecciona considerando el enlace completo y sus restricciones.
 
 ---
 
@@ -201,7 +201,7 @@ $$
 
 **Errores típicos:** medir resistencia con multímetro y llamarla $Z_0$; multiplicar 50 Ω por los metros; aplicar la ecuación de circuito serie como si fuera la impedancia característica.
 
-**Para examen:** $Z_0$ depende de los parámetros distribuidos de la línea. Terminarla en esa impedancia evita reflexiones en el modelo uniforme; no equivale a anular su resistencia ni sus pérdidas.
+> **Para examen:** $Z_0$ depende de los parámetros distribuidos de la línea. Terminarla en esa impedancia evita reflexiones en el modelo uniforme; no equivale a anular su resistencia ni sus pérdidas.
 
 ### 2.3. Efecto pelicular
 
@@ -230,7 +230,7 @@ $$
 
 **Errores típicos:** hablar de una superficie de espesor cero; aplicar números de otro material; confundir este efecto con diafonía.
 
-**Para examen:** el efecto pelicular concentra la corriente alterna en la periferia. Al aumentar la frecuencia disminuye la profundidad de penetración y crece la resistencia efectiva.
+> **Para examen:** el efecto pelicular concentra la corriente alterna en la periferia. Al aumentar la frecuencia disminuye la profundidad de penetración y crece la resistencia efectiva.
 
 ---
 
@@ -273,7 +273,7 @@ El ejemplo anterior muestra el modelo diferencial; para este tema basta entender
 
 **Errores típicos:** decir que el trenzado elimina todo ruido; confundir diafonía con ruido térmico; destrenzar excesivamente al terminar el cable y esperar igual desempeño.
 
-**Para examen:** el par trenzado ayuda a reducir acoplamientos y mantener el balance. El receptor diferencial rechaza perturbaciones comunes, pero el resultado depende también de construcción e instalación.
+> **Para examen:** el par trenzado ayuda a reducir acoplamientos y mantener el balance. El receptor diferencial rechaza perturbaciones comunes, pero el resultado depende también de construcción e instalación.
 
 ### 3.3. Blindaje y cubierta no son la misma clasificación
 
@@ -423,7 +423,7 @@ Una terminación debe conservar impedancia y continuidad del blindaje. Un contac
 
 **Errores típicos:** identificar mensajero con retorno; considerar el blindaje sólo mecánico; llamar conector al RG-6; asumir inmunidad absoluta por tener pantalla.
 
-**Para examen:** la geometría concéntrica guía el campo y reduce interferencias. La impedancia, pérdidas según frecuencia y terminaciones determinan la viabilidad del enlace; el conductor exterior es parte eléctrica esencial.
+> **Para examen:** la geometría concéntrica guía el campo y reduce interferencias. La impedancia, pérdidas según frecuencia y terminaciones determinan la viabilidad del enlace; el conductor exterior es parte eléctrica esencial.
 
 ---
 
@@ -446,7 +446,7 @@ Una guía de onda confina y conduce un campo electromagnético. En las estructur
 
 **Errores típicos:** creer que hueca significa sin campo; asumir funcionamiento desde continua; confundir guía con antena.
 
-**Para examen:** una guía conduce energía mediante modos electromagnéticos determinados por su estructura. Se usa especialmente en microondas y debe seleccionarse según banda y modo de operación.
+> **Para examen:** una guía conduce energía mediante modos electromagnéticos determinados por su estructura. Se usa especialmente en microondas y debe seleccionarse según banda y modo de operación.
 
 ---
 
@@ -528,7 +528,7 @@ $$
 
 **Errores típicos:** confundir ganancia con potencia generada o dBi con dBm; decir que omni significa esfera; usar Hz en una expresión que exige MHz.
 
-**Para examen:** la antena acopla circuito y espacio. Ganancia y directividad describen la distribución de energía; polarización y diagramas permiten decidir orientación y cobertura.
+> **Para examen:** la antena acopla circuito y espacio. Ganancia y directividad describen la distribución de energía; polarización y diagramas permiten decidir orientación y cobertura.
 
 ---
 
@@ -589,7 +589,7 @@ Un **salto** es el recorrido desde que la onda sale del suelo hasta que vuelve a
 
 **Errores típicos:** creer que toda frecuencia vuelve; tomar altitudes fijas; confundir salto con distancia recorrida por la onda.
 
-**Para examen:** el retorno ionosférico permite enlaces más allá del horizonte bajo ciertas condiciones. Depende de frecuencia, ionización y geometría, y cambia durante el día.
+> **Para examen:** el retorno ionosférico permite enlaces más allá del horizonte bajo ciertas condiciones. Depende de frecuencia, ionización y geometría, y cambia durante el día.
 
 ### 7.4. Onda directa y horizonte
 
@@ -620,7 +620,9 @@ $$
 
 La visibilidad y la ausencia de obstáculos se verifican aparte del cálculo de horizonte.
 
-**Errores típicos:** omitir unidades; usar una sola altura; creer que potencia elimina curvatura. **Para examen:** el alcance directo depende de ambas alturas y de refracción. El horizonte es una condición geométrica, no reemplaza presupuesto de enlace ni estudio de obstáculos.
+**Errores típicos:** omitir unidades; usar una sola altura; creer que potencia elimina curvatura.
+
+> **Para examen:** el alcance directo depende de ambas alturas y de refracción. El horizonte es una condición geométrica, no reemplaza presupuesto de enlace ni estudio de obstáculos.
 
 ---
 
@@ -691,7 +693,7 @@ La parábola concentra respuesta; un radomo protege sin ser el reflector. Alinea
 
 **Errores típicos:** sumar dBm como si fueran ganancias; restar FD dos veces; usar sensibilidad de otra tasa; tomar visibilidad como prueba de viabilidad.
 
-**Para examen:** el balance calcula el nivel recibido sumando ganancias y restando pérdidas. Se compara con sensibilidad y margen, y se complementa con geometría e interferencias.
+> **Para examen:** el balance calcula el nivel recibido sumando ganancias y restando pérdidas. Se compara con sensibilidad y margen, y se complementa con geometría e interferencias.
 
 ---
 
@@ -801,7 +803,7 @@ $$
 
 **Error típico:** interpretar $R=2T$ como el tiempo de un mensaje **y su respuesta**. Aquí $R$ ya incluye subida y bajada de un solo envío; una respuesta por el mismo recorrido agrega otros dos tramos y da 480 ms en este ejemplo.
 
-**Para examen:** en el modelo de dos tramos iguales, cada subida o bajada tarda $T=H/V_p$ y el retardo total del enlace satelital es $R=2T$.
+> **Para examen:** en el modelo de dos tramos iguales, cada subida o bajada tarda $T=H/V_p$ y el retardo total del enlace satelital es $R=2T$.
 
 **Aclaración de la p. 38:** la figura indica 270 ms para GEO y habla de “ida y vuelta”. Para evitar confusión, identificá el recorrido: ese orden de tiempo es compatible con una subida más una bajada, no con el recorrido completo de un mensaje y su respuesta. Sus cantidades de satélites y latencias son orientativas del esquema, no constantes de todos los sistemas.
 
@@ -917,7 +919,7 @@ El enlace a [KeepTrack](https://app.keeptrack.space/) de la diapositiva permite 
 
 **Errores típicos de satélites:** confundir período con visibilidad; llamar RTT a una sola subida; equiparar MHz con Mbit/s; tomar inroute como sinónimo de uplink.
 
-**Para examen:** un enlace satelital conecta estaciones mediante subida, retransmisión y bajada. Para caracterizarlo se consideran recursos del satélite, banda, señal, antenas, órbita, cobertura, retardos, condiciones de operación y servicio, siguiendo los bloques de la presentación.
+> **Para examen:** un enlace satelital conecta estaciones mediante subida, retransmisión y bajada. Para caracterizarlo se consideran recursos del satélite, banda, señal, antenas, órbita, cobertura, retardos, condiciones de operación y servicio, siguiendo los bloques de la presentación.
 
 ---
 
@@ -959,7 +961,7 @@ $$
 
 **Errores típicos:** confundir recubrimiento óptico con protección mecánica; creer que el índice tiene unidades; pensar que “óptica” significa que la luz siempre sea visible.
 
-**Para examen:** la fibra guía luz mediante un núcleo de índice mayor que el revestimiento. La protección exterior cuida la estructura, mientras que la diferencia de índices determina su comportamiento óptico.
+> **Para examen:** la fibra guía luz mediante un núcleo de índice mayor que el revestimiento. La protección exterior cuida la estructura, mientras que la diferencia de índices determina su comportamiento óptico.
 
 <a id="reflexion-total-interna"></a>
 ### 10.2. Ley de Snell, reflexión total interna y cono de aceptación
@@ -1009,7 +1011,7 @@ $$
 
 **Errores típicos:** decir que cualquier rayo que ingresa queda atrapado; medir todos los ángulos desde el eje; llamar RTI al caso de igualdad sin distinguirlo del límite crítico.
 
-**Para examen:** Snell describe la refracción entre medios. Con núcleo de mayor índice que el revestimiento, los rayos que cumplen la condición angular de reflexión total interna pueden quedar guiados; el cono de aceptación representa las direcciones de entrada admisibles.
+> **Para examen:** Snell describe la refracción entre medios. Con núcleo de mayor índice que el revestimiento, los rayos que cumplen la condición angular de reflexión total interna pueden quedar guiados; el cono de aceptación representa las direcciones de entrada admisibles.
 
 <a id="tipos-fibra"></a>
 ### 10.3. Tipos de fibra: multimodo escalón, multimodo gradual y monomodo
@@ -1034,7 +1036,7 @@ Los números de la tabla son las referencias comparativas del profesor. Su unida
 
 **Errores típicos:** equiparar modos con usuarios; decir que monomodo carece de dispersión; confundir diámetro del cable con diámetro del núcleo.
 
-**Para examen:** la multimodo permite varios modos; el índice gradual reduce las diferencias de tiempo respecto del escalón. La monomodo evita la dispersión modal, por lo que favorece enlaces de mayor alcance y prestaciones, sin quedar libre de otras limitaciones.
+> **Para examen:** la multimodo permite varios modos; el índice gradual reduce las diferencias de tiempo respecto del escalón. La monomodo evita la dispersión modal, por lo que favorece enlaces de mayor alcance y prestaciones, sin quedar libre de otras limitaciones.
 
 <a id="dispersion-fibra"></a>
 ### 10.4. Dispersión y ancho de banda: por qué importa la distancia
@@ -1070,7 +1072,7 @@ $$
 
 **Errores típicos:** creer que más potencia corrige el ensanchamiento; confundir MHz·km con MHz; suponer que monomodo elimina toda dispersión.
 
-**Para examen:** la dispersión ensancha los pulsos y limita cuánto pueden aproximarse en el tiempo. Por eso la distancia condiciona las prestaciones; hay que distinguir ancho de banda en Hz, producto ancho de banda–distancia y tasa de bits.
+> **Para examen:** la dispersión ensancha los pulsos y limita cuánto pueden aproximarse en el tiempo. Por eso la distancia condiciona las prestaciones; hay que distinguir ancho de banda en Hz, producto ancho de banda–distancia y tasa de bits.
 
 <a id="ventanas-opticas"></a>
 ### 10.5. Ventanas de operación y dimensiones de la fibra
@@ -1147,7 +1149,7 @@ La p. 12 relaciona estas pérdidas con el material, sus impurezas y su fabricaci
 
 **Errores típicos:** sumar ensanchamientos de tiempo como si fueran pérdidas en dB; confundir Rayleigh con dispersión modal; omitir pérdidas de conectores y empalmes.
 
-**Para examen:** el enlace óptico debe cumplir dos condiciones distintas: potencia suficiente en el receptor y pulsos distinguibles. Las pérdidas de potencia y la dispersión temporal se analizan por separado aunque la cátedra las reúna como degradaciones de la fibra.
+> **Para examen:** el enlace óptico debe cumplir dos condiciones distintas: potencia suficiente en el receptor y pulsos distinguibles. Las pérdidas de potencia y la dispersión temporal se analizan por separado aunque la cátedra las reúna como degradaciones de la fibra.
 
 <a id="optoelectronica"></a>
 ### 10.8. Sistema optoelectrónico: de datos eléctricos a luz y de vuelta
@@ -1197,7 +1199,7 @@ Se conservan las características del cuadro como comparación del material: pot
 
 **Errores típicos:** creer que toda luz es visible; confundir coherencia con información; intercambiar emisor y detector; confundir ancho espectral en nm con tasa de bits.
 
-**Para examen:** un enlace optoelectrónico convierte señal eléctrica en luz y la recupera en recepción. La fuente, la fibra, las uniones y el detector deben ser compatibles; LED y láser difieren en espectro, direccionamiento, rapidez y requerimientos del dispositivo.
+> **Para examen:** un enlace optoelectrónico convierte señal eléctrica en luz y la recupera en recepción. La fuente, la fibra, las uniones y el detector deben ser compatibles; LED y láser difieren en espectro, direccionamiento, rapidez y requerimientos del dispositivo.
 
 <a id="cables-opticos"></a>
 ### 10.9. Cables, conectores y empalmes
@@ -1295,7 +1297,7 @@ Para ampliar, consultá el [folleto original](../../../material/teoria/U7/Follet
 
 **Ejemplo didáctico de unidades:** 7 dB/100 m equivale a 70 dB/km a la misma frecuencia y para ese cable. Convertir unidades permite comparar bases de longitud; no vuelve idénticas las condiciones ópticas y eléctricas.
 
-**Para examen:** elegir fibra requiere mirar no sólo capacidad y pérdidas del medio, sino emisores, receptores, terminaciones, montaje y costo de los equipos. La ficha técnica debe leerse con sus unidades y condiciones.
+> **Para examen:** elegir fibra requiere mirar no sólo capacidad y pérdidas del medio, sino emisores, receptores, terminaciones, montaje y costo de los equipos. La ficha técnica debe leerse con sus unidades y condiciones.
 
 <a id="laser-espacio-libre"></a>
 ### 10.13. Láser por espacio libre
@@ -1312,7 +1314,7 @@ La presentación define la transmisión de información mediante un **haz de luz
 
 **Errores típicos:** identificar láser con cable de fibra; suponer que coherencia equivale a modulación; adoptar el alcance de una ilustración como dato universal.
 
-**Para examen:** la información puede transmitirse mediante luz modulada tanto en fibra como por espacio libre. En el segundo caso no existe una guía física entre extremos y es necesario dirigir el haz hacia el receptor.
+> **Para examen:** la información puede transmitirse mediante luz modulada tanto en fibra como por espacio libre. En el segundo caso no existe una guía física entre extremos y es necesario dirigir el haz hacia el receptor.
 
 ---
 

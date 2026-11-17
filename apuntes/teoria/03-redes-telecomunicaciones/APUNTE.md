@@ -492,7 +492,7 @@ Se usa $\lambda $ para no confundir $C$ con capacidad de canal U6. **Supuestos:*
 **Para examen:** «El tráfico integra llegadas y retención. Un Erlang expresa ocupación media continua; por sí solo no fija bloqueo ni dimensionamiento».
 
 <a id="rdsi"></a>
-## 11. RDSI: integración y tasas
+## 11. RDSI: Red Digital de Servicios Integrados - integración y tasas
 
 **Fuentes:** F3 p. 27–28; conexión U4 para PCM/TDM/PDH/SDH/SONET. Secundario parcial: sin procedimientos ausentes.
 

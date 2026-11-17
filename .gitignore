@@ -25,3 +25,6 @@ desktop.ini
 
 # Derivados temporales de inspección y renderizado
 /tmp/
+
+# Copia de estudio local para NotebookLM
+/NOTEBOOKLM/

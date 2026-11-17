@@ -11,6 +11,7 @@ apuntes/          Producción propia, en Markdown
   teoria/         Un directorio por unidad; destino U1–U8: APUNTE.md canónico + INDICE.md breve
   practica/       TPs, guías de ejercicios, laboratorios
   repaso/         Preguntas y actividades derivadas de apuntes consolidados
+  resumenes/      Cuadros y fórmulas de repaso rápido
   _plantillas/    Plantillas de captura, apunte, ejercicio e índice
 
 capturas/         Originales de clases y cuestionarios, con imágenes/anexos; siempre inmutables
@@ -40,6 +41,7 @@ material/         Fuentes de terceros — no se editan
 - [Unidad 8 — Hardware de comunicaciones](apuntes/teoria/08-hardware-comunicaciones/INDICE.md)
 - [Práctica](apuntes/practica/INDICE.md)
 - [Repaso y cuestionarios](apuntes/repaso/INDICE.md)
+- [Resumen imprimible de U1–U8](apuntes/resumenes/resumen-u01-u08.md)
 - [Parciales: fotos originales y resoluciones](docs/flujo-agentico.md#parciales)
 
 La campaña de [consolidación U1–U6](docs/consolidacion-u1-u6/estado.md) integra sólo lo registrado en

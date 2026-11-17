@@ -25,56 +25,25 @@ actualizado: 2026-10-13
 Las páginas de teoría son de [U1 Introduccion a las comunicaciones.pdf](../../material/teoria/U1/U1%20Introduccion%20a%20las%20comunicaciones.pdf). El PDF es la autoridad; su cache sólo ayudó a buscar. Las soluciones explican cada alternativa, no sólo la correcta.
 
 <a id="enunciados"></a>
-## Enunciados
+## Preguntas y respuestas
 
 ### U1-Q01 — Circuito teleinformático básico
 
-**Enunciado (transcripción literal; captura, Pregunta 1):**
-
-**El circuito de datos de un Circuito Teleinformático Básico comprende:**
-
-1. El ECD y el ETD
-2. Ninguna de las opciones son elegibles
-3. El ECD, el medio de comunicaciones y el ETD
-4. Sólo el medio de comunicaciones
-5. El ECD y el medio de comunicaciones
+> **Enunciado (transcripción literal; captura, Pregunta 1):**
+>
+> **El circuito de datos de un Circuito Teleinformático Básico comprende:**
+>
+> 1. El ECD y el ETD
+> 2. Ninguna de las opciones son elegibles
+> 3. El ECD, el medio de comunicaciones y el ETD
+> 4. Sólo el medio de comunicaciones
+> 5. El ECD y el medio de comunicaciones
 
 **Datos / condiciones:** no hay datos numéricos; se evalúa qué elementos comprende el circuito de datos en el modelo básico.
 
-### U1-Q02 — Modelo OSI: afirmación correcta
-
-**Enunciado (transcripción literal; captura, Pregunta 2):**
-
-**¿Qué afirmación es correcta respecto del modelo OSI?**
-
-a. Es un estándar del IEEE
-b. La norma V.24 es de la capa 1
-c. Ninguna de las anteriores
-d. Entre capas iguales se usan interfaces
-e. La compresión de datos es de la capa 5
-
-**Datos / condiciones:** no hay datos numéricos; se evalúan afirmaciones conceptuales sobre el modelo OSI y V.24.
-
-### U1-Q03 — Modelo OSI: afirmación incorrecta
-
-**Enunciado (transcripción literal; captura, Pregunta 3):**
-
-**¿Qué afirmación es incorrecta respecto del modelo OSI?**
-
-a. Es un estándar del IEEE
-b. Entre capas iguales se usan protocolos
-c. La norma V.24 es de la capa 1
-d. La criptografía es de la capa 6
-e. Ninguna de las anteriores
-
-**Datos / condiciones:** no hay datos numéricos; hay que identificar la afirmación incorrecta entre las cinco opciones conceptuales.
-
----
-
 <a id="soluciones"></a>
-## Soluciones razonadas
 
-### U1-Q01 — Opción 5
+#### U1-Q01 — Opción 5
 
 El circuito de datos abarca **ECD del extremo A + medio + ECD del extremo B**. Los ETD producen o consumen los datos, pero no pertenecen al límite CD dibujado en teoría p. 6. La opción usa el singular «el ECD» como categoría de equipo; no elimina el ECD del otro extremo.
 
@@ -86,7 +55,25 @@ El circuito de datos abarca **ECD del extremo A + medio + ECD del extremo B**. L
 
 **Criterio de corrección:** elegir 5 y explicar los dos ECD y el medio, diferenciando el enlace entre ETD. Nombrar sólo «ECD a ECD» sin reconocer el medio deja incompleta la justificación.
 
-### U1-Q02 — Opción b
+### U1-Q02 — Modelo OSI: afirmación correcta
+
+> **Enunciado (transcripción literal; captura, Pregunta 2):**
+>
+> **¿Qué afirmación es correcta respecto del modelo OSI?**
+>
+> a. Es un estándar del IEEE
+>
+> b. La norma V.24 es de la capa 1
+>
+> c. Ninguna de las anteriores
+>
+> d. Entre capas iguales se usan interfaces
+>
+> e. La compresión de datos es de la capa 5
+
+**Datos / condiciones:** no hay datos numéricos; se evalúan afirmaciones conceptuales sobre el modelo OSI y V.24.
+
+#### U1-Q02 — Opción b
 
 La capa física define características mecánicas, eléctricas, funcionales y de procedimiento para transmitir bits. **V.24** define circuitos de intercambio entre ETD y ECD y se asocia a esa interfaz física en el cuestionario. Ver [UIT-T, V.24 (02/2000), título oficial](https://www.itu.int/rec/T-REC-V.24/en), consultado el 10/10/2026; no afirmar que V.24 especifica por sí sola todos los parámetros eléctricos ni que es idéntica a RS-232.
 
@@ -98,7 +85,25 @@ La capa física define características mecánicas, eléctricas, funcionales y d
 
 **Criterio de corrección:** elegir b y reconocer el papel de la interfaz física; justificar protocolo/interfaz y presentación/sesión. La mera sigla sin función no alcanza para mostrar comprensión.
 
-### U1-Q03 — Opción a
+### U1-Q03 — Modelo OSI: afirmación incorrecta
+
+> **Enunciado (transcripción literal; captura, Pregunta 3):**
+>
+> **¿Qué afirmación es incorrecta respecto del modelo OSI?**
+>
+> a. Es un estándar del IEEE
+>
+> b. Entre capas iguales se usan protocolos
+>
+> c. La norma V.24 es de la capa 1
+>
+> d. La criptografía es de la capa 6
+>
+> e. Ninguna de las anteriores
+
+**Datos / condiciones:** no hay datos numéricos; hay que identificar la afirmación incorrecta entre las cinco opciones conceptuales.
+
+#### U1-Q03 — Opción a
 
 Se pide la afirmación **incorrecta**. La opción a atribuye OSI al IEEE, pero teoría p. 10 lo identifica como modelo de referencia de **ISO**. No confundas «organismo que normaliza redes» con «organismo que desarrolló este modelo».
 

@@ -391,7 +391,7 @@ $$e_q=S-C,\qquad \Delta=\frac{x_{max}-x_{min}}{L},\qquad |e_q|\le\Delta/2.$$
 
 **Volvé a la muestra del ejemplo:** 1,3 V − 1,5 V = **−0,2 V**. El signo indica que el valor representativo quedó por encima de la muestra. La magnitud del error, 0,2 V, no supera la mitad del paso (0,5 V).
 
-### Uniforme, no uniforme y compansión
+### TIPOS DE CUANTIFICACIÓN: Uniforme, no uniforme y compansión
 
 Uniforme significa pasos iguales en entrada. A señales pequeñas, un error fijo resulta grande relativamente: 0,02 V es 20% de 0,1 V y 2% de 1 V (ejemplo propio). La cuantificación **no uniforme** reserva pasos finos cerca de cero y mayores hacia extremos.
 
@@ -414,7 +414,7 @@ El eje positivo hasta 128 no determina la longitud total de la palabra con signo
 > **Para examen:** PCM muestrea, cuantifica y codifica. Su tasa es muestras por segundo por bits por muestra; muestreo controla aliasing y cuantificación introduce error de amplitud, distribuible mediante leyes no uniformes.
 
 <a id="delta-dpcm"></a>
-## 8) Delta, ADM y DPCM: enviar diferencias
+## 8) MODULACIÓN POR PULSOS DIGITAL: Delta, ADM y DPCM: enviar diferencias
 
 **Fuentes:** M2 pp.11–13. **Procedencia:** C6 DM/ADM/DPCM.
 

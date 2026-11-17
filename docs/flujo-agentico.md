@@ -5,6 +5,30 @@ Este documento explica **cómo trabajar** con un agente. Las reglas pedagógicas
 obligatorias en [`AGENTS.md`](../AGENTS.md). El repositorio sigue siendo utilizable sin agentes ni
 Engram.
 
+<a id="mapa-estudio-parciales"></a>
+## Mapa de estudio por parcial
+
+| Para qué | Entrada | Qué seguir |
+|---|---|---|
+| Repasar antes de rendir | [Ficha del primer parcial U1–U4](../apuntes/resumenes/primer-parcial-u01-u04.md) · [Ficha del segundo parcial U5–U8](../apuntes/resumenes/segundo-parcial-u05-u08.md) | Cuadros y fórmulas de síntesis; seguir los enlaces internos a teoría y ejercicios para justificar o ampliar. |
+| Practicar con cuestionarios | [Índice de repaso](../apuntes/repaso/INDICE.md) | Para U1–U4: [introducción](../apuntes/repaso/u01-introduccion-comunicaciones.md), [señales](../apuntes/repaso/u02-senales.md), [Fourier y ancho de banda](../apuntes/repaso/u02-fourier-y-ancho-de-banda.md), [redes](../apuntes/repaso/u03-redes.md) y [modulación y multiplexación](../apuntes/repaso/u04-modulacion-multiplexacion.md). |
+| Resolver trabajos prácticos | [Índice de práctica](../apuntes/practica/INDICE.md) | Enlaza los TPs resueltos y sus fuentes. El E19 de balance es parte del TP3 y tiene archivo propio. |
+| Contrastar un examen real | [Parciales: fotos y resoluciones](#parciales) | Identificar la instancia o el tema sólo si es visible. Las fotos son originales; las resoluciones son derivadas y no constituyen una clave oficial. |
+
+**Cómo se priorizó la ficha U1–U4:** se contrastaron 20 consignas de los tres modelos registrados (J, F y sin tema visible), 65 ejercicios de TP1–TP4 (20 + 16 + 19 + 10) y 18 preguntas con fuente: 7 del cuestionario U1/U2, 3 del de U3, 4 de práctica 5 y 4 del de U4. Son tamaños de los corpus, no un total de ejercicios únicos ni una predicción de examen. Una consigna reutilizada refuerza la relevancia, pero no se cuenta como evidencia independiente; por ejemplo, tren de pulsos de U3 Q2 y TP2 E10. Las preguntas heredadas de Fourier sin fuente localizada no entran en las 18. La trazabilidad de cada familia parte de los índices de práctica y repaso y del registro de fotos de abajo.
+
+### Secciones a consultar por tema
+
+| Tema | Destino y contraste |
+|---|---|
+| U2 · Unidades y criterio de ancho de banda | [Cuadro de unidades de transmisión](../apuntes/teoria/02-senales-telecomunicaciones/APUNTE.md#unidades-transmision) y [ancho de banda: señal, canal y criterio](../apuntes/teoria/02-senales-telecomunicaciones/APUNTE.md#ancho-banda). El [repaso de Fourier](../apuntes/repaso/u02-fourier-y-ancho-de-banda.md) conserva el caso del tren rectangular. |
+| U2 · Códigos de línea | [Forma, sincronismo y continua](../apuntes/teoria/02-senales-telecomunicaciones/APUNTE.md#codigos), [Tema F Q01](../apuntes/repaso/primer-parcial-u01-u04-tema-f.md#q01) y [examen sin tema visible Q01](../apuntes/repaso/primer-parcial-u01-u04-tema-no-visible.md#q01). |
+| U2/U3 · dB, dBm y balance | [TP3, E12–E18](../apuntes/practica/tp-03-redes.md#e12), [E19](../apuntes/practica/tp-03-ejercicio-19-calculo-enlace.md) y [pregunta de práctica 5](../apuntes/repaso/u06-canales.md#q-p5-3). Aparece en [J Q07](../apuntes/repaso/primer-parcial-u01-u04-tema-j.md#q07), [F Q02](../apuntes/repaso/primer-parcial-u01-u04-tema-f.md#q02) y [examen sin tema visible Q02](../apuntes/repaso/primer-parcial-u01-u04-tema-no-visible.md#q02), aunque la [formalización canónica](../apuntes/teoria/06-canales-comunicaciones/APUNTE.md#decibeles) esté en U6. |
+| U3 · Estados, temporización y RTPC | [Multinivel y relación de tasas](../apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md#multinivel), [sincronismo y rendimiento](../apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md#sincronismo) —incluye la [diapositiva 9](../apuntes/teoria/03-redes-telecomunicaciones/recursos/diapositiva-09-transmision-protocolos.png)— y [red telefónica y conmutación](../apuntes/teoria/03-redes-telecomunicaciones/APUNTE.md#rtpc). |
+| U4 · Modulación, PCM y multiplexación | [Parámetros de modulación](../apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/APUNTE.md#modulacion), [constelaciones PSK/QAM](../apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/APUNTE.md#psk-qam), [ejemplo guiado de PCM y cuantificación](../apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/APUNTE.md#pcm), [FDM/OFDM](../apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/APUNTE.md#fdm-ofdm) —incluye la [figura de desplazamiento FDM](../apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/recursos/fdm-desplazamiento-canales.png)— y [tramas E1/T1](../apuntes/teoria/04-modulacion-digitalizacion-multiplexacion/APUNTE.md#tdm). |
+
+**Mantener la trazabilidad:** al actualizar una ficha, conservá las referencias a secciones y ejercicios; al sumar un parcial, actualizá el registro de abajo y el [índice de repaso](../apuntes/repaso/INDICE.md). Los repasos U1–U4 ponen cada respuesta debajo de su enunciado; los parciales mantienen resoluciones desplegables. Las citas Markdown destacan las consignas y los bloques «Para examen» donde se aplicó ese estilo. El tono depende del visor; los párrafos no se cortan manualmente por ancho. Para conocer el historial exacto de un archivo, consultá `git log -- <ruta>`.
+
 ## Circuito cotidiano
 
 ```text

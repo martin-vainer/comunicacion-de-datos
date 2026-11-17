@@ -58,6 +58,7 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 │   │   └── 08-hardware-comunicaciones/
 │   ├── practica/         # TPs resueltos, guías de ejercicios, laboratorios
 │   ├── repaso/           # Preguntas, cuestionarios y actividades de autoevaluación
+│   ├── resumenes/        # Fichas imprimibles, una por parcial
 │   └── _plantillas/      # Metodología + plantillas de apunte, ejercicio e índice
 │
 ├── capturas/             # Originales de clase, imágenes y anexos — evidencia inmutable
@@ -82,6 +83,7 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
   y se enlaza desde la otra.
 - Mantené práctica resuelta y material de repaso en `apuntes/practica/` y `apuntes/repaso/`,
   respectivamente; no los mezcles con el apunte teórico.
+- Guardá las fichas de síntesis por parcial en `apuntes/resumenes/`. Son material derivado, no cubren ni reemplazan el apunte canónico. Para actualizarlas, usá el [mapa de estudio y sus evidencias](docs/flujo-agentico.md#mapa-estudio-parciales).
 - En cada TP y cuestionario de `apuntes/`, transcribí el enunciado y las opciones completas tal cual su
   fuente (sólo normalizá saltos de línea), después separá los **Datos/condiciones** extraídos y luego
   desarrollá la resolución paso a paso. No inventes datos. Si un desarrollo original ya está bien
@@ -96,6 +98,7 @@ tema: primero el fenómeno físico, después la matemática, y recién al final 
 - Los nombres de archivo nuevos siguen `kebab-case.md`, sin tildes ni espacios (por ejemplo,
   `tp-01-introduccion.md`).
 - Los archivos de `apuntes/practica/` se nombran `tp-NN-tema.md` o `guia-NN-tema.md`.
+- `NOTEBOOKLM/` es una copia local ignorada: no la uses como fuente canónica ni agregues sus archivos al repositorio.
 
 ---
 
@@ -185,6 +188,8 @@ extraído, registrá las figuras y fórmulas pendientes de contraste visual; no 
 El flujo operativo completo y los roles Curador, Tutor y Verificador están en
 [`docs/flujo-agentico.md`](docs/flujo-agentico.md). Este archivo conserva las reglas; ese documento
 explica cómo pedir el trabajo sin duplicarlas.
+
+Si el pedido menciona un parcial, una ficha o un repaso, empezá por el [mapa de estudio por parcial](docs/flujo-agentico.md#mapa-estudio-parciales) para ubicar el recurso derivado y sus fuentes.
 
 Cuando el estudiante te pide algo, identificá cuál de estos modos aplica:
 

@@ -9,7 +9,7 @@ Estado y alcance únicamente en [APUNTE.md](APUNTE.md#pendientes).
 3. [Fourier](APUNTE.md#fourier) y [tren](APUNTE.md#tren).
 4. [AB](APUNTE.md#ancho-banda) y [primer cero](APUNTE.md#primer-cero).
 5. [OEM y espectro EM](APUNTE.md#oem).
-6. [Códigos](APUNTE.md#codigos), [HDB3](APUNTE.md#hdb3).
+6. [Códigos](APUNTE.md#codigos), [banda base vs. código de línea](APUNTE.md#banda-base-vs-codigo-de-linea) y [HDB3](APUNTE.md#hdb3).
 7. [Filtros](APUNTE.md#filtros).
 8. [Resumen mental](APUNTE.md#resumen-mental).
 

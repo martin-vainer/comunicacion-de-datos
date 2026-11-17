@@ -583,6 +583,57 @@ No es asignación regulatoria vigente ni exclusividad por servicio. U2 p 29 tamb
 
 La secuencia binaria no especifica tensión de cable. Ceros largos sin transiciones pueden perder reloj; continua bloqueada por transformador deforma la señal; además el espectro debe caber en el canal. Un **código de línea** asigna estados o transiciones a datos para adaptarlos al medio. En **banda base** no se traslada información mediante portadora modulada; sí puede codificarse. “Sin tratamiento” de U2 p. 30 no excluye codificación: Señales Banda Base p 6 lo aclara. Modulación se desarrolla en U4. Modelo: una regla de dibujo sobre una grilla; el receptor comparte regla y recupera ritmo de cambios. Las tres misiones registradas son **reducir continua, garantizar sincronismo y permitir detectar presencia de señal en la línea**. Además, el espectro debe ser compatible con el ancho de banda disponible; estas exigencias pueden competir.
 
+<a id="banda-base-vs-codigo-de-linea"></a>
+### Banda base y código de línea: dos aspectos complementarios
+
+**Apoyo de estudio aportado por el estudiante, reproducido tal cual.** Las precisiones para el parcial quedan fuera de la cita.
+
+> Son términos estrechamente vinculados que **se complementan**, pero describen dos aspectos distintos de la transmisión:
+>
+> ---
+>
+> ### 1. Banda base (el régimen de transmisión)
+>
+> - **Definición:** Una señal en banda base es aquella que, generada por la fuente de información, **no sufre ningún proceso de modulación** sobre una onda portadora para trasladar su frecuencia.
+> - **Espectro:** La señal conserva su rango de frecuencias original, ocupando el espectro desde frecuencia cero (o frecuencias muy bajas) hasta un valor máximo determinado por la tasa de señalización.
+> - **Uso:** En una **transmisión en banda base**, los pulsos se insertan directamente sobre el medio físico (muy habitual en redes LAN o enlaces de corta/mediana distancia sobre cables de cobre) sin recurrir a modulación analógica (como AM, FM o PSK).
+>
+> ---
+>
+> ### 2. Código de línea (la técnica de representación de los bits)
+>
+> - **Definición:** Es la **regla de codificación específica** que define cómo representar eléctricamente los dígitos binarios (unos y ceros) mediante variaciones de amplitud, duración o transiciones de tensión.
+> - **Denominación:** Por utilizarse directamente sobre el medio sin modulación, en los apuntes de la materia también se los denomina indistintamente **códigos en banda base**.
+> - **Ejemplos:** Unipolar NRZ, Polar RZ, Manchester, Bipolar AMI, HDB-3, Miller, etc..
+>
+> ---
+>
+> ### 3. ¿Cómo se complementan?
+>
+> Una señal digital elemental (como la señal ON/OFF o unipolar pura) es una señal en banda base, pero **no está preparada para viajar por una línea de transmisión real**: tiene demasiada componente continua, pierde sincronismo ante secuencias largas de bits iguales y sufre interferencia intersímbolo.
+>
+> Aquí es donde entra el código de línea:
+>
+> - **Banda base** es la *modalidad*: *"vamos a enviar los pulsos directo por el cable sin modular con portadora"*.
+> - **El código de línea** es la *herramienta técnica*: *"vamos a darle a esos pulsos una forma geométrica y una regla eléctrica (por ejemplo, alternando polaridades como en AMI o metiendo transiciones al medio como en Manchester) para adaptar la señal al canal"*.
+>
+> La función principal de los códigos de línea es resolver los desafíos inherentes a la transmisión en banda base:
+>
+> 1. **Eliminar o reducir la componente continua** para atravesar transformadores y acopladores.
+> 2. **Garantizar transiciones suficientes** para que el receptor pueda recuperar el reloj (sincronismo).
+> 3. **Detectar la presencia de señal** y controlar errores en la línea.
+>
+> ---
+>
+> 🎯 Si querés, podemos comparar en una tabla cómo resuelven la componente continua y el sincronismo códigos clave de la materia como **NRZ**, **Manchester** y **HDB-3**.
+
+**Precisiones para el parcial:**
+
+- **Espectro:** banda base significa que no se trasladó la señal a una portadora. Al cambiar el código o la forma del pulso puede cambiar su espectro; la tasa de señalización no fija por sí sola un límite superior. Por ejemplo, el [tren rectangular](#primer-cero) conserva componentes después del primer cero.
+- **PSK:** la [tabla de cátedra de U4, p. 5](../../../material/teoria/U4/U4%20MODULACION%201.pdf#page=5) la clasifica como modulación continua **digital** porque la moduladora es digital, aunque la portadora y la onda modulada sean analógicas.
+- **ON/OFF, reloj e ISI:** unipolar NRZ puede usarse si el medio y el receptor lo permiten. Su media es positiva si hay unos, y las rachas iguales no dan referencia de reloj por sí solas. La [interferencia intersímbolo](../06-canales-comunicaciones/APUNTE.md#isi) aparece si un pulso afecta la decisión sobre un símbolo vecino; no es inevitable por usar banda base.
+- **Presencia no es control de errores:** las tres misiones de la [filmina de códigos de línea, p. 15](../../../material/practica/U%202/UT%202%20SE%C3%91ALES%20TELCOM-CODIGOS%20DE%20LINEA.pdf#page=15) son reducir la continua, procurar sincronismo y detectar presencia. No todos los códigos las cumplen por sí solos en todas las secuencias. Reconocer actividad en la línea no equivale a [detectar o corregir bits erróneos](../06-canales-comunicaciones/APUNTE.md#control).
+
 <a id="presencia-senal"></a>
 ### Presencia de señal no es valor del bit
 

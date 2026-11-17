@@ -343,7 +343,15 @@ flowchart LR
   T --> D[Decodificación y reconstrucción]
 ```
 
-### Formalización y ejemplo
+**Ejemplo hipotético, paso a paso.** Usemos un cuantificador uniforme de 0 a 4 V, con cuatro intervalos de 1 V y niveles representativos de 0,5; 1,5; 2,5 y 3,5 V.
+
+1. **Muestrear:** en uno de los instantes del reloj, la señal filtrada vale **1,3 V**. Elegimos cuándo medir; todavía no redondeamos la amplitud.
+2. **Cuantificar:** 1,3 V cae en el intervalo de 1 a 2 V, al que le asignamos **1,5 V**. Acá se pierde la amplitud exacta de la muestra: el código sólo permite recuperar el valor representativo.
+3. **Codificar:** si numeramos los cuatro niveles desde cero, 1,5 V tiene índice 1. Su etiqueta binaria de dos bits es **`01`**. La salida del codificador es esa palabra, no la amplitud de la muestra.
+
+### Formalización y ejemplo de tasa
+
+Ya vimos qué bits salen de **una** muestra. Para saber cuántos salen **por segundo**, contamos cuántas muestras se toman y cuántos bits lleva cada una.
 
 $$f_s=1/T_s,\qquad f_s\ge2f_{max},\qquad b=\log_2L,\qquad V_{PCM}=f_s b.$$
 
@@ -358,7 +366,7 @@ $$f_s=1/T_s,\qquad f_s\ge2f_{max},\qquad b=\log_2L,\qquad V_{PCM}=f_s b.$$
 
 **Supuestos:** señal limitada en banda, reconstrucción ideal, palabras fijas, L potencia de 2. La igualdad es un límite ideal: un tono exactamente en la frecuencia de Nyquist puede perderse con fase desfavorable. Se deja margen práctico y se filtra contra **aliasing**, cuando frecuencias distintas se vuelven indistinguibles después de muestrear. Éste es el teorema de muestreo, no la fórmula de capacidad Nyquist de U3/U6.
 
-**Ejemplo TP4:**125 μs entre muestras → 8000 muestras/s.128 niveles → 7 bits/muestra → 56 000 bit/s; 256 → 8 → 64 000 bit/s. El filtro 4000 Hz se interpreta pasa-bajos hasta esa frecuencia: límite ideal; la tasa se obtiene primero del período dado. Más niveles mejoran resolución y aumentan bits, no muestras por segundo.
+**Ejemplo TP4 (otro cuantificador):** 125 μs entre muestras → 8000 muestras/s. Con 128 niveles, cada muestra ocupa 7 bits → **56 kbit/s**; con 256 niveles, ocupa 8 bits → **64 kbit/s**. El filtro 4000 Hz se interpreta pasa-bajos hasta esa frecuencia: límite ideal; la tasa se obtiene primero del período dado. Más niveles mejoran resolución y aumentan bits, no muestras por segundo.
 
 ### Error de cuantificación
 
@@ -375,7 +383,7 @@ $$e_q=S-C,\qquad \Delta=\frac{x_{max}-x_{min}}{L},\qquad |e_q|\le\Delta/2.$$
 
 **Supuestos:** cuantificador uniforme, representantes centrales, redondeo y sin sobrecarga fuera de rango. El límite no vale para saturación/truncamiento. M2 p.4 llama al error «granular o de cuantificación»; se conserva su vocabulario y se distingue el caso Delta de §8.
 
-**Ejemplo hipotético:** rango 0–4 V, 4 celdas → paso 1 V; representantes 0,5; 1,5; 2,5; 3,5 V. Entrada 1,3 V → 1,5 V; error−0,2 V, menor que 0,5 V. El índice 1 puede codificarse`01`, convención propia. No se transmite 1,3 V exacto.
+**Volvé a la muestra del ejemplo:** 1,3 V − 1,5 V = **−0,2 V**. El signo indica que el valor representativo quedó por encima de la muestra. La magnitud del error, 0,2 V, no supera la mitad del paso (0,5 V).
 
 ### Uniforme, no uniforme y compansión
 
@@ -393,7 +401,7 @@ M2 pp.6–7 muestra curvas logarítmicas aproximadas por segmentos: **A, 13 segm
 
 El eje positivo hasta 128 no determina la longitud total de la palabra con signo. **Discrepancia:** M2 p.10/C6 relacionan ley μ con 128 niveles/7 bits, pero X p.16 usa octetos T1. Los formatos **PCMA y PCMU G.711** usan **8 bits por muestra**, según [RFC3551 §4.5.14](https://datatracker.ietf.org/doc/html/rfc3551#section-4.5.14); a 8 k Hz son 64 kbit/s. No identificar el ejercicio hipotético 128 niveles con μ-law normativo. La simplificación docente queda registrada por aclarar.
 
-**Caso del corpus:** voz PCM 8000 muestras/s, 8 bits → 64 kbit/s; TDM reúne canales en E1/T1. Señalización robada T1 es una operación de transporte distinta de compansión.
+**Caso del corpus:** una voz PCM a 8000 muestras/s y 8 bits/muestra genera 64 kbit/s. [TDM](#tdm) intercala esas palabras ya codificadas con las de otras voces en una trama E1/T1: no vuelve a medir ni a redondear la voz. Señalización robada T1 es una operación de transporte distinta de compansión.
 
 **Errores típicos:** cuantificar antes de muestrear en esta cadena; igualar 8 k Hz y 64 kbit/s; pensar que más muestreo elimina error de amplitud; atribuir cuantificación al MUX TDM.
 
